@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[        2018-10-08 19:39:57): [Test]-"MerchantAuditPass" is started]]>
+      <![CDATA[        2018-10-15 09:33:21): [Test]-"MerchantAuditPass" is started]]>
     </line>
     <line>
-      <![CDATA[                2018-10-08 19:39:57: [Method]-"LoginPageTest.testLogin" is started]]>
+      <![CDATA[                2018-10-15 09:33:21: [Method]-"LoginPageTest.testLogin" is started]]>
     </line>
     <line>
-      <![CDATA[                2018-10-08 19:40:03: [Method]-"LoginPageTest.testLogin" is passed]]>
+      <![CDATA[                2018-10-15 09:33:27: [Method]-"LoginPageTest.testLogin" is passed]]>
     </line>
     <line>
-      <![CDATA[        2018-10-08 19:40:05): [Test]-"MerchantAuditPass" is finished]]>
+      <![CDATA[        2018-10-15 09:33:29): [Test]-"MerchantAuditPass" is finished]]>
     </line>
   </reporter-output>
-  <suite name="SuiteOperationPlatform" duration-ms="7690" started-at="2018-10-08T11:39:57Z" finished-at="2018-10-08T11:40:05Z">
+  <suite name="SuiteOperationPlatform" duration-ms="8263" started-at="2018-10-15T01:33:20Z" finished-at="2018-10-15T01:33:29Z">
     <groups>
     </groups>
-    <test name="MerchantAuditPass" duration-ms="7690" started-at="2018-10-08T11:39:57Z" finished-at="2018-10-08T11:40:05Z">
+    <test name="MerchantAuditPass" duration-ms="8263" started-at="2018-10-15T01:33:20Z" finished-at="2018-10-15T01:33:29Z">
       <class name="com.dy.AutoTest.web.actions.SingletonSet">
-        <test-method status="PASS" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@51b7e5df]" name="init" is-config="true" duration-ms="5878" started-at="2018-10-08T11:39:51Z" finished-at="2018-10-08T11:39:57Z">
+        <test-method status="PASS" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@5d47c63f]" name="init" is-config="true" duration-ms="6580" started-at="2018-10-15T01:33:14Z" finished-at="2018-10-15T01:33:20Z">
           <params>
             <param index="0">
               <value>
@@ -35,13 +35,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="releaseBrowser()[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@51b7e5df]" name="releaseBrowser" is-config="true" duration-ms="2786" started-at="2018-10-08T11:40:05Z" finished-at="2018-10-08T11:40:08Z">
+        <test-method status="PASS" signature="releaseBrowser()[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@5d47c63f]" name="releaseBrowser" is-config="true" duration-ms="2768" started-at="2018-10-15T01:33:29Z" finished-at="2018-10-15T01:33:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- releaseBrowser -->
       </class> <!-- com.dy.AutoTest.web.actions.SingletonSet -->
       <class name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
-        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@18a70f16]" name="BeforeTest" is-config="true" duration-ms="9" started-at="2018-10-08T11:39:57Z" finished-at="2018-10-08T11:39:57Z">
+        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@5ea434c8]" name="BeforeTest" is-config="true" duration-ms="5" started-at="2018-10-15T01:33:21Z" finished-at="2018-10-15T01:33:21Z">
           <params>
             <param index="0">
               <value>
@@ -51,19 +51,19 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[        2018-10-08 19:39:57): [Test]-"MerchantAuditPass" is started]]>
+              <![CDATA[        2018-10-15 09:33:21): [Test]-"MerchantAuditPass" is started]]>
             </line>
           </reporter-output>
         </test-method> <!-- BeforeTest -->
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@18a70f16]" name="init" is-config="true" duration-ms="3" started-at="2018-10-08T11:39:57Z" finished-at="2018-10-08T11:39:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@18a70f16]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-10-08T11:39:57Z" finished-at="2018-10-08T11:39:57Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@5ea434c8]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-10-15T01:33:21Z" finished-at="2018-10-15T01:33:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@18a70f16]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-10-08T11:39:57Z" finished-at="2018-10-08T11:39:57Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@5ea434c8]" name="init" is-config="true" duration-ms="22" started-at="2018-10-15T01:33:21Z" finished-at="2018-10-15T01:33:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@5ea434c8]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-10-15T01:33:21Z" finished-at="2018-10-15T01:33:21Z">
           <params>
             <param index="0">
               <value>
@@ -73,11 +73,11 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[                2018-10-08 19:39:57: [Method]-"LoginPageTest.testLogin" is started]]>
+              <![CDATA[                2018-10-15 09:33:21: [Method]-"LoginPageTest.testLogin" is started]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@18a70f16]" name="testLogin" duration-ms="5647" started-at="2018-10-08T11:39:57Z" finished-at="2018-10-08T11:40:03Z">
+        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@5ea434c8]" name="testLogin" duration-ms="6174" started-at="2018-10-15T01:33:21Z" finished-at="2018-10-15T01:33:27Z">
           <params>
             <param index="0">
               <value>
@@ -88,21 +88,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@18a70f16]" name="afterMethod" is-config="true" duration-ms="2000" started-at="2018-10-08T11:40:03Z" finished-at="2018-10-08T11:40:05Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@5ea434c8]" name="afterMethod" is-config="true" duration-ms="2002" started-at="2018-10-15T01:33:27Z" finished-at="2018-10-15T01:33:29Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testLogin status=SUCCESS method=LoginPageTest.testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@18a70f16] output={null}]]]>
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=LoginPageTest.testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@5ea434c8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[                2018-10-08 19:40:03: [Method]-"LoginPageTest.testLogin" is passed]]>
+              <![CDATA[                2018-10-15 09:33:27: [Method]-"LoginPageTest.testLogin" is passed]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@18a70f16]" name="AfterTest" is-config="true" duration-ms="1" started-at="2018-10-08T11:40:05Z" finished-at="2018-10-08T11:40:05Z">
+        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@5ea434c8]" name="AfterTest" is-config="true" duration-ms="2" started-at="2018-10-15T01:33:29Z" finished-at="2018-10-15T01:33:29Z">
           <params>
             <param index="0">
               <value>
@@ -112,7 +112,7 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[        2018-10-08 19:40:05): [Test]-"MerchantAuditPass" is finished]]>
+              <![CDATA[        2018-10-15 09:33:29): [Test]-"MerchantAuditPass" is finished]]>
             </line>
           </reporter-output>
         </test-method> <!-- AfterTest -->
