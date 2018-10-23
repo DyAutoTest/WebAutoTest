@@ -36,23 +36,36 @@ public class SuperTest {
 		driver = SingletonSet.driver;
 	}
 
+	/**
+	 * @param context
+	 * 开始时打印测试集名称
+	 */
 	@BeforeTest
 	public void BeforeTest(ITestContext context) {
 		Reporter.log("        "+BaseUtil.fomatDateToString(new Date(), "yyyy-MM-dd HH:mm:ss")+"): [Test]-\""+context.getName()+"\" is started");
 	}
-	
+	/**
+	 * @param context
+	 * 结束时打印测试集名称
+	 */
 	@AfterTest
 	public void AfterTest(ITestContext context) {
 		Reporter.log("        "+BaseUtil.fomatDateToString(new Date(), "yyyy-MM-dd HH:mm:ss")+"): [Test]-\""+context.getName()+"\" is finished");
 	}
 	
+	/**
+	 * @param method
+	 * 打印测试方法
+	 */
 	@BeforeMethod
 	public void beforeMethod(Method method) {
-		
 		Reporter.log("                "+BaseUtil.fomatDateToString(new Date(), "yyyy-MM-dd HH:mm:ss")+": [Method]-\""
 		+this.getClass().getSimpleName()+"."+method.getName()+"\" is started");
 	}
-	
+	/**
+	 * @param method
+	 * 打印测试方法
+	 */
 	@AfterMethod
 	public void afterMethod(ITestResult result) {
 		if(result.getStatus()==ITestResult.SUCCESS) {

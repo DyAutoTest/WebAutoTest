@@ -42,6 +42,9 @@ public class MainMenuPageTest {
 	public void testQuit() {
 		mainMenuPage.doQuit();
 	}
+	/**
+	 * 获取当前会计日期
+	 */
 	@Test
 	public void testGetCurrentAccountantDate() {
 		System.out.println(mainMenuPage.getCurrentAccountantDate());

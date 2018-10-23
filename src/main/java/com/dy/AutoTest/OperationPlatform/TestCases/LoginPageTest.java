@@ -36,13 +36,19 @@ public class LoginPageTest extends SuperTest{
 	@Test
 	public void testLogin(String OperID) {
 		operBean = data.getDataBean("POP_Data_Oper", OperID);
+		//跳转登录页
 		loginPage.navigateTo(URL);
+		//填写操作员ID
 		loginPage.setOperID(operBean.getOperID());
+		//填写密码
 		loginPage.setPassword(operBean.getPassword());
+		//发送短信验证码
 		loginPage.sendCode_SMS();
 		wait.waitFor(500);
 		String code_SMS = loginPage.getCode_SMS(operBean.getMobileNO());
+		//填写短信验证码
 		loginPage.setCode_SMS(code_SMS);
+		//登录
 		loginPage.doLogin();
 		SingletonSet.CurrentAccountantDate.append(loginPage.getCurrentAccountantDate());
 	}

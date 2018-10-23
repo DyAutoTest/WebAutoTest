@@ -32,17 +32,24 @@ public class MerchantAuditPageTest extends SuperTest{
 		URL=host.toString()+DataBusiness.getData_URL("pop_OnlineMerchantAudit");
 	}
 	
+	/**
+	 * @param AuditID
+	 * 审核通过
+	 */
 	@Parameters({"AuditID"})
 	@Test
 	public void testMerchantAuditPass(String AuditID) {
 		MerchantAuditBean merchantAuditBean=data.getDataBean("POP_Data_MerchantAudit", AuditID);
 //		merchantAuditPage.setWaitTime(500);
+		//跳转商户审核页面
 		merchantAuditPage.navigateTo(URL);
-		
+		//设置交易名称
 		merchantAuditPage.setTrasactionName(merchantAuditBean.getTransactionName());
+		//设置操作员号
 		merchantAuditPage.setOperID(merchantAuditBean.getOperID());
+		//查询
 		merchantAuditPage.doQuery();
-		
+		//轮巡每个符合条件的单选框
 		List<WebElement> radioes=merchantAuditPage.getRadioes();
 		for (int i=0;i<radioes.size();i++) {
 			if(merchantAuditPage.isTestingData(i)) {
@@ -55,6 +62,7 @@ public class MerchantAuditPageTest extends SuperTest{
 				}
 //				wait.waitFor(500);
 				merchantAuditPage.doAudit();
+				//如果是商户新增审核
 				if(AuditID.equals("1")){
 					String merchantName=merchantAuditPage.getMerchantName();
 					merchantAuditPage.setAuditComment("Pass");
@@ -85,6 +93,7 @@ public class MerchantAuditPageTest extends SuperTest{
 						assertTrue(false);
 					}
 				}
+				//如果是商户结算信息新增审核
 				if(AuditID.equals(("6"))){
 					String merchantNO=merchantAuditPage.getSettlementMerchantNO();
 					String merchantName=merchantAuditPage.getSettlementMerchantName();
@@ -105,6 +114,7 @@ public class MerchantAuditPageTest extends SuperTest{
 						assertTrue(false);
 					}
 				}
+				//如果是商户费率新增审核
 				if(AuditID.equals(("3"))){
 					String merchantNO=merchantAuditPage.getFeeRate_MerchantNO();
 					String merchantName=merchantAuditPage.getFeeRate_MerchantName();
@@ -146,24 +156,31 @@ public class MerchantAuditPageTest extends SuperTest{
 		}
 	}
 	
+	/**
+	 * @param AuditID
+	 * 审核拒绝
+	 */
 	@Parameters({"AuditID"})
 	@Test
 	public void testMerchantAuditRefuse(String AuditID) {
 		MerchantAuditBean merchantAuditBean=data.getDataBean("POP_Data_MerchantAudit", AuditID);
 		
 		merchantAuditPage.setWaitTime(500);
-		
+		//跳转商户审核页面
 		merchantAuditPage.navigateTo(URL);
-		
+		//设置交易名称
 		merchantAuditPage.setTrasactionName(merchantAuditBean.getTransactionName());
+		//设置操作员号
 		merchantAuditPage.setOperID(merchantAuditBean.getOperID());
+		//查询
 		merchantAuditPage.doQuery();
-		
+		//轮巡每个符合条件的单选框
 		List<WebElement> radioes=merchantAuditPage.getRadioes();
 		for (int i=0;i<(radioes.size());i++) { 
 			if(merchantAuditPage.isTestingData(i)) {
 				merchantAuditPage.selectRadio(i);
 				merchantAuditPage.doAudit();
+				//如果是商户新增审核或商户修改
 				if(AuditID.equals("1")||AuditID.equals(("2"))){
 					String merchantName=merchantAuditPage.getMerchantName();
 					merchantAuditPage.setAuditComment("Refuse");
@@ -185,6 +202,7 @@ public class MerchantAuditPageTest extends SuperTest{
 						assertTrue(false);
 					}
 				}
+				//如果是商户结算信息新增审核或修改
 				if(AuditID.equals("5")||AuditID.equals(("6"))){
 					String merchantNO=merchantAuditPage.getSettlementMerchantNO();
 					merchantAuditPage.setAuditComment2("Refuse");
@@ -200,6 +218,7 @@ public class MerchantAuditPageTest extends SuperTest{
 						assertTrue(false);
 					}
 				}
+				//如果是商户费率新增审核或修改
 				if(AuditID.equals("3")||AuditID.equals(("4"))){
 					String merchantNO=merchantAuditPage.getFeeRate_MerchantNO();
 					merchantAuditPage.setAuditComment3("Refuse");

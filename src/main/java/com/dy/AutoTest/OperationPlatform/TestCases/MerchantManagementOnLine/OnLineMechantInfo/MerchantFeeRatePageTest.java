@@ -28,8 +28,13 @@ public class MerchantFeeRatePageTest extends SuperTest{
 		return data.getDataBeanArray();
 	}
 	
+	/**
+	 * @param MerchantFeeRateBean
+	 * 测试费率新增
+	 */
 	@Test(dataProvider="feeRate")
 	public void testMerchantFeeRateAdd(MerchantFeeRateBean MerchantFeeRateBean) {
+		//跳转到费率管理页面
 		MerchantFreeRatePage.navigateTo(URL);
 		
 		String ProductTypes[]=MerchantFeeRateBean.getProductType().split(",");
@@ -37,28 +42,30 @@ public class MerchantFeeRatePageTest extends SuperTest{
 		
 		for(int i=0;i<ProductTypes.length;i++) {
 			MerchantFreeRatePage.doMerchantFeeRateAdd();
-			
+			//如果商户号与商户名为空，直接打断测试
 			if(MerchantFeeRateBean.getMerchantNO().equals("")
 					&&MerchantFeeRateBean.getMerchantName().equals("")) {
 				System.out.println("Both of NO and Name is null! Please check (SQLite--POP_Data_MerchantSettlement) ID= "+MerchantFeeRateBean.getID());
 				assertTrue(false);
-			}else if(!MerchantFeeRateBean.getMerchantNO().equals("")) {
+			}//如果商户号为空，使用商户名进行搜索
+			else if(!MerchantFeeRateBean.getMerchantNO().equals("")) {
 				MerchantFreeRatePage.setMerchantNO(MerchantFeeRateBean.getMerchantNO());
 			}else {
 				MerchantFreeRatePage.setMerchantName(MerchantFeeRateBean.getMerchantName());
 			}
 			
 			MerchantFreeRatePage.setProductType(ProductTypes[i]);
-			
+			//设置费率起始日期
 			MerchantFreeRatePage.setFeeRate_StartDate(SingletonSet.CurrentAccountantDate.toString());
 			MerchantFreeRatePage.setFeeRate_ExpireDate(MerchantFeeRateBean.getFeeRate_ExpireDate());
 			MerchantFreeRatePage.doLoseFocus("FeeRate_StartDate",-80,0);
-			
+			//设置费率类型
 			MerchantFreeRatePage.setFeeRateType(MerchantFeeRateBean.getFeeRateType());
 			
 			MerchantFreeRatePage.setSettlementType(MerchantFeeRateBean.getSettlementType());
 			MerchantFreeRatePage.setRefundType(MerchantFeeRateBean.getRefundType());
 			MerchantFreeRatePage.setRefundMode(MerchantFeeRateBean.getRefundMode());
+			//如果费率类型存在，取费率类型，如果不存在，费率代码取 X52
 			if(i<FeeRateCodes.length)
 				MerchantFreeRatePage.setFeeRateCode(FeeRateCodes[i]);
 			else
