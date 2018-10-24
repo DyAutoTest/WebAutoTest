@@ -74,7 +74,7 @@ public class MerchantSettlementPageTest extends SuperTest{
 		
 		//判断是否可以新增结算信息
 		String merchantNO=merchantSettlementPage.getMerchantNO();
-		assertTrue(merchantSettlementPage.isSettlementInfoAddEnable());
+		assertTrue(merchantSettlementPage.isSettlementInfoAddEnable()); 
 		
 		//插入当前会计日期为下个结算日期
 		Map<String , Object > updateMap=new HashMap<>();

@@ -21,7 +21,7 @@ public class MerchantFeeRatePageTest extends SuperTest{
 	public void init() {
     	MerchantFreeRatePage=new MerchantFeeRatePage(driver);
 		URL=host.toString()+DataBusiness.getData_URL("pop_OnlineMerchantFeeRate");
-	}
+	} 
 	
 	@DataProvider(name="feeRate")
 	protected static Object[][] parametersPool(){

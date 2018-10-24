@@ -11,7 +11,7 @@ public class MerchantFeeRatePage extends SuperPage{
 		super(driver);
 		du.loadLocator("POP_Loc_MerchantFeeRate");
 	}
-
+ 
 	public void setWaitTime(long waitTime) {
 		du=new DoPlus(driver);
 		du.waitTime=waitTime;

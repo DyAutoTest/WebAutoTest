@@ -4,6 +4,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Reporter;
 
 import com.dy.AutoTest.OperationPlatform.PageObject.SuperPage;
 import com.dy.AutoTest.web.actions.DoPlus;
@@ -14,7 +15,7 @@ public class MerchantSettlementPage extends SuperPage{
 	public MerchantSettlementPage(WebDriver driver) {
 		super(driver);
 		du.loadLocator("POP_Loc_MerchantSettlement");
-	}
+	} 
 	
 	public void setWaitTime(long waitTime) {
 		du=new DoPlus(driver);
@@ -40,6 +41,7 @@ public class MerchantSettlementPage extends SuperPage{
 		du.what("Button_Search").click();
 		if(!du.what("Merchant_Radio").isDisplayed()) {
 			System.out.println("MerchantName is not Exist in POP database(GSDPAY.T_URM_MINF) !");
+			Reporter.log("MerchantName is not Exist in POP database(GSDPAY.T_URM_MINF) !");
 			assertTrue(false);
 		}
 		
@@ -68,6 +70,7 @@ public class MerchantSettlementPage extends SuperPage{
 			return true;
 		}else {
 			System.out.println("This Merchant needn't set SettlementInfo");
+			Reporter.log("This Merchant needn't set SettlementInfo");
 			return false;
 		}
 	}
@@ -79,6 +82,7 @@ public class MerchantSettlementPage extends SuperPage{
 			return true;
 		}else {
 			System.out.println("The SettlementStatus do not allow to Update");
+			Reporter.log("The SettlementStatus do not allow to Update");
 			return false;
 		}
 	}
@@ -90,6 +94,7 @@ public class MerchantSettlementPage extends SuperPage{
 			return true;
 		}else {
 			System.out.println("The SettlementStatus do not allow to Query");
+			Reporter.log("The SettlementStatus do not allow to Query");
 			return false;
 		}
 	}

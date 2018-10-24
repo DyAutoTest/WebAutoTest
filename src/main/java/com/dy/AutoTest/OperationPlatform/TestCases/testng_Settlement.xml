@@ -21,7 +21,7 @@
 				<methods>
 					<include name="testMerchantSettlementInsert"></include>
 				</methods>
-			</class>
+			</class> 
 			<class
 				name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
 				<methods>

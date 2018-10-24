@@ -22,7 +22,7 @@ public class MainMenuPageTest {
 	public void init() {
 		driver=SingletonSet.driver;
 		wait=SingletonSet.wait;
-		mainMenuPage=new MainMenuPage(driver);
+		mainMenuPage=new MainMenuPage(driver); 
 		
 		URL=host.toString()+DataBusiness.getData_URL("pop_index");
 	}

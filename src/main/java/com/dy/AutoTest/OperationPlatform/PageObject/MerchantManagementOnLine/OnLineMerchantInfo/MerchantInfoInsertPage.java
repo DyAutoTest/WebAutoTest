@@ -10,7 +10,7 @@ public class MerchantInfoInsertPage extends SuperPage{
 	public MerchantInfoInsertPage(WebDriver driver) {
 		super(driver);
 		du.loadLocator("POP_Loc_OnlineMerchantInsert");
-	}
+	} 
 	@Override
 	public void setWaitTime(long waitTime) {
 		du=new DoPlus(driver);

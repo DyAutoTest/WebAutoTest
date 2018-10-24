@@ -94,7 +94,7 @@ public class MerchantAuditPageTest extends SuperTest{
 						merchantAuditPage.doCancel();
 						assertTrue(false);
 					}
-				}
+				} 
 				//如果是商户结算信息新增审核
 				if(AuditID.equals(("6"))){
 					String merchantNO=merchantAuditPage.getSettlementMerchantNO();

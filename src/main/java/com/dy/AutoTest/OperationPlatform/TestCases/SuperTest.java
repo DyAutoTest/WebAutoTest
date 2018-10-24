@@ -31,7 +31,7 @@ public class SuperTest {
 	
 	
 	@BeforeClass
-	public void beforeClass() {
+	public void beforeClass() { 
 		wait = SingletonSet.wait;
 		driver = SingletonSet.driver;
 	}

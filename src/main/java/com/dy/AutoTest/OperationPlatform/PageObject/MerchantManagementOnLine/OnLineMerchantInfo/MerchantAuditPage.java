@@ -11,7 +11,7 @@ import com.dy.AutoTest.web.actions.DoPlus;
 public class MerchantAuditPage extends SuperPage{
 
 
-	public MerchantAuditPage(WebDriver driver) {
+	public MerchantAuditPage(WebDriver driver) { 
 		super(driver);
 		du.loadLocator("POP_Loc_MerchantAudit");
 	}

@@ -20,7 +20,7 @@ import com.dy.AutoTest.web.business.DataBusiness;
  *  - Do Login and record "CurrentAccountantDate" on index.jsp
  *
  */
-public class LoginPageTest extends SuperTest{
+public class LoginPageTest extends SuperTest{ 
 	private LoginPage loginPage;
 	private String URL="";
 	

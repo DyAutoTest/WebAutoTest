@@ -14,7 +14,7 @@
 				<methods>
 					<include name="testLogin" />
 				</methods>
-			</class>
+			</class> 
 			<class
 				name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoInsertPageTest">
 				<methods>
