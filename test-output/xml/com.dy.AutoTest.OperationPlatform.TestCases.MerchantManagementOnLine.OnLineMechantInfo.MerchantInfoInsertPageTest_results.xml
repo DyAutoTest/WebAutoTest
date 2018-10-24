@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="MerchantInfoInsert"
-           tests="2"
+           tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="141.296">
+           time="52.252">
   <properties />
   
   
-            <testcase name="testMerchantInfoInsert" time="68.622" classname="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoInsertPageTest" />
-                <testcase name="testMerchantInfoInsert" time="72.674" classname="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoInsertPageTest" />
+            <testcase name="testMerchantInfoInsert" time="52.252" classname="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoInsertPageTest" />
       
 </testsuite>

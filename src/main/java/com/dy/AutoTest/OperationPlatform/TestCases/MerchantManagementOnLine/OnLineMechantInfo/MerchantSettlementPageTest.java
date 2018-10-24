@@ -5,6 +5,7 @@ import static org.testng.Assert.assertTrue;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.testng.Reporter;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -58,6 +59,8 @@ public class MerchantSettlementPageTest extends SuperTest{
 		if(merchantSettlementBean.getMerchantNO().equals("")
 				&&merchantSettlementBean.getMerchantName().equals("")) {
 			System.out.println("Both of NO and Name is null! Please check (SQLite--POP_Data_MerchantSettlement) ID= "+merchantSettlementBean.getID());
+			Reporter.log("Both of NO and Name is null! Please check (SQLite--POP_Data_MerchantSettlement) ID= "+merchantSettlementBean.getID());
+
 			assertTrue(false);
 		}//如果商户号为空，使用商户名去搜索商户
 		else if(!merchantSettlementBean.getMerchantNO().equals("")) {
@@ -71,8 +74,6 @@ public class MerchantSettlementPageTest extends SuperTest{
 		
 		//判断是否可以新增结算信息
 		String merchantNO=merchantSettlementPage.getMerchantNO();
-		System.out.println(merchantNO);
-		 
 		assertTrue(merchantSettlementPage.isSettlementInfoAddEnable());
 		
 		//插入当前会计日期为下个结算日期
@@ -125,6 +126,7 @@ public class MerchantSettlementPageTest extends SuperTest{
 			DataBusiness.updateTestData("POP_Data_MerchantSettlement", updateMap2, whereMap2);
 		}else {
 			System.out.println(merchantSettlementPage.getNotice());
+			Reporter.log(merchantSettlementPage.getNotice());
 			assertTrue(false);
 		}
 		

@@ -3,7 +3,7 @@
 <suite name="SuiteOperationPlatform" >
  	<parameter name="browserCategory" value="chrome"></parameter>
 	<parameter name="environment" value="pop_uat"></parameter>
-<!--      
+     
    	<test thread-count="5" name="MerchantFeeRateAdd">
 	<parameter name="OperID" value="T00105"></parameter>
 		<classes>
@@ -30,7 +30,7 @@
 			</class> 
 		</classes>
 	</test>
-	  -->
+	 
 <!-- 	  
 	<test thread-count="5" name="MerchantAuditPass">
 		<parameter name="OperID" value="T00107"></parameter>

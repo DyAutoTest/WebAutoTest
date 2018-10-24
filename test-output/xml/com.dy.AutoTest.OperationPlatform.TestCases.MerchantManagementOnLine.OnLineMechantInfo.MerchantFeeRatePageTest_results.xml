@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MerchantFeeRateAdd"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="96.782">
+  <properties />
+  
+  
+            <testcase name="testMerchantFeeRateAdd" time="96.782" classname="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantFeeRatePageTest" />
+      
+</testsuite>

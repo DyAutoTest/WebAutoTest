@@ -2,6 +2,7 @@ package com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnL
 
 import static org.testng.Assert.assertTrue;
 
+import org.testng.Reporter;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -46,6 +47,7 @@ public class MerchantFeeRatePageTest extends SuperTest{
 			if(MerchantFeeRateBean.getMerchantNO().equals("")
 					&&MerchantFeeRateBean.getMerchantName().equals("")) {
 				System.out.println("Both of NO and Name is null! Please check (SQLite--POP_Data_MerchantSettlement) ID= "+MerchantFeeRateBean.getID());
+				Reporter.log("Both of NO and Name is null! Please check (SQLite--POP_Data_MerchantSettlement) ID= "+MerchantFeeRateBean.getID());
 				assertTrue(false);
 			}//如果商户号为空，使用商户名进行搜索
 			else if(!MerchantFeeRateBean.getMerchantNO().equals("")) {
@@ -57,6 +59,7 @@ public class MerchantFeeRatePageTest extends SuperTest{
 			MerchantFreeRatePage.setProductType(ProductTypes[i]);
 			//设置费率起始日期
 			MerchantFreeRatePage.setFeeRate_StartDate(SingletonSet.CurrentAccountantDate.toString());
+			
 			MerchantFreeRatePage.setFeeRate_ExpireDate(MerchantFeeRateBean.getFeeRate_ExpireDate());
 			MerchantFreeRatePage.doLoseFocus("FeeRate_StartDate",-80,0);
 			//设置费率类型

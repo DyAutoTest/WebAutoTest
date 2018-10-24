@@ -85,9 +85,11 @@ public class MerchantAuditPageTest extends SuperTest{
 						insertMap.put("MerchantNO", merchantNO);
 						insertMap.put("MerchantName", merchantName);
 						DataBusiness.insertTestData("POP_Data_MerchantSettlement", insertMap);
+						Reporter.log("MerchantNO: "+merchantNO+" 商户基本资料新增审核通过");
 						i--;
 					}else {
 						System.out.println(merchantAuditPage.getNotice());
+						Reporter.log(merchantAuditPage.getNotice());
 						wait.waitFor(500);
 						merchantAuditPage.doCancel();
 						assertTrue(false);
@@ -106,9 +108,11 @@ public class MerchantAuditPageTest extends SuperTest{
 						insertMap.put("MerchantNO", merchantNO);
 						insertMap.put("MerchantName", merchantName);
 						DataBusiness.insertTestData("POP_Data_MerchantFeeRate", insertMap);
+						Reporter.log("MerchantNO: "+merchantNO+" 商户结算信息新增审核通过");
 						i--;
 					}else {
 						System.out.println(merchantAuditPage.getNotice());
+						Reporter.log(merchantAuditPage.getNotice());
 						wait.waitFor(500);
 						merchantAuditPage.doCancel();
 						assertTrue(false);
@@ -143,9 +147,11 @@ public class MerchantAuditPageTest extends SuperTest{
 							whereMap2.put("MerchantNO", merchantNO);
 							DataBusiness.updateTestData("POP_Data_MerchantProduct", updateMap2, whereMap2,true);
 						}
+						Reporter.log("MerchantNO: "+merchantNO+" 商户费率信息新增审核通过");
 						i--;
 					}else {
 						System.out.println(merchantAuditPage.getNotice());
+						Reporter.log(merchantAuditPage.getNotice());
 						wait.waitFor(500);
 						merchantAuditPage.doCancel();
 						assertTrue(false);
@@ -213,6 +219,7 @@ public class MerchantAuditPageTest extends SuperTest{
 						i--;
 					}else {
 						System.out.println(merchantAuditPage.getNotice());
+						Reporter.log(merchantAuditPage.getNotice());
 						wait.waitFor(500);
 						merchantAuditPage.doCancel();
 						assertTrue(false);
@@ -228,6 +235,7 @@ public class MerchantAuditPageTest extends SuperTest{
 						i--;
 					}else {
 						System.out.println(merchantAuditPage.getNotice());
+						Reporter.log(merchantAuditPage.getNotice());
 						wait.waitFor(500);
 						merchantAuditPage.doCancel();
 						assertTrue(false);

@@ -50,6 +50,7 @@ public class LoginPageTest extends SuperTest{
 		loginPage.setCode_SMS(code_SMS);
 		//登录
 		loginPage.doLogin();
-		SingletonSet.CurrentAccountantDate.append(loginPage.getCurrentAccountantDate());
+		if(SingletonSet.CurrentAccountantDate.toString().equals(""))
+			SingletonSet.CurrentAccountantDate.append(loginPage.getCurrentAccountantDate());
 	}
 }
