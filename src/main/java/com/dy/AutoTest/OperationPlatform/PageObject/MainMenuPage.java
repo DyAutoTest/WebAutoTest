@@ -55,7 +55,7 @@ public class MainMenuPage {
 	 * 退出登录
 	 */
 	public void doQuit() {
-		du.waitFor(2000);
+		du.waitFor(4000);
 		du.what("Personal").click();
 		du.waitFor(500);
 		du.what("Quit").click();

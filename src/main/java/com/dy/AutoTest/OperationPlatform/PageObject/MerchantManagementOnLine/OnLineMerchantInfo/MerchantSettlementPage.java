@@ -22,13 +22,13 @@ public class MerchantSettlementPage extends SuperPage{
 		du.loadLocator("POP_Loc_MerchantSettlement");
 	}
 	
-//	public String getCurrentAccountantDate() {
-//		String CurrentAccountantDate=
-//				driver.findElement(By.xpath("//span[@class='badge acdt']")).getText();
-//		CurrentAccountantDate=CurrentAccountantDate.substring(6);
-//		CurrentAccountantDate=CurrentAccountantDate.substring(0, 4)+"-"+CurrentAccountantDate.substring(5,7)+"-"+CurrentAccountantDate.substring(8,10);
-//		return CurrentAccountantDate;
-//	}
+	public String getCurrentAccountantDate() {
+		String CurrentAccountantDate=
+				driver.findElement(By.xpath("//span[@class='badge acdt']")).getText();
+		CurrentAccountantDate=CurrentAccountantDate.substring(6);
+		CurrentAccountantDate=CurrentAccountantDate.substring(0, 4)+"-"+CurrentAccountantDate.substring(5,7)+"-"+CurrentAccountantDate.substring(8,10);
+		return CurrentAccountantDate;
+	}
 	
 	public void setMerchantNO(String MerchantNO) {
 		du.what("MerchantNO").sendKeys(MerchantNO);
