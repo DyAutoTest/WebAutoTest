@@ -469,6 +469,7 @@ public class TestingDaoImpl implements TestingDao{
 				i++;
 			}
 		}
+		System.out.println(sql);
 		try {
 			flag=jdbcUtil.updateByPreparedStatement(sql, params);
 		} catch (SQLException e) {
@@ -503,6 +504,7 @@ public class TestingDaoImpl implements TestingDao{
 				i++;
 			}
 		}
+		System.out.println(sql);
 		try {
 			flag=jdbcUtil.updateByPreparedStatement(sql, params);
 		} catch (SQLException e) {

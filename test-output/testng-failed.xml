@@ -1,34 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Demo-181023]">
-  <parameter name="environment" value="pop_uat"/>
-  <parameter name="browserCategory" value="chrome"/>
-  <listeners>
-    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
-  </listeners>
-  <test thread-count="5" name="MerchantFeeRateAddAuditPass(failed)">
-    <parameter name="OperID" value="T00107"/>
-    <parameter name="AuditID" value="3"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
+      <class name="com.dy.AutoTest.web.util.test.JdbcUtilTest">
         <methods>
-          <include name="testQuit"/>
-          <include name="init"/>
-          <include name="releaseBrowser"/>
+          <include name="findMoreResultViaSqlite"/>
+          <include name="releaseConn"/>
         </methods>
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest -->
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest">
-        <methods>
-          <include name="testMerchantAuditPass" invocation-numbers="0"/>
-          <include name="beforeMethod"/>
-          <include name="beforeClass"/>
-          <include name="afterMethod"/>
-          <include name="BeforeTest"/>
-          <include name="AfterTest"/>
-          <include name="init"/>
-        </methods>
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest -->
+      </class> <!-- com.dy.AutoTest.web.util.test.JdbcUtilTest -->
     </classes>
-  </test> <!-- MerchantFeeRateAddAuditPass(failed) -->
-</suite> <!-- Failed suite [Demo-181023] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -44,19 +44,12 @@ public class MerchantInfoInsertPageTest extends SuperTest{
 		return data.getDataBeanArray();
 	}
 	
-	/**
-	 * @param merchantInfoBean
-	 * 测试商户信息新增
-	 * 
-	 */
 	@Test(dataProvider="merchantInfoInsert")
 	public void testMerchantInfoInsert(MerchantInfoBean merchantInfoBean) {
-		//跳转商户新增页
+		
 		merchentInfoInsertPage.navigateTo(URL);
 //		merchentInfoInsertPage.set1BasicInfo();
 //			merchentInfoInsertPage.set11BasicInofInsertArea();
-		
-		//设置商户基本信息
 				merchentInfoInsertPage.set111A_MerchantType(merchantInfoBean.getA_MerchantType());
 				
 				merchentInfoInsertPage.set112A_MerchantName(merchantInfoBean.getA_MerchantName());
@@ -73,11 +66,11 @@ public class MerchantInfoInsertPageTest extends SuperTest{
 				merchentInfoInsertPage.set118A_Business_Address(merchantInfoBean.getA_Business_Address());
 				
 			merchentInfoInsertPage.set11BasicInofInsertArea();
-			//设置开户许可证
+			
 			merchentInfoInsertPage.set12Account_Permits();
 			
 				merchentInfoInsertPage.set121A_Account_Permits(merchantInfoBean.getA_Account_Permits());
-			//设置营业执照
+				
 			merchentInfoInsertPage.set13BusOrgTaxCorpInsertArea();
 			
 				merchentInfoInsertPage.set131A_Merchant_Property(merchantInfoBean.getA_Merchant_Property());
@@ -131,7 +124,7 @@ public class MerchantInfoInsertPageTest extends SuperTest{
 						
 			//菜单太长，需要回收
 			merchentInfoInsertPage.set13BusOrgTaxCorpInsertArea();
-		//设置门店信息		
+				
 		merchentInfoInsertPage.set2StoreInfo();
 				merchentInfoInsertPage.set21B_StoreName(merchantInfoBean.getB_StoreName());
 				
@@ -142,9 +135,9 @@ public class MerchantInfoInsertPageTest extends SuperTest{
 				merchentInfoInsertPage.set24B_Store_PhoneNO(merchantInfoBean.getB_Store_PhoneNO());
 				
 				merchentInfoInsertPage.set25B_Business_Hours(merchantInfoBean.getB_Business_Hours());
-		//设置商户人员信息		
+				
 		merchentInfoInsertPage.set3StaffInfo();
-			//设置实际控制人信息
+		
 			merchentInfoInsertPage.set32ControllerInfo();
 			
 				merchentInfoInsertPage.set321C_Controller_Type(merchantInfoBean.getC_Controller_Type());
@@ -158,7 +151,7 @@ public class MerchantInfoInsertPageTest extends SuperTest{
 				merchentInfoInsertPage.set325C_ControlleID_StartDate(merchantInfoBean.getC_ControlleID_StartDate());
 				
 				merchentInfoInsertPage.set325C_ControlleID_ExpiredDate(merchantInfoBean.getC_ControlleID_ExpiredDate());
-			//设置实际控股人信息	
+				
 			merchentInfoInsertPage.set33Stakeholder();
 			
 				merchentInfoInsertPage.set331C_Stakeholder_Type(merchantInfoBean.getC_Stakeholder_Type());
@@ -174,7 +167,7 @@ public class MerchantInfoInsertPageTest extends SuperTest{
 				merchentInfoInsertPage.set335C_Stakeholder_ExpiredDate(merchantInfoBean.getC_Stakeholder_ExpiredDate());
 				
 			merchentInfoInsertPage.set33Stakeholder();
-		//设置协议人信息	
+			
 		merchentInfoInsertPage.set4AggreementInfo();
 		
 				merchentInfoInsertPage.set41D_Introduce_Channel(merchantInfoBean.getD_Introduce_Channel());
@@ -201,15 +194,15 @@ public class MerchantInfoInsertPageTest extends SuperTest{
 							
 							//向下翻页
 							merchentInfoInsertPage.doPageUp();
-		//发票					
+							
 		merchentInfoInsertPage.set5InvoiceInfo();
 		
-		//对账单
+		
 		merchentInfoInsertPage.set6ReconciliationInfo();
 		
-		//影像
+		
 		merchentInfoInsertPage.set7PhotocopyRes();
-		//设置附加信息
+		
 		merchentInfoInsertPage.set8AdditionInfo();
 		
 				merchentInfoInsertPage.set81H_MerchantAdminName(merchantInfoBean.getH_MerchantAdminName());
