@@ -5,6 +5,7 @@ import static org.testng.Assert.assertTrue;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.testng.Reporter;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -46,38 +47,45 @@ public class MerchantSettlementPageTest extends SuperTest{
 		return data.getDataBeanArray();
 	}
 	
+	/**
+	 * @param merchantSettlementBean
+	 * 商户结算信息新增
+	 */
 	@Test(dataProvider="SettlementInfo")
 	public void testMerchantSettlementInsert(MerchantSettlementBean merchantSettlementBean) {
+		//跳转商户结算页面
 		merchantSettlementPage.navigateTo(URL);
-		
+		//如果数据中商户号和商户名都为空，直接打断测试
 		if(merchantSettlementBean.getMerchantNO().equals("")
 				&&merchantSettlementBean.getMerchantName().equals("")) {
 			System.out.println("Both of NO and Name is null! Please check (SQLite--POP_Data_MerchantSettlement) ID= "+merchantSettlementBean.getID());
+			Reporter.log("Both of NO and Name is null! Please check (SQLite--POP_Data_MerchantSettlement) ID= "+merchantSettlementBean.getID());
+
 			assertTrue(false);
-		}else if(!merchantSettlementBean.getMerchantNO().equals("")) {
+		}//如果商户号为空，使用商户名去搜索商户
+		else if(!merchantSettlementBean.getMerchantNO().equals("")) {
 			merchantSettlementPage.setMerchantNO(merchantSettlementBean.getMerchantNO());
-		}else {
+		}//如果商户号不为空，设置商户号
+		else {
 			merchantSettlementPage.setMerchantNOByName(merchantSettlementBean.getMerchantName());
 		}
+		//查询结算信息
 		merchantSettlementPage.doQuery();
 		
+		//判断是否可以新增结算信息
 		String merchantNO=merchantSettlementPage.getMerchantNO();
-<<<<<<< HEAD
 		assertTrue(merchantSettlementPage.isSettlementInfoAddEnable()); 
-=======
-		 System.out.println(merchantNO);
-		 
-		assertTrue(merchantSettlementPage.isSettlementInfoAddEnable());
->>>>>>> refs/heads/master
 		
-		
+		//插入当前会计日期为下个结算日期
 		Map<String , Object > updateMap=new HashMap<>();
 		if(merchantSettlementBean.getNextSettlementDate().equals("")){
 			updateMap.put("NextSettlementDate", SingletonSet.CurrentAccountantDate.toString());
 		}
+		//插入当前会计日期为结算开始日期
 		if(merchantSettlementBean.getSettlement_StartDate().equals("")){
 			updateMap.put("Settlement_StartDate", SingletonSet.CurrentAccountantDate.toString());
 		}
+		//如果商户号为空，更新商户号
 		if(merchantSettlementBean.getMerchantNO().equals("")) {
 			updateMap.put("MerchantNO", merchantNO);
 		}
@@ -118,6 +126,7 @@ public class MerchantSettlementPageTest extends SuperTest{
 			DataBusiness.updateTestData("POP_Data_MerchantSettlement", updateMap2, whereMap2);
 		}else {
 			System.out.println(merchantSettlementPage.getNotice());
+			Reporter.log(merchantSettlementPage.getNotice());
 			assertTrue(false);
 		}
 		

@@ -22,7 +22,7 @@ public class MerchantFeeRatePageTest extends SuperTest{
 		URL=host.toString()+DataBusiness.getData_URL("pop_OnlineMerchantFeeRate");
 	} 
 	
-	@DataProvider(name="feeRate")
+	@DataProvider(name="feeRate") 
 	protected static Object[][] parametersPool(){
 		data.loadDataBeanList("POP_Data_MerchantFeeRate");
 		return data.getDataBeanArray();
