@@ -44,6 +44,7 @@ public class LoginPageTest extends SuperTest{
 		String code_SMS = loginPage.getCode_SMS(operBean.getMobileNO());
 		loginPage.setCode_SMS(code_SMS);
 		loginPage.doLogin();
-		SingletonSet.CurrentAccountantDate.append(loginPage.getCurrentAccountantDate());
+		if(SingletonSet.CurrentAccountantDate.toString().equals(""))
+			SingletonSet.CurrentAccountantDate.append(loginPage.getCurrentAccountantDate());
 	}
 }
