@@ -5,7 +5,7 @@
 	<parameter name="environment" value="pop_uat"></parameter>
 
 	<test thread-count="5" name="MerchantInfoInsert">
-		<parameter name="OperID" value="T00105"></parameter>
+		<parameter name="OperID" value="T00105"></parameter> 
 		<classes>
 			<class name="com.dy.AutoTest.web.actions.SingletonSet"></class>
 			<class
