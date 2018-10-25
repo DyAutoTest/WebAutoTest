@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MerchantSettlementInsertAuditPass"
+<testsuite name="MerchantInfoInsertAuditPass"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="3.730">
+           time="8.354">
   <properties />
   
   
-            <testcase name="testLogin" time="3.730" classname="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest" />
+            <testcase name="testLogin" time="8.354" classname="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest" />
       
 </testsuite>
