@@ -9,6 +9,7 @@ import com.dy.AutoTest.OperationPlatform.POJO.MerchantAuditBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantFeeRateBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantSettlementBean;
+import com.dy.AutoTest.OperationPlatform.POJO.OnlineCashierB2CBean;
 import com.dy.AutoTest.OperationPlatform.POJO.OperBean;
 import com.dy.AutoTest.web.beans.Data_URLBean;
 import com.dy.AutoTest.web.dao.TestingDao;
@@ -107,6 +108,9 @@ public class DataBusiness {
 			case "POP_Data_Oper":
 				pojo=(T)testingDao.getData(tableName,ID,OperBean.class);
 				return pojo;
+			case "Online_Data_Cashier_B2C":
+				pojo=(T)testingDao.getData(tableName,ID,OnlineCashierB2CBean.class);
+				return pojo;
 			case "Data_URL":
 				data_URLBean=new Data_URLBean();
 				break;
@@ -170,6 +174,9 @@ public class DataBusiness {
 			break;
 		case "Data_URL":
 			data_URLBean=new Data_URLBean();
+			break;
+		case "Online_Data_Cashier_B2C":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,OnlineCashierB2CBean.class)); 
 			break;
 		default:
 			System.out.println("table is not exist! Please check!");
