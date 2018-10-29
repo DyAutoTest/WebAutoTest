@@ -3,12 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.dy.AutoTest.web.util.test.JdbcUtilTest">
+      <class name="com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2CTest">
         <methods>
-          <include name="findMoreResultViaSqlite"/>
-          <include name="releaseConn"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="init"/>
+          <include name="afterMethod"/>
+          <include name="BeforeTest"/>
+          <include name="testOnlineCashierB2C"/>
+          <include name="AfterTest"/>
         </methods>
-      </class> <!-- com.dy.AutoTest.web.util.test.JdbcUtilTest -->
+      </class> <!-- com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2CTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
