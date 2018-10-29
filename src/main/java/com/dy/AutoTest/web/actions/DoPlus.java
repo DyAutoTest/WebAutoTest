@@ -51,6 +51,7 @@ public class DoPlus{
 	}
 	
 	public boolean isDisplayed(String locationName) {
+		
 		return driver.findElement(By.xpath(locator.getXPath(locationName))).isDisplayed();
 	}
 	

@@ -56,7 +56,8 @@ public class JdbcUtil {
 		USERNAME=jdbcUtilsConfig.getValue(databaseName+"_name");
 		PASSWORD=jdbcUtilsConfig.getValue(databaseName+"_password");
 		DRIVER=jdbcUtilsConfig.getValue(databaseName+"_driver");
-		URL=jdbcUtilsConfig.getValue(databaseName+"_url");
+		URL=String.format(jdbcUtilsConfig.getValue(databaseName+"_url"), projectpath);
+
 		 try {
 			Class.forName(DRIVER).newInstance();
 			System.out.println("connect "+databaseName+" database success!");
