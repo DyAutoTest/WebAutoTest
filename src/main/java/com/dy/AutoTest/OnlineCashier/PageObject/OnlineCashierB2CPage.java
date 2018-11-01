@@ -123,7 +123,7 @@ public class OnlineCashierB2CPage extends SuperPage{
 	 * 
 	 */
 	public void setPaymentPassword(String PaymentPassword) {
-		du.waitFor(6000);
+		du.waitFor(10000);
 		
 	}
 	
