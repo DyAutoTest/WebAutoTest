@@ -5,6 +5,7 @@ import static org.testng.Assert.assertTrue;
 import java.util.List;
 import java.util.Map;
 
+import com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2BBean;
 import com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2CBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantAuditBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantFeeRateBean;
@@ -32,6 +33,7 @@ public class DataBusiness {
 	private MerchantSettlementBean MerchantSettlementBean;
 	private MerchantFeeRateBean MerchantFeeRateBean;
 	private OnlineCashierB2CBean OnlineCashierB2CBean;
+	private OnlineCashierB2BBean OnlineCashierB2BBean;
 	
 	private List<Object> list;
 	
@@ -112,6 +114,9 @@ public class DataBusiness {
 			case "Online_Data_Cashier_B2C":
 				pojo=(T)testingDao.getData(tableName,ID,OnlineCashierB2CBean.class);
 				return pojo;
+			case "Online_Data_Cashier_B2B":
+				pojo=(T)testingDao.getData(tableName,ID,OnlineCashierB2BBean.class);
+				return pojo;
 			case "Data_URL":
 				data_URLBean=new Data_URLBean();
 				break;
@@ -175,6 +180,9 @@ public class DataBusiness {
 			break;
 		case "Online_Data_Cashier_B2C":
 			list=BaseUtil.toObject(testingDao.getDataList(tableName,OnlineCashierB2CBean.class));
+			break;
+		case "Online_Data_Cashier_B2B":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,OnlineCashierB2BBean.class));
 			break;
 		case "Data_URL":
 			data_URLBean=new Data_URLBean();

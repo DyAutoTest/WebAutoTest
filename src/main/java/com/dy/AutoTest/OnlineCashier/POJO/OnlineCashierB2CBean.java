@@ -6,13 +6,16 @@ public class OnlineCashierB2CBean implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
 	
-	private int ID					;
+	private int ID                  ;
 	private String CaseNO              ;
 	private String MerchantNO          ;
 	private String CertificatePassword ;
 	private String MobileNO            ;
 	private String Amount              ;
 	private String PaymentType         ;
+	private String Quick_CardIndex     ;
+	private String EBank_CardNO        ;
+	private String EBank_SMS           ;
 	private String OrderDate           ;
 	private String CardType            ;
 	private String MerchantOrderNO     ;
@@ -24,24 +27,9 @@ public class OnlineCashierB2CBean implements Serializable{
 	private String Validity            ;
 	private String ValidityUnit        ;
 	private String UserBindFlag        ;
-	private String PaymentPassword        ;
-	private String PaymentChannel        ;
+	private String PaymentPassword     ;
 	
 	
-	
-	
-	public String getPaymentPassword() {
-		return PaymentPassword;
-	}
-	public void setPaymentPassword(String paymentPassword) {
-		PaymentPassword = paymentPassword;
-	}
-	public String getPaymentChannel() {
-		return PaymentChannel;
-	}
-	public void setPaymentChannel(String paymentChannel) {
-		PaymentChannel = paymentChannel;
-	}
 	public int getID() {
 		return ID;
 	}
@@ -83,6 +71,24 @@ public class OnlineCashierB2CBean implements Serializable{
 	}
 	public void setPaymentType(String paymentType) {
 		PaymentType = paymentType;
+	}
+	public String getQuick_CardIndex() {
+		return Quick_CardIndex;
+	}
+	public void setQuick_CardIndex(String quick_CardIndex) {
+		Quick_CardIndex = quick_CardIndex;
+	}
+	public String getEBank_CardNO() {
+		return EBank_CardNO;
+	}
+	public void setEBank_CardNO(String eBank_CardNO) {
+		EBank_CardNO = eBank_CardNO;
+	}
+	public String getEBank_SMS() {
+		return EBank_SMS;
+	}
+	public void setEBank_SMS(String eBank_SMS) {
+		EBank_SMS = eBank_SMS;
 	}
 	public String getOrderDate() {
 		return OrderDate;
@@ -150,6 +156,14 @@ public class OnlineCashierB2CBean implements Serializable{
 	public void setUserBindFlag(String userBindFlag) {
 		UserBindFlag = userBindFlag;
 	}
+	public String getPaymentPassword() {
+		return PaymentPassword;
+	}
+	public void setPaymentPassword(String paymentPassword) {
+		PaymentPassword = paymentPassword;
+	}
+
+
 	
 	
 }
