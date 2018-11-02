@@ -38,14 +38,15 @@ public class OnlineCashierB2BPage extends SuperPage{
 		du.what("B2B").click();
 	}
 
-	public String getMerchantRequestNO() {
-		return du.what("MerchantRequestNO").getAttribute("value");
+	public void setMerchantRequestNO(String MerchantRequestNO) {
+		du.what("MerchantRequestNO").clear();
+		du.what("MerchantRequestNO").sendKeys(MerchantRequestNO);
 	}
 	
-/*	public void setOrderNO(String OrderNO) {
+	public void setOrderNO(String OrderNO) {
 		du.what("OrderNO").clear();
 		du.what("OrderNO").sendKeys(OrderNO);
-	}*/
+	}
 	
 	public void setReceiptMerchantNO(String ReceiptMerchantNO) {
 		du.what("ReceiptMerchantNO").clear();

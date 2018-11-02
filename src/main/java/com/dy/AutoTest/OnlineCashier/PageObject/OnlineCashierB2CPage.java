@@ -197,7 +197,7 @@ public class OnlineCashierB2CPage extends SuperPage{
 			}
 			
 			public void doEBank_GetUnionpaySMS() {
-				du.waitForElementPresent("EBank_UnionpaySMS");
+				du.waitForElementPresent("EBank_GetUnionpaySMS");
 				du.what("EBank_GetUnionpaySMS").click();
 			}
 			

@@ -40,22 +40,22 @@ public class OnlineCashierB2BTest extends SuperTest{
 		wait.waitFor(500);
 		OnlineCashierB2BPage.GoToB2B();
 		
-		String merchantRequestNO=OnlineCashierB2BPage.getMerchantRequestNO();
-//		OnlineCashierB2BPage.setOrderNO(OnlineCashierB2BBean.getOrderNO());
+		OnlineCashierB2BPage.setMerchantRequestNO(OnlineCashierB2BBean.getMerchantRequestNO());
+		OnlineCashierB2BPage.setOrderNO(OnlineCashierB2BBean.getOrderNO());
 		OnlineCashierB2BPage.setReceiptMerchantNO(OnlineCashierB2BBean.getReceiptMerchantNO());
 		OnlineCashierB2BPage.setOrderAmount(OnlineCashierB2BBean.getOrderAmount());
 		OnlineCashierB2BPage.setPaymentAmout(OnlineCashierB2BBean.getPaymentAmout());
-//		ReceiptMerchantType : M代表多笔交易，O代表单笔交易
+		//ReceiptMerchantType : M代表多笔交易，O代表单笔交易
 		OnlineCashierB2BPage.setReceiptMerchantType(OnlineCashierB2BBean.getReceiptMerchantType());
 		
 		OnlineCashierB2BPage.doSubOrderAdd();
 		
-		OnlineCashierB2BPage.setSub1OrderNO("D"+merchantRequestNO+"1");
+		OnlineCashierB2BPage.setSub1OrderNO(OnlineCashierB2BBean.getSub1OrderNO());
 		OnlineCashierB2BPage.setSub1OrderAmount(OnlineCashierB2BBean.getSub1OrderAmount());
 		OnlineCashierB2BPage.setSub1PaymentAmount(OnlineCashierB2BBean.getSub1PaymentAmount());
 		OnlineCashierB2BPage.setSub1ReceiptMerchantNO(OnlineCashierB2BBean.getSub1ReceiptMerchantNO());
 		
-		OnlineCashierB2BPage.setSub2OrderNO("D"+merchantRequestNO+"2");
+		OnlineCashierB2BPage.setSub2OrderNO(OnlineCashierB2BBean.getSub2OrderNO());
 		OnlineCashierB2BPage.setSub2OrderAmount(OnlineCashierB2BBean.getSub2OrderAmount());
 		OnlineCashierB2BPage.setSub2PaymentAmount(OnlineCashierB2BBean.getSub2PaymentAmount());
 		OnlineCashierB2BPage.setSub2ReceiptMerchantNO(OnlineCashierB2BBean.getSub2ReceiptMerchantNO());
