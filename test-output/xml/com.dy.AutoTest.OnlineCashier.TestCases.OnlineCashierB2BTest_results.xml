@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="OnlineCashierB2B"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="52.577">
+  <properties />
+  
+  
+            <testcase name="testOnlineCashierB2B" time="30.278" classname="com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest" />
+                <testcase name="testOnlineCashierB2B" time="22.299" classname="com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest" />
+      
+</testsuite>

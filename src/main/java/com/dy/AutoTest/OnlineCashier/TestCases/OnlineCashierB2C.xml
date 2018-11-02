@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="OnlineCashierB2C">
-	<parameter name="browserCategory" value="firefox"></parameter>
+	<parameter name="browserCategory" value="chrome"></parameter>
 	<parameter name="environment" value="online_simulator_uat"></parameter>
 
 	<test thread-count="5" name="OnlineCashierB2C">
