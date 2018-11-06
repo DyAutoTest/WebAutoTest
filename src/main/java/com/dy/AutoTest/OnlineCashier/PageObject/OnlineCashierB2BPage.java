@@ -4,9 +4,6 @@ import org.openqa.selenium.WebDriver;
 
 import com.dy.AutoTest.OperationPlatform.PageObject.SuperPage;
 import com.dy.AutoTest.web.actions.DoPlus;
-import com.dy.AutoTest.web.business.OperBusiness;
-import com.dy.AutoTest.web.dao.OperDao;
-import com.dy.AutoTest.web.dao.impl.OperDaoImpl;
 
 public class OnlineCashierB2BPage extends SuperPage{
 	
@@ -43,6 +40,10 @@ public class OnlineCashierB2BPage extends SuperPage{
 		du.what("MerchantRequestNO").sendKeys(MerchantRequestNO);
 	}
 	
+	public String getMerchantRequestNO() {
+		return du.what("MerchantRequestNO").getAttribute("value");
+	}
+	
 	public void setOrderNO(String OrderNO) {
 		du.what("OrderNO").clear();
 		du.what("OrderNO").sendKeys(OrderNO);
@@ -65,57 +66,57 @@ public class OnlineCashierB2BPage extends SuperPage{
 	
 	public void doSubOrderAdd() {
 		du.what("SubOrderAdd").click();
+		du.waitFor(1000);
 	}
 	
 	public void setReceiptMerchantType(String ReceiptMerchantType) {
 		du.whatSelect("ReceiptMerchantType").selectByValue(ReceiptMerchantType);
 	}
 	
-	public void setSub1OrderNO(String Sub1OrderNO) {
-		du.what("Sub1OrderNO").clear();
-		du.what("Sub1OrderNO").sendKeys(Sub1OrderNO);
+	public void setSubOrderNO(String SubOrderNO,int index) {
+		du.what("SubOrderNO", String.valueOf(index+2)).clear();
+		du.what("SubOrderNO", String.valueOf(index+2)).sendKeys(SubOrderNO);
 	}
 	
-	public void setSub1OrderAmount(String Sub1OrderAmount) {
-		du.what("Sub1OrderAmount").clear();
-		du.what("Sub1OrderAmount").sendKeys(Sub1OrderAmount);
+	public void setSubOrderAmount(String SubOrderAmount,int index) {
+		du.what("SubOrderAmount", String.valueOf(index+2)).clear();
+		du.what("SubOrderAmount", String.valueOf(index+2)).sendKeys(SubOrderAmount);
 	}
 	
-	public void setSub1PaymentAmount(String Sub1PaymentAmount) {
-		du.what("Sub1PaymentAmount").clear();
-		du.what("Sub1PaymentAmount").sendKeys(Sub1PaymentAmount);
+	public void setSubPaymentAmount(String SubPaymentAmount,int index) {
+		du.what("SubPaymentAmount", String.valueOf(index+2)).clear();
+		du.what("SubPaymentAmount", String.valueOf(index+2)).sendKeys(SubPaymentAmount);
 	}
 	
-	public void setSub1ReceiptMerchantNO(String Sub1ReceiptMerchantNO) {
-		du.what("Sub1ReceiptMerchantNO").clear();
-		du.what("Sub1ReceiptMerchantNO").sendKeys(Sub1ReceiptMerchantNO);
+	public void setSubReceiptMerchantNO(String SubReceiptMerchantNO,int index) {
+		du.what("SubReceiptMerchantNO", String.valueOf(index+2)).clear();
+		du.what("SubReceiptMerchantNO", String.valueOf(index+2)).sendKeys(SubReceiptMerchantNO);
 	}
 	
-	public void setSub2OrderNO(String Sub2OrderNO) {
-		du.what("Sub2OrderNO").clear();
-		du.what("Sub2OrderNO").sendKeys(Sub2OrderNO);
-	}
-	
-	public void setSub2OrderAmount(String Sub2OrderAmount) {
-		du.what("Sub2OrderAmount").clear();
-		du.what("Sub2OrderAmount").sendKeys(Sub2OrderAmount);
-	}
-	
-	public void setSub2PaymentAmount(String Sub2PaymentAmount) {
-		du.what("Sub2PaymentAmount").clear();
-		du.what("Sub2PaymentAmount").sendKeys(Sub2PaymentAmount);
-	}
-	
-	public void setSub2ReceiptMerchantNO(String Sub2ReceiptMerchantNO) {
-		du.what("Sub2ReceiptMerchantNO").clear();
-		du.what("Sub2ReceiptMerchantNO").sendKeys(Sub2ReceiptMerchantNO);
-	}
-	
+		
 	public void doSubmit() {
 		du.what("Button_Submit").click();
 	}
 	public void doSubmit2() {
 		du.what("Button_Submit2").click();
+	}
+	
+	
+	/**
+	 * @return
+	 * 
+	 * 订单错误页面
+	 */
+	public boolean isOrderError() {
+		return du.isDisplayed("OrderError");
+	}
+	
+	public String getOrderErrorDetail() {
+		return du.what("OrderErrorDetail").getText();
+	}
+	
+	public void waitForOnlineCashier() {
+		du.waitForElementPresent("EnterpriseEBank");
 	}
 	
 	/**
@@ -142,6 +143,7 @@ public class OnlineCashierB2BPage extends SuperPage{
 			
 			public void setEBank_CardNO(String EBank_CardNO) {
 				du.waitForElementPresent("PersonalEBank__UnionpayCard");
+				du.what("PersonalEBank__UnionpayCard").clear(); 
 				du.what("PersonalEBank__UnionpayCard").sendKeys(EBank_CardNO);
 			}
 			

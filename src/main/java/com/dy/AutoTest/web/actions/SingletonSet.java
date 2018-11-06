@@ -35,7 +35,7 @@ public class SingletonSet {
 		driver = browser.getWebDriver();
 		wait = new Wait(driver);
 		du = new DoPlus(driver);
-		du.waitTime = 300;
+		du.waitTime = 500;
 	}
 
 	@AfterSuite
