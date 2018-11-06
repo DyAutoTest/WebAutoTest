@@ -1,0 +1,8 @@
+此为OnlineCashier（线上收银台）分支
+
+该分支不同于主分支的为：
+	线上收银台的“退出浏览器”功能做到配置文件中
+		修改SingleSet、OnlineCashierB2BTest、OnlineCashierB2CTest三个类代码
+		维护了OnlineCashierB2B.xml、OnlineCashierB2C.xml配置文件
+	线上收银台清除了无关收银台业务的数据表
+	线上收银台因银联测试环境原因，测试间隔时间调成500毫秒
