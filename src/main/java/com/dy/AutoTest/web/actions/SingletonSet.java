@@ -39,10 +39,16 @@ public class SingletonSet {
 	}
 
 	@AfterSuite
-	public void releaseBrowser() {
+	public void releaseJDBC() {
 		wait.waitFor(2000);
 		jdbcUtil_sqlite.releaseConn();
 		jdbcUtil_oracle.releaseConn();
-		driver.quit();
+//		driver.quit();
 	}
+//	
+//	@AfterSuite(dependsOnMethods="releaseJDBC")
+//	public void releaseBrowser() {
+//		wait.waitFor(1000);
+//		driver.quit();
+//	}
 }

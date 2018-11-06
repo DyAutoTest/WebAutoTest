@@ -12,6 +12,8 @@
 				name="com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2CTest">
 				<methods>
 					<include name="testOnlineCashierB2C" />
+					<!--关闭浏览器  -->
+					<include name="quitBrowser" />
 				</methods>
 			</class> 
 		</classes>
