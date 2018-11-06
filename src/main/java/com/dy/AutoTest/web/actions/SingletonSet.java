@@ -35,14 +35,20 @@ public class SingletonSet {
 		driver = browser.getWebDriver();
 		wait = new Wait(driver);
 		du = new DoPlus(driver);
-		du.waitTime = 500;
+		du.waitTime = 300;
 	}
 
 	@AfterSuite
-	public void releaseBrowser() {
+	public void releaseJDBC() {
 		wait.waitFor(2000);
 		jdbcUtil_sqlite.releaseConn();
 		jdbcUtil_oracle.releaseConn();
 		driver.quit();
 	}
+//	
+//	@AfterSuite(dependsOnMethods="releaseJDBC")
+//	public void releaseBrowser() {
+//		wait.waitFor(1000);
+//		driver.quit();
+//	}
 }

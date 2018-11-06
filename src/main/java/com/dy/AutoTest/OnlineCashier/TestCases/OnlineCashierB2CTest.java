@@ -128,7 +128,10 @@ public class OnlineCashierB2CTest extends SuperTest{
 			Reporter.log("支付失败");
 			assertTrue(false,"Pay failed");
 		}
-		
-		
 	}
+	
+//	@Test
+//	public void quitBrowser() {
+//		driver.quit();
+//	}
 }
