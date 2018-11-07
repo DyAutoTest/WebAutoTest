@@ -15,7 +15,7 @@ public class OnlineCashierB2BPage extends SuperPage{
 		du=new DoPlus(driver);
 		du.waitTime=waitTime;
 		du.loadLocator("Online_Loc_Cashier_B2B");
-	}
+	} 
 	
 	public void setMerchantNO(String MerchantNO) {
 		du.what("MerchantNO").clear();

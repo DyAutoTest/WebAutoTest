@@ -37,7 +37,7 @@ public class OnlineCashierB2BTest extends SuperTest{
 		return data.getDataBeanArray();
 	}
 	
-	@Test(dataProvider="B2B")
+	@Test(dataProvider="B2B",description="收银台-B2B收款")
 	public void testOnlineCashierB2B(OnlineCashierB2BBean OnlineCashierB2BBean) {
 		OnlineCashierB2BPage.navigateTo(URL);
 		
