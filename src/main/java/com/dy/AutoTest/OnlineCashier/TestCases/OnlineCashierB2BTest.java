@@ -117,7 +117,10 @@ public class OnlineCashierB2BTest extends SuperTest{
 			break;
 		case "P":	//个人网银支付
 			OnlineCashierB2BPage.doPersonalEBank();
-			OnlineCashierB2BPage.doChoosePersonalEBank();
+			if(OnlineCashierB2BBean.getEBank_CardNO().equals(""))
+				OnlineCashierB2BPage.doChoosePersonalEBankPayment();
+			else
+				OnlineCashierB2BPage.doChoosePersonalEBank();
 			OnlineCashierB2BPage.doPayment();
 			switch1.toSpecificWindow("银联在线支付");
 			OnlineCashierB2BPage.setEBank_CardNO(OnlineCashierB2BBean.getEBank_CardNO());

@@ -19,9 +19,15 @@ public class OnlineCashierB2BBean implements Serializable{
 	private String PaymentType;
 	private String EBank_SMS;
 	private String EBank_CardNO;
+	private String Preparation;
 	
 	
-	
+	public String getPreparation() {
+		return Preparation;
+	}
+	public void setPreparation(String preparation) {
+		Preparation = preparation;
+	}
 	public int getID() {
 		return ID;
 	}
