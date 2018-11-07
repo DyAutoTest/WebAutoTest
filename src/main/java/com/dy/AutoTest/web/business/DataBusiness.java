@@ -5,6 +5,7 @@ import static org.testng.Assert.assertTrue;
 import java.util.List;
 import java.util.Map;
 
+import com.dy.AutoTest.OperationPlatform.POJO.UserInfoQueryBean;
 import com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2BBean;
 import com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2CBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantAuditBean;
@@ -34,6 +35,7 @@ public class DataBusiness {
 	private MerchantFeeRateBean MerchantFeeRateBean;
 	private OnlineCashierB2CBean OnlineCashierB2CBean;
 	private OnlineCashierB2BBean OnlineCashierB2BBean;
+	private UserInfoQueryBean UserInfoQueryBean;
 	
 	private List<Object> list;
 	
@@ -75,6 +77,11 @@ public class DataBusiness {
 			case "POP_Data_MerchantOper":
 				
 				break;
+				
+			case "POP_Data_UserInfoQuery":
+				UserInfoQueryBean=new UserInfoQueryBean();
+				break;
+				
 			case "POP_Data_Oper":
 				operBean=new OperBean();
 				break;
@@ -108,6 +115,10 @@ public class DataBusiness {
 			case "POP_Data_MerchantOper":
 				
 				break;
+			case "POP_Data_UserInfoQuery":
+				System.out.println(tableName);
+				pojo=(T)testingDao.getData(tableName,ID,UserInfoQueryBean.class);
+				return pojo;
 			case "POP_Data_Oper":
 				pojo=(T)testingDao.getData(tableName,ID,OperBean.class);
 				return pojo;
@@ -175,6 +186,10 @@ public class DataBusiness {
 		case "POP_Data_MerchantOper":
 			
 			break;
+			
+		case "POP_Data_UserInfoQuery":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,UserInfoQueryBean.class));
+			break;		
 		case "POP_Data_Oper":
 			list=BaseUtil.toObject(testingDao.getDataList(tableName,OperBean.class));
 			break;
