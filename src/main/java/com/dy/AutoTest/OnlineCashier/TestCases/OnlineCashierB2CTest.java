@@ -30,7 +30,7 @@ public class OnlineCashierB2CTest extends SuperTest{
 		return data.getDataBeanArray();
 	}
 	
-	@Test(dataProvider="B2C")
+	@Test(dataProvider="B2C",description="收银台-B2C消费")
 	public void testOnlineCashierB2C(OnlineCashierB2CBean OnlineCashierB2CBean) {
 		OnlineCashierB2CPage.navigateTo(URL);
 		
