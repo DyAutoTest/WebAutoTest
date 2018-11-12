@@ -95,6 +95,25 @@ public class MerchantAuditPageTest extends SuperTest{
 						assertTrue(false);
 					}
 				} 
+				if(AuditID.equals("2")){
+					String merchantName=merchantAuditPage.getMerchantName();
+					merchantAuditPage.setAuditComment("Pass");
+					merchantAuditPage.doPass();
+					if(merchantAuditPage.getNotice().equals("商户资料通过复核！")) {
+						MerchantDao merchantDaoImpl=new MerchantDaoImpl();
+						MerchantBusiness merchantBusiness=new MerchantBusiness(merchantDaoImpl);
+						String merchantNO=merchantBusiness.getMerchantNOByName(merchantName);
+						
+						Reporter.log("MerchantNO: "+merchantNO+" 商户基本资料新增审核通过");
+						i--;
+					}else {
+						System.out.println(merchantAuditPage.getNotice());
+						Reporter.log(merchantAuditPage.getNotice());
+						wait.waitFor(500);
+						merchantAuditPage.doCancel();
+						assertTrue(false);
+					}
+				} 
 				//如果是商户结算信息新增审核
 				if(AuditID.equals(("6"))){
 					String merchantNO=merchantAuditPage.getSettlementMerchantNO();
@@ -187,7 +206,7 @@ public class MerchantAuditPageTest extends SuperTest{
 				merchantAuditPage.selectRadio(i);
 				merchantAuditPage.doAudit();
 				//如果是商户新增审核或商户修改
-				if(AuditID.equals("1")||AuditID.equals(("2"))){
+				if(AuditID.equals("1")){
 					String merchantName=merchantAuditPage.getMerchantName();
 					merchantAuditPage.setAuditComment("Refuse");
 					merchantAuditPage.doRefuse();
@@ -208,6 +227,23 @@ public class MerchantAuditPageTest extends SuperTest{
 						assertTrue(false);
 					}
 				}
+				//如果是商户新增审核或商户修改
+				if(AuditID.equals(("2"))){
+					merchantAuditPage.setAuditComment("Refuse");
+					merchantAuditPage.doRefuse();
+					if(merchantAuditPage.getNotice().equals("审核状态更新成功！")) {
+						System.out.println(" 商户信息拒绝审核成功");
+						Reporter.log(" 商户信息拒绝审核成功");
+						i--;
+					}else {
+						System.out.println(merchantAuditPage.getNotice());
+						Reporter.log(merchantAuditPage.getNotice());
+						wait.waitFor(500);
+						merchantAuditPage.doCancel();
+						assertTrue(false);
+					}
+				}
+				
 				//如果是商户结算信息新增审核或修改
 				if(AuditID.equals("5")||AuditID.equals(("6"))){
 					String merchantNO=merchantAuditPage.getSettlementMerchantNO();

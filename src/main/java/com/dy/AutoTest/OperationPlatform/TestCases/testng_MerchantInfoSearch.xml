@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MerchantInfoSearch" >
+ 	<parameter name="browserCategory" value="firefox"></parameter>
+	<parameter name="environment" value="pop_uat"></parameter>
+	
+	<test thread-count="5" name="MerchantInfoSearch">
+	<parameter name="OperID" value="T00064"></parameter>
+		<classes>
+			<class
+				name="com.dy.AutoTest.web.actions.SingletonSet"></class>
+			<class
+				name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
+				<methods>
+					<include name="testLogin" />
+				</methods>
+			</class>
+			<class
+				name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest">
+				<methods>
+					<include name="testMerchantInfoSearch" />
+					<include name="testMerchantInfoDetail"></include>
+					<include name="testMerchantClose"></include>
+					<include name="testMerchantFrozen"></include>
+				</methods>
+			</class> 
+			<class
+				name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
+				<methods>
+					<include name="testQuit" />
+				</methods>
+			</class>
+		</classes>
+	</test> 
+	
+	<test thread-count="5" name="MerchantInfoAlter">
+	<parameter name="OperID" value="T00064"></parameter>
+		<classes>
+			<class
+				name="com.dy.AutoTest.web.actions.SingletonSet"></class>
+			<class
+				name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
+				<methods>
+					<include name="testLogin" />
+				</methods>
+			</class>
+			<class
+				name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest">
+				<methods>
+					<include name="testMerchantInfoAlter"></include>
+				</methods>
+			</class> 
+			<class
+				name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
+				<methods>
+					<include name="testQuit" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test thread-count="5" name="MerchantAuditPass">
+		<parameter name="OperID" value="T00107"></parameter>
+		<parameter name="AuditID" value="2"></parameter>
+		<classes>
+			<class
+				name="com.dy.AutoTest.web.actions.SingletonSet"></class>
+			<class
+				name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
+				<methods>
+					<include name="testLogin" />
+				</methods>
+			</class>
+			<class
+				name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest">
+				<methods>
+					<include name="testMerchantAuditPass" />
+				</methods>
+			</class>
+			<class
+				name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest">
+				<methods>
+					<include name="testMerchantInfoAlterVerify"></include>
+				</methods>
+			</class> 
+			<class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest"> 
+				<methods><include name="testQuit" /></methods> </class>
+		</classes>
+	</test> 
+	
+	
+<!-- 	<test thread-count="5" name="MerchantAuditRefuse">
+		<parameter name="OperID" value="T00107"></parameter>
+		<parameter name="AuditID" value="2"></parameter>
+	    <classes>
+	    	<class name="com.dy.AutoTest.web.actions.SingletonSet"></class>
+	      	<class name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
+				 <methods><include name="testLogin" /></methods>
+	   		</class>
+	   	  	<class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest">
+				<methods><include name="testMerchantAuditRefuse" /></methods>
+			</class>
+	   		<class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
+				 <methods><include name="testQuit" /></methods>
+	   		</class> 
+	    </classes>
+  	</test>  -->
+  
+  <listeners>
+           <listener class-name="org.uncommons.reportng.HTMLReporter" />
+           <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+ </listeners>
+
+</suite> <!-- SuiteOperationPlatform -->
