@@ -5,6 +5,8 @@ import static org.testng.Assert.assertTrue;
 import java.util.List;
 import java.util.Map;
 
+
+import com.dy.AutoTest.OperationPlatform.POJO.UserIncomeExpenditureDetailBean;
 import com.dy.AutoTest.OperationPlatform.POJO.UserInfoQueryBean;
 import com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2BBean;
 import com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2CBean;
@@ -13,6 +15,7 @@ import com.dy.AutoTest.OperationPlatform.POJO.MerchantFeeRateBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantSettlementBean;
 import com.dy.AutoTest.OperationPlatform.POJO.OperBean;
+import com.dy.AutoTest.OperationPlatform.POJO.UserAccountModifySearchBean;
 import com.dy.AutoTest.web.beans.Data_URLBean;
 import com.dy.AutoTest.web.dao.TestingDao;
 import com.dy.AutoTest.web.dao.impl.TestingDaoImpl;
@@ -36,6 +39,8 @@ public class DataBusiness {
 	private OnlineCashierB2CBean OnlineCashierB2CBean;
 	private OnlineCashierB2BBean OnlineCashierB2BBean;
 	private UserInfoQueryBean UserInfoQueryBean;
+	private UserAccountModifySearchBean UserAccountModifySearchBean;
+	private UserIncomeExpenditureDetailBean UserIncomeExpenditureDetailBean;
 	
 	private List<Object> list;
 	
@@ -116,8 +121,13 @@ public class DataBusiness {
 				
 				break;
 			case "POP_Data_UserInfoQuery":
-				System.out.println(tableName);
 				pojo=(T)testingDao.getData(tableName,ID,UserInfoQueryBean.class);
+				return pojo;
+			case "POP_Data_UserAccountModifySearch":
+				pojo=(T)testingDao.getData(tableName,ID,UserAccountModifySearchBean.class);
+				return pojo;
+			case "POP_Data_UserIncomeExpenditureDetail":
+				pojo=(T)testingDao.getData(tableName,ID,UserIncomeExpenditureDetailBean.class);
 				return pojo;
 			case "POP_Data_Oper":
 				pojo=(T)testingDao.getData(tableName,ID,OperBean.class);
@@ -189,7 +199,13 @@ public class DataBusiness {
 			
 		case "POP_Data_UserInfoQuery":
 			list=BaseUtil.toObject(testingDao.getDataList(tableName,UserInfoQueryBean.class));
-			break;		
+			break;
+		case "POP_Data_UserAccountModifySearch":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,UserAccountModifySearchBean.class));
+			break;
+		case "POP_Data_UserIncomeExpenditureDetail":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,UserIncomeExpenditureDetailBean.class));
+			break;
 		case "POP_Data_Oper":
 			list=BaseUtil.toObject(testingDao.getDataList(tableName,OperBean.class));
 			break;

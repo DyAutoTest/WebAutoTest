@@ -34,7 +34,8 @@ public class UserInfoQueryTest extends SuperTest{
 		return data.getDataBeanArray();
 	}
 	
-	@Test(dataProvider="pop_UserInfoQuery")
+
+	@Test(dataProvider="pop_UserInfoQuery",description="运营平台-用户资料查询")
 	public void testUserInfoQuery(UserInfoQueryBean UserInfoQueryBean) {
 		UserInfoQueryPage.navigateTo(URL);
 		
