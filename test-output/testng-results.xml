@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" ignored="5" total="8" passed="3">
 =======
 <testng-results skipped="0" failed="0" ignored="4" total="8" passed="4">
@@ -8,8 +9,12 @@
 =======
 <testng-results skipped="0" failed="0" ignored="4" total="7" passed="3">
 >>>>>>> refs/heads/UserIncomeExpenditureDetail
+=======
+<testng-results skipped="0" failed="0" ignored="4" total="7" passed="3">
+>>>>>>> refs/heads/UserAction
   <reporter-output>
     <line>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       <![CDATA[        2018-11-09 17:13:44): [Test]-"UserInfoQuery" is started]]>
@@ -19,8 +24,12 @@
 =======
       <![CDATA[        2018-11-12 16:15:35): [Test]-"UserIncomeExpenditureDetail" is started]]>
 >>>>>>> refs/heads/UserIncomeExpenditureDetail
+=======
+      <![CDATA[        2018-11-12 17:34:17): [Test]-"UserIncomeExpenditureDetail" is started]]>
+>>>>>>> refs/heads/UserAction
     </line>
     <line>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       <![CDATA[                2018-11-09 17:13:44: [Method]-"LoginPageTest.testLogin" is started]]>
@@ -30,8 +39,12 @@
 =======
       <![CDATA[                2018-11-12 16:15:35: [Method]-"LoginPageTest.testLogin" is started]]>
 >>>>>>> refs/heads/UserIncomeExpenditureDetail
+=======
+      <![CDATA[                2018-11-12 17:34:17: [Method]-"LoginPageTest.testLogin" is started]]>
+>>>>>>> refs/heads/UserAction
     </line>
     <line>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       <![CDATA[                2018-11-09 17:13:55: [Method]-"LoginPageTest.testLogin" is passed]]>
@@ -41,8 +54,12 @@
 =======
       <![CDATA[                2018-11-12 16:15:42: [Method]-"LoginPageTest.testLogin" is passed]]>
 >>>>>>> refs/heads/UserIncomeExpenditureDetail
+=======
+      <![CDATA[                2018-11-12 17:34:32: [Method]-"LoginPageTest.testLogin" is passed]]>
+>>>>>>> refs/heads/UserAction
     </line>
     <line>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       <![CDATA[                2018-11-09 17:13:57: [Method]-"UserInfoQueryTest.testUserInfoQuery" is started]]>
@@ -55,8 +72,15 @@
     <line>
       <![CDATA[                2018-11-12 16:16:11: [Method]-"UserIncomeExpenditureDetailTest.testUserIncomeExpenditureDetail" is passed]]>
 >>>>>>> refs/heads/UserIncomeExpenditureDetail
+=======
+      <![CDATA[                2018-11-12 17:34:34: [Method]-"UserActionTest.testUserAction" is started]]>
     </line>
     <line>
+      <![CDATA[                2018-11-12 17:34:39: [Method]-"UserActionTest.testUserAction" is passed]]>
+>>>>>>> refs/heads/UserAction
+    </line>
+    <line>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       <![CDATA[                2018-11-09 17:14:15: [Method]-"UserInfoQueryTest.testUserInfoQuery" is passed]]>
@@ -79,8 +103,12 @@
 =======
       <![CDATA[        2018-11-12 16:16:18): [Test]-"UserIncomeExpenditureDetail" is finished]]>
 >>>>>>> refs/heads/UserIncomeExpenditureDetail
+=======
+      <![CDATA[        2018-11-12 17:34:46): [Test]-"UserIncomeExpenditureDetail" is finished]]>
+>>>>>>> refs/heads/UserAction
     </line>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   <suite name="UserInfoQuery" duration-ms="37451" started-at="2018-11-09T09:13:44Z" finished-at="2018-11-09T09:14:22Z">
@@ -90,8 +118,12 @@
 =======
   <suite name="UserIncomeExpenditureDetail" duration-ms="43564" started-at="2018-11-12T08:15:35Z" finished-at="2018-11-12T08:16:18Z">
 >>>>>>> refs/heads/UserIncomeExpenditureDetail
+=======
+  <suite name="UserAction" duration-ms="29531" started-at="2018-11-12T09:34:17Z" finished-at="2018-11-12T09:34:46Z">
+>>>>>>> refs/heads/UserAction
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <test name="UserInfoQuery" duration-ms="37451" started-at="2018-11-09T09:13:44Z" finished-at="2018-11-09T09:14:22Z">
@@ -101,7 +133,11 @@
 =======
     <test name="UserIncomeExpenditureDetail" duration-ms="43564" started-at="2018-11-12T08:15:35Z" finished-at="2018-11-12T08:16:18Z">
 >>>>>>> refs/heads/UserIncomeExpenditureDetail
+=======
+    <test name="UserIncomeExpenditureDetail" duration-ms="29531" started-at="2018-11-12T09:34:17Z" finished-at="2018-11-12T09:34:46Z">
+>>>>>>> refs/heads/UserAction
       <class name="com.dy.AutoTest.web.actions.SingletonSet">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@61009542]" name="init" is-config="true" duration-ms="3378" started-at="2018-11-09T09:13:41Z" finished-at="2018-11-09T09:13:44Z">
@@ -111,6 +147,9 @@
 =======
         <test-method status="PASS" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@4d826d77]" name="init" is-config="true" duration-ms="3689" started-at="2018-11-12T08:15:31Z" finished-at="2018-11-12T08:15:35Z">
 >>>>>>> refs/heads/UserIncomeExpenditureDetail
+=======
+        <test-method status="PASS" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@61009542]" name="init" is-config="true" duration-ms="3872" started-at="2018-11-12T09:34:13Z" finished-at="2018-11-12T09:34:17Z">
+>>>>>>> refs/heads/UserAction
           <params>
             <param index="0">
               <value>
@@ -128,6 +167,7 @@
         </test-method> <!-- init -->
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <test-method status="PASS" signature="releaseJDBC()[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@61009542]" name="releaseJDBC" is-config="true" duration-ms="2763" started-at="2018-11-09T09:14:22Z" finished-at="2018-11-09T09:14:25Z">
 =======
         <test-method status="PASS" signature="releaseJDBC()[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@61009542]" name="releaseJDBC" is-config="true" duration-ms="2814" started-at="2018-11-12T03:00:33Z" finished-at="2018-11-12T03:00:36Z">
@@ -135,11 +175,15 @@
 =======
         <test-method status="PASS" signature="releaseJDBC()[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@4d826d77]" name="releaseJDBC" is-config="true" duration-ms="2772" started-at="2018-11-12T08:16:18Z" finished-at="2018-11-12T08:16:21Z">
 >>>>>>> refs/heads/UserIncomeExpenditureDetail
+=======
+        <test-method status="PASS" signature="releaseJDBC()[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@61009542]" name="releaseJDBC" is-config="true" duration-ms="2879" started-at="2018-11-12T09:34:46Z" finished-at="2018-11-12T09:34:49Z">
+>>>>>>> refs/heads/UserAction
           <reporter-output>
           </reporter-output>
         </test-method> <!-- releaseJDBC -->
       </class> <!-- com.dy.AutoTest.web.actions.SingletonSet -->
       <class name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@77e9807f]" name="BeforeTest" is-config="true" duration-ms="5" started-at="2018-11-09T09:13:44Z" finished-at="2018-11-09T09:13:44Z">
@@ -149,9 +193,13 @@
 =======
         <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@61009542]" name="BeforeTest" is-config="true" duration-ms="10" started-at="2018-11-12T08:15:35Z" finished-at="2018-11-12T08:15:35Z">
 >>>>>>> refs/heads/UserIncomeExpenditureDetail
+=======
+        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@77e9807f]" name="BeforeTest" is-config="true" duration-ms="6" started-at="2018-11-12T09:34:17Z" finished-at="2018-11-12T09:34:17Z">
+>>>>>>> refs/heads/UserAction
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                 <![CDATA[org.testng.TestRunner@15bc339]]>
@@ -161,11 +209,15 @@
 =======
                 <![CDATA[org.testng.TestRunner@84487f4]]>
 >>>>>>> refs/heads/UserIncomeExpenditureDetail
+=======
+                <![CDATA[org.testng.TestRunner@29006752]]>
+>>>>>>> refs/heads/UserAction
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
               <![CDATA[        2018-11-09 17:13:44): [Test]-"UserInfoQuery" is started]]>
@@ -175,9 +227,13 @@
 =======
               <![CDATA[        2018-11-12 16:15:35): [Test]-"UserIncomeExpenditureDetail" is started]]>
 >>>>>>> refs/heads/UserIncomeExpenditureDetail
+=======
+              <![CDATA[        2018-11-12 17:34:17): [Test]-"UserIncomeExpenditureDetail" is started]]>
+>>>>>>> refs/heads/UserAction
             </line>
           </reporter-output>
         </test-method> <!-- BeforeTest -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@77e9807f]" name="init" is-config="true" duration-ms="2" started-at="2018-11-09T09:13:44Z" finished-at="2018-11-09T09:13:44Z">
@@ -195,15 +251,23 @@
 =======
         <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@61009542]" name="init" is-config="true" duration-ms="6" started-at="2018-11-12T08:15:35Z" finished-at="2018-11-12T08:15:35Z">
 >>>>>>> refs/heads/UserIncomeExpenditureDetail
+=======
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@77e9807f]" name="init" is-config="true" duration-ms="3" started-at="2018-11-12T09:34:17Z" finished-at="2018-11-12T09:34:17Z">
+>>>>>>> refs/heads/UserAction
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@77e9807f]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-11-09T09:13:44Z" finished-at="2018-11-09T09:13:44Z">
+=======
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@77e9807f]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-11-12T09:34:17Z" finished-at="2018-11-12T09:34:17Z">
+>>>>>>> refs/heads/UserAction
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@77e9807f]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-11-09T09:13:44Z" finished-at="2018-11-09T09:13:44Z">
 =======
         <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@77e9807f]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-11-12T03:00:11Z" finished-at="2018-11-12T03:00:11Z">
@@ -211,6 +275,9 @@
 =======
         <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@61009542]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-11-12T08:15:35Z" finished-at="2018-11-12T08:15:35Z">
 >>>>>>> refs/heads/UserIncomeExpenditureDetail
+=======
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@77e9807f]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-11-12T09:34:17Z" finished-at="2018-11-12T09:34:17Z">
+>>>>>>> refs/heads/UserAction
           <params>
             <param index="0">
               <value>
@@ -222,6 +289,7 @@
             <line>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               <![CDATA[                2018-11-09 17:13:44: [Method]-"LoginPageTest.testLogin" is started]]>
 =======
               <![CDATA[                2018-11-12 11:00:11: [Method]-"LoginPageTest.testLogin" is started]]>
@@ -229,9 +297,13 @@
 =======
               <![CDATA[                2018-11-12 16:15:35: [Method]-"LoginPageTest.testLogin" is started]]>
 >>>>>>> refs/heads/UserIncomeExpenditureDetail
+=======
+              <![CDATA[                2018-11-12 17:34:17: [Method]-"LoginPageTest.testLogin" is started]]>
+>>>>>>> refs/heads/UserAction
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@77e9807f]" name="testLogin" duration-ms="10124" started-at="2018-11-09T09:13:44Z" finished-at="2018-11-09T09:13:55Z">
@@ -241,6 +313,9 @@
 =======
         <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@61009542]" name="testLogin" duration-ms="7219" started-at="2018-11-12T08:15:35Z" finished-at="2018-11-12T08:15:42Z">
 >>>>>>> refs/heads/UserIncomeExpenditureDetail
+=======
+        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@77e9807f]" name="testLogin" duration-ms="15571" started-at="2018-11-12T09:34:17Z" finished-at="2018-11-12T09:34:32Z">
+>>>>>>> refs/heads/UserAction
           <params>
             <param index="0">
               <value>
@@ -253,6 +328,7 @@
         </test-method> <!-- testLogin -->
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@77e9807f]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2018-11-09T09:13:55Z" finished-at="2018-11-09T09:13:57Z">
 =======
         <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@77e9807f]" name="afterMethod" is-config="true" duration-ms="2000" started-at="2018-11-12T03:00:18Z" finished-at="2018-11-12T03:00:20Z">
@@ -260,15 +336,19 @@
 =======
         <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@61009542]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2018-11-12T08:15:42Z" finished-at="2018-11-12T08:15:44Z">
 >>>>>>> refs/heads/UserIncomeExpenditureDetail
+=======
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@77e9807f]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2018-11-12T09:34:32Z" finished-at="2018-11-12T09:34:34Z">
+>>>>>>> refs/heads/UserAction
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testLogin status=SUCCESS method=LoginPageTest.testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@61009542] output={null}]]]>
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=LoginPageTest.testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@77e9807f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
               <![CDATA[                2018-11-09 17:13:55: [Method]-"LoginPageTest.testLogin" is passed]]>
@@ -278,9 +358,13 @@
 =======
               <![CDATA[                2018-11-12 16:15:42: [Method]-"LoginPageTest.testLogin" is passed]]>
 >>>>>>> refs/heads/UserIncomeExpenditureDetail
+=======
+              <![CDATA[                2018-11-12 17:34:32: [Method]-"LoginPageTest.testLogin" is passed]]>
+>>>>>>> refs/heads/UserAction
             </line>
           </reporter-output>
         </test-method> <!-- afterMethod -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@77e9807f]" name="AfterTest" is-config="true" duration-ms="1" started-at="2018-11-09T09:14:22Z" finished-at="2018-11-09T09:14:22Z">
@@ -290,9 +374,13 @@
 =======
         <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@61009542]" name="AfterTest" is-config="true" duration-ms="0" started-at="2018-11-12T08:16:18Z" finished-at="2018-11-12T08:16:18Z">
 >>>>>>> refs/heads/UserIncomeExpenditureDetail
+=======
+        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@77e9807f]" name="AfterTest" is-config="true" duration-ms="0" started-at="2018-11-12T09:34:46Z" finished-at="2018-11-12T09:34:46Z">
+>>>>>>> refs/heads/UserAction
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                 <![CDATA[org.testng.TestRunner@15bc339]]>
@@ -302,11 +390,15 @@
 =======
                 <![CDATA[org.testng.TestRunner@84487f4]]>
 >>>>>>> refs/heads/UserIncomeExpenditureDetail
+=======
+                <![CDATA[org.testng.TestRunner@29006752]]>
+>>>>>>> refs/heads/UserAction
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
               <![CDATA[        2018-11-09 17:14:22): [Test]-"UserInfoQuery" is finished]]>
@@ -316,26 +408,82 @@
 =======
               <![CDATA[        2018-11-12 16:16:18): [Test]-"UserIncomeExpenditureDetail" is finished]]>
 >>>>>>> refs/heads/UserIncomeExpenditureDetail
+=======
+              <![CDATA[        2018-11-12 17:34:46): [Test]-"UserIncomeExpenditureDetail" is finished]]>
+>>>>>>> refs/heads/UserAction
             </line>
           </reporter-output>
         </test-method> <!-- AfterTest -->
       </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest -->
 <<<<<<< HEAD
 <<<<<<< HEAD
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1a38c59b]" name="init" is-config="true" duration-ms="7" started-at="2018-11-09T09:14:17Z" finished-at="2018-11-09T09:14:17Z">
+<<<<<<< HEAD
+=======
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.UserManagement.UserInfoManagement.UserActionTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.UserManagement.UserInfoManagement.UserActionTest@448ff1a8]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-11-12T09:34:34Z" finished-at="2018-11-12T09:34:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.UserManagement.UserInfoManagement.UserActionTest@448ff1a8]" name="init" is-config="true" duration-ms="1" started-at="2018-11-12T09:34:34Z" finished-at="2018-11-12T09:34:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="testQuit()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1a38c59b]" name="testQuit" duration-ms="3867" started-at="2018-11-09T09:14:17Z" finished-at="2018-11-09T09:14:21Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.UserManagement.UserInfoManagement.UserActionTest@448ff1a8]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-11-12T09:34:34Z" finished-at="2018-11-12T09:34:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.UserManagement.UserInfoManagement.UserActionTest.testUserAction(com.dy.AutoTest.OperationPlatform.POJO.UserActionBean)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-12 17:34:34: [Method]-"UserActionTest.testUserAction" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testUserAction(com.dy.AutoTest.OperationPlatform.POJO.UserActionBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.UserManagement.UserInfoManagement.UserActionTest@448ff1a8]" name="testUserAction" duration-ms="5153" started-at="2018-11-12T09:34:34Z" data-provider="UserAction" finished-at="2018-11-12T09:34:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.UserActionBean@31e3250d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserAction -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.UserManagement.UserInfoManagement.UserActionTest@448ff1a8]" name="afterMethod" is-config="true" duration-ms="2002" started-at="2018-11-12T09:34:39Z" finished-at="2018-11-12T09:34:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testUserAction status=SUCCESS method=UserActionTest.testUserAction(com.dy.AutoTest.OperationPlatform.POJO.UserActionBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.UserManagement.UserInfoManagement.UserActionTest@448ff1a8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-12 17:34:39: [Method]-"UserActionTest.testUserAction" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.UserManagement.UserInfoManagement.UserActionTest -->
+>>>>>>> refs/heads/UserAction
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1a38c59b]" name="init" is-config="true" duration-ms="1" started-at="2018-11-12T09:34:41Z" finished-at="2018-11-12T09:34:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testQuit()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1a38c59b]" name="testQuit" duration-ms="3757" started-at="2018-11-12T09:34:41Z" finished-at="2018-11-12T09:34:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testQuit -->
-        <test-method status="PASS" signature="releaseBrowser()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1a38c59b]" name="releaseBrowser" is-config="true" duration-ms="1002" started-at="2018-11-09T09:14:21Z" finished-at="2018-11-09T09:14:22Z">
+        <test-method status="PASS" signature="releaseBrowser()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1a38c59b]" name="releaseBrowser" is-config="true" duration-ms="1002" started-at="2018-11-12T09:34:45Z" finished-at="2018-11-12T09:34:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- releaseBrowser -->
       </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest -->
+<<<<<<< HEAD
       <class name="com.dy.AutoTest.OperationPlatform.TestCases.UserManagement.UserInfoManagement.UserInfoQueryTest">
         <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.UserManagement.UserInfoManagement.UserInfoQueryTest@448ff1a8]" name="beforeClass" is-config="true" duration-ms="1" started-at="2018-11-09T09:13:57Z" finished-at="2018-11-09T09:13:57Z">
           <reporter-output>
@@ -463,4 +611,8 @@
     </test> <!-- UserIncomeExpenditureDetail -->
   </suite> <!-- UserIncomeExpenditureDetail -->
 >>>>>>> refs/heads/UserIncomeExpenditureDetail
+=======
+    </test> <!-- UserIncomeExpenditureDetail -->
+  </suite> <!-- UserAction -->
+>>>>>>> refs/heads/UserAction
 </testng-results>

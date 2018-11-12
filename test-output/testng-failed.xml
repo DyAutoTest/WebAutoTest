@@ -1,52 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
+<<<<<<< HEAD
 <suite guice-stage="DEVELOPMENT" name="Failed suite [UserInfoQuery]">
 =======
 <suite guice-stage="DEVELOPMENT" name="Failed suite [UserIncomeExpenditureDetail]">
 >>>>>>> refs/heads/UserIncomeExpenditureDetail
+=======
+<suite guice-stage="DEVELOPMENT" name="Failed suite [UserAction]">
+>>>>>>> refs/heads/UserAction
   <parameter name="environment" value="pop_uat"/>
   <parameter name="browserCategory" value="chrome"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <test thread-count="5" name="UserInfoQuery(failed)">
 =======
   <test thread-count="5" name="UserIncomeExpenditureDetail(failed)">
 >>>>>>> refs/heads/UserIncomeExpenditureDetail
+=======
+  <test thread-count="5" name="UserIncomeExpenditureDetail(failed)">
+>>>>>>> refs/heads/UserAction
     <parameter name="OperID" value="T00105"/>
     <classes>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
 =======
       <class name="com.dy.AutoTest.OperationPlatform.TestCases.UserManagement.UserInfoManagement.UserIncomeExpenditureDetailTest">
 >>>>>>> refs/heads/UserIncomeExpenditureDetail
+=======
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.UserManagement.UserInfoManagement.UserActionTest">
+>>>>>>> refs/heads/UserAction
         <methods>
-          <include name="testQuit"/>
-          <include name="init"/>
-          <include name="releaseBrowser"/>
-        </methods>
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest -->
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.UserManagement.UserInfoManagement.UserInfoQueryTest">
-        <methods>
-          <include name="testUserInfoDetail" invocation-numbers="0"/>
           <include name="beforeMethod"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
           <include name="beforeClass"/>
 =======
+=======
+          <include name="beforeClass"/>
+>>>>>>> refs/heads/UserAction
           <include name="init"/>
+<<<<<<< HEAD
           <include name="beforeClass"/>
           <include name="testUserIncomeExpenditureDetail" invocation-numbers="0"/>
 >>>>>>> refs/heads/UserIncomeExpenditureDetail
+=======
+          <include name="testUserAction" invocation-numbers="0"/>
+>>>>>>> refs/heads/UserAction
           <include name="afterMethod"/>
           <include name="BeforeTest"/>
           <include name="AfterTest"/>
-          <include name="init"/>
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.UserManagement.UserInfoManagement.UserInfoQueryTest -->
 =======
       </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.UserManagement.UserInfoManagement.UserIncomeExpenditureDetailTest -->
 >>>>>>> refs/heads/UserIncomeExpenditureDetail
+=======
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.UserManagement.UserInfoManagement.UserActionTest -->
+>>>>>>> refs/heads/UserAction
     </classes>
+<<<<<<< HEAD
 <<<<<<< HEAD
   </test> <!-- UserInfoQuery(failed) -->
 </suite> <!-- Failed suite [UserInfoQuery] -->
@@ -54,3 +70,7 @@
   </test> <!-- UserIncomeExpenditureDetail(failed) -->
 </suite> <!-- Failed suite [UserIncomeExpenditureDetail] -->
 >>>>>>> refs/heads/UserIncomeExpenditureDetail
+=======
+  </test> <!-- UserIncomeExpenditureDetail(failed) -->
+</suite> <!-- Failed suite [UserAction] -->
+>>>>>>> refs/heads/UserAction
