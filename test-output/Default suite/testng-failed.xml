@@ -3,17 +3,21 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2CTest">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest">
         <methods>
+          <include name="testMerchantFrozen"/>
           <include name="beforeMethod"/>
           <include name="beforeClass"/>
-          <include name="init"/>
+          <include name="testMerchantClose"/>
+          <include name="testMerchantInfoSearch"/>
           <include name="afterMethod"/>
           <include name="BeforeTest"/>
-          <include name="testOnlineCashierB2C"/>
           <include name="AfterTest"/>
+          <include name="testMerchantInfoAlter"/>
+          <include name="testMerchantInfoDetail"/>
+          <include name="init"/>
         </methods>
-      </class> <!-- com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2CTest -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

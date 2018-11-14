@@ -133,5 +133,10 @@ public class MerchantSettlementPageTest extends SuperTest{
 	}
 	
 	
+	@Test(dataProvider="SettlementInfo")
+	public void testMerchantSettlementSearch(MerchantSettlementBean merchantSettlementBean) {
+		
+	}
+	
 	
 }

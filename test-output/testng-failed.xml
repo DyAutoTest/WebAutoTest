@@ -1,76 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<suite guice-stage="DEVELOPMENT" name="Failed suite [UserInfoQuery]">
-=======
-<suite guice-stage="DEVELOPMENT" name="Failed suite [UserIncomeExpenditureDetail]">
->>>>>>> refs/heads/UserIncomeExpenditureDetail
-=======
-<suite guice-stage="DEVELOPMENT" name="Failed suite [UserAction]">
->>>>>>> refs/heads/UserAction
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MerchantInfoSearch]">
   <parameter name="environment" value="pop_uat"/>
-  <parameter name="browserCategory" value="chrome"/>
-<<<<<<< HEAD
-<<<<<<< HEAD
-  <test thread-count="5" name="UserInfoQuery(failed)">
-=======
-  <test thread-count="5" name="UserIncomeExpenditureDetail(failed)">
->>>>>>> refs/heads/UserIncomeExpenditureDetail
-=======
-  <test thread-count="5" name="UserIncomeExpenditureDetail(failed)">
->>>>>>> refs/heads/UserAction
-    <parameter name="OperID" value="T00105"/>
+  <parameter name="browserCategory" value="firefox"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="MerchantInfoAlter(failed)">
     <classes>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
-=======
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.UserManagement.UserInfoManagement.UserIncomeExpenditureDetailTest">
->>>>>>> refs/heads/UserIncomeExpenditureDetail
-=======
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.UserManagement.UserInfoManagement.UserActionTest">
->>>>>>> refs/heads/UserAction
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest">
         <methods>
           <include name="beforeMethod"/>
-<<<<<<< HEAD
-<<<<<<< HEAD
           <include name="beforeClass"/>
-=======
-=======
-          <include name="beforeClass"/>
->>>>>>> refs/heads/UserAction
-          <include name="init"/>
-<<<<<<< HEAD
-          <include name="beforeClass"/>
-          <include name="testUserIncomeExpenditureDetail" invocation-numbers="0"/>
->>>>>>> refs/heads/UserIncomeExpenditureDetail
-=======
-          <include name="testUserAction" invocation-numbers="0"/>
->>>>>>> refs/heads/UserAction
           <include name="afterMethod"/>
           <include name="BeforeTest"/>
           <include name="AfterTest"/>
+          <include name="testMerchantInfoAlter" invocation-numbers="1"/>
+          <include name="init"/>
         </methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.UserManagement.UserInfoManagement.UserInfoQueryTest -->
-=======
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.UserManagement.UserInfoManagement.UserIncomeExpenditureDetailTest -->
->>>>>>> refs/heads/UserIncomeExpenditureDetail
-=======
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.UserManagement.UserInfoManagement.UserActionTest -->
->>>>>>> refs/heads/UserAction
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest -->
     </classes>
-<<<<<<< HEAD
-<<<<<<< HEAD
-  </test> <!-- UserInfoQuery(failed) -->
-</suite> <!-- Failed suite [UserInfoQuery] -->
-=======
-  </test> <!-- UserIncomeExpenditureDetail(failed) -->
-</suite> <!-- Failed suite [UserIncomeExpenditureDetail] -->
->>>>>>> refs/heads/UserIncomeExpenditureDetail
-=======
-  </test> <!-- UserIncomeExpenditureDetail(failed) -->
-</suite> <!-- Failed suite [UserAction] -->
->>>>>>> refs/heads/UserAction
+  </test> <!-- MerchantInfoAlter(failed) -->
+  <test thread-count="5" name="MerchantAuditPass(failed)">
+    <parameter name="OperID" value="T00107"/>
+    <parameter name="AuditID" value="2"/>
+    <classes>
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="testMerchantInfoAlterVerify" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+          <include name="BeforeTest"/>
+          <include name="AfterTest"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest -->
+    </classes>
+  </test> <!-- MerchantAuditPass(failed) -->
+</suite> <!-- Failed suite [MerchantInfoSearch] -->

@@ -23,7 +23,7 @@ public class UserActionTest extends SuperTest{
 	
 	@DataProvider(name="UserAction")
 	protected static Object[][] parametersPool(){
-		data.loadDataBeanList("POP_Date_UserAction");
+		data.loadDataBeanList("POP_Data_UserAction");
 		return data.getDataBeanArray();
 	}
 	
