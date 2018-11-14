@@ -13,6 +13,8 @@ import com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2CBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantAuditBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantFeeRateBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoBean;
+import com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean;
+import com.dy.AutoTest.OperationPlatform.POJO.MerchantSettlementAlterBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantSettlementBean;
 import com.dy.AutoTest.OperationPlatform.POJO.OperBean;
 import com.dy.AutoTest.OperationPlatform.POJO.UserAccountModifySearchBean;
@@ -43,6 +45,9 @@ public class DataBusiness {
 	private UserAccountModifySearchBean UserAccountModifySearchBean;
 	private UserIncomeExpenditureDetailBean UserIncomeExpenditureDetailBean;
 	private UserActionBean UserActionBean;
+	private MerchantInfoSearchBean MerchantInfoSearchBean;
+	private MerchantSettlementAlterBean MerchantSettlementAlterBean;
+
 	
 	private List<Object> list;
 	
@@ -116,8 +121,14 @@ public class DataBusiness {
 			case "POP_Data_MerchantSettlement":
 				pojo=(T)testingDao.getData(tableName,ID,MerchantSettlementBean.class);
 				return pojo;
+			case "POP_Data_MerchantSettlementAlter":
+				pojo=(T)testingDao.getData(tableName,ID,MerchantSettlementAlterBean.class);
+				return pojo;
 			case "POP_Data_MerchantFeeRate":
 				pojo=(T)testingDao.getData(tableName,ID,MerchantFeeRateBean.class);
+				return pojo;
+			case "POP_Data_MerchantInfoSearch":
+				pojo=(T)testingDao.getData(tableName,ID,MerchantInfoSearchBean.class);
 				return pojo;
 			case "POP_Data_MerchantOper":
 				
@@ -131,7 +142,7 @@ public class DataBusiness {
 			case "POP_Data_UserIncomeExpenditureDetail":
 				pojo=(T)testingDao.getData(tableName,ID,UserIncomeExpenditureDetailBean.class);
 				return pojo;
-			case "POP_Date_UserAction":
+			case "POP_Data_UserAction":
 				pojo=(T)testingDao.getData(tableName,ID,UserActionBean.class);
 				return pojo;
 			case "POP_Data_Oper":
@@ -195,8 +206,14 @@ public class DataBusiness {
 		case "POP_Data_MerchantSettlement":
 			list=BaseUtil.toObject(testingDao.getDataList(tableName,MerchantSettlementBean.class));
 			break;
+		case "POP_Data_MerchantSettlementAlter":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,MerchantSettlementAlterBean.class));
+			break;
 		case "POP_Data_MerchantFeeRate":
 			list=BaseUtil.toObject(testingDao.getDataList(tableName,MerchantFeeRateBean.class));
+			break;
+		case "POP_Data_MerchantInfoSearch":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,MerchantInfoSearchBean.class));
 			break;
 		case "POP_Data_MerchantOper":
 			
@@ -211,7 +228,7 @@ public class DataBusiness {
 		case "POP_Data_UserIncomeExpenditureDetail":
 			list=BaseUtil.toObject(testingDao.getDataList(tableName,UserIncomeExpenditureDetailBean.class));
 			break;
-		case "POP_Date_UserAction":
+		case "POP_Data_UserAction":
 			list=BaseUtil.toObject(testingDao.getDataList(tableName,UserActionBean.class));
 			break;
 		case "POP_Data_Oper":
@@ -419,7 +436,7 @@ public class DataBusiness {
 			System.out.println("In DataBusiness.updateTestData(), updateMap can not be null!");
 			assertTrue(false);
 		}
-		boolean flag=testingDao.updateTestData(tableName,updateMap,whereMap);
+		boolean flag=testingDao.updateTestData(tableName,updateMap,whereMap,existExpression);
 		
 		if(!flag) {
 			System.out.println("DataBusiness.updateTestData(): update返回false，更新表失败");
