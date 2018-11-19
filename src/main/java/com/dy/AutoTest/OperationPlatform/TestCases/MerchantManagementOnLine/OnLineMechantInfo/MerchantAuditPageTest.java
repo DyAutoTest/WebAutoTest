@@ -137,6 +137,22 @@ public class MerchantAuditPageTest extends SuperTest{
 						assertTrue(false);
 					}
 				}
+				if(AuditID.equals(("5"))){
+					String merchantNO=merchantAuditPage.getSettlementMerchantNO();
+					merchantAuditPage.setAuditComment2("Pass");
+					merchantAuditPage.doSettlement_Pass();
+					if(merchantAuditPage.getNotice().equals("商户结算信息通过复核！")) {
+						System.out.println(merchantNO+" 结算信息复核成功");
+						Reporter.log("MerchantNO: "+merchantNO+" 商户结算信息新增审核通过");
+						i--;
+					}else {
+						System.out.println(merchantAuditPage.getNotice());
+						Reporter.log(merchantAuditPage.getNotice());
+						wait.waitFor(500);
+						merchantAuditPage.doCancel();
+						assertTrue(false);
+					}
+				}
 				//如果是商户费率新增审核
 				if(AuditID.equals(("3"))){
 					String merchantNO=merchantAuditPage.getFeeRate_MerchantNO();
@@ -245,12 +261,26 @@ public class MerchantAuditPageTest extends SuperTest{
 				}
 				
 				//如果是商户结算信息新增审核或修改
-				if(AuditID.equals("5")||AuditID.equals(("6"))){
+				if(AuditID.equals(("6"))){
 					String merchantNO=merchantAuditPage.getSettlementMerchantNO();
 					merchantAuditPage.setAuditComment2("Refuse");
 					merchantAuditPage.doSettlement_Refuse();
 					if(merchantAuditPage.getNotice().equals("审核状态更新成功！")) {
-//						data.update
+						System.out.println(merchantNO+" 结算信息拒绝审核成功");
+						i--;
+					}else {
+						System.out.println(merchantAuditPage.getNotice());
+						Reporter.log(merchantAuditPage.getNotice());
+						wait.waitFor(500);
+						merchantAuditPage.doCancel();
+						assertTrue(false);
+					}
+				}
+				if(AuditID.equals("5")){
+					String merchantNO=merchantAuditPage.getSettlementMerchantNO();
+					merchantAuditPage.setAuditComment2("Refuse");
+					merchantAuditPage.doSettlement_Refuse();
+					if(merchantAuditPage.getNotice().equals("审核状态更新成功！")) {
 						System.out.println(merchantNO+" 结算信息拒绝审核成功");
 						i--;
 					}else {

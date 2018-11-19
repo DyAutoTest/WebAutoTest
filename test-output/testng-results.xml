@@ -1,953 +1,802 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="36" total="50" passed="14">
+<testng-results skipped="0" failed="0" ignored="0" total="71" passed="71">
   <reporter-output>
-    <line>
-      <![CDATA[        2018-11-14 17:44:56): [Test]-"Login" is started]]>
-    </line>
-    <line>
-      <![CDATA[                2018-11-14 17:44:56: [Method]-"LoginPageTest.testLogin" is started]]>
-    </line>
-    <line>
-      <![CDATA[                2018-11-14 17:45:01: [Method]-"LoginPageTest.testLogin" is passed]]>
-    </line>
-    <line>
-      <![CDATA[        2018-11-14 17:45:03): [Test]-"Login" is finished]]>
-    </line>
-    <line>
-      <![CDATA[        2018-11-14 17:45:03): [Test]-"MerchantInfoSearch" is started]]>
-    </line>
-    <line>
-      <![CDATA[                2018-11-14 17:45:03: [Method]-"MerchantInfoSearchTest.testMerchantInfoSearch" is started]]>
-    </line>
-    <line>
-      <![CDATA[                2018-11-14 17:45:55: [Method]-"MerchantInfoSearchTest.testMerchantInfoSearch" is passed]]>
-    </line>
-    <line>
-      <![CDATA[                2018-11-14 17:45:57: [Method]-"MerchantInfoSearchTest.testMerchantInfoDetail" is started]]>
-    </line>
-    <line>
-      <![CDATA[                2018-11-14 17:46:08: [Method]-"MerchantInfoSearchTest.testMerchantInfoDetail" is passed]]>
-    </line>
-    <line>
-      <![CDATA[                2018-11-14 17:46:10: [Method]-"MerchantInfoSearchTest.testMerchantClose" is started]]>
-    </line>
-    <line>
-      <![CDATA[                2018-11-14 17:46:32: [Method]-"MerchantInfoSearchTest.testMerchantClose" is passed]]>
-    </line>
-    <line>
-      <![CDATA[                2018-11-14 17:46:34: [Method]-"MerchantInfoSearchTest.testMerchantFrozen" is started]]>
-    </line>
-    <line>
-      <![CDATA[                2018-11-14 17:46:56: [Method]-"MerchantInfoSearchTest.testMerchantFrozen" is passed]]>
-    </line>
-    <line>
-      <![CDATA[        2018-11-14 17:46:58): [Test]-"MerchantInfoSearch" is finished]]>
-    </line>
-    <line>
-      <![CDATA[        2018-11-14 17:46:58): [Test]-"MerchantInfoDetail" is started]]>
-    </line>
-    <line>
-      <![CDATA[                2018-11-14 17:46:58: [Method]-"MerchantInfoSearchTest.testMerchantInfoDetail" is started]]>
-    </line>
-    <line>
-      <![CDATA[                2018-11-14 17:47:09: [Method]-"MerchantInfoSearchTest.testMerchantInfoDetail" is passed]]>
-    </line>
-    <line>
-      <![CDATA[        2018-11-14 17:47:11): [Test]-"MerchantInfoDetail" is finished]]>
-    </line>
-    <line>
-      <![CDATA[        2018-11-14 17:47:11): [Test]-"MerchantClose" is started]]>
-    </line>
-    <line>
-      <![CDATA[                2018-11-14 17:47:11: [Method]-"MerchantInfoSearchTest.testMerchantClose" is started]]>
-    </line>
-    <line>
-      <![CDATA[                2018-11-14 17:47:33: [Method]-"MerchantInfoSearchTest.testMerchantClose" is passed]]>
-    </line>
-    <line>
-      <![CDATA[        2018-11-14 17:47:35): [Test]-"MerchantClose" is finished]]>
-    </line>
-    <line>
-      <![CDATA[        2018-11-14 17:47:35): [Test]-"MerchantFrozen" is started]]>
-    </line>
-    <line>
-      <![CDATA[                2018-11-14 17:47:35: [Method]-"MerchantInfoSearchTest.testMerchantFrozen" is started]]>
-    </line>
-    <line>
-      <![CDATA[                2018-11-14 17:47:56: [Method]-"MerchantInfoSearchTest.testMerchantFrozen" is passed]]>
-    </line>
-    <line>
-      <![CDATA[        2018-11-14 17:47:58): [Test]-"MerchantFrozen" is finished]]>
-    </line>
-    <line>
-      <![CDATA[        2018-11-14 17:47:59): [Test]-"MerchantInfoAlter" is started]]>
-    </line>
-    <line>
-      <![CDATA[                2018-11-14 17:47:59: [Method]-"MerchantInfoSearchTest.testMerchantInfoAlter" is started]]>
-    </line>
-    <line>
-      <![CDATA[                2018-11-14 17:48:16: [Method]-"MerchantInfoSearchTest.testMerchantInfoAlter" is passed]]>
-    </line>
-    <line>
-      <![CDATA[        2018-11-14 17:48:23): [Test]-"MerchantInfoAlter" is finished]]>
-    </line>
-    <line>
-      <![CDATA[        2018-11-14 17:48:23): [Test]-"MerchantAuditPass" is started]]>
-    </line>
-    <line>
-      <![CDATA[                2018-11-14 17:48:23: [Method]-"LoginPageTest.testLogin" is started]]>
-    </line>
-    <line>
-      <![CDATA[                2018-11-14 17:48:26: [Method]-"LoginPageTest.testLogin" is passed]]>
-    </line>
-    <line>
-      <![CDATA[                2018-11-14 17:48:28: [Method]-"MerchantAuditPageTest.testMerchantAuditPass" is started]]>
-    </line>
-    <line>
-      <![CDATA[MerchantNO: 872193050135000 商户基本资料新增审核通过]]>
-    </line>
-    <line>
-      <![CDATA[                2018-11-14 17:48:40: [Method]-"MerchantAuditPageTest.testMerchantAuditPass" is passed]]>
-    </line>
-    <line>
-      <![CDATA[                2018-11-14 17:48:42: [Method]-"MerchantInfoSearchTest.testMerchantInfoAlterVerify" is started]]>
-    </line>
-    <line>
-      <![CDATA[Alter Merchant( 872193050135000 ) Succeed !]]>
-    </line>
-    <line>
-      <![CDATA[                2018-11-14 17:48:56: [Method]-"MerchantInfoSearchTest.testMerchantInfoAlterVerify" is passed]]>
-    </line>
-    <line>
-      <![CDATA[        2018-11-14 17:49:03): [Test]-"MerchantAuditPass" is finished]]>
-    </line>
   </reporter-output>
-  <suite name="MerchantInfoSearch" duration-ms="246853" started-at="2018-11-14T09:44:56Z" finished-at="2018-11-14T09:49:03Z">
+  <suite name="Default suite" duration-ms="517" started-at="2018-11-21T05:21:53Z" finished-at="2018-11-21T05:21:53Z">
     <groups>
     </groups>
-    <test name="Login" duration-ms="6639" started-at="2018-11-14T09:44:56Z" finished-at="2018-11-14T09:45:03Z">
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
-        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="BeforeTest" is-config="true" duration-ms="2" started-at="2018-11-14T09:44:56Z" finished-at="2018-11-14T09:44:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@ae5d544]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[        2018-11-14 17:44:56): [Test]-"Login" is started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- BeforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="beforeClass" is-config="true" duration-ms="1" started-at="2018-11-14T09:44:56Z" finished-at="2018-11-14T09:44:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="init" is-config="true" duration-ms="11" started-at="2018-11-14T09:44:56Z" finished-at="2018-11-14T09:44:56Z">
+    <test name="Default test" duration-ms="517" started-at="2018-11-21T05:21:53Z" finished-at="2018-11-21T05:21:53Z">
+      <class name="com.dy.AutoTest.web.util.test.AutoGenerateTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="init" is-config="true" duration-ms="15" started-at="2018-11-21T05:21:53Z" finished-at="2018-11-21T05:21:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="testLogin" duration-ms="4590" started-at="2018-11-14T09:44:56Z" finished-at="2018-11-14T09:45:01Z">
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="6" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[T00064]]>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@60704c]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-14T09:44:56Z" finished-at="2018-11-14T09:44:56Z">
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="2" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest.testLogin(java.lang.String)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2018-11-14 17:44:56: [Method]-"LoginPageTest.testLogin" is started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2018-11-14T09:45:01Z" finished-at="2018-11-14T09:45:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testLogin status=SUCCESS method=LoginPageTest.testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2018-11-14 17:45:01: [Method]-"LoginPageTest.testLogin" is passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="AfterTest" is-config="true" duration-ms="1" started-at="2018-11-14T09:45:03Z" finished-at="2018-11-14T09:45:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@ae5d544]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[        2018-11-14 17:45:03): [Test]-"Login" is finished]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- AfterTest -->
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest -->
-    </test> <!-- Login -->
-    <test name="MerchantInfoSearch" duration-ms="115070" started-at="2018-11-14T09:45:03Z" finished-at="2018-11-14T09:46:58Z">
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@27ae2fd0]" name="beforeClass" is-config="true" duration-ms="1" started-at="2018-11-14T09:45:03Z" finished-at="2018-11-14T09:45:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@27ae2fd0]" name="BeforeTest" is-config="true" duration-ms="0" started-at="2018-11-14T09:45:03Z" finished-at="2018-11-14T09:45:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@5aec151b]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[        2018-11-14 17:45:03): [Test]-"MerchantInfoSearch" is started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- BeforeTest -->
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@27ae2fd0]" name="init" is-config="true" duration-ms="2" started-at="2018-11-14T09:45:03Z" finished-at="2018-11-14T09:45:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@27ae2fd0]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-14T09:45:03Z" finished-at="2018-11-14T09:45:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest.testMerchantInfoSearch(com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2018-11-14 17:45:03: [Method]-"MerchantInfoSearchTest.testMerchantInfoSearch" is started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testMerchantInfoSearch(com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@27ae2fd0]" name="testMerchantInfoSearch" duration-ms="52024" started-at="2018-11-14T09:45:03Z" description="线上运营平台-商户资料查询" data-provider="MerchantInfo" finished-at="2018-11-14T09:45:55Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean@314b8f2d]]>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@2805c96b]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMerchantInfoSearch -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@27ae2fd0]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2018-11-14T09:45:55Z" finished-at="2018-11-14T09:45:57Z">
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="3" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testMerchantInfoSearch status=SUCCESS method=MerchantInfoSearchTest.testMerchantInfoSearch(com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@27ae2fd0] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2018-11-14 17:45:55: [Method]-"MerchantInfoSearchTest.testMerchantInfoSearch" is passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@27ae2fd0]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2018-11-14T09:45:57Z" finished-at="2018-11-14T09:45:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest.testMerchantInfoDetail(com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2018-11-14 17:45:57: [Method]-"MerchantInfoSearchTest.testMerchantInfoDetail" is started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testMerchantInfoDetail(com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@27ae2fd0]" name="testMerchantInfoDetail" duration-ms="11723" started-at="2018-11-14T09:45:57Z" description="线上运营平台-商户资料查看详情" data-provider="MerchantInfo" finished-at="2018-11-14T09:46:08Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean@5399f6c5]]>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@2fd6b6c7]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMerchantInfoDetail -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@27ae2fd0]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2018-11-14T09:46:08Z" finished-at="2018-11-14T09:46:10Z">
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="2" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testMerchantInfoDetail status=SUCCESS method=MerchantInfoSearchTest.testMerchantInfoDetail(com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@27ae2fd0] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2018-11-14 17:46:08: [Method]-"MerchantInfoSearchTest.testMerchantInfoDetail" is passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@27ae2fd0]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-11-14T09:46:10Z" finished-at="2018-11-14T09:46:10Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest.testMerchantClose(com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2018-11-14 17:46:10: [Method]-"MerchantInfoSearchTest.testMerchantClose" is started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testMerchantClose(com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@27ae2fd0]" name="testMerchantClose" duration-ms="21936" started-at="2018-11-14T09:46:10Z" description="线上运营平台-商户销户/取消销户" data-provider="MerchantInfo" finished-at="2018-11-14T09:46:32Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean@45b15381]]>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@5db250b4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMerchantClose -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@27ae2fd0]" name="afterMethod" is-config="true" duration-ms="2002" started-at="2018-11-14T09:46:32Z" finished-at="2018-11-14T09:46:34Z">
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="1" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testMerchantClose status=SUCCESS method=MerchantInfoSearchTest.testMerchantClose(com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@27ae2fd0] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2018-11-14 17:46:32: [Method]-"MerchantInfoSearchTest.testMerchantClose" is passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@27ae2fd0]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-11-14T09:46:34Z" finished-at="2018-11-14T09:46:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest.testMerchantFrozen(com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2018-11-14 17:46:34: [Method]-"MerchantInfoSearchTest.testMerchantFrozen" is started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testMerchantFrozen(com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@27ae2fd0]" name="testMerchantFrozen" duration-ms="21344" started-at="2018-11-14T09:46:34Z" description="线上运营平台-商户冻结/解冻" data-provider="MerchantInfo" finished-at="2018-11-14T09:46:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean@2c18a3ea]]>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@38c5cc4c]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMerchantFrozen -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@27ae2fd0]" name="afterMethod" is-config="true" duration-ms="2002" started-at="2018-11-14T09:46:56Z" finished-at="2018-11-14T09:46:58Z">
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="3" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testMerchantFrozen status=SUCCESS method=MerchantInfoSearchTest.testMerchantFrozen(com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@27ae2fd0] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2018-11-14 17:46:56: [Method]-"MerchantInfoSearchTest.testMerchantFrozen" is passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@27ae2fd0]" name="AfterTest" is-config="true" duration-ms="0" started-at="2018-11-14T09:46:58Z" finished-at="2018-11-14T09:46:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@5aec151b]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[        2018-11-14 17:46:58): [Test]-"MerchantInfoSearch" is finished]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- AfterTest -->
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest -->
-    </test> <!-- MerchantInfoSearch -->
-    <test name="MerchantInfoDetail" duration-ms="13720" started-at="2018-11-14T09:46:58Z" finished-at="2018-11-14T09:47:11Z">
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest">
-        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@15b204a1]" name="BeforeTest" is-config="true" duration-ms="1" started-at="2018-11-14T09:46:58Z" finished-at="2018-11-14T09:46:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@74cf2d5f]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[        2018-11-14 17:46:58): [Test]-"MerchantInfoDetail" is started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- BeforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@15b204a1]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-11-14T09:46:58Z" finished-at="2018-11-14T09:46:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@15b204a1]" name="init" is-config="true" duration-ms="2" started-at="2018-11-14T09:46:58Z" finished-at="2018-11-14T09:46:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="testMerchantInfoDetail(com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@15b204a1]" name="testMerchantInfoDetail" duration-ms="11709" started-at="2018-11-14T09:46:58Z" description="线上运营平台-商户资料查看详情" data-provider="MerchantInfo" finished-at="2018-11-14T09:47:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean@6826b70f]]>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@78e94dcf]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMerchantInfoDetail -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@15b204a1]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-14T09:46:58Z" finished-at="2018-11-14T09:46:58Z">
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="1" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest.testMerchantInfoDetail(com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2018-11-14 17:46:58: [Method]-"MerchantInfoSearchTest.testMerchantInfoDetail" is started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@15b204a1]" name="afterMethod" is-config="true" duration-ms="2002" started-at="2018-11-14T09:47:09Z" finished-at="2018-11-14T09:47:11Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testMerchantInfoDetail status=SUCCESS method=MerchantInfoSearchTest.testMerchantInfoDetail(com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@15b204a1] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2018-11-14 17:47:09: [Method]-"MerchantInfoSearchTest.testMerchantInfoDetail" is passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@15b204a1]" name="AfterTest" is-config="true" duration-ms="1" started-at="2018-11-14T09:47:11Z" finished-at="2018-11-14T09:47:11Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@74cf2d5f]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[        2018-11-14 17:47:11): [Test]-"MerchantInfoDetail" is finished]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- AfterTest -->
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest -->
-    </test> <!-- MerchantInfoDetail -->
-    <test name="MerchantClose" duration-ms="23825" started-at="2018-11-14T09:47:11Z" finished-at="2018-11-14T09:47:35Z">
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest">
-        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@47542153]" name="BeforeTest" is-config="true" duration-ms="1" started-at="2018-11-14T09:47:11Z" finished-at="2018-11-14T09:47:11Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@14b9817b]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[        2018-11-14 17:47:11): [Test]-"MerchantClose" is started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- BeforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@47542153]" name="beforeClass" is-config="true" duration-ms="1" started-at="2018-11-14T09:47:11Z" finished-at="2018-11-14T09:47:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@47542153]" name="init" is-config="true" duration-ms="4" started-at="2018-11-14T09:47:11Z" finished-at="2018-11-14T09:47:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@47542153]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-11-14T09:47:11Z" finished-at="2018-11-14T09:47:11Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest.testMerchantClose(com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2018-11-14 17:47:11: [Method]-"MerchantInfoSearchTest.testMerchantClose" is started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testMerchantClose(com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@47542153]" name="testMerchantClose" duration-ms="21810" started-at="2018-11-14T09:47:11Z" description="线上运营平台-商户销户/取消销户" data-provider="MerchantInfo" finished-at="2018-11-14T09:47:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean@44fb6ebd]]>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@358ee631]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMerchantClose -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@47542153]" name="afterMethod" is-config="true" duration-ms="2000" started-at="2018-11-14T09:47:33Z" finished-at="2018-11-14T09:47:35Z">
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="1" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testMerchantClose status=SUCCESS method=MerchantInfoSearchTest.testMerchantClose(com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@47542153] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2018-11-14 17:47:33: [Method]-"MerchantInfoSearchTest.testMerchantClose" is passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@47542153]" name="AfterTest" is-config="true" duration-ms="0" started-at="2018-11-14T09:47:35Z" finished-at="2018-11-14T09:47:35Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@14b9817b]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[        2018-11-14 17:47:35): [Test]-"MerchantClose" is finished]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- AfterTest -->
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest -->
-    </test> <!-- MerchantClose -->
-    <test name="MerchantFrozen" duration-ms="23287" started-at="2018-11-14T09:47:35Z" finished-at="2018-11-14T09:47:58Z">
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest">
-        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@45b9a632]" name="BeforeTest" is-config="true" duration-ms="0" started-at="2018-11-14T09:47:35Z" finished-at="2018-11-14T09:47:35Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@3052395d]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[        2018-11-14 17:47:35): [Test]-"MerchantFrozen" is started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- BeforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@45b9a632]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-11-14T09:47:35Z" finished-at="2018-11-14T09:47:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@45b9a632]" name="init" is-config="true" duration-ms="8" started-at="2018-11-14T09:47:35Z" finished-at="2018-11-14T09:47:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="testMerchantFrozen(com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@45b9a632]" name="testMerchantFrozen" duration-ms="21272" started-at="2018-11-14T09:47:35Z" description="线上运营平台-商户冻结/解冻" data-provider="MerchantInfo" finished-at="2018-11-14T09:47:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean@1e6cb932]]>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@3c72f59f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMerchantFrozen -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@45b9a632]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-14T09:47:35Z" finished-at="2018-11-14T09:47:35Z">
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="1" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest.testMerchantFrozen(com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2018-11-14 17:47:35: [Method]-"MerchantInfoSearchTest.testMerchantFrozen" is started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@45b9a632]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2018-11-14T09:47:56Z" finished-at="2018-11-14T09:47:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testMerchantFrozen status=SUCCESS method=MerchantInfoSearchTest.testMerchantFrozen(com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@45b9a632] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2018-11-14 17:47:56: [Method]-"MerchantInfoSearchTest.testMerchantFrozen" is passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@45b9a632]" name="AfterTest" is-config="true" duration-ms="1" started-at="2018-11-14T09:47:58Z" finished-at="2018-11-14T09:47:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@3052395d]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[        2018-11-14 17:47:58): [Test]-"MerchantFrozen" is finished]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- AfterTest -->
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest -->
-    </test> <!-- MerchantFrozen -->
-    <test name="MerchantInfoAlter" duration-ms="24169" started-at="2018-11-14T09:47:58Z" finished-at="2018-11-14T09:48:23Z">
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest">
-        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@2f112965]" name="BeforeTest" is-config="true" duration-ms="0" started-at="2018-11-14T09:47:59Z" finished-at="2018-11-14T09:47:59Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@a2ca681]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[        2018-11-14 17:47:59): [Test]-"MerchantInfoAlter" is started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- BeforeTest -->
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@2f112965]" name="init" is-config="true" duration-ms="2" started-at="2018-11-14T09:47:59Z" finished-at="2018-11-14T09:47:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@2f112965]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-11-14T09:47:59Z" finished-at="2018-11-14T09:47:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="testMerchantInfoAlter(com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@2f112965]" name="testMerchantInfoAlter" duration-ms="17250" started-at="2018-11-14T09:47:59Z" description="线上运营平台-商户资料修改" data-provider="MerchantInfo" finished-at="2018-11-14T09:48:16Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean@4c02899]]>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@222114ba]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMerchantInfoAlter -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@2f112965]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-14T09:47:59Z" finished-at="2018-11-14T09:47:59Z">
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="2" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest.testMerchantInfoAlter(com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2018-11-14 17:47:59: [Method]-"MerchantInfoSearchTest.testMerchantInfoAlter" is started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@2f112965]" name="afterMethod" is-config="true" duration-ms="2000" started-at="2018-11-14T09:48:16Z" finished-at="2018-11-14T09:48:18Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testMerchantInfoAlter status=SUCCESS method=MerchantInfoSearchTest.testMerchantInfoAlter(com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@2f112965] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2018-11-14 17:48:16: [Method]-"MerchantInfoSearchTest.testMerchantInfoAlter" is passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@2f112965]" name="AfterTest" is-config="true" duration-ms="3" started-at="2018-11-14T09:48:23Z" finished-at="2018-11-14T09:48:23Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@a2ca681]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[        2018-11-14 17:48:23): [Test]-"MerchantInfoAlter" is finished]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- AfterTest -->
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest -->
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1a04f701]" name="init" is-config="true" duration-ms="3" started-at="2018-11-14T09:48:18Z" finished-at="2018-11-14T09:48:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="testQuit()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1a04f701]" name="testQuit" duration-ms="3901" started-at="2018-11-14T09:48:18Z" finished-at="2018-11-14T09:48:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testQuit -->
-        <test-method status="PASS" signature="releaseBrowser()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1a04f701]" name="releaseBrowser" is-config="true" duration-ms="1000" started-at="2018-11-14T09:48:22Z" finished-at="2018-11-14T09:48:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- releaseBrowser -->
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest -->
-    </test> <!-- MerchantInfoAlter -->
-    <test name="MerchantAuditPass" duration-ms="40037" started-at="2018-11-14T09:48:23Z" finished-at="2018-11-14T09:49:03Z">
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@647fd8ce]" name="init" is-config="true" duration-ms="2" started-at="2018-11-14T09:48:42Z" finished-at="2018-11-14T09:48:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@647fd8ce]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-11-14T09:48:42Z" finished-at="2018-11-14T09:48:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@647fd8ce]" name="beforeMethod" is-config="true" duration-ms="3" started-at="2018-11-14T09:48:42Z" finished-at="2018-11-14T09:48:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest.testMerchantInfoAlterVerify(com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2018-11-14 17:48:42: [Method]-"MerchantInfoSearchTest.testMerchantInfoAlterVerify" is started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testMerchantInfoAlterVerify(com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@647fd8ce]" name="testMerchantInfoAlterVerify" duration-ms="13826" started-at="2018-11-14T09:48:42Z" description="线上运营平台-商户资料修改" data-provider="MerchantInfo" finished-at="2018-11-14T09:48:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean@712c9bcf]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Alter Merchant( 872193050135000 ) Succeed !]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testMerchantInfoAlterVerify -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@647fd8ce]" name="afterMethod" is-config="true" duration-ms="2002" started-at="2018-11-14T09:48:56Z" finished-at="2018-11-14T09:48:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testMerchantInfoAlterVerify status=SUCCESS method=MerchantInfoSearchTest.testMerchantInfoAlterVerify(com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest@647fd8ce] output=Alter Merchant( 872193050135000 ) Succeed !]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2018-11-14 17:48:56: [Method]-"MerchantInfoSearchTest.testMerchantInfoAlterVerify" is passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoSearchTest -->
-      <class name="com.dy.AutoTest.web.actions.SingletonSet">
-        <test-method status="PASS" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@5276e6b0]" name="init" is-config="true" duration-ms="5763" started-at="2018-11-14T09:44:50Z" finished-at="2018-11-14T09:44:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[pop_uat]]>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@3d121db3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="releaseJDBC()[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@5276e6b0]" name="releaseJDBC" is-config="true" duration-ms="3361" started-at="2018-11-14T09:49:03Z" finished-at="2018-11-14T09:49:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- releaseJDBC -->
-      </class> <!-- com.dy.AutoTest.web.actions.SingletonSet -->
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
-        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@71b1176b]" name="BeforeTest" is-config="true" duration-ms="0" started-at="2018-11-14T09:48:23Z" finished-at="2018-11-14T09:48:23Z">
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="3" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@784c74e]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[        2018-11-14 17:48:23): [Test]-"MerchantAuditPass" is started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- BeforeTest -->
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@71b1176b]" name="init" is-config="true" duration-ms="1" started-at="2018-11-14T09:48:23Z" finished-at="2018-11-14T09:48:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@71b1176b]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-11-14T09:48:23Z" finished-at="2018-11-14T09:48:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@71b1176b]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-11-14T09:48:23Z" finished-at="2018-11-14T09:48:23Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest.testLogin(java.lang.String)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2018-11-14 17:48:23: [Method]-"LoginPageTest.testLogin" is started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@71b1176b]" name="testLogin" duration-ms="3799" started-at="2018-11-14T09:48:23Z" finished-at="2018-11-14T09:48:26Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[T00107]]>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@11a9e7c8]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@71b1176b]" name="afterMethod" is-config="true" duration-ms="2000" started-at="2018-11-14T09:48:26Z" finished-at="2018-11-14T09:48:28Z">
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="3" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testLogin status=SUCCESS method=LoginPageTest.testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@71b1176b] output={null}]]]>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@14d3bc22]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[                2018-11-14 17:48:26: [Method]-"LoginPageTest.testLogin" is passed]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@71b1176b]" name="AfterTest" is-config="true" duration-ms="0" started-at="2018-11-14T09:49:03Z" finished-at="2018-11-14T09:49:03Z">
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="2" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@784c74e]]>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@4c1d9d4b]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[        2018-11-14 17:49:03): [Test]-"MerchantAuditPass" is finished]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- AfterTest -->
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest -->
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
-        <test-method status="PASS" signature="testQuit()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@159f197]" name="testQuit" duration-ms="3811" started-at="2018-11-14T09:48:58Z" finished-at="2018-11-14T09:49:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testQuit -->
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@159f197]" name="init" is-config="true" duration-ms="0" started-at="2018-11-14T09:48:58Z" finished-at="2018-11-14T09:48:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="releaseBrowser()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@159f197]" name="releaseBrowser" is-config="true" duration-ms="1002" started-at="2018-11-14T09:49:02Z" finished-at="2018-11-14T09:49:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- releaseBrowser -->
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest -->
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest@6193932a]" name="init" is-config="true" duration-ms="2" started-at="2018-11-14T09:48:28Z" finished-at="2018-11-14T09:48:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest@6193932a]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-11-14T09:48:28Z" finished-at="2018-11-14T09:48:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest@6193932a]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-11-14T09:48:28Z" finished-at="2018-11-14T09:48:28Z">
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="1" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest.testMerchantAuditPass(java.lang.String)]]>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@7219ec67]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[                2018-11-14 17:48:28: [Method]-"MerchantAuditPageTest.testMerchantAuditPass" is started]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testMerchantAuditPass(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest@6193932a]" name="testMerchantAuditPass" duration-ms="11577" started-at="2018-11-14T09:48:28Z" finished-at="2018-11-14T09:48:40Z">
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="1" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[2]]>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@65d6b83b]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[MerchantNO: 872193050135000 商户基本资料新增审核通过]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- testMerchantAuditPass -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest@6193932a]" name="afterMethod" is-config="true" duration-ms="2002" started-at="2018-11-14T09:48:40Z" finished-at="2018-11-14T09:48:42Z">
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="4" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testMerchantAuditPass status=SUCCESS method=MerchantAuditPageTest.testMerchantAuditPass(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest@6193932a] output=MerchantNO: 872193050135000 商户基本资料新增审核通过]]]>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@30b7c004]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[                2018-11-14 17:48:40: [Method]-"MerchantAuditPageTest.testMerchantAuditPass" is passed]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest -->
-    </test> <!-- MerchantAuditPass -->
-  </suite> <!-- MerchantInfoSearch -->
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="1" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@27ae2fd0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="1" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@2f177a4b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="1" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@147ed70f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="2" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@124c278f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="1" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@77167fb7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="5" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@6ce139a4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="1" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@2ddc8ecb]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="2" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@47542153]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="1" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@7a4ccb53]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="3" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@56a6d5a6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="6" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@4445629]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="2" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@25d250c6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="3" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@6b26e945]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="5" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@54c562f7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="3" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@6dbb137d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="10" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@43301423]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="41" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@1a04f701]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="2" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@d4342c2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="6" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@163e4e87]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="4" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@419c5f1a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="4" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@769e7ee8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="3" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@71b1176b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="1" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@647fd8ce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="2" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@78aab498]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="4" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@1ffe63b9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="5" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@7c469c48]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="6" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@7ee955a8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="10" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@48fa0f47]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="4" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@5e316c74]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="5" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@75329a49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="1" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@4313f5bc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="2" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@1e802ef9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="4" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@778d1062]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="5" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@1f0f1111]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="1" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@56528192]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="2" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@96def03]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="2" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@1ed1993a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="2" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@794cb805]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="6" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@59d016c9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="1" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@20d28811]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="4" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@60d8c9b7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="2" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@7c0c77c7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="2" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@5cee5251]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="10" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@5c909414]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="3" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@65466a6a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="1" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@1534f01b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="6" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@2ea227af]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="1" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@363ee3a2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="1" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@79b06cab]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="1" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@7f552bd3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="1" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@460d0a57]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="2" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@1184ab05]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="2" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@149e0f5d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="3" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@2f7c2f4f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="1" started-at="2018-11-21T05:21:53Z" data-provider="locator" finished-at="2018-11-21T05:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@ef9296d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoGenerate -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.dy.AutoTest.web.util.test.AutoGenerateTest@7fe8ea47]" name="end" is-config="true" duration-ms="23" started-at="2018-11-21T05:21:53Z" finished-at="2018-11-21T05:21:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.dy.AutoTest.web.util.test.AutoGenerateTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

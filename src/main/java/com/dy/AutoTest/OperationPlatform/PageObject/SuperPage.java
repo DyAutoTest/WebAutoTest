@@ -47,6 +47,10 @@ public abstract class SuperPage {
 	public void doPageUp() {
 		du.doSendKeys(Keys.PAGE_UP);
 	}
+	public void doBACK_SPACE() {
+		du.doSendKeys(Keys.BACK_SPACE);
+	}
+	
 	
 	
 	public String getCurrentAccountantDate() {
