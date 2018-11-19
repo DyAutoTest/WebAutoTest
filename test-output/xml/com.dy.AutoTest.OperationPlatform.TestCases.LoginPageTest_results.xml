@@ -4,10 +4,18 @@
            failures="0"
            errors="0"
            skipped="0"
+<<<<<<< HEAD
            time="3.799">
+=======
+           time="4.003">
+>>>>>>> refs/heads/MerchantSettlementSearch_Detail_Alter
   <properties />
   
   
+<<<<<<< HEAD
             <testcase name="testLogin" time="3.799" classname="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest" />
+=======
+            <testcase name="testLogin" time="4.003" classname="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest" />
+>>>>>>> refs/heads/MerchantSettlementSearch_Detail_Alter
       
 </testsuite>

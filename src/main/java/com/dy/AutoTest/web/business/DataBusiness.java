@@ -14,6 +14,7 @@ import com.dy.AutoTest.OperationPlatform.POJO.MerchantAuditBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantFeeRateBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean;
+import com.dy.AutoTest.OperationPlatform.POJO.MerchantSettlementAlterBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantSettlementBean;
 import com.dy.AutoTest.OperationPlatform.POJO.OperBean;
 import com.dy.AutoTest.OperationPlatform.POJO.UserAccountModifySearchBean;
@@ -45,6 +46,7 @@ public class DataBusiness {
 	private UserIncomeExpenditureDetailBean UserIncomeExpenditureDetailBean;
 	private UserActionBean UserActionBean;
 	private MerchantInfoSearchBean MerchantInfoSearchBean;
+	private MerchantSettlementAlterBean MerchantSettlementAlterBean;
 
 	
 	private List<Object> list;
@@ -118,6 +120,9 @@ public class DataBusiness {
 				return pojo;
 			case "POP_Data_MerchantSettlement":
 				pojo=(T)testingDao.getData(tableName,ID,MerchantSettlementBean.class);
+				return pojo;
+			case "POP_Data_MerchantSettlementAlter":
+				pojo=(T)testingDao.getData(tableName,ID,MerchantSettlementAlterBean.class);
 				return pojo;
 			case "POP_Data_MerchantFeeRate":
 				pojo=(T)testingDao.getData(tableName,ID,MerchantFeeRateBean.class);
@@ -200,6 +205,9 @@ public class DataBusiness {
 			break;
 		case "POP_Data_MerchantSettlement":
 			list=BaseUtil.toObject(testingDao.getDataList(tableName,MerchantSettlementBean.class));
+			break;
+		case "POP_Data_MerchantSettlementAlter":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,MerchantSettlementAlterBean.class));
 			break;
 		case "POP_Data_MerchantFeeRate":
 			list=BaseUtil.toObject(testingDao.getDataList(tableName,MerchantFeeRateBean.class));
