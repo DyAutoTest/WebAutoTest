@@ -1,21 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <<<<<<< HEAD
+<<<<<<< HEAD
 <suite guice-stage="DEVELOPMENT" name="Failed suite [SuiteOperationPlatform]">
+=======
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MerchantInfoSearch]">
+>>>>>>> refs/heads/MerBalanceQuery
   <parameter name="environment" value="pop_uat"/>
   <parameter name="browserCategory" value="chrome"/>
+<<<<<<< HEAD
   <test thread-count="5" name="MerchantSettlementDetail(failed)">
 =======
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
 >>>>>>> refs/heads/AutoGeneratePageObject
+=======
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="MerchantBalanceQuery(failed)">
+>>>>>>> refs/heads/MerBalanceQuery
     <classes>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantSettlementPageTest">
 =======
       <class name="com.dy.AutoTest.web.util.test.AutoGenerateTest">
 >>>>>>> refs/heads/AutoGeneratePageObject
+=======
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantBalanceQueryPageTest">
+>>>>>>> refs/heads/MerBalanceQuery
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
           <include name="testAutoGenerate" invocation-numbers="0 1 2 3 4 5 6 7 70"/>
@@ -24,29 +41,19 @@
           <include name="init"/>
 <<<<<<< HEAD
           <include name="beforeMethod"/>
+=======
+>>>>>>> refs/heads/MerBalanceQuery
           <include name="beforeClass"/>
           <include name="afterMethod"/>
-          <include name="BeforeTest"/>
           <include name="AfterTest"/>
-          <include name="testMerchantSettlementDetail" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantSettlementPageTest -->
-    </classes>
-  </test> <!-- MerchantSettlementDetail(failed) -->
-  <test thread-count="5" name="MerchantSettlementAlter(failed)">
-    <classes>
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantSettlementPageTest">
-        <methods>
-          <include name="init"/>
           <include name="beforeMethod"/>
-          <include name="beforeClass"/>
-          <include name="afterMethod"/>
+          <include name="testMerchantBalanceQuery" invocation-numbers="2"/>
           <include name="BeforeTest"/>
-          <include name="AfterTest"/>
-          <include name="testMerchantSettlementAlter" invocation-numbers="0"/>
+          <include name="init"/>
         </methods>
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantSettlementPageTest -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantBalanceQueryPageTest -->
     </classes>
+<<<<<<< HEAD
   </test> <!-- MerchantSettlementAlter(failed) -->
   <test thread-count="5" name="MerchantAuditPass(failed)">
     <parameter name="OperID" value="T00107"/>
@@ -91,3 +98,7 @@
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
 >>>>>>> refs/heads/AutoGeneratePageObject
+=======
+  </test> <!-- MerchantBalanceQuery(failed) -->
+</suite> <!-- Failed suite [MerchantInfoSearch] -->
+>>>>>>> refs/heads/MerBalanceQuery

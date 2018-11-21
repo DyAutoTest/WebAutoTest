@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MerchantInfoInsert"
+<testsuite name="Login"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
            time="3.799">
@@ -13,9 +14,13 @@
 =======
            time="6.021">
 >>>>>>> refs/heads/AutoGeneratePageObject
+=======
+           time="4.845">
+>>>>>>> refs/heads/MerBalanceQuery
   <properties />
   
   
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             <testcase name="testLogin" time="3.799" classname="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest" />
@@ -25,5 +30,8 @@
 =======
             <testcase name="testLogin" time="6.021" classname="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest" />
 >>>>>>> refs/heads/AutoGeneratePageObject
+=======
+            <testcase name="testLogin" time="4.845" classname="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest" />
+>>>>>>> refs/heads/MerBalanceQuery
       
 </testsuite>

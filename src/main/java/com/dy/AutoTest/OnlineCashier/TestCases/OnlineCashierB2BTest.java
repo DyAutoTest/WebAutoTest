@@ -15,8 +15,8 @@ import org.testng.annotations.Test;
 
 import com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2BBean;
 import com.dy.AutoTest.OnlineCashier.PageObject.OnlineCashierB2BPage;
-import com.dy.AutoTest.OperationPlatform.TestCases.SuperTest;
 import com.dy.AutoTest.web.actions.Switch;
+import com.dy.AutoTest.web.api.SuperTest;
 import com.dy.AutoTest.web.business.DataBusiness;
 
 public class OnlineCashierB2BTest extends SuperTest{

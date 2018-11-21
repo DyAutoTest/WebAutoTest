@@ -8,9 +8,11 @@ import java.util.Map;
 
 import com.dy.AutoTest.OperationPlatform.POJO.UserIncomeExpenditureDetailBean;
 import com.dy.AutoTest.OperationPlatform.POJO.UserInfoQueryBean;
+import com.dy.AutoTest.OperationPlatform.PageObject.MerchantManagementOnLine.OnLineMerchantInfo.MerchantBalanceQueryPage;
 import com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2BBean;
 import com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2CBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantAuditBean;
+import com.dy.AutoTest.OperationPlatform.POJO.MerchantBalanceQueryBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantFeeRateBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean;
@@ -47,6 +49,7 @@ public class DataBusiness {
 	private UserActionBean UserActionBean;
 	private MerchantInfoSearchBean MerchantInfoSearchBean;
 	private MerchantSettlementAlterBean MerchantSettlementAlterBean;
+	private MerchantBalanceQueryBean MerchantBalanceQueryBean;
 
 	
 	private List<Object> list;
@@ -129,6 +132,9 @@ public class DataBusiness {
 				return pojo;
 			case "POP_Data_MerchantInfoSearch":
 				pojo=(T)testingDao.getData(tableName,ID,MerchantInfoSearchBean.class);
+				return pojo;
+			case "POP_Data_MerchantBalanceQuery":
+				pojo=(T)testingDao.getData(tableName,ID,MerchantBalanceQueryBean.class);
 				return pojo;
 			case "POP_Data_MerchantOper":
 				
@@ -214,6 +220,9 @@ public class DataBusiness {
 			break;
 		case "POP_Data_MerchantInfoSearch":
 			list=BaseUtil.toObject(testingDao.getDataList(tableName,MerchantInfoSearchBean.class));
+			break;
+		case "POP_Data_MerchantBalanceQuery":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,MerchantBalanceQueryBean.class));
 			break;
 		case "POP_Data_MerchantOper":
 			

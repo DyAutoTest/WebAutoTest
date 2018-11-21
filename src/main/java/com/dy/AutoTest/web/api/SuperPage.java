@@ -1,4 +1,4 @@
-package com.dy.AutoTest.OperationPlatform.PageObject;
+package com.dy.AutoTest.web.api;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;

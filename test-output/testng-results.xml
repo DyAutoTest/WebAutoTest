@@ -1,31 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
+=======
+<testng-results skipped="0" failed="1" ignored="2" total="7" passed="4">
+>>>>>>> refs/heads/MerBalanceQuery
   <reporter-output>
+<<<<<<< HEAD
+=======
+    <line>
+      <![CDATA[        2018-11-21 21:11:36): [Test]-"Login" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2018-11-21 21:11:36: [Method]-"LoginPageTest.testLogin" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2018-11-21 21:11:41: [Method]-"LoginPageTest.testLogin" is passed]]>
+    </line>
+    <line>
+      <![CDATA[        2018-11-21 21:11:43): [Test]-"Login" is finished]]>
+    </line>
+    <line>
+      <![CDATA[        2018-11-21 21:11:43): [Test]-"MerchantBalanceQuery" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2018-11-21 21:11:43: [Method]-"MerchantBalanceQueryPageTest.testMerchantBalanceQuery" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2018-11-21 21:11:48: [Method]-"MerchantBalanceQueryPageTest.testMerchantBalanceQuery" is passed]]>
+    </line>
+    <line>
+      <![CDATA[                2018-11-21 21:11:50: [Method]-"MerchantBalanceQueryPageTest.testMerchantBalanceQuery" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2018-11-21 21:12:00: [Method]-"MerchantBalanceQueryPageTest.testMerchantBalanceQuery" is passed]]>
+    </line>
+    <line>
+      <![CDATA[                2018-11-21 21:12:02: [Method]-"MerchantBalanceQueryPageTest.testMerchantBalanceQuery" is started]]>
+    </line>
+    <line>
+      <![CDATA[Both of MerchantNO and MerchantName are null ! Please check TestData !]]>
+    </line>
+    <line>
+      <![CDATA[                2018-11-21 21:12:02: [Method]-"MerchantBalanceQueryPageTest.testMerchantBalanceQuery" is failed]]>
+    </line>
+    <line>
+      <![CDATA[                        The failure is java.lang.AssertionError: Both of MerchantNO and MerchantName are null ! Please check TestData ! expected [true] but found [false]]]>
+    </line>
+    <line>
+      <![CDATA[        2018-11-21 21:12:04): [Test]-"MerchantBalanceQuery" is finished]]>
+    </line>
+>>>>>>> refs/heads/MerBalanceQuery
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="152" started-at="2018-11-21T07:13:30Z" finished-at="2018-11-21T07:13:30Z">
+=======
+  <suite name="MerchantInfoSearch" duration-ms="32854" started-at="2018-11-21T13:11:36Z" finished-at="2018-11-21T13:12:09Z">
+>>>>>>> refs/heads/MerBalanceQuery
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="Default test" duration-ms="152" started-at="2018-11-21T07:13:30Z" finished-at="2018-11-21T07:13:30Z">
       <class name="com.dy.AutoTest.web.util.AutoGenerateTest">
         <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.web.util.AutoGenerateTest@7fe8ea47]" name="init" is-config="true" duration-ms="16" started-at="2018-11-21T07:13:30Z" finished-at="2018-11-21T07:13:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="7" started-at="2018-11-21T07:13:30Z" data-provider="locator" finished-at="2018-11-21T07:13:30Z">
+=======
+    <test name="Login" duration-ms="6876" started-at="2018-11-21T13:11:36Z" finished-at="2018-11-21T13:11:43Z">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
+        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="BeforeTest" is-config="true" duration-ms="2" started-at="2018-11-21T13:11:36Z" finished-at="2018-11-21T13:11:36Z">
           <params>
             <param index="0">
               <value>
+                <![CDATA[org.testng.TestRunner@3e6534e7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2018-11-21 21:11:36): [Test]-"Login" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="init" is-config="true" duration-ms="6" started-at="2018-11-21T13:11:36Z" finished-at="2018-11-21T13:11:36Z">
+>>>>>>> refs/heads/MerBalanceQuery
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+<<<<<<< HEAD
+        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="7" started-at="2018-11-21T07:13:30Z" data-provider="locator" finished-at="2018-11-21T07:13:30Z">
+=======
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-11-21T13:11:36Z" finished-at="2018-11-21T13:11:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-11-21T13:11:36Z" finished-at="2018-11-21T13:11:36Z">
+>>>>>>> refs/heads/MerBalanceQuery
+          <params>
+            <param index="0">
+              <value>
+<<<<<<< HEAD
                 <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@1d082e88]]>
+=======
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest.testLogin(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-21 21:11:36: [Method]-"LoginPageTest.testLogin" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="testLogin" duration-ms="4845" started-at="2018-11-21T13:11:36Z" finished-at="2018-11-21T13:11:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[T00064]]>
+>>>>>>> refs/heads/MerBalanceQuery
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- testAutoGenerate -->
         <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="2" started-at="2018-11-21T07:13:30Z" data-provider="locator" finished-at="2018-11-21T07:13:30Z">
+=======
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="afterMethod" is-config="true" duration-ms="2002" started-at="2018-11-21T13:11:41Z" finished-at="2018-11-21T13:11:43Z">
+>>>>>>> refs/heads/MerBalanceQuery
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
                 <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@4fe767f3]]>
               </value>
             </param>
@@ -71,16 +176,93 @@
             <param index="0">
               <value>
                 <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@37918c79]]>
+=======
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=LoginPageTest.testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-21 21:11:41: [Method]-"LoginPageTest.testLogin" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="AfterTest" is-config="true" duration-ms="1" started-at="2018-11-21T13:11:43Z" finished-at="2018-11-21T13:11:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3e6534e7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2018-11-21 21:11:43): [Test]-"Login" is finished]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest -->
+    </test> <!-- Login -->
+    <test name="MerchantBalanceQuery" duration-ms="21424" started-at="2018-11-21T13:11:43Z" finished-at="2018-11-21T13:12:04Z">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantBalanceQueryPageTest">
+        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantBalanceQueryPageTest@29176cc1]" name="BeforeTest" is-config="true" duration-ms="1" started-at="2018-11-21T13:11:43Z" finished-at="2018-11-21T13:11:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@66ad7bf0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2018-11-21 21:11:43): [Test]-"MerchantBalanceQuery" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantBalanceQueryPageTest@29176cc1]" name="beforeClass" is-config="true" duration-ms="1" started-at="2018-11-21T13:11:43Z" finished-at="2018-11-21T13:11:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantBalanceQueryPageTest@29176cc1]" name="init" is-config="true" duration-ms="3" started-at="2018-11-21T13:11:43Z" finished-at="2018-11-21T13:11:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantBalanceQueryPageTest@29176cc1]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-11-21T13:11:43Z" finished-at="2018-11-21T13:11:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantBalanceQueryPageTest.testMerchantBalanceQuery(com.dy.AutoTest.OperationPlatform.POJO.MerchantBalanceQueryBean)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-21 21:11:43: [Method]-"MerchantBalanceQueryPageTest.testMerchantBalanceQuery" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testMerchantBalanceQuery(com.dy.AutoTest.OperationPlatform.POJO.MerchantBalanceQueryBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantBalanceQueryPageTest@29176cc1]" name="testMerchantBalanceQuery" duration-ms="5039" started-at="2018-11-21T13:11:43Z" data-provider="MerchantBalanceQuery" finished-at="2018-11-21T13:11:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.MerchantBalanceQueryBean@841e575]]>
+>>>>>>> refs/heads/MerBalanceQuery
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- testAutoGenerate -->
         <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.web.util.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="2" started-at="2018-11-21T07:13:30Z" data-provider="locator" finished-at="2018-11-21T07:13:30Z">
+=======
+        </test-method> <!-- testMerchantBalanceQuery -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantBalanceQueryPageTest@29176cc1]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2018-11-21T13:11:48Z" finished-at="2018-11-21T13:11:50Z">
+>>>>>>> refs/heads/MerBalanceQuery
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
                 <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@233fe9b6]]>
               </value>
             </param>
@@ -117,4 +299,194 @@
       </class> <!-- com.dy.AutoTest.web.util.AutoGenerateTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
+=======
+                <![CDATA[[TestResult name=testMerchantBalanceQuery status=SUCCESS method=MerchantBalanceQueryPageTest.testMerchantBalanceQuery(com.dy.AutoTest.OperationPlatform.POJO.MerchantBalanceQueryBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantBalanceQueryPageTest@29176cc1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-21 21:11:48: [Method]-"MerchantBalanceQueryPageTest.testMerchantBalanceQuery" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantBalanceQueryPageTest@29176cc1]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2018-11-21T13:11:50Z" finished-at="2018-11-21T13:11:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantBalanceQueryPageTest.testMerchantBalanceQuery(com.dy.AutoTest.OperationPlatform.POJO.MerchantBalanceQueryBean)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-21 21:11:50: [Method]-"MerchantBalanceQueryPageTest.testMerchantBalanceQuery" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testMerchantBalanceQuery(com.dy.AutoTest.OperationPlatform.POJO.MerchantBalanceQueryBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantBalanceQueryPageTest@29176cc1]" name="testMerchantBalanceQuery" duration-ms="9763" started-at="2018-11-21T13:11:50Z" data-provider="MerchantBalanceQuery" finished-at="2018-11-21T13:12:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.MerchantBalanceQueryBean@ecf9fb3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMerchantBalanceQuery -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantBalanceQueryPageTest@29176cc1]" name="afterMethod" is-config="true" duration-ms="2002" started-at="2018-11-21T13:12:00Z" finished-at="2018-11-21T13:12:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testMerchantBalanceQuery status=SUCCESS method=MerchantBalanceQueryPageTest.testMerchantBalanceQuery(com.dy.AutoTest.OperationPlatform.POJO.MerchantBalanceQueryBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantBalanceQueryPageTest@29176cc1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-21 21:12:00: [Method]-"MerchantBalanceQueryPageTest.testMerchantBalanceQuery" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantBalanceQueryPageTest@29176cc1]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-11-21T13:12:02Z" finished-at="2018-11-21T13:12:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantBalanceQueryPageTest.testMerchantBalanceQuery(com.dy.AutoTest.OperationPlatform.POJO.MerchantBalanceQueryBean)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-21 21:12:02: [Method]-"MerchantBalanceQueryPageTest.testMerchantBalanceQuery" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="testMerchantBalanceQuery(com.dy.AutoTest.OperationPlatform.POJO.MerchantBalanceQueryBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantBalanceQueryPageTest@29176cc1]" name="testMerchantBalanceQuery" duration-ms="597" started-at="2018-11-21T13:12:02Z" data-provider="MerchantBalanceQuery" finished-at="2018-11-21T13:12:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.MerchantBalanceQueryBean@2571066a]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Both of MerchantNO and MerchantName are null ! Please check TestData ! expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Both of MerchantNO and MerchantName are null ! Please check TestData ! expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.dy.AutoTest.web.api.SuperTest.doSearchMerchantByNOorName(SuperTest.java:93)
+at com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantBalanceQueryPageTest.testMerchantBalanceQuery(MerchantBalanceQueryPageTest.java:35)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Both of MerchantNO and MerchantName are null ! Please check TestData !]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testMerchantBalanceQuery -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantBalanceQueryPageTest@29176cc1]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2018-11-21T13:12:02Z" finished-at="2018-11-21T13:12:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testMerchantBalanceQuery status=FAILURE method=MerchantBalanceQueryPageTest.testMerchantBalanceQuery(com.dy.AutoTest.OperationPlatform.POJO.MerchantBalanceQueryBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantBalanceQueryPageTest@29176cc1] output=Both of MerchantNO and MerchantName are null ! Please check TestData !]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-21 21:12:02: [Method]-"MerchantBalanceQueryPageTest.testMerchantBalanceQuery" is failed]]>
+            </line>
+            <line>
+              <![CDATA[                        The failure is java.lang.AssertionError: Both of MerchantNO and MerchantName are null ! Please check TestData ! expected [true] but found [false]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantBalanceQueryPageTest@29176cc1]" name="AfterTest" is-config="true" duration-ms="0" started-at="2018-11-21T13:12:04Z" finished-at="2018-11-21T13:12:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@66ad7bf0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2018-11-21 21:12:04): [Test]-"MerchantBalanceQuery" is finished]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantBalanceQueryPageTest -->
+    </test> <!-- MerchantBalanceQuery -->
+    <test name="Quit" duration-ms="4519" started-at="2018-11-21T13:12:04Z" finished-at="2018-11-21T13:12:09Z">
+      <class name="com.dy.AutoTest.web.actions.SingletonSet">
+        <test-method status="PASS" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@23986957]" name="init" is-config="true" duration-ms="4051" started-at="2018-11-21T13:11:32Z" finished-at="2018-11-21T13:11:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pop_uat]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="releaseJDBC()[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@23986957]" name="releaseJDBC" is-config="true" duration-ms="2789" started-at="2018-11-21T13:12:09Z" finished-at="2018-11-21T13:12:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- releaseJDBC -->
+      </class> <!-- com.dy.AutoTest.web.actions.SingletonSet -->
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@6ce139a4]" name="init" is-config="true" duration-ms="4" started-at="2018-11-21T13:12:04Z" finished-at="2018-11-21T13:12:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testQuit()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@6ce139a4]" name="testQuit" duration-ms="3512" started-at="2018-11-21T13:12:04Z" finished-at="2018-11-21T13:12:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testQuit -->
+        <test-method status="PASS" signature="releaseBrowser()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@6ce139a4]" name="releaseBrowser" is-config="true" duration-ms="1001" started-at="2018-11-21T13:12:08Z" finished-at="2018-11-21T13:12:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- releaseBrowser -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest -->
+    </test> <!-- Quit -->
+  </suite> <!-- MerchantInfoSearch -->
+>>>>>>> refs/heads/MerBalanceQuery
 </testng-results>

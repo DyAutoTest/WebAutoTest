@@ -17,7 +17,8 @@ public class GenerateStringUtil {
 			+ "		du=new DoPlus(driver);\r\n"
 			+ "		du.waitTime=waitTime;\r\n"
 			+ "		du.loadLocator(\"%s\");\r\n"
-			+ "	}\r\n\r\n";
+			+ "	}\r\n\r\n"
+			+ "/****************************Auto Generate******************************/\r\n\r\n";
 	public static String classIdentifyEnd="\r\n}";
 	public static String generatePackgaeMethod(String packageName) {
 		return String.format(packageTemplate, packageName);

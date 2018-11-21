@@ -2,8 +2,8 @@ package com.dy.AutoTest.OperationPlatform.PageObject.UserManagement.UserInfoMana
 
 import org.openqa.selenium.WebDriver;
 
-import com.dy.AutoTest.OperationPlatform.PageObject.SuperPage;
 import com.dy.AutoTest.web.actions.DoPlus;
+import com.dy.AutoTest.web.api.SuperPage;
 
 /**
  * @author Jerry

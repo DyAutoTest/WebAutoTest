@@ -19,7 +19,7 @@ public class AutoGenerateTest {
 	
 	private static String directory="src\\main\\java\\com\\dy\\AutoTest\\OperationPlatform\\PageObject\\MerchantManagementOnLine\\OnLineMerchantInfo\\";
 	private static String packageName="com.dy.AutoTest.OperationPlatform.PageObject.MerchantManagementOnLine.OnLineMerchantInfo";
-	private static String className="MerchantBalanceQuery";
+	private static String className="MerchantBalanceQueryPage";
 	private static String locatorName="POP_Loc_MerchantBalanceQuery";
 	
 	@DataProvider(name="locator")

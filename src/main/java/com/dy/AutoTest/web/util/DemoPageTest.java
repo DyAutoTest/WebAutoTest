@@ -5,7 +5,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.dy.AutoTest.OperationPlatform.TestCases.SuperTest;
+import com.dy.AutoTest.web.api.SuperTest;
 import com.dy.AutoTest.web.beans.DemoBean;
 import com.dy.AutoTest.web.business.DataBusiness;
 

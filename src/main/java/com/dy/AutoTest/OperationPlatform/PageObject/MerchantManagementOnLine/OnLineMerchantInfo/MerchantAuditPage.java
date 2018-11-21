@@ -5,8 +5,8 @@ import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import com.dy.AutoTest.OperationPlatform.PageObject.SuperPage;
 import com.dy.AutoTest.web.actions.DoPlus;
+import com.dy.AutoTest.web.api.SuperPage;
 
 public class MerchantAuditPage extends SuperPage{
 

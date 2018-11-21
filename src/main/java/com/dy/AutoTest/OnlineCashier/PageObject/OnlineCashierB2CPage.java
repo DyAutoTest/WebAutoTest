@@ -2,8 +2,8 @@ package com.dy.AutoTest.OnlineCashier.PageObject;
 
 import org.openqa.selenium.WebDriver;
 
-import com.dy.AutoTest.OperationPlatform.PageObject.SuperPage;
 import com.dy.AutoTest.web.actions.DoPlus;
+import com.dy.AutoTest.web.api.SuperPage;
 import com.dy.AutoTest.web.business.OperBusiness;
 import com.dy.AutoTest.web.dao.OperDao;
 import com.dy.AutoTest.web.dao.impl.OperDaoImpl;
