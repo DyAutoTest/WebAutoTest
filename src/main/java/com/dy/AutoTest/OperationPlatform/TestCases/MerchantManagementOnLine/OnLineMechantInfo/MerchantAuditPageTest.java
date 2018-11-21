@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantAuditBean;
 import com.dy.AutoTest.OperationPlatform.PageObject.MerchantManagementOnLine.OnLineMerchantInfo.MerchantAuditPage;
-import com.dy.AutoTest.OperationPlatform.TestCases.SuperTest;
+import com.dy.AutoTest.web.api.SuperTest;
 import com.dy.AutoTest.web.business.DataBusiness;
 import com.dy.AutoTest.web.business.MerchantBusiness;
 import com.dy.AutoTest.web.dao.MerchantDao;

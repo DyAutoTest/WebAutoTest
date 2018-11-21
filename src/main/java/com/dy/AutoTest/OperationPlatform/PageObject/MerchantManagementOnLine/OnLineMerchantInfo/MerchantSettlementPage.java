@@ -6,8 +6,8 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.testng.Reporter;
 
-import com.dy.AutoTest.OperationPlatform.PageObject.SuperPage;
 import com.dy.AutoTest.web.actions.DoPlus;
+import com.dy.AutoTest.web.api.SuperPage;
 
 
 public class MerchantSettlementPage extends SuperPage{

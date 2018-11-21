@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import com.dy.AutoTest.OperationPlatform.POJO.OperBean;
 import com.dy.AutoTest.OperationPlatform.PageObject.LoginPage;
 import com.dy.AutoTest.web.actions.SingletonSet;
+import com.dy.AutoTest.web.api.SuperTest;
 import com.dy.AutoTest.web.business.DataBusiness;
 
 /**

@@ -5,10 +5,11 @@ import com.dy.AutoTest.web.beans.WebElementType;
 
 public class GenerateStringUtil {
 	private static String packageTemplate="package %s;\r\n\r\n";
-	private static String importClass="import org.openqa.selenium.WebDriver;\r\n\r\n"
-			+ "import com.dy.AutoTest.OperationPlatform.PageObject.SuperPage;\r\n"
+	private static String importClass="import com.dy.AutoTest.web.api.SearchMerchantByNOorName;\r\n\r\n"
+			+ "import org.openqa.selenium.WebDriver;\r\n\r\n"
+			+ "import com.dy.AutoTest.web.api.SuperPage;\r\n"
 			+ "import com.dy.AutoTest.web.actions.DoPlus;\r\n\r\n";
-	private static String classIdentify="public class %s extends SuperPage{\r\n"
+	private static String classIdentify="public class %s extends SuperPage implements SearchMerchantByNOorName{\r\n"
 			+ "	public %s(WebDriver driver) {\r\n"
 			+ "		super(driver);\r\n"
 			+ "		du.loadLocator(\"%s\");\r\n"
@@ -17,7 +18,10 @@ public class GenerateStringUtil {
 			+ "		du=new DoPlus(driver);\r\n"
 			+ "		du.waitTime=waitTime;\r\n"
 			+ "		du.loadLocator(\"%s\");\r\n"
-			+ "	}\r\n\r\n";
+			+ "	}\r\n\r\n"
+			+ "/***************************Manual Coding**********************************/\r\n\r\n\r\n"
+			+ "/****************************Auto Generate******************************/\r\n\r\n";
+	
 	public static String classIdentifyEnd="\r\n}";
 	public static String generatePackgaeMethod(String packageName) {
 		return String.format(packageTemplate, packageName);
@@ -45,12 +49,25 @@ public class GenerateStringUtil {
 			"		return du.what(\"%s\").getAttribute(\"value\");\r\n" + 
 			"	}\r\n";
 	
+	private static String inputTemplateForDate ="	public void set%s(String value) {\r\n"+
+			"		du.what(\"%s\").clear();\r\n" + 
+			"		du.waitFor(500);" + 
+			"		du.what(\"%s\").sendKeys(value);\r\n" + 
+			"	}\r\n"+ 
+			"	public String get%s() {\r\n" + 
+			"		return du.what(\"%s\").getAttribute(\"value\");\r\n" + 
+			"	}\r\n";
+	
 	private static String selectTemplate ="	public void select%s(String value) {\r\n" + 
 			"		du.whatSelect(\"%s\").selectByValue(value);\r\n" + 
 			"	}\r\n";
 	//修改过，原index为int型，使用中做了String.valueof()转型，我直接改为String 
 	private static String radioTemplate = "	public void click%s(String index) {\r\n" + 
 			"		du.what(\"%s\",index).click();\r\n" + 
+			"	}\r\n"+ 
+			"	public boolean is%sDisplayed(String index) {\r\n"+
+			"		du.waitFor(500);\r\n"+ 
+			"		return du.what(\"%s\",index).isDisplayed();\r\n"+ 
 			"	}\r\n";
 	//新增类型label
 	private static String labelTemplate = "	public String get%s() {\r\n" + 
@@ -64,6 +81,9 @@ public class GenerateStringUtil {
 	}
 	//用于text和textarea标签
 	public static String generateInputMethod(String name) {
+		if(name.contains("date")||name.contains("Date")) {
+			return String.format(inputTemplateForDate, name, name, name, name, name, name);
+		}
 		return String.format(inputTemplate, name, name, name, name, name, name);
 	}
 	//用于select标签
@@ -72,7 +92,7 @@ public class GenerateStringUtil {
 	}
 	//用于radio标签
 	public static String generateRadioMethod(String name) {
-		return String.format(radioTemplate, name, name);
+		return String.format(radioTemplate, name, name,name, name);
 	}
 	//用于label标签
 	public static String generateLabelMethod(String name) {

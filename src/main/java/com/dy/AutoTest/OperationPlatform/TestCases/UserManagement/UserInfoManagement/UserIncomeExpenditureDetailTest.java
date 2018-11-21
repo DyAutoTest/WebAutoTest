@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import com.dy.AutoTest.OperationPlatform.PageObject.UserManagement.UserInfoManagement.UserIncomeExpenditureDetailPage;
 import com.dy.AutoTest.OperationPlatform.POJO.UserIncomeExpenditureDetailBean;
-import com.dy.AutoTest.OperationPlatform.TestCases.SuperTest;
+import com.dy.AutoTest.web.api.SuperTest;
 import com.dy.AutoTest.web.business.DataBusiness;
 
 public class UserIncomeExpenditureDetailTest extends SuperTest{

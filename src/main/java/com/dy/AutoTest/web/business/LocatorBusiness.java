@@ -5,20 +5,7 @@ import static org.testng.Assert.assertTrue;
 import java.util.List;
 import java.util.Map;
 
-import com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2BBean;
-import com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2CBean;
-import com.dy.AutoTest.OperationPlatform.POJO.MerchantAuditBean;
-import com.dy.AutoTest.OperationPlatform.POJO.MerchantFeeRateBean;
-import com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoBean;
-import com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean;
-import com.dy.AutoTest.OperationPlatform.POJO.MerchantSettlementAlterBean;
-import com.dy.AutoTest.OperationPlatform.POJO.MerchantSettlementBean;
-import com.dy.AutoTest.OperationPlatform.POJO.OperBean;
-import com.dy.AutoTest.OperationPlatform.POJO.UserAccountModifySearchBean;
-import com.dy.AutoTest.OperationPlatform.POJO.UserActionBean;
-import com.dy.AutoTest.OperationPlatform.POJO.UserIncomeExpenditureDetailBean;
-import com.dy.AutoTest.OperationPlatform.POJO.UserInfoQueryBean;
-import com.dy.AutoTest.web.beans.Data_URLBean;
+
 import com.dy.AutoTest.web.beans.LocatorBean;
 import com.dy.AutoTest.web.dao.TestingDao;
 import com.dy.AutoTest.web.dao.impl.TestingDaoImpl;
@@ -80,7 +67,6 @@ public class LocatorBusiness {
 	}
 	
 	public void loadLocatorBeanList(String tableName) {
-		
 			list2=BaseUtil.toObject(testingDao.getDataList(tableName,LocatorBean.class));
 	}
 	

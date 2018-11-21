@@ -8,8 +8,8 @@ import org.testng.annotations.Test;
 
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantFeeRateBean;
 import com.dy.AutoTest.OperationPlatform.PageObject.MerchantManagementOnLine.OnLineMerchantInfo.MerchantFeeRatePage;
-import com.dy.AutoTest.OperationPlatform.TestCases.SuperTest;
 import com.dy.AutoTest.web.actions.SingletonSet;
+import com.dy.AutoTest.web.api.SuperTest;
 import com.dy.AutoTest.web.business.DataBusiness;
 
 public class MerchantFeeRatePageTest extends SuperTest{

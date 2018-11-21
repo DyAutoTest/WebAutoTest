@@ -1,4 +1,4 @@
-package com.dy.AutoTest.web.util;
+package com.dy.AutoTest;
 
 import static org.testng.Assert.assertTrue;
 
@@ -10,6 +10,8 @@ import org.testng.annotations.Test;
 import com.dy.AutoTest.web.actions.SingletonSet;
 import com.dy.AutoTest.web.beans.LocatorBean;
 import com.dy.AutoTest.web.business.LocatorBusiness;
+import com.dy.AutoTest.web.util.FileUtil;
+import com.dy.AutoTest.web.util.GenerateStringUtil;
 
 
 public class AutoGenerateTest {
@@ -19,8 +21,8 @@ public class AutoGenerateTest {
 	
 	private static String directory="src\\main\\java\\com\\dy\\AutoTest\\OperationPlatform\\PageObject\\MerchantManagementOnLine\\OnLineMerchantInfo\\";
 	private static String packageName="com.dy.AutoTest.OperationPlatform.PageObject.MerchantManagementOnLine.OnLineMerchantInfo";
-	private static String className="MerchantBalanceQuery";
-	private static String locatorName="POP_Loc_MerchantBalanceQuery";
+	private static String className="MerchantIncomeExpenditureDetailPage";
+	private static String locatorName="POP_Loc_MerchantIncomeExpenditureDetail";
 	
 	@DataProvider(name="locator")
 	protected static Object[][] parametersPoolForSqlite(){

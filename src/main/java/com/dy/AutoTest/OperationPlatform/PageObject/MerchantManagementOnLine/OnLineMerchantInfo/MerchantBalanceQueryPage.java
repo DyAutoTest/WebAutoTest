@@ -2,11 +2,12 @@ package com.dy.AutoTest.OperationPlatform.PageObject.MerchantManagementOnLine.On
 
 import org.openqa.selenium.WebDriver;
 
-import com.dy.AutoTest.OperationPlatform.PageObject.SuperPage;
 import com.dy.AutoTest.web.actions.DoPlus;
+import com.dy.AutoTest.web.api.SearchMerchantByNOorName;
+import com.dy.AutoTest.web.api.SuperPage;
 
-public class MerchantBalanceQuery extends SuperPage{
-	public MerchantBalanceQuery(WebDriver driver) {
+public class MerchantBalanceQueryPage extends SuperPage implements SearchMerchantByNOorName{
+	public MerchantBalanceQueryPage(WebDriver driver) {
 		super(driver);
 		du.loadLocator("POP_Loc_MerchantBalanceQuery");
 	}
@@ -15,6 +16,14 @@ public class MerchantBalanceQuery extends SuperPage{
 		du.waitTime=waitTime;
 		du.loadLocator("POP_Loc_MerchantBalanceQuery");
 	}
+/****************************Manual Coding*******************************/	
+	public boolean isSearchMer_RadioDisplayed(String index) {
+		du.waitFor(500);
+		return du.what("SearchMer_Index",index).isDisplayed();
+	}
+	
+
+/****************************Auto Generate******************************/
 
 	//商户号
 	public void setMerchantNO(String value) {
@@ -25,20 +34,20 @@ public class MerchantBalanceQuery extends SuperPage{
 		return du.what("MerchantNO").getAttribute("value");
 	}
 	//按钮_搜商户
-	public void clickSearchMerchant() {
-		du.what("SearchMerchant").click();
+	public void clickSearchMer() {
+		du.what("SearchMer").click();
 	}
 	//按钮_查询
 	public void clickQuery() {
 		du.what("Query").click();
 	}
 	//搜商户_商户号
-	public void setSearchMer_MerNum(String value) {
-		du.what("SearchMer_MerNum").clear();
-		du.what("SearchMer_MerNum").sendKeys(value);
+	public void setSearchMer_MerNO(String value) {
+		du.what("SearchMer_MerNO").clear();
+		du.what("SearchMer_MerNO").sendKeys(value);
 	}
-	public String getSearchMer_MerNum() {
-		return du.what("SearchMer_MerNum").getAttribute("value");
+	public String getSearchMer_MerNO() {
+		return du.what("SearchMer_MerNO").getAttribute("value");
 	}
 	//搜商户_商户名
 	public void setSearchMer_MerName(String value) {
@@ -53,7 +62,7 @@ public class MerchantBalanceQuery extends SuperPage{
 		du.what("SearchMer_Search").click();
 	}
 	//搜商户_商户索引
-	public void clickSearchMer_Index(String index) {
+	public void clickSearchMer_Radio(String index) {
 		du.what("SearchMer_Index",index).click();
 	}
 	//搜商户_提交
