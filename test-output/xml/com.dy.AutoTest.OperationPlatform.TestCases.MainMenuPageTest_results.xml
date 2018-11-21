@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MerchantInfoAlter"
+<testsuite name="MerchantInfoInsert"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
 <<<<<<< HEAD
+<<<<<<< HEAD
            time="3.901">
 =======
            time="4.032">
 >>>>>>> refs/heads/MerchantSettlementSearch_Detail_Alter
+=======
+           time="3.799">
+>>>>>>> refs/heads/AutoGeneratePageObject
   <properties />
   
   
+<<<<<<< HEAD
 <<<<<<< HEAD
             <testcase name="testQuit" time="3.901" classname="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest" />
 =======
             <testcase name="testQuit" time="4.032" classname="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest" />
 >>>>>>> refs/heads/MerchantSettlementSearch_Detail_Alter
+=======
+            <testcase name="testQuit" time="3.799" classname="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest" />
+>>>>>>> refs/heads/AutoGeneratePageObject
       
 </testsuite>

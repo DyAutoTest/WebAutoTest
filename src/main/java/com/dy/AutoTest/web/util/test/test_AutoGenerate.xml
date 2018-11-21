@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="Suite_Util">
+<parameter name="directory" value="src\main\java\com\dy\AutoTest\OperationPlatform\PageObject\MerchantManagementOnLine\"></parameter>
+<parameter name="packageName" value="com.dy.AutoTest.OperationPlatform.PageObject.MerchantManagementOnLine"></parameter>
+<parameter name="className" value="ttt"></parameter>
+<parameter name="locatorName" value="POP_Loc_LoginPage"></parameter>
+
+  <test thread-count="5" name="Test_AutoGenerate">
+    <classes>
+      <class name="com.dy.AutoTest.web.util.test.AutoGenerateTest"/>
+    </classes>
+  </test> <!-- Test_Util -->
+</suite> <!-- Suite_Util -->

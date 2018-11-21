@@ -243,6 +243,7 @@ public class DataBusiness {
 		case "Data_URL":
 			data_URLBean=new Data_URLBean();
 			break;
+		
 		default:
 			System.out.println("table is not exist! Please check!");
 			break;

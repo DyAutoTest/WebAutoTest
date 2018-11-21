@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MerchantAuditPass"
+<testsuite name="MerchantInfoInsert"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
 <<<<<<< HEAD
+<<<<<<< HEAD
            time="3.799">
 =======
            time="4.003">
 >>>>>>> refs/heads/MerchantSettlementSearch_Detail_Alter
+=======
+           time="6.021">
+>>>>>>> refs/heads/AutoGeneratePageObject
   <properties />
   
   
+<<<<<<< HEAD
 <<<<<<< HEAD
             <testcase name="testLogin" time="3.799" classname="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest" />
 =======
             <testcase name="testLogin" time="4.003" classname="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest" />
 >>>>>>> refs/heads/MerchantSettlementSearch_Detail_Alter
+=======
+            <testcase name="testLogin" time="6.021" classname="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest" />
+>>>>>>> refs/heads/AutoGeneratePageObject
       
 </testsuite>

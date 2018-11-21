@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
 <suite guice-stage="DEVELOPMENT" name="Failed suite [SuiteOperationPlatform]">
   <parameter name="environment" value="pop_uat"/>
   <parameter name="browserCategory" value="chrome"/>
   <test thread-count="5" name="MerchantSettlementDetail(failed)">
+=======
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+>>>>>>> refs/heads/AutoGeneratePageObject
     <classes>
+<<<<<<< HEAD
       <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantSettlementPageTest">
+=======
+      <class name="com.dy.AutoTest.web.util.test.AutoGenerateTest">
+>>>>>>> refs/heads/AutoGeneratePageObject
         <methods>
+<<<<<<< HEAD
+=======
+          <include name="testAutoGenerate" invocation-numbers="0 1 2 3 4 5 6 7 70"/>
+          <include name="end"/>
+>>>>>>> refs/heads/AutoGeneratePageObject
           <include name="init"/>
+<<<<<<< HEAD
           <include name="beforeMethod"/>
           <include name="beforeClass"/>
           <include name="afterMethod"/>
@@ -69,3 +84,10 @@
     </classes>
   </test> <!-- MerchantAuditPass(failed) -->
 </suite> <!-- Failed suite [SuiteOperationPlatform] -->
+=======
+        </methods>
+      </class> <!-- com.dy.AutoTest.web.util.test.AutoGenerateTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
+>>>>>>> refs/heads/AutoGeneratePageObject
