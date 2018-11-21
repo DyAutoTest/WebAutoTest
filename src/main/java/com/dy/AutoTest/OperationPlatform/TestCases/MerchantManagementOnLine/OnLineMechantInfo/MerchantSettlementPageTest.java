@@ -13,8 +13,8 @@ import org.testng.annotations.Test;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantSettlementAlterBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantSettlementBean;
 import com.dy.AutoTest.OperationPlatform.PageObject.MerchantManagementOnLine.OnLineMerchantInfo.MerchantSettlementPage;
-import com.dy.AutoTest.OperationPlatform.TestCases.SuperTest;
 import com.dy.AutoTest.web.actions.SingletonSet;
+import com.dy.AutoTest.web.api.SuperTest;
 import com.dy.AutoTest.web.business.DataBusiness;
 
 /**
@@ -315,14 +315,14 @@ public class MerchantSettlementPageTest extends SuperTest{
 			} catch (Exception e) {
 				merchantSettlementPage.doSearchMerchantClose();
 				wait.waitFor(1000);
-				System.out.println("搜商户 该商户名数据不存在，Please Check TestDate ! MerchantName is "+MerchantSettlementAlterBean.getMerchantName());
-				Reporter.log("搜商户 该商户名数据不存在，Please Check TestDate ! MerchantName is "+MerchantSettlementAlterBean.getMerchantName());
+				System.out.println("搜商户 该商户名数据不存在，Please Check TestData ! MerchantName is "+MerchantSettlementAlterBean.getMerchantName());
+				Reporter.log("搜商户 该商户名数据不存在，Please Check TestData ! MerchantName is "+MerchantSettlementAlterBean.getMerchantName());
 				assertTrue(false);
 			}
 		}else {
-			System.out.println("Both of MerchantNO and MerchantName are null ! Please check TestDate !");
-			Reporter.log("Both of MerchantNO and MerchantName are null ! Please check TestDate !");
-			assertTrue(false,"Both of MerchantNO and MerchantName are null ! Please check TestDate !");
+			System.out.println("Both of MerchantNO and MerchantName are null ! Please check TestData !");
+			Reporter.log("Both of MerchantNO and MerchantName are null ! Please check TestData !");
+			assertTrue(false,"Both of MerchantNO and MerchantName are null ! Please check TestData !");
 		}
 	}
 	

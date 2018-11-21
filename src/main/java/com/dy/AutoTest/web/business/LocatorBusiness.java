@@ -1,18 +1,42 @@
 package com.dy.AutoTest.web.business;
 
+import static org.testng.Assert.assertTrue;
+
 import java.util.List;
 import java.util.Map;
 
+import com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2BBean;
+import com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2CBean;
+import com.dy.AutoTest.OperationPlatform.POJO.MerchantAuditBean;
+import com.dy.AutoTest.OperationPlatform.POJO.MerchantFeeRateBean;
+import com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoBean;
+import com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean;
+import com.dy.AutoTest.OperationPlatform.POJO.MerchantSettlementAlterBean;
+import com.dy.AutoTest.OperationPlatform.POJO.MerchantSettlementBean;
+import com.dy.AutoTest.OperationPlatform.POJO.OperBean;
+import com.dy.AutoTest.OperationPlatform.POJO.UserAccountModifySearchBean;
+import com.dy.AutoTest.OperationPlatform.POJO.UserActionBean;
+import com.dy.AutoTest.OperationPlatform.POJO.UserIncomeExpenditureDetailBean;
+import com.dy.AutoTest.OperationPlatform.POJO.UserInfoQueryBean;
+import com.dy.AutoTest.web.beans.Data_URLBean;
+import com.dy.AutoTest.web.beans.LocatorBean;
+import com.dy.AutoTest.web.dao.TestingDao;
 import com.dy.AutoTest.web.dao.impl.TestingDaoImpl;
+import com.dy.AutoTest.web.util.BaseUtil;
 
 public class LocatorBusiness {
 	private List<Map<String, Object>> list;
+	private List<Object> list2;
 	private Map<String, Object> map;
-	private TestingDaoImpl testingDao;
+	private TestingDao testingDao=new TestingDaoImpl();;
 	
 	public LocatorBusiness(String tableName) {
 		testingDao=new TestingDaoImpl();
 		list=testingDao.getLocator(tableName);
+	}
+	
+	public LocatorBusiness() {
+		
 	}
 	
 	public String getXPath(String elementName) {
@@ -55,39 +79,22 @@ public class LocatorBusiness {
 		return CSS;
 	}
 	
-/*	
-	public String getLoginPageXPath(String elementName) {
-		list=testingDao.getLoginPageLocator();
-		String xPath="";
-		for(int i=0;i<list.size();i++) {
-			map=list.get(i);
-			if(map.get("ElementName").equals(elementName)
-					&& !map.get("XPath").equals("")){
-				xPath= (String)map.get("XPath");
-				break;
-			}
-		}
-		if (xPath.equals("")) {
-			System.out.println("ElementName is not exist! Please check!");
-		}
-		return xPath;
+	public void loadLocatorBeanList(String tableName) {
+		
+			list2=BaseUtil.toObject(testingDao.getDataList(tableName,LocatorBean.class));
 	}
 	
-	public String getLoginPageCSS(String elementName) {
-		list=testingDao.getLoginPageLocator();
-		String CSS="";
-		for(int i=0;i<list.size();i++) {
-			map=list.get(i);
-			if(map.get("ElementName").equals(elementName)
-					&& !map.get("CSS").equals("")){
-				CSS= (String)map.get("CSS");
-				break;
-			}
+	
+	public Object[][] getLocatorBeanArray() {
+		if(list2==null) {
+			System.out.println("LocatorBeanList is null! Please check!");
+			assertTrue(false);
 		}
-		if (CSS.equals("")) {
-			System.out.println("ElementName is not exist! Please check!");
+		Object[][] results=new Object[list2.size()][1];
+		for (int i=0;i<list2.size();i++) {
+			results[i][0]=list2.get(i);
 		}
-		return CSS;
+		return results;
 	}
-*/
+	
 }

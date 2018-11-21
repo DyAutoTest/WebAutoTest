@@ -1,7 +1,7 @@
 package com.dy.AutoTest.web.beans;
 
 public class LocatorBean {
-	private String ID      ;
+	private int ID      ;
 	private String ElementName;
 	private String XPath      ;
 	private String CSS        ;
@@ -26,7 +26,7 @@ public class LocatorBean {
 		Parent = parent;
 		Comment = comment;
 	}
-	public LocatorBean(String iD, String elementName, String xPath, String cSS, String type, String parent,
+	public LocatorBean(int iD, String elementName, String xPath, String cSS, String type, String parent,
 			String comment) {
 		ID = iD;
 		ElementName = elementName;
@@ -38,10 +38,10 @@ public class LocatorBean {
 	}
 
 
-	public String getID() {
+	public int getID() {
 		return ID;
 	}
-	public void setID(String iD) {
+	public void setID(int iD) {
 		ID = iD;
 	}
 	public String getElementName() {
