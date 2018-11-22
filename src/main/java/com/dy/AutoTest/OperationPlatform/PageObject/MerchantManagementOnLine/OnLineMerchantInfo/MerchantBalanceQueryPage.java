@@ -17,7 +17,7 @@ public class MerchantBalanceQueryPage extends SuperPage implements SearchMerchan
 		du.loadLocator("POP_Loc_MerchantBalanceQuery");
 	}
 /****************************Manual Coding*******************************/	
-	public boolean isSearchMerchantIndexDisplayed(String index) {
+	public boolean isSearchMer_RadioDisplayed(String index) {
 		du.waitFor(500);
 		return du.what("SearchMer_Index",index).isDisplayed();
 	}
@@ -62,7 +62,7 @@ public class MerchantBalanceQueryPage extends SuperPage implements SearchMerchan
 		du.what("SearchMer_Search").click();
 	}
 	//搜商户_商户索引
-	public void clickSearchMer_Index(String index) {
+	public void clickSearchMer_Radio(String index) {
 		du.what("SearchMer_Index",index).click();
 	}
 	//搜商户_提交

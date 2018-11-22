@@ -1,4 +1,4 @@
-package com.dy.AutoTest.web.util;
+package com.dy.AutoTest;
 
 
 import org.testng.annotations.BeforeClass;
@@ -16,6 +16,7 @@ public class DemoPageTest extends SuperTest{
     @BeforeClass
 	public void init() {
     	DemoPage=new DemoPage(driver);
+//    	DemoPage.setWaitTime(800);
 		URL=host.toString()+DataBusiness.getData_URL("XXXX");
 	}
 	

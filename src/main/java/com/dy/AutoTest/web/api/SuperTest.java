@@ -77,7 +77,7 @@ public class SuperTest {
 			searchMerchantByNOorName.setSearchMer_MerName(merchantName);
 			searchMerchantByNOorName.clickSearchMer_Search();
 			try {
-				searchMerchantByNOorName.isSearchMerchantIndexDisplayed(index);
+				searchMerchantByNOorName.isSearchMer_RadioDisplayed(index);
 			} catch (Exception e) {
 				searchMerchantByNOorName.clickSearchMer_Close();
 				wait.waitFor(1000);
@@ -85,7 +85,7 @@ public class SuperTest {
 				Reporter.log("搜商户 该商户名数据不存在，Please Check TestData ! MerchantName is "+merchantName);
 				assertTrue(false);
 			}
-			searchMerchantByNOorName.clickSearchMer_Index(index);
+			searchMerchantByNOorName.clickSearchMer_Radio(index);
 			searchMerchantByNOorName.clickSearchMer_Submit();
 		}else {
 			System.out.println("Both of MerchantNO and MerchantName are null ! Please check TestData !");

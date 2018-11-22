@@ -1,4 +1,4 @@
-package com.dy.AutoTest.web.util;
+package com.dy.AutoTest;
 
 import org.openqa.selenium.WebDriver;
 

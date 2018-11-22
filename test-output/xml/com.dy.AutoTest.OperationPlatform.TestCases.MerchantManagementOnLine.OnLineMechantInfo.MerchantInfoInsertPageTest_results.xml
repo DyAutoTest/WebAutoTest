@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="55.595">
+           time="50.669">
   <properties />
   
   
-            <testcase name="testMerchantInfoInsert" time="55.595" classname="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoInsertPageTest" />
+            <testcase name="testMerchantInfoInsert" time="50.669" classname="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoInsertPageTest" />
       
 </testsuite>

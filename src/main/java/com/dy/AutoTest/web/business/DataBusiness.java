@@ -11,9 +11,11 @@ import com.dy.AutoTest.OperationPlatform.POJO.UserInfoQueryBean;
 import com.dy.AutoTest.OperationPlatform.PageObject.MerchantManagementOnLine.OnLineMerchantInfo.MerchantBalanceQueryPage;
 import com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2BBean;
 import com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2CBean;
+import com.dy.AutoTest.OperationPlatform.POJO.MerchantAccountManagementBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantAuditBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantBalanceQueryBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantFeeRateBean;
+import com.dy.AutoTest.OperationPlatform.POJO.MerchantIncomeExpenditureDetailBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantSettlementAlterBean;
@@ -50,7 +52,8 @@ public class DataBusiness {
 	private MerchantInfoSearchBean MerchantInfoSearchBean;
 	private MerchantSettlementAlterBean MerchantSettlementAlterBean;
 	private MerchantBalanceQueryBean MerchantBalanceQueryBean;
-
+	private MerchantIncomeExpenditureDetailBean MerchantIncomeExpenditureDetailBean;
+	private MerchantAccountManagementBean MerchantAccountManagementBean;
 	
 	private List<Object> list;
 	
@@ -135,6 +138,12 @@ public class DataBusiness {
 				return pojo;
 			case "POP_Data_MerchantBalanceQuery":
 				pojo=(T)testingDao.getData(tableName,ID,MerchantBalanceQueryBean.class);
+				return pojo;
+			case "POP_Data_MerchantIncomeExpenditureDetail":
+				pojo=(T)testingDao.getData(tableName,ID,MerchantIncomeExpenditureDetailBean.class);
+				return pojo;
+			case "POP_Data_MerchantAccountManagement":
+				pojo=(T)testingDao.getData(tableName,ID,MerchantAccountManagementBean.class);
 				return pojo;
 			case "POP_Data_MerchantOper":
 				
@@ -223,6 +232,12 @@ public class DataBusiness {
 			break;
 		case "POP_Data_MerchantBalanceQuery":
 			list=BaseUtil.toObject(testingDao.getDataList(tableName,MerchantBalanceQueryBean.class));
+			break;
+		case "POP_Data_MerchantIncomeExpenditureDetail":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,MerchantIncomeExpenditureDetailBean.class));
+			break;
+		case "POP_Data_MerchantAccountManagement":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,MerchantAccountManagementBean.class));
 			break;
 		case "POP_Data_MerchantOper":
 			
