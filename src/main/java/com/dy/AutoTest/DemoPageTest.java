@@ -29,6 +29,7 @@ public class DemoPageTest extends SuperTest{
 	@Test(dataProvider="xxxx")       
 	public void testXXXX(DemoBean DemoBean) {    
 		DemoPage.navigateTo(URL);
-		  
+		
+		
 	}
 }
