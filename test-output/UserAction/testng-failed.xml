@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [UserAction]">
+  <parameter name="environment" value="pop_uat"/>
+  <parameter name="browserCategory" value="chrome"/>
+  <test thread-count="5" name="UserIncomeExpenditureDetail(failed)">
+    <parameter name="OperID" value="T00105"/>
+    <classes>
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.UserManagement.UserInfoManagement.UserActionTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="init"/>
+          <include name="testUserAction"/>
+          <include name="afterMethod"/>
+          <include name="BeforeTest"/>
+          <include name="AfterTest"/>
+        </methods>
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.UserManagement.UserInfoManagement.UserActionTest -->
+    </classes>
+  </test> <!-- UserIncomeExpenditureDetail(failed) -->
+</suite> <!-- Failed suite [UserAction] -->

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MerchantIncomeExpenditureDetail"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="57.013">
+  <properties />
+  
+  
+            <testcase name="testMerchantIncomeExpenditureDetailCheck" time="17.537" classname="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantIncomeExpenditureDetailPageTest" />
+                <testcase name="testMerchantIncomeExpenditureDetailSearch" time="39.476" classname="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantIncomeExpenditureDetailPageTest" />
+      
+</testsuite>

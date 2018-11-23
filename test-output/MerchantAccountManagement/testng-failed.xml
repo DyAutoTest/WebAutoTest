@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MerchantAccountManagement]">
+  <parameter name="environment" value="pop_uat"/>
+  <parameter name="browserCategory" value="firefox"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="MerchantBalanceQuery(failed)">
+    <classes>
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAccountManagementPageTest">
+        <methods>
+          <include name="testMerchantAccountManagementSearch" invocation-numbers="0"/>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="init"/>
+          <include name="AfterTest"/>
+          <include name="beforeMethod"/>
+          <include name="BeforeTest"/>
+        </methods>
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAccountManagementPageTest -->
+    </classes>
+  </test> <!-- MerchantBalanceQuery(failed) -->
+</suite> <!-- Failed suite [MerchantAccountManagement] -->

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MerchantBalanceQuery"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="43.165">
+  <properties />
+  
+  
+            <testcase name="testMerchantAccountManagementSearch" time="31.147" classname="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAccountManagementPageTest" />
+                <testcase name="testMerchantAccountManagementFrozen" time="12.018" classname="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAccountManagementPageTest" />
+      
+</testsuite>

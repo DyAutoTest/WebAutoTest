@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MerchantAuditPass"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+<<<<<<< HEAD
+           time="11.577">
+=======
+           time="12.599">
+>>>>>>> refs/heads/MerchantSettlementSearch_Detail_Alter
+  <properties />
+  
+  
+<<<<<<< HEAD
+            <testcase name="testMerchantAuditPass" time="11.577" classname="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest" />
+=======
+            <testcase name="testMerchantAuditPass" time="12.599" classname="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest" />
+>>>>>>> refs/heads/MerchantSettlementSearch_Detail_Alter
+      
+</testsuite>

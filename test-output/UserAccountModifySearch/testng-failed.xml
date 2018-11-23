@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [UserAccountModifySearch]">
+  <parameter name="environment" value="pop_uat"/>
+  <parameter name="browserCategory" value="chrome"/>
+  <test thread-count="5" name="UserAccountModifySearch(failed)">
+    <parameter name="OperID" value="T00105"/>
+    <classes>
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
+        <methods>
+          <include name="testQuit"/>
+          <include name="init"/>
+          <include name="releaseBrowser"/>
+        </methods>
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest -->
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.UserManagement.UserInfoManagement.UserAccountModifySearchTest">
+        <methods>
+          <include name="testUserAccountModifySearch"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="init"/>
+          <include name="afterMethod"/>
+          <include name="BeforeTest"/>
+          <include name="AfterTest"/>
+        </methods>
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.UserManagement.UserInfoManagement.UserAccountModifySearchTest -->
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="init"/>
+          <include name="testLogin"/>
+          <include name="afterMethod"/>
+          <include name="BeforeTest"/>
+          <include name="AfterTest"/>
+        </methods>
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest -->
+    </classes>
+  </test> <!-- UserAccountModifySearch(failed) -->
+</suite> <!-- Failed suite [UserAccountModifySearch] -->

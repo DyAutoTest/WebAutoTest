@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="2" total="6" passed="4">
+  <reporter-output>
+    <line>
+      <![CDATA[        2018-11-22 22:02:42): [Test]-"Login" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2018-11-22 22:02:42: [Method]-"LoginPageTest.testLogin" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2018-11-22 22:02:47: [Method]-"LoginPageTest.testLogin" is passed]]>
+    </line>
+    <line>
+      <![CDATA[        2018-11-22 22:02:49): [Test]-"Login" is finished]]>
+    </line>
+    <line>
+      <![CDATA[        2018-11-22 22:02:49): [Test]-"MerchantBalanceQuery" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2018-11-22 22:02:49: [Method]-"OverdueMerInfoQueryPageTest.testOverdueMerInfoQuery" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2018-11-22 22:02:57: [Method]-"OverdueMerInfoQueryPageTest.testOverdueMerInfoQuery" is passed]]>
+    </line>
+    <line>
+      <![CDATA[                2018-11-22 22:02:59: [Method]-"OverdueMerInfoQueryPageTest.testOverdueMerInfoQuery" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2018-11-22 22:03:06: [Method]-"OverdueMerInfoQueryPageTest.testOverdueMerInfoQuery" is passed]]>
+    </line>
+    <line>
+      <![CDATA[        2018-11-22 22:03:08): [Test]-"MerchantBalanceQuery" is finished]]>
+    </line>
+  </reporter-output>
+  <suite name="OverdueMerInfoQuery" duration-ms="31342" started-at="2018-11-22T14:02:42Z" finished-at="2018-11-22T14:03:13Z">
+    <groups>
+    </groups>
+    <test name="Login" duration-ms="7263" started-at="2018-11-22T14:02:42Z" finished-at="2018-11-22T14:02:49Z">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
+        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="BeforeTest" is-config="true" duration-ms="4" started-at="2018-11-22T14:02:42Z" finished-at="2018-11-22T14:02:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@301aa982]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2018-11-22 22:02:42): [Test]-"Login" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="init" is-config="true" duration-ms="8" started-at="2018-11-22T14:02:42Z" finished-at="2018-11-22T14:02:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-11-22T14:02:42Z" finished-at="2018-11-22T14:02:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-11-22T14:02:42Z" finished-at="2018-11-22T14:02:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest.testLogin(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-22 22:02:42: [Method]-"LoginPageTest.testLogin" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="testLogin" duration-ms="5209" started-at="2018-11-22T14:02:42Z" finished-at="2018-11-22T14:02:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[T00064]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2018-11-22T14:02:47Z" finished-at="2018-11-22T14:02:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=LoginPageTest.testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-22 22:02:47: [Method]-"LoginPageTest.testLogin" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="AfterTest" is-config="true" duration-ms="0" started-at="2018-11-22T14:02:49Z" finished-at="2018-11-22T14:02:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@301aa982]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2018-11-22 22:02:49): [Test]-"Login" is finished]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest -->
+    </test> <!-- Login -->
+    <test name="MerchantBalanceQuery" duration-ms="19091" started-at="2018-11-22T14:02:49Z" finished-at="2018-11-22T14:03:08Z">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.OverdueMerInfoQueryPageTest">
+        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.OverdueMerInfoQueryPageTest@27ae2fd0]" name="BeforeTest" is-config="true" duration-ms="0" started-at="2018-11-22T14:02:49Z" finished-at="2018-11-22T14:02:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5fc930f0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2018-11-22 22:02:49): [Test]-"MerchantBalanceQuery" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.OverdueMerInfoQueryPageTest@27ae2fd0]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-11-22T14:02:49Z" finished-at="2018-11-22T14:02:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.OverdueMerInfoQueryPageTest@27ae2fd0]" name="init" is-config="true" duration-ms="2" started-at="2018-11-22T14:02:49Z" finished-at="2018-11-22T14:02:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.OverdueMerInfoQueryPageTest@27ae2fd0]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-11-22T14:02:49Z" finished-at="2018-11-22T14:02:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.OverdueMerInfoQueryPageTest.testOverdueMerInfoQuery(com.dy.AutoTest.OperationPlatform.POJO.OverdueMerInfoQueryBean)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-22 22:02:49: [Method]-"OverdueMerInfoQueryPageTest.testOverdueMerInfoQuery" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testOverdueMerInfoQuery(com.dy.AutoTest.OperationPlatform.POJO.OverdueMerInfoQueryBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.OverdueMerInfoQueryPageTest@27ae2fd0]" name="testOverdueMerInfoQuery" duration-ms="7515" started-at="2018-11-22T14:02:49Z" data-provider="OverdueMerInfoQuery" finished-at="2018-11-22T14:02:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.OverdueMerInfoQueryBean@63cd604c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOverdueMerInfoQuery -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.OverdueMerInfoQueryPageTest@27ae2fd0]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2018-11-22T14:02:57Z" finished-at="2018-11-22T14:02:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testOverdueMerInfoQuery status=SUCCESS method=OverdueMerInfoQueryPageTest.testOverdueMerInfoQuery(com.dy.AutoTest.OperationPlatform.POJO.OverdueMerInfoQueryBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.OverdueMerInfoQueryPageTest@27ae2fd0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-22 22:02:57: [Method]-"OverdueMerInfoQueryPageTest.testOverdueMerInfoQuery" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testOverdueMerInfoQuery(com.dy.AutoTest.OperationPlatform.POJO.OverdueMerInfoQueryBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.OverdueMerInfoQueryPageTest@27ae2fd0]" name="testOverdueMerInfoQuery" duration-ms="7560" started-at="2018-11-22T14:02:59Z" data-provider="OverdueMerInfoQuery" finished-at="2018-11-22T14:03:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.OverdueMerInfoQueryBean@6a078481]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOverdueMerInfoQuery -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.OverdueMerInfoQueryPageTest@27ae2fd0]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-22T14:02:59Z" finished-at="2018-11-22T14:02:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.OverdueMerInfoQueryPageTest.testOverdueMerInfoQuery(com.dy.AutoTest.OperationPlatform.POJO.OverdueMerInfoQueryBean)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-22 22:02:59: [Method]-"OverdueMerInfoQueryPageTest.testOverdueMerInfoQuery" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.OverdueMerInfoQueryPageTest@27ae2fd0]" name="afterMethod" is-config="true" duration-ms="2002" started-at="2018-11-22T14:03:06Z" finished-at="2018-11-22T14:03:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testOverdueMerInfoQuery status=SUCCESS method=OverdueMerInfoQueryPageTest.testOverdueMerInfoQuery(com.dy.AutoTest.OperationPlatform.POJO.OverdueMerInfoQueryBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.OverdueMerInfoQueryPageTest@27ae2fd0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-22 22:03:06: [Method]-"OverdueMerInfoQueryPageTest.testOverdueMerInfoQuery" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.OverdueMerInfoQueryPageTest@27ae2fd0]" name="AfterTest" is-config="true" duration-ms="0" started-at="2018-11-22T14:03:08Z" finished-at="2018-11-22T14:03:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5fc930f0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2018-11-22 22:03:08): [Test]-"MerchantBalanceQuery" is finished]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.OverdueMerInfoQueryPageTest -->
+    </test> <!-- MerchantBalanceQuery -->
+    <test name="Quit" duration-ms="4954" started-at="2018-11-22T14:03:08Z" finished-at="2018-11-22T14:03:13Z">
+      <class name="com.dy.AutoTest.web.actions.SingletonSet">
+        <test-method status="PASS" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@23986957]" name="init" is-config="true" duration-ms="6492" started-at="2018-11-22T14:02:35Z" finished-at="2018-11-22T14:02:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pop_uat]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="releaseJDBC()[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@23986957]" name="releaseJDBC" is-config="true" duration-ms="3741" started-at="2018-11-22T14:03:13Z" finished-at="2018-11-22T14:03:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- releaseJDBC -->
+      </class> <!-- com.dy.AutoTest.web.actions.SingletonSet -->
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1fe20588]" name="init" is-config="true" duration-ms="2" started-at="2018-11-22T14:03:08Z" finished-at="2018-11-22T14:03:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testQuit()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1fe20588]" name="testQuit" duration-ms="3945" started-at="2018-11-22T14:03:08Z" finished-at="2018-11-22T14:03:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testQuit -->
+        <test-method status="PASS" signature="releaseBrowser()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1fe20588]" name="releaseBrowser" is-config="true" duration-ms="1001" started-at="2018-11-22T14:03:12Z" finished-at="2018-11-22T14:03:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- releaseBrowser -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest -->
+    </test> <!-- Quit -->
+  </suite> <!-- OverdueMerInfoQuery -->
+</testng-results>
