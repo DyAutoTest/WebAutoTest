@@ -7,19 +7,20 @@
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-  <test thread-count="5" name="MainChildMerRelationship(failed)">
+  <test thread-count="5" name="MerchantInfoInsert(failed)">
+    <parameter name="OperID" value="T00105"/>
     <classes>
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MainChildMerRelationshipPageTest">
+      <class name="com.dy.AutoTest.OnlineCashier.TestCases.financechannel.FinanceChannelManageInfoPageTest">
         <methods>
           <include name="beforeClass"/>
           <include name="afterMethod"/>
+          <include name="testFinanceChannelManageInfo"/>
           <include name="AfterTest"/>
-          <include name="testMainChildMerRelationshipAdd" invocation-numbers="0"/>
           <include name="beforeMethod"/>
           <include name="init"/>
           <include name="BeforeTest"/>
         </methods>
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MainChildMerRelationshipPageTest -->
+      </class> <!-- com.dy.AutoTest.OnlineCashier.TestCases.financechannel.FinanceChannelManageInfoPageTest -->
     </classes>
-  </test> <!-- MainChildMerRelationship(failed) -->
+  </test> <!-- MerchantInfoInsert(failed) -->
 </suite> <!-- Failed suite [SuiteOperationPlatform] -->

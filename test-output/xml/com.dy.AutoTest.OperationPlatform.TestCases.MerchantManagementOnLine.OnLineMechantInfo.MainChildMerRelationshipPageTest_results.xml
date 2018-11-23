@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="131.800">
+           time="127.906">
   <properties />
   
   
-            <testcase name="testMainChildMerRelationshipAdd" time="26.260" classname="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MainChildMerRelationshipPageTest" />
-                <testcase name="testMainChildMerRelationshipUpdate" time="28.033" classname="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MainChildMerRelationshipPageTest" />
-                <testcase name="testMainChildMerRelationshipCheck" time="24.197" classname="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MainChildMerRelationshipPageTest" />
-                <testcase name="testMainChildMerRelationshipSearch" time="29.966" classname="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MainChildMerRelationshipPageTest" />
-                <testcase name="testMainChildMerRelationshipDelete" time="23.344" classname="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MainChildMerRelationshipPageTest" />
+            <testcase name="testMainChildMerRelationshipAdd" time="26.870" classname="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MainChildMerRelationshipPageTest" />
+                <testcase name="testMainChildMerRelationshipSearch" time="23.301" classname="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MainChildMerRelationshipPageTest" />
+                <testcase name="testMainChildMerRelationshipCheck" time="25.141" classname="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MainChildMerRelationshipPageTest" />
+                <testcase name="testMainChildMerRelationshipUpdate" time="28.673" classname="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MainChildMerRelationshipPageTest" />
+                <testcase name="testMainChildMerRelationshipDelete" time="23.921" classname="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MainChildMerRelationshipPageTest" />
       
 </testsuite>
