@@ -8,10 +8,27 @@ import java.util.Map;
 
 import com.dy.AutoTest.OperationPlatform.POJO.UserIncomeExpenditureDetailBean;
 import com.dy.AutoTest.OperationPlatform.POJO.UserInfoQueryBean;
-import com.dy.AutoTest.OperationPlatform.PageObject.MerchantManagementOnLine.OnLineMerchantInfo.MerchantBalanceQueryPage;
-import com.dy.AutoTest.OperationPlatform.PageObject.MerchantManagementOnLine.OnLineMerchantInfo.OverdueMerInfoQueryPage;
 import com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2BBean;
 import com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2CBean;
+import com.dy.AutoTest.OnlineCashier.POJO.CooperatingAgentInfoBean;
+import com.dy.AutoTest.OnlineCashier.POJO.CooperatingPaymentChannelBean;
+import com.dy.AutoTest.OnlineCashier.POJO.CooperatingRouteInfoBean;
+import com.dy.AutoTest.OnlineCashier.POJO.CooperatingServiceChannelBean;
+import com.dy.AutoTest.OnlineCashier.POJO.FinanceChannelBalanceAccountBatchNumQueryBean;
+import com.dy.AutoTest.OnlineCashier.POJO.FinanceChannelBalanceAccountErrorManageBean;
+import com.dy.AutoTest.OnlineCashier.POJO.FinanceChannelBalanceAccountParameterBean;
+import com.dy.AutoTest.OnlineCashier.POJO.FinanceChannelManageFlowQueryBean;
+import com.dy.AutoTest.OnlineCashier.POJO.FinanceChannelManageInfoBean;
+import com.dy.AutoTest.OnlineCashier.POJO.FinanceChannelManageRateCodeBean;
+import com.dy.AutoTest.OnlineCashier.POJO.FinanceChannelManageRateMaintainBean;
+import com.dy.AutoTest.OnlineCashier.POJO.FinanceChannelManageReturnCodeBean;
+import com.dy.AutoTest.OnlineCashier.POJO.FinanceChannelManageSignManageBean;
+import com.dy.AutoTest.OnlineCashier.POJO.IdCardPhotoVerificationBean;
+import com.dy.AutoTest.OnlineCashier.POJO.IdCardValidDateVerificationBean;
+import com.dy.AutoTest.OnlineCashier.POJO.IdentityAuthenticationChannelBean;
+import com.dy.AutoTest.OnlineCashier.POJO.IdentityAuthenticationDetailsBean;
+import com.dy.AutoTest.OnlineCashier.POJO.IdentityAuthenticationQueryBean;
+import com.dy.AutoTest.OnlineCashier.POJO.IdentityAuthenticationRouteBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MainChildMerRelationshipBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantAccountManagementBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantAuditBean;
@@ -182,7 +199,8 @@ public class DataBusiness {
 				return pojo;
 			case "Online_Data_Cashier_B2B":
 				pojo=(T)testingDao.getData(tableName,ID,OnlineCashierB2BBean.class);
-				return pojo;
+				return pojo;				
+				
 			case "Data_URL":
 				data_URLBean=new Data_URLBean();
 				break;
@@ -288,6 +306,84 @@ public class DataBusiness {
 			data_URLBean=new Data_URLBean();
 			break;
 		
+		
+		case "POP_Data_CooperatingAgencyInfo":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,CooperatingAgentInfoBean.class));
+			break;
+			
+		case "POP_Data_CooperatingPaymentChannel":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,CooperatingPaymentChannelBean.class));
+			break;
+			
+		case "POP_Data_CooperatingServiceChannel":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,CooperatingServiceChannelBean.class));
+			break;
+		
+		case "POP_Data_CooperatingRouteInfo":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,CooperatingRouteInfoBean.class));
+			break;
+			
+		case "POP_Data_IdentityAuthenticationChannel":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,IdentityAuthenticationChannelBean.class));
+			break;
+		
+		case "POP_Data_IdentityAuthenticationRoute":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,IdentityAuthenticationRouteBean.class));
+			break;
+		
+		case "POP_Data_IdentityAuthenticationDetails":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,IdentityAuthenticationDetailsBean.class));
+			break;
+			
+		case "POP_Data_IdentityAuthenticationQuery":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,IdentityAuthenticationQueryBean.class));
+			break;
+		
+		case "POP_Data_IdCardPhotoVerification":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,IdCardPhotoVerificationBean.class));
+			break;
+		
+		case "POP_Data_IdCardValidDateVerification":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,IdCardValidDateVerificationBean.class));
+			break;
+		
+		case "POP_Data_FinanceChannelManageInfo":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,FinanceChannelManageInfoBean.class));
+			break;
+		
+		case "POP_Data_FinanceChannelManageFlowQuery":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,FinanceChannelManageFlowQueryBean.class));
+			break;
+			
+		case "POP_Data_FinanceChannelManageReturnCode":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,FinanceChannelManageReturnCodeBean.class));
+			break;
+			
+		case "POP_Data_FinanceChannelManageSignManage":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,FinanceChannelManageSignManageBean.class));
+			break;
+			
+		case "POP_Data_FinanceChannelManageRateMaintain":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,FinanceChannelManageRateMaintainBean.class));
+			break;
+			
+		case "POP_Data_FinanceChannelManageRateCode":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,FinanceChannelManageRateCodeBean.class));
+			break;
+			
+		case "POP_Data_FinanceChannelBalanceAccountParameter":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,FinanceChannelBalanceAccountParameterBean.class));
+			break;
+		
+		case "POP_Data_FinanceChannelBalanceAccountBatchNumQuery":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,FinanceChannelBalanceAccountBatchNumQueryBean.class));
+			break;
+		
+		case "POP_Data_FinanceChannelBalanceAccountErrorManage":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,FinanceChannelBalanceAccountErrorManageBean.class));
+			break;	
+		
+			
 		default:
 			System.out.println("table "+tableName+" is not exist! Please check!");
 			break;
