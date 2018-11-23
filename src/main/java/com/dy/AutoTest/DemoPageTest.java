@@ -30,5 +30,7 @@ public class DemoPageTest extends SuperTest{
 	public void testXXXX(DemoBean DemoBean) {    
 		DemoPage.navigateTo(URL);
 		  
+		
+		
 	}
 }
