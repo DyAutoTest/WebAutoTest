@@ -40,9 +40,9 @@ public class OverdueMerInfoQueryPageTest extends SuperTest{
 		OverdueMerInfoQueryPage.doLoseFocus("RemindDateEnd", 100, 0);
 		
 		OverdueMerInfoQueryPage.clickQuery();
-		
-		OverdueMerInfoQueryPage.doPageDown();
 		wait.waitFor(1000);
+		OverdueMerInfoQueryPage.doPageDown();
+		wait.waitFor(2000);
 		OverdueMerInfoQueryPage.doPageUp();
 		
 	}

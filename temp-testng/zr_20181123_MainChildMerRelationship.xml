@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="OverdueMerInfoQuery" >
+<suite name="SuiteOperationPlatform" >
  	<parameter name="browserCategory" value="chrome"></parameter>
 	<parameter name="environment" value="pop_uat"></parameter>
 	
@@ -19,12 +19,16 @@
 	</test> 
 	
 	
-	<test thread-count="5" name="MerchantBalanceQuery">
+	<test thread-count="5" name="MainChildMerRelationship">
 		<classes>
 			<class
-				name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.OverdueMerInfoQueryPageTest">
+				name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MainChildMerRelationshipPageTest">
 				<methods>
-					<include name="testOverdueMerInfoQuery" />
+					<include name="testMainChildMerRelationshipSearch" />
+					<include name="testMainChildMerRelationshipCheck" />
+					 <include name="testMainChildMerRelationshipUpdate" />
+					<include name="testMainChildMerRelationshipDelete" />
+					<include name="testMainChildMerRelationshipAdd" />
 				</methods>
 			</class> 
 		</classes>

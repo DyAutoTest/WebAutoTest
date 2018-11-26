@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="OverdueMerInfoQuery" >
- 	<parameter name="browserCategory" value="chrome"></parameter>
+<suite name="MerchantAccountManagement" >
+ 	<parameter name="browserCategory" value="firefox"></parameter>
 	<parameter name="environment" value="pop_uat"></parameter>
 	
 	<test thread-count="5" name="Login">
@@ -22,9 +22,10 @@
 	<test thread-count="5" name="MerchantBalanceQuery">
 		<classes>
 			<class
-				name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.OverdueMerInfoQueryPageTest">
+				name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAccountManagementPageTest">
 				<methods>
-					<include name="testOverdueMerInfoQuery" />
+					<include name="testMerchantAccountManagementSearch" />
+					<include name="testMerchantAccountManagementFrozen" />
 				</methods>
 			</class> 
 		</classes>
