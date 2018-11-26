@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="OnlineCashierB2B"
-           tests="8"
+           tests="3"
            failures="0"
            errors="0"
            skipped="0"
-           time="341.733">
+           time="57.342">
   <properties />
   
   
-            <testcase name="testOnlineCashierB2B" time="46.122" classname="com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest" />
-                <testcase name="testOnlineCashierB2B" time="30.220" classname="com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest" />
-                <testcase name="testOnlineCashierB2B" time="35.645" classname="com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest" />
-                <testcase name="testOnlineCashierB2B" time="57.414" classname="com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest" />
-                <testcase name="testOnlineCashierB2B" time="39.740" classname="com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest" />
-                <testcase name="testOnlineCashierB2B" time="49.062" classname="com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest" />
-                <testcase name="testOnlineCashierB2B" time="28.863" classname="com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest" />
-                <testcase name="testOnlineCashierB2B" time="54.667" classname="com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest" />
+            <testcase name="testOnlineCashierB2B" time="25.834" classname="com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest" />
+                <testcase name="testOnlineCashierB2B" time="30.736" classname="com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest" />
+                <testcase name="quitBrowser" time="0.772" classname="com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest" />
       
 </testsuite>

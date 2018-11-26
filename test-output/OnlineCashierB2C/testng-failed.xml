@@ -11,13 +11,13 @@
     <classes>
       <class name="com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2CTest">
         <methods>
-          <include name="beforeMethod"/>
           <include name="beforeClass"/>
-          <include name="init"/>
           <include name="afterMethod"/>
-          <include name="BeforeTest"/>
-          <include name="testOnlineCashierB2C" invocation-numbers="0 1 2"/>
+          <include name="init"/>
           <include name="AfterTest"/>
+          <include name="beforeMethod"/>
+          <include name="testOnlineCashierB2C" invocation-numbers="0"/>
+          <include name="BeforeTest"/>
         </methods>
       </class> <!-- com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2CTest -->
     </classes>

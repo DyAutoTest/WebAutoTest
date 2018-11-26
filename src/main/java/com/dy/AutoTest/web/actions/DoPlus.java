@@ -50,9 +50,15 @@ public class DoPlus{
 		locator=new LocatorBusiness(tableName);
 	}
 	
-	public boolean isDisplayed(String locationName) {
+	public boolean isElementExist(String locationName) {
 		
-		return driver.findElement(By.xpath(locator.getXPath(locationName))).isDisplayed();
+//		return driver.findElement(By.xpath(locator.getXPath(locationName))).isDisplayed();
+		try {
+            driver.findElement(By.xpath(locator.getXPath(locationName)));
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
 	}
 	
 	public WebElement what(String locationName) {
