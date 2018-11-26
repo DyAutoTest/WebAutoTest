@@ -286,7 +286,7 @@ public class MerchantSettlementPage extends SuperPage{
 		du.what("Settlement_ExpireDate").sendKeys(Settlement_ExpireDate);
 	}
 	public void doLoseFocus() {
-		du.doLeftClickBy("Settlement_ExpireDate", 50, 0);
+		du.doLeftClickBy("Settlement_ExpireDate", 0, 80);
 	}
 	
 	public void setStart_Amount(String Start_Amount) {

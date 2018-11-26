@@ -40,7 +40,7 @@ public class MerchantSettlementPageTest extends SuperTest{
 	public void init() {
 		merchantSettlementPage=new MerchantSettlementPage(driver);
 		URL=host.toString()+DataBusiness.getData_URL("pop_OnlineMerchantSettlement");
-		merchantSettlementPage.setWaitTime(1000);
+		merchantSettlementPage.setWaitTime(800);
 	}
 	
 	@DataProvider(name="SettlementInfoInsert")
@@ -116,6 +116,7 @@ public class MerchantSettlementPageTest extends SuperTest{
 		merchantSettlementPage.setSettlementDays(merchantSettlementBean.getSettlementDays());
 		
 		merchantSettlementPage.setNextSettlementDate(merchantSettlementBean.getNextSettlementDate());
+		merchantSettlementPage.selectAll("Settlement_StartDate");
 		merchantSettlementPage.setSettlement_StartDate(merchantSettlementBean.getSettlement_StartDate());
 		merchantSettlementPage.setSettlement_ExpireDate(merchantSettlementBean.getSettlement_ExpireDate());
 				merchantSettlementPage.doLoseFocus();

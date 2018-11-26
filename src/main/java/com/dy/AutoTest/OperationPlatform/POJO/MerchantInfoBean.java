@@ -52,6 +52,19 @@ public class MerchantInfoBean implements Serializable{
 	private String C_Stakeholder_ExpiredDate     ;
 	private String D_Introduce_Channel           ;
 	private String D_AgreementNO                 ;
+	private String D_AgreementStartDate			 ;
+	public String getD_AgreementStartDate() {
+		return D_AgreementStartDate;
+	}
+
+
+
+	public void setD_AgreementStartDate(String d_AgreementStartDate) {
+		D_AgreementStartDate = d_AgreementStartDate;
+	}
+
+
+
 	private String D_AgreementExpiredDate        ;
 	private String D_HandlerName                 ;
 	private String D_HandlerID_Type              ;

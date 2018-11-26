@@ -2,8 +2,8 @@ package com.dy.AutoTest.OnlineCashier.PageObject;
 
 import org.openqa.selenium.WebDriver;
 
-import com.dy.AutoTest.web.actions.DoPlus;
 import com.dy.AutoTest.web.api.SuperPage;
+import com.dy.AutoTest.web.actions.DoPlus;
 
 public class OnlineCashierB2BPage extends SuperPage{
 	
@@ -15,7 +15,7 @@ public class OnlineCashierB2BPage extends SuperPage{
 		du=new DoPlus(driver);
 		du.waitTime=waitTime;
 		du.loadLocator("Online_Loc_Cashier_B2B");
-	} 
+	}
 	
 	public void setMerchantNO(String MerchantNO) {
 		du.what("MerchantNO").clear();
@@ -23,8 +23,10 @@ public class OnlineCashierB2BPage extends SuperPage{
 	}
 	
 	public void setCertificatePassword(String CertificatePassword) {
-		du.what("CertificatePassword").clear();
-		du.what("CertificatePassword").sendKeys(CertificatePassword);
+		if(!du.what("CertificatePassword").getAttribute("value").equals(CertificatePassword)) {
+			du.what("CertificatePassword").clear();
+			du.what("CertificatePassword").sendKeys(CertificatePassword);
+		}
 	}
 	
 	public void resetMerchantResource() {
@@ -35,33 +37,38 @@ public class OnlineCashierB2BPage extends SuperPage{
 		du.what("B2B").click();
 	}
 
-	public void setMerchantRequestNO(String MerchantRequestNO) {
-		du.what("MerchantRequestNO").clear();
-		du.what("MerchantRequestNO").sendKeys(MerchantRequestNO);
-	}
 	
 	public String getMerchantRequestNO() {
 		return du.what("MerchantRequestNO").getAttribute("value");
 	}
 	
-	public void setOrderNO(String OrderNO) {
-		du.what("OrderNO").clear();
-		du.what("OrderNO").sendKeys(OrderNO);
-	}
 	
 	public void setReceiptMerchantNO(String ReceiptMerchantNO) {
-		du.what("ReceiptMerchantNO").clear();
-		du.what("ReceiptMerchantNO").sendKeys(ReceiptMerchantNO);
+		if(!du.what("ReceiptMerchantNO").getAttribute("value").equals(ReceiptMerchantNO)) {
+			du.what("ReceiptMerchantNO").clear();
+			du.what("ReceiptMerchantNO").sendKeys(ReceiptMerchantNO);
+		}
 	}
 	
 	public void setOrderAmount(String OrderAmount) {
-		du.what("OrderAmount").clear();
-		du.what("OrderAmount").sendKeys(OrderAmount);
+		if(!du.what("OrderAmount").getAttribute("value").equals(OrderAmount)) {
+			du.what("OrderAmount").clear();
+			du.what("OrderAmount").sendKeys(OrderAmount);
+		}
 	}
 	
 	public void setPaymentAmout(String PaymentAmout) {
-		du.what("PaymentAmout").clear();
-		du.what("PaymentAmout").sendKeys(PaymentAmout);
+		if(!du.what("PaymentAmout").getAttribute("value").equals(PaymentAmout)) {
+			du.what("PaymentAmout").clear();
+			du.what("PaymentAmout").sendKeys(PaymentAmout);
+		}
+	}
+	
+	public void setPreparation(String Preparation) {
+		if(!du.what("Preparation").getAttribute("value").equals(Preparation)) {
+			du.what("Preparation").clear();
+			du.what("Preparation").sendKeys(Preparation);
+		}
 	}
 	
 	public void doSubOrderAdd() {
@@ -74,23 +81,31 @@ public class OnlineCashierB2BPage extends SuperPage{
 	}
 	
 	public void setSubOrderNO(String SubOrderNO,int index) {
-		du.what("SubOrderNO", String.valueOf(index+2)).clear();
-		du.what("SubOrderNO", String.valueOf(index+2)).sendKeys(SubOrderNO);
+		if(!du.what("SubOrderNO",String.valueOf(index+2)).getAttribute("value").equals(SubOrderNO)) {
+			du.what("SubOrderNO", String.valueOf(index+2)).clear();
+			du.what("SubOrderNO", String.valueOf(index+2)).sendKeys(SubOrderNO);
+		}
 	}
 	
 	public void setSubOrderAmount(String SubOrderAmount,int index) {
-		du.what("SubOrderAmount", String.valueOf(index+2)).clear();
-		du.what("SubOrderAmount", String.valueOf(index+2)).sendKeys(SubOrderAmount);
+		if(!du.what("SubOrderAmount",String.valueOf(index+2)).getAttribute("value").equals(SubOrderAmount)) {
+			du.what("SubOrderAmount", String.valueOf(index+2)).clear();
+			du.what("SubOrderAmount", String.valueOf(index+2)).sendKeys(SubOrderAmount);
+		}
 	}
 	
 	public void setSubPaymentAmount(String SubPaymentAmount,int index) {
-		du.what("SubPaymentAmount", String.valueOf(index+2)).clear();
-		du.what("SubPaymentAmount", String.valueOf(index+2)).sendKeys(SubPaymentAmount);
+		if(!du.what("SubPaymentAmount",String.valueOf(index+2)).getAttribute("value").equals(SubPaymentAmount)) {
+			du.what("SubPaymentAmount", String.valueOf(index+2)).clear();
+			du.what("SubPaymentAmount", String.valueOf(index+2)).sendKeys(SubPaymentAmount);
+		}
 	}
 	
 	public void setSubReceiptMerchantNO(String SubReceiptMerchantNO,int index) {
-		du.what("SubReceiptMerchantNO", String.valueOf(index+2)).clear();
-		du.what("SubReceiptMerchantNO", String.valueOf(index+2)).sendKeys(SubReceiptMerchantNO);
+		if(!du.what("SubReceiptMerchantNO",String.valueOf(index+2)).getAttribute("value").equals(SubReceiptMerchantNO)) {
+			du.what("SubReceiptMerchantNO", String.valueOf(index+2)).clear();
+			du.what("SubReceiptMerchantNO", String.valueOf(index+2)).sendKeys(SubReceiptMerchantNO);
+		}
 	}
 	
 		
@@ -108,7 +123,7 @@ public class OnlineCashierB2BPage extends SuperPage{
 	 * 订单错误页面
 	 */
 	public boolean isOrderError() {
-		return du.isDisplayed("OrderError");
+		return du.isElementExist("OrderError");
 	}
 	
 	public String getOrderErrorDetail() {
@@ -141,10 +156,16 @@ public class OnlineCashierB2BPage extends SuperPage{
 				du.what("PersonalEBank_ChoosBank").click();
 			}
 			
+			public void doPersonalEBank_UnionOnline() {
+				du.what("PersonalEBank_ChooseUnionOnline").click();
+			}
+			
 			public void setEBank_CardNO(String EBank_CardNO) {
-				du.waitForElementPresent("PersonalEBank__UnionpayCard");
-				du.what("PersonalEBank__UnionpayCard").clear(); 
-				du.what("PersonalEBank__UnionpayCard").sendKeys(EBank_CardNO);
+				du.waitForElementPresent("PersonalEBank_UnionpayCard");
+				du.waitFor(500);
+				du.what("PersonalEBank_UnionpayCard").clear(); 
+				du.waitFor(500);
+				du.what("PersonalEBank_UnionpayCard").sendKeys(EBank_CardNO);
 			}
 			
 			public void doEBank_UnionpayNext() {
@@ -176,6 +197,15 @@ public class OnlineCashierB2BPage extends SuperPage{
 				return du.what("PersonalEBank_UnionpayMainWord").getText();
 			}
 	
+			public void setPersonalEBank_UnionOnline_ChooseBank() {
+				du.waitForElementPresent("PersonalEBank_UnionOnline_ChooseBank");
+				du.what("PersonalEBank_UnionOnline_ChooseBank").click();
+			}
+			
+			public void doPersonalEBank_UnionOnline_EBankPay() {
+				du.what("PersonalEBank_UnionOnline_EBankPay").click();
+			}
+			
 	public void doPayment() {
 		du.what("Payment").click();
 	}
@@ -193,7 +223,7 @@ public class OnlineCashierB2BPage extends SuperPage{
 	public boolean isPaySuccess() {
 		du.waitForElementPresent("Message_PaySuccess");
 		
-		return du.isDisplayed("Message_PaySuccess");
+		return du.isElementExist("Message_PaySuccess");
 	}
 	
 	

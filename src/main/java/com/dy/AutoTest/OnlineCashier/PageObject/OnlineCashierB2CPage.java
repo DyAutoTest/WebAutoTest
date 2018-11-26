@@ -2,8 +2,8 @@ package com.dy.AutoTest.OnlineCashier.PageObject;
 
 import org.openqa.selenium.WebDriver;
 
-import com.dy.AutoTest.web.actions.DoPlus;
 import com.dy.AutoTest.web.api.SuperPage;
+import com.dy.AutoTest.web.actions.DoPlus;
 import com.dy.AutoTest.web.business.OperBusiness;
 import com.dy.AutoTest.web.dao.OperDao;
 import com.dy.AutoTest.web.dao.impl.OperDaoImpl;
@@ -133,7 +133,7 @@ public class OnlineCashierB2CPage extends SuperPage{
 	
 	public boolean isAntiPhishing() {
 		du.waitFor(1000);
-		return du.isDisplayed("Div_AntiPhishing");
+		return du.isElementExist("Div_AntiPhishing");
 	}
 	
 	public void doAntiPhishing() {
@@ -242,7 +242,7 @@ public class OnlineCashierB2CPage extends SuperPage{
 	public boolean isPaySuccess() {
 		du.waitForElementPresent("Message_PaySuccess");
 		
-		return du.isDisplayed("Message_PaySuccess");
+		return du.isElementExist("Message_PaySuccess");
 	}
 	
 	

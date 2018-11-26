@@ -15,8 +15,8 @@ import org.testng.annotations.Test;
 
 import com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2BBean;
 import com.dy.AutoTest.OnlineCashier.PageObject.OnlineCashierB2BPage;
-import com.dy.AutoTest.web.actions.Switch;
 import com.dy.AutoTest.web.api.SuperTest;
+import com.dy.AutoTest.web.actions.Switch;
 import com.dy.AutoTest.web.business.DataBusiness;
 
 public class OnlineCashierB2BTest extends SuperTest{
@@ -118,14 +118,23 @@ public class OnlineCashierB2BTest extends SuperTest{
 			break;
 		case "P":	//个人网银支付
 			OnlineCashierB2BPage.doPersonalEBank();
-			OnlineCashierB2BPage.doChoosePersonalEBank();
-			OnlineCashierB2BPage.doPayment();
-			switch1.toSpecificWindow("银联在线支付");
-			OnlineCashierB2BPage.setEBank_CardNO(OnlineCashierB2BBean.getEBank_CardNO());
-			OnlineCashierB2BPage.doEBank_UnionpayNext();
-			OnlineCashierB2BPage.doEBank_GetUnionpaySMS();
-			OnlineCashierB2BPage.setEBank_UnionpaySMS(OnlineCashierB2BBean.getEBank_SMS());
-			OnlineCashierB2BPage.doEBank_UnionpayPay();
+			if(OnlineCashierB2BBean.getEBank_CardNO().equals("")) {
+				OnlineCashierB2BPage.doPersonalEBank_UnionOnline();
+				OnlineCashierB2BPage.doPayment();
+				switch1.toSpecificWindow("银联在线支付");
+				OnlineCashierB2BPage.setPersonalEBank_UnionOnline_ChooseBank();
+				OnlineCashierB2BPage.doPersonalEBank_UnionOnline_EBankPay();
+
+			}else {
+				OnlineCashierB2BPage.doChoosePersonalEBank();
+				OnlineCashierB2BPage.doPayment();
+				switch1.toSpecificWindow("银联在线支付");
+				OnlineCashierB2BPage.setEBank_CardNO(OnlineCashierB2BBean.getEBank_CardNO());
+				OnlineCashierB2BPage.doEBank_UnionpayNext();
+				OnlineCashierB2BPage.doEBank_GetUnionpaySMS();
+				OnlineCashierB2BPage.setEBank_UnionpaySMS(OnlineCashierB2BBean.getEBank_SMS());
+				OnlineCashierB2BPage.doEBank_UnionpayPay();
+			}
 			
 			if(OnlineCashierB2BPage.isEBank_UnionpaySuccess()) {
 				OnlineCashierB2BPage.doEBank_UnionpayBack();
@@ -152,11 +161,5 @@ public class OnlineCashierB2BTest extends SuperTest{
 			assertTrue(false,merchantRequestNO+"Pay failed");
 		}
 	}
-//	
-//	@Test
-//	public void quitBrowser() {
-//		driver.quit();
-//	}
-//	
 	
 }

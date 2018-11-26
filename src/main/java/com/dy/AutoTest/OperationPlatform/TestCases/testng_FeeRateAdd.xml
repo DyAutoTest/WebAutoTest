@@ -3,9 +3,11 @@
 <suite name="SuiteOperationPlatform" >
  	<parameter name="browserCategory" value="chrome"></parameter>
 	<parameter name="environment" value="pop_uat"></parameter>
-<!--      
+     
+     
+     <!-- 商户费率新增 -->
    	<test thread-count="5" name="MerchantFeeRateAdd">
-	<parameter name="OperID" value="T00105"></parameter>
+	<parameter name="OperID" value="T00064"></parameter>
 		<classes>
 			<class
 				name="com.dy.AutoTest.web.actions.SingletonSet">
@@ -30,8 +32,8 @@
 			</class> 
 		</classes>
 	</test>
-	  -->
-<!-- 	  
+	 
+	 <!-- 商户费率新增-审核 -->
 	<test thread-count="5" name="MerchantAuditPass">
 		<parameter name="OperID" value="T00107"></parameter>
 		<parameter name="AuditID" value="3"></parameter>
@@ -47,30 +49,15 @@
 			<class
 				name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest">
 				<methods>
+					<!-- 审核通过 -->
 					<include name="testMerchantAuditPass" />
+					<!-- 审核拒绝 -->
+					<!-- <include name="testMerchantAuditRefuse" />	 -->				
 				</methods>
 			</class>
 			<class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest"> 
 				<methods><include name="testQuit" /></methods> </class>
 		</classes>
 	</test> 
-     -->
-  
-    <test thread-count="5" name="MerchantAuditRefuse">
-		<parameter name="OperID" value="T00107"></parameter>
-		<parameter name="AuditID" value="3"></parameter>
-	    <classes>
-	    	<class name="com.dy.AutoTest.web.actions.SingletonSet"></class>
-	      	<class name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
-				 <methods><include name="testLogin" /></methods>
-	   		</class>
-	   	  	<class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest">
-				<methods><include name="testMerchantAuditRefuse" /></methods>
-			</class>
-	   		<class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
-				 <methods><include name="testQuit" /></methods>
-	   		</class> 
-	    </classes>
-  </test> 
 
 </suite> <!-- SuiteOperationPlatform -->

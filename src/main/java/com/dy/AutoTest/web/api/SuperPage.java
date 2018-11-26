@@ -21,6 +21,10 @@ public abstract class SuperPage {
 		driver.get(url);
 	}
 
+	public void selectAll(String locatorName) {
+		du.what(locatorName).sendKeys(Keys.CONTROL + "a");
+	}
+	
 	public void doLoseFocus(String locationName) {
 		du.doLeftClickBy(locationName, 0, -20);
 	}
