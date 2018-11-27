@@ -39,6 +39,7 @@ import com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantSettlementAlterBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantSettlementBean;
+import com.dy.AutoTest.OperationPlatform.POJO.OnlinePurchaseOrderQueryBean;
 import com.dy.AutoTest.OperationPlatform.POJO.OperBean;
 import com.dy.AutoTest.OperationPlatform.POJO.OverdueMerInfoQueryBean;
 import com.dy.AutoTest.OperationPlatform.POJO.UserAccountModifySearchBean;
@@ -76,7 +77,7 @@ public class DataBusiness {
 	private MerchantAccountManagementBean MerchantAccountManagementBean;
 	private OverdueMerInfoQueryBean OverdueMerInfoQueryBean;
 	private MainChildMerRelationshipBean MainChildMerRelationshipBean;
-	
+	private OnlinePurchaseOrderQueryBean OnlinePurchaseOrderQueryBean;
 	
 	
 	
@@ -175,6 +176,9 @@ public class DataBusiness {
 				return pojo;
 			case "POP_Data_MainChildMerRelationship":
 				pojo=(T)testingDao.getData(tableName,ID,MainChildMerRelationshipBean.class);
+				return pojo;
+			case "POP_Data_OnlinePurchaseOrderQuery":
+				pojo=(T)testingDao.getData(tableName,ID,OnlinePurchaseOrderQueryBean.class);
 				return pojo;
 			case "POP_Data_MerchantOper":
 				
@@ -276,6 +280,9 @@ public class DataBusiness {
 			break;
 		case "POP_Data_MainChildMerRelationship":
 			list=BaseUtil.toObject(testingDao.getDataList(tableName,MainChildMerRelationshipBean.class));
+			break;
+		case "POP_Data_OnlinePurchaseOrderQuery":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,OnlinePurchaseOrderQueryBean.class));
 			break;
 		case "POP_Data_MerchantOper":
 			
@@ -389,6 +396,18 @@ public class DataBusiness {
 			break;
 		}
 	}
+	
+	public void loadDataBeanList(String tableName,String caseNO) {
+		switch (tableName) {
+		case "POP_Data_OnlinePurchaseOrderQuery":
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,OnlinePurchaseOrderQueryBean.class));
+			break;
+		default:
+			System.out.println("table "+tableName+" is not exist! Please check!");
+			break;
+		}
+	}
+	
 	
 	/**
 	 * using loadDataBeanList(String tableName) method before this method 

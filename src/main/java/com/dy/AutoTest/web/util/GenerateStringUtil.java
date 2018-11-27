@@ -6,11 +6,13 @@ import com.dy.AutoTest.web.beans.WebElementType;
 
 public class GenerateStringUtil {
 	private static String packageTemplate="package %s;\r\n\r\n";
-	private static String importClass="import com.dy.AutoTest.web.api.SearchMerchantByNOorName;\r\n\r\n"
+	private static String importClass="import com.dy.AutoTest.web.api.IQuery;\r\n\r\n"
+			+ "import com.dy.AutoTest.web.api.ISearchMerchantByNOorName;\r\n\r\n"
+			+ "import org.openqa.selenium.Keys;\r\n\r\n"
 			+ "import org.openqa.selenium.WebDriver;\r\n\r\n"
 			+ "import com.dy.AutoTest.web.api.SuperPage;\r\n"
 			+ "import com.dy.AutoTest.web.actions.DoPlus;\r\n\r\n";
-	private static String classIdentify="public class %s extends SuperPage implements SearchMerchantByNOorName{\r\n"
+	private static String classIdentify="public class %s extends SuperPage implements ISearchMerchantByNOorName,IQuery{\r\n"
 			+ "	public %s(WebDriver driver) {\r\n"
 			+ "		super(driver);\r\n"
 			+ "		du.loadLocator(\"%s\");\r\n"
@@ -66,9 +68,9 @@ public class GenerateStringUtil {
 	private static String radioTemplate = "	public void click%s(String radio) {\r\n" + 
 			"		du.what(\"%s\",radio).click();\r\n" + 
 			"	}\r\n"+ 
-			"	public boolean is%sDisplayed(String radio) {\r\n"+
+			"	public boolean is%sExist(String radio) {\r\n"+
 			"		du.waitFor(500);\r\n"+ 
-			"		return du.what(\"%s\",radio).isDisplayed();\r\n"+ 
+			"		return du.isElementExist(\"%s\",radio);\r\n"+ 
 			"	}\r\n";
 	//新增类型label
 	private static String labelTemplate = "	public String get%s() {\r\n" + 

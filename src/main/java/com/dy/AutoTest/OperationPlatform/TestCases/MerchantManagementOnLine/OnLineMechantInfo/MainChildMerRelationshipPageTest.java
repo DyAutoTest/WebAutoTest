@@ -92,7 +92,7 @@ public class MainChildMerRelationshipPageTest extends SuperTest{
 			MainChildMerRelationshipPage.isRadioDisplayed(MainChildMerRelationshipBean.getRadio());
 		} catch (Exception e) {
 			System.out.println("查询数据不存在，请更换查询条件。Please Change TestData !");
-			Reporter.log("搜商户 该商户名数据不存在，请更换查询条件。Please Change TestData !");
+			Reporter.log("查询数据名数据不存在，请更换查询条件。Please Change TestData !");
 			assertTrue(false);
 		}
 		MainChildMerRelationshipPage.clickRadio(MainChildMerRelationshipBean.getRadio());

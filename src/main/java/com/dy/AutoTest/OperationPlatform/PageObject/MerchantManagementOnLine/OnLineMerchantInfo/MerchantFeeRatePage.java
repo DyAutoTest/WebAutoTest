@@ -53,6 +53,7 @@ public class MerchantFeeRatePage extends SuperPage{
 		du.what("FeeRate_StartDate").sendKeys(FeeRate_StartDate);
 	}
 	public void setFeeRate_ExpireDate(String FeeRate_ExpireDate) {
+		du.what("FeeRate_ExpireDate").clear();
 		du.what("FeeRate_ExpireDate").sendKeys(FeeRate_ExpireDate);
 	}
 	

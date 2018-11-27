@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.dy.AutoTest.web.actions.DoPlus;
 import com.dy.AutoTest.web.actions.SingletonSet;
 
-public abstract class SuperPage {
+public abstract class SuperPage{
 	protected WebDriver driver=null;
 	protected DoPlus du=null;
 	
@@ -21,11 +21,18 @@ public abstract class SuperPage {
 		driver.get(url);
 	}
 
+	public void selectAll(String locatorName) {
+		du.what(locatorName).sendKeys(Keys.CONTROL + "a");
+	}
+	
 	public void doLoseFocus(String locationName) {
 		du.doLeftClickBy(locationName, 0, -20);
 	}
 	public void doLoseFocus(String locationName,int xOffset,int yOffset) {
 		du.doLeftClickBy(locationName, xOffset, yOffset);
+	}
+	public void doLoseFocus(String locationName,String replaceString,int xOffset,int yOffset) {
+		du.doLeftClickBy(locationName,replaceString, xOffset, yOffset);
 	}
 	
 	public void doCancel() {
@@ -51,7 +58,39 @@ public abstract class SuperPage {
 		du.doSendKeys(Keys.BACK_SPACE);
 	}
 	
+	public boolean isElementDisplayed(String elementName) {
+		return du.what(elementName).isDisplayed();
+	}
 	
+	public boolean isElementDisplayed(String elementName,String replaceString) {
+		return du.what(elementName,replaceString).isDisplayed();
+	}
+	
+	public boolean isElementExist(String locationName) {
+		try {
+            du.what(locationName);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+	}
+	
+	
+	public boolean isElementExist(String locationName,String replaceString) {
+		try {
+			du.what(locationName, replaceString);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+	}
+	
+	public void clickElement(String locationName) {
+		du.what(locationName).click();
+	}
+	public void clickElement(String locationName,String replaceString) {
+		du.what(locationName,replaceString).click();
+	}
 	
 	public String getCurrentAccountantDate() {
 		String CurrentAccountantDate=
@@ -59,6 +98,9 @@ public abstract class SuperPage {
 		CurrentAccountantDate=CurrentAccountantDate.substring(6);
 		CurrentAccountantDate=CurrentAccountantDate.substring(0, 4)+"-"+CurrentAccountantDate.substring(5,7)+"-"+CurrentAccountantDate.substring(8,10);
 		return CurrentAccountantDate;
+	}
+	public boolean isPOPTopDisplayed() {
+		return driver.findElement(By.xpath("//header")).isDisplayed();
 	}
 	
 	public String getNotice() {

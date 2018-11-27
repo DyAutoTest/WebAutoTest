@@ -30,6 +30,13 @@ public class SuperTest {
 	
 	protected String testinfo=""; 
 	
+	
+	/********** interface identify ***********/
+	protected IQuery iQuery;
+	protected IClickRadio iClickRadio;
+	protected IClickButton iClickButton;
+	
+	/************* test area ****************/
 	@BeforeClass
 	public void beforeClass() { 
 		wait = SingletonSet.wait;
@@ -68,8 +75,13 @@ public class SuperTest {
 		}
 		wait.waitFor(2000);
 	}
+	
+	
+	
+/*************************** interface function *****************************/
+	
 	//搜商户
-	public void doSearchMerchantByNOorName(SearchMerchantByNOorName searchMerchantByNOorName,String merchantNO,String merchantName,String index) {
+	public void doSearchMerchantByNOorName(ISearchMerchantByNOorName searchMerchantByNOorName,String merchantNO,String merchantName,String index) {
 		if(!merchantNO.equals("")) {
 			searchMerchantByNOorName.setMerchantNO(merchantNO);
 		}else if(!merchantName.equals("")) {
@@ -94,8 +106,58 @@ public class SuperTest {
 		}
 	}
 	
-	//查询
+	//查询 testQuery()
+	public void doQuery() {
+		doQuery(1000);
+	}
+	public void doQuery(int waitTime) {
+		iQuery.clickQuery();
+		wait.waitFor(waitTime);
+		iQuery.doPageDown();
+		wait.waitFor(1000+waitTime);
+		iQuery.doPageUp();
+		wait.waitFor(waitTime);
+		iQuery.clickReset();
+		wait.waitFor(waitTime);
+	}
 	
+	//点击Radio
+	public void clickRadio(String radio) {
+		clickRadio(radio,1000);
+	}
+	public void clickRadio(String radio,int waitTime) {
+		iClickRadio.clickQuery();
+		wait.waitFor(waitTime);
+		if(!iClickRadio.isElementExist("Radio",radio)) {	
+			System.out.println("查询数据不存在，请更换查询条件。Please Change TestData !");
+			Reporter.log("查询数据数据不存在，请更换查询条件。Please Change TestData !");
+			assertTrue(false);
+		}
+		while(!iClickRadio.isElementDisplayed("Radio",radio)) {
+			iClickRadio.doPageDown();
+		}
+		iClickRadio.clickRadio(radio);
+		wait.waitFor(waitTime);
+		iClickRadio.doLoseFocus("Radio",radio,80,0 );
+		wait.waitFor(waitTime);
+	}
+	//Click Button
+	public void clickButton(String buttonName) {
+		if(!iClickButton.isElementExist(buttonName)) {	
+			System.out.println("按钮不存在，Please Change TestData !");
+			Reporter.log("按钮不存在，Please Change TestData !");
+			assertTrue(false);
+		}
+		while(!iClickButton.isElementDisplayed(buttonName)) {
+			iClickButton.doPageUp();
+			wait.waitFor(300);
+		}
+		iClickButton.clickElement(buttonName);
+		wait.waitFor(2000);
+	}
+	
+	
+	//查看 
 	//修改
 	
 	

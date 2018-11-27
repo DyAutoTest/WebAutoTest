@@ -23,16 +23,16 @@ public class Wait {
 			System.out.println("The element can not find!");
 		}
 	}
-public void waitForElementPresent(String xpath,int time) {
-	
-	try {
-		(new WebDriverWait(driver, time))
-			.until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)));
-	} catch (Exception e) {
-		e.printStackTrace();
-		System.out.println("�ȴ���ʱ");
+	public void waitForElementPresent(String xpath,int time) {
+		
+		try {
+			(new WebDriverWait(driver, time))
+				.until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)));
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("�ȴ���ʱ");
+		}
 	}
-}
 	
 	public void waitForElementIsEnable(String xpath) {
 		

@@ -36,7 +36,7 @@ public class LocatorBusiness {
 				break;
 			}
 		}
-		if(i==list.size()) {
+		if(i==list.size()) { 
 //			System.out.println(Thread.currentThread() .getStackTrace()[1].getClassName()+
 //					"."+Thread.currentThread().getStackTrace()[1].getMethodName()+": ElementName: "+elementName+" in table is not exist! Please check!");
 			System.out.println("LocatorBusiness.getXPath: ElementName("+elementName+") in table is not exist! Please check!");

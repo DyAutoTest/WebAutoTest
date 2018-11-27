@@ -1,43 +1,195 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="4" total="7" passed="3">
   <reporter-output>
     <line>
-      <![CDATA[        2018-11-26 22:17:28): [Test]-"OnlineCashierB2B" is started]]>
+      <![CDATA[        2018-11-29 14:10:48): [Test]-"Login" is started]]>
     </line>
     <line>
-      <![CDATA[                2018-11-26 22:17:28: [Method]-"OnlineCashierB2BTest.testOnlineCashierB2B" is started]]>
+      <![CDATA[                2018-11-29 14:10:48: [Method]-"LoginPageTest.testLogin" is started]]>
     </line>
     <line>
-      <![CDATA[[info]20181126221730 支付成功！ 在主商户 872290049000101 下，付款 6.66 元]]>
+      <![CDATA[                2018-11-29 14:10:53: [Method]-"LoginPageTest.testLogin" is passed]]>
     </line>
     <line>
-      <![CDATA[                2018-11-26 22:17:59: [Method]-"OnlineCashierB2BTest.testOnlineCashierB2B" is passed]]>
+      <![CDATA[        2018-11-29 14:10:55): [Test]-"Login" is finished]]>
     </line>
     <line>
-      <![CDATA[                2018-11-26 22:18:01: [Method]-"OnlineCashierB2BTest.testOnlineCashierB2B" is started]]>
+      <![CDATA[        2018-11-29 14:10:56): [Test]-"OnlinePurchaseOrderQuery" is started]]>
     </line>
     <line>
-      <![CDATA[[info]20181126221803 支付成功！ 在主商户 872290049000101 下，付款 6.66 元]]>
+      <![CDATA[                2018-11-29 14:10:56: [Method]-"OnlinePurchaseOrderQueryPageTest.testCheck" is started]]>
     </line>
     <line>
-      <![CDATA[                2018-11-26 22:18:27: [Method]-"OnlineCashierB2BTest.testOnlineCashierB2B" is passed]]>
+      <![CDATA[                2018-11-29 14:11:21: [Method]-"OnlinePurchaseOrderQueryPageTest.testCheck" is passed]]>
     </line>
     <line>
-      <![CDATA[                2018-11-26 22:18:29: [Method]-"OnlineCashierB2BTest.quitBrowser" is started]]>
-    </line>
-    <line>
-      <![CDATA[                2018-11-26 22:18:30: [Method]-"OnlineCashierB2BTest.quitBrowser" is passed]]>
-    </line>
-    <line>
-      <![CDATA[        2018-11-26 22:18:32): [Test]-"OnlineCashierB2B" is finished]]>
+      <![CDATA[        2018-11-29 14:11:23): [Test]-"OnlinePurchaseOrderQuery" is finished]]>
     </line>
   </reporter-output>
-  <suite name="OnlineCashierB2B" duration-ms="63380" started-at="2018-11-26T14:17:28Z" finished-at="2018-11-26T14:18:32Z">
+  <suite name="SuiteOperationPlatform" duration-ms="39565" started-at="2018-11-29T06:10:48Z" finished-at="2018-11-29T06:11:27Z">
     <groups>
     </groups>
-    <test name="OnlineCashierB2B" duration-ms="63380" started-at="2018-11-26T14:17:28Z" finished-at="2018-11-26T14:18:32Z">
+    <test name="Login" duration-ms="7578" started-at="2018-11-29T06:10:48Z" finished-at="2018-11-29T06:10:56Z">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
+        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="BeforeTest" is-config="true" duration-ms="2" started-at="2018-11-29T06:10:48Z" finished-at="2018-11-29T06:10:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@45e22def]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2018-11-29 14:10:48): [Test]-"Login" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-11-29T06:10:48Z" finished-at="2018-11-29T06:10:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="init" is-config="true" duration-ms="4" started-at="2018-11-29T06:10:48Z" finished-at="2018-11-29T06:10:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-29T06:10:48Z" finished-at="2018-11-29T06:10:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest.testLogin(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-29 14:10:48: [Method]-"LoginPageTest.testLogin" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="testLogin" duration-ms="5546" started-at="2018-11-29T06:10:48Z" finished-at="2018-11-29T06:10:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[T00064]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2018-11-29T06:10:53Z" finished-at="2018-11-29T06:10:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=LoginPageTest.testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-29 14:10:53: [Method]-"LoginPageTest.testLogin" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="AfterTest" is-config="true" duration-ms="1" started-at="2018-11-29T06:10:55Z" finished-at="2018-11-29T06:10:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@45e22def]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2018-11-29 14:10:55): [Test]-"Login" is finished]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest -->
+    </test> <!-- Login -->
+    <test name="OnlinePurchaseOrderQuery" duration-ms="27246" started-at="2018-11-29T06:10:56Z" finished-at="2018-11-29T06:11:23Z">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.PurchaseOrder.OnlinePurchaseOrderQueryPageTest">
+        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.PurchaseOrder.OnlinePurchaseOrderQueryPageTest@27ae2fd0]" name="BeforeTest" is-config="true" duration-ms="0" started-at="2018-11-29T06:10:56Z" finished-at="2018-11-29T06:10:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6ae3fb94]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2018-11-29 14:10:56): [Test]-"OnlinePurchaseOrderQuery" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.PurchaseOrder.OnlinePurchaseOrderQueryPageTest@27ae2fd0]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-11-29T06:10:56Z" finished-at="2018-11-29T06:10:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.PurchaseOrder.OnlinePurchaseOrderQueryPageTest@27ae2fd0]" name="init" is-config="true" duration-ms="3" started-at="2018-11-29T06:10:56Z" finished-at="2018-11-29T06:10:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.PurchaseOrder.OnlinePurchaseOrderQueryPageTest@27ae2fd0]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-11-29T06:10:56Z" finished-at="2018-11-29T06:10:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.PurchaseOrder.OnlinePurchaseOrderQueryPageTest.testCheck(com.dy.AutoTest.OperationPlatform.POJO.OnlinePurchaseOrderQueryBean)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-29 14:10:56: [Method]-"OnlinePurchaseOrderQueryPageTest.testCheck" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testCheck(com.dy.AutoTest.OperationPlatform.POJO.OnlinePurchaseOrderQueryBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.PurchaseOrder.OnlinePurchaseOrderQueryPageTest@27ae2fd0]" name="testCheck" duration-ms="25231" started-at="2018-11-29T06:10:56Z" description="运营平台-线上交易-查看详情" data-provider="OnlinePurchaseOrderQueryByCaseNO" finished-at="2018-11-29T06:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.OnlinePurchaseOrderQueryBean@66629f63]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheck -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.PurchaseOrder.OnlinePurchaseOrderQueryPageTest@27ae2fd0]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2018-11-29T06:11:21Z" finished-at="2018-11-29T06:11:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCheck status=SUCCESS method=OnlinePurchaseOrderQueryPageTest.testCheck(com.dy.AutoTest.OperationPlatform.POJO.OnlinePurchaseOrderQueryBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.PurchaseOrder.OnlinePurchaseOrderQueryPageTest@27ae2fd0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-29 14:11:21: [Method]-"OnlinePurchaseOrderQueryPageTest.testCheck" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.PurchaseOrder.OnlinePurchaseOrderQueryPageTest@27ae2fd0]" name="AfterTest" is-config="true" duration-ms="1" started-at="2018-11-29T06:11:23Z" finished-at="2018-11-29T06:11:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6ae3fb94]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2018-11-29 14:11:23): [Test]-"OnlinePurchaseOrderQuery" is finished]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.PurchaseOrder.OnlinePurchaseOrderQueryPageTest -->
+    </test> <!-- OnlinePurchaseOrderQuery -->
+    <test name="Quit" duration-ms="4703" started-at="2018-11-29T06:11:23Z" finished-at="2018-11-29T06:11:27Z">
       <class name="com.dy.AutoTest.web.actions.SingletonSet">
-        <test-method status="PASS" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@23f7d05d]" name="init" is-config="true" duration-ms="3973" started-at="2018-11-26T14:17:24Z" finished-at="2018-11-26T14:17:28Z">
+        <test-method status="PASS" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@23986957]" name="init" is-config="true" duration-ms="3650" started-at="2018-11-29T06:10:44Z" finished-at="2018-11-29T06:10:48Z">
           <params>
             <param index="0">
               <value>
@@ -46,172 +198,32 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[online_simulator_uat]]>
+                <![CDATA[pop_uat]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="releaseJDBC()[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@23f7d05d]" name="releaseJDBC" is-config="true" duration-ms="2011" started-at="2018-11-26T14:18:32Z" finished-at="2018-11-26T14:18:34Z">
+        <test-method status="PASS" signature="releaseJDBC()[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@23986957]" name="releaseJDBC" is-config="true" duration-ms="2794" started-at="2018-11-29T06:11:28Z" finished-at="2018-11-29T06:11:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- releaseJDBC -->
       </class> <!-- com.dy.AutoTest.web.actions.SingletonSet -->
-      <class name="com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest">
-        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495]" name="BeforeTest" is-config="true" duration-ms="1" started-at="2018-11-26T14:17:28Z" finished-at="2018-11-26T14:17:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@4713b631]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[        2018-11-26 22:17:28): [Test]-"OnlineCashierB2B" is started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- BeforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-11-26T14:17:28Z" finished-at="2018-11-26T14:17:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495]" name="init" is-config="true" duration-ms="8" started-at="2018-11-26T14:17:28Z" finished-at="2018-11-26T14:17:28Z">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1fe20588]" name="init" is-config="true" duration-ms="3" started-at="2018-11-29T06:11:23Z" finished-at="2018-11-29T06:11:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="testOnlineCashierB2B(com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2BBean)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495]" name="testOnlineCashierB2B" duration-ms="30736" started-at="2018-11-26T14:17:28Z" description="收银台-B2B收款" data-provider="B2B" finished-at="2018-11-26T14:17:59Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2BBean@55322aab]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[[info]20181126221730 支付成功！ 在主商户 872290049000101 下，付款 6.66 元]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testOnlineCashierB2B -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-26T14:17:28Z" finished-at="2018-11-26T14:17:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest.testOnlineCashierB2B(com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2BBean)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2018-11-26 22:17:28: [Method]-"OnlineCashierB2BTest.testOnlineCashierB2B" is started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2018-11-26T14:17:59Z" finished-at="2018-11-26T14:18:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testOnlineCashierB2B status=SUCCESS method=OnlineCashierB2BTest.testOnlineCashierB2B(com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2BBean)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495] output=[info]20181126221730 支付成功！ 在主商户 872290049000101 下，付款 6.66 元]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2018-11-26 22:17:59: [Method]-"OnlineCashierB2BTest.testOnlineCashierB2B" is passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-26T14:18:01Z" finished-at="2018-11-26T14:18:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest.testOnlineCashierB2B(com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2BBean)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2018-11-26 22:18:01: [Method]-"OnlineCashierB2BTest.testOnlineCashierB2B" is started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testOnlineCashierB2B(com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2BBean)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495]" name="testOnlineCashierB2B" duration-ms="25834" started-at="2018-11-26T14:18:01Z" description="收银台-B2B收款" data-provider="B2B" finished-at="2018-11-26T14:18:27Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2BBean@245253d8]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[[info]20181126221803 支付成功！ 在主商户 872290049000101 下，付款 6.66 元]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testOnlineCashierB2B -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2018-11-26T14:18:27Z" finished-at="2018-11-26T14:18:29Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testOnlineCashierB2B status=SUCCESS method=OnlineCashierB2BTest.testOnlineCashierB2B(com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2BBean)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495] output=[info]20181126221803 支付成功！ 在主商户 872290049000101 下，付款 6.66 元]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2018-11-26 22:18:27: [Method]-"OnlineCashierB2BTest.testOnlineCashierB2B" is passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-11-26T14:18:29Z" finished-at="2018-11-26T14:18:29Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest.quitBrowser()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2018-11-26 22:18:29: [Method]-"OnlineCashierB2BTest.quitBrowser" is started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495]" name="quitBrowser" duration-ms="772" started-at="2018-11-26T14:18:29Z" finished-at="2018-11-26T14:18:30Z">
+        <test-method status="PASS" signature="testQuit()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1fe20588]" name="testQuit" duration-ms="3694" started-at="2018-11-29T06:11:23Z" finished-at="2018-11-29T06:11:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495]" name="afterMethod" is-config="true" duration-ms="2002" started-at="2018-11-26T14:18:30Z" finished-at="2018-11-26T14:18:32Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=quitBrowser status=SUCCESS method=OnlineCashierB2BTest.quitBrowser()[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- testQuit -->
+        <test-method status="PASS" signature="releaseBrowser()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1fe20588]" name="releaseBrowser" is-config="true" duration-ms="1001" started-at="2018-11-29T06:11:26Z" finished-at="2018-11-29T06:11:27Z">
           <reporter-output>
-            <line>
-              <![CDATA[                2018-11-26 22:18:30: [Method]-"OnlineCashierB2BTest.quitBrowser" is passed]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495]" name="AfterTest" is-config="true" duration-ms="0" started-at="2018-11-26T14:18:32Z" finished-at="2018-11-26T14:18:32Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@4713b631]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[        2018-11-26 22:18:32): [Test]-"OnlineCashierB2B" is finished]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- AfterTest -->
-      </class> <!-- com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest -->
-    </test> <!-- OnlineCashierB2B -->
-  </suite> <!-- OnlineCashierB2B -->
+        </test-method> <!-- releaseBrowser -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest -->
+    </test> <!-- Quit -->
+  </suite> <!-- SuiteOperationPlatform -->
 </testng-results>
