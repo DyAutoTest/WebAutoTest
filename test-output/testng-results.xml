@@ -1,35 +1,278 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+=======
+<testng-results skipped="0" failed="2" ignored="9" total="15" passed="4">
+>>>>>>> refs/heads/MerchantAddSuit-inter
+=======
 <testng-results skipped="0" failed="0" ignored="4" total="7" passed="3">
+>>>>>>> refs/heads/OlinePurchaseOrderQuery
   <reporter-output>
     <line>
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <![CDATA[        2018-11-26 22:17:28): [Test]-"OnlineCashierB2B" is started]]>
+=======
+      <![CDATA[        2018-11-27 14:28:00): [Test]-"MerchantFeeRateAdd" is started]]>
+>>>>>>> refs/heads/MerchantAddSuit-inter
+=======
       <![CDATA[        2018-11-29 14:10:48): [Test]-"Login" is started]]>
+>>>>>>> refs/heads/OlinePurchaseOrderQuery
     </line>
     <line>
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <![CDATA[                2018-11-26 22:17:28: [Method]-"OnlineCashierB2BTest.testOnlineCashierB2B" is started]]>
+=======
+      <![CDATA[                2018-11-27 14:28:00: [Method]-"LoginPageTest.testLogin" is started]]>
+>>>>>>> refs/heads/MerchantAddSuit-inter
+=======
       <![CDATA[                2018-11-29 14:10:48: [Method]-"LoginPageTest.testLogin" is started]]>
+>>>>>>> refs/heads/OlinePurchaseOrderQuery
     </line>
     <line>
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <![CDATA[[info]20181126221730 支付成功！ 在主商户 872290049000101 下，付款 6.66 元]]>
+=======
+      <![CDATA[                2018-11-27 14:28:09: [Method]-"LoginPageTest.testLogin" is passed]]>
+>>>>>>> refs/heads/MerchantAddSuit-inter
+=======
       <![CDATA[                2018-11-29 14:10:53: [Method]-"LoginPageTest.testLogin" is passed]]>
+>>>>>>> refs/heads/OlinePurchaseOrderQuery
     </line>
     <line>
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <![CDATA[                2018-11-26 22:17:59: [Method]-"OnlineCashierB2BTest.testOnlineCashierB2B" is passed]]>
+=======
+      <![CDATA[                2018-11-27 14:28:11: [Method]-"MerchantFeeRatePageTest.testMerchantFeeRateAdd" is started]]>
+>>>>>>> refs/heads/MerchantAddSuit-inter
+=======
       <![CDATA[        2018-11-29 14:10:55): [Test]-"Login" is finished]]>
     </line>
     <line>
       <![CDATA[        2018-11-29 14:10:56): [Test]-"OnlinePurchaseOrderQuery" is started]]>
+>>>>>>> refs/heads/OlinePurchaseOrderQuery
     </line>
     <line>
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <![CDATA[                2018-11-26 22:18:01: [Method]-"OnlineCashierB2BTest.testOnlineCashierB2B" is started]]>
+=======
+      <![CDATA[                2018-11-27 14:28:34: [Method]-"MerchantFeeRatePageTest.testMerchantFeeRateAdd" is failed]]>
+>>>>>>> refs/heads/MerchantAddSuit-inter
+    </line>
+    <line>
+<<<<<<< HEAD
+      <![CDATA[[info]20181126221803 支付成功！ 在主商户 872290049000101 下，付款 6.66 元]]>
+=======
+      <![CDATA[                        The failure is org.openqa.selenium.WebDriverException: unknown error: Element <button type="button" class="btn btn-primary" data-original-title="增加" data-toggle="modal" id="addBtn">...</button> is not clickable at point (324, 379). Other element would receive the click: <div class="form-group">...</div>
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LENOVO-RAY', ip: '192.168.85.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\寒\AppData\Local\Te...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: 77b55a3d4e6ce57e7ba21cd0f596d9b5]]>
+>>>>>>> refs/heads/MerchantAddSuit-inter
+=======
       <![CDATA[                2018-11-29 14:10:56: [Method]-"OnlinePurchaseOrderQueryPageTest.testCheck" is started]]>
+>>>>>>> refs/heads/OlinePurchaseOrderQuery
     </line>
     <line>
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <![CDATA[                2018-11-26 22:18:27: [Method]-"OnlineCashierB2BTest.testOnlineCashierB2B" is passed]]>
+=======
+      <![CDATA[        2018-11-27 14:28:40): [Test]-"MerchantFeeRateAdd" is finished]]>
+>>>>>>> refs/heads/MerchantAddSuit-inter
+=======
       <![CDATA[                2018-11-29 14:11:21: [Method]-"OnlinePurchaseOrderQueryPageTest.testCheck" is passed]]>
+>>>>>>> refs/heads/OlinePurchaseOrderQuery
     </line>
     <line>
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <![CDATA[                2018-11-26 22:18:29: [Method]-"OnlineCashierB2BTest.quitBrowser" is started]]>
+=======
+      <![CDATA[        2018-11-27 14:28:40): [Test]-"MerchantAuditPass" is started]]>
+>>>>>>> refs/heads/MerchantAddSuit-inter
+    </line>
+    <line>
+<<<<<<< HEAD
+      <![CDATA[                2018-11-26 22:18:30: [Method]-"OnlineCashierB2BTest.quitBrowser" is passed]]>
+=======
+      <![CDATA[                2018-11-27 14:28:40: [Method]-"LoginPageTest.testLogin" is started]]>
+>>>>>>> refs/heads/MerchantAddSuit-inter
+    </line>
+    <line>
+<<<<<<< HEAD
+      <![CDATA[        2018-11-26 22:18:32): [Test]-"OnlineCashierB2B" is finished]]>
+=======
+      <![CDATA[                2018-11-27 14:28:44: [Method]-"LoginPageTest.testLogin" is passed]]>
+    </line>
+    <line>
+      <![CDATA[                2018-11-27 14:28:46: [Method]-"MerchantAuditPageTest.testMerchantAuditPass" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2018-11-27 14:28:50: [Method]-"MerchantAuditPageTest.testMerchantAuditPass" is passed]]>
+    </line>
+    <line>
+      <![CDATA[        2018-11-27 14:28:57): [Test]-"MerchantAuditPass" is finished]]>
+>>>>>>> refs/heads/MerchantAddSuit-inter
+=======
       <![CDATA[        2018-11-29 14:11:23): [Test]-"OnlinePurchaseOrderQuery" is finished]]>
+>>>>>>> refs/heads/OlinePurchaseOrderQuery
     </line>
   </reporter-output>
+<<<<<<< HEAD
+<<<<<<< HEAD
+  <suite name="OnlineCashierB2B" duration-ms="63380" started-at="2018-11-26T14:17:28Z" finished-at="2018-11-26T14:18:32Z">
+=======
+  <suite name="SuiteOperationPlatform" duration-ms="56843" started-at="2018-11-27T06:28:00Z" finished-at="2018-11-27T06:28:57Z">
+>>>>>>> refs/heads/MerchantAddSuit-inter
+=======
   <suite name="SuiteOperationPlatform" duration-ms="39565" started-at="2018-11-29T06:10:48Z" finished-at="2018-11-29T06:11:27Z">
+>>>>>>> refs/heads/OlinePurchaseOrderQuery
     <groups>
     </groups>
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <test name="OnlineCashierB2B" duration-ms="63380" started-at="2018-11-26T14:17:28Z" finished-at="2018-11-26T14:18:32Z">
+=======
+    <test name="MerchantFeeRateAdd" duration-ms="39583" started-at="2018-11-27T06:28:00Z" finished-at="2018-11-27T06:28:40Z">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantFeeRatePageTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantFeeRatePageTest@77e9807f]" name="beforeClass" is-config="true" duration-ms="1" started-at="2018-11-27T06:28:11Z" finished-at="2018-11-27T06:28:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantFeeRatePageTest@77e9807f]" name="init" is-config="true" duration-ms="3" started-at="2018-11-27T06:28:11Z" finished-at="2018-11-27T06:28:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantFeeRatePageTest@77e9807f]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-11-27T06:28:11Z" finished-at="2018-11-27T06:28:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantFeeRatePageTest.testMerchantFeeRateAdd(com.dy.AutoTest.OperationPlatform.POJO.MerchantFeeRateBean)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-27 14:28:11: [Method]-"MerchantFeeRatePageTest.testMerchantFeeRateAdd" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="testMerchantFeeRateAdd(com.dy.AutoTest.OperationPlatform.POJO.MerchantFeeRateBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantFeeRatePageTest@77e9807f]" name="testMerchantFeeRateAdd" duration-ms="23779" started-at="2018-11-27T06:28:11Z" data-provider="feeRate" finished-at="2018-11-27T06:28:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.MerchantFeeRateBean@18f20260]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Element <button type="button" class="btn btn-primary" data-original-title="增加" data-toggle="modal" id="addBtn">...</button> is not clickable at point (324, 379). Other element would receive the click: <div class="form-group">...</div>
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LENOVO-RAY', ip: '192.168.85.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\寒\AppData\Local\Te...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: 77b55a3d4e6ce57e7ba21cd0f596d9b5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <button type="button" class="btn btn-primary" data-original-title="增加" data-toggle="modal" id="addBtn">...</button> is not clickable at point (324, 379). Other element would receive the click: <div class="form-group">...</div>
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LENOVO-RAY', ip: '192.168.85.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\寒\AppData\Local\Te...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: 77b55a3d4e6ce57e7ba21cd0f596d9b5
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+at com.dy.AutoTest.OperationPlatform.PageObject.MerchantManagementOnLine.OnLineMerchantInfo.MerchantFeeRatePage.doMerchantFeeRateAdd(MerchantFeeRatePage.java:22)
+at com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantFeeRatePageTest.testMerchantFeeRateAdd(MerchantFeeRatePageTest.java:39)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMerchantFeeRateAdd -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantFeeRatePageTest@77e9807f]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2018-11-27T06:28:34Z" finished-at="2018-11-27T06:28:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testMerchantFeeRateAdd status=FAILURE method=MerchantFeeRatePageTest.testMerchantFeeRateAdd(com.dy.AutoTest.OperationPlatform.POJO.MerchantFeeRateBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantFeeRatePageTest@77e9807f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-27 14:28:34: [Method]-"MerchantFeeRatePageTest.testMerchantFeeRateAdd" is failed]]>
+            </line>
+            <line>
+              <![CDATA[                        The failure is org.openqa.selenium.WebDriverException: unknown error: Element <button type="button" class="btn btn-primary" data-original-title="增加" data-toggle="modal" id="addBtn">...</button> is not clickable at point (324, 379). Other element would receive the click: <div class="form-group">...</div>
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LENOVO-RAY', ip: '192.168.85.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\寒\AppData\Local\Te...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: 77b55a3d4e6ce57e7ba21cd0f596d9b5]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantFeeRatePageTest -->
+=======
     <test name="Login" duration-ms="7578" started-at="2018-11-29T06:10:48Z" finished-at="2018-11-29T06:10:56Z">
+>>>>>>> refs/heads/OlinePurchaseOrderQuery
       <class name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
         <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="BeforeTest" is-config="true" duration-ms="2" started-at="2018-11-29T06:10:48Z" finished-at="2018-11-29T06:10:48Z">
           <params>
@@ -170,6 +413,13 @@
               <![CDATA[                2018-11-29 14:11:21: [Method]-"OnlinePurchaseOrderQueryPageTest.testCheck" is passed]]>
             </line>
           </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- releaseBrowser -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest -->
+    </test> <!-- MerchantFeeRateAdd -->
+    <test name="MerchantAuditPass" duration-ms="17191" started-at="2018-11-27T06:28:40Z" finished-at="2018-11-27T06:28:57Z">
+>>>>>>> refs/heads/MerchantAddSuit-inter
+=======
         </test-method> <!-- afterMethod -->
         <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.PurchaseOrder.OnlinePurchaseOrderQueryPageTest@27ae2fd0]" name="AfterTest" is-config="true" duration-ms="1" started-at="2018-11-29T06:11:23Z" finished-at="2018-11-29T06:11:23Z">
           <params>
@@ -188,8 +438,17 @@
       </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.PurchaseOrder.OnlinePurchaseOrderQueryPageTest -->
     </test> <!-- OnlinePurchaseOrderQuery -->
     <test name="Quit" duration-ms="4703" started-at="2018-11-29T06:11:23Z" finished-at="2018-11-29T06:11:27Z">
+>>>>>>> refs/heads/OlinePurchaseOrderQuery
       <class name="com.dy.AutoTest.web.actions.SingletonSet">
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <test-method status="PASS" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@23f7d05d]" name="init" is-config="true" duration-ms="3973" started-at="2018-11-26T14:17:24Z" finished-at="2018-11-26T14:17:28Z">
+=======
+        <test-method status="PASS" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@55a1c291]" name="init" is-config="true" duration-ms="3509" started-at="2018-11-27T06:27:57Z" finished-at="2018-11-27T06:28:00Z">
+>>>>>>> refs/heads/MerchantAddSuit-inter
+=======
         <test-method status="PASS" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@23986957]" name="init" is-config="true" duration-ms="3650" started-at="2018-11-29T06:10:44Z" finished-at="2018-11-29T06:10:48Z">
+>>>>>>> refs/heads/OlinePurchaseOrderQuery
           <params>
             <param index="0">
               <value>
@@ -205,25 +464,288 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <test-method status="PASS" signature="releaseJDBC()[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@23f7d05d]" name="releaseJDBC" is-config="true" duration-ms="2011" started-at="2018-11-26T14:18:32Z" finished-at="2018-11-26T14:18:34Z">
+=======
+        <test-method status="PASS" signature="releaseJDBC()[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@55a1c291]" name="releaseJDBC" is-config="true" duration-ms="2757" started-at="2018-11-27T06:28:57Z" finished-at="2018-11-27T06:29:00Z">
+>>>>>>> refs/heads/MerchantAddSuit-inter
+=======
         <test-method status="PASS" signature="releaseJDBC()[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@23986957]" name="releaseJDBC" is-config="true" duration-ms="2794" started-at="2018-11-29T06:11:28Z" finished-at="2018-11-29T06:11:30Z">
+>>>>>>> refs/heads/OlinePurchaseOrderQuery
           <reporter-output>
           </reporter-output>
         </test-method> <!-- releaseJDBC -->
       </class> <!-- com.dy.AutoTest.web.actions.SingletonSet -->
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <class name="com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest">
+        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495]" name="BeforeTest" is-config="true" duration-ms="1" started-at="2018-11-26T14:17:28Z" finished-at="2018-11-26T14:17:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4713b631]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2018-11-26 22:17:28): [Test]-"OnlineCashierB2B" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-11-26T14:17:28Z" finished-at="2018-11-26T14:17:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495]" name="init" is-config="true" duration-ms="8" started-at="2018-11-26T14:17:28Z" finished-at="2018-11-26T14:17:28Z">
+=======
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
+        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@2145433b]" name="BeforeTest" is-config="true" duration-ms="1" started-at="2018-11-27T06:28:40Z" finished-at="2018-11-27T06:28:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@f9cab00]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2018-11-27 14:28:40): [Test]-"MerchantAuditPass" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@2145433b]" name="beforeClass" is-config="true" duration-ms="1" started-at="2018-11-27T06:28:40Z" finished-at="2018-11-27T06:28:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@2145433b]" name="init" is-config="true" duration-ms="1" started-at="2018-11-27T06:28:40Z" finished-at="2018-11-27T06:28:40Z">
+>>>>>>> refs/heads/MerchantAddSuit-inter
+=======
       <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
         <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1fe20588]" name="init" is-config="true" duration-ms="3" started-at="2018-11-29T06:11:23Z" finished-at="2018-11-29T06:11:23Z">
+>>>>>>> refs/heads/OlinePurchaseOrderQuery
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="testQuit()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1fe20588]" name="testQuit" duration-ms="3694" started-at="2018-11-29T06:11:23Z" finished-at="2018-11-29T06:11:26Z">
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <test-method status="PASS" signature="testOnlineCashierB2B(com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2BBean)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495]" name="testOnlineCashierB2B" duration-ms="30736" started-at="2018-11-26T14:17:28Z" description="收银台-B2B收款" data-provider="B2B" finished-at="2018-11-26T14:17:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2BBean@55322aab]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[info]20181126221730 支付成功！ 在主商户 872290049000101 下，付款 6.66 元]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testOnlineCashierB2B -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-26T14:17:28Z" finished-at="2018-11-26T14:17:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest.testOnlineCashierB2B(com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2BBean)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-26 22:17:28: [Method]-"OnlineCashierB2BTest.testOnlineCashierB2B" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2018-11-26T14:17:59Z" finished-at="2018-11-26T14:18:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testOnlineCashierB2B status=SUCCESS method=OnlineCashierB2BTest.testOnlineCashierB2B(com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2BBean)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495] output=[info]20181126221730 支付成功！ 在主商户 872290049000101 下，付款 6.66 元]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-26 22:17:59: [Method]-"OnlineCashierB2BTest.testOnlineCashierB2B" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-26T14:18:01Z" finished-at="2018-11-26T14:18:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest.testOnlineCashierB2B(com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2BBean)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-26 22:18:01: [Method]-"OnlineCashierB2BTest.testOnlineCashierB2B" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testOnlineCashierB2B(com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2BBean)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495]" name="testOnlineCashierB2B" duration-ms="25834" started-at="2018-11-26T14:18:01Z" description="收银台-B2B收款" data-provider="B2B" finished-at="2018-11-26T14:18:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2BBean@245253d8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[info]20181126221803 支付成功！ 在主商户 872290049000101 下，付款 6.66 元]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testOnlineCashierB2B -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2018-11-26T14:18:27Z" finished-at="2018-11-26T14:18:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testOnlineCashierB2B status=SUCCESS method=OnlineCashierB2BTest.testOnlineCashierB2B(com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2BBean)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495] output=[info]20181126221803 支付成功！ 在主商户 872290049000101 下，付款 6.66 元]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-26 22:18:27: [Method]-"OnlineCashierB2BTest.testOnlineCashierB2B" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-11-26T14:18:29Z" finished-at="2018-11-26T14:18:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest.quitBrowser()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-26 22:18:29: [Method]-"OnlineCashierB2BTest.quitBrowser" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495]" name="quitBrowser" duration-ms="772" started-at="2018-11-26T14:18:29Z" finished-at="2018-11-26T14:18:30Z">
+=======
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@2145433b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-27T06:28:40Z" finished-at="2018-11-27T06:28:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest.testLogin(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-27 14:28:40: [Method]-"LoginPageTest.testLogin" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@2145433b]" name="testLogin" duration-ms="4393" started-at="2018-11-27T06:28:40Z" finished-at="2018-11-27T06:28:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[T00107]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@2145433b]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2018-11-27T06:28:44Z" finished-at="2018-11-27T06:28:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=LoginPageTest.testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@2145433b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-27 14:28:44: [Method]-"LoginPageTest.testLogin" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@2145433b]" name="AfterTest" is-config="true" duration-ms="1" started-at="2018-11-27T06:28:57Z" finished-at="2018-11-27T06:28:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@f9cab00]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2018-11-27 14:28:57): [Test]-"MerchantAuditPass" is finished]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest -->
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@40e6dfe1]" name="init" is-config="true" duration-ms="1" started-at="2018-11-27T06:28:52Z" finished-at="2018-11-27T06:28:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testQuit()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@40e6dfe1]" name="testQuit" duration-ms="3827" started-at="2018-11-27T06:28:52Z" finished-at="2018-11-27T06:28:56Z">
+>>>>>>> refs/heads/MerchantAddSuit-inter
+=======
+        <test-method status="PASS" signature="testQuit()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1fe20588]" name="testQuit" duration-ms="3694" started-at="2018-11-29T06:11:23Z" finished-at="2018-11-29T06:11:26Z">
+>>>>>>> refs/heads/OlinePurchaseOrderQuery
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
+<<<<<<< HEAD
+        </test-method> <!-- quitBrowser -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495]" name="afterMethod" is-config="true" duration-ms="2002" started-at="2018-11-26T14:18:30Z" finished-at="2018-11-26T14:18:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=quitBrowser status=SUCCESS method=OnlineCashierB2BTest.quitBrowser()[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495] output={null}]]]>
+              </value>
+            </param>
+          </params>
+=======
+        </test-method> <!-- testQuit -->
+        <test-method status="PASS" signature="releaseBrowser()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@40e6dfe1]" name="releaseBrowser" is-config="true" duration-ms="1000" started-at="2018-11-27T06:28:56Z" finished-at="2018-11-27T06:28:57Z">
+>>>>>>> refs/heads/MerchantAddSuit-inter
+=======
         </test-method> <!-- testQuit -->
         <test-method status="PASS" signature="releaseBrowser()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1fe20588]" name="releaseBrowser" is-config="true" duration-ms="1001" started-at="2018-11-29T06:11:26Z" finished-at="2018-11-29T06:11:27Z">
+>>>>>>> refs/heads/OlinePurchaseOrderQuery
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+<<<<<<< HEAD
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495]" name="AfterTest" is-config="true" duration-ms="0" started-at="2018-11-26T14:18:32Z" finished-at="2018-11-26T14:18:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4713b631]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2018-11-26 22:18:32): [Test]-"OnlineCashierB2B" is finished]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest -->
+    </test> <!-- OnlineCashierB2B -->
+  </suite> <!-- OnlineCashierB2B -->
+=======
+=======
+>>>>>>> refs/heads/OlinePurchaseOrderQuery
         </test-method> <!-- releaseBrowser -->
       </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest -->
     </test> <!-- Quit -->
   </suite> <!-- SuiteOperationPlatform -->
+<<<<<<< HEAD
+>>>>>>> refs/heads/MerchantAddSuit-inter
+=======
+>>>>>>> refs/heads/OlinePurchaseOrderQuery
 </testng-results>
