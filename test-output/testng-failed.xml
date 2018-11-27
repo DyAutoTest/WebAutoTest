@@ -3,23 +3,55 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [OnlineCashierB2C]">
   <parameter name="environment" value="online_simulator_uat"/>
   <parameter name="browserCategory" value="chrome"/>
+<<<<<<< HEAD
   <listeners>
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
   <test thread-count="5" name="OnlineCashierB2C(failed)">
+=======
+  <test thread-count="5" name="MerchantFeeRateAdd(failed)">
+    <parameter name="OperID" value="T00064"/>
+>>>>>>> refs/heads/MerchantAddSuit-inter
     <classes>
+<<<<<<< HEAD
       <class name="com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2CTest">
+=======
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
+        <methods>
+          <include name="testQuit"/>
+          <include name="init"/>
+          <include name="releaseBrowser"/>
+        </methods>
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest -->
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantFeeRatePageTest">
+>>>>>>> refs/heads/MerchantAddSuit-inter
         <methods>
           <include name="beforeClass"/>
           <include name="afterMethod"/>
           <include name="init"/>
+<<<<<<< HEAD
+=======
+          <include name="testMerchantFeeRateAdd" invocation-numbers="0"/>
+>>>>>>> refs/heads/MerchantAddSuit-inter
           <include name="AfterTest"/>
           <include name="beforeMethod"/>
+<<<<<<< HEAD
           <include name="testOnlineCashierB2C" invocation-numbers="0"/>
+=======
+>>>>>>> refs/heads/MerchantAddSuit-inter
           <include name="BeforeTest"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2CTest -->
+=======
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantFeeRatePageTest -->
+>>>>>>> refs/heads/MerchantAddSuit-inter
     </classes>
+<<<<<<< HEAD
   </test> <!-- OnlineCashierB2C(failed) -->
 </suite> <!-- Failed suite [OnlineCashierB2C] -->
+=======
+  </test> <!-- MerchantFeeRateAdd(failed) -->
+</suite> <!-- Failed suite [SuiteOperationPlatform] -->
+>>>>>>> refs/heads/MerchantAddSuit-inter

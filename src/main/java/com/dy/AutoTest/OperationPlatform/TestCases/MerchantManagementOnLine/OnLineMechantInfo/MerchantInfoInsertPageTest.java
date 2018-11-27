@@ -176,6 +176,8 @@ public class MerchantInfoInsertPageTest extends SuperTest{
 				
 				merchentInfoInsertPage.set42D_AgreementNO(merchantInfoBean.getD_AgreementNO());
 				
+				merchentInfoInsertPage.set43D_AgreementStartDate(merchantInfoBean.getD_AgreementStartDate());
+				
 				merchentInfoInsertPage.set43D_AgreementExpiredDate(merchantInfoBean.getD_AgreementExpiredDate());
 				
 							merchentInfoInsertPage.doLoseFocus("D_AgreementExpiredDate",50,0);

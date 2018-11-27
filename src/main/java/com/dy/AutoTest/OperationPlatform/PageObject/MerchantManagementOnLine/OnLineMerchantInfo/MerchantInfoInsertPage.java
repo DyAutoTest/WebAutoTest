@@ -199,6 +199,9 @@ public class MerchantInfoInsertPage extends SuperPage{
 					public void set42D_AgreementNO(String D_AgreementNO) {
 						du.what("D_AgreementNO").sendKeys(D_AgreementNO);
 					}
+					public void set43D_AgreementStartDate(String D_AgreementStartDate) {
+						du.what("D_AgreementStartDate").sendKeys(D_AgreementStartDate);
+					}
 					public void set43D_AgreementExpiredDate(String D_AgreementExpiredDate) {
 						du.what("D_AgreementExpiredDate").sendKeys(D_AgreementExpiredDate);
 					}

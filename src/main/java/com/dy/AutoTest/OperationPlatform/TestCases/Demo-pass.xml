@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Demo-181023">
+<suite name="SuiteOperationPlatform">
 	<parameter name="browserCategory" value="chrome"></parameter>
 	<parameter name="environment" value="pop_uat"></parameter>
 
@@ -30,7 +30,7 @@
 	</test>
 
 
-	<test thread-count="5" name="MerchantInfoInsertAuditPass">
+	<test thread-count="5" name="MerchantInfoInsertAudit">
 		<parameter name="OperID" value="T00107"></parameter>
 		<parameter name="AuditID" value="1"></parameter>
 		<classes>
@@ -44,7 +44,10 @@
 			<class
 				name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest">
 				<methods>
+					<!-- 审核通过 -->
 					<include name="testMerchantAuditPass" />
+					<!-- 审核拒绝 -->
+					<!-- <include name="testMerchantAuditRefuse" />-->
 				</methods>
 			</class>
 			<class
@@ -82,7 +85,7 @@
 		</classes>
 	</test>
 
-	<test thread-count="5" name="MerchantSettlementInsertAuditPass">
+	<test thread-count="5" name="MerchantSettlementInsertAudit">
 		<parameter name="OperID" value="T00107"></parameter>
 		<parameter name="AuditID" value="6"></parameter>
 		<classes>
@@ -96,7 +99,10 @@
 			<class
 				name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest">
 				<methods>
+					<!-- 审核通过 -->
 					<include name="testMerchantAuditPass" />
+					<!-- 审核拒绝 -->
+					<!-- <include name="testMerchantAuditRefuse" />-->
 				</methods>
 			</class>
 			<class
@@ -133,7 +139,7 @@
 			</class>
 		</classes>
 	</test>
-	<test thread-count="5" name="MerchantFeeRateAddAuditPass">
+	<test thread-count="5" name="MerchantFeeRateAddAudit">
 		<parameter name="OperID" value="T00107"></parameter>
 		<parameter name="AuditID" value="3"></parameter>
 		<classes>
@@ -147,7 +153,10 @@
 			<class
 				name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest">
 				<methods>
+					<!-- 审核通过 -->
 					<include name="testMerchantAuditPass" />
+					<!-- 审核拒绝 -->
+					<!-- <include name="testMerchantAuditRefuse" />-->
 				</methods>
 			</class>
 			<class

@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="5.083">
+           time="5.730">
   <properties />
   
   
-            <testcase name="testLogin" time="5.083" classname="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest" />
+            <testcase name="testLogin" time="5.730" classname="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest" />
       
 </testsuite>

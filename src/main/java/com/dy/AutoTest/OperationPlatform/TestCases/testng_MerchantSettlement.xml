@@ -4,7 +4,7 @@
  	<parameter name="browserCategory" value="chrome"></parameter>
 	<parameter name="environment" value="pop_uat"></parameter>
 	
-	
+	<!-- 登录 -->
 	<test thread-count="5" name="Login">
 	<parameter name="OperID" value="T00064"></parameter>
 		<classes>
@@ -20,8 +20,8 @@
 		</classes>
 	</test>	
 	
-	
-   	<test thread-count="5" name="MerchantSettlementDetail">
+ 	<!-- 商户结算信息查询 -->
+<!--   	<test thread-count="5" name="MerchantSettlementDetail">
 		<classes>
 			<class 
 				name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantSettlementPageTest">
@@ -32,7 +32,7 @@
 		</classes>
 	</test>	
 	
-	
+	商户结算信息修改
 	<test thread-count="5" name="MerchantSettlementAlter">
 		<classes>
 			<class 
@@ -46,9 +46,8 @@
 			</class>
 		</classes>
 	</test>	
-	
-	
-	<test thread-count="5" name="MerchantAuditPass">
+	商户结算信息修改_审核
+	<test thread-count="5" name="MerchantSettlementAlter_AuditPass">
 	<parameter name="OperID" value="T00107"></parameter>
 	<parameter name="AuditID" value="5"></parameter>
 		<classes>
@@ -61,7 +60,10 @@
 			<class
 				name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest">
 				<methods>
+					审核通过
 					<include name="testMerchantAuditPass" />
+					审核拒绝 
+					<include name="testMerchantAuditRefuse" />
 				</methods>
 			</class>
 			<class 
@@ -75,9 +77,8 @@
 			</class>
 		</classes>
 	</test>	
-
-	
-<!-- 		
+	 -->
+	<!-- 商户结算信息新增 -->
    	<test thread-count="5" name="MerchantSettlementInsert">
    	<parameter name="OperID" value="T00107"></parameter>
 	<parameter name="AuditID" value="6"></parameter>
@@ -91,6 +92,14 @@
 			<class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest"> 
 				<methods><include name="testQuit" /></methods>
 			</class>
+		</classes>
+	</test>
+	 
+	 <!-- 商户结算信息新增-审核 -->
+ 	<test thread-count="5" name="MerchantSettlementInsert_AuditPass">
+	<parameter name="OperID" value="T00107"></parameter>
+	<parameter name="AuditID" value="6"></parameter>
+		<classes>
 			<class
 				name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
 				<methods>
@@ -100,16 +109,22 @@
 			<class
 				name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest">
 				<methods>
+					<!-- 审核通过 -->
 					<include name="testMerchantAuditPass" />
-					<include name="testMerchantAuditRefuse" />
+					<!-- 审核拒绝  -->
+					<!-- <include name="testMerchantAuditRefuse" /> -->
 				</methods>
 			</class>
+			<class 
+				name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantSettlementPageTest">
+				<methods>
+					<include name="testMerchantSettlementAlterVerify"></include>
+				</methods>
+			</class> 
 			<class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest"> 
 				<methods><include name="testQuit" /></methods>
 			</class>
 		</classes>
-	</test>
-	  -->
- 
+	</test>	
  
 </suite> 
