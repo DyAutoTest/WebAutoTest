@@ -26,6 +26,7 @@ public class DemoPageTest extends SuperTest{
 		
 		/******** instant Interface *********/
 //		iQuery=DemoPage;
+//		iClickButton=DemoPage;
 	}
 	
 	@DataProvider(name="xxxx")

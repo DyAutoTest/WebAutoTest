@@ -12,7 +12,7 @@ public class GenerateStringUtil {
 			+ "import org.openqa.selenium.WebDriver;\r\n\r\n"
 			+ "import com.dy.AutoTest.web.api.SuperPage;\r\n"
 			+ "import com.dy.AutoTest.web.actions.DoPlus;\r\n\r\n";
-	private static String classIdentify="public class %s extends SuperPage implements ISearchMerchantByNOorName,IQuery{\r\n"
+	private static String classIdentify="public class %s extends SuperPage{\r\n"
 			+ "	public %s(WebDriver driver) {\r\n"
 			+ "		super(driver);\r\n"
 			+ "		du.loadLocator(\"%s\");\r\n"
