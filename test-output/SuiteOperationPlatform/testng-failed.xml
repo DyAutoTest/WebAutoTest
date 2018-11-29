@@ -3,27 +3,23 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [SuiteOperationPlatform]">
   <parameter name="environment" value="pop_uat"/>
   <parameter name="browserCategory" value="chrome"/>
-  <test thread-count="5" name="MerchantFeeRateAdd(failed)">
-    <parameter name="OperID" value="T00064"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="OnlinePurchaseOrderQuery(failed)">
     <classes>
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.PurchaseOrder.OnlinePurchaseOrderQueryPageTest">
         <methods>
-          <include name="testQuit"/>
           <include name="init"/>
-          <include name="releaseBrowser"/>
-        </methods>
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest -->
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantFeeRatePageTest">
-        <methods>
           <include name="beforeClass"/>
           <include name="afterMethod"/>
-          <include name="init"/>
-          <include name="testMerchantFeeRateAdd" invocation-numbers="0"/>
           <include name="AfterTest"/>
+          <include name="testCheck" invocation-numbers="0"/>
           <include name="beforeMethod"/>
           <include name="BeforeTest"/>
         </methods>
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantFeeRatePageTest -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.PurchaseOrder.OnlinePurchaseOrderQueryPageTest -->
     </classes>
-  </test> <!-- MerchantFeeRateAdd(failed) -->
+  </test> <!-- OnlinePurchaseOrderQuery(failed) -->
 </suite> <!-- Failed suite [SuiteOperationPlatform] -->

@@ -50,26 +50,38 @@ public class DoPlus{
 		locator=new LocatorBusiness(tableName);
 	}
 	
+	public boolean isElementDisplayed(String elementName) {
+		return what(elementName).isDisplayed();
+	}
+	
+	public boolean isElementDisplayed(String elementName,String replaceString) {
+		return what(elementName,replaceString).isDisplayed();
+	}
+	
 	public boolean isElementExist(String locationName) {
-		
-//		return driver.findElement(By.xpath(locator.getXPath(locationName))).isDisplayed();
 		try {
-            driver.findElement(By.xpath(locator.getXPath(locationName)));
+            what(locationName);
             return true;
         } catch (Exception e) {
             return false;
         }
 	}
 	
+	public boolean isElementExist(String locationName,String replaceString) {
+		try {
+			what(locationName, replaceString);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+	}
 	public WebElement what(String locationName) {
-//		waitForElementPresent(locationName);
 		if(waitTime!=0) waiter.waitFor(waitTime);
 		return driver.findElement(By.xpath(locator.getXPath(locationName)));
 	}
 	public WebElement what(String locationName,String replaceString) {
 		if(waitTime!=0) waiter.waitFor(waitTime);
 		locationName=locator.getXPath(locationName).replace("??", replaceString);
-		waiter.waitForElementPresent(locationName);
 		return driver.findElement(By.xpath(locationName));
 	}
 	public List<WebElement> whats(String locationName) {
@@ -137,6 +149,10 @@ public class DoPlus{
 	
 	public void doLeftClickBy(String locationName,int xOffset,int yOffset) {
 		action.moveToElement(what(locationName), xOffset, yOffset).click()
+		.build().perform();
+	}
+	public void doLeftClickBy(String locationName,String replaceString,int xOffset,int yOffset) {
+		action.moveToElement(what(locationName,replaceString), xOffset, yOffset).click()
 		.build().perform();
 	}
 	public void doLeftClickBy(WebElement element,int xOffset,int yOffset) {

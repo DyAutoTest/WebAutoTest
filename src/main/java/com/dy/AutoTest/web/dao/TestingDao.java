@@ -47,8 +47,10 @@ public interface TestingDao {
 	
 	<T> T getData(String tableName,String ID,Class<T> cls);
 	<T> List<T> getDataList(String tableName,Class<T> cls);
+	<T> List<T> getDataListByCase(String tableName,String caseNO,Class<T> cls);
 	Map<String,Object> querySingle(String tableName,List<String> selectList,Map<String , Object> whereMap);
 	List<Map<String,Object>> queryMore(String tableName,List<String> selectList,Map<String , Object> whereMap);
+	<T> List<T> queryMoreBeans(String tableName,List<String> selectList,Map<String , Object> whereMap,Class<T> cls);
 	boolean updateTestData(String tableName,Map<String, Object> updateMap, Map<String, Object> whereMap);
 	boolean updateTestData(String tableName,Map<String, Object> updateMap, Map<String, Object> whereMap,boolean existExpression);
 	boolean insertTestData(String tableName,Map<String , Object> insertMap);

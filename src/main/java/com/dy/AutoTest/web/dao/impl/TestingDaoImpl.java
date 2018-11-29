@@ -124,7 +124,33 @@ public class TestingDaoImpl implements TestingDao{
 		}
 		return list;
 	}
-	
+
+	@Override
+	public <T> List<T> getDataListByCase(String tableName, String caseNO, Class<T> cls) {
+		List<T> list=null;
+		List<Object> params=new ArrayList<Object>();
+		
+		
+		if(tableName.equals("")) {
+			System.out.println("TableName is null! Please check!");
+			assertTrue(false);
+		}
+		
+		sql="select * from "+tableName;
+		if(!caseNO.equals("")) {
+			sql+=" where CaseNO=?";
+			params.add(caseNO);
+		}
+		try {
+			list=jdbcUtil.findMoreRefResult(sql, params, cls);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return list;
+	}
+
 	
 	/**
 	 * 获取表的ID（待完成）
@@ -444,6 +470,41 @@ public class TestingDaoImpl implements TestingDao{
 		}
 		return result;
 	}
+	
+	@Override
+	public <T> List<T> queryMoreBeans(String tableName, List<String> selectList, Map<String, Object> whereMap,Class<T> cls) {
+		List<T> list=null;
+		if(tableName.equals("")) {
+			System.out.println("TableName is null! Please check!");
+			assertTrue(false);
+		}
+		String fields="";
+		for(int i=0;i<selectList.size();i++) {
+			fields+=selectList.get(i);
+			if(i<selectList.size()-1) fields+=",";
+		}
+		sql="select "+fields+" from "+tableName;
+		params=new ArrayList<Object>();
+		if(whereMap!=null && !whereMap.isEmpty()) {
+			sql+=" where ";
+			int i=0;
+			for (Map.Entry<String, Object> entry : whereMap.entrySet()) { 
+				sql+=entry.getKey()+"=?";
+				if(i<whereMap.size()-1) 
+					sql+=" and ";
+				params.add(entry.getValue());
+				i++;
+			}
+		}
+		try {
+			list=jdbcUtil.findMoreRefResult(sql, params, cls);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return list;
+	}
 
 	public boolean updateTestData(String tableName, Map<String, Object> updateMap, Map<String, Object> whereMap) {
 		boolean flag=false;
@@ -556,19 +617,7 @@ public class TestingDaoImpl implements TestingDao{
 	}
 
 
-	
-	/*
-	public List<Map<String, Object>> getLoginPageLocator(){
-		return getLocator("POP_Loc_LoginPage");
-	}
-	
-	public List<Map<String, Object>> getMainMenuPageLocator(){
-		return getLocator("POP_Loc_MainMenuPage");
-	}
-	
-	public List<Map<String, Object>> getMerchantInsertLocator(){
-		return getLocator("POP_Loc_MerchantInsert");
-	}
-	*/
-	
+
+
+
 }

@@ -1,13 +1,13 @@
 package com.dy.AutoTest.OperationPlatform.PageObject.MerchantManagementOnLine.OnLineMerchantInfo;
 
-import com.dy.AutoTest.web.api.SearchMerchantByNOorName;
+import com.dy.AutoTest.web.api.ISearchMerchantByNOorName;
 
 import org.openqa.selenium.WebDriver;
 
 import com.dy.AutoTest.web.api.SuperPage;
 import com.dy.AutoTest.web.actions.DoPlus;
 
-public class MerchantIncomeExpenditureDetailPage extends SuperPage implements SearchMerchantByNOorName{
+public class MerchantIncomeExpenditureDetailPage extends SuperPage implements ISearchMerchantByNOorName{
 	public MerchantIncomeExpenditureDetailPage(WebDriver driver) {
 		super(driver);
 		du.loadLocator("POP_Loc_MerchantIncomeExpenditureDetail");
