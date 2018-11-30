@@ -39,7 +39,13 @@ import com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantSettlementAlterBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantSettlementBean;
+import com.dy.AutoTest.OperationPlatform.POJO.OnlineDepositOrderQueryBean;
+import com.dy.AutoTest.OperationPlatform.POJO.OnlineDepositRefundQueryBean;
 import com.dy.AutoTest.OperationPlatform.POJO.OnlinePurchaseOrderQueryBean;
+import com.dy.AutoTest.OperationPlatform.POJO.OnlineRefundOrderQueryBean;
+import com.dy.AutoTest.OperationPlatform.POJO.OnlineTransferInOrderQueryBean;
+import com.dy.AutoTest.OperationPlatform.POJO.OnlineTransferOutOrderQueryBean;
+import com.dy.AutoTest.OperationPlatform.POJO.OnlineWithdrawOrderQueryBean;
 import com.dy.AutoTest.OperationPlatform.POJO.OperBean;
 import com.dy.AutoTest.OperationPlatform.POJO.OverdueMerInfoQueryBean;
 import com.dy.AutoTest.OperationPlatform.POJO.UserAccountModifySearchBean;
@@ -78,8 +84,15 @@ public class DataBusiness {
 	private OverdueMerInfoQueryBean OverdueMerInfoQueryBean;
 	private MainChildMerRelationshipBean MainChildMerRelationshipBean;
 	private OnlinePurchaseOrderQueryBean OnlinePurchaseOrderQueryBean;
-	
-	
+	private OnlineRefundOrderQueryBean OnlineRefundOrderQueryBean;
+	private OnlineDepositOrderQueryBean OnlineDepositOrderQueryBean;
+	private OnlineDepositRefundQueryBean OnlineDepositRefundQueryBean;
+	private OnlineTransferInOrderQueryBean OnlineTransferInOrderQueryBean;
+	private OnlineTransferOutOrderQueryBean OnlineTransferOutOrderQueryBean;
+	private OnlineWithdrawOrderQueryBean OnlineWithdrawOrderQueryBean;
+
+
+
 	
 	private List<Object> list;
 	
@@ -180,6 +193,24 @@ public class DataBusiness {
 			case "POP_Data_OnlinePurchaseOrderQuery":
 				pojo=(T)testingDao.getData(tableName,ID,OnlinePurchaseOrderQueryBean.class);
 				return pojo;
+			case "POP_Data_OnlineRefundOrderQuery":
+				pojo=(T)testingDao.getData(tableName,ID,OnlineRefundOrderQueryBean.class);
+				return pojo;
+			case "POP_Data_OnlineDepositOrderQuery":
+				pojo=(T)testingDao.getData(tableName,ID,OnlineDepositOrderQueryBean.class);
+				return pojo;
+			case "POP_Data_OnlineDepositRefundQuery":
+				pojo=(T)testingDao.getData(tableName,ID,OnlineDepositRefundQueryBean.class);
+				return pojo;
+			case "POP_Data_OnlineTransferInOrderQuery":
+				pojo=(T)testingDao.getData(tableName,ID,OnlineTransferInOrderQueryBean.class);
+				return pojo;
+			case "POP_Data_OnlineTransferOutOrderQuery":
+				pojo=(T)testingDao.getData(tableName,ID,OnlineTransferOutOrderQueryBean.class);
+				return pojo;
+			case "POP_Data_OnlineWithdrawOrderQuery":
+				pojo=(T)testingDao.getData(tableName,ID,OnlineWithdrawOrderQueryBean.class);
+				return pojo;
 			case "POP_Data_MerchantOper":
 				
 				break;
@@ -247,67 +278,90 @@ public class DataBusiness {
 	*/
 	
 	public void loadDataBeanList(String tableName) {
+		
+		loadDataBeanList(tableName,"");
+	}
+	
+	public void loadDataBeanList(String tableName,String caseNO) {
 		switch (tableName) {
 		case "POP_Data_MerchantAudit":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,MerchantAuditBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,MerchantAuditBean.class));
 			break;
 		case "POP_Data_MerchantInfo":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,MerchantInfoBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,MerchantInfoBean.class));
 			break;
 		case "POP_Data_MerchantSettlement":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,MerchantSettlementBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,MerchantSettlementBean.class));
 			break;
 		case "POP_Data_MerchantSettlementAlter":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,MerchantSettlementAlterBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,MerchantSettlementAlterBean.class));
 			break;
 		case "POP_Data_MerchantFeeRate":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,MerchantFeeRateBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,MerchantFeeRateBean.class));
 			break;
 		case "POP_Data_MerchantInfoSearch":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,MerchantInfoSearchBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,MerchantInfoSearchBean.class));
 			break;
 		case "POP_Data_MerchantBalanceQuery":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,MerchantBalanceQueryBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,MerchantBalanceQueryBean.class));
 			break;
 		case "POP_Data_MerchantIncomeExpenditureDetail":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,MerchantIncomeExpenditureDetailBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,MerchantIncomeExpenditureDetailBean.class));
 			break;
 		case "POP_Data_MerchantAccountManagement":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,MerchantAccountManagementBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,MerchantAccountManagementBean.class));
 			break;
 		case "POP_Data_OverdueMerInfoQuery":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,OverdueMerInfoQueryBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,OverdueMerInfoQueryBean.class));
 			break;
 		case "POP_Data_MainChildMerRelationship":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,MainChildMerRelationshipBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,MainChildMerRelationshipBean.class));
 			break;
 		case "POP_Data_OnlinePurchaseOrderQuery":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,OnlinePurchaseOrderQueryBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,OnlinePurchaseOrderQueryBean.class));
+			break;
+		case "POP_Data_OnlineRefundOrderQuery":
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,OnlineRefundOrderQueryBean.class));
+			break;
+		case "POP_Data_OnlineDepositOrderQuery":
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,OnlineDepositOrderQueryBean.class));
+			break;
+		case "POP_Data_OnlineDepositRefundQuery":
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,OnlineDepositRefundQueryBean.class));
+			break;
+		case "POP_Data_OnlineTransferInOrderQuery":
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,OnlineTransferInOrderQueryBean.class));
+			break;
+		case "POP_Data_OnlineTransferOutOrderQuery":
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,OnlineTransferOutOrderQueryBean.class));
+			break;
+		case "POP_Data_OnlineWithdrawOrderQuery":
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,OnlineWithdrawOrderQueryBean.class));
 			break;
 		case "POP_Data_MerchantOper":
 			
 			break;
 			
 		case "POP_Data_UserInfoQuery":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,UserInfoQueryBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,UserInfoQueryBean.class));
 			break;
 		case "POP_Data_UserAccountModifySearch":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,UserAccountModifySearchBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,UserAccountModifySearchBean.class));
 			break;
 		case "POP_Data_UserIncomeExpenditureDetail":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,UserIncomeExpenditureDetailBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,UserIncomeExpenditureDetailBean.class));
 			break;
 		case "POP_Data_UserAction":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,UserActionBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,UserActionBean.class));
 			break;
 		case "POP_Data_Oper":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,OperBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,OperBean.class));
 			break;
 		case "Online_Data_Cashier_B2C":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,OnlineCashierB2CBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,OnlineCashierB2CBean.class));
 			break;
 		case "Online_Data_Cashier_B2B":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,OnlineCashierB2BBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,OnlineCashierB2BBean.class));
 			break;
 		case "Data_URL":
 			data_URLBean=new Data_URLBean();
@@ -315,93 +369,82 @@ public class DataBusiness {
 		
 		
 		case "POP_Data_CooperatingAgencyInfo":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,CooperatingAgentInfoBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,CooperatingAgentInfoBean.class));
 			break;
 			
 		case "POP_Data_CooperatingPaymentChannel":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,CooperatingPaymentChannelBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,CooperatingPaymentChannelBean.class));
 			break;
 			
 		case "POP_Data_CooperatingServiceChannel":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,CooperatingServiceChannelBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,CooperatingServiceChannelBean.class));
 			break;
 		
 		case "POP_Data_CooperatingRouteInfo":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,CooperatingRouteInfoBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,CooperatingRouteInfoBean.class));
 			break;
 			
 		case "POP_Data_IdentityAuthenticationChannel":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,IdentityAuthenticationChannelBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,IdentityAuthenticationChannelBean.class));
 			break;
 		
 		case "POP_Data_IdentityAuthenticationRoute":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,IdentityAuthenticationRouteBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,IdentityAuthenticationRouteBean.class));
 			break;
 		
 		case "POP_Data_IdentityAuthenticationDetails":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,IdentityAuthenticationDetailsBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,IdentityAuthenticationDetailsBean.class));
 			break;
 			
 		case "POP_Data_IdentityAuthenticationQuery":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,IdentityAuthenticationQueryBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,IdentityAuthenticationQueryBean.class));
 			break;
 		
 		case "POP_Data_IdCardPhotoVerification":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,IdCardPhotoVerificationBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,IdCardPhotoVerificationBean.class));
 			break;
 		
 		case "POP_Data_IdCardValidDateVerification":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,IdCardValidDateVerificationBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,IdCardValidDateVerificationBean.class));
 			break;
 		
 		case "POP_Data_FinanceChannelManageInfo":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,FinanceChannelManageInfoBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,FinanceChannelManageInfoBean.class));
 			break;
 		
 		case "POP_Data_FinanceChannelManageFlowQuery":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,FinanceChannelManageFlowQueryBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,FinanceChannelManageFlowQueryBean.class));
 			break;
 			
 		case "POP_Data_FinanceChannelManageReturnCode":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,FinanceChannelManageReturnCodeBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,FinanceChannelManageReturnCodeBean.class));
 			break;
 			
 		case "POP_Data_FinanceChannelManageSignManage":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,FinanceChannelManageSignManageBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,FinanceChannelManageSignManageBean.class));
 			break;
 			
 		case "POP_Data_FinanceChannelManageRateMaintain":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,FinanceChannelManageRateMaintainBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,FinanceChannelManageRateMaintainBean.class));
 			break;
 			
 		case "POP_Data_FinanceChannelManageRateCode":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,FinanceChannelManageRateCodeBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,FinanceChannelManageRateCodeBean.class));
 			break;
 			
 		case "POP_Data_FinanceChannelBalanceAccountParameter":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,FinanceChannelBalanceAccountParameterBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,FinanceChannelBalanceAccountParameterBean.class));
 			break;
 		
 		case "POP_Data_FinanceChannelBalanceAccountBatchNumQuery":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,FinanceChannelBalanceAccountBatchNumQueryBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,FinanceChannelBalanceAccountBatchNumQueryBean.class));
 			break;
 		
 		case "POP_Data_FinanceChannelBalanceAccountErrorManage":
-			list=BaseUtil.toObject(testingDao.getDataList(tableName,FinanceChannelBalanceAccountErrorManageBean.class));
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,FinanceChannelBalanceAccountErrorManageBean.class));
 			break;	
 		
 			
-		default:
-			System.out.println("table "+tableName+" is not exist! Please check!");
-			break;
-		}
-	}
-	
-	public void loadDataBeanList(String tableName,String caseNO) {
-		switch (tableName) {
-		case "POP_Data_OnlinePurchaseOrderQuery":
-			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,OnlinePurchaseOrderQueryBean.class));
-			break;
 		default:
 			System.out.println("table "+tableName+" is not exist! Please check!");
 			break;

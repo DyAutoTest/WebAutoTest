@@ -135,11 +135,11 @@ public class SuperTest {
 		}
 		while(!iClickRadio.isElementDisplayed("Radio",radio)) {
 			iClickRadio.doPageDown();
+			wait.waitFor(300);
 		}
 		iClickRadio.clickRadio(radio);
 		wait.waitFor(waitTime);
 		iClickRadio.doLoseFocus("Radio",radio,80,0 );
-		wait.waitFor(waitTime);
 	}
 	//Click Button
 	public void clickButton(String buttonName) {

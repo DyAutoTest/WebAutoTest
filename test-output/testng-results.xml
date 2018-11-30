@@ -1,186 +1,350 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="15" passed="15">
+<testng-results skipped="0" failed="1" ignored="3" total="7" passed="3">
   <reporter-output>
+    <line>
+      <![CDATA[        2018-11-30 17:49:36): [Test]-"Login" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2018-11-30 17:49:36: [Method]-"LoginPageTest.testLogin" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2018-11-30 17:49:42: [Method]-"LoginPageTest.testLogin" is passed]]>
+    </line>
+    <line>
+      <![CDATA[        2018-11-30 17:49:44): [Test]-"Login" is finished]]>
+    </line>
+    <line>
+      <![CDATA[        2018-11-30 17:49:44): [Test]-"OnlineWithdrawOrderQuery" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2018-11-30 17:49:44: [Method]-"OnlineWithdrawOrderQueryPageTest.testCheck" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2018-11-30 17:50:15: [Method]-"OnlineWithdrawOrderQueryPageTest.testCheck" is passed]]>
+    </line>
+    <line>
+      <![CDATA[                2018-11-30 17:50:17: [Method]-"OnlineWithdrawOrderQueryPageTest.testCheck" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2018-11-30 17:50:27: [Method]-"OnlineWithdrawOrderQueryPageTest.testCheck" is failed]]>
+    </line>
+    <line>
+      <![CDATA[                        The failure is org.openqa.selenium.ElementClickInterceptedException: Element <input name="myRadioName" type="radio"> is not clickable at point (285.5,584.9166870117188) because another element <footer class="sticky-footer"> obscures it
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LENOVO-RAY', ip: '192.168.85.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 182124, moz:profile: C:\Users\寒\AppData\Local\Te..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: f3bd3afb-eae0-40aa-a3ba-ab1a3c613f90]]>
+    </line>
+    <line>
+      <![CDATA[        2018-11-30 17:50:29): [Test]-"OnlineWithdrawOrderQuery" is finished]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="186" started-at="2018-11-29T07:01:09Z" finished-at="2018-11-29T07:01:09Z">
+  <suite name="SuiteOperationPlatform" duration-ms="58082" started-at="2018-11-30T09:49:36Z" finished-at="2018-11-30T09:50:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="186" started-at="2018-11-29T07:01:09Z" finished-at="2018-11-29T07:01:09Z">
-      <class name="com.dy.AutoTest.AutoGenerateTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.AutoGenerateTest@7fe8ea47]" name="init" is-config="true" duration-ms="18" started-at="2018-11-29T07:01:09Z" finished-at="2018-11-29T07:01:09Z">
+    <test name="Login" duration-ms="8193" started-at="2018-11-30T09:49:36Z" finished-at="2018-11-30T09:49:44Z">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
+        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="BeforeTest" is-config="true" duration-ms="4" started-at="2018-11-30T09:49:36Z" finished-at="2018-11-30T09:49:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4ac8768e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2018-11-30 17:49:36): [Test]-"Login" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="init" is-config="true" duration-ms="7" started-at="2018-11-30T09:49:36Z" finished-at="2018-11-30T09:49:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="5" started-at="2018-11-29T07:01:09Z" data-provider="locator" finished-at="2018-11-29T07:01:09Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-11-30T09:49:36Z" finished-at="2018-11-30T09:49:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-11-30T09:49:36Z" finished-at="2018-11-30T09:49:36Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@1d082e88]]>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest.testLogin(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-30 17:49:36: [Method]-"LoginPageTest.testLogin" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="testLogin" duration-ms="6143" started-at="2018-11-30T09:49:36Z" finished-at="2018-11-30T09:49:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[T00064]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAutoGenerate -->
-        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="5" started-at="2018-11-29T07:01:09Z" data-provider="locator" finished-at="2018-11-29T07:01:09Z">
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="afterMethod" is-config="true" duration-ms="2002" started-at="2018-11-30T09:49:42Z" finished-at="2018-11-30T09:49:44Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@4fe767f3]]>
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=LoginPageTest.testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-30 17:49:42: [Method]-"LoginPageTest.testLogin" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="AfterTest" is-config="true" duration-ms="1" started-at="2018-11-30T09:49:44Z" finished-at="2018-11-30T09:49:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4ac8768e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2018-11-30 17:49:44): [Test]-"Login" is finished]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest -->
+    </test> <!-- Login -->
+    <test name="OnlineWithdrawOrderQuery" duration-ms="44985" started-at="2018-11-30T09:49:44Z" finished-at="2018-11-30T09:50:29Z">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.Withdraw.OnlineWithdrawOrderQueryPageTest">
+        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.Withdraw.OnlineWithdrawOrderQueryPageTest@27ae2fd0]" name="BeforeTest" is-config="true" duration-ms="1" started-at="2018-11-30T09:49:44Z" finished-at="2018-11-30T09:49:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1e957e2f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2018-11-30 17:49:44): [Test]-"OnlineWithdrawOrderQuery" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.Withdraw.OnlineWithdrawOrderQueryPageTest@27ae2fd0]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-11-30T09:49:44Z" finished-at="2018-11-30T09:49:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.Withdraw.OnlineWithdrawOrderQueryPageTest@27ae2fd0]" name="init" is-config="true" duration-ms="6" started-at="2018-11-30T09:49:44Z" finished-at="2018-11-30T09:49:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testCheck(com.dy.AutoTest.OperationPlatform.POJO.OnlineWithdrawOrderQueryBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.Withdraw.OnlineWithdrawOrderQueryPageTest@27ae2fd0]" name="testCheck" duration-ms="31342" started-at="2018-11-30T09:49:44Z" data-provider="OnlineWithdrawOrderQueryByCaseNO" finished-at="2018-11-30T09:50:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.OnlineWithdrawOrderQueryBean@63cd604c]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAutoGenerate -->
-        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="2" started-at="2018-11-29T07:01:09Z" data-provider="locator" finished-at="2018-11-29T07:01:09Z">
+        </test-method> <!-- testCheck -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.Withdraw.OnlineWithdrawOrderQueryPageTest@27ae2fd0]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-30T09:49:44Z" finished-at="2018-11-30T09:49:44Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@184cf7cf]]>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.Withdraw.OnlineWithdrawOrderQueryPageTest.testCheck(com.dy.AutoTest.OperationPlatform.POJO.OnlineWithdrawOrderQueryBean)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-30 17:49:44: [Method]-"OnlineWithdrawOrderQueryPageTest.testCheck" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.Withdraw.OnlineWithdrawOrderQueryPageTest@27ae2fd0]" name="afterMethod" is-config="true" duration-ms="2002" started-at="2018-11-30T09:50:15Z" finished-at="2018-11-30T09:50:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCheck status=SUCCESS method=OnlineWithdrawOrderQueryPageTest.testCheck(com.dy.AutoTest.OperationPlatform.POJO.OnlineWithdrawOrderQueryBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.Withdraw.OnlineWithdrawOrderQueryPageTest@27ae2fd0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-30 17:50:15: [Method]-"OnlineWithdrawOrderQueryPageTest.testCheck" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="testCheck(com.dy.AutoTest.OperationPlatform.POJO.OnlineWithdrawOrderQueryBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.Withdraw.OnlineWithdrawOrderQueryPageTest@27ae2fd0]" name="testCheck" duration-ms="9622" started-at="2018-11-30T09:50:17Z" data-provider="OnlineWithdrawOrderQueryByCaseNO" finished-at="2018-11-30T09:50:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.OnlineWithdrawOrderQueryBean@a4b5ce3]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <input name="myRadioName" type="radio"> is not clickable at point (285.5,584.9166870117188) because another element <footer class="sticky-footer"> obscures it
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LENOVO-RAY', ip: '192.168.85.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 182124, moz:profile: C:\Users\寒\AppData\Local\Te..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: f3bd3afb-eae0-40aa-a3ba-ab1a3c613f90]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <input name="myRadioName" type="radio"> is not clickable at point (285.5,584.9166870117188) because another element <footer class="sticky-footer"> obscures it
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LENOVO-RAY', ip: '192.168.85.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 182124, moz:profile: C:\Users\寒\AppData\Local\Te..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: f3bd3afb-eae0-40aa-a3ba-ab1a3c613f90
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+at com.dy.AutoTest.OperationPlatform.PageObject.OnlineTransaction.Withdraw.OnlineWithdrawOrderQueryPage.clickRadio(OnlineWithdrawOrderQueryPage.java:199)
+at com.dy.AutoTest.web.api.SuperTest.clickRadio(SuperTest.java:140)
+at com.dy.AutoTest.web.api.SuperTest.clickRadio(SuperTest.java:126)
+at com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.Withdraw.OnlineWithdrawOrderQueryPageTest.testCheck(OnlineWithdrawOrderQueryPageTest.java:160)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheck -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.Withdraw.OnlineWithdrawOrderQueryPageTest@27ae2fd0]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-30T09:50:17Z" finished-at="2018-11-30T09:50:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.Withdraw.OnlineWithdrawOrderQueryPageTest.testCheck(com.dy.AutoTest.OperationPlatform.POJO.OnlineWithdrawOrderQueryBean)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-30 17:50:17: [Method]-"OnlineWithdrawOrderQueryPageTest.testCheck" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.Withdraw.OnlineWithdrawOrderQueryPageTest@27ae2fd0]" name="afterMethod" is-config="true" duration-ms="2002" started-at="2018-11-30T09:50:27Z" finished-at="2018-11-30T09:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCheck status=FAILURE method=OnlineWithdrawOrderQueryPageTest.testCheck(com.dy.AutoTest.OperationPlatform.POJO.OnlineWithdrawOrderQueryBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.Withdraw.OnlineWithdrawOrderQueryPageTest@27ae2fd0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-30 17:50:27: [Method]-"OnlineWithdrawOrderQueryPageTest.testCheck" is failed]]>
+            </line>
+            <line>
+              <![CDATA[                        The failure is org.openqa.selenium.ElementClickInterceptedException: Element <input name="myRadioName" type="radio"> is not clickable at point (285.5,584.9166870117188) because another element <footer class="sticky-footer"> obscures it
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LENOVO-RAY', ip: '192.168.85.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 182124, moz:profile: C:\Users\寒\AppData\Local\Te..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: f3bd3afb-eae0-40aa-a3ba-ab1a3c613f90]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.Withdraw.OnlineWithdrawOrderQueryPageTest@27ae2fd0]" name="AfterTest" is-config="true" duration-ms="0" started-at="2018-11-30T09:50:29Z" finished-at="2018-11-30T09:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1e957e2f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2018-11-30 17:50:29): [Test]-"OnlineWithdrawOrderQuery" is finished]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.Withdraw.OnlineWithdrawOrderQueryPageTest -->
+    </test> <!-- OnlineWithdrawOrderQuery -->
+    <test name="Quit" duration-ms="4865" started-at="2018-11-30T09:50:29Z" finished-at="2018-11-30T09:50:34Z">
+      <class name="com.dy.AutoTest.web.actions.SingletonSet">
+        <test-method status="PASS" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@23986957]" name="init" is-config="true" duration-ms="6459" started-at="2018-11-30T09:49:29Z" finished-at="2018-11-30T09:49:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pop_uat]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAutoGenerate -->
-        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="2" started-at="2018-11-29T07:01:09Z" data-provider="locator" finished-at="2018-11-29T07:01:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@5bfa9431]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="releaseJDBC()[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@23986957]" name="releaseJDBC" is-config="true" duration-ms="3438" started-at="2018-11-30T09:50:34Z" finished-at="2018-11-30T09:50:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAutoGenerate -->
-        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="3" started-at="2018-11-29T07:01:09Z" data-provider="locator" finished-at="2018-11-29T07:01:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@223f3642]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- releaseJDBC -->
+      </class> <!-- com.dy.AutoTest.web.actions.SingletonSet -->
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1fe20588]" name="init" is-config="true" duration-ms="4" started-at="2018-11-30T09:50:29Z" finished-at="2018-11-30T09:50:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAutoGenerate -->
-        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="2" started-at="2018-11-29T07:01:09Z" data-provider="locator" finished-at="2018-11-29T07:01:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@37918c79]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testQuit()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1fe20588]" name="testQuit" duration-ms="3856" started-at="2018-11-30T09:50:29Z" finished-at="2018-11-30T09:50:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAutoGenerate -->
-        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="8" started-at="2018-11-29T07:01:09Z" data-provider="locator" finished-at="2018-11-29T07:01:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@233fe9b6]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- testQuit -->
+        <test-method status="PASS" signature="releaseBrowser()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1fe20588]" name="releaseBrowser" is-config="true" duration-ms="1001" started-at="2018-11-30T09:50:33Z" finished-at="2018-11-30T09:50:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAutoGenerate -->
-        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="8" started-at="2018-11-29T07:01:09Z" data-provider="locator" finished-at="2018-11-29T07:01:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@ec756bd]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAutoGenerate -->
-        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="3" started-at="2018-11-29T07:01:09Z" data-provider="locator" finished-at="2018-11-29T07:01:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@60dcc9fe]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAutoGenerate -->
-        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="14" started-at="2018-11-29T07:01:09Z" data-provider="locator" finished-at="2018-11-29T07:01:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@16e7dcfd]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAutoGenerate -->
-        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="1" started-at="2018-11-29T07:01:09Z" data-provider="locator" finished-at="2018-11-29T07:01:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@3b07a0d6]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAutoGenerate -->
-        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="3" started-at="2018-11-29T07:01:09Z" data-provider="locator" finished-at="2018-11-29T07:01:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@3901d134]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAutoGenerate -->
-        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="2" started-at="2018-11-29T07:01:09Z" data-provider="locator" finished-at="2018-11-29T07:01:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@12d4bf7e]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAutoGenerate -->
-        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="8" started-at="2018-11-29T07:01:09Z" data-provider="locator" finished-at="2018-11-29T07:01:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@7b227d8d]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAutoGenerate -->
-        <test-method status="PASS" signature="testAutoGenerate(com.dy.AutoTest.web.beans.LocatorBean)[pri:0, instance:com.dy.AutoTest.AutoGenerateTest@7fe8ea47]" name="testAutoGenerate" duration-ms="5" started-at="2018-11-29T07:01:09Z" data-provider="locator" finished-at="2018-11-29T07:01:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.dy.AutoTest.web.beans.LocatorBean@45018215]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAutoGenerate -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.dy.AutoTest.AutoGenerateTest@7fe8ea47]" name="end" is-config="true" duration-ms="19" started-at="2018-11-29T07:01:09Z" finished-at="2018-11-29T07:01:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- end -->
-      </class> <!-- com.dy.AutoTest.AutoGenerateTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- releaseBrowser -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest -->
+    </test> <!-- Quit -->
+  </suite> <!-- SuiteOperationPlatform -->
 </testng-results>

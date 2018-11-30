@@ -6,9 +6,7 @@ import com.dy.AutoTest.web.beans.WebElementType;
 
 public class GenerateStringUtil {
 	private static String packageTemplate="package %s;\r\n\r\n";
-	private static String importClass="import com.dy.AutoTest.web.api.IQuery;\r\n\r\n"
-			+ "import com.dy.AutoTest.web.api.ISearchMerchantByNOorName;\r\n\r\n"
-			+ "import org.openqa.selenium.Keys;\r\n\r\n"
+	private static String importClass="import org.openqa.selenium.Keys;\r\n"
 			+ "import org.openqa.selenium.WebDriver;\r\n\r\n"
 			+ "import com.dy.AutoTest.web.api.SuperPage;\r\n"
 			+ "import com.dy.AutoTest.web.actions.DoPlus;\r\n\r\n";

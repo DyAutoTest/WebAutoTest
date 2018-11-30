@@ -19,10 +19,10 @@ public class AutoGenerateTest {
 	private StringBuffer pageObjectString=new StringBuffer();
 	private String path;
 	
-	private static String directory="src\\main\\java\\com\\dy\\AutoTest\\OperationPlatform\\PageObject\\OnlineTransaction\\RefundOrder\\";
-	private static String packageName="com.dy.AutoTest.OperationPlatform.PageObject.OnlineTransaction.RefundOrder";
-	private static String className="OnlineRefundOrderQueryPage";
-	private static String locatorName="POP_Loc_OnlineRefundOrderQuery";
+	private static String directory="src\\main\\java\\com\\dy\\AutoTest\\OperationPlatform\\PageObject\\OnlineTransaction\\Deposit\\";
+	private static String packageName="com.dy.AutoTest.OperationPlatform.PageObject.OnlineTransaction.Deposit";
+	private static String className="OnlineDepositOrderQueryPage";
+	private static String locatorName="POP_Loc_OnlineDepositOrderQuery";
 	
 	@DataProvider(name="locator")
 	protected static Object[][] parametersPoolForSqlite(){

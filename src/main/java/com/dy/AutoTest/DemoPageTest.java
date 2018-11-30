@@ -7,6 +7,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.dy.AutoTest.DemoPage;
 import com.dy.AutoTest.web.api.SuperTest;
 import com.dy.AutoTest.web.beans.DemoBean;
 import com.dy.AutoTest.web.business.DataBusiness;
@@ -27,6 +28,7 @@ public class DemoPageTest extends SuperTest{
 		/******** instant Interface *********/
 //		iQuery=DemoPage;
 //		iClickButton=DemoPage;
+//		iClickRadio=DemoPage;
 	}
 	
 	@DataProvider(name="xxxx")
@@ -41,7 +43,7 @@ public class DemoPageTest extends SuperTest{
 		return data.getDataBeanArray();
 	}
 	
-	@Test(dataProvider="xxxx")       
+	@Test(dataProvider="xxxxByCaseNO")       
 	public void testXXXX(DemoBean DemoBean) {    
 		DemoPage.navigateTo(URL);
 	}

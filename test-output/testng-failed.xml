@@ -2,115 +2,24 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [SuiteOperationPlatform]">
   <parameter name="environment" value="pop_uat"/>
-  <parameter name="browserCategory" value="chrome"/>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> refs/heads/OlinePurchaseOrderQuery
->>>>>>> refs/heads/dev
+  <parameter name="browserCategory" value="firefox"/>
   <listeners>
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-<<<<<<< HEAD
-  <test thread-count="5" name="OnlineCashierB2C(failed)">
-=======
-  <test thread-count="5" name="MerchantFeeRateAdd(failed)">
-    <parameter name="OperID" value="T00064"/>
->>>>>>> refs/heads/MerchantAddSuit-inter
-<<<<<<< HEAD
-=======
-=======
-  <test thread-count="5" name="OnlinePurchaseOrderQuery(failed)">
->>>>>>> refs/heads/OlinePurchaseOrderQuery
->>>>>>> refs/heads/dev
+  <test thread-count="5" name="OnlineWithdrawOrderQuery(failed)">
     <classes>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> refs/heads/dev
-      <class name="com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2CTest">
-=======
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
-=======
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.PurchaseOrder.OnlinePurchaseOrderQueryPageTest">
->>>>>>> refs/heads/OlinePurchaseOrderQuery
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.Withdraw.OnlineWithdrawOrderQueryPageTest">
         <methods>
           <include name="init"/>
-<<<<<<< HEAD
-          <include name="releaseBrowser"/>
-        </methods>
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest -->
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantFeeRatePageTest">
->>>>>>> refs/heads/MerchantAddSuit-inter
-        <methods>
-=======
->>>>>>> refs/heads/OlinePurchaseOrderQuery
+          <include name="testCheck" invocation-numbers="1"/>
           <include name="beforeClass"/>
           <include name="afterMethod"/>
-<<<<<<< HEAD
-          <include name="init"/>
-<<<<<<< HEAD
-=======
-          <include name="testMerchantFeeRateAdd" invocation-numbers="0"/>
->>>>>>> refs/heads/MerchantAddSuit-inter
-<<<<<<< HEAD
-=======
-=======
->>>>>>> refs/heads/OlinePurchaseOrderQuery
->>>>>>> refs/heads/dev
           <include name="AfterTest"/>
-          <include name="testCheck" invocation-numbers="0"/>
           <include name="beforeMethod"/>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> refs/heads/dev
-          <include name="testOnlineCashierB2C" invocation-numbers="0"/>
-=======
->>>>>>> refs/heads/MerchantAddSuit-inter
-<<<<<<< HEAD
-=======
-=======
->>>>>>> refs/heads/OlinePurchaseOrderQuery
->>>>>>> refs/heads/dev
           <include name="BeforeTest"/>
         </methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> refs/heads/dev
-      </class> <!-- com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2CTest -->
-=======
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantFeeRatePageTest -->
->>>>>>> refs/heads/MerchantAddSuit-inter
-<<<<<<< HEAD
-=======
-=======
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.PurchaseOrder.OnlinePurchaseOrderQueryPageTest -->
->>>>>>> refs/heads/OlinePurchaseOrderQuery
->>>>>>> refs/heads/dev
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.Withdraw.OnlineWithdrawOrderQueryPageTest -->
     </classes>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> refs/heads/dev
-  </test> <!-- OnlineCashierB2C(failed) -->
-</suite> <!-- Failed suite [OnlineCashierB2C] -->
-=======
-  </test> <!-- MerchantFeeRateAdd(failed) -->
+  </test> <!-- OnlineWithdrawOrderQuery(failed) -->
 </suite> <!-- Failed suite [SuiteOperationPlatform] -->
->>>>>>> refs/heads/MerchantAddSuit-inter
-<<<<<<< HEAD
-=======
-=======
-  </test> <!-- OnlinePurchaseOrderQuery(failed) -->
-</suite> <!-- Failed suite [SuiteOperationPlatform] -->
->>>>>>> refs/heads/OlinePurchaseOrderQuery
->>>>>>> refs/heads/dev
