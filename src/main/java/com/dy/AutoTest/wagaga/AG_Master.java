@@ -12,6 +12,7 @@ import com.dy.AutoTest.wagaga.impl.TestngXMLGenerator;
 public class AG_Master {
 	private static IGenerate ig;
 	
+
 	public static String caseName="SettlementManagement_PaymentWorkFlowQuery";
 	public static String caseNameAlias="PaymentWorkFlowQuery";
 	public static String url="pop_"+caseName;
