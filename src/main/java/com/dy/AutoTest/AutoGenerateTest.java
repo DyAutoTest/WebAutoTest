@@ -11,7 +11,7 @@ import com.dy.AutoTest.web.actions.SingletonSet;
 import com.dy.AutoTest.web.beans.LocatorBean;
 import com.dy.AutoTest.web.business.LocatorBusiness;
 import com.dy.AutoTest.web.util.FileUtil;
-import com.dy.AutoTest.web.util.GenerateStringUtil;
+import com.dy.AutoTest.web.util.GeneratePageObject;
 
 
 public class AutoGenerateTest {
@@ -19,9 +19,9 @@ public class AutoGenerateTest {
 	private StringBuffer pageObjectString=new StringBuffer();
 	private String path;
 	
-	private static String directory="src\\main\\java\\com\\dy\\AutoTest\\OperationPlatform\\PageObject\\OnlineTransaction\\Deposit\\";
-	private static String packageName="com.dy.AutoTest.OperationPlatform.PageObject.OnlineTransaction.Deposit";
-	private static String className="OnlineDepositOrderQueryPage";
+	private static String directory="src/main/java/com/dy/AutoTest/AG/PageObject/";
+	private static String packageName="com.dy.AutoTest.AG.PageObject";
+	private static String className="TestPO1";
 	private static String locatorName="POP_Loc_OnlineDepositOrderQuery";
 	
 	@DataProvider(name="locator")
@@ -37,9 +37,9 @@ public class AutoGenerateTest {
 		
 		path=directory+className+".java";
 		
-		pageObjectString.append(GenerateStringUtil.generatePackgaeMethod(packageName)
-				+GenerateStringUtil.generateImportMethod()
-				+GenerateStringUtil.generateClassIdentify(className,locatorName));
+		pageObjectString.append(GeneratePageObject.generatePackgaeMethod(packageName)
+				+GeneratePageObject.generateImportMethod()
+				+GeneratePageObject.generateClassIdentify(className,locatorName));
 	}
 	
 	
@@ -51,14 +51,14 @@ public class AutoGenerateTest {
 		path=directory+className+".java";
 		
 		
-		pageObjectString.append(GenerateStringUtil.generatePackgaeMethod(packageName)
-				+GenerateStringUtil.generateImportMethod()+GenerateStringUtil.generateImportMethod()
-				+GenerateStringUtil.generateClassIdentify(className,locatorName));
+		pageObjectString.append(POGenerator.generatePackgaeMethod(packageName)
+				+POGenerator.generateImportMethod()+POGenerator.generateImportMethod()
+				+POGenerator.generateClassIdentify(className,locatorName));
 	}
 	*/
 	@AfterClass
 	public void end() {
-		pageObjectString.append(GenerateStringUtil.classIdentifyEnd);
+		pageObjectString.append(GeneratePageObject.classIdentifyEnd);
 		FileUtil.loadFile(path);
 		FileUtil.writeFileByByte(pageObjectString.toString());
 		
@@ -77,11 +77,10 @@ public class AutoGenerateTest {
 			System.out.println("ID为"+LocatorBean.getID()+"的Type是空");
 			assertTrue(false);
 		}
-		pageObjectString.append(GenerateStringUtil.generateComment(LocatorBean.getComment()));
+		pageObjectString.append(GeneratePageObject.generateComment(LocatorBean.getComment()));
 		
-		pageObjectString.append(GenerateStringUtil.generator(LocatorBean));
+		pageObjectString.append(GeneratePageObject.generator(LocatorBean));
 
-		
 	}
 	
 	

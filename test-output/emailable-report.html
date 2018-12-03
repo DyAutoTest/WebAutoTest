@@ -8,37 +8,11 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">SuiteOperationPlatform</th></tr>
-<tr><td><a href="#t0">Login</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">8,193</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">OnlineWithdrawOrderQuery</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">44,985</td><td></td><td></td></tr>
-<tr><td><a href="#t2">Quit</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">4,865</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">3</th><th class="num">0</th><th class="num attn">1</th><th class="num">58,043</th><th colspan="2"></th></tr>
+<tr><th colspan="7">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">647</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SuiteOperationPlatform</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Login &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest</td><td><a href="#m0">testLogin</a></td><td rowspan="1">1543571376056</td><td rowspan="1">6143</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">OnlineWithdrawOrderQuery &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.Withdraw.OnlineWithdrawOrderQueryPageTest</td><td><a href="#m1">testCheck</a></td><td rowspan="1">1543571417589</td><td rowspan="1">9622</td></tr><tr><th colspan="4">OnlineWithdrawOrderQuery &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.Withdraw.OnlineWithdrawOrderQueryPageTest</td><td><a href="#m2">testCheck</a></td><td rowspan="1">1543571384244</td><td rowspan="1">31342</td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">Quit &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest</td><td><a href="#m3">testQuit</a></td><td rowspan="1">1543571429238</td><td rowspan="1">3856</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.dy.AutoTest.wagaga.AG_Master</td><td><a href="#m0">generateAll</a></td><td rowspan="1">1543830396349</td><td rowspan="1">595</td></tr></tbody>
 </table>
-<h2>Login</h2><h3 id="m0">com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest#testLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>T00064</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>OnlineWithdrawOrderQuery</h2><h3 id="m1">com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.Withdraw.OnlineWithdrawOrderQueryPageTest#testCheck</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>com.dy.AutoTest.OperationPlatform.POJO.OnlineWithdrawOrderQueryBean@a4b5ce3</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;input name=&quot;myRadioName&quot; type=&quot;radio&quot;&gt; is not clickable at point (285.5,584.9166870117188) because another element &lt;footer class=&quot;sticky-footer&quot;&gt; obscures it
-Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
-System info: host: &apos;LENOVO-RAY&apos;, ip: &apos;192.168.85.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 182124, moz:profile: C:\Users\寒\AppData\Local\Te..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: f3bd3afb-eae0-40aa-a3ba-ab1a3c613f90
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at com.dy.AutoTest.OperationPlatform.PageObject.OnlineTransaction.Withdraw.OnlineWithdrawOrderQueryPage.clickRadio(OnlineWithdrawOrderQueryPage.java:199)
-	at com.dy.AutoTest.web.api.SuperTest.clickRadio(SuperTest.java:140)
-	at com.dy.AutoTest.web.api.SuperTest.clickRadio(SuperTest.java:126)
-	at com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.Withdraw.OnlineWithdrawOrderQueryPageTest.testCheck(OnlineWithdrawOrderQueryPageTest.java:160)
-... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.Withdraw.OnlineWithdrawOrderQueryPageTest#testCheck</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>com.dy.AutoTest.OperationPlatform.POJO.OnlineWithdrawOrderQueryBean@63cd604c</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Quit</h2><h3 id="m3">com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest#testQuit</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">com.dy.AutoTest.wagaga.AG_Master#generateAll</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

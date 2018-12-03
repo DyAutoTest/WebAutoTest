@@ -3,17 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.Deposit.OnlineDepositOrderQueryPageTest">
+      <class name="com.dy.AutoTest.wagaga.AG_Master">
         <methods>
-          <include name="init"/>
-          <include name="beforeClass"/>
-          <include name="afterMethod"/>
-          <include name="AfterTest"/>
-          <include name="testQuery"/>
-          <include name="beforeMethod"/>
-          <include name="BeforeTest"/>
+          <include name="GeneratePageObject"/>
         </methods>
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.Deposit.OnlineDepositOrderQueryPageTest -->
+      </class> <!-- com.dy.AutoTest.wagaga.AG_Master -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

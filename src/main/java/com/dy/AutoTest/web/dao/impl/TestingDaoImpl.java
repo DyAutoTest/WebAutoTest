@@ -5,6 +5,7 @@ import static org.testng.Assert.assertTrue;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -614,6 +615,22 @@ public class TestingDaoImpl implements TestingDao{
 			}
 		}
 		return false;
+	}
+
+	@Override
+	public Map<String, String> getTableStruct(String tableName) {
+		if(tableName.equals("")) {
+			System.out.println("TableName is null! Please check!");
+			assertTrue(false);
+		}
+		Map<String, String> map=new HashMap<String,String>();
+		String sql="select * from "+tableName;
+		try {
+			map=jdbcUtil.findTableStruct(sql); 
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return map;
 	}
 
 

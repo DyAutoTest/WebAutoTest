@@ -15,7 +15,7 @@ public class LocatorBusiness {
 	private List<Map<String, Object>> list;
 	private List<Object> list2;
 	private Map<String, Object> map;
-	private TestingDao testingDao=new TestingDaoImpl();;
+	private TestingDao testingDao=new TestingDaoImpl();
 	
 	public LocatorBusiness(String tableName) {
 		testingDao=new TestingDaoImpl();
