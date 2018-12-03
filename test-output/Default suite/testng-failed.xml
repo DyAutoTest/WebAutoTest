@@ -5,7 +5,8 @@
     <classes>
       <class name="com.dy.AutoTest.wagaga.AG_Master">
         <methods>
-          <include name="GeneratePageObject"/>
+          <include name="release"/>
+          <include name="generateAll"/>
         </methods>
       </class> <!-- com.dy.AutoTest.wagaga.AG_Master -->
     </classes>
