@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="5" total="6" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="647" started-at="2018-12-03T09:46:36Z" finished-at="2018-12-03T09:46:36Z">
+  <suite name="Default suite" duration-ms="702" started-at="2018-12-03T12:00:12Z" finished-at="2018-12-03T12:00:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="647" started-at="2018-12-03T09:46:36Z" finished-at="2018-12-03T09:46:36Z">
+    <test name="Default test" duration-ms="702" started-at="2018-12-03T12:00:12Z" finished-at="2018-12-03T12:00:13Z">
       <class name="com.dy.AutoTest.wagaga.AG_Master">
-        <test-method status="PASS" signature="generateAll()[pri:0, instance:com.dy.AutoTest.wagaga.AG_Master@3fee9989]" name="generateAll" duration-ms="595" started-at="2018-12-03T09:46:36Z" finished-at="2018-12-03T09:46:36Z">
+        <test-method status="PASS" signature="generatePageTest()[pri:0, instance:com.dy.AutoTest.wagaga.AG_Master@3fee9989]" name="generatePageTest" duration-ms="27" started-at="2018-12-03T12:00:12Z" finished-at="2018-12-03T12:00:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- generateAll -->
-        <test-method status="PASS" signature="release()[pri:0, instance:com.dy.AutoTest.wagaga.AG_Master@3fee9989]" name="release" is-config="true" duration-ms="13" started-at="2018-12-03T09:46:36Z" finished-at="2018-12-03T09:46:36Z">
+        </test-method> <!-- generatePageTest -->
+        <test-method status="PASS" signature="release()[pri:0, instance:com.dy.AutoTest.wagaga.AG_Master@3fee9989]" name="release" is-config="true" duration-ms="630" started-at="2018-12-03T12:00:13Z" finished-at="2018-12-03T12:00:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- release -->
