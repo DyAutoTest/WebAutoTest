@@ -3,25 +3,38 @@
   <reporter-output>
   </reporter-output>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="702" started-at="2018-12-03T12:00:12Z" finished-at="2018-12-03T12:00:13Z">
 =======
   <suite name="Default suite" duration-ms="785" started-at="2018-12-03T13:41:16Z" finished-at="2018-12-03T13:41:17Z">
 >>>>>>> refs/heads/dev
+=======
+  <suite name="Default suite" duration-ms="702" started-at="2018-12-03T12:00:12Z" finished-at="2018-12-03T12:00:13Z">
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
     <groups>
     </groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <test name="Default test" duration-ms="702" started-at="2018-12-03T12:00:12Z" finished-at="2018-12-03T12:00:13Z">
 =======
     <test name="Default test" duration-ms="785" started-at="2018-12-03T13:41:16Z" finished-at="2018-12-03T13:41:17Z">
 >>>>>>> refs/heads/dev
+=======
+    <test name="Default test" duration-ms="702" started-at="2018-12-03T12:00:12Z" finished-at="2018-12-03T12:00:13Z">
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
       <class name="com.dy.AutoTest.wagaga.AG_Master">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="generatePageTest()[pri:0, instance:com.dy.AutoTest.wagaga.AG_Master@3fee9989]" name="generatePageTest" duration-ms="27" started-at="2018-12-03T12:00:12Z" finished-at="2018-12-03T12:00:12Z">
 =======
         <test-method status="PASS" signature="generateAll()[pri:0, instance:com.dy.AutoTest.wagaga.AG_Master@3fee9989]" name="generateAll" duration-ms="724" started-at="2018-12-03T13:41:16Z" finished-at="2018-12-03T13:41:17Z">
 >>>>>>> refs/heads/dev
+=======
+        <test-method status="PASS" signature="generatePageTest()[pri:0, instance:com.dy.AutoTest.wagaga.AG_Master@3fee9989]" name="generatePageTest" duration-ms="27" started-at="2018-12-03T12:00:12Z" finished-at="2018-12-03T12:00:12Z">
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- generatePageTest -->
         <test-method status="PASS" signature="release()[pri:0, instance:com.dy.AutoTest.wagaga.AG_Master@3fee9989]" name="release" is-config="true" duration-ms="630" started-at="2018-12-03T12:00:13Z" finished-at="2018-12-03T12:00:13Z">
@@ -29,6 +42,10 @@
         </test-method> <!-- generateAll -->
         <test-method status="PASS" signature="release()[pri:0, instance:com.dy.AutoTest.wagaga.AG_Master@3fee9989]" name="release" is-config="true" duration-ms="9" started-at="2018-12-03T13:41:17Z" finished-at="2018-12-03T13:41:17Z">
 >>>>>>> refs/heads/dev
+=======
+        </test-method> <!-- generatePageTest -->
+        <test-method status="PASS" signature="release()[pri:0, instance:com.dy.AutoTest.wagaga.AG_Master@3fee9989]" name="release" is-config="true" duration-ms="630" started-at="2018-12-03T12:00:13Z" finished-at="2018-12-03T12:00:13Z">
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- release -->
