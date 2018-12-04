@@ -2,24 +2,20 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [SuiteOperationPlatform]">
   <parameter name="environment" value="pop_uat"/>
-  <parameter name="browserCategory" value="firefox"/>
+  <parameter name="browserCategory" value="chrome"/>
   <listeners>
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-  <test thread-count="5" name="OnlineWithdrawOrderQuery(failed)">
+  <test thread-count="5" name="Quit(failed)">
     <classes>
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.Withdraw.OnlineWithdrawOrderQueryPageTest">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
         <methods>
+          <include name="testQuit"/>
           <include name="init"/>
-          <include name="testCheck" invocation-numbers="1"/>
-          <include name="beforeClass"/>
-          <include name="afterMethod"/>
-          <include name="AfterTest"/>
-          <include name="beforeMethod"/>
-          <include name="BeforeTest"/>
+          <include name="releaseBrowser"/>
         </methods>
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.Withdraw.OnlineWithdrawOrderQueryPageTest -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest -->
     </classes>
-  </test> <!-- OnlineWithdrawOrderQuery(failed) -->
+  </test> <!-- Quit(failed) -->
 </suite> <!-- Failed suite [SuiteOperationPlatform] -->

@@ -1,12 +1,15 @@
-package com.dy.AutoTest.OperationPlatform.PageObject.SettlementManagement;
+package com.dy.AutoTest.OperationPlatform.PageObject.SettlementManagement.Payment;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
+import com.dy.AutoTest.web.api.IClickButton;
+import com.dy.AutoTest.web.api.IQuery;
 import com.dy.AutoTest.web.api.SuperPage;
 import com.dy.AutoTest.web.actions.DoPlus;
 
-public class PaymentApprovalPage extends SuperPage{
+public class PaymentApprovalPage extends SuperPage
+		implements IQuery,IClickButton{
 	public PaymentApprovalPage(WebDriver driver) {
 		super(driver);
 		du.loadLocator("POP_Loc_SettlementManagement_PaymentApproval");
@@ -27,10 +30,28 @@ public class PaymentApprovalPage extends SuperPage{
 		du.what("Advance").click();
 	}
 	//付款类型
+	/**
+	 * @param value
+	 * 
+	 * 	value="42" : 认证打款
+		value="21" : 商户结算
+		value="11" : 用户提现
+		value="22" : 商户自主结算
+		value="41" : 资金调拨
+	 * 
+	 */
 	public void selectPaymentType(String value) {
 		du.whatSelect("PaymentType").selectByValue(value);
 	}
 	//复核操作状态
+	/**
+	 * @param value
+	 * 
+	 * 	value="W2" : 网银付款
+		value="W1" : 联机付款
+		value="W3" : 付款撤销
+	 * 
+	 */
 	public void selectRecheckOperationStatus(String value) {
 		du.whatSelect("RecheckOperationStatus").selectByValue(value);
 	}

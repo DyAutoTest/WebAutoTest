@@ -3,6 +3,7 @@ package com.dy.AutoTest.wagaga;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
+import com.dy.AutoTest.wagaga.impl.DataBusinessGenerator;
 import com.dy.AutoTest.wagaga.impl.POGenerator;
 import com.dy.AutoTest.wagaga.impl.POJOGenerator;
 import com.dy.AutoTest.wagaga.impl.PTGenerator;
@@ -13,30 +14,32 @@ public class AG_Master {
 	private static IGenerate ig;
 	
 
-	public static String caseName="SettlementManagement_PaymentWorkFlowQuery";
-	public static String caseNameAlias="PaymentWorkFlowQuery";
-	public static String url="pop_"+caseName;
-	public static String locatorName="POP_Loc_"+caseName;
-	public static String dataName="POP_Data_"+caseName;
+	public static final String caseName="SettlementManagement_PaymentWorkFlowQuery";
+	public static final String caseNameAlias="PaymentWorkFlowQuery";
+	public static final String url="pop_"+caseName;
+	public static final String locatorName="POP_Loc_"+caseName;
+	public static final String dataName="POP_Data_"+caseName;
 
-	public static String directoryPO="src/main/java/com/dy/AutoTest/OperationPlatform/PageObject/SettlementManagement/";
-	public static String packageNamePO="com.dy.AutoTest.OperationPlatform.PageObject.SettlementManagement";
+	public static final String directoryPO="src/main/java/com/dy/AutoTest/OperationPlatform/PageObject/SettlementManagement/";
+	public static final String packageNamePO="com.dy.AutoTest.OperationPlatform.PageObject.SettlementManagement";
 	
-	public static String directoryPOJO="src/main/java/com/dy/AutoTest/OperationPlatform/POJO/";
-	public static String packageNamePOJO="com.dy.AutoTest.OperationPlatform.POJO";
+	public static final String directoryPOJO="src/main/java/com/dy/AutoTest/OperationPlatform/POJO/";
+	public static final String packageNamePOJO="com.dy.AutoTest.OperationPlatform.POJO";
 	
-	public static String directoryPT="src/main/java/com/dy/AutoTest/OperationPlatform/TestCases/SettlementManagement/";
-	public static String packageNamePT="com.dy.AutoTest.OperationPlatform.TestCases.SettlementManagement";
+	public static final String directoryPT="src/main/java/com/dy/AutoTest/OperationPlatform/TestCases/SettlementManagement/";
+	public static final String packageNamePT="com.dy.AutoTest.OperationPlatform.TestCases.SettlementManagement";
 	
-	public static String directoryXML="src/main/java/com/dy/AutoTest/OperationPlatform/TestCases/SettlementManagement/";
-	public static String directorySQL="C:\\Users\\寒\\Documents\\Navicat\\SQLite\\servers\\AutoTest_0.0.3\\main\\";
-//	public static String directorySQL="C:\\Users\\寒\\Desktop\\temp\\";
+	public static final String directoryXML="src/main/java/com/dy/AutoTest/OperationPlatform/TestCases/SettlementManagement/";
+	public static final String directoryDataBusiness="src/main/java/com/dy/AutoTest/";
+	public static final String directorySQL="C:\\Users\\寒\\Documents\\Navicat\\SQLite\\servers\\AutoTest_0.0.3\\main\\";
+//	public static final String directorySQL="C:\\Users\\寒\\Desktop\\temp\\";
 	
-	public static String classNamePT=caseNameAlias+"PageTest";
-	public static String classNamePO=caseNameAlias+"Page";
-	public static String classNamePOJO=caseName+"Bean";
-	public static String xmlName="testng_"+caseName+".xml";
-	public static String sqlName="insert "+caseName+".sql";
+	public static final String classNamePT=caseNameAlias+"PageTest";
+	public static final String classNamePO=caseNameAlias+"Page";
+	public static final String classNamePOJO=caseName+"Bean";
+	public static final String xmlName="testng_"+caseName+".xml";
+	public static final String sqlName="insert "+caseName+".sql";
+	public static final String dataBusinessName="temp-dataBusiness";
 	
 	//缩进代码用的tab符
 	public static String tab(int n) {
@@ -59,6 +62,7 @@ public class AG_Master {
 		ig=new PTGenerator();
 		ig=new TestngXMLGenerator();
 		ig=new SQLGenerator();
+		ig=new DataBusinessGenerator();
 	}
 	@AfterMethod
 	public void release() {
@@ -83,5 +87,9 @@ public class AG_Master {
 	@Test
 	public void generateSQL(){
 		ig=new SQLGenerator();
+	}
+	@Test
+	public void generateDataBusiness(){
+		ig=new DataBusinessGenerator();
 	}
 }

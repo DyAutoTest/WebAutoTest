@@ -6,6 +6,7 @@ public class SettlementManagement_PaymentWorkFlowQueryBean implements Serializab
 	private static final long serialVersionUID = 1L;
 
 	private String CaseNO;
+	private String PaymentBank;
 	private String OrderStatus;
 	private String ApprovalWorkFlow;
 	private String PaymentApplicationDateEnd;
@@ -19,6 +20,12 @@ public class SettlementManagement_PaymentWorkFlowQueryBean implements Serializab
 	}
 	public void setCaseNO(String CaseNO) {
 		this.CaseNO = CaseNO;
+	}
+	public String getPaymentBank() {
+		return PaymentBank;
+	}
+	public void setPaymentBank(String PaymentBank) {
+		this.PaymentBank = PaymentBank;
 	}
 	public String getOrderStatus() {
 		return OrderStatus;

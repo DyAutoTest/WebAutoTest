@@ -48,6 +48,11 @@ import com.dy.AutoTest.OperationPlatform.POJO.OnlineTransferOutOrderQueryBean;
 import com.dy.AutoTest.OperationPlatform.POJO.OnlineWithdrawOrderQueryBean;
 import com.dy.AutoTest.OperationPlatform.POJO.OperBean;
 import com.dy.AutoTest.OperationPlatform.POJO.OverdueMerInfoQueryBean;
+import com.dy.AutoTest.OperationPlatform.POJO.SettlementManagement_PaymentApprovalBean;
+import com.dy.AutoTest.OperationPlatform.POJO.SettlementManagement_PaymentApprovalStatusQueryBean;
+import com.dy.AutoTest.OperationPlatform.POJO.SettlementManagement_PaymentOperationBean;
+import com.dy.AutoTest.OperationPlatform.POJO.SettlementManagement_PaymentWorkFlowQueryBean;
+import com.dy.AutoTest.OperationPlatform.POJO.SettlementManagement_RiskApprovalBean;
 import com.dy.AutoTest.OperationPlatform.POJO.UserAccountModifySearchBean;
 import com.dy.AutoTest.OperationPlatform.POJO.UserActionBean;
 import com.dy.AutoTest.web.beans.Data_URLBean;
@@ -90,6 +95,11 @@ public class DataBusiness {
 	private OnlineTransferInOrderQueryBean OnlineTransferInOrderQueryBean;
 	private OnlineTransferOutOrderQueryBean OnlineTransferOutOrderQueryBean;
 	private OnlineWithdrawOrderQueryBean OnlineWithdrawOrderQueryBean;
+	private SettlementManagement_RiskApprovalBean SettlementManagement_RiskApprovalBean;
+	private SettlementManagement_PaymentApprovalBean SettlementManagement_PaymentApprovalBean ;
+	private SettlementManagement_PaymentApprovalStatusQueryBean SettlementManagement_PaymentApprovalStatusQueryBean;
+	private SettlementManagement_PaymentOperationBean SettlementManagement_PaymentOperationBean;
+	private SettlementManagement_PaymentWorkFlowQueryBean SettlementManagement_PaymentWorkFlowQueryBean;
 
 
 
@@ -210,6 +220,21 @@ public class DataBusiness {
 				return pojo;
 			case "POP_Data_OnlineWithdrawOrderQuery":
 				pojo=(T)testingDao.getData(tableName,ID,OnlineWithdrawOrderQueryBean.class);
+				return pojo;
+			case "POP_Data_SettlementManagement_RiskApproval":
+				pojo=(T)testingDao.getData(tableName,ID,SettlementManagement_RiskApprovalBean.class);
+				return pojo;
+			case "POP_Data_SettlementManagement_PaymentApproval":
+				pojo=(T)testingDao.getData(tableName,ID,SettlementManagement_PaymentApprovalBean.class);
+				return pojo;
+			case "POP_Data_SettlementManagement_PaymentApprovalStatusQuery":
+				pojo=(T)testingDao.getData(tableName,ID,SettlementManagement_PaymentApprovalStatusQueryBean.class);
+				return pojo;
+			case "POP_Data_SettlementManagement_PaymentOperation":
+				pojo=(T)testingDao.getData(tableName,ID,SettlementManagement_PaymentOperationBean.class);
+				return pojo;
+			case "POP_Data_SettlementManagement_PaymentWorkFlowQuery":
+				pojo=(T)testingDao.getData(tableName,ID,SettlementManagement_PaymentWorkFlowQueryBean.class);
 				return pojo;
 			case "POP_Data_MerchantOper":
 				
@@ -337,6 +362,21 @@ public class DataBusiness {
 			break;
 		case "POP_Data_OnlineWithdrawOrderQuery":
 			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,OnlineWithdrawOrderQueryBean.class));
+			break;
+		case "POP_Data_SettlementManagement_RiskApproval":
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,SettlementManagement_RiskApprovalBean.class));
+			break;
+		case "POP_Data_SettlementManagement_PaymentApproval":
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,SettlementManagement_PaymentApprovalBean.class));
+			break;
+		case "POP_Data_SettlementManagement_PaymentApprovalStatusQuery":
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,SettlementManagement_PaymentApprovalStatusQueryBean.class));
+			break;
+		case "POP_Data_SettlementManagement_PaymentOperation":
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,SettlementManagement_PaymentOperationBean.class));
+			break;
+		case "POP_Data_SettlementManagement_PaymentWorkFlowQuery":
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,SettlementManagement_PaymentWorkFlowQueryBean.class));
 			break;
 		case "POP_Data_MerchantOper":
 			

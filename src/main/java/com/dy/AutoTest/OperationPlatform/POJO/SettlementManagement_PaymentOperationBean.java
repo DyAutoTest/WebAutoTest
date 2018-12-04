@@ -7,6 +7,7 @@ public class SettlementManagement_PaymentOperationBean implements Serializable{
 
 	private String OrderDateEnd;
 	private String MerchantNO;
+	private String SearchMer_Radio;
 	private String CaseNO;
 	private String PaymentBank;
 	private String MerchantName;
@@ -30,6 +31,12 @@ public class SettlementManagement_PaymentOperationBean implements Serializable{
 	}
 	public void setMerchantNO(String MerchantNO) {
 		this.MerchantNO = MerchantNO;
+	}
+	public String getSearchMer_Radio() {
+		return SearchMer_Radio;
+	}
+	public void setSearchMer_Radio(String SearchMer_Radio) {
+		this.SearchMer_Radio = SearchMer_Radio;
 	}
 	public String getCaseNO() {
 		return CaseNO;

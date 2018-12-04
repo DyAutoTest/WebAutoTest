@@ -1,0 +1,10 @@
+private SettlementManagement_PaymentWorkFlowQueryBean SettlementManagement_PaymentWorkFlowQueryBean;
+
+case "POP_Data_SettlementManagement_PaymentWorkFlowQuery":
+	pojo=(T)testingDao.getData(tableName,ID,SettlementManagement_PaymentWorkFlowQueryBean.class);
+	return pojo;
+
+case "POP_Data_SettlementManagement_PaymentWorkFlowQuery":
+	list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,SettlementManagement_PaymentWorkFlowQueryBean.class));
+	break;
+

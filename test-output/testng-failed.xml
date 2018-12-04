@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SuiteOperationPlatform]">
+  <parameter name="environment" value="pop_uat"/>
+  <parameter name="browserCategory" value="chrome"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="Quit(failed)">
     <classes>
-      <class name="com.dy.AutoTest.wagaga.AG_Master">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
         <methods>
-          <include name="release"/>
-          <include name="generateAll"/>
+          <include name="testQuit"/>
+          <include name="init"/>
+          <include name="releaseBrowser"/>
         </methods>
-      </class> <!-- com.dy.AutoTest.wagaga.AG_Master -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Quit(failed) -->
+</suite> <!-- Failed suite [SuiteOperationPlatform] -->

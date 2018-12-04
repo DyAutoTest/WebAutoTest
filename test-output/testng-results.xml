@@ -1,55 +1,300 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="5" total="6" passed="1">
+<testng-results skipped="0" failed="1" ignored="2" total="5" passed="2">
   <reporter-output>
+    <line>
+      <![CDATA[        2018-12-04 20:32:28): [Test]-"Login" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2018-12-04 20:32:28: [Method]-"LoginPageTest.testLogin" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2018-12-04 20:32:44: [Method]-"LoginPageTest.testLogin" is passed]]>
+    </line>
+    <line>
+      <![CDATA[        2018-12-04 20:32:46): [Test]-"Login" is finished]]>
+    </line>
+    <line>
+      <![CDATA[        2018-12-04 20:32:46): [Test]-"SettlementManagement_PaymentOperation" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2018-12-04 20:32:47: [Method]-"PaymentOperationPageTest.testQuery" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2018-12-04 20:34:03: [Method]-"PaymentOperationPageTest.testQuery" is passed]]>
+    </line>
+    <line>
+      <![CDATA[        2018-12-04 20:34:05): [Test]-"SettlementManagement_PaymentOperation" is finished]]>
+    </line>
   </reporter-output>
-<<<<<<< HEAD
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="702" started-at="2018-12-03T12:00:12Z" finished-at="2018-12-03T12:00:13Z">
-=======
-  <suite name="Default suite" duration-ms="785" started-at="2018-12-03T13:41:16Z" finished-at="2018-12-03T13:41:17Z">
->>>>>>> refs/heads/dev
-=======
-  <suite name="Default suite" duration-ms="702" started-at="2018-12-03T12:00:12Z" finished-at="2018-12-03T12:00:13Z">
->>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
+  <suite name="SuiteOperationPlatform" duration-ms="107307" started-at="2018-12-04T12:32:28Z" finished-at="2018-12-04T12:34:15Z">
     <groups>
     </groups>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="702" started-at="2018-12-03T12:00:12Z" finished-at="2018-12-03T12:00:13Z">
-=======
-    <test name="Default test" duration-ms="785" started-at="2018-12-03T13:41:16Z" finished-at="2018-12-03T13:41:17Z">
->>>>>>> refs/heads/dev
-=======
-    <test name="Default test" duration-ms="702" started-at="2018-12-03T12:00:12Z" finished-at="2018-12-03T12:00:13Z">
->>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
-      <class name="com.dy.AutoTest.wagaga.AG_Master">
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <test-method status="PASS" signature="generatePageTest()[pri:0, instance:com.dy.AutoTest.wagaga.AG_Master@3fee9989]" name="generatePageTest" duration-ms="27" started-at="2018-12-03T12:00:12Z" finished-at="2018-12-03T12:00:12Z">
-=======
-        <test-method status="PASS" signature="generateAll()[pri:0, instance:com.dy.AutoTest.wagaga.AG_Master@3fee9989]" name="generateAll" duration-ms="724" started-at="2018-12-03T13:41:16Z" finished-at="2018-12-03T13:41:17Z">
->>>>>>> refs/heads/dev
-=======
-        <test-method status="PASS" signature="generatePageTest()[pri:0, instance:com.dy.AutoTest.wagaga.AG_Master@3fee9989]" name="generatePageTest" duration-ms="27" started-at="2018-12-03T12:00:12Z" finished-at="2018-12-03T12:00:12Z">
->>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
+    <test name="Login" duration-ms="18728" started-at="2018-12-04T12:32:28Z" finished-at="2018-12-04T12:32:46Z">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
+        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="BeforeTest" is-config="true" duration-ms="11" started-at="2018-12-04T12:32:28Z" finished-at="2018-12-04T12:32:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4b5ad306]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2018-12-04 20:32:28): [Test]-"Login" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="beforeClass" is-config="true" duration-ms="1" started-at="2018-12-04T12:32:28Z" finished-at="2018-12-04T12:32:28Z">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        </test-method> <!-- generatePageTest -->
-        <test-method status="PASS" signature="release()[pri:0, instance:com.dy.AutoTest.wagaga.AG_Master@3fee9989]" name="release" is-config="true" duration-ms="630" started-at="2018-12-03T12:00:13Z" finished-at="2018-12-03T12:00:13Z">
-=======
-        </test-method> <!-- generateAll -->
-        <test-method status="PASS" signature="release()[pri:0, instance:com.dy.AutoTest.wagaga.AG_Master@3fee9989]" name="release" is-config="true" duration-ms="9" started-at="2018-12-03T13:41:17Z" finished-at="2018-12-03T13:41:17Z">
->>>>>>> refs/heads/dev
-=======
-        </test-method> <!-- generatePageTest -->
-        <test-method status="PASS" signature="release()[pri:0, instance:com.dy.AutoTest.wagaga.AG_Master@3fee9989]" name="release" is-config="true" duration-ms="630" started-at="2018-12-03T12:00:13Z" finished-at="2018-12-03T12:00:13Z">
->>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="init" is-config="true" duration-ms="4" started-at="2018-12-04T12:32:28Z" finished-at="2018-12-04T12:32:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- release -->
-      </class> <!-- com.dy.AutoTest.wagaga.AG_Master -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-12-04T12:32:28Z" finished-at="2018-12-04T12:32:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest.testLogin(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-12-04 20:32:28: [Method]-"LoginPageTest.testLogin" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="testLogin" duration-ms="16675" started-at="2018-12-04T12:32:28Z" finished-at="2018-12-04T12:32:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[T00064]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="afterMethod" is-config="true" duration-ms="2002" started-at="2018-12-04T12:32:44Z" finished-at="2018-12-04T12:32:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=LoginPageTest.testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-12-04 20:32:44: [Method]-"LoginPageTest.testLogin" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="AfterTest" is-config="true" duration-ms="1" started-at="2018-12-04T12:32:46Z" finished-at="2018-12-04T12:32:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4b5ad306]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2018-12-04 20:32:46): [Test]-"Login" is finished]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest -->
+    </test> <!-- Login -->
+    <test name="SettlementManagement_PaymentOperation" duration-ms="78285" started-at="2018-12-04T12:32:46Z" finished-at="2018-12-04T12:34:05Z">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.SettlementManagement.Payment.PaymentOperationPageTest">
+        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.SettlementManagement.Payment.PaymentOperationPageTest@27ae2fd0]" name="BeforeTest" is-config="true" duration-ms="1" started-at="2018-12-04T12:32:46Z" finished-at="2018-12-04T12:32:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@54be6213]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2018-12-04 20:32:46): [Test]-"SettlementManagement_PaymentOperation" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.SettlementManagement.Payment.PaymentOperationPageTest@27ae2fd0]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-12-04T12:32:46Z" finished-at="2018-12-04T12:32:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.SettlementManagement.Payment.PaymentOperationPageTest@27ae2fd0]" name="init" is-config="true" duration-ms="5" started-at="2018-12-04T12:32:46Z" finished-at="2018-12-04T12:32:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.SettlementManagement.Payment.PaymentOperationPageTest@27ae2fd0]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-12-04T12:32:47Z" finished-at="2018-12-04T12:32:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.SettlementManagement.Payment.PaymentOperationPageTest.testQuery(com.dy.AutoTest.OperationPlatform.POJO.SettlementManagement_PaymentOperationBean)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-12-04 20:32:47: [Method]-"PaymentOperationPageTest.testQuery" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testQuery(com.dy.AutoTest.OperationPlatform.POJO.SettlementManagement_PaymentOperationBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.SettlementManagement.Payment.PaymentOperationPageTest@27ae2fd0]" name="testQuery" duration-ms="76265" started-at="2018-12-04T12:32:47Z" data-provider="SettlementManagement_PaymentOperationByCaseNO" finished-at="2018-12-04T12:34:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.SettlementManagement_PaymentOperationBean@66629f63]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testQuery -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.SettlementManagement.Payment.PaymentOperationPageTest@27ae2fd0]" name="afterMethod" is-config="true" duration-ms="2002" started-at="2018-12-04T12:34:03Z" finished-at="2018-12-04T12:34:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testQuery status=SUCCESS method=PaymentOperationPageTest.testQuery(com.dy.AutoTest.OperationPlatform.POJO.SettlementManagement_PaymentOperationBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.SettlementManagement.Payment.PaymentOperationPageTest@27ae2fd0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-12-04 20:34:03: [Method]-"PaymentOperationPageTest.testQuery" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.SettlementManagement.Payment.PaymentOperationPageTest@27ae2fd0]" name="AfterTest" is-config="true" duration-ms="0" started-at="2018-12-04T12:34:05Z" finished-at="2018-12-04T12:34:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@54be6213]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2018-12-04 20:34:05): [Test]-"SettlementManagement_PaymentOperation" is finished]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.SettlementManagement.Payment.PaymentOperationPageTest -->
+    </test> <!-- SettlementManagement_PaymentOperation -->
+    <test name="Quit" duration-ms="10239" started-at="2018-12-04T12:34:05Z" finished-at="2018-12-04T12:34:15Z">
+      <class name="com.dy.AutoTest.web.actions.SingletonSet">
+        <test-method status="PASS" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@23986957]" name="init" is-config="true" duration-ms="13468" started-at="2018-12-04T12:32:14Z" finished-at="2018-12-04T12:32:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pop_uat]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="releaseJDBC()[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@23986957]" name="releaseJDBC" is-config="true" duration-ms="2662" started-at="2018-12-04T12:34:15Z" finished-at="2018-12-04T12:34:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- releaseJDBC -->
+      </class> <!-- com.dy.AutoTest.web.actions.SingletonSet -->
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1fe20588]" name="init" is-config="true" duration-ms="1" started-at="2018-12-04T12:34:05Z" finished-at="2018-12-04T12:34:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="FAIL" signature="testQuit()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1fe20588]" name="testQuit" duration-ms="9230" started-at="2018-12-04T12:34:05Z" finished-at="2018-12-04T12:34:14Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LENOVO-RAY', ip: '192.168.85.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\寒\AppData\Local\Te...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: a85bc01db90749c59f7c5ebf5fc1019d
+*** Element info: {Using=xpath, value=//ul[@class='dropdown-menu dropdown-menu-usermenu pull-right']/li/a[@href='/mrbui/bmbucmm1/4806290.do']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LENOVO-RAY', ip: '192.168.85.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\寒\AppData\Local\Te...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: a85bc01db90749c59f7c5ebf5fc1019d
+*** Element info: {Using=xpath, value=//ul[@class='dropdown-menu dropdown-menu-usermenu pull-right']/li/a[@href='/mrbui/bmbucmm1/4806290.do']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+at com.dy.AutoTest.web.actions.DoPlus.what(DoPlus.java:80)
+at com.dy.AutoTest.OperationPlatform.PageObject.MainMenuPage.doQuit(MainMenuPage.java:61)
+at com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest.testQuit(MainMenuPageTest.java:43)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testQuit -->
+        <test-method status="PASS" signature="releaseBrowser()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1fe20588]" name="releaseBrowser" is-config="true" duration-ms="1001" started-at="2018-12-04T12:34:14Z" finished-at="2018-12-04T12:34:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- releaseBrowser -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest -->
+    </test> <!-- Quit -->
+  </suite> <!-- SuiteOperationPlatform -->
 </testng-results>

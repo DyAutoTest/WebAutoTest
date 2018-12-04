@@ -19,12 +19,12 @@
 	</test>
 
 
-	<test thread-count="5" name="SettlementManagement_RiskApproval">
+	<test thread-count="5" name="SettlementManagement_PaymentWorkFlowQuery">
 		<classes>
 			<class
-				name="com.dy.AutoTest.OperationPlatform.TestCases.SettlementManagement.RiskApprovalPageTest">
+				name="com.dy.AutoTest.OperationPlatform.TestCases.SettlementManagement.Payment.PaymentWorkFlowQueryPageTest">
 				<methods>
-					<include name="testSettlementManagement_RiskApproval" />
+					<include name="testQuery" />
 				</methods>
 			</class> 
 		</classes>

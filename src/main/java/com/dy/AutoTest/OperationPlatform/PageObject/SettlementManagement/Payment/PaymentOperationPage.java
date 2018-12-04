@@ -1,12 +1,16 @@
-package com.dy.AutoTest.OperationPlatform.PageObject.SettlementManagement;
+package com.dy.AutoTest.OperationPlatform.PageObject.SettlementManagement.Payment;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
+import com.dy.AutoTest.web.api.IClickButton;
+import com.dy.AutoTest.web.api.IQuery;
+import com.dy.AutoTest.web.api.ISearchMerchantByNOorName;
 import com.dy.AutoTest.web.api.SuperPage;
 import com.dy.AutoTest.web.actions.DoPlus;
 
-public class PaymentOperationPage extends SuperPage{
+public class PaymentOperationPage extends SuperPage
+		implements IQuery,IClickButton,ISearchMerchantByNOorName{
 	public PaymentOperationPage(WebDriver driver) {
 		super(driver);
 		du.loadLocator("POP_Loc_SettlementManagement_PaymentOperation");
@@ -35,6 +39,13 @@ public class PaymentOperationPage extends SuperPage{
 		du.whatSelect("CollectionBank").selectByValue(value);
 	}
 	//日期类型
+	/**
+	 * @param value
+	 * 
+	 * 	value="1" : 付款日
+		value="3" : 订单日
+	 * 
+	 */
 	public void selectDateType(String value) {
 		du.whatSelect("DateType").selectByValue(value);
 	}
@@ -57,6 +68,16 @@ public class PaymentOperationPage extends SuperPage{
 		return du.what("OrderDateEnd").getAttribute("value");
 	}
 	//付款类型
+	/**
+	 * @param value
+	 * 
+	 * 	value="42" : 认证打款
+		value="21" : 商户结算
+		value="11" : 用户提现
+		value="22" : 商户自主结算
+		value="41" : 资金调拨
+	 * 
+	 */
 	public void selectPaymentType(String value) {
 		du.whatSelect("PaymentType").selectByValue(value);
 	}
@@ -81,6 +102,13 @@ public class PaymentOperationPage extends SuperPage{
 		du.what("SearchMer").click();
 	}
 	//付款状态
+	/**
+	 * @param value
+	 * 
+	 * 	value="W3" : 系统受理中
+		value="F8" : 审核不通过
+	 * 
+	 */
 	public void selectPaymentStatus(String value) {
 		du.whatSelect("PaymentStatus").selectByValue(value);
 	}
@@ -137,12 +165,20 @@ public class PaymentOperationPage extends SuperPage{
 		du.what("SearchMer_Search").click();
 	}
 	//搜商户_商户列表单选按钮
-	public void clickSearchMer_MerchantRadio() {
-		du.what("SearchMer_MerchantRadio").click();
+	public void clickSearchMer_Radio(String radio) {
+		du.what("SearchMer_Radio",radio).click();
+	}
+	public boolean isSearchMer_RadioExist(String radio) {
+		du.waitFor(500);
+		return du.isElementExist("SearchMer_Radio",radio);
+	}
+	public boolean isSearchMer_RadioDisplayed(String radio) {
+		du.waitFor(500);
+		return du.what("SearchMer_Radio",radio).isDisplayed();
 	}
 	//搜商户_确定
-	public void clickSearchMer_Confirm() {
-		du.what("SearchMer_Confirm").click();
+	public void clickSearchMer_Submit() {
+		du.what("SearchMer_Submit").click();
 	}
 	//搜商户_关闭
 	public void clickSearchMer_Close() {

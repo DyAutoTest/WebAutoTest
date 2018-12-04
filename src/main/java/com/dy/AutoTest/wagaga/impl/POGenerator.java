@@ -104,7 +104,11 @@ public class POGenerator extends Generator{
 				"	public boolean is%sExist(String radio) {\r\n"+
 				"		du.waitFor(500);\r\n"+ 
 				"		return du.isElementExist(\"%s\",radio);\r\n"+ 
-				"	}\r\n";
+				"	}\r\n"
+				+ "	public boolean is%sDisplayed(String radio) {\r\n"
+				+ "		du.waitFor(500);\r\n"
+				+ "		return du.what(\"%s\",radio).isDisplayed();\r\n"
+				+ "	}\r\n";
 		//新增类型label
 		private String labelTemplate = "	public String get%s() {\r\n" + 
 				"		return du.what(\"%s\").getText();\r\n" + 
@@ -128,7 +132,7 @@ public class POGenerator extends Generator{
 		}
 		//用于radio标签
 		public String generateRadioMethod(String name) {
-			return String.format(radioTemplate, name, name,name, name);
+			return String.format(radioTemplate, name, name,name, name,name, name);
 		}
 		//用于label标签
 		public String generateLabelMethod(String name) {

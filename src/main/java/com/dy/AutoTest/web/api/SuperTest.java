@@ -35,6 +35,7 @@ public class SuperTest {
 	protected IQuery iQuery;
 	protected IClickRadio iClickRadio;
 	protected IClickButton iClickButton;
+	protected ISearchMerchantByNOorName iSearchMerchantByNOorName;
 	
 	/************* test area ****************/
 	@BeforeClass
@@ -81,24 +82,24 @@ public class SuperTest {
 /*************************** interface function *****************************/
 	
 	//搜商户
-	public void doSearchMerchantByNOorName(ISearchMerchantByNOorName searchMerchantByNOorName,String merchantNO,String merchantName,String index) {
+	public void doSearchMerchantByNOorName(String merchantNO,String merchantName,String index) {
 		if(!merchantNO.equals("")) {
-			searchMerchantByNOorName.setMerchantNO(merchantNO);
+			iSearchMerchantByNOorName.setMerchantNO(merchantNO);
 		}else if(!merchantName.equals("")) {
-			searchMerchantByNOorName.clickSearchMer();
-			searchMerchantByNOorName.setSearchMer_MerName(merchantName);
-			searchMerchantByNOorName.clickSearchMer_Search();
+			iSearchMerchantByNOorName.clickSearchMer();
+			iSearchMerchantByNOorName.setSearchMer_MerName(merchantName);
+			iSearchMerchantByNOorName.clickSearchMer_Search();
 			try {
-				searchMerchantByNOorName.isSearchMer_RadioDisplayed(index);
+				iSearchMerchantByNOorName.isSearchMer_RadioDisplayed(index);
 			} catch (Exception e) {
-				searchMerchantByNOorName.clickSearchMer_Close();
+				iSearchMerchantByNOorName.clickSearchMer_Close();
 				wait.waitFor(1000);
 				System.out.println("搜商户 该商户名数据不存在，Please Check TestData ! MerchantName is "+merchantName);
 				Reporter.log("搜商户 该商户名数据不存在，Please Check TestData ! MerchantName is "+merchantName);
 				assertTrue(false);
 			}
-			searchMerchantByNOorName.clickSearchMer_Radio(index);
-			searchMerchantByNOorName.clickSearchMer_Submit();
+			iSearchMerchantByNOorName.clickSearchMer_Radio(index);
+			iSearchMerchantByNOorName.clickSearchMer_Submit();
 		}else {
 			System.out.println("Both of MerchantNO and MerchantName are null ! Please check TestData !");
 			Reporter.log("Both of MerchantNO and MerchantName are null ! Please check TestData !");
