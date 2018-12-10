@@ -89,4 +89,228 @@ public class RiskApprovalPageTest extends SuperTest  {
 		}
 		
 	}
+	
+	@Test(dataProvider="SettlementManagement_RiskApprovalByCaseNO")
+	public void testCheck_Refuse(SettlementManagement_RiskApprovalBean sraBean) {
+		RiskApprovalPage.navigateTo(URL);
+		wait.waitFor(500);
+		if(sraBean.getDateBegin().equals("")||sraBean.getDateEnd().equals("")) {
+			System.out.println("The field (DateBegin or DateEnd) can not be null. Please check TestData!");
+			Reporter.log("付款/订单日期不能为空，请检查测试数据");
+			assertTrue(false);
+		}
+		RiskApprovalPage.clickAdvance();
+		wait.waitFor(500);
+		
+		if(!sraBean.getPaymentBank().equals("")) {
+			RiskApprovalPage.selectPaymentBank(sraBean.getPaymentBank());
+		}
+		if(!sraBean.getCollectionBank().equals("")) {
+			RiskApprovalPage.selectCollectionBank(sraBean.getCollectionBank());
+		}
+		if(!sraBean.getDateType().equals("")) {
+			RiskApprovalPage.selectDateType(sraBean.getDateType());
+		}
+		
+		RiskApprovalPage.setDateBegin(sraBean.getDateBegin());
+		RiskApprovalPage.setDateEnd(sraBean.getDateEnd());
+		RiskApprovalPage.doLoseFocus("DateEnd", 120, 0);
+		
+		if(!sraBean.getPaymentType().equals("")) {
+			RiskApprovalPage.selectPaymentType(sraBean.getPaymentType());
+		}
+		
+		RiskApprovalPage.clickQuery();
+		wait.waitFor(500);
+		
+//		RiskApprovalPage.doPageDown();
+//		wait.waitFor(500);
+		
+		RiskApprovalPage.clickRadio(sraBean.getRadio());
+		wait.waitFor(500);
+		
+		RiskApprovalPage.clickCheck();
+		wait.waitFor(2000);
+		
+		RiskApprovalPage.clickCheck_Radio(sraBean.getCheck_Radio());
+		wait.waitFor(500);
+		
+		RiskApprovalPage.clickCheck_Refuse();
+		wait.waitFor(500);
+		
+		RiskApprovalPage.setCheck_Refuse_Text(sraBean.getRefuse_Text());
+		wait.waitFor(500);
+		
+		RiskApprovalPage.clickCheck_Refuse_Confirm();
+		System.out.println(RiskApprovalPage.getNotice());
+		Reporter.log(RiskApprovalPage.getNotice());
+
+		RiskApprovalPage.clickCheck_Close();
+		
+	}
+	
+	@Test(dataProvider="SettlementManagement_RiskApprovalByCaseNO")
+	public void testCheck_Pass(SettlementManagement_RiskApprovalBean sraBean) {
+		RiskApprovalPage.navigateTo(URL);
+		wait.waitFor(500);
+		if(sraBean.getDateBegin().equals("")||sraBean.getDateEnd().equals("")) {
+			System.out.println("The field (DateBegin or DateEnd) can not be null. Please check TestData!");
+			Reporter.log("付款/订单日期不能为空，请检查测试数据");
+			assertTrue(false);
+		}
+		RiskApprovalPage.clickAdvance();
+		wait.waitFor(500);
+		
+		if(!sraBean.getPaymentBank().equals("")) {
+			RiskApprovalPage.selectPaymentBank(sraBean.getPaymentBank());
+		}
+		if(!sraBean.getCollectionBank().equals("")) {
+			RiskApprovalPage.selectCollectionBank(sraBean.getCollectionBank());
+		}
+		if(!sraBean.getDateType().equals("")) {
+			RiskApprovalPage.selectDateType(sraBean.getDateType());
+		}
+		
+		RiskApprovalPage.setDateBegin(sraBean.getDateBegin());
+		RiskApprovalPage.setDateEnd(sraBean.getDateEnd());
+		RiskApprovalPage.doLoseFocus("DateEnd", 120, 0);
+		
+		if(!sraBean.getPaymentType().equals("")) {
+			RiskApprovalPage.selectPaymentType(sraBean.getPaymentType());
+		}
+		
+		RiskApprovalPage.clickQuery();
+		wait.waitFor(500);
+		
+//		RiskApprovalPage.doPageDown();
+//		wait.waitFor(500);
+		
+		RiskApprovalPage.clickRadio(sraBean.getRadio());
+		wait.waitFor(500);
+		
+		RiskApprovalPage.clickCheck();
+		wait.waitFor(2000);
+		
+		RiskApprovalPage.clickCheck_Radio(sraBean.getCheck_Radio());
+		wait.waitFor(500);
+		
+		RiskApprovalPage.clickCheck_Pass();
+		wait.waitFor(500);
+		
+		RiskApprovalPage.setCheck_Pass_Text(sraBean.getPass_Text());
+		wait.waitFor(500);
+		
+		RiskApprovalPage.clickCheck_Pass_Confirm();
+		System.out.println(RiskApprovalPage.getNotice());
+		Reporter.log(RiskApprovalPage.getNotice());
+
+		RiskApprovalPage.clickCheck_Close();
+	}
+	
+	
+	@Test(dataProvider="SettlementManagement_RiskApprovalByCaseNO")
+	public void testPass(SettlementManagement_RiskApprovalBean sraBean) {
+		RiskApprovalPage.navigateTo(URL);
+		wait.waitFor(500);
+		if(sraBean.getDateBegin().equals("")||sraBean.getDateEnd().equals("")) {
+			System.out.println("The field (DateBegin or DateEnd) can not be null. Please check TestData!");
+			Reporter.log("付款/订单日期不能为空，请检查测试数据");
+			assertTrue(false);
+		}
+		RiskApprovalPage.clickAdvance();
+		wait.waitFor(500);
+		
+		if(!sraBean.getPaymentBank().equals("")) {
+			RiskApprovalPage.selectPaymentBank(sraBean.getPaymentBank());
+		}
+		if(!sraBean.getCollectionBank().equals("")) {
+			RiskApprovalPage.selectCollectionBank(sraBean.getCollectionBank());
+		}
+		if(!sraBean.getDateType().equals("")) {
+			RiskApprovalPage.selectDateType(sraBean.getDateType());
+		}
+		
+		RiskApprovalPage.setDateBegin(sraBean.getDateBegin());
+		RiskApprovalPage.setDateEnd(sraBean.getDateEnd());
+		RiskApprovalPage.doLoseFocus("DateEnd", 120, 0);
+		
+		if(!sraBean.getPaymentType().equals("")) {
+			RiskApprovalPage.selectPaymentType(sraBean.getPaymentType());
+		}
+		
+		RiskApprovalPage.clickQuery();
+		wait.waitFor(500);
+		
+//		RiskApprovalPage.doPageDown();
+//		wait.waitFor(500);
+		
+		RiskApprovalPage.clickRadio(sraBean.getRadio());
+		wait.waitFor(500);
+		
+		RiskApprovalPage.clickPass();
+		wait.waitFor(2000);
+		
+		RiskApprovalPage.setPass_Text(sraBean.getPass_Text());
+		wait.waitFor(500);
+		
+		RiskApprovalPage.clickPass_Confirm();
+		System.out.println(RiskApprovalPage.getNotice());
+		Reporter.log(RiskApprovalPage.getNotice());
+
+//		RiskApprovalPage.clickPass_Close();
+	}
+	
+	
+	@Test(dataProvider="SettlementManagement_RiskApprovalByCaseNO")
+	public void testRefuse(SettlementManagement_RiskApprovalBean sraBean) {
+		RiskApprovalPage.navigateTo(URL);
+		wait.waitFor(500);
+		if(sraBean.getDateBegin().equals("")||sraBean.getDateEnd().equals("")) {
+			System.out.println("The field (DateBegin or DateEnd) can not be null. Please check TestData!");
+			Reporter.log("付款/订单日期不能为空，请检查测试数据");
+			assertTrue(false);
+		}
+		RiskApprovalPage.clickAdvance();
+		wait.waitFor(500);
+		
+		if(!sraBean.getPaymentBank().equals("")) {
+			RiskApprovalPage.selectPaymentBank(sraBean.getPaymentBank());
+		}
+		if(!sraBean.getCollectionBank().equals("")) {
+			RiskApprovalPage.selectCollectionBank(sraBean.getCollectionBank());
+		}
+		if(!sraBean.getDateType().equals("")) {
+			RiskApprovalPage.selectDateType(sraBean.getDateType());
+		}
+		
+		RiskApprovalPage.setDateBegin(sraBean.getDateBegin());
+		RiskApprovalPage.setDateEnd(sraBean.getDateEnd());
+		RiskApprovalPage.doLoseFocus("DateEnd", 120, 0);
+		
+		if(!sraBean.getPaymentType().equals("")) {
+			RiskApprovalPage.selectPaymentType(sraBean.getPaymentType());
+		}
+		
+		RiskApprovalPage.clickQuery();
+		wait.waitFor(500);
+		
+//		RiskApprovalPage.doPageDown();
+//		wait.waitFor(500);
+		
+		RiskApprovalPage.clickRadio(sraBean.getRadio());
+		wait.waitFor(500);
+		
+		RiskApprovalPage.clickRefuse();
+		wait.waitFor(2000);
+		
+		RiskApprovalPage.setRefuse_Text(sraBean.getRefuse_Text());
+		wait.waitFor(500);
+		
+//		RiskApprovalPage.clickRefuse_Confirm();
+//		System.out.println(RiskApprovalPage.getNotice());
+//		Reporter.log(RiskApprovalPage.getNotice());
+
+		RiskApprovalPage.clickRefuse_Close();
+	}
+	
 }

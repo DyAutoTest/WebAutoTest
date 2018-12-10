@@ -62,7 +62,7 @@ public class TestngXMLGenerator extends Generator{
 				"				name=\"%s.%s\">\r\n" + 
 				"				<methods>\r\n" + 
 				"					<include name=\"testQuery\" />\r\n" +
-				"//					<include name=\"testCheck\" />\r\n" +
+				"					<!-- <include name=\"testCheck\" /> -->\r\n" +
 				"				</methods>\r\n" + 
 				"			</class> \r\n" + 
 				"		</classes>\r\n" + 

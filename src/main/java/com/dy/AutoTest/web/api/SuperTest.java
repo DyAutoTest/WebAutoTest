@@ -89,6 +89,7 @@ public class SuperTest {
 			iSearchMerchantByNOorName.clickSearchMer();
 			iSearchMerchantByNOorName.setSearchMer_MerName(merchantName);
 			iSearchMerchantByNOorName.clickSearchMer_Search();
+			wait.waitFor(800);
 			try {
 				iSearchMerchantByNOorName.isSearchMer_RadioDisplayed(index);
 			} catch (Exception e) {

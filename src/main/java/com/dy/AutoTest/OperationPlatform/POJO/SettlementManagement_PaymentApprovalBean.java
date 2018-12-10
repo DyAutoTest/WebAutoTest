@@ -5,19 +5,28 @@ import java.io.Serializable;
 public class SettlementManagement_PaymentApprovalBean implements Serializable{
 	private static final long serialVersionUID = 1L;
 
+	private String Check_Checkbox;
 	private String RecheckOperationStatus;
 	private String DateBegin;
 	private String BatchRecheckPass_Text;
 	private String BatchRecheckRefuse_Text;
+	private String Check_Pass_Text;
+	private String Check_Refuse_Text;
 	private String CaseNO;
 	private String DateEnd;
 	private String PaymentBank;
+	private String Checkbox;
 	private String InnerUserNO;
 	private String PaymentType;
 	private int ID;
-	private String CheckBoxSingle;
 	private String DateType;
 	private String CollectionBank;
+	public String getCheck_Checkbox() {
+		return Check_Checkbox;
+	}
+	public void setCheck_Checkbox(String Check_Checkbox) {
+		this.Check_Checkbox = Check_Checkbox;
+	}
 	public String getRecheckOperationStatus() {
 		return RecheckOperationStatus;
 	}
@@ -42,6 +51,18 @@ public class SettlementManagement_PaymentApprovalBean implements Serializable{
 	public void setBatchRecheckRefuse_Text(String BatchRecheckRefuse_Text) {
 		this.BatchRecheckRefuse_Text = BatchRecheckRefuse_Text;
 	}
+	public String getCheck_Pass_Text() {
+		return Check_Pass_Text;
+	}
+	public void setCheck_Pass_Text(String Check_Pass_Text) {
+		this.Check_Pass_Text = Check_Pass_Text;
+	}
+	public String getCheck_Refuse_Text() {
+		return Check_Refuse_Text;
+	}
+	public void setCheck_Refuse_Text(String Check_Refuse_Text) {
+		this.Check_Refuse_Text = Check_Refuse_Text;
+	}
 	public String getCaseNO() {
 		return CaseNO;
 	}
@@ -60,6 +81,12 @@ public class SettlementManagement_PaymentApprovalBean implements Serializable{
 	public void setPaymentBank(String PaymentBank) {
 		this.PaymentBank = PaymentBank;
 	}
+	public String getCheckbox() {
+		return Checkbox;
+	}
+	public void setCheckbox(String Checkbox) {
+		this.Checkbox = Checkbox;
+	}
 	public String getInnerUserNO() {
 		return InnerUserNO;
 	}
@@ -77,12 +104,6 @@ public class SettlementManagement_PaymentApprovalBean implements Serializable{
 	}
 	public void setID(int ID) {
 		this.ID = ID;
-	}
-	public String getCheckBoxSingle() {
-		return CheckBoxSingle;
-	}
-	public void setCheckBoxSingle(String CheckBoxSingle) {
-		this.CheckBoxSingle = CheckBoxSingle;
 	}
 	public String getDateType() {
 		return DateType;

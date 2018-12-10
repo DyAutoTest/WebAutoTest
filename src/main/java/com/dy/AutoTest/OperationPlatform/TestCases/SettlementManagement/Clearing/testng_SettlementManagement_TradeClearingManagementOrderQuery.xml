@@ -19,17 +19,14 @@
 	</test>
 
 
-	<test thread-count="5" name="SettlementManagement_RiskApproval">
+	<test thread-count="5" name="SettlementManagement_TradeClearingManagementOrderQuery">
 		<classes>
 			<class
-				name="com.dy.AutoTest.OperationPlatform.TestCases.SettlementManagement.Payment.RiskApprovalPageTest">
+				name="com.dy.AutoTest.OperationPlatform.TestCases.SettlementManagement.Clearing.TradeClearingManagementOrderQueryPageTest">
 				<methods>
 					<include name="testQuery" />
-					<include name="testCheck_Refuse" />
-					<include name="testCheck_Cancel" />
-					<include name="testCheck_Pass" />
-					<include name="testPass" />
-					<include name="testRefuse" />
+					<include name="testCheck" />
+					<include name="testResend" />
 				</methods>
 			</class> 
 		</classes>

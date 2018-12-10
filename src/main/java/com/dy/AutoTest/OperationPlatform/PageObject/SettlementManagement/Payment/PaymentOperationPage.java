@@ -10,7 +10,8 @@ import com.dy.AutoTest.web.api.SuperPage;
 import com.dy.AutoTest.web.actions.DoPlus;
 
 public class PaymentOperationPage extends SuperPage
-		implements IQuery,IClickButton,ISearchMerchantByNOorName{
+			implements IQuery,IClickButton,ISearchMerchantByNOorName{
+	
 	public PaymentOperationPage(WebDriver driver) {
 		super(driver);
 		du.loadLocator("POP_Loc_SettlementManagement_PaymentOperation");
@@ -144,6 +145,9 @@ public class PaymentOperationPage extends SuperPage
 	public void clickCheckBoxSingle() {
 		du.what("CheckBoxSingle").click();
 	}
+	public void clickCheckBoxSingle(String index) {
+		du.what("CheckBoxSingle",index).click();
+	}
 	//搜商户_商户号
 	public void setSearchMer_MerNO(String value) {
 		du.what("SearchMer_MerNO").clear();
@@ -201,8 +205,11 @@ public class PaymentOperationPage extends SuperPage
 		du.what("Check_OperationCheckboxAll").click();
 	}
 	//明细操作_操作列表多选按钮
-	public void clickCheck_OperationCheckboxSingle() {
-		du.what("Check_OperationCheckboxSingle").click();
+	public void clickCheck_Checkbox() {
+		du.what("Check_Checkbox").click();
+	}
+	public void clickCheck_Checkbox(String index) {
+		du.what("Check_Checkbox",index).click();
 	}
 	//明细操作_关闭
 	public void clickCheck_Close() {
@@ -233,16 +240,56 @@ public class PaymentOperationPage extends SuperPage
 		du.what("BatchCancel_Close").click();
 	}
 	//批转网银_付款银行
-	public void selectBatchTurnEbank_PaymentBank(String value) {
-		du.whatSelect("BatchTurnEbank_PaymentBank").selectByValue(value);
+	public void selectBatchTurnEBank_PaymentBank(String value) {
+		du.whatSelect("BatchTurnEBank_PaymentBank").selectByValue(value);
 	}
 	//批转网银_确认
-	public void clickBatchTurnEbank_Confirm() {
-		du.what("BatchTurnEbank_Confirm").click();
+	public void clickBatchTurnEBank_Confirm() {
+		du.what("BatchTurnEBank_Confirm").click();
 	}
 	//批转网银_关闭
-	public void clickBatchTurnEbank_Close() {
-		du.what("BatchTurnEbank_Close").click();
+	public void clickBatchTurnEBank_Close() {
+		du.what("BatchTurnEBank_Close").click();
+	}
+	//明细操作_通过原因
+	public void setCheck_Pass_Text(String value) {
+		du.what("Check_Pass_Text").clear();
+		du.what("Check_Pass_Text").sendKeys(value);
+	}
+	public String getCheck_Pass_Text() {
+		return du.what("Check_Pass_Text").getAttribute("value");
+	}
+	//明细操作_撤销原因
+	public void setCheck_Cancel_Text(String value) {
+		du.what("Check_Cancel_Text").clear();
+		du.what("Check_Cancel_Text").sendKeys(value);
+	}
+	public String getCheck_Cancel_Text() {
+		return du.what("Check_Cancel_Text").getAttribute("value");
+	}
+	//明细操作_通过_确认
+	public void clickCheck_Pass_Confirm() {
+		du.what("Check_Pass_Confirm").click();
+	}
+	//明细操作_通过_关闭
+	public void clickCheck_Pass_Close() {
+		du.what("Check_Pass_Close").click();
+	}
+	//明细操作_撤销_确认
+	public void clickCheck_Cancel_Confirm() {
+		du.what("Check_Cancel_Confirm").click();
+	}
+	//明细操作_撤销_关闭
+	public void clickCheck_Cancel_Close() {
+		du.what("Check_Cancel_Close").click();
+	}
+	//明细操作_转网银_确认
+	public void clickCheck_TurnEBank_Confirm() {
+		du.what("Check_TurnEBank_Confirm").click();
+	}
+	//明细操作_转网银_关闭
+	public void clickCheck_TurnEBank_Close() {
+		du.what("Check_TurnEBank_Close").click();
 	}
 
 }

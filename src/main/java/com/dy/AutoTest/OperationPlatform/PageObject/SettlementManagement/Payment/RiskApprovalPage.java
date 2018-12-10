@@ -8,7 +8,9 @@ import com.dy.AutoTest.web.api.IQuery;
 import com.dy.AutoTest.web.api.SuperPage;
 import com.dy.AutoTest.web.actions.DoPlus;
 
-public class RiskApprovalPage extends SuperPage implements IQuery,IClickButton{
+public class RiskApprovalPage extends SuperPage
+		implements IQuery,IClickButton{
+	
 	public RiskApprovalPage(WebDriver driver) {
 		super(driver);
 		du.loadLocator("POP_Loc_SettlementManagement_RiskApproval");
@@ -106,6 +108,10 @@ public class RiskApprovalPage extends SuperPage implements IQuery,IClickButton{
 		du.waitFor(500);
 		return du.isElementExist("Radio",radio);
 	}
+	public boolean isRadioDisplayed(String radio) {
+		du.waitFor(500);
+		return du.what("Radio",radio).isDisplayed();
+	}
 	//明细操作_审批通过
 	public void clickCheck_Pass() {
 		du.what("Check_Pass").click();
@@ -121,6 +127,10 @@ public class RiskApprovalPage extends SuperPage implements IQuery,IClickButton{
 	public boolean isCheck_RadioExist(String radio) {
 		du.waitFor(500);
 		return du.isElementExist("Check_Radio",radio);
+	}
+	public boolean isCheck_RadioDisplayed(String radio) {
+		du.waitFor(500);
+		return du.what("Check_Radio",radio).isDisplayed();
 	}
 	//明细操作_关闭
 	public void clickCheck_Close() {
@@ -157,6 +167,38 @@ public class RiskApprovalPage extends SuperPage implements IQuery,IClickButton{
 	//批审批拒绝_关闭
 	public void clickRefuse_Close() {
 		du.what("Refuse_Close").click();
+	}
+	//明细操作_审批拒绝理由
+	public void setCheck_Refuse_Text(String value) {
+		du.what("Check_Refuse_Text").clear();
+		du.what("Check_Refuse_Text").sendKeys(value);
+	}
+	public String getCheck_Refuse_Text() {
+		return du.what("Check_Refuse_Text").getAttribute("value");
+	}
+	//明细操作_审批通过理由
+	public void setCheck_Pass_Text(String value) {
+		du.what("Check_Pass_Text").clear();
+		du.what("Check_Pass_Text").sendKeys(value);
+	}
+	public String getCheck_Pass_Text() {
+		return du.what("Check_Pass_Text").getAttribute("value");
+	}
+	//明细操作_审批拒绝_确认
+	public void clickCheck_Refuse_Confirm() {
+		du.what("Check_Refuse_Confirm").click();
+	}
+	//明细操作_审批拒绝_关闭
+	public void clickCheck_Refuse_Close() {
+		du.what("Check_Refuse_Close").click();
+	}
+	//明细操作_审批通过_确认
+	public void clickCheck_Pass_Confirm() {
+		du.what("Check_Pass_Confirm").click();
+	}
+	//明细操作_审批通过_关闭
+	public void clickCheck_Pass_Close() {
+		du.what("Check_Pass_Close").click();
 	}
 
 }

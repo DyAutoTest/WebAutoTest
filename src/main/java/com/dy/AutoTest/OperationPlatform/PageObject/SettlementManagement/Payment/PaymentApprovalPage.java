@@ -10,6 +10,7 @@ import com.dy.AutoTest.web.actions.DoPlus;
 
 public class PaymentApprovalPage extends SuperPage
 		implements IQuery,IClickButton{
+	
 	public PaymentApprovalPage(WebDriver driver) {
 		super(driver);
 		du.loadLocator("POP_Loc_SettlementManagement_PaymentApproval");
@@ -114,12 +115,20 @@ public class PaymentApprovalPage extends SuperPage
 		du.what("BatchRecheckRefuse").click();
 	}
 	//订单列表全选按钮
-	public void clickCheckBoxAll() {
-		du.what("CheckBoxAll").click();
+	public void clickCheckboxAll() {
+		du.what("CheckboxAll").click();
 	}
 	//订单列表多选按钮
-	public void clickCheckBoxSingle() {
-		du.what("CheckBoxSingle").click();
+	public void clickCheckboxSingle(String radio) {
+		du.what("CheckboxSingle",radio).click();
+	}
+	public boolean isCheckboxSingleExist(String radio) {
+		du.waitFor(500);
+		return du.isElementExist("CheckboxSingle",radio);
+	}
+	public boolean isCheckboxSingleDisplayed(String radio) {
+		du.waitFor(500);
+		return du.what("CheckboxSingle",radio).isDisplayed();
 	}
 	//明细操作_复核通过
 	public void clickCheck_Pass() {
@@ -130,12 +139,20 @@ public class PaymentApprovalPage extends SuperPage
 		du.what("Check_Refuse").click();
 	}
 	//明细操作_订单列表全选按钮
-	public void clickCheck_OrderCheckBoxAll() {
-		du.what("Check_OrderCheckBoxAll").click();
+	public void clickCheck_CheckboxAll() {
+		du.what("Check_CheckboxAll").click();
 	}
 	//明细操作_订单列表多选按钮
-	public void clickCheck_OrderCheckBoxSingle() {
-		du.what("Check_OrderCheckBoxSingle").click();
+	public void clickCheck_Checkbox(String radio) {
+		du.what("Check_Checkbox",radio).click();
+	}
+	public boolean isCheck_CheckboxExist(String radio) {
+		du.waitFor(500);
+		return du.isElementExist("Check_Checkbox",radio);
+	}
+	public boolean isCheck_CheckboxDisplayed(String radio) {
+		du.waitFor(500);
+		return du.what("Check_Checkbox",radio).isDisplayed();
 	}
 	//明细操作_关闭
 	public void clickCheck_Close() {

@@ -1,10 +1,10 @@
-private SettlementManagement_PaymentWorkFlowQueryBean SettlementManagement_PaymentWorkFlowQueryBean;
+private SettlementManagement_TradeClearingManagementQueryBean SettlementManagement_TradeClearingManagementQueryBean;
 
-case "POP_Data_SettlementManagement_PaymentWorkFlowQuery":
-	pojo=(T)testingDao.getData(tableName,ID,SettlementManagement_PaymentWorkFlowQueryBean.class);
+case "POP_Data_SettlementManagement_TradeClearingManagementQuery":
+	pojo=(T)testingDao.getData(tableName,ID,SettlementManagement_TradeClearingManagementQueryBean.class);
 	return pojo;
 
-case "POP_Data_SettlementManagement_PaymentWorkFlowQuery":
-	list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,SettlementManagement_PaymentWorkFlowQueryBean.class));
+case "POP_Data_SettlementManagement_TradeClearingManagementQuery":
+	list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,SettlementManagement_TradeClearingManagementQueryBean.class));
 	break;
 

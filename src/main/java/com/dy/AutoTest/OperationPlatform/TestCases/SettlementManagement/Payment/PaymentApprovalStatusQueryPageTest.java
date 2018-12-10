@@ -11,6 +11,18 @@ import com.dy.AutoTest.OperationPlatform.POJO.SettlementManagement_PaymentApprov
 import com.dy.AutoTest.OperationPlatform.PageObject.SettlementManagement.Payment.PaymentApprovalStatusQueryPage;
 import com.dy.AutoTest.web.business.DataBusiness;
 
+/**
+ * @author Jerry
+ * 
+ * 		待复核，“付款操作”结束后，进入“付款审核”
+		复核付款，“付款操作”中选择“确认”，“付款审核”中，复核“通过”的记录
+		复核回退，付款操作”中选择“确认”，“付款审核”中，复核“退回”的记录
+		不需要复核，
+		系统拒绝，
+		复核转网银，“付款操作”中选择“转网银”，“付款审核”中，复核“通过”的记录
+		复核撤销，“付款操作”中选择“撤销”，“付款审核”中，复核“通过”的记录
+ *
+ */
 public class PaymentApprovalStatusQueryPageTest extends SuperTest{
 	PaymentApprovalStatusQueryPage PaymentApprovalStatusQueryPage;
 	String URL;

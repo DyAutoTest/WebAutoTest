@@ -53,6 +53,9 @@ import com.dy.AutoTest.OperationPlatform.POJO.SettlementManagement_PaymentApprov
 import com.dy.AutoTest.OperationPlatform.POJO.SettlementManagement_PaymentOperationBean;
 import com.dy.AutoTest.OperationPlatform.POJO.SettlementManagement_PaymentWorkFlowQueryBean;
 import com.dy.AutoTest.OperationPlatform.POJO.SettlementManagement_RiskApprovalBean;
+import com.dy.AutoTest.OperationPlatform.POJO.SettlementManagement_SettlementBillQueryBean;
+import com.dy.AutoTest.OperationPlatform.POJO.SettlementManagement_TradeClearingManagementOrderQueryBean;
+import com.dy.AutoTest.OperationPlatform.POJO.SettlementManagement_TradeClearingManagementQueryBean;
 import com.dy.AutoTest.OperationPlatform.POJO.UserAccountModifySearchBean;
 import com.dy.AutoTest.OperationPlatform.POJO.UserActionBean;
 import com.dy.AutoTest.web.beans.Data_URLBean;
@@ -100,6 +103,9 @@ public class DataBusiness {
 	private SettlementManagement_PaymentApprovalStatusQueryBean SettlementManagement_PaymentApprovalStatusQueryBean;
 	private SettlementManagement_PaymentOperationBean SettlementManagement_PaymentOperationBean;
 	private SettlementManagement_PaymentWorkFlowQueryBean SettlementManagement_PaymentWorkFlowQueryBean;
+	private SettlementManagement_SettlementBillQueryBean SettlementManagement_SettlementBillQueryBean;
+	private SettlementManagement_TradeClearingManagementOrderQueryBean SettlementManagement_TradeClearingManagementOrderQueryBean ;
+	private SettlementManagement_TradeClearingManagementQueryBean SettlementManagement_TradeClearingManagementQueryBean;
 
 
 
@@ -235,6 +241,15 @@ public class DataBusiness {
 				return pojo;
 			case "POP_Data_SettlementManagement_PaymentWorkFlowQuery":
 				pojo=(T)testingDao.getData(tableName,ID,SettlementManagement_PaymentWorkFlowQueryBean.class);
+				return pojo;
+			case "POP_Data_SettlementManagement_SettlementBillQuery":
+				pojo=(T)testingDao.getData(tableName,ID,SettlementManagement_SettlementBillQueryBean.class);
+				return pojo;
+			case "POP_Data_SettlementManagement_TradeClearingManagementOrderQuery":
+				pojo=(T)testingDao.getData(tableName,ID,SettlementManagement_TradeClearingManagementOrderQueryBean.class);
+				return pojo;
+			case "POP_Data_SettlementManagement_TradeClearingManagementQuery":
+				pojo=(T)testingDao.getData(tableName,ID,SettlementManagement_TradeClearingManagementQueryBean.class);
 				return pojo;
 			case "POP_Data_MerchantOper":
 				
@@ -378,6 +393,12 @@ public class DataBusiness {
 		case "POP_Data_SettlementManagement_PaymentWorkFlowQuery":
 			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,SettlementManagement_PaymentWorkFlowQueryBean.class));
 			break;
+		case "POP_Data_SettlementManagement_SettlementBillQuery":
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,SettlementManagement_SettlementBillQueryBean.class));
+			break;
+		case "POP_Data_SettlementManagement_TradeClearingManagementOrderQuery":
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,SettlementManagement_TradeClearingManagementOrderQueryBean.class));
+			break;
 		case "POP_Data_MerchantOper":
 			
 			break;
@@ -403,6 +424,10 @@ public class DataBusiness {
 		case "Online_Data_Cashier_B2B":
 			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,OnlineCashierB2BBean.class));
 			break;
+		case "POP_Data_SettlementManagement_TradeClearingManagementQuery":
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,SettlementManagement_TradeClearingManagementQueryBean.class));
+			break;
+
 		case "Data_URL":
 			data_URLBean=new Data_URLBean();
 			break;
