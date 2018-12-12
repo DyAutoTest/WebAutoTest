@@ -29,6 +29,8 @@ import com.dy.AutoTest.OnlineCashier.POJO.IdentityAuthenticationChannelBean;
 import com.dy.AutoTest.OnlineCashier.POJO.IdentityAuthenticationDetailsBean;
 import com.dy.AutoTest.OnlineCashier.POJO.IdentityAuthenticationQueryBean;
 import com.dy.AutoTest.OnlineCashier.POJO.IdentityAuthenticationRouteBean;
+import com.dy.AutoTest.OperationPlatform.POJO.BlackWhiteListManagement_BlackListMaintainBean;
+import com.dy.AutoTest.OperationPlatform.POJO.BlackWhiteListManagement_WhiteListMaintainBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MainChildMerRelationshipBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantAccountManagementBean;
 import com.dy.AutoTest.OperationPlatform.POJO.MerchantAuditBean;
@@ -48,6 +50,13 @@ import com.dy.AutoTest.OperationPlatform.POJO.OnlineTransferOutOrderQueryBean;
 import com.dy.AutoTest.OperationPlatform.POJO.OnlineWithdrawOrderQueryBean;
 import com.dy.AutoTest.OperationPlatform.POJO.OperBean;
 import com.dy.AutoTest.OperationPlatform.POJO.OverdueMerInfoQueryBean;
+import com.dy.AutoTest.OperationPlatform.POJO.RiskControlParamManagement_AccountApproveParamMaintainBean;
+import com.dy.AutoTest.OperationPlatform.POJO.RiskControlParamManagement_AccountBalanceParamMaintainBean;
+import com.dy.AutoTest.OperationPlatform.POJO.RiskControlParamManagement_AccountTradeParamMaintainBean;
+import com.dy.AutoTest.OperationPlatform.POJO.RiskControlRuleManagement_RiskControlRuleManagementBean;
+import com.dy.AutoTest.OperationPlatform.POJO.RiskControlRuleManagement_RiskControlTypeCorrespondingRulesManagementBean;
+import com.dy.AutoTest.OperationPlatform.POJO.RiskControlRuleManagement_RiskControlTypeManagementBean;
+import com.dy.AutoTest.OperationPlatform.POJO.RiskControlRuleManagement_RiskTypeAndTradeCodeManagementBean;
 import com.dy.AutoTest.OperationPlatform.POJO.SettlementManagement_PaymentApprovalBean;
 import com.dy.AutoTest.OperationPlatform.POJO.SettlementManagement_PaymentApprovalStatusQueryBean;
 import com.dy.AutoTest.OperationPlatform.POJO.SettlementManagement_PaymentOperationBean;
@@ -106,6 +115,15 @@ public class DataBusiness {
 	private SettlementManagement_SettlementBillQueryBean SettlementManagement_SettlementBillQueryBean;
 	private SettlementManagement_TradeClearingManagementOrderQueryBean SettlementManagement_TradeClearingManagementOrderQueryBean ;
 	private SettlementManagement_TradeClearingManagementQueryBean SettlementManagement_TradeClearingManagementQueryBean;
+	private RiskControlRuleManagement_RiskControlRuleManagementBean RiskControlRuleManagement_RiskControlRuleManagementBean;
+	private RiskControlRuleManagement_RiskControlTypeCorrespondingRulesManagementBean RiskControlRuleManagement_RiskControlTypeCorrespondingRulesManagementBean;
+	private RiskControlRuleManagement_RiskControlTypeManagementBean RiskControlRuleManagement_RiskControlTypeManagementBean;
+	private RiskControlRuleManagement_RiskTypeAndTradeCodeManagementBean RiskControlRuleManagement_RiskTypeAndTradeCodeManagementBean ;
+	private RiskControlParamManagement_AccountTradeParamMaintainBean RiskControlParamManagement_AccountTradeParamMaintainBean;
+	private RiskControlParamManagement_AccountBalanceParamMaintainBean RiskControlParamManagement_AccountBalanceParamMaintainBean;
+	private RiskControlParamManagement_AccountApproveParamMaintainBean RiskControlParamManagement_AccountApproveParamMaintainBean;
+	private BlackWhiteListManagement_BlackListMaintainBean BlackWhiteListManagement_BlackListMaintainBean;
+	private BlackWhiteListManagement_WhiteListMaintainBean BlackWhiteListManagement_WhiteListMaintainBean;
 
 
 
@@ -250,6 +268,33 @@ public class DataBusiness {
 				return pojo;
 			case "POP_Data_SettlementManagement_TradeClearingManagementQuery":
 				pojo=(T)testingDao.getData(tableName,ID,SettlementManagement_TradeClearingManagementQueryBean.class);
+				return pojo;
+			case "POP_Data_RiskControlRuleManagement_RiskControlRuleManagement":
+				pojo=(T)testingDao.getData(tableName,ID,RiskControlRuleManagement_RiskControlRuleManagementBean.class);
+				return pojo;
+			case "POP_Data_RiskControlRuleManagement_RiskControlTypeCorrespondingRulesManagement":
+				pojo=(T)testingDao.getData(tableName,ID,RiskControlRuleManagement_RiskControlTypeCorrespondingRulesManagementBean.class);
+				return pojo;
+			case "POP_Data_RiskControlRuleManagement_RiskControlTypeManagement":
+				pojo=(T)testingDao.getData(tableName,ID,RiskControlRuleManagement_RiskControlTypeManagementBean.class);
+				return pojo;
+			case "POP_Data_RiskControlRuleManagement_RiskTypeAndTradeCodeManagement":
+				pojo=(T)testingDao.getData(tableName,ID,RiskControlRuleManagement_RiskTypeAndTradeCodeManagementBean.class);
+				return pojo;
+			case "POP_Data_RiskControlParamManagement_AccountTradeParamMaintain":
+				pojo=(T)testingDao.getData(tableName,ID,RiskControlParamManagement_AccountTradeParamMaintainBean.class);
+				return pojo;
+			case "POP_Data_RiskControlParamManagement_AccountBalanceParamMaintain":
+				pojo=(T)testingDao.getData(tableName,ID,RiskControlParamManagement_AccountBalanceParamMaintainBean.class);
+				return pojo;
+			case "POP_Data_RiskControlParamManagement_AccountApproveParamMaintain":
+				pojo=(T)testingDao.getData(tableName,ID,RiskControlParamManagement_AccountApproveParamMaintainBean.class);
+				return pojo;
+			case "POP_Data_BlackWhiteListManagement_BlackListMaintain":
+				pojo=(T)testingDao.getData(tableName,ID,BlackWhiteListManagement_BlackListMaintainBean.class);
+				return pojo;
+			case "POP_Data_BlackWhiteListManagement_WhiteListMaintain":
+				pojo=(T)testingDao.getData(tableName,ID,BlackWhiteListManagement_WhiteListMaintainBean.class);
 				return pojo;
 			case "POP_Data_MerchantOper":
 				
@@ -398,6 +443,33 @@ public class DataBusiness {
 			break;
 		case "POP_Data_SettlementManagement_TradeClearingManagementOrderQuery":
 			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,SettlementManagement_TradeClearingManagementOrderQueryBean.class));
+			break;
+		case "POP_Data_RiskControlRuleManagement_RiskControlRuleManagement":
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,RiskControlRuleManagement_RiskControlRuleManagementBean.class));
+			break;
+		case "POP_Data_RiskControlRuleManagement_RiskControlTypeCorrespondingRulesManagement":
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,RiskControlRuleManagement_RiskControlTypeCorrespondingRulesManagementBean.class));
+			break;
+		case "POP_Data_RiskControlRuleManagement_RiskControlTypeManagement":
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,RiskControlRuleManagement_RiskControlTypeManagementBean.class));
+			break;
+		case "POP_Data_RiskControlRuleManagement_RiskTypeAndTradeCodeManagement":
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,RiskControlRuleManagement_RiskTypeAndTradeCodeManagementBean.class));
+			break;
+		case "POP_Data_RiskControlParamManagement_AccountTradeParamMaintain":
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,RiskControlParamManagement_AccountTradeParamMaintainBean.class));
+			break;
+		case "POP_Data_RiskControlParamManagement_AccountBalanceParamMaintain":
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,RiskControlParamManagement_AccountBalanceParamMaintainBean.class));
+			break;
+		case "POP_Data_RiskControlParamManagement_AccountApproveParamMaintain":
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,RiskControlParamManagement_AccountApproveParamMaintainBean.class));
+			break;
+		case "POP_Data_BlackWhiteListManagement_BlackListMaintain":
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,BlackWhiteListManagement_BlackListMaintainBean.class));
+			break;
+		case "POP_Data_BlackWhiteListManagement_WhiteListMaintain":
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,BlackWhiteListManagement_WhiteListMaintainBean.class));
 			break;
 		case "POP_Data_MerchantOper":
 			

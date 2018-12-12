@@ -7,19 +7,30 @@
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-  <test thread-count="5" name="SettlementManagement_PaymentApproval(failed)">
+  <test thread-count="5" name="BlackWhiteListManagement_WhiteListMaintain(failed)">
     <classes>
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.SettlementManagement.Payment.PaymentApprovalPageTest">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.WhiteListMaintainPageTest">
         <methods>
           <include name="beforeClass"/>
+          <include name="testAdd" invocation-numbers="0"/>
           <include name="afterMethod"/>
           <include name="AfterTest"/>
           <include name="beforeMethod"/>
           <include name="BeforeTest"/>
-          <include name="testCheck_Pass" invocation-numbers="0"/>
           <include name="init"/>
         </methods>
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.SettlementManagement.Payment.PaymentApprovalPageTest -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.WhiteListMaintainPageTest -->
     </classes>
-  </test> <!-- SettlementManagement_PaymentApproval(failed) -->
+  </test> <!-- BlackWhiteListManagement_WhiteListMaintain(failed) -->
+  <test thread-count="5" name="Quit(failed)">
+    <classes>
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
+        <methods>
+          <include name="testQuit"/>
+          <include name="init"/>
+          <include name="releaseBrowser"/>
+        </methods>
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest -->
+    </classes>
+  </test> <!-- Quit(failed) -->
 </suite> <!-- Failed suite [SuiteOperationPlatform] -->

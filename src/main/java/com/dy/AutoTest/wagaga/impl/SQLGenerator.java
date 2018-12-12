@@ -1,11 +1,9 @@
 package com.dy.AutoTest.wagaga.impl;
 
-import java.util.Map;
-import java.util.Map.Entry;
 
 import org.apache.commons.lang.StringUtils;
 
-import com.dy.AutoTest.wagaga.AG_Master;
+import com.dy.AutoTest.AG_Master;
 import com.dy.AutoTest.wagaga.FileUtil;
 import com.dy.AutoTest.web.dao.TestingDao;
 import com.dy.AutoTest.web.dao.impl.TestingDaoImpl;
@@ -13,7 +11,7 @@ import com.dy.AutoTest.web.dao.impl.TestingDaoImpl;
 public class SQLGenerator extends Generator{
 	
 	protected TestingDao testingDao=new TestingDaoImpl();
-	private Map<String, String> tableStruct=testingDao.getTableStruct(AG_Master.dataName);
+	private String [][] tableStruct=testingDao.getTableStruct(AG_Master.dataName);
 	
 	
 	public SQLGenerator() {
@@ -41,18 +39,33 @@ public class SQLGenerator extends Generator{
 			return String.format(insertTemplate, dataName);
 		}
 		
-		public String generateInsertValue(Map<String, String> tableStruct){
+		public String generateInsertValue(String [][] tableStruct){
+//			String insertValue = "(\r\n";
+//			for(Entry<String, String> entry: tableStruct.entrySet()) {
+//				if(entry.getKey().equals("ID")) continue;
+//				insertValue+=entry.getKey()+",";
+//				
+//			}
+//			insertValue=StringUtils.substringBeforeLast(insertValue,",");
+//			insertValue+="\r\n)\r\nvalues (\r\n";
+//			for(Entry<String, String> entry: tableStruct.entrySet()) {
+//				if(entry.getKey().equals("ID")) continue;
+//				insertValue+="\'"+entry.getKey()+"\',";
+//			}
+//			insertValue=StringUtils.substringBeforeLast(insertValue,",");
+//			insertValue+="\r\n);\r\n";
+//			return insertValue;
 			String insertValue = "(\r\n";
-			for(Entry<String, String> entry: tableStruct.entrySet()) {
-				if(entry.getKey().equals("ID")) continue;
-				insertValue+=entry.getKey()+",";
+			for(int i=0;i<tableStruct.length;i++) {
+				if(tableStruct [i][0].equals("ID")) continue;
+				insertValue+=tableStruct[i][0]+",";
 				
 			}
 			insertValue=StringUtils.substringBeforeLast(insertValue,",");
 			insertValue+="\r\n)\r\nvalues (\r\n";
-			for(Entry<String, String> entry: tableStruct.entrySet()) {
-				if(entry.getKey().equals("ID")) continue;
-				insertValue+="\'"+entry.getKey()+"\',";
+			for(int i=0;i<tableStruct.length;i++) {
+				if(tableStruct [i][0].equals("ID")) continue;
+				insertValue+="\'"+tableStruct[i][0]+"\',";
 			}
 			insertValue=StringUtils.substringBeforeLast(insertValue,",");
 			insertValue+="\r\n);\r\n";

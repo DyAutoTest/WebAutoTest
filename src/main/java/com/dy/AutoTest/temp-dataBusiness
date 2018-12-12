@@ -1,10 +1,10 @@
-private SettlementManagement_TradeClearingManagementQueryBean SettlementManagement_TradeClearingManagementQueryBean;
+private BlackWhiteListManagement_WhiteListMaintainBean BlackWhiteListManagement_WhiteListMaintainBean;
 
-case "POP_Data_SettlementManagement_TradeClearingManagementQuery":
-	pojo=(T)testingDao.getData(tableName,ID,SettlementManagement_TradeClearingManagementQueryBean.class);
+case "POP_Data_BlackWhiteListManagement_WhiteListMaintain":
+	pojo=(T)testingDao.getData(tableName,ID,BlackWhiteListManagement_WhiteListMaintainBean.class);
 	return pojo;
 
-case "POP_Data_SettlementManagement_TradeClearingManagementQuery":
-	list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,SettlementManagement_TradeClearingManagementQueryBean.class));
+case "POP_Data_BlackWhiteListManagement_WhiteListMaintain":
+	list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,BlackWhiteListManagement_WhiteListMaintainBean.class));
 	break;
 

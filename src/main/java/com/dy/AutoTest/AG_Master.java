@@ -1,8 +1,9 @@
-package com.dy.AutoTest.wagaga;
+package com.dy.AutoTest;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
+import com.dy.AutoTest.wagaga.IGenerate;
 import com.dy.AutoTest.wagaga.impl.DataBusinessGenerator;
 import com.dy.AutoTest.wagaga.impl.POGenerator;
 import com.dy.AutoTest.wagaga.impl.POJOGenerator;
@@ -14,22 +15,22 @@ public class AG_Master {
 	private static IGenerate ig;
 	
 
-	public static final String caseName="SettlementManagement_PaymentApproval";
-	public static final String caseNameAlias="PaymentApproval";
+	public static final String caseName="BlackWhiteListManagement_WhiteListMaintain";
+	public static final String caseNameAlias="WhiteListMaintain";
 	public static final String url="pop_"+caseName;
 	public static final String locatorName="POP_Loc_"+caseName;
 	public static final String dataName="POP_Data_"+caseName;
 
-	public static final String directoryPO="src/main/java/com/dy/AutoTest/OperationPlatform/PageObject/SettlementManagement/Payment/";
-	public static final String packageNamePO="com.dy.AutoTest.OperationPlatform.PageObject.SettlementManagement.Payment";
+	public static final String directoryPO="src/main/java/com/dy/AutoTest/OperationPlatform/PageObject/OnlineRiskControl/BlackWhiteListManagement/";
+	public static final String packageNamePO="com.dy.AutoTest.OperationPlatform.PageObject.OnlineRiskControl.BlackWhiteListManagement";
 	
 	public static final String directoryPOJO="src/main/java/com/dy/AutoTest/OperationPlatform/POJO/";
 	public static final String packageNamePOJO="com.dy.AutoTest.OperationPlatform.POJO";
 	
-	public static final String directoryPT="src/main/java/com/dy/AutoTest/OperationPlatform/TestCases/SettlementManagement/Payment/";
-	public static final String packageNamePT="com.dy.AutoTest.OperationPlatform.TestCases.SettlementManagement.Payment";
+	public static final String directoryPT="src/main/java/com/dy/AutoTest/OperationPlatform/TestCases/OnlineRiskControl/BlackWhiteListManagement/";
+	public static final String packageNamePT="com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement";
 	
-	public static final String directoryXML="src/main/java/com/dy/AutoTest/OperationPlatform/TestCases/SettlementManagement/Payment/";
+	public static final String directoryXML="src/main/java/com/dy/AutoTest/OperationPlatform/TestCases/OnlineRiskControl/BlackWhiteListManagement/";
 	public static final String directoryDataBusiness="src/main/java/com/dy/AutoTest/";
 	public static final String directorySQL="C:\\Users\\寒\\Documents\\Navicat\\SQLite\\servers\\AutoTest_0.0.3\\main\\";
 //	public static final String directorySQL="C:\\Users\\寒\\Desktop\\temp\\";

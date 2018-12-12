@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.dy.AutoTest.wagaga.AG_Master">
+      <class name="com.dy.AutoTest.AG_Master">
         <methods>
-          <include name="generatePageObject"/>
+          <include name="generateAll"/>
           <include name="release"/>
         </methods>
-      </class> <!-- com.dy.AutoTest.wagaga.AG_Master -->
+      </class> <!-- com.dy.AutoTest.AG_Master -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

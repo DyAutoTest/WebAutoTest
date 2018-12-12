@@ -30,7 +30,7 @@ public interface TestingDao {
 	boolean updateTestData(String tableName,Map<String, Object> updateMap, Map<String, Object> whereMap);
 	boolean updateTestData(String tableName,Map<String, Object> updateMap, Map<String, Object> whereMap,boolean existExpression);
 	boolean insertTestData(String tableName,Map<String , Object> insertMap);
-	Map<String, String> getTableStruct(String tableName);
+	String [][] getTableStruct(String tableName);
 	
 	boolean updateMerchantProductType(String productType, Map<String, Object> whereMap);
 	

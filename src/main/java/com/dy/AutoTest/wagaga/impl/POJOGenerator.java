@@ -1,9 +1,6 @@
 package com.dy.AutoTest.wagaga.impl;
 
-import java.util.Map;
-import java.util.Map.Entry;
-
-import com.dy.AutoTest.wagaga.AG_Master;
+import com.dy.AutoTest.AG_Master;
 import com.dy.AutoTest.wagaga.FileUtil;
 import com.dy.AutoTest.web.dao.TestingDao;
 import com.dy.AutoTest.web.dao.impl.TestingDaoImpl;
@@ -11,7 +8,7 @@ import com.dy.AutoTest.web.dao.impl.TestingDaoImpl;
 public class POJOGenerator extends Generator{
 	
 	protected TestingDao testingDao=new TestingDaoImpl();
-	private Map<String, String> tableStruct=testingDao.getTableStruct(AG_Master.dataName);
+	private String [][] tableStruct=testingDao.getTableStruct(AG_Master.dataName);
 	
 	public POJOGenerator() {
 		loadFile();
@@ -73,14 +70,14 @@ public class POJOGenerator extends Generator{
 			return String.format(setMethodTemplate, fieldName, fieldType, fieldName, fieldName, fieldName);
 		}
 		
-		public String generateMethod(Map<String, String> tableStruct){
+		public String generateMethod(String [][] tableStruct){
 			String methodStr = "";
-			for(Entry<String, String> entry: tableStruct.entrySet()) {
-				methodStr+=generateVariableIdentify(entry.getKey(), entry.getValue());
+			for(int i=0;i<tableStruct.length;i++) {
+				methodStr+=generateVariableIdentify(tableStruct[i][0], tableStruct[i][1]);
 			}
-			for (Entry<String, String> entry: tableStruct.entrySet()) { 
-				methodStr+=generateGetMethod(entry.getKey(),entry.getValue());
-				methodStr+=generateSetMethod(entry.getKey(),entry.getValue());
+			for (int i=0;i<tableStruct.length;i++) { 
+				methodStr+=generateGetMethod(tableStruct[i][0], tableStruct[i][1]);
+				methodStr+=generateSetMethod(tableStruct[i][0], tableStruct[i][1]);
 			}
 			return methodStr;
 		}

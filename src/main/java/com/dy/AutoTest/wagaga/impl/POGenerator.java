@@ -3,7 +3,7 @@ package com.dy.AutoTest.wagaga.impl;
 
 import java.util.List;
 
-import com.dy.AutoTest.wagaga.AG_Master;
+import com.dy.AutoTest.AG_Master;
 import com.dy.AutoTest.wagaga.FileUtil;
 import com.dy.AutoTest.web.beans.LocatorBean;
 import com.dy.AutoTest.web.dao.TestingDao;
@@ -121,7 +121,7 @@ public class POGenerator extends Generator{
 		}
 		//用于text和textarea标签
 		public  String generateInputMethod(String name) {
-			if(name.contains("date")||name.contains("Date")) {
+			if(name.contains("Date")) {
 				return String.format(inputTemplateForDate, name, name, name, name, name, name, name);
 			}
 			return String.format(inputTemplate, name, name, name, name, name, name);

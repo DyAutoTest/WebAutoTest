@@ -1,6 +1,6 @@
 package com.dy.AutoTest.wagaga.impl;
 
-import com.dy.AutoTest.wagaga.AG_Master;
+import com.dy.AutoTest.AG_Master;
 import com.dy.AutoTest.wagaga.FileUtil;
 
 public class TestngXMLGenerator extends Generator{

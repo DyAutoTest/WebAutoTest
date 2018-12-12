@@ -247,12 +247,30 @@ public class JdbcUtil {
 		return list;
 	}
 	
-	public Map<String, String> findTableStruct(String sql) 
+//	public Map<String, String> findTableStruct(String sql) 
+//			throws SQLException {
+//		Map<String, String> map = new HashMap<String, String>();
+//		pstmt = connection.prepareStatement(sql);
+//		resultSet = pstmt.executeQuery();//返回查询结果
+//		ResultSetMetaData metaData = resultSet.getMetaData();
+//		String columnTypeName=null;
+//		for(int i=0;i<metaData.getColumnCount();i++) {
+//			if(metaData.getColumnTypeName(i+1).equals("INTEGER")) {
+//				columnTypeName="int";
+//			}if(metaData.getColumnTypeName(i+1).equals("TEXT")) {
+//				columnTypeName="String";
+//			}
+//			map.put(metaData.getColumnName(i+1), columnTypeName);
+//		}
+//		return map;
+//	}
+	
+	public String [][] findTableStruct(String sql) 
 			throws SQLException {
-		Map<String, String> map = new HashMap<String, String>();
 		pstmt = connection.prepareStatement(sql);
 		resultSet = pstmt.executeQuery();//返回查询结果
 		ResultSetMetaData metaData = resultSet.getMetaData();
+		String[][] stringArray =new String [metaData.getColumnCount()][2];
 		String columnTypeName=null;
 		for(int i=0;i<metaData.getColumnCount();i++) {
 			if(metaData.getColumnTypeName(i+1).equals("INTEGER")) {
@@ -260,10 +278,12 @@ public class JdbcUtil {
 			}if(metaData.getColumnTypeName(i+1).equals("TEXT")) {
 				columnTypeName="String";
 			}
-			map.put(metaData.getColumnName(i+1), columnTypeName);
+			stringArray[i][0]=metaData.getColumnName(i+1);
+			stringArray[i][1]=columnTypeName;
 		}
-		return map;
+		return stringArray;
 	}
+	
 	
 	/**
 	 * 释放数据库连接

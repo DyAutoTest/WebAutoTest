@@ -128,6 +128,12 @@ public class DoPlus{
 		select =new Select(what(locationName));
 		return select;
 	}
+	
+	public Select whatSelect(String locationName,String replaceString) {
+		if(waitTime!=0) waiter.waitFor(waitTime);
+		select =new Select(what(locationName,replaceString));
+		return select;
+	}
 //	Select select = new Select(Element);
 //	select.selectByVisibleText("标签里的文字");
 //	select.selectByValue("  ");

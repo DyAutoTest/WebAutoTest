@@ -618,19 +618,19 @@ public class TestingDaoImpl implements TestingDao{
 	}
 
 	@Override
-	public Map<String, String> getTableStruct(String tableName) {
+	public String [][] getTableStruct(String tableName) {
 		if(tableName.equals("")) {
 			System.out.println("TableName is null! Please check!");
 			assertTrue(false);
 		}
-		Map<String, String> map=new HashMap<String,String>();
+		String [][] tableStruct = null;
 		String sql="select * from "+tableName;
 		try {
-			map=jdbcUtil.findTableStruct(sql); 
+			tableStruct=jdbcUtil.findTableStruct(sql); 
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		return map;
+		return tableStruct;
 	}
 
 
