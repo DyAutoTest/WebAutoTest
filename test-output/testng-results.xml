@@ -1,59 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="4" total="7" passed="3">
+<testng-results skipped="0" failed="0" ignored="2" total="7" passed="5">
   <reporter-output>
     <line>
-      <![CDATA[        2018-12-12 21:08:29): [Test]-"Login" is started]]>
+      <![CDATA[        2018-12-18 21:45:46): [Test]-"Login" is started]]>
     </line>
     <line>
-      <![CDATA[                2018-12-12 21:08:29: [Method]-"LoginPageTest.testLogin" is started]]>
+      <![CDATA[                2018-12-18 21:45:46: [Method]-"LoginPageTest.testLogin" is started]]>
     </line>
     <line>
-      <![CDATA[                2018-12-12 21:08:34: [Method]-"LoginPageTest.testLogin" is passed]]>
+      <![CDATA[                2018-12-18 21:45:51: [Method]-"LoginPageTest.testLogin" is passed]]>
     </line>
     <line>
-      <![CDATA[        2018-12-12 21:08:36): [Test]-"Login" is finished]]>
+      <![CDATA[        2018-12-18 21:45:53): [Test]-"Login" is finished]]>
     </line>
     <line>
-      <![CDATA[        2018-12-12 21:08:36): [Test]-"BlackWhiteListManagement_WhiteListMaintain" is started]]>
+      <![CDATA[        2018-12-18 21:45:53): [Test]-"BlackWhiteListManagement_BlackListMaintain" is started]]>
     </line>
     <line>
-      <![CDATA[                2018-12-12 21:08:36: [Method]-"WhiteListMaintainPageTest.testAdd" is started]]>
+      <![CDATA[                2018-12-18 21:45:53: [Method]-"BlackListMaintainPageTest.testQuery" is started]]>
     </line>
     <line>
-      <![CDATA[                2018-12-12 21:08:45: [Method]-"WhiteListMaintainPageTest.testAdd" is passed]]>
+      <![CDATA[                2018-12-18 21:46:16: [Method]-"BlackListMaintainPageTest.testQuery" is passed]]>
     </line>
     <line>
-      <![CDATA[        2018-12-12 21:08:47): [Test]-"BlackWhiteListManagement_WhiteListMaintain" is finished]]>
+      <![CDATA[                2018-12-18 21:46:18: [Method]-"BlackListMaintainPageTest.testRelease" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2018-12-18 21:46:27: [Method]-"BlackListMaintainPageTest.testRelease" is passed]]>
+    </line>
+    <line>
+      <![CDATA[                2018-12-18 21:46:29: [Method]-"BlackListMaintainPageTest.testAdd" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2018-12-18 21:46:40: [Method]-"BlackListMaintainPageTest.testAdd" is passed]]>
+    </line>
+    <line>
+      <![CDATA[        2018-12-18 21:46:42): [Test]-"BlackWhiteListManagement_BlackListMaintain" is finished]]>
     </line>
   </reporter-output>
-  <suite name="SuiteOperationPlatform" duration-ms="22090" started-at="2018-12-12T13:08:29Z" finished-at="2018-12-12T13:08:51Z">
+  <suite name="SuiteOperationPlatform" duration-ms="60556" started-at="2018-12-18T13:45:46Z" finished-at="2018-12-18T13:46:47Z">
     <groups>
     </groups>
-    <test name="Login" duration-ms="6990" started-at="2018-12-12T13:08:29Z" finished-at="2018-12-12T13:08:36Z">
+    <test name="Login" duration-ms="6962" started-at="2018-12-18T13:45:46Z" finished-at="2018-12-18T13:45:53Z">
       <class name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
-        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="BeforeTest" is-config="true" duration-ms="2" started-at="2018-12-12T13:08:29Z" finished-at="2018-12-12T13:08:29Z">
+        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="BeforeTest" is-config="true" duration-ms="2" started-at="2018-12-18T13:45:46Z" finished-at="2018-12-18T13:45:46Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@c6da8bb]]>
+                <![CDATA[org.testng.TestRunner@42679fc2]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[        2018-12-12 21:08:29): [Test]-"Login" is started]]>
+              <![CDATA[        2018-12-18 21:45:46): [Test]-"Login" is started]]>
             </line>
           </reporter-output>
         </test-method> <!-- BeforeTest -->
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="init" is-config="true" duration-ms="3" started-at="2018-12-12T13:08:29Z" finished-at="2018-12-12T13:08:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-12-12T13:08:29Z" finished-at="2018-12-12T13:08:29Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="beforeClass" is-config="true" duration-ms="1" started-at="2018-12-18T13:45:46Z" finished-at="2018-12-18T13:45:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-12-12T13:08:29Z" finished-at="2018-12-12T13:08:29Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="init" is-config="true" duration-ms="3" started-at="2018-12-18T13:45:46Z" finished-at="2018-12-18T13:45:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-12-18T13:45:46Z" finished-at="2018-12-18T13:45:46Z">
           <params>
             <param index="0">
               <value>
@@ -63,11 +75,11 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[                2018-12-12 21:08:29: [Method]-"LoginPageTest.testLogin" is started]]>
+              <![CDATA[                2018-12-18 21:45:46: [Method]-"LoginPageTest.testLogin" is started]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="testLogin" duration-ms="4964" started-at="2018-12-12T13:08:29Z" finished-at="2018-12-12T13:08:34Z">
+        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="testLogin" duration-ms="4938" started-at="2018-12-18T13:45:46Z" finished-at="2018-12-18T13:45:51Z">
           <params>
             <param index="0">
               <value>
@@ -78,7 +90,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="afterMethod" is-config="true" duration-ms="2000" started-at="2018-12-12T13:08:34Z" finished-at="2018-12-12T13:08:36Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="afterMethod" is-config="true" duration-ms="2000" started-at="2018-12-18T13:45:51Z" finished-at="2018-12-18T13:45:53Z">
           <params>
             <param index="0">
               <value>
@@ -88,108 +100,186 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[                2018-12-12 21:08:34: [Method]-"LoginPageTest.testLogin" is passed]]>
+              <![CDATA[                2018-12-18 21:45:51: [Method]-"LoginPageTest.testLogin" is passed]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="AfterTest" is-config="true" duration-ms="1" started-at="2018-12-12T13:08:36Z" finished-at="2018-12-12T13:08:36Z">
+        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="AfterTest" is-config="true" duration-ms="0" started-at="2018-12-18T13:45:53Z" finished-at="2018-12-18T13:45:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@c6da8bb]]>
+                <![CDATA[org.testng.TestRunner@42679fc2]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[        2018-12-12 21:08:36): [Test]-"Login" is finished]]>
+              <![CDATA[        2018-12-18 21:45:53): [Test]-"Login" is finished]]>
             </line>
           </reporter-output>
         </test-method> <!-- AfterTest -->
       </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest -->
     </test> <!-- Login -->
-    <test name="BlackWhiteListManagement_WhiteListMaintain" duration-ms="10437" started-at="2018-12-12T13:08:36Z" finished-at="2018-12-12T13:08:47Z">
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.WhiteListMaintainPageTest">
-        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.WhiteListMaintainPageTest@29176cc1]" name="BeforeTest" is-config="true" duration-ms="0" started-at="2018-12-12T13:08:36Z" finished-at="2018-12-12T13:08:36Z">
+    <test name="BlackWhiteListManagement_BlackListMaintain" duration-ms="48943" started-at="2018-12-18T13:45:53Z" finished-at="2018-12-18T13:46:42Z">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.BlackListMaintainPageTest">
+        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.BlackListMaintainPageTest@27ae2fd0]" name="BeforeTest" is-config="true" duration-ms="1" started-at="2018-12-18T13:45:53Z" finished-at="2018-12-18T13:45:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3bae64d0]]>
+                <![CDATA[org.testng.TestRunner@5e50df2e]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[        2018-12-12 21:08:36): [Test]-"BlackWhiteListManagement_WhiteListMaintain" is started]]>
+              <![CDATA[        2018-12-18 21:45:53): [Test]-"BlackWhiteListManagement_BlackListMaintain" is started]]>
             </line>
           </reporter-output>
         </test-method> <!-- BeforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.WhiteListMaintainPageTest@29176cc1]" name="beforeClass" is-config="true" duration-ms="1" started-at="2018-12-12T13:08:36Z" finished-at="2018-12-12T13:08:36Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.BlackListMaintainPageTest@27ae2fd0]" name="beforeClass" is-config="true" duration-ms="1" started-at="2018-12-18T13:45:53Z" finished-at="2018-12-18T13:45:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.WhiteListMaintainPageTest@29176cc1]" name="init" is-config="true" duration-ms="1" started-at="2018-12-12T13:08:36Z" finished-at="2018-12-12T13:08:36Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.BlackListMaintainPageTest@27ae2fd0]" name="init" is-config="true" duration-ms="2" started-at="2018-12-18T13:45:53Z" finished-at="2018-12-18T13:45:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.WhiteListMaintainPageTest@29176cc1]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-12-12T13:08:36Z" finished-at="2018-12-12T13:08:36Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.BlackListMaintainPageTest@27ae2fd0]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-12-18T13:45:53Z" finished-at="2018-12-18T13:45:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.WhiteListMaintainPageTest.testAdd(com.dy.AutoTest.OperationPlatform.POJO.BlackWhiteListManagement_WhiteListMaintainBean)]]>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.BlackListMaintainPageTest.testQuery(com.dy.AutoTest.OperationPlatform.POJO.BlackWhiteListManagement_BlackListMaintainBean)]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[                2018-12-12 21:08:36: [Method]-"WhiteListMaintainPageTest.testAdd" is started]]>
+              <![CDATA[                2018-12-18 21:45:53: [Method]-"BlackListMaintainPageTest.testQuery" is started]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testAdd(com.dy.AutoTest.OperationPlatform.POJO.BlackWhiteListManagement_WhiteListMaintainBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.WhiteListMaintainPageTest@29176cc1]" name="testAdd" duration-ms="8426" started-at="2018-12-12T13:08:36Z" data-provider="BlackWhiteListManagement_WhiteListMaintainByCaseNO" finished-at="2018-12-12T13:08:45Z">
+        <test-method status="PASS" signature="testQuery(com.dy.AutoTest.OperationPlatform.POJO.BlackWhiteListManagement_BlackListMaintainBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.BlackListMaintainPageTest@27ae2fd0]" name="testQuery" duration-ms="22923" started-at="2018-12-18T13:45:53Z" data-provider="BlackWhiteListManagement_BlackListMaintainByCaseNO" finished-at="2018-12-18T13:46:16Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.BlackWhiteListManagement_WhiteListMaintainBean@841e575]]>
+                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.BlackWhiteListManagement_BlackListMaintainBean@66629f63]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testQuery -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.BlackListMaintainPageTest@27ae2fd0]" name="afterMethod" is-config="true" duration-ms="2004" started-at="2018-12-18T13:46:16Z" finished-at="2018-12-18T13:46:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testQuery status=SUCCESS method=BlackListMaintainPageTest.testQuery(com.dy.AutoTest.OperationPlatform.POJO.BlackWhiteListManagement_BlackListMaintainBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.BlackListMaintainPageTest@27ae2fd0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-12-18 21:46:16: [Method]-"BlackListMaintainPageTest.testQuery" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.BlackListMaintainPageTest@27ae2fd0]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-12-18T13:46:18Z" finished-at="2018-12-18T13:46:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.BlackListMaintainPageTest.testRelease(com.dy.AutoTest.OperationPlatform.POJO.BlackWhiteListManagement_BlackListMaintainBean)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-12-18 21:46:18: [Method]-"BlackListMaintainPageTest.testRelease" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testRelease(com.dy.AutoTest.OperationPlatform.POJO.BlackWhiteListManagement_BlackListMaintainBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.BlackListMaintainPageTest@27ae2fd0]" name="testRelease" duration-ms="9006" started-at="2018-12-18T13:46:18Z" data-provider="BlackWhiteListManagement_BlackListMaintainByCaseNO" finished-at="2018-12-18T13:46:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.BlackWhiteListManagement_BlackListMaintainBean@287f7811]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRelease -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.BlackListMaintainPageTest@27ae2fd0]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2018-12-18T13:46:27Z" finished-at="2018-12-18T13:46:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRelease status=SUCCESS method=BlackListMaintainPageTest.testRelease(com.dy.AutoTest.OperationPlatform.POJO.BlackWhiteListManagement_BlackListMaintainBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.BlackListMaintainPageTest@27ae2fd0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-12-18 21:46:27: [Method]-"BlackListMaintainPageTest.testRelease" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.BlackListMaintainPageTest@27ae2fd0]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-12-18T13:46:29Z" finished-at="2018-12-18T13:46:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.BlackListMaintainPageTest.testAdd(com.dy.AutoTest.OperationPlatform.POJO.BlackWhiteListManagement_BlackListMaintainBean)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-12-18 21:46:29: [Method]-"BlackListMaintainPageTest.testAdd" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testAdd(com.dy.AutoTest.OperationPlatform.POJO.BlackWhiteListManagement_BlackListMaintainBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.BlackListMaintainPageTest@27ae2fd0]" name="testAdd" duration-ms="10984" started-at="2018-12-18T13:46:29Z" data-provider="BlackWhiteListManagement_BlackListMaintainByCaseNO" finished-at="2018-12-18T13:46:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.BlackWhiteListManagement_BlackListMaintainBean@1442f788]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAdd -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.WhiteListMaintainPageTest@29176cc1]" name="afterMethod" is-config="true" duration-ms="2000" started-at="2018-12-12T13:08:45Z" finished-at="2018-12-12T13:08:47Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.BlackListMaintainPageTest@27ae2fd0]" name="afterMethod" is-config="true" duration-ms="2002" started-at="2018-12-18T13:46:40Z" finished-at="2018-12-18T13:46:42Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testAdd status=SUCCESS method=WhiteListMaintainPageTest.testAdd(com.dy.AutoTest.OperationPlatform.POJO.BlackWhiteListManagement_WhiteListMaintainBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.WhiteListMaintainPageTest@29176cc1] output={null}]]]>
+                <![CDATA[[TestResult name=testAdd status=SUCCESS method=BlackListMaintainPageTest.testAdd(com.dy.AutoTest.OperationPlatform.POJO.BlackWhiteListManagement_BlackListMaintainBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.BlackListMaintainPageTest@27ae2fd0] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[                2018-12-12 21:08:45: [Method]-"WhiteListMaintainPageTest.testAdd" is passed]]>
+              <![CDATA[                2018-12-18 21:46:40: [Method]-"BlackListMaintainPageTest.testAdd" is passed]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.WhiteListMaintainPageTest@29176cc1]" name="AfterTest" is-config="true" duration-ms="0" started-at="2018-12-12T13:08:47Z" finished-at="2018-12-12T13:08:47Z">
+        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.BlackListMaintainPageTest@27ae2fd0]" name="AfterTest" is-config="true" duration-ms="2" started-at="2018-12-18T13:46:42Z" finished-at="2018-12-18T13:46:42Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3bae64d0]]>
+                <![CDATA[org.testng.TestRunner@5e50df2e]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[        2018-12-12 21:08:47): [Test]-"BlackWhiteListManagement_WhiteListMaintain" is finished]]>
+              <![CDATA[        2018-12-18 21:46:42): [Test]-"BlackWhiteListManagement_BlackListMaintain" is finished]]>
             </line>
           </reporter-output>
         </test-method> <!-- AfterTest -->
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.WhiteListMaintainPageTest -->
-    </test> <!-- BlackWhiteListManagement_WhiteListMaintain -->
-    <test name="Quit" duration-ms="4636" started-at="2018-12-12T13:08:47Z" finished-at="2018-12-12T13:08:51Z">
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.BlackListMaintainPageTest -->
+    </test> <!-- BlackWhiteListManagement_BlackListMaintain -->
+    <test name="Quit" duration-ms="4599" started-at="2018-12-18T13:46:42Z" finished-at="2018-12-18T13:46:47Z">
       <class name="com.dy.AutoTest.web.actions.SingletonSet">
-        <test-method status="PASS" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@23986957]" name="init" is-config="true" duration-ms="3837" started-at="2018-12-12T13:08:25Z" finished-at="2018-12-12T13:08:29Z">
+        <test-method status="PASS" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@23986957]" name="init" is-config="true" duration-ms="3497" started-at="2018-12-18T13:45:43Z" finished-at="2018-12-18T13:45:46Z">
           <params>
             <param index="0">
               <value>
@@ -205,21 +295,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="releaseJDBC()[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@23986957]" name="releaseJDBC" is-config="true" duration-ms="2820" started-at="2018-12-12T13:08:51Z" finished-at="2018-12-12T13:08:54Z">
+        <test-method status="PASS" signature="releaseJDBC()[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@23986957]" name="releaseJDBC" is-config="true" duration-ms="2813" started-at="2018-12-18T13:46:47Z" finished-at="2018-12-18T13:46:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- releaseJDBC -->
       </class> <!-- com.dy.AutoTest.web.actions.SingletonSet -->
       <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@6ce139a4]" name="init" is-config="true" duration-ms="2" started-at="2018-12-12T13:08:47Z" finished-at="2018-12-12T13:08:47Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1fe20588]" name="init" is-config="true" duration-ms="10" started-at="2018-12-18T13:46:42Z" finished-at="2018-12-18T13:46:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="testQuit()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@6ce139a4]" name="testQuit" duration-ms="3630" started-at="2018-12-12T13:08:47Z" finished-at="2018-12-12T13:08:50Z">
+        <test-method status="PASS" signature="testQuit()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1fe20588]" name="testQuit" duration-ms="3581" started-at="2018-12-18T13:46:42Z" finished-at="2018-12-18T13:46:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testQuit -->
-        <test-method status="PASS" signature="releaseBrowser()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@6ce139a4]" name="releaseBrowser" is-config="true" duration-ms="1001" started-at="2018-12-12T13:08:50Z" finished-at="2018-12-12T13:08:51Z">
+        <test-method status="PASS" signature="releaseBrowser()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1fe20588]" name="releaseBrowser" is-config="true" duration-ms="1002" started-at="2018-12-18T13:46:46Z" finished-at="2018-12-18T13:46:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- releaseBrowser -->

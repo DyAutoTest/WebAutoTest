@@ -21,6 +21,7 @@ public class OnlinePurchaseOrderQueryPageTest extends SuperTest{
 	public void init() {
     	OnlinePurchaseOrderQueryPage=new OnlinePurchaseOrderQueryPage(driver);
     	OnlinePurchaseOrderQueryPage.setWaitTime(500);
+    	iQuery=OnlinePurchaseOrderQueryPage;
     	iClickRadio=OnlinePurchaseOrderQueryPage;
     	iClickButton=OnlinePurchaseOrderQueryPage;
 		URL=host.toString()+DataBusiness.getData_URL("pop_OnlinePurchaseOrderQuery");
@@ -130,7 +131,8 @@ public class OnlinePurchaseOrderQueryPageTest extends SuperTest{
 			OnlinePurchaseOrderQueryPage.setKeepDomain(OnlinePurchaseOrderQueryBean.getKeepDomain());
 		}
 		
-		
+		OnlinePurchaseOrderQueryPage.clickAdvance();
+		wait.waitFor(1000);
 		clickRadio(OnlinePurchaseOrderQueryBean.getRadio());
 		
 		

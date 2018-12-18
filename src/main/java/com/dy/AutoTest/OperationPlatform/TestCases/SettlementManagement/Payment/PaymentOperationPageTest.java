@@ -141,10 +141,10 @@ public class PaymentOperationPageTest extends SuperTest{
 		PaymentOperationPage.clickCheck_Pass();
 		wait.waitFor(500);
 		PaymentOperationPage.setCheck_Pass_Text(spoBean.getCheck_Pass_Text());
-		PaymentOperationPage.clickCheck_Pass_Confirm();
-		System.out.println(PaymentOperationPage.getNotice());
-		Reporter.log(PaymentOperationPage.getNotice());
-//		PaymentOperationPage.clickCheck_Pass_Close();
+//		PaymentOperationPage.clickCheck_Pass_Confirm();
+//		System.out.println(PaymentOperationPage.getNotice());
+//		Reporter.log(PaymentOperationPage.getNotice());
+		PaymentOperationPage.clickCheck_Pass_Close();
 		wait.waitFor(500);
 		PaymentOperationPage.clickCheck_Close();
 	}
@@ -176,10 +176,10 @@ public class PaymentOperationPageTest extends SuperTest{
 		PaymentOperationPage.clickCheck_Cancel();
 		wait.waitFor(500);
 		PaymentOperationPage.setCheck_Cancel_Text(spoBean.getCheck_Cancel_Text());
-		PaymentOperationPage.clickCheck_Cancel_Confirm();
-		System.out.println(PaymentOperationPage.getNotice());
-		Reporter.log(PaymentOperationPage.getNotice());
-//		PaymentOperationPage.clickCheck_Cancel_Close();
+//		PaymentOperationPage.clickCheck_Cancel_Confirm();
+//		System.out.println(PaymentOperationPage.getNotice());
+//		Reporter.log(PaymentOperationPage.getNotice());
+		PaymentOperationPage.clickCheck_Cancel_Close();
 		wait.waitFor(500);
 		PaymentOperationPage.clickCheck_Close();
 	}
@@ -210,10 +210,10 @@ public class PaymentOperationPageTest extends SuperTest{
 		wait.waitFor(500);
 		PaymentOperationPage.clickCheck_TurnEbank();
 		wait.waitFor(500);
-		PaymentOperationPage.clickCheck_TurnEBank_Confirm();
-		System.out.println(PaymentOperationPage.getNotice());
-		Reporter.log(PaymentOperationPage.getNotice());
-//		PaymentOperationPage.clickCheck_TurnEBank_Close();
+//		PaymentOperationPage.clickCheck_TurnEBank_Confirm();
+//		System.out.println(PaymentOperationPage.getNotice());
+//		Reporter.log(PaymentOperationPage.getNotice());
+		PaymentOperationPage.clickCheck_TurnEBank_Close();
 		wait.waitFor(500);
 		PaymentOperationPage.clickCheck_Close();
 	}
@@ -267,6 +267,7 @@ public class PaymentOperationPageTest extends SuperTest{
 		wait.waitFor(500);
 		PaymentOperationPage.clickBatchCancel();
 		wait.waitFor(500);
+		PaymentOperationPage.setBatchCancel_Text(spoBean.getBatchCancel_Text());
 //		PaymentOperationPage.clickBatchPass_Confirm();
 //		System.out.println(PaymentOperationPage.getNotice());
 //		Reporter.log(PaymentOperationPage.getNotice());

@@ -106,7 +106,6 @@ public class RiskTypeAndTradeCodeManagementPageTest extends SuperTest{
 //		System.out.println(RiskTypeAndTradeCodeManagementPage.getNotice());
 //		Reporter.log(RiskTypeAndTradeCodeManagementPage.getNotice());
 		RiskTypeAndTradeCodeManagementPage.clickAdd_Close();
-		testCheck(rtatcmBean);
 	}
 	
 	@Test(dataProvider="RiskControlRuleManagement_RiskTypeAndTradeCodeManagementByCaseNO",description="运营平台-线上实时风控-风控类型与交易码维护-修改")
@@ -124,7 +123,6 @@ public class RiskTypeAndTradeCodeManagementPageTest extends SuperTest{
 //		System.out.println(RiskTypeAndTradeCodeManagementPage.getNotice());
 //		Reporter.log(RiskTypeAndTradeCodeManagementPage.getNotice());
 		RiskTypeAndTradeCodeManagementPage.clickUpdate_Close();
-		testCheck(rtatcmBean);
 	}
 	
 	public void doQueryForClickButton(RiskControlRuleManagement_RiskTypeAndTradeCodeManagementBean rtatcmBean) {

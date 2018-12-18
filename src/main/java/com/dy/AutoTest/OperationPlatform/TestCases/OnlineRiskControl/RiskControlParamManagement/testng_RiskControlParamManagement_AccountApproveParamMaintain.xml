@@ -24,10 +24,10 @@
 			<class
 				name="com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.RiskControlParamManagement.AccountApproveParamMaintainPageTest">
 				<methods>
-					<!-- <include name="testQuery" /> -->
-					<!-- <include name="testCheck" /> -->
-					<!-- <include name="testDelete" /> -->
-					<!-- <include name="testUpdate" /> -->
+					<include name="testQuery" />
+					<include name="testCheck" />
+					<include name="testDelete" />
+					<include name="testUpdate" />
 					<include name="testAdd" />
 				</methods>
 			</class> 

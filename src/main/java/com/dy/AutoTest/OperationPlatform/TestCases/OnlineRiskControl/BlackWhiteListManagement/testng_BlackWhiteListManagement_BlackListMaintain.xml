@@ -24,8 +24,8 @@
 			<class
 				name="com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.BlackListMaintainPageTest">
 				<methods>
-					<!-- <include name="testQuery" /> -->
-					<!-- <include name="testRelease" /> -->
+					<include name="testQuery" />
+					<include name="testRelease" />
 					<include name="testAdd" />
 				</methods>
 			</class> 

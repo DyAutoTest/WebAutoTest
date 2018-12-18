@@ -253,11 +253,11 @@ public class RiskApprovalPageTest extends SuperTest  {
 		RiskApprovalPage.setPass_Text(sraBean.getPass_Text());
 		wait.waitFor(500);
 		
-		RiskApprovalPage.clickPass_Confirm();
-		System.out.println(RiskApprovalPage.getNotice());
-		Reporter.log(RiskApprovalPage.getNotice());
+//		RiskApprovalPage.clickPass_Confirm();
+//		System.out.println(RiskApprovalPage.getNotice());
+//		Reporter.log(RiskApprovalPage.getNotice());
 
-//		RiskApprovalPage.clickPass_Close();
+		RiskApprovalPage.clickPass_Close();
 	}
 	
 	

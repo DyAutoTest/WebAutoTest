@@ -69,6 +69,7 @@ public class RiskControlTypeManagementPageTest extends SuperTest{
 		wait.waitFor(500);
 		RiskControlTypeManagementPage.selectUpdate_Module(rctmBean.getUpdate_ModuleName());
 		RiskControlTypeManagementPage.setUpdate_RiskControlTypeDescribe(rctmBean.getUpdate_RiskControlTypeDescribe());
+		wait.waitFor(2000);
 //		RiskControlTypeManagementPage.clickUpdate_Submit();
 //		System.out.println(RiskControlTypeManagementPage.getNotice());
 //		Reporter.log(RiskControlTypeManagementPage.getNotice());
@@ -83,7 +84,7 @@ public class RiskControlTypeManagementPageTest extends SuperTest{
 		doQueryForClickButton(rctmBean);
 		
 		RiskControlTypeManagementPage.clickDelete();
-		wait.waitFor(500);
+		wait.waitFor(1000);
 //		RiskControlTypeManagementPage.clickDelete_Submit();
 //		System.out.println(RiskControlTypeManagementPage.getNotice());
 //		Reporter.log(RiskControlTypeManagementPage.getNotice());
@@ -101,6 +102,7 @@ public class RiskControlTypeManagementPageTest extends SuperTest{
 		RiskControlTypeManagementPage.setAdd_RiskType(rctmBean.getRiskType());
 		RiskControlTypeManagementPage.selectAdd_Module(rctmBean.getModuleName());
 		RiskControlTypeManagementPage.setAdd_RiskControlTypeDescribe(rctmBean.getRiskControlTypeDescribe());
+		wait.waitFor(2000);
 //		RiskControlTypeManagementPage.clickAdd_Submit();
 //		System.out.println(RiskControlTypeManagementPage.getNotice());
 //		Reporter.log(RiskControlTypeManagementPage.getNotice());

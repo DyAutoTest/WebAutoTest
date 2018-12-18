@@ -78,10 +78,11 @@ public class WhiteListMaintainPageTest extends SuperTest{
 		doQueryForClickButton(bwlmBean);
 		
 		WhiteListMaintainPage.clickRelease();
+		wait.waitFor(1000);
 //		WhiteListMaintainPage.clickRelease_Confirm();
+//		System.out.println(WhiteListMaintainPage.getNotice());
+//		Reporter.log(WhiteListMaintainPage.getNotice());
 		WhiteListMaintainPage.clickRelease_Close();
-		System.out.println(WhiteListMaintainPage.getNotice());
-		Reporter.log(WhiteListMaintainPage.getNotice());
 	}
 	
 	
@@ -122,6 +123,7 @@ public class WhiteListMaintainPageTest extends SuperTest{
 		WhiteListMaintainPage.setAdd_DateBegin(bwlmBean.getDateBegin());
 		WhiteListMaintainPage.setAdd_DateEnd(bwlmBean.getDateEnd());
 		WhiteListMaintainPage.doLoseFocus("Add_DateEnd", 120, 0);
+		wait.waitFor(2000);
 //		WhiteListMaintainPage.clickAdd_Submit();
 //		System.out.println(WhiteListMaintainPage.getNotice());
 //		Reporter.log(WhiteListMaintainPage.getNotice());

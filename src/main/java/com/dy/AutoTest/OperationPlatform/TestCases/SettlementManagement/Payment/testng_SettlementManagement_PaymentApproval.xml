@@ -24,11 +24,11 @@
 			<class
 				name="com.dy.AutoTest.OperationPlatform.TestCases.SettlementManagement.Payment.PaymentApprovalPageTest">
 				<methods>
-					<!-- <include name="testQuery" /> -->
-					<!-- <include name="testCheck_Pass" /> -->
-					<!-- <include name="testCheck_Refuse" /> -->
+					<include name="testQuery" />
+					<include name="testCheck_Pass" />
+					<include name="testCheck_Refuse" />
 					<include name="testBatch_Pass" />
-					<!-- <include name="testBatch_Refuse" /> -->
+					<include name="testBatch_Refuse" />
 				</methods>
 			</class> 
 		</classes>

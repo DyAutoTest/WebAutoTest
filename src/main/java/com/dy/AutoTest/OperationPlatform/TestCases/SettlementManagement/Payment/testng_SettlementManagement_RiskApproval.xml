@@ -26,7 +26,6 @@
 				<methods>
 					<include name="testQuery" />
 					<include name="testCheck_Refuse" />
-					<include name="testCheck_Cancel" />
 					<include name="testCheck_Pass" />
 					<include name="testPass" />
 					<include name="testRefuse" />

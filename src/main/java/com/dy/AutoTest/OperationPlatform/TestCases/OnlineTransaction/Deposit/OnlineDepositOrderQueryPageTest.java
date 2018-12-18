@@ -20,7 +20,7 @@ public class OnlineDepositOrderQueryPageTest extends SuperTest{
 	public void init() {
     	/******** instant objectPage *********/
     	OnlineDepositOrderQueryPage=new OnlineDepositOrderQueryPage(driver);
-    	OnlineDepositOrderQueryPage.setWaitTime(500);
+//    	OnlineDepositOrderQueryPage.setWaitTime(500);
     	
     	/******** set URL *********/
 		URL=host.toString()+DataBusiness.getData_URL("pop_OnlineDepositOrderQuery");

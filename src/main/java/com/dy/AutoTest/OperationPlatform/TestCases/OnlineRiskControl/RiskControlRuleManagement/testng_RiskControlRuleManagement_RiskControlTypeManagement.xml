@@ -24,10 +24,10 @@
 			<class
 				name="com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.RiskControlRuleManagement.RiskControlTypeManagementPageTest">
 				<methods>
-					<!-- <include name="testQuery" /> -->
-					<!-- <include name="testAdd" /> -->
+					<include name="testQuery" />
+					<include name="testAdd" />
 					<include name="testUpdate" />
-					<!-- <include name="testDelete" /> -->
+					<include name="testDelete" />
 				</methods>
 			</class> 
 		</classes>

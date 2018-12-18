@@ -108,7 +108,6 @@ public class AccountApproveParamMaintainPageTest extends SuperTest{
 //		System.out.println(AccountApproveParamMaintainPage.getNotice());
 //		Reporter.log(AccountApproveParamMaintainPage.getNotice());
 		AccountApproveParamMaintainPage.clickDelete_Close();
-		testCheck(raapmBean);
 	}
 	
 	
@@ -135,7 +134,6 @@ public class AccountApproveParamMaintainPageTest extends SuperTest{
 //		System.out.println(AccountApproveParamMaintainPage.getNotice());
 //		Reporter.log(AccountApproveParamMaintainPage.getNotice());
 		AccountApproveParamMaintainPage.clickUpdate_Close();
-		testCheck(raapmBean);
 	}
 	
 	
@@ -162,7 +160,6 @@ public class AccountApproveParamMaintainPageTest extends SuperTest{
 //		System.out.println(AccountApproveParamMaintainPage.getNotice());
 //		Reporter.log(AccountApproveParamMaintainPage.getNotice());
 		AccountApproveParamMaintainPage.clickAdd_Close();
-		testCheck(raapmBean);
 	}
 	
 	

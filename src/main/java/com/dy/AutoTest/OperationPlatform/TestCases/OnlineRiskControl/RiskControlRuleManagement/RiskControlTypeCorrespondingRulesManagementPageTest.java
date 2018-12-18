@@ -98,12 +98,12 @@ public class RiskControlTypeCorrespondingRulesManagementPageTest extends SuperTe
 		RiskControlTypeCorrespondingRulesManagementPage.selectAdd_Module(rctcrmBean.getModuleName());
 		RiskControlTypeCorrespondingRulesManagementPage.clickAdd_RuleCheckbox(rctcrmBean.getRuleCheckbox());
 		RiskControlTypeCorrespondingRulesManagementPage.selectAdd_OperationSelection(rctcrmBean.getRuleCheckbox(),rctcrmBean.getOperationSelection());
+		wait.waitFor(1000);
 //		RiskControlTypeCorrespondingRulesManagementPage.clickAdd_Submit();
 //		System.out.println(RiskControlTypeCorrespondingRulesManagementPage.getNotice());
 //		Reporter.log(RiskControlTypeCorrespondingRulesManagementPage.getNotice());
 		
 		RiskControlTypeCorrespondingRulesManagementPage.clickAdd_Close();
-		testCheck(rctcrmBean);
 	}
 	
 	@Test(dataProvider="RiskControlRuleManagement_RiskControlTypeCorrespondingRulesManagementByCaseNO",description="运营平台-线上实时风控-风控类型对应风险规则维护-修改")
@@ -115,13 +115,13 @@ public class RiskControlTypeCorrespondingRulesManagementPageTest extends SuperTe
 		
 		RiskControlTypeCorrespondingRulesManagementPage.clickUpdate();
 		wait.waitFor(1000);
-		RiskControlTypeCorrespondingRulesManagementPage.clickUpdate_RuleCheckbox(rctcrmBean.getRuleCheckbox());
+//		RiskControlTypeCorrespondingRulesManagementPage.clickUpdate_RuleCheckbox(rctcrmBean.getRuleCheckbox());
 		RiskControlTypeCorrespondingRulesManagementPage.selectUpdate_OperationSelect(rctcrmBean.getRuleCheckbox(),rctcrmBean.getOperationSelection());
+		wait.waitFor(1000);
 //		RiskControlTypeCorrespondingRulesManagementPage.clickUpdate_Submit();
 //		System.out.println(RiskControlTypeCorrespondingRulesManagementPage.getNotice());
 //		Reporter.log(RiskControlTypeCorrespondingRulesManagementPage.getNotice());
 		RiskControlTypeCorrespondingRulesManagementPage.clickUpdate_Close();
-		testCheck(rctcrmBean);
 	}
 	
 	public void doQueryForClickButton(RiskControlRuleManagement_RiskControlTypeCorrespondingRulesManagementBean rctcrmBean) {

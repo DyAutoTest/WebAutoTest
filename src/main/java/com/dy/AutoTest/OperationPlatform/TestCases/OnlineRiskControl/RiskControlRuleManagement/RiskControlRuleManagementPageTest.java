@@ -90,7 +90,7 @@ public class RiskControlRuleManagementPageTest extends SuperTest{
 //		System.out.println(RiskControlTypeManagementPage.getNotice());
 //		Reporter.log(RiskControlTypeManagementPage.getNotice());
 		RiskControlRuleManagementPage.clickAdd_Close();
-		testCheck(rcrmBean);
+//		testCheck(rcrmBean);
 	}
 	
 	
@@ -111,7 +111,6 @@ public class RiskControlRuleManagementPageTest extends SuperTest{
 //		System.out.println(RiskControlTypeManagementPage.getNotice());
 //		Reporter.log(RiskControlTypeManagementPage.getNotice());
 		RiskControlRuleManagementPage.clickUpdate_Close();
-		testCheck(rcrmBean);
 	}
 	
 	public void doQueryForClickButton(RiskControlRuleManagement_RiskControlRuleManagementBean rcrmBean) {

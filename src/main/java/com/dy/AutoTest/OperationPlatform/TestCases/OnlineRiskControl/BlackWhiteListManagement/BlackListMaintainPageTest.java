@@ -75,6 +75,7 @@ public class BlackListMaintainPageTest extends SuperTest{
 		doQueryForClickButton(bblmBean);
 		
 		BlackListMaintainPage.clickRelease();
+		wait.waitFor(1000);
 //		BlackListMaintainPage.clickRelease_Confirm();
 //		System.out.println(BlackListMaintainPage.getNotice());
 //		Reporter.log(BlackListMaintainPage.getNotice());

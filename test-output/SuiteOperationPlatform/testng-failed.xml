@@ -7,21 +7,6 @@
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-  <test thread-count="5" name="BlackWhiteListManagement_WhiteListMaintain(failed)">
-    <classes>
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.WhiteListMaintainPageTest">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="testAdd" invocation-numbers="0"/>
-          <include name="afterMethod"/>
-          <include name="AfterTest"/>
-          <include name="beforeMethod"/>
-          <include name="BeforeTest"/>
-          <include name="init"/>
-        </methods>
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.BlackWhiteListManagement.WhiteListMaintainPageTest -->
-    </classes>
-  </test> <!-- BlackWhiteListManagement_WhiteListMaintain(failed) -->
   <test thread-count="5" name="Quit(failed)">
     <classes>
       <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
