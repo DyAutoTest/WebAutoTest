@@ -57,6 +57,10 @@ import com.dy.AutoTest.OperationPlatform.POJO.RiskControlRuleManagement_RiskCont
 import com.dy.AutoTest.OperationPlatform.POJO.RiskControlRuleManagement_RiskControlTypeCorrespondingRulesManagementBean;
 import com.dy.AutoTest.OperationPlatform.POJO.RiskControlRuleManagement_RiskControlTypeManagementBean;
 import com.dy.AutoTest.OperationPlatform.POJO.RiskControlRuleManagement_RiskTypeAndTradeCodeManagementBean;
+import com.dy.AutoTest.OperationPlatform.POJO.RiskControlWarning_EmailWarningBean;
+import com.dy.AutoTest.OperationPlatform.POJO.RiskControlWarning_LimitWarningBean;
+import com.dy.AutoTest.OperationPlatform.POJO.RiskControlWarning_TimesWarningBean;
+import com.dy.AutoTest.OperationPlatform.POJO.RiskControlWarning_WarningRuleManagementBean;
 import com.dy.AutoTest.OperationPlatform.POJO.SettlementManagement_PaymentApprovalBean;
 import com.dy.AutoTest.OperationPlatform.POJO.SettlementManagement_PaymentApprovalStatusQueryBean;
 import com.dy.AutoTest.OperationPlatform.POJO.SettlementManagement_PaymentOperationBean;
@@ -124,6 +128,10 @@ public class DataBusiness {
 	private RiskControlParamManagement_AccountApproveParamMaintainBean RiskControlParamManagement_AccountApproveParamMaintainBean;
 	private BlackWhiteListManagement_BlackListMaintainBean BlackWhiteListManagement_BlackListMaintainBean;
 	private BlackWhiteListManagement_WhiteListMaintainBean BlackWhiteListManagement_WhiteListMaintainBean;
+	private RiskControlWarning_WarningRuleManagementBean RiskControlWarning_WarningRuleManagementBean;
+	private RiskControlWarning_TimesWarningBean RiskControlWarning_TimesWarningBean;
+	private RiskControlWarning_LimitWarningBean RiskControlWarning_LimitWarningBean;
+	private RiskControlWarning_EmailWarningBean RiskControlWarning_EmailWarningBean;
 
 
 
@@ -296,6 +304,18 @@ public class DataBusiness {
 			case "POP_Data_BlackWhiteListManagement_WhiteListMaintain":
 				pojo=(T)testingDao.getData(tableName,ID,BlackWhiteListManagement_WhiteListMaintainBean.class);
 				return pojo;
+			case "POP_Data_RiskControlWarning_WarningRuleManagement":
+				pojo=(T)testingDao.getData(tableName,ID,RiskControlWarning_WarningRuleManagementBean.class);
+				return pojo;
+			case "POP_Data_RiskControlWarning_TimesWarning":
+				pojo=(T)testingDao.getData(tableName,ID,RiskControlWarning_TimesWarningBean.class);
+				return pojo;
+			case "POP_Data_RiskControlWarning_LimitWarning":
+				pojo=(T)testingDao.getData(tableName,ID,RiskControlWarning_LimitWarningBean.class);
+				return pojo;
+			case "POP_Data_RiskControlWarning_EmailWarning":
+				pojo=(T)testingDao.getData(tableName,ID,RiskControlWarning_EmailWarningBean.class);
+				return pojo;
 			case "POP_Data_MerchantOper":
 				
 				break;
@@ -320,7 +340,6 @@ public class DataBusiness {
 			case "Online_Data_Cashier_B2B":
 				pojo=(T)testingDao.getData(tableName,ID,OnlineCashierB2BBean.class);
 				return pojo;				
-				
 			case "Data_URL":
 				data_URLBean=new Data_URLBean();
 				break;
@@ -470,6 +489,18 @@ public class DataBusiness {
 			break;
 		case "POP_Data_BlackWhiteListManagement_WhiteListMaintain":
 			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,BlackWhiteListManagement_WhiteListMaintainBean.class));
+			break;
+		case "POP_Data_RiskControlWarning_WarningRuleManagement":
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,RiskControlWarning_WarningRuleManagementBean.class));
+			break;
+		case "POP_Data_RiskControlWarning_TimesWarning":
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,RiskControlWarning_TimesWarningBean.class));
+			break;
+		case "POP_Data_RiskControlWarning_LimitWarning":
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,RiskControlWarning_LimitWarningBean.class));
+			break;
+		case "POP_Data_RiskControlWarning_EmailWarning":
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,RiskControlWarning_EmailWarningBean.class));
 			break;
 		case "POP_Data_MerchantOper":
 			

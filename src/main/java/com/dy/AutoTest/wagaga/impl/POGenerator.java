@@ -41,9 +41,10 @@ public class POGenerator extends Generator{
 		private String packageTemplate="package %s;\r\n\r\n";
 		private String importClass="import org.openqa.selenium.Keys;\r\n"
 				+ "import org.openqa.selenium.WebDriver;\r\n\r\n"
+				+ "import com.dy.AutoTest.web.api.IQuery;\r\n"
 				+ "import com.dy.AutoTest.web.api.SuperPage;\r\n"
 				+ "import com.dy.AutoTest.web.actions.DoPlus;\r\n\r\n";
-		private String classIdentify="public class %s extends SuperPage{\r\n"
+		private String classIdentify="public class %s extends SuperPage implements IQuery{\r\n"
 				+ "	public %s(WebDriver driver) {\r\n"
 				+ "		super(driver);\r\n"
 				+ "		du.loadLocator(\"%s\");\r\n"

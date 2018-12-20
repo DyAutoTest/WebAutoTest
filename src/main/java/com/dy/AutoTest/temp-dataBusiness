@@ -1,10 +1,10 @@
-private BlackWhiteListManagement_WhiteListMaintainBean BlackWhiteListManagement_WhiteListMaintainBean;
+private RiskControlWarning_EmailWarningBean RiskControlWarning_EmailWarningBean;
 
-case "POP_Data_BlackWhiteListManagement_WhiteListMaintain":
-	pojo=(T)testingDao.getData(tableName,ID,BlackWhiteListManagement_WhiteListMaintainBean.class);
+case "POP_Data_RiskControlWarning_EmailWarning":
+	pojo=(T)testingDao.getData(tableName,ID,RiskControlWarning_EmailWarningBean.class);
 	return pojo;
 
-case "POP_Data_BlackWhiteListManagement_WhiteListMaintain":
-	list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,BlackWhiteListManagement_WhiteListMaintainBean.class));
+case "POP_Data_RiskControlWarning_EmailWarning":
+	list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,RiskControlWarning_EmailWarningBean.class));
 	break;
 
