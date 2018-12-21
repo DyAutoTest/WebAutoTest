@@ -4,6 +4,7 @@ import static org.testng.Assert.assertTrue;
 
 
 import java.util.List;
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -36,7 +37,11 @@ public class OnlineCashierB2BTest extends SuperTest{
 		data.loadDataBeanList("Online_Data_Cashier_B2B");
 		return data.getDataBeanArray();
 	}
-	
+	@DataProvider(name="B2BByCaseNO")
+	protected static Object[][] parametersPool(Method method){
+		data.loadDataBeanList("Online_Data_Cashier_B2B",method.getName());
+		return data.getDataBeanArray();
+	}
 
 	@Test(dataProvider="B2B",description="收银台-B2B收款")
 	public void testOnlineCashierB2B(OnlineCashierB2BBean OnlineCashierB2BBean) {
@@ -162,4 +167,56 @@ public class OnlineCashierB2BTest extends SuperTest{
 		}
 	}
 	
+	
+	@Test(dataProvider="B2BByCaseNO",description="收银台-B2B收款-扫码")
+	public void testB2BScanCode(OnlineCashierB2BBean OnlineCashierB2BBean) {
+		OnlineCashierB2BPage.navigateTo(URL);
+		OnlineCashierB2BPage.setWaitTime(100);
+		List<String> selectList=new ArrayList<String>();
+		Map<String, Object> whereMap=new HashMap<String , Object>();
+		selectList.add("*");
+		whereMap.put("PresentID", OnlineCashierB2BBean.getID());
+		List<Map<String, Object>> subMerchants=DataBusiness.queryMore("Online_Data_Cashier_B2B_Sub", selectList, whereMap);
+		if(subMerchants.size()==0) {
+			System.out.println("Select table(Online_Data_Cashier_B2B_Sub) is null");
+			System.out.println("查询子商户结果为空");
+			Reporter.log("查询子商户结果为空");
+			assertTrue(false,"Select table(Online_Data_Cashier_B2B_Sub) is null");
+		}
+		if(OnlineCashierB2BBean.getReceiptMerchantType().equals("O")&&subMerchants.size()>1) {
+			System.out.println("主商户收款类型为单笔，子商户查询出多笔，不符合要求，请检查测试数据");
+			Reporter.log("主商户收款类型为单笔，子商户查询出多笔，不符合要求，请检查测试数据");
+			assertTrue(false,"It is not a Single Payment");
+		}
+		if(OnlineCashierB2BBean.getReceiptMerchantType().equals("M")&&subMerchants.size()==1) {
+			System.out.println("主商户收款类型为多笔，子商户查询出一笔，不符合要求，请检查测试数据");
+			Reporter.log("主商户收款类型为多笔，子商户查询出一笔，不符合要求，请检查测试数据");
+			assertTrue(false,"It is not a Multi Payment");
+		}
+		OnlineCashierB2BPage.setMerchantNO(OnlineCashierB2BBean.getMerchantNO());
+		OnlineCashierB2BPage.setCertificatePassword(OnlineCashierB2BBean.getCertificatePassword());
+		OnlineCashierB2BPage.resetMerchantResource();
+		wait.waitFor(500);
+		OnlineCashierB2BPage.GoToB2B();
+		String merchantRequestNO=OnlineCashierB2BPage.getMerchantRequestNO();
+		OnlineCashierB2BPage.setReceiptMerchantNO(OnlineCashierB2BBean.getReceiptMerchantNO());
+		OnlineCashierB2BPage.setOrderAmount(OnlineCashierB2BBean.getOrderAmount());
+		OnlineCashierB2BPage.setPaymentAmout(OnlineCashierB2BBean.getPaymentAmout());
+		//ReceiptMerchantType : M代表多笔交易，O代表单笔交易
+		OnlineCashierB2BPage.setReceiptMerchantType(OnlineCashierB2BBean.getReceiptMerchantType());
+		for(int i=0;i<subMerchants.size()-1;i++) {
+			OnlineCashierB2BPage.doSubOrderAdd();
+		}
+		for(int i=0;i<subMerchants.size();i++) {
+			OnlineCashierB2BPage.setSubOrderNO("D"+merchantRequestNO+(i+1), i);
+			OnlineCashierB2BPage.setSubOrderAmount(subMerchants.get(i).get("SubOrderAmount").toString(), i);
+			OnlineCashierB2BPage.setSubPaymentAmount(subMerchants.get(i).get("SubPaymentAmount").toString(), i);
+			OnlineCashierB2BPage.setSubReceiptMerchantNO(subMerchants.get(i).get("SubReceiptMerchantNO").toString(), i);
+		}
+		OnlineCashierB2BPage.doSubmit();
+		OnlineCashierB2BPage.doSubmit2();
+		wait.waitFor(200);
+		OnlineCashierB2BPage.doPageDown();
+		wait.waitFor(3600000);
+	}
 }
