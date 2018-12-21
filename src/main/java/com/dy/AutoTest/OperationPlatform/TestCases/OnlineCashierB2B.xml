@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="OnlineCashierB2B">
+	<parameter name="browserCategory" value="chrome"></parameter>
+	<parameter name="environment" value="online_simulator_uat"></parameter>
+
+	<test thread-count="5" name="OnlineCashierB2B">
+		<classes>
+			<class name="com.dy.AutoTest.web.actions.SingletonSet"></class>
+			<class
+				name="com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest">
+				<methods>
+					<!-- 账户、快捷、网银支付 -->
+					<include name="testOnlineCashierB2B" />
+					<!-- 扫码 -->
+					<include name="testB2BScanCode" />
+				</methods>
+			</class> 
+		</classes>
+	</test>
+	
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+</suite> <!-- SuiteOperationPlatform -->
