@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="OnlineCashierB2B"
-           tests="3"
+           tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="57.342">
+           time="84.649">
   <properties />
   
   
-            <testcase name="testOnlineCashierB2B" time="25.834" classname="com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest" />
-                <testcase name="testOnlineCashierB2B" time="30.736" classname="com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest" />
-                <testcase name="quitBrowser" time="0.772" classname="com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest" />
+            <testcase name="testB2BScanCode" time="84.649" classname="com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest" />
       
 </testsuite>

@@ -1,285 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="7" passed="5">
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[        2018-12-19 18:18:37): [Test]-"Login" is started]]>
+      <![CDATA[        2018-12-21 09:15:39): [Test]-"OnlineCashierB2B" is started]]>
     </line>
     <line>
-      <![CDATA[                2018-12-19 18:18:37: [Method]-"LoginPageTest.testLogin" is started]]>
+      <![CDATA[                2018-12-21 09:15:39: [Method]-"OnlineCashierB2BTest.testB2BScanCode" is started]]>
     </line>
     <line>
-      <![CDATA[                2018-12-19 18:18:42: [Method]-"LoginPageTest.testLogin" is passed]]>
+      <![CDATA[                2018-12-21 09:17:04: [Method]-"OnlineCashierB2BTest.testB2BScanCode" is passed]]>
     </line>
     <line>
-      <![CDATA[        2018-12-19 18:18:44): [Test]-"Login" is finished]]>
-    </line>
-    <line>
-      <![CDATA[        2018-12-19 18:18:44): [Test]-"RiskControlWarning_TimesWarning" is started]]>
-    </line>
-    <line>
-      <![CDATA[                2018-12-19 18:18:44: [Method]-"TimesWarningPageTest.testQuery" is started]]>
-    </line>
-    <line>
-      <![CDATA[                2018-12-19 18:18:54: [Method]-"TimesWarningPageTest.testQuery" is passed]]>
-    </line>
-    <line>
-      <![CDATA[                2018-12-19 18:18:56: [Method]-"TimesWarningPageTest.testQuery" is started]]>
-    </line>
-    <line>
-      <![CDATA[                2018-12-19 18:19:05: [Method]-"TimesWarningPageTest.testQuery" is passed]]>
-    </line>
-    <line>
-      <![CDATA[                2018-12-19 18:19:07: [Method]-"TimesWarningPageTest.testQuery" is started]]>
-    </line>
-    <line>
-      <![CDATA[                2018-12-19 18:19:16: [Method]-"TimesWarningPageTest.testQuery" is passed]]>
-    </line>
-    <line>
-      <![CDATA[        2018-12-19 18:19:18): [Test]-"RiskControlWarning_TimesWarning" is finished]]>
+      <![CDATA[        2018-12-21 09:17:06): [Test]-"OnlineCashierB2B" is finished]]>
     </line>
   </reporter-output>
-  <suite name="SuiteOperationPlatform" duration-ms="46387" started-at="2018-12-19T10:18:37Z" finished-at="2018-12-19T10:19:23Z">
+  <suite name="OnlineCashierB2B" duration-ms="86695" started-at="2018-12-21T01:15:39Z" finished-at="2018-12-21T01:17:06Z">
     <groups>
     </groups>
-    <test name="Login" duration-ms="7396" started-at="2018-12-19T10:18:37Z" finished-at="2018-12-19T10:18:44Z">
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
-        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="BeforeTest" is-config="true" duration-ms="4" started-at="2018-12-19T10:18:37Z" finished-at="2018-12-19T10:18:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@2f00f851]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[        2018-12-19 18:18:37): [Test]-"Login" is started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- BeforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-12-19T10:18:37Z" finished-at="2018-12-19T10:18:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="init" is-config="true" duration-ms="3" started-at="2018-12-19T10:18:37Z" finished-at="2018-12-19T10:18:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-12-19T10:18:37Z" finished-at="2018-12-19T10:18:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest.testLogin(java.lang.String)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2018-12-19 18:18:37: [Method]-"LoginPageTest.testLogin" is started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="testLogin" duration-ms="5367" started-at="2018-12-19T10:18:37Z" finished-at="2018-12-19T10:18:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[T00064]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="afterMethod" is-config="true" duration-ms="2000" started-at="2018-12-19T10:18:42Z" finished-at="2018-12-19T10:18:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testLogin status=SUCCESS method=LoginPageTest.testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2018-12-19 18:18:42: [Method]-"LoginPageTest.testLogin" is passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="AfterTest" is-config="true" duration-ms="1" started-at="2018-12-19T10:18:44Z" finished-at="2018-12-19T10:18:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@2f00f851]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[        2018-12-19 18:18:44): [Test]-"Login" is finished]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- AfterTest -->
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest -->
-    </test> <!-- Login -->
-    <test name="RiskControlWarning_TimesWarning" duration-ms="34387" started-at="2018-12-19T10:18:44Z" finished-at="2018-12-19T10:19:18Z">
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.RiskControlWarning.TimesWarningPageTest">
-        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.RiskControlWarning.TimesWarningPageTest@27ae2fd0]" name="BeforeTest" is-config="true" duration-ms="1" started-at="2018-12-19T10:18:44Z" finished-at="2018-12-19T10:18:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@4207609e]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[        2018-12-19 18:18:44): [Test]-"RiskControlWarning_TimesWarning" is started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- BeforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.RiskControlWarning.TimesWarningPageTest@27ae2fd0]" name="beforeClass" is-config="true" duration-ms="1" started-at="2018-12-19T10:18:44Z" finished-at="2018-12-19T10:18:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.RiskControlWarning.TimesWarningPageTest@27ae2fd0]" name="init" is-config="true" duration-ms="1" started-at="2018-12-19T10:18:44Z" finished-at="2018-12-19T10:18:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.RiskControlWarning.TimesWarningPageTest@27ae2fd0]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-12-19T10:18:44Z" finished-at="2018-12-19T10:18:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.RiskControlWarning.TimesWarningPageTest.testQuery(com.dy.AutoTest.OperationPlatform.POJO.RiskControlWarning_TimesWarningBean)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2018-12-19 18:18:44: [Method]-"TimesWarningPageTest.testQuery" is started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testQuery(com.dy.AutoTest.OperationPlatform.POJO.RiskControlWarning_TimesWarningBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.RiskControlWarning.TimesWarningPageTest@27ae2fd0]" name="testQuery" duration-ms="10425" started-at="2018-12-19T10:18:44Z" data-provider="RiskControlWarning_TimesWarningByCaseNO" finished-at="2018-12-19T10:18:54Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.RiskControlWarning_TimesWarningBean@66629f63]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testQuery -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.RiskControlWarning.TimesWarningPageTest@27ae2fd0]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2018-12-19T10:18:54Z" finished-at="2018-12-19T10:18:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testQuery status=SUCCESS method=TimesWarningPageTest.testQuery(com.dy.AutoTest.OperationPlatform.POJO.RiskControlWarning_TimesWarningBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.RiskControlWarning.TimesWarningPageTest@27ae2fd0] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2018-12-19 18:18:54: [Method]-"TimesWarningPageTest.testQuery" is passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.RiskControlWarning.TimesWarningPageTest@27ae2fd0]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2018-12-19T10:18:56Z" finished-at="2018-12-19T10:18:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.RiskControlWarning.TimesWarningPageTest.testQuery(com.dy.AutoTest.OperationPlatform.POJO.RiskControlWarning_TimesWarningBean)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2018-12-19 18:18:56: [Method]-"TimesWarningPageTest.testQuery" is started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testQuery(com.dy.AutoTest.OperationPlatform.POJO.RiskControlWarning_TimesWarningBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.RiskControlWarning.TimesWarningPageTest@27ae2fd0]" name="testQuery" duration-ms="8963" started-at="2018-12-19T10:18:56Z" data-provider="RiskControlWarning_TimesWarningByCaseNO" finished-at="2018-12-19T10:19:05Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.RiskControlWarning_TimesWarningBean@13cda7c9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testQuery -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.RiskControlWarning.TimesWarningPageTest@27ae2fd0]" name="afterMethod" is-config="true" duration-ms="2003" started-at="2018-12-19T10:19:05Z" finished-at="2018-12-19T10:19:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testQuery status=SUCCESS method=TimesWarningPageTest.testQuery(com.dy.AutoTest.OperationPlatform.POJO.RiskControlWarning_TimesWarningBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.RiskControlWarning.TimesWarningPageTest@27ae2fd0] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2018-12-19 18:19:05: [Method]-"TimesWarningPageTest.testQuery" is passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.RiskControlWarning.TimesWarningPageTest@27ae2fd0]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-12-19T10:19:07Z" finished-at="2018-12-19T10:19:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.RiskControlWarning.TimesWarningPageTest.testQuery(com.dy.AutoTest.OperationPlatform.POJO.RiskControlWarning_TimesWarningBean)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2018-12-19 18:19:07: [Method]-"TimesWarningPageTest.testQuery" is started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testQuery(com.dy.AutoTest.OperationPlatform.POJO.RiskControlWarning_TimesWarningBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.RiskControlWarning.TimesWarningPageTest@27ae2fd0]" name="testQuery" duration-ms="8969" started-at="2018-12-19T10:19:07Z" data-provider="RiskControlWarning_TimesWarningByCaseNO" finished-at="2018-12-19T10:19:16Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.RiskControlWarning_TimesWarningBean@2e380628]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testQuery -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.RiskControlWarning.TimesWarningPageTest@27ae2fd0]" name="afterMethod" is-config="true" duration-ms="2003" started-at="2018-12-19T10:19:16Z" finished-at="2018-12-19T10:19:18Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testQuery status=SUCCESS method=TimesWarningPageTest.testQuery(com.dy.AutoTest.OperationPlatform.POJO.RiskControlWarning_TimesWarningBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.RiskControlWarning.TimesWarningPageTest@27ae2fd0] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2018-12-19 18:19:16: [Method]-"TimesWarningPageTest.testQuery" is passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.RiskControlWarning.TimesWarningPageTest@27ae2fd0]" name="AfterTest" is-config="true" duration-ms="1" started-at="2018-12-19T10:19:18Z" finished-at="2018-12-19T10:19:18Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@4207609e]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[        2018-12-19 18:19:18): [Test]-"RiskControlWarning_TimesWarning" is finished]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- AfterTest -->
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.RiskControlWarning.TimesWarningPageTest -->
-    </test> <!-- RiskControlWarning_TimesWarning -->
-    <test name="Quit" duration-ms="4567" started-at="2018-12-19T10:19:18Z" finished-at="2018-12-19T10:19:23Z">
+    <test name="OnlineCashierB2B" duration-ms="86695" started-at="2018-12-21T01:15:39Z" finished-at="2018-12-21T01:17:06Z">
       <class name="com.dy.AutoTest.web.actions.SingletonSet">
-        <test-method status="PASS" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@23986957]" name="init" is-config="true" duration-ms="3800" started-at="2018-12-19T10:18:33Z" finished-at="2018-12-19T10:18:37Z">
+        <test-method status="PASS" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@23f7d05d]" name="init" is-config="true" duration-ms="3723" started-at="2018-12-21T01:15:36Z" finished-at="2018-12-21T01:15:39Z">
           <params>
             <param index="0">
               <value>
@@ -288,32 +28,95 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[pop_uat]]>
+                <![CDATA[online_simulator_uat]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="releaseJDBC()[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@23986957]" name="releaseJDBC" is-config="true" duration-ms="2791" started-at="2018-12-19T10:19:23Z" finished-at="2018-12-19T10:19:26Z">
+        <test-method status="PASS" signature="releaseJDBC()[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@23f7d05d]" name="releaseJDBC" is-config="true" duration-ms="2854" started-at="2018-12-21T01:17:06Z" finished-at="2018-12-21T01:17:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- releaseJDBC -->
       </class> <!-- com.dy.AutoTest.web.actions.SingletonSet -->
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1fe20588]" name="init" is-config="true" duration-ms="5" started-at="2018-12-19T10:19:18Z" finished-at="2018-12-19T10:19:18Z">
+      <class name="com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest">
+        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495]" name="BeforeTest" is-config="true" duration-ms="2" started-at="2018-12-21T01:15:39Z" finished-at="2018-12-21T01:15:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@60c8a093]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2018-12-21 09:15:39): [Test]-"OnlineCashierB2B" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-12-21T01:15:39Z" finished-at="2018-12-21T01:15:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495]" name="init" is-config="true" duration-ms="9" started-at="2018-12-21T01:15:39Z" finished-at="2018-12-21T01:15:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="testQuit()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1fe20588]" name="testQuit" duration-ms="3554" started-at="2018-12-19T10:19:18Z" finished-at="2018-12-19T10:19:22Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-12-21T01:15:39Z" finished-at="2018-12-21T01:15:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest.testB2BScanCode(com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2BBean)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-12-21 09:15:39: [Method]-"OnlineCashierB2BTest.testB2BScanCode" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testB2BScanCode(com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2BBean)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495]" name="testB2BScanCode" duration-ms="84649" started-at="2018-12-21T01:15:39Z" description="收银台-B2B收款-扫码" data-provider="B2BByCaseNO" finished-at="2018-12-21T01:17:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2BBean@55322aab]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testQuit -->
-        <test-method status="PASS" signature="releaseBrowser()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1fe20588]" name="releaseBrowser" is-config="true" duration-ms="1002" started-at="2018-12-19T10:19:22Z" finished-at="2018-12-19T10:19:23Z">
+        </test-method> <!-- testB2BScanCode -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495]" name="afterMethod" is-config="true" duration-ms="2003" started-at="2018-12-21T01:17:04Z" finished-at="2018-12-21T01:17:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testB2BScanCode status=SUCCESS method=OnlineCashierB2BTest.testB2BScanCode(com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2BBean)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
+            <line>
+              <![CDATA[                2018-12-21 09:17:04: [Method]-"OnlineCashierB2BTest.testB2BScanCode" is passed]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- releaseBrowser -->
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest -->
-    </test> <!-- Quit -->
-  </suite> <!-- SuiteOperationPlatform -->
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest@1e730495]" name="AfterTest" is-config="true" duration-ms="2" started-at="2018-12-21T01:17:06Z" finished-at="2018-12-21T01:17:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@60c8a093]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2018-12-21 09:17:06): [Test]-"OnlineCashierB2B" is finished]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2BTest -->
+    </test> <!-- OnlineCashierB2B -->
+  </suite> <!-- OnlineCashierB2B -->
 </testng-results>
