@@ -113,6 +113,23 @@ public class SuperTest {
 		doQuery(1000);
 	}
 	public void doQuery(int waitTime) {
+//		iQuery.doPageDown();
+		iQuery.clickQuery();
+		wait.waitFor(waitTime);
+		iQuery.doPageDown();
+		wait.waitFor(1000+waitTime);
+		iQuery.doPageUp();
+		wait.waitFor(waitTime);
+		iQuery.clickReset();
+		wait.waitFor(waitTime);
+	}
+	public void clickAdvanceBeforeDoQuery() {
+		clickAdvanceBeforeDoQuery(1000);
+	}
+	public void clickAdvanceBeforeDoQuery(int waitTime) {
+		wait.waitFor(1000);
+		iQuery.clickAdvance();
+		wait.waitFor(1000);
 		iQuery.clickQuery();
 		wait.waitFor(waitTime);
 		iQuery.doPageDown();

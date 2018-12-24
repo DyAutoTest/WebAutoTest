@@ -6,4 +6,5 @@ public interface IQuery {
 	public void doPageDown();
 	public void doPageUp();
 	public void clickReset();
+	public void clickAdvance();
 }

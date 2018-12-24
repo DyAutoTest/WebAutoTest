@@ -120,6 +120,11 @@ public abstract class SuperPage{
 		return driver.findElement(By.xpath(xpath)).getAttribute("textContent");
 	}
 	
+	public void clickAdvance() {
+		System.out.println(1);
+		driver.findElement(By.xpath("//a[@onclick='advanced_query();']")).click();
+		System.out.println(2);
+	}
 	
 	public abstract void setWaitTime(long waitTime);
 }

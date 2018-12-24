@@ -42,50 +42,59 @@ public class OnlinePurchaseOrderQueryPageTest extends SuperTest{
 	@Test(dataProvider="OnlinePurchaseOrderQueryByCaseNO",description="运营平台-线上交易查询")       
 	public void testQuery(OnlinePurchaseOrderQueryBean OnlinePurchaseOrderQueryBean) {    
 		OnlinePurchaseOrderQueryPage.navigateTo(URL);
-		OnlinePurchaseOrderQueryPage.clickAdvance();
 		wait.waitFor(1000);
 		
 		if(!OnlinePurchaseOrderQueryBean.getMerchantOrderNO().equals("")) {
+			OnlinePurchaseOrderQueryPage.clickAdvance();
 			OnlinePurchaseOrderQueryPage.setMerchantOrderNO(OnlinePurchaseOrderQueryBean.getMerchantOrderNO());
-			doQuery();
+			clickAdvanceBeforeDoQuery();
 		}
 		if(!OnlinePurchaseOrderQueryBean.getMerchantNO().equals("")) {
+			OnlinePurchaseOrderQueryPage.clickAdvance();
 			OnlinePurchaseOrderQueryPage.setMerchantNO(OnlinePurchaseOrderQueryBean.getMerchantNO());
-			doQuery();
+			clickAdvanceBeforeDoQuery();
 		}
 		if(!OnlinePurchaseOrderQueryBean.getAccountingDateBegin().equals("") && !OnlinePurchaseOrderQueryBean.getAccountingDateEnd().equals("")) {
+			OnlinePurchaseOrderQueryPage.clickAdvance();
 			OnlinePurchaseOrderQueryPage.setAccountingDateBegin(OnlinePurchaseOrderQueryBean.getAccountingDateBegin());
 			OnlinePurchaseOrderQueryPage.setAccountingDateEnd(OnlinePurchaseOrderQueryBean.getAccountingDateEnd());
-			doQuery();
+			clickAdvanceBeforeDoQuery();
 		}
 		if(!OnlinePurchaseOrderQueryBean.getOrderDateBegin().equals("") && !OnlinePurchaseOrderQueryBean.getOrderDateEnd().equals("")) {
+			OnlinePurchaseOrderQueryPage.clickAdvance();
 			OnlinePurchaseOrderQueryPage.setOrderDateBegin(OnlinePurchaseOrderQueryBean.getOrderDateBegin());
 			OnlinePurchaseOrderQueryPage.setOrderDateEnd(OnlinePurchaseOrderQueryBean.getOrderDateEnd());
-			doQuery();
+			clickAdvanceBeforeDoQuery();
 		}
 		if(!OnlinePurchaseOrderQueryBean.getBusinessChannel().equals("")) {
+			OnlinePurchaseOrderQueryPage.clickAdvance();
 			OnlinePurchaseOrderQueryPage.selectBusinessChannel(OnlinePurchaseOrderQueryBean.getBusinessChannel());
-			doQuery();
+			clickAdvanceBeforeDoQuery();
 		}
 		if(!OnlinePurchaseOrderQueryBean.getPaymentMode().equals("")) {
+			OnlinePurchaseOrderQueryPage.clickAdvance();
 			OnlinePurchaseOrderQueryPage.selectPaymentMode(OnlinePurchaseOrderQueryBean.getPaymentMode());
-			doQuery();
+			clickAdvanceBeforeDoQuery();
 		}
 		if(!OnlinePurchaseOrderQueryBean.getUserPhoneNO().equals("")) {
+			OnlinePurchaseOrderQueryPage.clickAdvance();
 			OnlinePurchaseOrderQueryPage.setUserPhoneNO(OnlinePurchaseOrderQueryBean.getUserPhoneNO());
-			doQuery();
+			clickAdvanceBeforeDoQuery();
 		}
 		if(!OnlinePurchaseOrderQueryBean.getInnerOrderNO().equals("")) {
+			OnlinePurchaseOrderQueryPage.clickAdvance();
 			OnlinePurchaseOrderQueryPage.setInnerOrderNO(OnlinePurchaseOrderQueryBean.getInnerOrderNO());
-			doQuery();
+			clickAdvanceBeforeDoQuery();
 		}
 		if(!OnlinePurchaseOrderQueryBean.getOrderStatus().equals("")) {
+			OnlinePurchaseOrderQueryPage.clickAdvance();
 			OnlinePurchaseOrderQueryPage.selectOrderStatus(OnlinePurchaseOrderQueryBean.getOrderStatus());
-			doQuery();
+			clickAdvanceBeforeDoQuery();
 		}
 		if(!OnlinePurchaseOrderQueryBean.getKeepDomain().equals("")) {
+			OnlinePurchaseOrderQueryPage.clickAdvance();
 			OnlinePurchaseOrderQueryPage.setKeepDomain(OnlinePurchaseOrderQueryBean.getKeepDomain());
-			doQuery();
+			clickAdvanceBeforeDoQuery();
 		}
 		
 	}

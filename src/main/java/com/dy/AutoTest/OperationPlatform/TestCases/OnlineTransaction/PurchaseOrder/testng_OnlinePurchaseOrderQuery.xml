@@ -25,7 +25,7 @@
 				name="com.dy.AutoTest.OperationPlatform.TestCases.OnlineTransaction.PurchaseOrder.OnlinePurchaseOrderQueryPageTest">
 				<methods>
 					<include name="testQuery" />
-					<include name="testCheck" />
+					<!-- <include name="testCheck" /> -->
 					<!-- <include name="testExcel" /> -->
 				</methods>
 			</class> 

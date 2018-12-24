@@ -7,15 +7,19 @@
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-  <test thread-count="5" name="Quit(failed)">
+  <test thread-count="5" name="ComplianceMaintain_CustomerPaymentLimit(failed)">
     <classes>
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.ComplianceMaintain.CustomerPaymentLimitPageTest">
         <methods>
-          <include name="testQuit"/>
+          <include name="testQuery"/>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="AfterTest"/>
+          <include name="beforeMethod"/>
           <include name="init"/>
-          <include name="releaseBrowser"/>
+          <include name="BeforeTest"/>
         </methods>
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.ComplianceMaintain.CustomerPaymentLimitPageTest -->
     </classes>
-  </test> <!-- Quit(failed) -->
+  </test> <!-- ComplianceMaintain_CustomerPaymentLimit(failed) -->
 </suite> <!-- Failed suite [SuiteOperationPlatform] -->

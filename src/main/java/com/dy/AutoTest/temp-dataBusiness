@@ -1,10 +1,10 @@
-private RiskControlWarning_EmailWarningBean RiskControlWarning_EmailWarningBean;
+private SuspiciousTradeManagement_BeingProcessedSuspiciousTradeMaintainBean SuspiciousTradeManagement_BeingProcessedSuspiciousTradeMaintainBean;
 
-case "POP_Data_RiskControlWarning_EmailWarning":
-	pojo=(T)testingDao.getData(tableName,ID,RiskControlWarning_EmailWarningBean.class);
+case "POP_Data_SuspiciousTradeManagement_BeingProcessedSuspiciousTradeMaintain":
+	pojo=(T)testingDao.getData(tableName,ID,SuspiciousTradeManagement_BeingProcessedSuspiciousTradeMaintainBean.class);
 	return pojo;
 
-case "POP_Data_RiskControlWarning_EmailWarning":
-	list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,RiskControlWarning_EmailWarningBean.class));
+case "POP_Data_SuspiciousTradeManagement_BeingProcessedSuspiciousTradeMaintain":
+	list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,SuspiciousTradeManagement_BeingProcessedSuspiciousTradeMaintainBean.class));
 	break;
 
