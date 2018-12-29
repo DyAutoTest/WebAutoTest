@@ -44,9 +44,71 @@ public class WarningOrderQueryPageTest extends SuperTest{
 	}
 
 	@Test(dataProvider="RefusedTradeQuery_WarningOrderQueryByCaseNO")
-	public void testQuery(RefusedTradeQuery_WarningOrderQueryBean RefusedTradeQuery_WarningOrderQueryBean) {
+	public void testQuery(RefusedTradeQuery_WarningOrderQueryBean rwoqBean) {
 		WarningOrderQueryPage.navigateTo(URL);
 		wait.waitFor(500);
-
+		if(!rwoqBean.getPayerInternalNO().equals("")) {
+			if(!rwoqBean.getDateBegin().equals("")&&!rwoqBean.getDateEnd().equals("")) {
+				if(!WarningOrderQueryPage.getDateBegin().equals(rwoqBean.getDateBegin())) {
+					WarningOrderQueryPage.setDateBegin(rwoqBean.getDateBegin());
+					WarningOrderQueryPage.setDateEnd(rwoqBean.getDateEnd());
+					WarningOrderQueryPage.doLoseFocus("DateEnd", 120, 0);
+				}
+			}
+			WarningOrderQueryPage.setPayerInternalNO(rwoqBean.getPayerInternalNO());
+			doQuery();
+		}
+		if(!rwoqBean.getPayeeInternalNO().equals("")) {
+			if(!rwoqBean.getDateBegin().equals("")&&!rwoqBean.getDateEnd().equals("")) {
+				if(!WarningOrderQueryPage.getDateBegin().equals(rwoqBean.getDateBegin())) {
+					WarningOrderQueryPage.setDateBegin(rwoqBean.getDateBegin());
+					WarningOrderQueryPage.setDateEnd(rwoqBean.getDateEnd());
+					WarningOrderQueryPage.doLoseFocus("DateEnd", 120, 0);
+				}
+			}
+			WarningOrderQueryPage.setPayeeInternalNO(rwoqBean.getPayeeInternalNO());
+			doQuery();
+		}
+		if(!rwoqBean.getBusinessType().equals("")) {
+			if(!rwoqBean.getDateBegin().equals("")&&!rwoqBean.getDateEnd().equals("")) {
+				if(!WarningOrderQueryPage.getDateBegin().equals(rwoqBean.getDateBegin())) {
+					WarningOrderQueryPage.setDateBegin(rwoqBean.getDateBegin());
+					WarningOrderQueryPage.setDateEnd(rwoqBean.getDateEnd());
+					WarningOrderQueryPage.doLoseFocus("DateEnd", 120, 0);
+				}
+			}
+			WarningOrderQueryPage.selectBusinessType(rwoqBean.getBusinessType());
+			doQuery();
+		}
+		if(!rwoqBean.getTradeType().equals("")) {
+			if(!rwoqBean.getDateBegin().equals("")&&!rwoqBean.getDateEnd().equals("")) {
+				if(!WarningOrderQueryPage.getDateBegin().equals(rwoqBean.getDateBegin())) {
+					WarningOrderQueryPage.setDateBegin(rwoqBean.getDateBegin());
+					WarningOrderQueryPage.setDateEnd(rwoqBean.getDateEnd());
+					WarningOrderQueryPage.doLoseFocus("DateEnd", 120, 0);
+				}
+			}
+			WarningOrderQueryPage.selectTradeType(rwoqBean.getTradeType());
+			doQuery();
+		}
+		if(!rwoqBean.getTradeOrderNO().equals("")) {
+			if(!rwoqBean.getDateBegin().equals("")&&!rwoqBean.getDateEnd().equals("")) {
+				if(!WarningOrderQueryPage.getDateBegin().equals(rwoqBean.getDateBegin())) {
+					WarningOrderQueryPage.setDateBegin(rwoqBean.getDateBegin());
+					WarningOrderQueryPage.setDateEnd(rwoqBean.getDateEnd());
+					WarningOrderQueryPage.doLoseFocus("DateEnd", 120, 0);
+				}
+			}
+			WarningOrderQueryPage.setTradeOrderNO(rwoqBean.getTradeOrderNO());
+			doQuery();
+		}
+		if(!rwoqBean.getDateBegin().equals("")&&!rwoqBean.getDateEnd().equals("")) {
+			if(!WarningOrderQueryPage.getDateBegin().equals(rwoqBean.getDateBegin())) {
+				WarningOrderQueryPage.setDateBegin(rwoqBean.getDateBegin());
+				WarningOrderQueryPage.setDateEnd(rwoqBean.getDateEnd());
+				WarningOrderQueryPage.doLoseFocus("DateEnd", 120, 0);
+			}
+			doQuery();
+		}
 	}
 }

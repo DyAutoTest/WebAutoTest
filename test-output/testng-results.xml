@@ -2,58 +2,58 @@
 <testng-results skipped="0" failed="0" ignored="2" total="5" passed="3">
   <reporter-output>
     <line>
-      <![CDATA[        2018-12-24 21:27:49): [Test]-"Login" is started]]>
+      <![CDATA[        2018-12-28 20:55:30): [Test]-"Login" is started]]>
     </line>
     <line>
-      <![CDATA[                2018-12-24 21:27:49: [Method]-"LoginPageTest.testLogin" is started]]>
+      <![CDATA[                2018-12-28 20:55:30: [Method]-"LoginPageTest.testLogin" is started]]>
     </line>
     <line>
-      <![CDATA[                2018-12-24 21:27:53: [Method]-"LoginPageTest.testLogin" is passed]]>
+      <![CDATA[                2018-12-28 20:55:34: [Method]-"LoginPageTest.testLogin" is passed]]>
     </line>
     <line>
-      <![CDATA[        2018-12-24 21:27:55): [Test]-"Login" is finished]]>
+      <![CDATA[        2018-12-28 20:55:36): [Test]-"Login" is finished]]>
     </line>
     <line>
-      <![CDATA[        2018-12-24 21:27:55): [Test]-"SuspiciousTradeManagement_SuspiciousTradeAnalyze" is started]]>
+      <![CDATA[        2018-12-28 20:55:36): [Test]-"ComplianceMaintain_ComplianceRiskControlQuantity" is started]]>
     </line>
     <line>
-      <![CDATA[                2018-12-24 21:27:55: [Method]-"SuspiciousTradeAnalyzePageTest.testQuery" is started]]>
+      <![CDATA[                2018-12-28 20:55:36: [Method]-"ComplianceRiskControlQuantityPageTest.testQuery" is started]]>
     </line>
     <line>
-      <![CDATA[                2018-12-24 21:27:57: [Method]-"SuspiciousTradeAnalyzePageTest.testQuery" is passed]]>
+      <![CDATA[                2018-12-28 20:56:05: [Method]-"ComplianceRiskControlQuantityPageTest.testQuery" is passed]]>
     </line>
     <line>
-      <![CDATA[        2018-12-24 21:27:59): [Test]-"SuspiciousTradeManagement_SuspiciousTradeAnalyze" is finished]]>
+      <![CDATA[        2018-12-28 20:56:07): [Test]-"ComplianceMaintain_ComplianceRiskControlQuantity" is finished]]>
     </line>
   </reporter-output>
-  <suite name="SuiteOperationPlatform" duration-ms="14989" started-at="2018-12-24T13:27:49Z" finished-at="2018-12-24T13:28:04Z">
+  <suite name="SuiteOperationPlatform" duration-ms="41914" started-at="2018-12-28T12:55:30Z" finished-at="2018-12-28T12:56:11Z">
     <groups>
     </groups>
-    <test name="Login" duration-ms="6642" started-at="2018-12-24T13:27:49Z" finished-at="2018-12-24T13:27:55Z">
+    <test name="Login" duration-ms="6801" started-at="2018-12-28T12:55:30Z" finished-at="2018-12-28T12:55:36Z">
       <class name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
-        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="BeforeTest" is-config="true" duration-ms="3" started-at="2018-12-24T13:27:49Z" finished-at="2018-12-24T13:27:49Z">
+        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="BeforeTest" is-config="true" duration-ms="2" started-at="2018-12-28T12:55:30Z" finished-at="2018-12-28T12:55:30Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@315ba14a]]>
+                <![CDATA[org.testng.TestRunner@35764bef]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[        2018-12-24 21:27:49): [Test]-"Login" is started]]>
+              <![CDATA[        2018-12-28 20:55:30): [Test]-"Login" is started]]>
             </line>
           </reporter-output>
         </test-method> <!-- BeforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-12-24T13:27:49Z" finished-at="2018-12-24T13:27:49Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-12-28T12:55:30Z" finished-at="2018-12-28T12:55:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="init" is-config="true" duration-ms="3" started-at="2018-12-24T13:27:49Z" finished-at="2018-12-24T13:27:49Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="init" is-config="true" duration-ms="3" started-at="2018-12-28T12:55:30Z" finished-at="2018-12-28T12:55:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-12-24T13:27:49Z" finished-at="2018-12-24T13:27:49Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-12-28T12:55:30Z" finished-at="2018-12-28T12:55:30Z">
           <params>
             <param index="0">
               <value>
@@ -63,11 +63,11 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[                2018-12-24 21:27:49: [Method]-"LoginPageTest.testLogin" is started]]>
+              <![CDATA[                2018-12-28 20:55:30: [Method]-"LoginPageTest.testLogin" is started]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="testLogin" duration-ms="4611" started-at="2018-12-24T13:27:49Z" finished-at="2018-12-24T13:27:53Z">
+        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="testLogin" duration-ms="4776" started-at="2018-12-28T12:55:30Z" finished-at="2018-12-28T12:55:34Z">
           <params>
             <param index="0">
               <value>
@@ -78,7 +78,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2018-12-24T13:27:53Z" finished-at="2018-12-24T13:27:55Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2018-12-28T12:55:34Z" finished-at="2018-12-28T12:55:36Z">
           <params>
             <param index="0">
               <value>
@@ -88,108 +88,108 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[                2018-12-24 21:27:53: [Method]-"LoginPageTest.testLogin" is passed]]>
+              <![CDATA[                2018-12-28 20:55:34: [Method]-"LoginPageTest.testLogin" is passed]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="AfterTest" is-config="true" duration-ms="1" started-at="2018-12-24T13:27:55Z" finished-at="2018-12-24T13:27:55Z">
+        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@23f7d05d]" name="AfterTest" is-config="true" duration-ms="1" started-at="2018-12-28T12:55:36Z" finished-at="2018-12-28T12:55:36Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@315ba14a]]>
+                <![CDATA[org.testng.TestRunner@35764bef]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[        2018-12-24 21:27:55): [Test]-"Login" is finished]]>
+              <![CDATA[        2018-12-28 20:55:36): [Test]-"Login" is finished]]>
             </line>
           </reporter-output>
         </test-method> <!-- AfterTest -->
       </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest -->
     </test> <!-- Login -->
-    <test name="SuspiciousTradeManagement_SuspiciousTradeAnalyze" duration-ms="3434" started-at="2018-12-24T13:27:55Z" finished-at="2018-12-24T13:27:59Z">
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.SuspiciousTradeManagement.SuspiciousTradeAnalyzePageTest">
-        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.SuspiciousTradeManagement.SuspiciousTradeAnalyzePageTest@27ae2fd0]" name="BeforeTest" is-config="true" duration-ms="1" started-at="2018-12-24T13:27:55Z" finished-at="2018-12-24T13:27:55Z">
+    <test name="ComplianceMaintain_ComplianceRiskControlQuantity" duration-ms="30452" started-at="2018-12-28T12:55:36Z" finished-at="2018-12-28T12:56:07Z">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.ComplianceMaintain.ComplianceRiskControlQuantityPageTest">
+        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.ComplianceMaintain.ComplianceRiskControlQuantityPageTest@27ae2fd0]" name="BeforeTest" is-config="true" duration-ms="1" started-at="2018-12-28T12:55:36Z" finished-at="2018-12-28T12:55:36Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@17f9344b]]>
+                <![CDATA[org.testng.TestRunner@5633dafd]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[        2018-12-24 21:27:55): [Test]-"SuspiciousTradeManagement_SuspiciousTradeAnalyze" is started]]>
+              <![CDATA[        2018-12-28 20:55:36): [Test]-"ComplianceMaintain_ComplianceRiskControlQuantity" is started]]>
             </line>
           </reporter-output>
         </test-method> <!-- BeforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.SuspiciousTradeManagement.SuspiciousTradeAnalyzePageTest@27ae2fd0]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-12-24T13:27:55Z" finished-at="2018-12-24T13:27:55Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.ComplianceMaintain.ComplianceRiskControlQuantityPageTest@27ae2fd0]" name="beforeClass" is-config="true" duration-ms="1" started-at="2018-12-28T12:55:36Z" finished-at="2018-12-28T12:55:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.SuspiciousTradeManagement.SuspiciousTradeAnalyzePageTest@27ae2fd0]" name="init" is-config="true" duration-ms="2" started-at="2018-12-24T13:27:55Z" finished-at="2018-12-24T13:27:55Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.ComplianceMaintain.ComplianceRiskControlQuantityPageTest@27ae2fd0]" name="init" is-config="true" duration-ms="2" started-at="2018-12-28T12:55:36Z" finished-at="2018-12-28T12:55:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.SuspiciousTradeManagement.SuspiciousTradeAnalyzePageTest@27ae2fd0]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-12-24T13:27:55Z" finished-at="2018-12-24T13:27:56Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.ComplianceMaintain.ComplianceRiskControlQuantityPageTest@27ae2fd0]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2018-12-28T12:55:36Z" finished-at="2018-12-28T12:55:36Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.SuspiciousTradeManagement.SuspiciousTradeAnalyzePageTest.testQuery(com.dy.AutoTest.OperationPlatform.POJO.SuspiciousTradeManagement_SuspiciousTradeAnalyzeBean)]]>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.ComplianceMaintain.ComplianceRiskControlQuantityPageTest.testQuery(com.dy.AutoTest.OperationPlatform.POJO.ComplianceMaintain_ComplianceRiskControlQuantityBean)]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[                2018-12-24 21:27:55: [Method]-"SuspiciousTradeAnalyzePageTest.testQuery" is started]]>
+              <![CDATA[                2018-12-28 20:55:36: [Method]-"ComplianceRiskControlQuantityPageTest.testQuery" is started]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testQuery(com.dy.AutoTest.OperationPlatform.POJO.SuspiciousTradeManagement_SuspiciousTradeAnalyzeBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.SuspiciousTradeManagement.SuspiciousTradeAnalyzePageTest@27ae2fd0]" name="testQuery" duration-ms="1420" started-at="2018-12-24T13:27:56Z" data-provider="SuspiciousTradeManagement_SuspiciousTradeAnalyzeByCaseNO" finished-at="2018-12-24T13:27:57Z">
+        <test-method status="PASS" signature="testQuery(com.dy.AutoTest.OperationPlatform.POJO.ComplianceMaintain_ComplianceRiskControlQuantityBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.ComplianceMaintain.ComplianceRiskControlQuantityPageTest@27ae2fd0]" name="testQuery" duration-ms="28432" started-at="2018-12-28T12:55:36Z" data-provider="ComplianceMaintain_ComplianceRiskControlQuantityByCaseNO" finished-at="2018-12-28T12:56:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.SuspiciousTradeManagement_SuspiciousTradeAnalyzeBean@66629f63]]>
+                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.ComplianceMaintain_ComplianceRiskControlQuantityBean@66629f63]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testQuery -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.SuspiciousTradeManagement.SuspiciousTradeAnalyzePageTest@27ae2fd0]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2018-12-24T13:27:57Z" finished-at="2018-12-24T13:27:59Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.ComplianceMaintain.ComplianceRiskControlQuantityPageTest@27ae2fd0]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2018-12-28T12:56:05Z" finished-at="2018-12-28T12:56:07Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testQuery status=SUCCESS method=SuspiciousTradeAnalyzePageTest.testQuery(com.dy.AutoTest.OperationPlatform.POJO.SuspiciousTradeManagement_SuspiciousTradeAnalyzeBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.SuspiciousTradeManagement.SuspiciousTradeAnalyzePageTest@27ae2fd0] output={null}]]]>
+                <![CDATA[[TestResult name=testQuery status=SUCCESS method=ComplianceRiskControlQuantityPageTest.testQuery(com.dy.AutoTest.OperationPlatform.POJO.ComplianceMaintain_ComplianceRiskControlQuantityBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.ComplianceMaintain.ComplianceRiskControlQuantityPageTest@27ae2fd0] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[                2018-12-24 21:27:57: [Method]-"SuspiciousTradeAnalyzePageTest.testQuery" is passed]]>
+              <![CDATA[                2018-12-28 20:56:05: [Method]-"ComplianceRiskControlQuantityPageTest.testQuery" is passed]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.SuspiciousTradeManagement.SuspiciousTradeAnalyzePageTest@27ae2fd0]" name="AfterTest" is-config="true" duration-ms="1" started-at="2018-12-24T13:27:59Z" finished-at="2018-12-24T13:27:59Z">
+        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.ComplianceMaintain.ComplianceRiskControlQuantityPageTest@27ae2fd0]" name="AfterTest" is-config="true" duration-ms="1" started-at="2018-12-28T12:56:07Z" finished-at="2018-12-28T12:56:07Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@17f9344b]]>
+                <![CDATA[org.testng.TestRunner@5633dafd]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[        2018-12-24 21:27:59): [Test]-"SuspiciousTradeManagement_SuspiciousTradeAnalyze" is finished]]>
+              <![CDATA[        2018-12-28 20:56:07): [Test]-"ComplianceMaintain_ComplianceRiskControlQuantity" is finished]]>
             </line>
           </reporter-output>
         </test-method> <!-- AfterTest -->
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.SuspiciousTradeManagement.SuspiciousTradeAnalyzePageTest -->
-    </test> <!-- SuspiciousTradeManagement_SuspiciousTradeAnalyze -->
-    <test name="Quit" duration-ms="4886" started-at="2018-12-24T13:27:59Z" finished-at="2018-12-24T13:28:04Z">
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.ComplianceMaintain.ComplianceRiskControlQuantityPageTest -->
+    </test> <!-- ComplianceMaintain_ComplianceRiskControlQuantity -->
+    <test name="Quit" duration-ms="4627" started-at="2018-12-28T12:56:07Z" finished-at="2018-12-28T12:56:11Z">
       <class name="com.dy.AutoTest.web.actions.SingletonSet">
-        <test-method status="PASS" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@23986957]" name="init" is-config="true" duration-ms="3663" started-at="2018-12-24T13:27:45Z" finished-at="2018-12-24T13:27:49Z">
+        <test-method status="PASS" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@23986957]" name="init" is-config="true" duration-ms="3909" started-at="2018-12-28T12:55:26Z" finished-at="2018-12-28T12:55:30Z">
           <params>
             <param index="0">
               <value>
@@ -205,21 +205,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="releaseJDBC()[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@23986957]" name="releaseJDBC" is-config="true" duration-ms="2772" started-at="2018-12-24T13:28:04Z" finished-at="2018-12-24T13:28:07Z">
+        <test-method status="PASS" signature="releaseJDBC()[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@23986957]" name="releaseJDBC" is-config="true" duration-ms="3212" started-at="2018-12-28T12:56:11Z" finished-at="2018-12-28T12:56:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- releaseJDBC -->
       </class> <!-- com.dy.AutoTest.web.actions.SingletonSet -->
       <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1fe20588]" name="init" is-config="true" duration-ms="5" started-at="2018-12-24T13:27:59Z" finished-at="2018-12-24T13:27:59Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1fe20588]" name="init" is-config="true" duration-ms="3" started-at="2018-12-28T12:56:07Z" finished-at="2018-12-28T12:56:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="testQuit()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1fe20588]" name="testQuit" duration-ms="3873" started-at="2018-12-24T13:27:59Z" finished-at="2018-12-24T13:28:03Z">
+        <test-method status="PASS" signature="testQuit()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1fe20588]" name="testQuit" duration-ms="3617" started-at="2018-12-28T12:56:07Z" finished-at="2018-12-28T12:56:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testQuit -->
-        <test-method status="PASS" signature="releaseBrowser()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1fe20588]" name="releaseBrowser" is-config="true" duration-ms="1001" started-at="2018-12-24T13:28:03Z" finished-at="2018-12-24T13:28:04Z">
+        <test-method status="PASS" signature="releaseBrowser()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@1fe20588]" name="releaseBrowser" is-config="true" duration-ms="1002" started-at="2018-12-28T12:56:10Z" finished-at="2018-12-28T12:56:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- releaseBrowser -->

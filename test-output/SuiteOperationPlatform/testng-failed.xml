@@ -7,14 +7,32 @@
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
+  <test thread-count="5" name="Login(failed)">
+    <parameter name="OperID" value="T00064"/>
+    <classes>
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="init"/>
+          <include name="testLogin" invocation-numbers="0"/>
+          <include name="AfterTest"/>
+          <include name="beforeMethod"/>
+          <include name="BeforeTest"/>
+        </methods>
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest -->
+    </classes>
+  </test> <!-- Login(failed) -->
   <test thread-count="5" name="ComplianceMaintain_CustomerPaymentLimit(failed)">
     <classes>
       <class name="com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.ComplianceMaintain.CustomerPaymentLimitPageTest">
         <methods>
-          <include name="testQuery"/>
+          <include name="testQuery" invocation-numbers="0"/>
           <include name="beforeClass"/>
           <include name="afterMethod"/>
           <include name="AfterTest"/>
+          <include name="testUpdate" invocation-numbers="0 1"/>
+          <include name="testCheck" invocation-numbers="0"/>
           <include name="beforeMethod"/>
           <include name="init"/>
           <include name="BeforeTest"/>
@@ -22,4 +40,15 @@
       </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.ComplianceMaintain.CustomerPaymentLimitPageTest -->
     </classes>
   </test> <!-- ComplianceMaintain_CustomerPaymentLimit(failed) -->
+  <test thread-count="5" name="Quit(failed)">
+    <classes>
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
+        <methods>
+          <include name="testQuit"/>
+          <include name="init"/>
+          <include name="releaseBrowser"/>
+        </methods>
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest -->
+    </classes>
+  </test> <!-- Quit(failed) -->
 </suite> <!-- Failed suite [SuiteOperationPlatform] -->

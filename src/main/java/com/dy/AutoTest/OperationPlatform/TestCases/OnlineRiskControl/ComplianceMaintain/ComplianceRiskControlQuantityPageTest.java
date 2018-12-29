@@ -44,9 +44,25 @@ public class ComplianceRiskControlQuantityPageTest extends SuperTest{
 	}
 
 	@Test(dataProvider="ComplianceMaintain_ComplianceRiskControlQuantityByCaseNO")
-	public void testQuery(ComplianceMaintain_ComplianceRiskControlQuantityBean ComplianceMaintain_ComplianceRiskControlQuantityBean) {
+	public void testQuery(ComplianceMaintain_ComplianceRiskControlQuantityBean ccrcqBean) {
 		ComplianceRiskControlQuantityPage.navigateTo(URL);
 		wait.waitFor(500);
-
+		if(!ccrcqBean.getUserName().equals("")) {
+			ComplianceRiskControlQuantityPage.setUserName(ccrcqBean.getUserName());
+			doQuery();
+		}
+		if(!ccrcqBean.getCollectionOrPaymentSign().equals("")) {
+			ComplianceRiskControlQuantityPage.selectCollectionOrPaymentSign(ccrcqBean.getCollectionOrPaymentSign());
+			doQuery();
+		}
+		if(!ccrcqBean.getQuantityWay().equals("")) {
+			ComplianceRiskControlQuantityPage.selectQuantityWay(ccrcqBean.getQuantityWay());
+			doQuery();
+		}
+		if(!ccrcqBean.getQueryDate().equals("")) {
+			ComplianceRiskControlQuantityPage.setQueryDate(ccrcqBean.getQueryDate());
+			doQuery();
+		}
+		
 	}
 }

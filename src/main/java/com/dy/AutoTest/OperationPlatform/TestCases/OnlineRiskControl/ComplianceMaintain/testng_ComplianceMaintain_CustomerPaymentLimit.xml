@@ -25,7 +25,8 @@
 				name="com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.ComplianceMaintain.CustomerPaymentLimitPageTest">
 				<methods>
 					<include name="testQuery" />
-					<!-- <include name="testCheck" /> -->
+					<include name="testCheck" />
+					<include name="testUpdate" />
 				</methods>
 			</class> 
 		</classes>

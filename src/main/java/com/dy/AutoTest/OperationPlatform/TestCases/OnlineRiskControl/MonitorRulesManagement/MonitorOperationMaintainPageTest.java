@@ -44,9 +44,36 @@ public class MonitorOperationMaintainPageTest extends SuperTest{
 	}
 
 	@Test(dataProvider="MonitorRulesManagement_MonitorOperationMaintainByCaseNO")
-	public void testQuery(MonitorRulesManagement_MonitorOperationMaintainBean MonitorRulesManagement_MonitorOperationMaintainBean) {
+	public void testCheck(MonitorRulesManagement_MonitorOperationMaintainBean MonitorRulesManagement_MonitorOperationMaintainBean) {
+		MonitorOperationMaintainPage.navigateTo(URL);
+		wait.waitFor(500);
+		
+		MonitorOperationMaintainPage.clickAdd();
+		
+		MonitorOperationMaintainPage.selectAdd_MonitorRule(MonitorRulesManagement_MonitorOperationMaintainBean.getMonitorRule());
+		
+
+	}
+	
+	@Test(dataProvider="MonitorRulesManagement_MonitorOperationMaintainByCaseNO")
+	public void testDelete(MonitorRulesManagement_MonitorOperationMaintainBean MonitorRulesManagement_MonitorOperationMaintainBean) {
 		MonitorOperationMaintainPage.navigateTo(URL);
 		wait.waitFor(500);
 
 	}
+	
+	@Test(dataProvider="MonitorRulesManagement_MonitorOperationMaintainByCaseNO")
+	public void testUpdate(MonitorRulesManagement_MonitorOperationMaintainBean MonitorRulesManagement_MonitorOperationMaintainBean) {
+		MonitorOperationMaintainPage.navigateTo(URL);
+		wait.waitFor(500);
+
+	}
+	
+	@Test(dataProvider="MonitorRulesManagement_MonitorOperationMaintainByCaseNO")
+	public void testAdd(MonitorRulesManagement_MonitorOperationMaintainBean MonitorRulesManagement_MonitorOperationMaintainBean) {
+		MonitorOperationMaintainPage.navigateTo(URL);
+		wait.waitFor(500);
+
+	}
+	
 }

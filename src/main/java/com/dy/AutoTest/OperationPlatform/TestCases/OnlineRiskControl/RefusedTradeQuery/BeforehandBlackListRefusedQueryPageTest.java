@@ -44,9 +44,14 @@ public class BeforehandBlackListRefusedQueryPageTest extends SuperTest{
 	}
 
 	@Test(dataProvider="RefusedTradeQuery_BeforehandBlackListRefusedQueryByCaseNO")
-	public void testQuery(RefusedTradeQuery_BeforehandBlackListRefusedQueryBean RefusedTradeQuery_BeforehandBlackListRefusedQueryBean) {
+	public void testQuery(RefusedTradeQuery_BeforehandBlackListRefusedQueryBean rbblrqBean) {
 		BeforehandBlackListRefusedQueryPage.navigateTo(URL);
 		wait.waitFor(500);
-
+		if(!rbblrqBean.getQueryDateBegin().equals("")&&!rbblrqBean.getQueryDateEnd().equals("")) {
+				BeforehandBlackListRefusedQueryPage.setQueryDateBegin(rbblrqBean.getQueryDateBegin());
+				BeforehandBlackListRefusedQueryPage.setQueryDateEnd(rbblrqBean.getQueryDateEnd());
+				BeforehandBlackListRefusedQueryPage.doLoseFocus("QueryDateEnd", 120, 0);
+				doQuery();
+		}
 	}
 }

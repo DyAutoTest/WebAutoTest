@@ -44,9 +44,85 @@ public class RefusedOrderQueryPageTest extends SuperTest{
 	}
 
 	@Test(dataProvider="RefusedTradeQuery_RefusedOrderQueryByCaseNO")
-	public void testQuery(RefusedTradeQuery_RefusedOrderQueryBean RefusedTradeQuery_RefusedOrderQueryBean) {
+	public void testQuery(RefusedTradeQuery_RefusedOrderQueryBean rroqBean) {
 		RefusedOrderQueryPage.navigateTo(URL);
 		wait.waitFor(500);
-
+		RefusedOrderQueryPage.clickAdvance();
+		wait.waitFor(800);
+		
+		if(!rroqBean.getPayerInternalNO().equals("")) {
+			if(!rroqBean.getDateBegin().equals("")&&!rroqBean.getDateEnd().equals("")) {
+				if(!RefusedOrderQueryPage.getDateBegin().equals(rroqBean.getDateBegin())) {
+					RefusedOrderQueryPage.setDateBegin(rroqBean.getDateBegin());
+					RefusedOrderQueryPage.setDateEnd(rroqBean.getDateEnd());
+					RefusedOrderQueryPage.doLoseFocus("DateEnd", 120, 0);
+				}
+			}
+			RefusedOrderQueryPage.setPayerInternalNO(rroqBean.getPayerInternalNO());
+			doQuery();
+		}
+		if(!rroqBean.getPayeeInternalNO().equals("")) {
+			if(!rroqBean.getDateBegin().equals("")&&!rroqBean.getDateEnd().equals("")) {
+				if(!RefusedOrderQueryPage.getDateBegin().equals(rroqBean.getDateBegin())) {
+					RefusedOrderQueryPage.setDateBegin(rroqBean.getDateBegin());
+					RefusedOrderQueryPage.setDateEnd(rroqBean.getDateEnd());
+					RefusedOrderQueryPage.doLoseFocus("DateEnd", 120, 0);
+				}
+			}
+			RefusedOrderQueryPage.setPayeeInternalNO(rroqBean.getPayeeInternalNO());
+			doQuery();
+		}
+		if(!rroqBean.getBusinessType().equals("")) {
+			if(!rroqBean.getDateBegin().equals("")&&!rroqBean.getDateEnd().equals("")) {
+				if(!RefusedOrderQueryPage.getDateBegin().equals(rroqBean.getDateBegin())) {
+					RefusedOrderQueryPage.setDateBegin(rroqBean.getDateBegin());
+					RefusedOrderQueryPage.setDateEnd(rroqBean.getDateEnd());
+					RefusedOrderQueryPage.doLoseFocus("DateEnd", 120, 0);
+				}
+			}
+			RefusedOrderQueryPage.selectBusinessType(rroqBean.getBusinessType());
+			doQuery();
+		}
+		if(!rroqBean.getTradeType().equals("")) {
+			if(!rroqBean.getDateBegin().equals("")&&!rroqBean.getDateEnd().equals("")) {
+				if(!RefusedOrderQueryPage.getDateBegin().equals(rroqBean.getDateBegin())) {
+					RefusedOrderQueryPage.setDateBegin(rroqBean.getDateBegin());
+					RefusedOrderQueryPage.setDateEnd(rroqBean.getDateEnd());
+					RefusedOrderQueryPage.doLoseFocus("DateEnd", 120, 0);
+				}
+			}
+			RefusedOrderQueryPage.selectTradeType(rroqBean.getTradeType());
+			doQuery();
+		}
+		if(!rroqBean.getTradeOrderNO().equals("")) {
+			if(!rroqBean.getDateBegin().equals("")&&!rroqBean.getDateEnd().equals("")) {
+				if(!RefusedOrderQueryPage.getDateBegin().equals(rroqBean.getDateBegin())) {
+					RefusedOrderQueryPage.setDateBegin(rroqBean.getDateBegin());
+					RefusedOrderQueryPage.setDateEnd(rroqBean.getDateEnd());
+					RefusedOrderQueryPage.doLoseFocus("DateEnd", 120, 0);
+				}
+			}
+			RefusedOrderQueryPage.setTradeOrderNO(rroqBean.getTradeOrderNO());
+			doQuery();
+		}
+		if(!rroqBean.getDateBegin().equals("")&&!rroqBean.getDateEnd().equals("")) {
+			if(!RefusedOrderQueryPage.getDateBegin().equals(rroqBean.getDateBegin())) {
+				RefusedOrderQueryPage.setDateBegin(rroqBean.getDateBegin());
+				RefusedOrderQueryPage.setDateEnd(rroqBean.getDateEnd());
+				RefusedOrderQueryPage.doLoseFocus("DateEnd", 120, 0);
+			}
+			doQuery();
+		}
+		if(!rroqBean.getPhone().equals("")) {
+			if(!rroqBean.getDateBegin().equals("")&&!rroqBean.getDateEnd().equals("")) {
+				if(!RefusedOrderQueryPage.getDateBegin().equals(rroqBean.getDateBegin())) {
+					RefusedOrderQueryPage.setDateBegin(rroqBean.getDateBegin());
+					RefusedOrderQueryPage.setDateEnd(rroqBean.getDateEnd());
+					RefusedOrderQueryPage.doLoseFocus("DateEnd", 120, 0);
+				}
+			}
+			RefusedOrderQueryPage.setPhone(rroqBean.getPhone());
+			doQuery();
+		}
 	}
 }

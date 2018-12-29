@@ -44,10 +44,46 @@ public class RefusedOrderQueryPage extends SuperPage implements IQuery{
 		return du.what("PayeeInternalNO").getAttribute("value");
 	}
 	//业务类型
+	/**
+	 * @param value
+	 * 
+	 * 	value='E050' : 手机缴费
+		value='0013' : 非注册用户消费
+		value='0021' : 非注册用户消费退款
+		value='003A' : B2B充值
+		value='0030' : 转账到账户
+		value='E052' : 信用卡还款
+		value='0009' : 用户消费
+		value='0017' : 用户消费退款
+		value='0001' : B2C充值
+		value='B071' : 代收自账户
+		value='0027' : 商户提现
+		value='0026' : 用户提现
+		value='0004' : 快捷充值
+		value='E051' : 生活缴费
+		value='0813' : 代收自账户
+		value='0821' : 代收自银行卡
+		value='0811' : 代付到账户
+		value='0819' : 代付到银行卡
+	 * 
+	 */
 	public void selectBusinessType(String value) {
 		du.whatSelect("BusinessType").selectByValue(value);
 	}
 	//交易类型
+	/**
+	 * @param value
+	 * 
+	 * 	value='52' : 代收
+		value='02' : 消费
+		value='04' : 提现
+		value='01' : 充值
+		value='03' : 消费退款
+		value='E1' : 缴费
+		value='51' : 代付
+		value='05' : 转帐
+	 * 
+	 */
 	public void selectTradeType(String value) {
 		du.whatSelect("TradeType").selectByValue(value);
 	}

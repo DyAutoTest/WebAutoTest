@@ -15,6 +15,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
+import com.dy.AutoTest.OperationPlatform.POJO.RiskControlParamManagement_AccountApproveParamMaintainBean;
 import com.dy.AutoTest.web.actions.SingletonSet;
 import com.dy.AutoTest.web.actions.Wait;
 import com.dy.AutoTest.web.business.DataBusiness;
@@ -179,6 +180,19 @@ public class SuperTest {
 	//查看 
 	//修改
 	
+	
+	public void doQueryForClickButton() {
+		//主要功能是if的填值，query点击，radio选择
+/*		
+		if(!raapmBean.getAccountType().equals("")) {
+			AccountApproveParamMaintainPage.selectAccountType(raapmBean.getAccountType());
+		}
+		AccountApproveParamMaintainPage.clickQuery();
+		wait.waitFor(500);
+		AccountApproveParamMaintainPage.clickRadio(raapmBean.getRadio());
+		wait.waitFor(500);
+		*/
+	}
 	
 	
 }
