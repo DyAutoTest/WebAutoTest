@@ -26,9 +26,9 @@ public class ProcessedSuspiciousTradeQueryPageTest extends SuperTest{
 
 		/******** instant Interface *********/
 		iQuery=ProcessedSuspiciousTradeQueryPage;
-//	iClickButton=ProcessedSuspiciousTradeQueryPage;
-//	iClickRadio=ProcessedSuspiciousTradeQueryPage;
-//	iSearchMerchantByNOorName=ProcessedSuspiciousTradeQueryPage;
+//		iClickButton=ProcessedSuspiciousTradeQueryPage;
+//		iClickRadio=ProcessedSuspiciousTradeQueryPage;
+//		iSearchMerchantByNOorName=ProcessedSuspiciousTradeQueryPage;
 	}
 
 	@DataProvider(name="SuspiciousTradeManagement_ProcessedSuspiciousTradeQuery")
@@ -44,9 +44,40 @@ public class ProcessedSuspiciousTradeQueryPageTest extends SuperTest{
 	}
 
 	@Test(dataProvider="SuspiciousTradeManagement_ProcessedSuspiciousTradeQueryByCaseNO")
-	public void testQuery(SuspiciousTradeManagement_ProcessedSuspiciousTradeQueryBean SuspiciousTradeManagement_ProcessedSuspiciousTradeQueryBean) {
+	public void testQuery(SuspiciousTradeManagement_ProcessedSuspiciousTradeQueryBean bean) {
 		ProcessedSuspiciousTradeQueryPage.navigateTo(URL);
 		wait.waitFor(500);
+		if(!bean.getMonitorRule().equals("")) {
+			ProcessedSuspiciousTradeQueryPage.selectMonitorRule(bean.getMonitorRule());
+			doQuery();
+		}
+		if(!bean.getMerchantNOPhoneNO().equals("")) {
+			ProcessedSuspiciousTradeQueryPage.setMerchantNOPhoneNO(bean.getMerchantNOPhoneNO());
+			doQuery();
+		}
+	}
+	@Test(dataProvider="SuspiciousTradeManagement_ProcessedSuspiciousTradeQueryByCaseNO")
+	public void testCheck(SuspiciousTradeManagement_ProcessedSuspiciousTradeQueryBean bean) {
+		ProcessedSuspiciousTradeQueryPage.navigateTo(URL);
+		wait.waitFor(500);
+		doQueryForClickButton(bean);
+		ProcessedSuspiciousTradeQueryPage.clickCheck();
+		wait.waitFor(2000);
+		ProcessedSuspiciousTradeQueryPage.clickCheck_Close();
+	}
+	
 
+
+	public void doQueryForClickButton(SuspiciousTradeManagement_ProcessedSuspiciousTradeQueryBean bean) {
+		if(!bean.getMonitorRule().equals("")) {
+			ProcessedSuspiciousTradeQueryPage.selectMonitorRule(bean.getMonitorRule());
+		}
+		if(!bean.getMerchantNOPhoneNO().equals("")) {
+			ProcessedSuspiciousTradeQueryPage.setMerchantNOPhoneNO(bean.getMerchantNOPhoneNO());
+		}
+		ProcessedSuspiciousTradeQueryPage.clickQuery();
+		wait.waitFor(500);
+		ProcessedSuspiciousTradeQueryPage.clickRadio(bean.getRadio());
+		wait.waitFor(500);
 	}
 }

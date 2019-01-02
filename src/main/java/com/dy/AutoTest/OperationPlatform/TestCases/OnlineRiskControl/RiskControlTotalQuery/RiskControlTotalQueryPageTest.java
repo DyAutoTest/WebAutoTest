@@ -26,9 +26,9 @@ public class RiskControlTotalQueryPageTest extends SuperTest{
 
 		/******** instant Interface *********/
 		iQuery=RiskControlTotalQueryPage;
-//	iClickButton=RiskControlTotalQueryPage;
-//	iClickRadio=RiskControlTotalQueryPage;
-//	iSearchMerchantByNOorName=RiskControlTotalQueryPage;
+//		iClickButton=RiskControlTotalQueryPage;
+//		iClickRadio=RiskControlTotalQueryPage;
+//		iSearchMerchantByNOorName=RiskControlTotalQueryPage;
 	}
 
 	@DataProvider(name="RiskControlTotalQuery")
@@ -44,9 +44,21 @@ public class RiskControlTotalQueryPageTest extends SuperTest{
 	}
 
 	@Test(dataProvider="RiskControlTotalQueryByCaseNO")
-	public void testQuery(RiskControlTotalQueryBean RiskControlTotalQueryBean) {
+	public void testQuery(RiskControlTotalQueryBean bean) {
 		RiskControlTotalQueryPage.navigateTo(URL);
 		wait.waitFor(500);
-
+		if(!bean.getUserName().equals("")){
+			RiskControlTotalQueryPage.setUserName(bean.getUserName());
+			doQuery();
+		}
+		if (!bean.getAccumulateWay().equals("")) {
+			RiskControlTotalQueryPage.selectAccumulateWay(bean.getAccumulateWay());
+			doQuery();
+		}
+		if (!bean.getQueryDate().equals("")) {
+			RiskControlTotalQueryPage.setQueryDate(bean.getQueryDate());
+		    doQuery();
+		}		
 	}
+	
 }

@@ -9,7 +9,6 @@ public class SuspiciousTradeManagement_BeingProcessedSuspiciousTradeMaintainBean
 	private String CaseNO;
 	private String MonitorRule;
 	private String MerchantNOPhoneNO;
-	private String WriteProcessResult;
 	private String Radio;
 	private String WriteProcessResult_HandleSuggestion;
 	private String WriteProcessResult_HandleTips;
@@ -36,12 +35,6 @@ public class SuspiciousTradeManagement_BeingProcessedSuspiciousTradeMaintainBean
 	}
 	public void setMerchantNOPhoneNO(String MerchantNOPhoneNO) {
 		this.MerchantNOPhoneNO = MerchantNOPhoneNO;
-	}
-	public String getWriteProcessResult() {
-		return WriteProcessResult;
-	}
-	public void setWriteProcessResult(String WriteProcessResult) {
-		this.WriteProcessResult = WriteProcessResult;
 	}
 	public String getRadio() {
 		return Radio;

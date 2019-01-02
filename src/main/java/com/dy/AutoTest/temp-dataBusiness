@@ -1,10 +1,10 @@
-private RiskControlLvMaintain_RiskCustomerMaintainBean RiskControlLvMaintain_RiskCustomerMaintainBean;
+private MonitorRulesManagement_MonitorParameterMaintainBean MonitorRulesManagement_MonitorParameterMaintainBean;
 
-case "POP_Data_RiskControlLvMaintain_RiskCustomerMaintain":
-	pojo=(T)testingDao.getData(tableName,ID,RiskControlLvMaintain_RiskCustomerMaintainBean.class);
+case "POP_Data_MonitorRulesManagement_MonitorParameterMaintain":
+	pojo=(T)testingDao.getData(tableName,ID,MonitorRulesManagement_MonitorParameterMaintainBean.class);
 	return pojo;
 
-case "POP_Data_RiskControlLvMaintain_RiskCustomerMaintain":
-	list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,RiskControlLvMaintain_RiskCustomerMaintainBean.class));
+case "POP_Data_MonitorRulesManagement_MonitorParameterMaintain":
+	list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,MonitorRulesManagement_MonitorParameterMaintainBean.class));
 	break;
 

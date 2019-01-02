@@ -25,7 +25,7 @@
 				name="com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.MonitorRulesManagement.MonitorRulesMaintainPageTest">
 				<methods>
 					<include name="testQuery" />
-					<!-- <include name="testCheck" /> -->
+					<include name="testCheck" />
 				</methods>
 			</class> 
 		</classes>

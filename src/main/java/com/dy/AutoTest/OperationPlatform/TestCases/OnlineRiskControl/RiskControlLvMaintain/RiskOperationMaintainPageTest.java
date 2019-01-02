@@ -108,28 +108,28 @@ public class RiskOperationMaintainPageTest extends SuperTest{
 		wait.waitFor(500);
 //		add需要先判断必输项的测试数据是否为空
 		if(bean.getRiskBusinessType().equals("")) {
-			System.out.println("验证方式字段为必输项，不能为空");
-			Reporter.log("验证方式字段为必输项，不能为空");
+			System.out.println("风险业务类型字段为必输项，不能为空");
+			Reporter.log("风险业务类型字段为必输项，不能为空");
 			assertTrue(false);
 		}
 		if(bean.getRiskReferenceValue().equals("")) {
-			System.out.println("验证方式字段为必输项，不能为空");
-			Reporter.log("验证方式字段为必输项，不能为空");
+			System.out.println("风险参考值字段为必输项，不能为空");
+			Reporter.log("风险参考值字段为必输项，不能为空");
 			assertTrue(false);
 		}
 		if(bean.getRiskReferenceName().equals("")) {
-			System.out.println("验证方式字段为必输项，不能为空");
-			Reporter.log("验证方式字段为必输项，不能为空");
+			System.out.println("风险参考名字字段为必输项，不能为空");
+			Reporter.log("风险参考名字字段为必输项，不能为空");
 			assertTrue(false);
 		}
 		if(bean.getWeightReferenceID().equals("")) {
-			System.out.println("验证方式字段为必输项，不能为空");
-			Reporter.log("验证方式字段为必输项，不能为空");
+			System.out.println("权重参考ID字段为必输项，不能为空");
+			Reporter.log("权重参考ID字段为必输项，不能为空");
 			assertTrue(false);
 		}
 		if(bean.getRiskReferenceDescribe().equals("")) {
-			System.out.println("验证方式字段为必输项，不能为空");
-			Reporter.log("验证方式字段为必输项，不能为空");
+			System.out.println("风险参考描述字段为必输项，不能为空");
+			Reporter.log("风险参考描述字段为必输项，不能为空");
 			assertTrue(false);
 		}
 		RiskOperationMaintainPage.clickAdd();

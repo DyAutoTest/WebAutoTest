@@ -1,7 +1,6 @@
 package com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.MonitorRulesManagement;
 
 import java.lang.reflect.Method;
-
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -44,9 +43,45 @@ public class MonitorRulesMaintainPageTest extends SuperTest{
 	}
 
 	@Test(dataProvider="MonitorRulesManagement_MonitorRulesMaintainByCaseNO")
-	public void testQuery(MonitorRulesManagement_MonitorRulesMaintainBean MonitorRulesManagement_MonitorRulesMaintainBean) {
+	public void testQuery(MonitorRulesManagement_MonitorRulesMaintainBean bean) {
 		MonitorRulesMaintainPage.navigateTo(URL);
 		wait.waitFor(500);
-
+		if(!bean.getRuleNO().equals("")) {
+			MonitorRulesMaintainPage.setRuleNO(bean.getRuleNO());
+			doQuery();
+		}
+		if(!bean.getDailyCheck().equals("")) {
+			MonitorRulesMaintainPage.selectDailyCheck(bean.getDailyCheck());
+			doQuery();
+		}
+	}
+	
+	@Test(dataProvider="MonitorRulesManagement_MonitorRulesMaintainByCaseNO")
+	public void testCheck(MonitorRulesManagement_MonitorRulesMaintainBean bean) {
+		MonitorRulesMaintainPage.navigateTo(URL);
+		wait.waitFor(500);
+		doQueryForClickButton(bean);
+		MonitorRulesMaintainPage.clickCheck();
+		wait.waitFor(2000);
+		MonitorRulesMaintainPage.clickCheck_Close();
+	}
+	
+	
+	
+	
+	
+	public void doQueryForClickButton(MonitorRulesManagement_MonitorRulesMaintainBean bean) {
+		//主要功能是if的填值，query点击，radio选择
+		if(!bean.getRuleNO().equals("")) {
+			MonitorRulesMaintainPage.setRuleNO(bean.getRuleNO());
+		}
+		if(!bean.getDailyCheck().equals("")) {
+			MonitorRulesMaintainPage.selectDailyCheck(bean.getDailyCheck());
+		}
+		MonitorRulesMaintainPage.clickQuery();
+		wait.waitFor(500);
+		MonitorRulesMaintainPage.clickRadio(bean.getRadio());
+		wait.waitFor(500);
+		
 	}
 }

@@ -25,7 +25,8 @@
 				name="com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.SuspiciousTradeManagement.SuspiciousTradeAnalyzePageTest">
 				<methods>
 					<include name="testQuery" />
-					<!-- <include name="testCheck" /> -->
+					<include name="testAnalyze" />
+					<include name="testAdd" />
 				</methods>
 			</class> 
 		</classes>

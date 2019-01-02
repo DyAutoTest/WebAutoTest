@@ -3,12 +3,20 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.dy.AutoTest.AG_Master">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.MonitorRulesManagement.MonitorParameterMaintainPageTest">
         <methods>
-          <include name="generateAll"/>
-          <include name="release"/>
+          <include name="beforeClass"/>
+          <include name="testAdd"/>
+          <include name="afterMethod"/>
+          <include name="testCheck"/>
+          <include name="AfterTest"/>
+          <include name="testUpdate"/>
+          <include name="beforeMethod"/>
+          <include name="init"/>
+          <include name="BeforeTest"/>
+          <include name="testQuery"/>
         </methods>
-      </class> <!-- com.dy.AutoTest.AG_Master -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.MonitorRulesManagement.MonitorParameterMaintainPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
