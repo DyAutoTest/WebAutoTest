@@ -1,10 +1,10 @@
-private SuspiciousTradeManagement_BeingProcessedSuspiciousTradeMaintainBean SuspiciousTradeManagement_BeingProcessedSuspiciousTradeMaintainBean;
+private RiskControlLvMaintain_RiskCustomerMaintainBean RiskControlLvMaintain_RiskCustomerMaintainBean;
 
-case "POP_Data_SuspiciousTradeManagement_BeingProcessedSuspiciousTradeMaintain":
-	pojo=(T)testingDao.getData(tableName,ID,SuspiciousTradeManagement_BeingProcessedSuspiciousTradeMaintainBean.class);
+case "POP_Data_RiskControlLvMaintain_RiskCustomerMaintain":
+	pojo=(T)testingDao.getData(tableName,ID,RiskControlLvMaintain_RiskCustomerMaintainBean.class);
 	return pojo;
 
-case "POP_Data_SuspiciousTradeManagement_BeingProcessedSuspiciousTradeMaintain":
-	list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,SuspiciousTradeManagement_BeingProcessedSuspiciousTradeMaintainBean.class));
+case "POP_Data_RiskControlLvMaintain_RiskCustomerMaintain":
+	list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,RiskControlLvMaintain_RiskCustomerMaintainBean.class));
 	break;
 

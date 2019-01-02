@@ -11,7 +11,7 @@ import com.dy.AutoTest.OperationPlatform.PageObject.OnlineRiskControl.RiskContro
 import com.dy.AutoTest.OperationPlatform.POJO.RiskControlLvMaintain_RiskCustomerMaintainBean;
 import com.dy.AutoTest.web.business.DataBusiness;
 
-public class RiskCustomerMaintainPageTest extends SuperTest{
+public class RiskCustomerMaintainPageTest__ extends SuperTest{
 	RiskCustomerMaintainPage RiskCustomerMaintainPage;
 	String URL;
 
@@ -44,9 +44,39 @@ public class RiskCustomerMaintainPageTest extends SuperTest{
 	}
 
 	@Test(dataProvider="RiskControlLvMaintain_RiskCustomerMaintainByCaseNO")
-	public void testQuery(RiskControlLvMaintain_RiskCustomerMaintainBean RiskControlLvMaintain_RiskCustomerMaintainBean) {
+	public void testQuery(RiskControlLvMaintain_RiskCustomerMaintainBean bean) {
 		RiskCustomerMaintainPage.navigateTo(URL);
 		wait.waitFor(500);
 
+	}
+	@Test(dataProvider="RiskControlLvMaintain_RiskCustomerMaintainByCaseNO")
+	public void testCheck(RiskControlLvMaintain_RiskCustomerMaintainBean bean) {
+		RiskCustomerMaintainPage.navigateTo(URL);
+		wait.waitFor(500);
+		doQueryForClickButton(bean);
+		RiskCustomerMaintainPage.clickCheck();
+		wait.waitFor(2000);
+//		RiskCustomerMaintainPage.clickCheck_Close();
+	}
+	@Test(dataProvider="RiskControlLvMaintain_RiskCustomerMaintainByCaseNO")
+	public void testDelete(RiskControlLvMaintain_RiskCustomerMaintainBean bean) {
+		RiskCustomerMaintainPage.navigateTo(URL);
+		wait.waitFor(500);
+		doQueryForClickButton(bean);
+		RiskCustomerMaintainPage.clickDelete();
+		wait.waitFor(1000);
+//		RiskCustomerMaintainPage.clickDelete_Confirm();
+//		System.out.println(RiskCustomerMaintainPage.getNotice());
+//		Reporter.log(RiskCustomerMaintainPage.getNotice());
+//		RiskCustomerMaintainPage.clickDelete_Close();
+	}
+
+
+	public void doQueryForClickButton(RiskControlLvMaintain_RiskCustomerMaintainBean bean) {
+
+		RiskCustomerMaintainPage.clickQuery();
+		wait.waitFor(500);
+//		RiskCustomerMaintainPage.clickRadio(bean.getRadio());
+		wait.waitFor(500);
 	}
 }

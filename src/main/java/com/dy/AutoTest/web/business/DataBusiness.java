@@ -155,7 +155,6 @@ public class DataBusiness {
 	private RefusedTradeQuery_RefusedOrderQueryBean RefusedTradeQuery_RefusedOrderQueryBean;
 	private RefusedTradeQuery_WarningOrderQueryBean RefusedTradeQuery_WarningOrderQueryBean;
 	private RiskControlLvMaintain_RiskCustomerMaintainBean RiskControlLvMaintain_RiskCustomerMaintainBean;
-	private RiskControlLvMaintain_RiskLvMaintainBean RiskControlLvMaintain_RiskLvMaintainBean;
 	private RiskControlLvMaintain_RiskMonitorRuleMaintainBean RiskControlLvMaintain_RiskMonitorRuleMaintainBean;
 	private RiskControlLvMaintain_RiskOperationMaintainBean RiskControlLvMaintain_RiskOperationMaintainBean;
 	private RiskControlTotalQueryBean RiskControlTotalQueryBean;
@@ -170,6 +169,7 @@ public class DataBusiness {
 	private SuspiciousTradeManagement_SuspiciousTradeAnalyzeBean SuspiciousTradeManagement_SuspiciousTradeAnalyzeBean;
 	private SuspiciousTradeManagement_BeingProcessedSuspiciousTradeMaintainBean SuspiciousTradeManagement_BeingProcessedSuspiciousTradeMaintainBean;
 	private SuspiciousTradeManagement_ProcessedSuspiciousTradeQueryBean SuspiciousTradeManagement_ProcessedSuspiciousTradeQueryBean;
+	private RiskControlLvMaintain_RiskLvMaintainBean RiskControlLvMaintain_RiskLvMaintainBean;
 
 
 
@@ -411,6 +411,7 @@ public class DataBusiness {
 			case "POP_Data_SuspiciousTradeManagement_ProcessedSuspiciousTradeQuery":
 				pojo=(T)testingDao.getData(tableName,ID,SuspiciousTradeManagement_ProcessedSuspiciousTradeQueryBean.class);
 				return pojo;
+				
 			case "POP_Data_MerchantOper":
 				
 				break;
@@ -648,6 +649,7 @@ public class DataBusiness {
 		case "POP_Data_SuspiciousTradeManagement_ProcessedSuspiciousTradeQuery":
 			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,SuspiciousTradeManagement_ProcessedSuspiciousTradeQueryBean.class));
 			break;
+			
 		case "POP_Data_MerchantOper":
 			
 			break;

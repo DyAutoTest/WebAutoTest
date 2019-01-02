@@ -118,7 +118,7 @@ public class SuperTest {
 		iQuery.clickQuery();
 		wait.waitFor(waitTime);
 		iQuery.doPageDown();
-		wait.waitFor(1000+waitTime);
+		wait.waitFor(500+waitTime);
 		iQuery.doPageUp();
 		wait.waitFor(waitTime);
 		iQuery.clickReset();
@@ -181,7 +181,7 @@ public class SuperTest {
 	//修改
 	
 	
-	public void doQueryForClickButton() {
+//	public void doQueryForClickButton() {
 		//主要功能是if的填值，query点击，radio选择
 /*		
 		if(!raapmBean.getAccountType().equals("")) {
@@ -192,7 +192,20 @@ public class SuperTest {
 		AccountApproveParamMaintainPage.clickRadio(raapmBean.getRadio());
 		wait.waitFor(500);
 		*/
-	}
+//	}
+//	public void testAdd() {
+		/*		
+		if(ctvwsBean.getModeID().equals("")) {
+			System.out.println("ID字段为必输项，不能为空");
+			Reporter.log("ID字段为必输项，不能为空");
+			assertTrue(false);
+		}
+		*/
+	
+//	System.out.println(TradeVerificationWaySetPage.getNotice());
+//	Reporter.log(TradeVerificationWaySetPage.getNotice());
+	
+//	}
 	
 	
 }

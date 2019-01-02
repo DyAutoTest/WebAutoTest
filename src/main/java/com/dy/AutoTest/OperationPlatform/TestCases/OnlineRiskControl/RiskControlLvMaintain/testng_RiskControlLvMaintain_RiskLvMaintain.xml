@@ -19,13 +19,16 @@
 	</test>
 
 
-	<test thread-count="5" name="RiskControlLvMaintain_RiskCustomerMaintain">
+	<test thread-count="5" name="RiskControlLvMaintain_RiskLvMaintain">
 		<classes>
 			<class
-				name="com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.RiskControlLvMaintain.RiskCustomerMaintainPageTest__">
+				name="com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.RiskControlLvMaintain.RiskLvMaintainPageTest">
 				<methods>
-					<include name="testQuery" />
+					<!-- <include name="testQuery" /> -->
 					<!-- <include name="testCheck" /> -->
+					<!-- <include name="testDelete" /> -->
+					<!-- <include name="testUpdate" /> -->
+					<include name="testAdd" />
 				</methods>
 			</class> 
 		</classes>
