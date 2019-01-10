@@ -3,20 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.MonitorRulesManagement.MonitorParameterMaintainPageTest">
+      <class name="com.dy.AutoTest.web.actions.test.DoPlusTest">
         <methods>
-          <include name="beforeClass"/>
-          <include name="testAdd"/>
-          <include name="afterMethod"/>
-          <include name="testCheck"/>
-          <include name="AfterTest"/>
-          <include name="testUpdate"/>
-          <include name="beforeMethod"/>
-          <include name="init"/>
-          <include name="BeforeTest"/>
-          <include name="testQuery"/>
+          <include name="initBrowser"/>
+          <include name="realseBrowser"/>
+          <include name="doSendKeysByRobote"/>
         </methods>
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.MonitorRulesManagement.MonitorParameterMaintainPageTest -->
+      </class> <!-- com.dy.AutoTest.web.actions.test.DoPlusTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

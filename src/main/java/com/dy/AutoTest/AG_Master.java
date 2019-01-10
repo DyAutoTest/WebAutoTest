@@ -23,34 +23,32 @@ public class AG_Master {
 		ig=new PTGenerator();
 		ig=new TestngXMLGenerator();
 		ig=new SQLGenerator();
-		ig=new DataBusinessGenerator();
 	}
 
-	public static final String caseName="SuspiciousTradeManagement_ProcessedSuspiciousTradeQuery";
-	public static final String caseNameAlias="ProcessedSuspiciousTradeQuery";
-	public static final String url="pop_"+caseName;
-	public static final String locatorName="POP_Loc_"+caseName;
-	public static final String dataName="POP_Data_"+caseName;
+	public static final String caseName="MerchantInfoManagement_MerchantInfoAdd";
+	public static final String caseNameAlias="MerchantInfoAdd";
+	public static final String url="aop_"+caseName;
+	public static final String locatorName="AOP_Loc_"+caseName;
+	public static final String dataName="AOP_Data_"+caseName;
 
-	public static final String directoryPO="src/main/java/com/dy/AutoTest/OperationPlatform/PageObject/OnlineRiskControl/SuspiciousTradeManagement/";
-	public static final String packageNamePO="com.dy.AutoTest.OperationPlatform.PageObject.OnlineRiskControl.SuspiciousTradeManagement";
+	public static final String directoryPO="src/main/java/com/dy/AutoTest/AcquiringOperationPlatform/PageObject/MerchantInfoManagement/";
+	public static final String packageNamePO="com.dy.AutoTest.AcquiringOperationPlatform.PageObject.MerchantInfoManagement";
 	
-	public static final String directoryPOJO="src/main/java/com/dy/AutoTest/OperationPlatform/POJO/";
-	public static final String packageNamePOJO="com.dy.AutoTest.OperationPlatform.POJO";
+	public static final String directoryPOJO="src/main/java/com/dy/AutoTest/AcquiringOperationPlatform/POJO/";
+	public static final String packageNamePOJO="com.dy.AutoTest.AcquiringOperationPlatform.POJO";
 	
-	public static final String directoryPT="src/main/java/com/dy/AutoTest/OperationPlatform/TestCases/OnlineRiskControl/SuspiciousTradeManagement/";
-	public static final String packageNamePT="com.dy.AutoTest.OperationPlatform.TestCases.OnlineRiskControl.SuspiciousTradeManagement";
+	public static final String directoryPT="src/main/java/com/dy/AutoTest/AcquiringOperationPlatform/PageTest/MerchantInfoManagement/";
+	public static final String packageNamePT="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement";
 	
-	public static final String directoryXML="src/main/java/com/dy/AutoTest/OperationPlatform/TestCases/OnlineRiskControl/SuspiciousTradeManagement/";
+	public static final String directoryXML="src/main/java/com/dy/AutoTest/AcquiringOperationPlatform/PageTest/MerchantInfoManagement/";
 	public static final String directoryDataBusiness="src/main/java/com/dy/AutoTest/";
 	public static final String directorySQL="C:\\Users\\寒\\Documents\\Navicat\\SQLite\\servers\\AutoTest_0.0.3\\main\\";
-//	public static final String directorySQL="C:\\Users\\寒\\Desktop\\temp\\";
 	
 	public static final String classNamePT=caseNameAlias+"PageTest";
 	public static final String classNamePO=caseNameAlias+"Page";
 	public static final String classNamePOJO=caseName+"Bean";
 	public static final String xmlName="testng_"+caseName+".xml";
-	public static final String sqlName="insert "+caseName+".sql";
+	public static final String sqlName="insert AOP_"+caseName+".sql";
 	public static final String dataBusinessName="temp-dataBusiness";
 	
 	//缩进代码用的tab符

@@ -10,6 +10,7 @@ import com.dy.AutoTest.OperationPlatform.POJO.UserIncomeExpenditureDetailBean;
 import com.dy.AutoTest.OperationPlatform.POJO.UserInfoQueryBean;
 import com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2BBean;
 import com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2CBean;
+import com.dy.AutoTest.AcquiringOperationPlatform.POJO.LoginBean;
 import com.dy.AutoTest.OnlineCashier.POJO.CooperatingAgentInfoBean;
 import com.dy.AutoTest.OnlineCashier.POJO.CooperatingPaymentChannelBean;
 import com.dy.AutoTest.OnlineCashier.POJO.CooperatingRouteInfoBean;
@@ -170,7 +171,7 @@ public class DataBusiness {
 	private SuspiciousTradeManagement_BeingProcessedSuspiciousTradeMaintainBean SuspiciousTradeManagement_BeingProcessedSuspiciousTradeMaintainBean;
 	private SuspiciousTradeManagement_ProcessedSuspiciousTradeQueryBean SuspiciousTradeManagement_ProcessedSuspiciousTradeQueryBean;
 	private RiskControlLvMaintain_RiskLvMaintainBean RiskControlLvMaintain_RiskLvMaintainBean;
-
+	private LoginBean LoginBean;
 
 
 	
@@ -231,7 +232,7 @@ public class DataBusiness {
 				break;
 		}
 	}
-	
+
 	@SuppressWarnings("unchecked")
 	public <T> T getDataBean(String tableName,String ID) {
 		
@@ -439,7 +440,9 @@ public class DataBusiness {
 			case "Data_URL":
 				data_URLBean=new Data_URLBean();
 				break;
-
+			case "AOP_Data_Login":
+				pojo=(T)testingDao.getData(tableName,ID,LoginBean.class);
+				return pojo;
 			default:
 				System.out.println("DataBusiness.getDataBean: "+tableName+" is not exist! Please check!");
 				assertTrue(false);
@@ -476,9 +479,17 @@ public class DataBusiness {
 		}
 	}
 	*/
+	public <T> T getDataBean(String tableName,String ID,Class<T> cls){
+		return (T)testingDao.getData(tableName,ID,cls);
+	}
+	public <T> void loadDataBeanList(String tableName,Class<T> cls) {
+		loadDataBeanList(tableName,"",cls);
+	}
+	public <T> void loadDataBeanList(String tableName,String caseNO,Class<T> cls){
+		list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,cls));
+	}
 	
 	public void loadDataBeanList(String tableName) {
-		
 		loadDataBeanList(tableName,"");
 	}
 	
@@ -764,7 +775,9 @@ public class DataBusiness {
 		case "POP_Data_FinanceChannelBalanceAccountErrorManage":
 			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,FinanceChannelBalanceAccountErrorManageBean.class));
 			break;	
-		
+		case "AOP_Data_Login":
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,LoginBean.class));
+			break;
 			
 		default:
 			System.out.println("table "+tableName+" is not exist! Please check!");

@@ -189,48 +189,8 @@ public class DoPlusTest {
 		}
   @Test
   public void doSendKeysByRobote() {
-	  driver.get("http://pay.uat.sh.dy:50080/pweb/login.jsp");
-	  driver.findElement(By.xpath("//a[@id='person-click']")).click();
-	  driver.findElement(By.xpath("//input[@id='userid']")).sendKeys("1862012");
-	  
-//	try {
-//		robot=new Robot();
-//		robot.keyPress(KeyEvent.VK_7); 
-//		robot.keyPress(KeyEvent.VK_9); 
-//		robot.keyPress(KeyEvent.VK_7); 
-//		robot.keyPress(KeyEvent.VK_2); 
-//		
-//		robot.keyPress(KeyEvent.VK_TAB); 
-//		
-//		robot.keyPress(KeyEvent.VK_TAB); 
-//		
-//		robot.keyPress(KeyEvent.VK_A); robot.keyPress(KeyEvent.VK_A); robot.keyPress(KeyEvent.VK_A); 
-//	} catch (AWTException e) {
-//		e.printStackTrace();
-	  du.what("password").click();
-	  du.waitFor(2000);
-/*	
- * 		//invoke du.doSendKeysByRobot(), failed
-		du.doSendKeysByRobot();
-		*/
-	/*  
-	 // invoke Robot.keypress() directly, faied
-	 // 在用户名文本框里显示成功
-	 // 怀疑传的是键值，被密码控件挡下来了
-	  try {
-			robot=new Robot();
-	  } catch (AWTException e) {
-		  e.printStackTrace();
-	  }
-		robot.keyPress(KeyEvent.VK_1);robot.delay(2000);robot.keyRelease(KeyEvent.VK_1);robot.delay(1000);
-		robot.keyPress(KeyEvent.VK_1);robot.delay(1000);robot.keyRelease(KeyEvent.VK_1);robot.delay(1000);
-		robot.keyPress(KeyEvent.VK_Q);robot.delay(1000);robot.keyRelease(KeyEvent.VK_Q);robot.delay(1000);
-		robot.keyPress(KeyEvent.VK_Q);robot.delay(1000);robot.keyRelease(KeyEvent.VK_Q);robot.delay(1000);
-	*/	
-	  du.waitFor(1000);
-	  du.what("userid").click();
-	  du.waitFor(1000);
-	  du.what("password").click();
+	  du.waitFor(3000);
+//	  du.doSendKeysByRobot("E:\\0-personal\\0-AutoTest\\test-upload.zip");
 		
 	}
   

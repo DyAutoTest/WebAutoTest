@@ -25,14 +25,13 @@ public class TestngXMLGenerator extends Generator{
 				"<!DOCTYPE suite SYSTEM \"http://testng.org/testng-1.0.dtd\">\r\n" + 
 				"<suite name=\"SuiteOperationPlatform\" >\r\n" + 
 				" 	<parameter name=\"browserCategory\" value=\"chrome\"></parameter>\r\n" + 
-				"	<parameter name=\"environment\" value=\"pop_uat\"></parameter>\r\n\r\n";
+				"	<parameter name=\"environment\" value=\"aop_uat\"></parameter>\r\n\r\n";
 		private String loginTemplate="	<test thread-count=\"5\" name=\"Login\">\r\n" + 
-				"	<parameter name=\"OperID\" value=\"T00064\"></parameter>\r\n" + 
 				"		<classes>\r\n" + 
 				"			<class\r\n" + 
 				"				name=\"com.dy.AutoTest.web.actions.SingletonSet\"></class>\r\n" + 
 				"			<class\r\n" + 
-				"				name=\"com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest\">\r\n" + 
+				"				name=\"com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest\">\r\n" + 
 				"				<methods>\r\n" + 
 				"					<include name=\"testLogin\" />\r\n" + 
 				"				</methods>\r\n" + 

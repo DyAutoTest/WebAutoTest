@@ -1,11 +1,8 @@
 package com.dy.AutoTest.wagaga.impl;
 
-import static org.testng.Assert.assertTrue;
 
-import org.testng.Reporter;
 
 import com.dy.AutoTest.AG_Master;
-import com.dy.AutoTest.OperationPlatform.POJO.RiskControlLvMaintain_RiskMonitorRuleMaintainBean;
 import com.dy.AutoTest.wagaga.FileUtil;
 
 
@@ -24,7 +21,7 @@ public class PTGenerator extends Generator{
 				+ptct.generateImportMethod(AG_Master.packageNamePO,AG_Master.classNamePO,AG_Master.packageNamePOJO,AG_Master.classNamePOJO)
 				+ptct.generateClassIdentify(AG_Master.classNamePT,AG_Master.classNamePO)
 				+ptct.generateBeforeClassTemplate(AG_Master.classNamePO, AG_Master.classNamePOJO, AG_Master.url)
-				+ptct.generateDataProviderTemplate(AG_Master.caseName, AG_Master.dataName)
+				+ptct.generateDataProviderTemplate(AG_Master.caseName, AG_Master.dataName,AG_Master.classNamePOJO)
 				+ptct.generateTestQueryTemplate(AG_Master.caseName, AG_Master.classNamePOJO, AG_Master.classNamePO)
 				+ptct.generateTestCheckTemplate(AG_Master.caseName, AG_Master.classNamePOJO, AG_Master.classNamePO)
 				+ptct.generateTestDeleteTemplate(AG_Master.caseName, AG_Master.classNamePOJO, AG_Master.classNamePO)
@@ -64,12 +61,12 @@ public class PTGenerator extends Generator{
 				+ "	}\r\n\r\n";
 		private String dataProviderTemplate="	@DataProvider(name=\"%s\")\r\n"
 				+ "	protected static Object[][] parametersPool(){\r\n"
-				+ "		data.loadDataBeanList(\"%s\");\r\n"
+				+ "		data.loadDataBeanList(\"%s\",%s.class);\r\n"
 				+ "		return data.getDataBeanArray();\r\n"
 				+ "	}\r\n\r\n"
 				+ "	@DataProvider(name=\"%sByCaseNO\")\r\n"
 				+ "	protected static Object[][] parametersPool(Method method){\r\n"
-				+ "		data.loadDataBeanList(\"%s\",method.getName());\r\n"
+				+ "		data.loadDataBeanList(\"%s\",method.getName(),%s.class);\r\n"
 				+ "		return data.getDataBeanArray();\r\n"
 				+ "	}\r\n\r\n";
 		private String testQueryTemplate="	@Test(dataProvider=\"%sByCaseNO\")\r\n"
@@ -151,8 +148,8 @@ public class PTGenerator extends Generator{
 		public String generateBeforeClassTemplate(String classNamePO,String classNamePOJO,String url) {
 			return String.format(beforeClassTemplate,classNamePO,classNamePO,classNamePO,url,classNamePO,classNamePO,classNamePO,classNamePO);
 		}
-		public String generateDataProviderTemplate(String caseName,String dataNamePO) {
-			return String.format(dataProviderTemplate,caseName,dataNamePO,caseName,dataNamePO);
+		public String generateDataProviderTemplate(String caseName,String dataNamePO,String classNamePOJO) {
+			return String.format(dataProviderTemplate,caseName,dataNamePO,classNamePOJO,caseName,dataNamePO,classNamePOJO);
 		}
 		public String generateTestQueryTemplate(String caseName,String classNamePOJO,String classNamePO) {
 			return String.format(testQueryTemplate,caseName,classNamePOJO,classNamePO);

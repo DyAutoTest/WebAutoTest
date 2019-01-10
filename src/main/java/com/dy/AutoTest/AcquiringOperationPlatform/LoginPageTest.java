@@ -1,4 +1,4 @@
-package com.dy.AutoTest.OperationPlatform.TestCases;
+package com.dy.AutoTest.AcquiringOperationPlatform;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;

@@ -1,10 +1,10 @@
-private MonitorRulesManagement_MonitorParameterMaintainBean MonitorRulesManagement_MonitorParameterMaintainBean;
+private LoginBean LoginBean;
 
-case "POP_Data_MonitorRulesManagement_MonitorParameterMaintain":
-	pojo=(T)testingDao.getData(tableName,ID,MonitorRulesManagement_MonitorParameterMaintainBean.class);
+case "AOP_Data_Login":
+	pojo=(T)testingDao.getData(tableName,ID,LoginBean.class);
 	return pojo;
 
-case "POP_Data_MonitorRulesManagement_MonitorParameterMaintain":
-	list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,MonitorRulesManagement_MonitorParameterMaintainBean.class));
+case "AOP_Data_Login":
+	list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,LoginBean.class));
 	break;
 
