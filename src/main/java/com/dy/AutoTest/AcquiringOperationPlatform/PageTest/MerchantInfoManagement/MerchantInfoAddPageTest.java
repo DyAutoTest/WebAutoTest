@@ -21,7 +21,7 @@ public class MerchantInfoAddPageTest extends SuperTest{
 	public void init() {
 		/******** instant objectPage *********/
 		MerchantInfoAddPage=new MerchantInfoAddPage(driver);
-		MerchantInfoAddPage.setWaitTime(800);
+//		MerchantInfoAddPage.setWaitTime(800);
 
 		/******** set URL *********/
 		URL=host.toString()+DataBusiness.getData_URL("aop_MerchantInfoManagement_MerchantInfoAdd");
