@@ -3,10 +3,10 @@ package com.dy.AutoTest.wagaga.impl;
 import com.dy.AutoTest.AG_Master;
 import com.dy.AutoTest.wagaga.FileUtil;
 
-public class TestngXMLGenerator extends Generator{
+public class TestngXMLGenerator_aop extends Generator{
 	
 	
-	public TestngXMLGenerator() {
+	public TestngXMLGenerator_aop() {
 		loadFile();
 		generateContent();
 		writeFile();

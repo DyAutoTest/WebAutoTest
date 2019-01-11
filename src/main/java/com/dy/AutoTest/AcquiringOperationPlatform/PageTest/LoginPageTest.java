@@ -77,12 +77,6 @@ public class LoginPageTest extends SuperTest{
 		wait.waitFor(500);
 		LoginPage.clickLoginButton();
 		wait.waitFor(500);
-//		if(LoginPage.isElementExist("Notice")&&(LoginPage.getNotice().contains("不")||LoginPage.getNotice().contains("错")
-//				||LoginPage.getNotice().contains("误")||LoginPage.getNotice().contains("锁定"))) {
-//			System.out.println(LoginPage.getNotice());
-//			Reporter.log(LoginPage.getNotice());
-//			assertTrue(false);
-//		}
 		if(LoginPage.isElementExist("CurrentAccountantDate")&&SingletonSet.CurrentAccountantDate.toString().equals(""))
 			SingletonSet.CurrentAccountantDate.append(LoginPage.getCurrentAccountantDate());
 		else {
@@ -92,15 +86,12 @@ public class LoginPageTest extends SuperTest{
 		}
 		
 	}
-	
-
-/*
-	public void doQueryForClickButton(LoginBean bean) {
-
-		LoginPage.clickQuery();
+	@Test
+	public void testQuit() {
 		wait.waitFor(500);
-		LoginPage.clickRadio(bean.getRadio());
-		wait.waitFor(500);
+		LoginPage.clickPersonal();
+		wait.waitFor(1000);
+		LoginPage.clickQuit();
 	}
-	*/
+
 }

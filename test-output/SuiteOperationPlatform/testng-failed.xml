@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [SuiteOperationPlatform]">
-  <parameter name="environment" value="aop_uat"/>
+  <parameter name="environment" value="pop_uat"/>
   <parameter name="browserCategory" value="chrome"/>
   <listeners>
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-  <test thread-count="5" name="MerchantInfoManagement_MerchantInfoAdd(failed)">
+  <test thread-count="5" name="SettlementManagement_PaymentApproval(failed)">
     <classes>
-      <class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantInfoAddPageTest">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.SettlementManagement.Payment.PaymentApprovalPageTest">
         <methods>
+          <include name="testBatch_Pass" invocation-numbers="0"/>
           <include name="beforeClass"/>
           <include name="afterMethod"/>
-          <include name="testMerchantAdd" invocation-numbers="0"/>
+          <include name="testBatch_Refuse" invocation-numbers="0"/>
           <include name="AfterTest"/>
           <include name="beforeMethod"/>
-          <include name="init"/>
           <include name="BeforeTest"/>
+          <include name="testCheck_Pass" invocation-numbers="0"/>
+          <include name="init"/>
         </methods>
-      </class> <!-- com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantInfoAddPageTest -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.SettlementManagement.Payment.PaymentApprovalPageTest -->
     </classes>
-  </test> <!-- MerchantInfoManagement_MerchantInfoAdd(failed) -->
+  </test> <!-- SettlementManagement_PaymentApproval(failed) -->
 </suite> <!-- Failed suite [SuiteOperationPlatform] -->

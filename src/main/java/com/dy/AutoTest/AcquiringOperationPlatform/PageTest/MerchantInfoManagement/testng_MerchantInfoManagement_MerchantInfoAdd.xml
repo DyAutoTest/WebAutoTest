@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="SuiteOperationPlatform" >
+<suite name="AcquiringOperationPlatform" >
  	<parameter name="browserCategory" value="chrome"></parameter>
 	<parameter name="environment" value="aop_uat"></parameter>
 
@@ -24,10 +24,10 @@
 				name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantInfoAddPageTest">
 				<methods>
 					<include name="testMerchantAdd" />
-					<include name="testCheck" />
-					<include name="testDelete" />
-					<include name="testUpdate" />
-					<include name="testAdd" />
+					<!-- <include name="testCheck" /> -->
+					<!-- <include name="testDelete" /> -->
+					<!-- <include name="testUpdate" /> -->
+					<!-- <include name="testAdd" /> -->
 				</methods>
 			</class> 
 		</classes>
@@ -36,7 +36,7 @@
 
 	<test thread-count="5" name="Quit">
 		<classes>
-			<class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest"> 
+			<class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest"> 
 				<methods>
 					<include name="testQuit" />
 				</methods> 
@@ -50,4 +50,4 @@
            <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
  </listeners>
 
-</suite> <!-- SuiteOperationPlatform -->
+</suite> <!-- AcquiringOperationPlatform -->

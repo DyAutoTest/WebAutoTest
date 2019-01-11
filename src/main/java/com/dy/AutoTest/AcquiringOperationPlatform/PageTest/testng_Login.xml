@@ -18,18 +18,19 @@
 	</test>
 
 
-<!-- 
+
 	<test thread-count="5" name="Quit">
 		<classes>
-			<class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest"> 
+			<class
+				name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest">
 				<methods>
 					<include name="testQuit" />
-				</methods> 
+				</methods>
 			</class>
 		</classes>
 	</test>
 
- -->
+
   <listeners>
            <listener class-name="org.uncommons.reportng.HTMLReporter" />
            <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />

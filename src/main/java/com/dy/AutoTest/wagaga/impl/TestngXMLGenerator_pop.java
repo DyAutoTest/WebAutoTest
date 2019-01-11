@@ -3,10 +3,10 @@ package com.dy.AutoTest.wagaga.impl;
 import com.dy.AutoTest.AG_Master;
 import com.dy.AutoTest.wagaga.FileUtil;
 
-public class TestngXMLGenerator extends Generator{
+public class TestngXMLGenerator_pop extends Generator{
 	
 	
-	public TestngXMLGenerator() {
+	public TestngXMLGenerator_pop() {
 		loadFile();
 		generateContent();
 		writeFile();
@@ -23,7 +23,7 @@ public class TestngXMLGenerator extends Generator{
 	class TestngXMLContentTemplate {
 		private String suitTemplate="<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n" + 
 				"<!DOCTYPE suite SYSTEM \"http://testng.org/testng-1.0.dtd\">\r\n" + 
-				"<suite name=\"AcquiringOperationPlatform\" >\r\n" + 
+				"<suite name=\"SuiteOperationPlatform\" >\r\n" + 
 				" 	<parameter name=\"browserCategory\" value=\"chrome\"></parameter>\r\n" + 
 				"	<parameter name=\"environment\" value=\"aop_uat\"></parameter>\r\n\r\n";
 		private String loginTemplate="	<test thread-count=\"5\" name=\"Login\">\r\n" + 
@@ -41,7 +41,7 @@ public class TestngXMLGenerator extends Generator{
 		
 		private String quitTemplate="	<test thread-count=\"5\" name=\"Quit\">\r\n" + 
 				"		<classes>\r\n" + 
-				"			<class name=\"com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest\"> \r\n" + 
+				"			<class name=\"com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest\"> \r\n" + 
 				"				<methods>\r\n" + 
 				"					<include name=\"testQuit\" />\r\n" + 
 				"				</methods> \r\n" + 
@@ -53,7 +53,7 @@ public class TestngXMLGenerator extends Generator{
 				"           <listener class-name=\"org.uncommons.reportng.HTMLReporter\" />\r\n" + 
 				"           <listener class-name=\"org.uncommons.reportng.JUnitXMLReporter\" />\r\n" + 
 				" </listeners>\r\n\r\n" + 
-				"</suite> <!-- AcquiringOperationPlatform -->";
+				"</suite> <!-- SuiteOperationPlatform -->";
 		
 		private String testTemplate="	<test thread-count=\"5\" name=\"%s\">\r\n" + 
 				"		<classes>\r\n" + 

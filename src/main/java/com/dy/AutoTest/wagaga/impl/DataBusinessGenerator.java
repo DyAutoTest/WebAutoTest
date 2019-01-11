@@ -45,7 +45,7 @@ public class DataBusinessGenerator extends Generator{
 	
 	@Override
 	public void loadFile() {
-		FileUtil.loadFile(AG_Master.directoryDataBusiness+AG_Master.dataBusinessName);
+//		FileUtil.loadFile(AG_Master.directoryDataBusiness+AG_Master.dataBusinessName);
 	}
 
 

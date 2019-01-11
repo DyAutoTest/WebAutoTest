@@ -47,14 +47,10 @@ public class LoginPage extends SuperPage{
 	public void clickGetSMS() {
 		du.what("GetSMS").click();
 	}
-	/**获取数据库短信验证码
-	 * @param userid
-	 * @return
-	 */
-	public String getCode_SMS(String operMobileNo) {
+	public String getCode_SMS(String mobileNO) {
 		OperDao operDao=new OperDaoImpl();
 		OperBusiness OperBusiness=new OperBusiness(operDao);
-		return OperBusiness.getPOPLoginSMS(operMobileNo);
+		return OperBusiness.getPOPLoginSMS(mobileNO);
 	}
 	//输入短信验证码
 	public void setSMSCode(String value) {
@@ -68,6 +64,21 @@ public class LoginPage extends SuperPage{
 	public void clickLoginButton() {
 		du.what("LoginButton").click();
 	}
-
+	//当前会计日期
+	public String getCurrentAccountantDate() {
+		return du.what("CurrentAccountantDate").getText();
+	}
+	//获取通知
+	public String getNotice() {
+		return du.what("Notice").getText();
+	}
+	//个人管理
+	public void clickPersonal() {
+		du.what("Personal").click();
+	}
+	//退出
+	public void clickQuit() {
+		du.what("Quit").click();
+	}
 
 }

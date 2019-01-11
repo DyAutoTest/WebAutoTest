@@ -41,7 +41,7 @@ public class AG_Master {
 	public static final String packageNamePT="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement";
 	
 	public static final String directoryXML="src/main/java/com/dy/AutoTest/AcquiringOperationPlatform/PageTest/MerchantInfoManagement/";
-	public static final String directoryDataBusiness="src/main/java/com/dy/AutoTest/";
+//	public static final String directoryDataBusiness="src/main/java/com/dy/AutoTest/";
 	public static final String directorySQL="C:\\Users\\寒\\Documents\\Navicat\\SQLite\\servers\\AutoTest_0.0.3\\main\\";
 	
 	public static final String classNamePT=caseNameAlias+"PageTest";

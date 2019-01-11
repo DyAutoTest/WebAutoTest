@@ -24,7 +24,7 @@
 			<class
 				name="com.dy.AutoTest.OperationPlatform.TestCases.SettlementManagement.Payment.PaymentOperationPageTest">
 				<methods>
-					<include name="testQuery" />
+				<!-- 	<include name="testQuery" /> -->
 					<include name="testCheck_Pass" />
 					<include name="testCheck_Cancel" />
 					<include name="testCheck_TurnEBank" />
