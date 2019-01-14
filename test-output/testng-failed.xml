@@ -10,9 +10,9 @@
   <test thread-count="5" name="MerchantInfoInsert(failed)">
     <parameter name="OperID" value="T00105"/>
     <classes>
-      <class name="com.dy.AutoTest.OnlineCashier.TestCases.accountmanage.AccountManageManualSingleAccountPageTest">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.cooperatingagent.routeinfo.CooperatingRouteInfoPageTest">
         <methods>
-          <include name="testAccountManageManualSingleAccount"/>
+          <include name="testCooperatingRouteInfo" invocation-numbers="0 1"/>
           <include name="beforeClass"/>
           <include name="afterMethod"/>
           <include name="AfterTest"/>
@@ -20,7 +20,7 @@
           <include name="BeforeTest"/>
           <include name="init"/>
         </methods>
-      </class> <!-- com.dy.AutoTest.OnlineCashier.TestCases.accountmanage.AccountManageManualSingleAccountPageTest -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.cooperatingagent.routeinfo.CooperatingRouteInfoPageTest -->
     </classes>
   </test> <!-- MerchantInfoInsert(failed) -->
 </suite> <!-- Failed suite [SuiteOperationPlatform] -->
