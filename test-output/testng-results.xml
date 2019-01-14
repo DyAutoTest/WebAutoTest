@@ -2,36 +2,45 @@
 <testng-results skipped="0" failed="0" ignored="4" total="8" passed="4">
   <reporter-output>
     <line>
-      <![CDATA[        2019-01-14 13:19:32): [Test]-"MerchantInfoInsert" is started]]>
+      <![CDATA[        2019-01-14 13:27:34): [Test]-"MerchantInfoInsert" is started]]>
     </line>
     <line>
-      <![CDATA[                2019-01-14 13:19:32: [Method]-"LoginPageTest.testLogin" is started]]>
+      <![CDATA[                2019-01-14 13:27:34: [Method]-"LoginPageTest.testLogin" is started]]>
     </line>
     <line>
-      <![CDATA[                2019-01-14 13:19:36: [Method]-"LoginPageTest.testLogin" is passed]]>
+      <![CDATA[                2019-01-14 13:27:39: [Method]-"LoginPageTest.testLogin" is passed]]>
     </line>
     <line>
-      <![CDATA[                2019-01-14 13:19:38: [Method]-"AccountManageBookingKeppFlowPageTest.testAccountManageBookingKeppFlow" is started]]>
+      <![CDATA[                2019-01-14 13:27:41: [Method]-"IdentityAuthenticationChannelPageTest.testIdentityAuthenticationChannel" is started]]>
     </line>
     <line>
-      <![CDATA[                2019-01-14 13:19:52: [Method]-"AccountManageBookingKeppFlowPageTest.testAccountManageBookingKeppFlow" is passed]]>
+      <![CDATA[身份认证修改成功！合作通道代码：PYZXCO]]>
     </line>
     <line>
-      <![CDATA[                2019-01-14 13:19:54: [Method]-"AccountManageBookingKeppFlowPageTest.testAccountManageBookingKeppFlow" is started]]>
+      <![CDATA[                2019-01-14 13:27:56: [Method]-"IdentityAuthenticationChannelPageTest.testIdentityAuthenticationChannel" is passed]]>
     </line>
     <line>
-      <![CDATA[                2019-01-14 13:20:07: [Method]-"AccountManageBookingKeppFlowPageTest.testAccountManageBookingKeppFlow" is passed]]>
+      <![CDATA[                2019-01-14 13:27:58: [Method]-"IdentityAuthenticationChannelPageTest.testIdentityAuthenticationChannel" is started]]>
     </line>
     <line>
-      <![CDATA[        2019-01-14 13:20:14): [Test]-"MerchantInfoInsert" is finished]]>
+      <![CDATA[身份认证关闭成功！合作通道代码：PYZXCO]]>
+    </line>
+    <line>
+      <![CDATA[身份认证开启成功！合作通道代码：PYZXCO]]>
+    </line>
+    <line>
+      <![CDATA[                2019-01-14 13:28:07: [Method]-"IdentityAuthenticationChannelPageTest.testIdentityAuthenticationChannel" is passed]]>
+    </line>
+    <line>
+      <![CDATA[        2019-01-14 13:28:13): [Test]-"MerchantInfoInsert" is finished]]>
     </line>
   </reporter-output>
-  <suite name="SuiteOperationPlatform" duration-ms="41601" started-at="2019-01-14T05:19:32Z" finished-at="2019-01-14T05:20:14Z">
+  <suite name="SuiteOperationPlatform" duration-ms="39338" started-at="2019-01-14T05:27:34Z" finished-at="2019-01-14T05:28:13Z">
     <groups>
     </groups>
-    <test name="MerchantInfoInsert" duration-ms="41601" started-at="2019-01-14T05:19:32Z" finished-at="2019-01-14T05:20:14Z">
+    <test name="MerchantInfoInsert" duration-ms="39338" started-at="2019-01-14T05:27:34Z" finished-at="2019-01-14T05:28:13Z">
       <class name="com.dy.AutoTest.web.actions.SingletonSet">
-        <test-method status="PASS" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@2a32de6c]" name="init" is-config="true" duration-ms="3066" started-at="2019-01-14T05:19:29Z" finished-at="2019-01-14T05:19:32Z">
+        <test-method status="PASS" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@2a32de6c]" name="init" is-config="true" duration-ms="3050" started-at="2019-01-14T05:27:31Z" finished-at="2019-01-14T05:27:34Z">
           <params>
             <param index="0">
               <value>
@@ -47,35 +56,49 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="releaseJDBC()[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@2a32de6c]" name="releaseJDBC" is-config="true" duration-ms="2695" started-at="2019-01-14T05:20:14Z" finished-at="2019-01-14T05:20:16Z">
+        <test-method status="PASS" signature="releaseJDBC()[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@2a32de6c]" name="releaseJDBC" is-config="true" duration-ms="2709" started-at="2019-01-14T05:28:13Z" finished-at="2019-01-14T05:28:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- releaseJDBC -->
       </class> <!-- com.dy.AutoTest.web.actions.SingletonSet -->
       <class name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
-        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc]" name="BeforeTest" is-config="true" duration-ms="2" started-at="2019-01-14T05:19:32Z" finished-at="2019-01-14T05:19:32Z">
+        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc]" name="BeforeTest" is-config="true" duration-ms="2" started-at="2019-01-14T05:27:34Z" finished-at="2019-01-14T05:27:34Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1a256d80]]>
+                <![CDATA[org.testng.TestRunner@7793ad58]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[        2019-01-14 13:19:32): [Test]-"MerchantInfoInsert" is started]]>
+              <![CDATA[        2019-01-14 13:27:34): [Test]-"MerchantInfoInsert" is started]]>
             </line>
           </reporter-output>
         </test-method> <!-- BeforeTest -->
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc]" name="init" is-config="true" duration-ms="2" started-at="2019-01-14T05:19:32Z" finished-at="2019-01-14T05:19:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-01-14T05:19:32Z" finished-at="2019-01-14T05:19:32Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc]" name="beforeClass" is-config="true" duration-ms="1" started-at="2019-01-14T05:27:34Z" finished-at="2019-01-14T05:27:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc]" name="testLogin" duration-ms="4483" started-at="2019-01-14T05:19:32Z" finished-at="2019-01-14T05:19:36Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc]" name="init" is-config="true" duration-ms="2" started-at="2019-01-14T05:27:34Z" finished-at="2019-01-14T05:27:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-01-14T05:27:34Z" finished-at="2019-01-14T05:27:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest.testLogin(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-01-14 13:27:34: [Method]-"LoginPageTest.testLogin" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc]" name="testLogin" duration-ms="4865" started-at="2019-01-14T05:27:34Z" finished-at="2019-01-14T05:27:39Z">
           <params>
             <param index="0">
               <value>
@@ -86,21 +109,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-01-14T05:19:32Z" finished-at="2019-01-14T05:19:32Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest.testLogin(java.lang.String)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2019-01-14 13:19:32: [Method]-"LoginPageTest.testLogin" is started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc]" name="afterMethod" is-config="true" duration-ms="2002" started-at="2019-01-14T05:19:36Z" finished-at="2019-01-14T05:19:38Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc]" name="afterMethod" is-config="true" duration-ms="2000" started-at="2019-01-14T05:27:39Z" finished-at="2019-01-14T05:27:41Z">
           <params>
             <param index="0">
               <value>
@@ -110,123 +119,132 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[                2019-01-14 13:19:36: [Method]-"LoginPageTest.testLogin" is passed]]>
+              <![CDATA[                2019-01-14 13:27:39: [Method]-"LoginPageTest.testLogin" is passed]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc]" name="AfterTest" is-config="true" duration-ms="0" started-at="2019-01-14T05:20:14Z" finished-at="2019-01-14T05:20:14Z">
+        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc]" name="AfterTest" is-config="true" duration-ms="0" started-at="2019-01-14T05:28:13Z" finished-at="2019-01-14T05:28:13Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1a256d80]]>
+                <![CDATA[org.testng.TestRunner@7793ad58]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[        2019-01-14 13:20:14): [Test]-"MerchantInfoInsert" is finished]]>
+              <![CDATA[        2019-01-14 13:28:13): [Test]-"MerchantInfoInsert" is finished]]>
             </line>
           </reporter-output>
         </test-method> <!-- AfterTest -->
       </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest -->
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.accountmanage.AccountManageBookingKeppFlowPageTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.accountmanage.AccountManageBookingKeppFlowPageTest@75f32542]" name="beforeClass" is-config="true" duration-ms="1" started-at="2019-01-14T05:19:38Z" finished-at="2019-01-14T05:19:38Z">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.authentication.IdentityAuthenticationChannelPageTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.authentication.IdentityAuthenticationChannelPageTest@75f32542]" name="beforeClass" is-config="true" duration-ms="1" started-at="2019-01-14T05:27:41Z" finished-at="2019-01-14T05:27:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.accountmanage.AccountManageBookingKeppFlowPageTest@75f32542]" name="init" is-config="true" duration-ms="2" started-at="2019-01-14T05:19:38Z" finished-at="2019-01-14T05:19:38Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.authentication.IdentityAuthenticationChannelPageTest@75f32542]" name="init" is-config="true" duration-ms="2" started-at="2019-01-14T05:27:41Z" finished-at="2019-01-14T05:27:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.accountmanage.AccountManageBookingKeppFlowPageTest@75f32542]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-01-14T05:19:38Z" finished-at="2019-01-14T05:19:38Z">
+        <test-method status="PASS" signature="testIdentityAuthenticationChannel(com.dy.AutoTest.OperationPlatform.POJO.IdentityAuthenticationChannelBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.authentication.IdentityAuthenticationChannelPageTest@75f32542]" name="testIdentityAuthenticationChannel" duration-ms="14706" started-at="2019-01-14T05:27:41Z" description="运营平台-身份认证通道管理" data-provider="identityAuthenticationChannel" finished-at="2019-01-14T05:27:56Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.accountmanage.AccountManageBookingKeppFlowPageTest.testAccountManageBookingKeppFlow(com.dy.AutoTest.OperationPlatform.POJO.AccountManageBookingKeppFlowBean)]]>
+                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.IdentityAuthenticationChannelBean@5b6813df]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[                2019-01-14 13:19:38: [Method]-"AccountManageBookingKeppFlowPageTest.testAccountManageBookingKeppFlow" is started]]>
+              <![CDATA[身份认证修改成功！合作通道代码：PYZXCO]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testIdentityAuthenticationChannel -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.authentication.IdentityAuthenticationChannelPageTest@75f32542]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-01-14T05:27:41Z" finished-at="2019-01-14T05:27:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.authentication.IdentityAuthenticationChannelPageTest.testIdentityAuthenticationChannel(com.dy.AutoTest.OperationPlatform.POJO.IdentityAuthenticationChannelBean)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-01-14 13:27:41: [Method]-"IdentityAuthenticationChannelPageTest.testIdentityAuthenticationChannel" is started]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testAccountManageBookingKeppFlow(com.dy.AutoTest.OperationPlatform.POJO.AccountManageBookingKeppFlowBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.accountmanage.AccountManageBookingKeppFlowPageTest@75f32542]" name="testAccountManageBookingKeppFlow" duration-ms="13481" started-at="2019-01-14T05:19:38Z" description="运营平台-记账流水查询" data-provider="accountManageBookingKeppFlow" finished-at="2019-01-14T05:19:52Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.authentication.IdentityAuthenticationChannelPageTest@75f32542]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2019-01-14T05:27:56Z" finished-at="2019-01-14T05:27:58Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.AccountManageBookingKeppFlowBean@5b6813df]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAccountManageBookingKeppFlow -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.accountmanage.AccountManageBookingKeppFlowPageTest@75f32542]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2019-01-14T05:19:52Z" finished-at="2019-01-14T05:19:54Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testAccountManageBookingKeppFlow status=SUCCESS method=AccountManageBookingKeppFlowPageTest.testAccountManageBookingKeppFlow(com.dy.AutoTest.OperationPlatform.POJO.AccountManageBookingKeppFlowBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.accountmanage.AccountManageBookingKeppFlowPageTest@75f32542] output={null}]]]>
+                <![CDATA[[TestResult name=testIdentityAuthenticationChannel status=SUCCESS method=IdentityAuthenticationChannelPageTest.testIdentityAuthenticationChannel(com.dy.AutoTest.OperationPlatform.POJO.IdentityAuthenticationChannelBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.authentication.IdentityAuthenticationChannelPageTest@75f32542] output=身份认证修改成功！合作通道代码：PYZXCO]]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[                2019-01-14 13:19:52: [Method]-"AccountManageBookingKeppFlowPageTest.testAccountManageBookingKeppFlow" is passed]]>
+              <![CDATA[                2019-01-14 13:27:56: [Method]-"IdentityAuthenticationChannelPageTest.testIdentityAuthenticationChannel" is passed]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.accountmanage.AccountManageBookingKeppFlowPageTest@75f32542]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-01-14T05:19:54Z" finished-at="2019-01-14T05:19:54Z">
+        <test-method status="PASS" signature="testIdentityAuthenticationChannel(com.dy.AutoTest.OperationPlatform.POJO.IdentityAuthenticationChannelBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.authentication.IdentityAuthenticationChannelPageTest@75f32542]" name="testIdentityAuthenticationChannel" duration-ms="9179" started-at="2019-01-14T05:27:58Z" description="运营平台-身份认证通道管理" data-provider="identityAuthenticationChannel" finished-at="2019-01-14T05:28:07Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.accountmanage.AccountManageBookingKeppFlowPageTest.testAccountManageBookingKeppFlow(com.dy.AutoTest.OperationPlatform.POJO.AccountManageBookingKeppFlowBean)]]>
+                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.IdentityAuthenticationChannelBean@2016f509]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[                2019-01-14 13:19:54: [Method]-"AccountManageBookingKeppFlowPageTest.testAccountManageBookingKeppFlow" is started]]>
+              <![CDATA[身份认证关闭成功！合作通道代码：PYZXCO]]>
+            </line>
+            <line>
+              <![CDATA[身份认证开启成功！合作通道代码：PYZXCO]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testIdentityAuthenticationChannel -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.authentication.IdentityAuthenticationChannelPageTest@75f32542]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-01-14T05:27:58Z" finished-at="2019-01-14T05:27:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.authentication.IdentityAuthenticationChannelPageTest.testIdentityAuthenticationChannel(com.dy.AutoTest.OperationPlatform.POJO.IdentityAuthenticationChannelBean)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-01-14 13:27:58: [Method]-"IdentityAuthenticationChannelPageTest.testIdentityAuthenticationChannel" is started]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testAccountManageBookingKeppFlow(com.dy.AutoTest.OperationPlatform.POJO.AccountManageBookingKeppFlowBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.accountmanage.AccountManageBookingKeppFlowPageTest@75f32542]" name="testAccountManageBookingKeppFlow" duration-ms="13062" started-at="2019-01-14T05:19:54Z" description="运营平台-记账流水查询" data-provider="accountManageBookingKeppFlow" finished-at="2019-01-14T05:20:07Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.authentication.IdentityAuthenticationChannelPageTest@75f32542]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2019-01-14T05:28:07Z" finished-at="2019-01-14T05:28:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.AccountManageBookingKeppFlowBean@3730ab42]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAccountManageBookingKeppFlow -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.accountmanage.AccountManageBookingKeppFlowPageTest@75f32542]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2019-01-14T05:20:07Z" finished-at="2019-01-14T05:20:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testAccountManageBookingKeppFlow status=SUCCESS method=AccountManageBookingKeppFlowPageTest.testAccountManageBookingKeppFlow(com.dy.AutoTest.OperationPlatform.POJO.AccountManageBookingKeppFlowBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.accountmanage.AccountManageBookingKeppFlowPageTest@75f32542] output={null}]]]>
+                <![CDATA[[TestResult name=testIdentityAuthenticationChannel status=SUCCESS method=IdentityAuthenticationChannelPageTest.testIdentityAuthenticationChannel(com.dy.AutoTest.OperationPlatform.POJO.IdentityAuthenticationChannelBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.authentication.IdentityAuthenticationChannelPageTest@75f32542] output=身份认证关闭成功！合作通道代码：PYZXCO]]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[                2019-01-14 13:20:07: [Method]-"AccountManageBookingKeppFlowPageTest.testAccountManageBookingKeppFlow" is passed]]>
+              <![CDATA[                2019-01-14 13:28:07: [Method]-"IdentityAuthenticationChannelPageTest.testIdentityAuthenticationChannel" is passed]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.accountmanage.AccountManageBookingKeppFlowPageTest -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.authentication.IdentityAuthenticationChannelPageTest -->
       <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@7f1302d6]" name="init" is-config="true" duration-ms="2" started-at="2019-01-14T05:20:09Z" finished-at="2019-01-14T05:20:09Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@7f1302d6]" name="init" is-config="true" duration-ms="2" started-at="2019-01-14T05:28:09Z" finished-at="2019-01-14T05:28:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="testQuit()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@7f1302d6]" name="testQuit" duration-ms="3536" started-at="2019-01-14T05:20:09Z" finished-at="2019-01-14T05:20:13Z">
+        <test-method status="PASS" signature="testQuit()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@7f1302d6]" name="testQuit" duration-ms="3546" started-at="2019-01-14T05:28:09Z" finished-at="2019-01-14T05:28:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testQuit -->
-        <test-method status="PASS" signature="releaseBrowser()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@7f1302d6]" name="releaseBrowser" is-config="true" duration-ms="1000" started-at="2019-01-14T05:20:13Z" finished-at="2019-01-14T05:20:14Z">
+        <test-method status="PASS" signature="releaseBrowser()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@7f1302d6]" name="releaseBrowser" is-config="true" duration-ms="1000" started-at="2019-01-14T05:28:12Z" finished-at="2019-01-14T05:28:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- releaseBrowser -->
