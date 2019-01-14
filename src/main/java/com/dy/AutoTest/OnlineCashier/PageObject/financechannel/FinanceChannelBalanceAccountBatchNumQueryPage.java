@@ -94,4 +94,7 @@ public class FinanceChannelBalanceAccountBatchNumQueryPage extends SuperPage {
 		du.what("SelectionButton",String.valueOf(index)).click();
 	}
 	
+	public void clickBalanceAccount() {
+		du.what("BalanceAccountButton").click();
+	}
 }

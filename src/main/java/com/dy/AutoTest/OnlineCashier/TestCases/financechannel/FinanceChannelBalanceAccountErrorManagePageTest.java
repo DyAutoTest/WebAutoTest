@@ -27,7 +27,7 @@ public class FinanceChannelBalanceAccountErrorManagePageTest extends SuperTest {
 		return data.getDataBeanArray();
 	}
 
-	@Test(dataProvider = "financeChannelBalanceAccountErrorManage", description = "运营平台-对账批次查询")
+	@Test(dataProvider = "financeChannelBalanceAccountErrorManage", description = "运营平台-对账差错管理")
 	public void testFinanceChannelBalanceAccountBatchNumQueryPageTest(
 			FinanceChannelBalanceAccountErrorManageBean financeChannelBalanceAccountErrorManageBean) {
 
@@ -52,6 +52,58 @@ public class FinanceChannelBalanceAccountErrorManagePageTest extends SuperTest {
 		financeChannelBalanceAccountErrorManagePage.clickErrorCheck();
 		wait.waitFor(1000);
 		financeChannelBalanceAccountErrorManagePage.clickCheck_Close();
+		
+		String caseNo = financeChannelBalanceAccountErrorManageBean.getCaseNo();
+
+		switch (caseNo) {
+		case "1":
+			mineOwnCase(financeChannelBalanceAccountErrorManageBean);
+			break;
+		case "2":
+			mineNoneCase(financeChannelBalanceAccountErrorManageBean);
+			break;
+		default:
+			break;
+		}
+	}
+
+	private void mineOwnCase(FinanceChannelBalanceAccountErrorManageBean financeChannelBalanceAccountErrorManageBean) {
+		wait.waitFor(1000);
+		financeChannelBalanceAccountErrorManagePage.clickReplacementOrder();
+		wait.waitFor(1000);
+		financeChannelBalanceAccountErrorManagePage.clickCancelOrder();
+		wait.waitFor(1000);
+		financeChannelBalanceAccountErrorManagePage.clickCancelOder_Close();
+		wait.waitFor(1000);
+		financeChannelBalanceAccountErrorManagePage.clickErrorCancel();
+		wait.waitFor(1000);
+		financeChannelBalanceAccountErrorManagePage.clickErrorCancel_Close();
+		wait.waitFor(1000);
+		financeChannelBalanceAccountErrorManagePage.clickRefundOperation();
+		wait.waitFor(1000);
+		financeChannelBalanceAccountErrorManagePage.clickRefundCheck();
+		wait.waitFor(1000);		
+	}
+
+	private void mineNoneCase(
+			FinanceChannelBalanceAccountErrorManageBean financeChannelBalanceAccountErrorManageBean) {
+		wait.waitFor(1000);
+		financeChannelBalanceAccountErrorManagePage.clickReplacementOrder();
+		wait.waitFor(1000);
+		financeChannelBalanceAccountErrorManagePage.clickCancelOrder();
+		wait.waitFor(1000);
+		financeChannelBalanceAccountErrorManagePage.clickCancelOder_Close();
+		wait.waitFor(1000);
+		financeChannelBalanceAccountErrorManagePage.clickErrorCancel();
+		wait.waitFor(1000);
+		financeChannelBalanceAccountErrorManagePage.clickErrorCancel_Close();
+		wait.waitFor(1000);
+		financeChannelBalanceAccountErrorManagePage.clickRefundOperation();
+		wait.waitFor(1000);
+		financeChannelBalanceAccountErrorManagePage.clickRefundOperation_Confirm();
+		wait.waitFor(1000);
+		financeChannelBalanceAccountErrorManagePage.clickRefundCheck();
+		wait.waitFor(1000);
 	}
 	
 }

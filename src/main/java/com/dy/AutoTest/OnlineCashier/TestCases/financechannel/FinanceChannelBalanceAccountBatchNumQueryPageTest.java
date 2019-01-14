@@ -59,6 +59,9 @@ public class FinanceChannelBalanceAccountBatchNumQueryPageTest extends SuperTest
 		financeChannelBalanceAccountBatchNumQueryPage.clickCheck();
 		wait.waitFor(1000);
 		financeChannelBalanceAccountBatchNumQueryPage.clickCheck_Close();
+		wait.waitFor(1000);
+		financeChannelBalanceAccountBatchNumQueryPage.clickBalanceAccount();
+		wait.waitFor(1000);
 	}
 
 }

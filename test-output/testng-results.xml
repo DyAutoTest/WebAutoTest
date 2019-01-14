@@ -1,80 +1,215 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="3" total="6" passed="3">
+<testng-results skipped="0" failed="0" ignored="4" total="10" passed="6">
   <reporter-output>
     <line>
-      <![CDATA[        2019-01-14 10:12:52): [Test]-"MainMenu" is started]]>
+      <![CDATA[        2019-01-14 10:48:50): [Test]-"MerchantInfoInsert" is started]]>
     </line>
     <line>
-      <![CDATA[                2019-01-14 10:12:52: [Method]-"LoginPageTest.testLogin" is started]]>
+      <![CDATA[                2019-01-14 10:48:50: [Method]-"LoginPageTest.testLogin" is started]]>
     </line>
     <line>
-      <![CDATA[                2019-01-14 10:13:17: [Method]-"LoginPageTest.testLogin" is passed]]>
+      <![CDATA[                2019-01-14 10:48:54: [Method]-"LoginPageTest.testLogin" is passed]]>
     </line>
     <line>
-      <![CDATA[                2019-01-14 10:13:19: [Method]-"TMB2BTradeDetailQueryPageTest.testTMB2BTradeDetailQuery" is started]]>
+      <![CDATA[                2019-01-14 10:48:56: [Method]-"FinanceChannelBalanceAccountParameterPageTest.testFinanceChannelBalanceAccountParameterPageTest" is started]]>
     </line>
     <line>
-      <![CDATA[                2019-01-14 10:13:27: [Method]-"TMB2BTradeDetailQueryPageTest.testTMB2BTradeDetailQuery" is passed]]>
+      <![CDATA[                2019-01-14 10:49:20: [Method]-"FinanceChannelBalanceAccountParameterPageTest.testFinanceChannelBalanceAccountParameterPageTest" is passed]]>
     </line>
     <line>
-      <![CDATA[        2019-01-14 10:13:33): [Test]-"MainMenu" is finished]]>
+      <![CDATA[                2019-01-14 10:49:22: [Method]-"FinanceChannelBalanceAccountParameterPageTest.testFinanceChannelBalanceAccountParameterPageTest" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2019-01-14 10:49:35: [Method]-"FinanceChannelBalanceAccountParameterPageTest.testFinanceChannelBalanceAccountParameterPageTest" is passed]]>
+    </line>
+    <line>
+      <![CDATA[                2019-01-14 10:49:37: [Method]-"FinanceChannelBalanceAccountParameterPageTest.testFinanceChannelBalanceAccountParameterPageTest" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2019-01-14 10:50:02: [Method]-"FinanceChannelBalanceAccountParameterPageTest.testFinanceChannelBalanceAccountParameterPageTest" is passed]]>
+    </line>
+    <line>
+      <![CDATA[                2019-01-14 10:50:04: [Method]-"FinanceChannelBalanceAccountParameterPageTest.testFinanceChannelBalanceAccountParameterPageTest" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2019-01-14 10:50:13: [Method]-"FinanceChannelBalanceAccountParameterPageTest.testFinanceChannelBalanceAccountParameterPageTest" is passed]]>
+    </line>
+    <line>
+      <![CDATA[        2019-01-14 10:50:20): [Test]-"MerchantInfoInsert" is finished]]>
     </line>
   </reporter-output>
-  <suite name="SuiteOperationPlatform" duration-ms="41087" started-at="2019-01-14T02:12:52Z" finished-at="2019-01-14T02:13:33Z">
+  <suite name="SuiteOperationPlatform" duration-ms="90148" started-at="2019-01-14T02:48:50Z" finished-at="2019-01-14T02:50:20Z">
     <groups>
     </groups>
-    <test name="MainMenu" duration-ms="41087" started-at="2019-01-14T02:12:52Z" finished-at="2019-01-14T02:13:33Z">
-      <class name="com.dy.AutoTest.MerchantPortal.TestCases.trademanage.TMB2BTradeDetailQueryPageTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.MerchantPortal.TestCases.trademanage.TMB2BTradeDetailQueryPageTest@7692d9cc]" name="beforeClass" is-config="true" duration-ms="1" started-at="2019-01-14T02:13:19Z" finished-at="2019-01-14T02:13:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.MerchantPortal.TestCases.trademanage.TMB2BTradeDetailQueryPageTest@7692d9cc]" name="init" is-config="true" duration-ms="1" started-at="2019-01-14T02:13:19Z" finished-at="2019-01-14T02:13:19Z">
+    <test name="MerchantInfoInsert" duration-ms="90148" started-at="2019-01-14T02:48:50Z" finished-at="2019-01-14T02:50:20Z">
+      <class name="com.dy.AutoTest.OnlineCashier.TestCases.financechannel.FinanceChannelBalanceAccountParameterPageTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.financechannel.FinanceChannelBalanceAccountParameterPageTest@75f32542]" name="init" is-config="true" duration-ms="4" started-at="2019-01-14T02:48:56Z" finished-at="2019-01-14T02:48:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="testTMB2BTradeDetailQuery(com.dy.AutoTest.MerchantPortal.POJO.TMB2BTradeDetailQueryBean)[pri:0, instance:com.dy.AutoTest.MerchantPortal.TestCases.trademanage.TMB2BTradeDetailQueryPageTest@7692d9cc]" name="testTMB2BTradeDetailQuery" duration-ms="8161" started-at="2019-01-14T02:13:19Z" description="商户门户-B2B交易明细查询" data-provider="tMB2BTradeDetailQuery" finished-at="2019-01-14T02:13:27Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.dy.AutoTest.MerchantPortal.POJO.TMB2BTradeDetailQueryBean@89ff02e]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.financechannel.FinanceChannelBalanceAccountParameterPageTest@75f32542]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-01-14T02:48:56Z" finished-at="2019-01-14T02:48:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testTMB2BTradeDetailQuery -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.MerchantPortal.TestCases.trademanage.TMB2BTradeDetailQueryPageTest@7692d9cc]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-01-14T02:13:19Z" finished-at="2019-01-14T02:13:19Z">
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.financechannel.FinanceChannelBalanceAccountParameterPageTest@75f32542]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-01-14T02:48:56Z" finished-at="2019-01-14T02:48:56Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.dy.AutoTest.MerchantPortal.TestCases.trademanage.TMB2BTradeDetailQueryPageTest.testTMB2BTradeDetailQuery(com.dy.AutoTest.MerchantPortal.POJO.TMB2BTradeDetailQueryBean)]]>
+                <![CDATA[public void com.dy.AutoTest.OnlineCashier.TestCases.financechannel.FinanceChannelBalanceAccountParameterPageTest.testFinanceChannelBalanceAccountParameterPageTest(com.dy.AutoTest.OnlineCashier.POJO.FinanceChannelBalanceAccountParameterBean)]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[                2019-01-14 10:13:19: [Method]-"TMB2BTradeDetailQueryPageTest.testTMB2BTradeDetailQuery" is started]]>
+              <![CDATA[                2019-01-14 10:48:56: [Method]-"FinanceChannelBalanceAccountParameterPageTest.testFinanceChannelBalanceAccountParameterPageTest" is started]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.MerchantPortal.TestCases.trademanage.TMB2BTradeDetailQueryPageTest@7692d9cc]" name="afterMethod" is-config="true" duration-ms="2000" started-at="2019-01-14T02:13:27Z" finished-at="2019-01-14T02:13:29Z">
+        <test-method status="PASS" signature="testFinanceChannelBalanceAccountParameterPageTest(com.dy.AutoTest.OnlineCashier.POJO.FinanceChannelBalanceAccountParameterBean)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.financechannel.FinanceChannelBalanceAccountParameterPageTest@75f32542]" name="testFinanceChannelBalanceAccountParameterPageTest" duration-ms="23209" started-at="2019-01-14T02:48:56Z" description="运营平台-对账参数维护" data-provider="financeChannelBalanceAccountParameter" finished-at="2019-01-14T02:49:20Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testTMB2BTradeDetailQuery status=SUCCESS method=TMB2BTradeDetailQueryPageTest.testTMB2BTradeDetailQuery(com.dy.AutoTest.MerchantPortal.POJO.TMB2BTradeDetailQueryBean)[pri:0, instance:com.dy.AutoTest.MerchantPortal.TestCases.trademanage.TMB2BTradeDetailQueryPageTest@7692d9cc] output={null}]]]>
+                <![CDATA[com.dy.AutoTest.OnlineCashier.POJO.FinanceChannelBalanceAccountParameterBean@5b6813df]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFinanceChannelBalanceAccountParameterPageTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.financechannel.FinanceChannelBalanceAccountParameterPageTest@75f32542]" name="afterMethod" is-config="true" duration-ms="2002" started-at="2019-01-14T02:49:20Z" finished-at="2019-01-14T02:49:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testFinanceChannelBalanceAccountParameterPageTest status=SUCCESS method=FinanceChannelBalanceAccountParameterPageTest.testFinanceChannelBalanceAccountParameterPageTest(com.dy.AutoTest.OnlineCashier.POJO.FinanceChannelBalanceAccountParameterBean)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.financechannel.FinanceChannelBalanceAccountParameterPageTest@75f32542] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[                2019-01-14 10:13:27: [Method]-"TMB2BTradeDetailQueryPageTest.testTMB2BTradeDetailQuery" is passed]]>
+              <![CDATA[                2019-01-14 10:49:20: [Method]-"FinanceChannelBalanceAccountParameterPageTest.testFinanceChannelBalanceAccountParameterPageTest" is passed]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- com.dy.AutoTest.MerchantPortal.TestCases.trademanage.TMB2BTradeDetailQueryPageTest -->
+        <test-method status="PASS" signature="testFinanceChannelBalanceAccountParameterPageTest(com.dy.AutoTest.OnlineCashier.POJO.FinanceChannelBalanceAccountParameterBean)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.financechannel.FinanceChannelBalanceAccountParameterPageTest@75f32542]" name="testFinanceChannelBalanceAccountParameterPageTest" duration-ms="13319" started-at="2019-01-14T02:49:22Z" description="运营平台-对账参数维护" data-provider="financeChannelBalanceAccountParameter" finished-at="2019-01-14T02:49:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.OnlineCashier.POJO.FinanceChannelBalanceAccountParameterBean@5d1b1c2a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFinanceChannelBalanceAccountParameterPageTest -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.financechannel.FinanceChannelBalanceAccountParameterPageTest@75f32542]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-01-14T02:49:22Z" finished-at="2019-01-14T02:49:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OnlineCashier.TestCases.financechannel.FinanceChannelBalanceAccountParameterPageTest.testFinanceChannelBalanceAccountParameterPageTest(com.dy.AutoTest.OnlineCashier.POJO.FinanceChannelBalanceAccountParameterBean)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-01-14 10:49:22: [Method]-"FinanceChannelBalanceAccountParameterPageTest.testFinanceChannelBalanceAccountParameterPageTest" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.financechannel.FinanceChannelBalanceAccountParameterPageTest@75f32542]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2019-01-14T02:49:35Z" finished-at="2019-01-14T02:49:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testFinanceChannelBalanceAccountParameterPageTest status=SUCCESS method=FinanceChannelBalanceAccountParameterPageTest.testFinanceChannelBalanceAccountParameterPageTest(com.dy.AutoTest.OnlineCashier.POJO.FinanceChannelBalanceAccountParameterBean)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.financechannel.FinanceChannelBalanceAccountParameterPageTest@75f32542] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-01-14 10:49:35: [Method]-"FinanceChannelBalanceAccountParameterPageTest.testFinanceChannelBalanceAccountParameterPageTest" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.financechannel.FinanceChannelBalanceAccountParameterPageTest@75f32542]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-01-14T02:49:37Z" finished-at="2019-01-14T02:49:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OnlineCashier.TestCases.financechannel.FinanceChannelBalanceAccountParameterPageTest.testFinanceChannelBalanceAccountParameterPageTest(com.dy.AutoTest.OnlineCashier.POJO.FinanceChannelBalanceAccountParameterBean)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-01-14 10:49:37: [Method]-"FinanceChannelBalanceAccountParameterPageTest.testFinanceChannelBalanceAccountParameterPageTest" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testFinanceChannelBalanceAccountParameterPageTest(com.dy.AutoTest.OnlineCashier.POJO.FinanceChannelBalanceAccountParameterBean)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.financechannel.FinanceChannelBalanceAccountParameterPageTest@75f32542]" name="testFinanceChannelBalanceAccountParameterPageTest" duration-ms="25345" started-at="2019-01-14T02:49:37Z" description="运营平台-对账参数维护" data-provider="financeChannelBalanceAccountParameter" finished-at="2019-01-14T02:50:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.OnlineCashier.POJO.FinanceChannelBalanceAccountParameterBean@7d66a126]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFinanceChannelBalanceAccountParameterPageTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.financechannel.FinanceChannelBalanceAccountParameterPageTest@75f32542]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2019-01-14T02:50:02Z" finished-at="2019-01-14T02:50:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testFinanceChannelBalanceAccountParameterPageTest status=SUCCESS method=FinanceChannelBalanceAccountParameterPageTest.testFinanceChannelBalanceAccountParameterPageTest(com.dy.AutoTest.OnlineCashier.POJO.FinanceChannelBalanceAccountParameterBean)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.financechannel.FinanceChannelBalanceAccountParameterPageTest@75f32542] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-01-14 10:50:02: [Method]-"FinanceChannelBalanceAccountParameterPageTest.testFinanceChannelBalanceAccountParameterPageTest" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testFinanceChannelBalanceAccountParameterPageTest(com.dy.AutoTest.OnlineCashier.POJO.FinanceChannelBalanceAccountParameterBean)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.financechannel.FinanceChannelBalanceAccountParameterPageTest@75f32542]" name="testFinanceChannelBalanceAccountParameterPageTest" duration-ms="8886" started-at="2019-01-14T02:50:04Z" description="运营平台-对账参数维护" data-provider="financeChannelBalanceAccountParameter" finished-at="2019-01-14T02:50:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.OnlineCashier.POJO.FinanceChannelBalanceAccountParameterBean@208185c0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFinanceChannelBalanceAccountParameterPageTest -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.financechannel.FinanceChannelBalanceAccountParameterPageTest@75f32542]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-01-14T02:50:04Z" finished-at="2019-01-14T02:50:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OnlineCashier.TestCases.financechannel.FinanceChannelBalanceAccountParameterPageTest.testFinanceChannelBalanceAccountParameterPageTest(com.dy.AutoTest.OnlineCashier.POJO.FinanceChannelBalanceAccountParameterBean)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-01-14 10:50:04: [Method]-"FinanceChannelBalanceAccountParameterPageTest.testFinanceChannelBalanceAccountParameterPageTest" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.financechannel.FinanceChannelBalanceAccountParameterPageTest@75f32542]" name="afterMethod" is-config="true" duration-ms="2000" started-at="2019-01-14T02:50:13Z" finished-at="2019-01-14T02:50:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testFinanceChannelBalanceAccountParameterPageTest status=SUCCESS method=FinanceChannelBalanceAccountParameterPageTest.testFinanceChannelBalanceAccountParameterPageTest(com.dy.AutoTest.OnlineCashier.POJO.FinanceChannelBalanceAccountParameterBean)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.financechannel.FinanceChannelBalanceAccountParameterPageTest@75f32542] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-01-14 10:50:13: [Method]-"FinanceChannelBalanceAccountParameterPageTest.testFinanceChannelBalanceAccountParameterPageTest" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.dy.AutoTest.OnlineCashier.TestCases.financechannel.FinanceChannelBalanceAccountParameterPageTest -->
       <class name="com.dy.AutoTest.web.actions.SingletonSet">
-        <test-method status="PASS" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@6b19b79]" name="init" is-config="true" duration-ms="3027" started-at="2019-01-14T02:12:49Z" finished-at="2019-01-14T02:12:52Z">
+        <test-method status="PASS" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@2a32de6c]" name="init" is-config="true" duration-ms="3042" started-at="2019-01-14T02:48:47Z" finished-at="2019-01-14T02:48:50Z">
           <params>
             <param index="0">
               <value>
@@ -83,109 +218,109 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[mweb_uat]]>
+                <![CDATA[pop_uat]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="releaseJDBC()[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@6b19b79]" name="releaseJDBC" is-config="true" duration-ms="2712" started-at="2019-01-14T02:13:33Z" finished-at="2019-01-14T02:13:36Z">
+        <test-method status="PASS" signature="releaseJDBC()[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@2a32de6c]" name="releaseJDBC" is-config="true" duration-ms="2699" started-at="2019-01-14T02:50:20Z" finished-at="2019-01-14T02:50:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- releaseJDBC -->
       </class> <!-- com.dy.AutoTest.web.actions.SingletonSet -->
-      <class name="com.dy.AutoTest.MerchantPortal.TestCases.base.LoginPageTest">
-        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.MerchantPortal.TestCases.base.LoginPageTest@2a32de6c]" name="BeforeTest" is-config="true" duration-ms="2" started-at="2019-01-14T02:12:52Z" finished-at="2019-01-14T02:12:52Z">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
+        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc]" name="BeforeTest" is-config="true" duration-ms="2" started-at="2019-01-14T02:48:50Z" finished-at="2019-01-14T02:48:50Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@293cde83]]>
+                <![CDATA[org.testng.TestRunner@6a4d57b7]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[        2019-01-14 10:12:52): [Test]-"MainMenu" is started]]>
+              <![CDATA[        2019-01-14 10:48:50): [Test]-"MerchantInfoInsert" is started]]>
             </line>
           </reporter-output>
         </test-method> <!-- BeforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.MerchantPortal.TestCases.base.LoginPageTest@2a32de6c]" name="beforeClass" is-config="true" duration-ms="1" started-at="2019-01-14T02:12:52Z" finished-at="2019-01-14T02:12:52Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-01-14T02:48:50Z" finished-at="2019-01-14T02:48:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.MerchantPortal.TestCases.base.LoginPageTest@2a32de6c]" name="init" is-config="true" duration-ms="2" started-at="2019-01-14T02:12:52Z" finished-at="2019-01-14T02:12:52Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc]" name="init" is-config="true" duration-ms="3" started-at="2019-01-14T02:48:50Z" finished-at="2019-01-14T02:48:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.MerchantPortal.TestCases.base.LoginPageTest@2a32de6c]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-01-14T02:12:52Z" finished-at="2019-01-14T02:12:52Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-01-14T02:48:50Z" finished-at="2019-01-14T02:48:50Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.dy.AutoTest.MerchantPortal.TestCases.base.LoginPageTest.testLogin(java.lang.String)]]>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest.testLogin(java.lang.String)]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[                2019-01-14 10:12:52: [Method]-"LoginPageTest.testLogin" is started]]>
+              <![CDATA[                2019-01-14 10:48:50: [Method]-"LoginPageTest.testLogin" is started]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.MerchantPortal.TestCases.base.LoginPageTest@2a32de6c]" name="testLogin" duration-ms="24819" started-at="2019-01-14T02:12:52Z" description="商户门户-登录" finished-at="2019-01-14T02:13:17Z">
+        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc]" name="testLogin" duration-ms="4707" started-at="2019-01-14T02:48:50Z" finished-at="2019-01-14T02:48:54Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[90900000023]]>
+                <![CDATA[T00105]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.MerchantPortal.TestCases.base.LoginPageTest@2a32de6c]" name="afterMethod" is-config="true" duration-ms="2002" started-at="2019-01-14T02:13:17Z" finished-at="2019-01-14T02:13:19Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2019-01-14T02:48:54Z" finished-at="2019-01-14T02:48:56Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testLogin status=SUCCESS method=LoginPageTest.testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.MerchantPortal.TestCases.base.LoginPageTest@2a32de6c] output={null}]]]>
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=LoginPageTest.testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[                2019-01-14 10:13:17: [Method]-"LoginPageTest.testLogin" is passed]]>
+              <![CDATA[                2019-01-14 10:48:54: [Method]-"LoginPageTest.testLogin" is passed]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.MerchantPortal.TestCases.base.LoginPageTest@2a32de6c]" name="AfterTest" is-config="true" duration-ms="0" started-at="2019-01-14T02:13:33Z" finished-at="2019-01-14T02:13:33Z">
+        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc]" name="AfterTest" is-config="true" duration-ms="0" started-at="2019-01-14T02:50:20Z" finished-at="2019-01-14T02:50:20Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@293cde83]]>
+                <![CDATA[org.testng.TestRunner@6a4d57b7]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[        2019-01-14 10:13:33): [Test]-"MainMenu" is finished]]>
+              <![CDATA[        2019-01-14 10:50:20): [Test]-"MerchantInfoInsert" is finished]]>
             </line>
           </reporter-output>
         </test-method> <!-- AfterTest -->
-      </class> <!-- com.dy.AutoTest.MerchantPortal.TestCases.base.LoginPageTest -->
-      <class name="com.dy.AutoTest.MerchantPortal.TestCases.base.MainMenuPageTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.MerchantPortal.TestCases.base.MainMenuPageTest@75f32542]" name="init" is-config="true" duration-ms="2" started-at="2019-01-14T02:13:29Z" finished-at="2019-01-14T02:13:29Z">
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest -->
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@7f1302d6]" name="init" is-config="true" duration-ms="2" started-at="2019-01-14T02:50:15Z" finished-at="2019-01-14T02:50:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="testQuit()[pri:0, instance:com.dy.AutoTest.MerchantPortal.TestCases.base.MainMenuPageTest@75f32542]" name="testQuit" duration-ms="3068" started-at="2019-01-14T02:13:29Z" finished-at="2019-01-14T02:13:32Z">
+        <test-method status="PASS" signature="testQuit()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@7f1302d6]" name="testQuit" duration-ms="3628" started-at="2019-01-14T02:50:15Z" finished-at="2019-01-14T02:50:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testQuit -->
-        <test-method status="PASS" signature="releaseBrowser()[pri:0, instance:com.dy.AutoTest.MerchantPortal.TestCases.base.MainMenuPageTest@75f32542]" name="releaseBrowser" is-config="true" duration-ms="1000" started-at="2019-01-14T02:13:32Z" finished-at="2019-01-14T02:13:33Z">
+        <test-method status="PASS" signature="releaseBrowser()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@7f1302d6]" name="releaseBrowser" is-config="true" duration-ms="1000" started-at="2019-01-14T02:50:19Z" finished-at="2019-01-14T02:50:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- releaseBrowser -->
-      </class> <!-- com.dy.AutoTest.MerchantPortal.TestCases.base.MainMenuPageTest -->
-    </test> <!-- MainMenu -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest -->
+    </test> <!-- MerchantInfoInsert -->
   </suite> <!-- SuiteOperationPlatform -->
 </testng-results>

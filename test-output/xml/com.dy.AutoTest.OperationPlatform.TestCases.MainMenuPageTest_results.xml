@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Quit"
+<testsuite name="MerchantInfoInsert"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="4.113">
+           time="3.628">
   <properties />
   
   
-            <testcase name="testQuit" time="4.113" classname="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest" />
+            <testcase name="testQuit" time="3.628" classname="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest" />
       
 </testsuite>
