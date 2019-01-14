@@ -3,13 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.dy.AutoTest.web.actions.test.DoPlusTest">
+      <class name="com.dy.AutoTest.MerchantPortal.TestCases.base.LoginPageTest">
         <methods>
-          <include name="initBrowser"/>
-          <include name="realseBrowser"/>
-          <include name="doSendKeysByRobote"/>
+          <include name="testLogin"/>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="AfterTest"/>
+          <include name="init"/>
+          <include name="beforeMethod"/>
+          <include name="BeforeTest"/>
         </methods>
-      </class> <!-- com.dy.AutoTest.web.actions.test.DoPlusTest -->
+      </class> <!-- com.dy.AutoTest.MerchantPortal.TestCases.base.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

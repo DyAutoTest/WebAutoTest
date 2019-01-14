@@ -11,6 +11,7 @@ import com.dy.AutoTest.OperationPlatform.POJO.UserInfoQueryBean;
 import com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2BBean;
 import com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2CBean;
 import com.dy.AutoTest.AcquiringOperationPlatform.POJO.LoginBean;
+import com.dy.AutoTest.MerchantPortal.POJO.PmOperBean;
 import com.dy.AutoTest.OnlineCashier.POJO.CooperatingAgentInfoBean;
 import com.dy.AutoTest.OnlineCashier.POJO.CooperatingPaymentChannelBean;
 import com.dy.AutoTest.OnlineCashier.POJO.CooperatingRouteInfoBean;
@@ -226,7 +227,7 @@ public class DataBusiness {
 			case "Data_URL":
 				data_URLBean=new Data_URLBean();
 				break;
-
+				
 			default:
 				System.out.println("table is not exist! Please check!");
 				break;
@@ -442,6 +443,9 @@ public class DataBusiness {
 				break;
 			case "AOP_Data_Login":
 				pojo=(T)testingDao.getData(tableName,ID,LoginBean.class);
+				return pojo;
+			case "MP_Data_Oper":
+				pojo=(T)testingDao.getData(tableName,ID,PmOperBean.class);
 				return pojo;
 			default:
 				System.out.println("DataBusiness.getDataBean: "+tableName+" is not exist! Please check!");

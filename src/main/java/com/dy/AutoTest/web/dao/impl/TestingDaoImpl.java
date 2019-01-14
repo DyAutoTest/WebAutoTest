@@ -5,7 +5,6 @@ import static org.testng.Assert.assertTrue;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -88,7 +87,7 @@ public class TestingDaoImpl implements TestingDao{
 		}
 		
 		sql="select * from "+tableName+" ";
-		if(tableName.equals("POP_Data_Oper")) {
+		if(tableName.equals("POP_Data_Oper") || tableName.equals("MP_Data_Oper")) {
 			sql=sql+" where operID=? ";
 		}else {
 			sql=sql+" where ID=? ";
