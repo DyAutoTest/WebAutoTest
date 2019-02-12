@@ -32,7 +32,7 @@ public class LoginPageTest extends SuperTest{
 //		iQuery=LoginPage;
 //		iClickButton=LoginPage;
 //		iClickRadio=LoginPage;
-//		iSearchMerchantByNOorName=LoginPage;
+//		iSearchMerchant=LoginPage;
 	}
 
 	@DataProvider(name="Login")
@@ -84,8 +84,46 @@ public class LoginPageTest extends SuperTest{
 			Reporter.log(LoginPage.getNotice());
 			assertTrue(false);
 		}
-		
 	}
+	@Test(dataProvider="LoginByCaseNO")
+	public void testAuditLogin(LoginBean bean) {
+		LoginPage.navigateTo(URL);
+		wait.waitFor(500);
+		if(bean.getOperID().equals("")) {
+			System.out.println("操作员号字段为必输项，不能为空");
+			Reporter.log("操作员号字段为必输项，不能为空");
+			assertTrue(false);
+		}
+		if(bean.getPassword().equals("")) {
+			System.out.println("操作员密码字段为必输项，不能为空");
+			Reporter.log("操作员密码字段为必输项，不能为空");
+			assertTrue(false);
+		}
+		if(bean.getMobileNO().equals("")) {
+			System.out.println("操作员手机号字段为必输项，不能为空");
+			Reporter.log("操作员手机号字段为必输项，不能为空");
+			assertTrue(false);
+		}
+		LoginPage.setOperNO(bean.getOperID());
+		LoginPage.clickPassword();
+//		LoginPage.setPassword(bean.getPassword());
+		wait.waitFor(5000);
+		LoginPage.clickGetSMS();
+		wait.waitFor(1000);
+		String SMSCode = LoginPage.getCode_SMS(bean.getMobileNO());
+		LoginPage.setSMSCode(SMSCode);
+		wait.waitFor(500);
+		LoginPage.clickLoginButton();
+		wait.waitFor(500);
+		if(LoginPage.isElementExist("CurrentAccountantDate")&&SingletonSet.CurrentAccountantDate.toString().equals(""))
+			SingletonSet.CurrentAccountantDate.append(LoginPage.getCurrentAccountantDate());
+		else {
+			System.out.println(LoginPage.getNotice());
+			Reporter.log(LoginPage.getNotice());
+			assertTrue(false);
+		}
+	}
+	
 	@Test
 	public void testQuit() {
 		wait.waitFor(500);

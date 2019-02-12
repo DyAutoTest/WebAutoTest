@@ -28,7 +28,7 @@ public class LimitWarningPageTest extends SuperTest{
 		iQuery=LimitWarningPage;
 //		iClickButton=LimitWarningPage;
 //		iClickRadio=LimitWarningPage;
-//		iSearchMerchantByNOorName=LimitWarningPage;
+//		iSearchMerchant=LimitWarningPage;
 	}
 
 	@DataProvider(name="RiskControlWarning_LimitWarning")

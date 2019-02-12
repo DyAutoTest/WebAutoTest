@@ -28,7 +28,7 @@ public class ProcessedSuspiciousTradeQueryPageTest extends SuperTest{
 		iQuery=ProcessedSuspiciousTradeQueryPage;
 //		iClickButton=ProcessedSuspiciousTradeQueryPage;
 //		iClickRadio=ProcessedSuspiciousTradeQueryPage;
-//		iSearchMerchantByNOorName=ProcessedSuspiciousTradeQueryPage;
+//		iSearchMerchant=ProcessedSuspiciousTradeQueryPage;
 	}
 
 	@DataProvider(name="SuspiciousTradeManagement_ProcessedSuspiciousTradeQuery")

@@ -28,7 +28,7 @@ public class RiskCustomerMaintainPageTest__ extends SuperTest{
 		iQuery=RiskCustomerMaintainPage;
 //	iClickButton=RiskCustomerMaintainPage;
 //	iClickRadio=RiskCustomerMaintainPage;
-//	iSearchMerchantByNOorName=RiskCustomerMaintainPage;
+//	iSearchMerchant=RiskCustomerMaintainPage;
 	}
 
 	@DataProvider(name="RiskControlLvMaintain_RiskCustomerMaintain")

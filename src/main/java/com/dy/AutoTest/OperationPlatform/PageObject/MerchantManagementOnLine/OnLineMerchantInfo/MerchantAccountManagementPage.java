@@ -1,13 +1,13 @@
 package com.dy.AutoTest.OperationPlatform.PageObject.MerchantManagementOnLine.OnLineMerchantInfo;
 
-import com.dy.AutoTest.web.api.ISearchMerchantByNOorName;
+import com.dy.AutoTest.web.api.ISearchMerchant;
 
 import org.openqa.selenium.WebDriver;
 
 import com.dy.AutoTest.web.api.SuperPage;
 import com.dy.AutoTest.web.actions.DoPlus;
 
-public class MerchantAccountManagementPage extends SuperPage implements ISearchMerchantByNOorName{
+public class MerchantAccountManagementPage extends SuperPage implements ISearchMerchant{
 	public MerchantAccountManagementPage(WebDriver driver) {
 		super(driver);
 		du.loadLocator("POP_Loc_MerchantAccountManagement");

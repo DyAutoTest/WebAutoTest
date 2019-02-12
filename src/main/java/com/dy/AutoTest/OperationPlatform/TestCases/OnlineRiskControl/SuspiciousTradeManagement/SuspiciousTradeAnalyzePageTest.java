@@ -31,7 +31,7 @@ public class SuspiciousTradeAnalyzePageTest extends SuperTest{
 		iQuery=SuspiciousTradeAnalyzePage;
 //		iClickButton=SuspiciousTradeAnalyzePage;
 //		iClickRadio=SuspiciousTradeAnalyzePage;
-//		iSearchMerchantByNOorName=SuspiciousTradeAnalyzePage;
+//		iSearchMerchant=SuspiciousTradeAnalyzePage;
 	}
 
 	@DataProvider(name="SuspiciousTradeManagement_SuspiciousTradeAnalyze")

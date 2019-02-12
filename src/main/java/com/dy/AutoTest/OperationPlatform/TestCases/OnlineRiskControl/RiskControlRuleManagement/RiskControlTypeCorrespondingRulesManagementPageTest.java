@@ -29,7 +29,7 @@ public class RiskControlTypeCorrespondingRulesManagementPageTest extends SuperTe
 		iQuery=RiskControlTypeCorrespondingRulesManagementPage;
 //		iClickButton=RiskControlTypeCorrespondingRulesManagementPage;
 //		iClickRadio=RiskControlTypeCorrespondingRulesManagementPage;
-//		iSearchMerchantByNOorName=RiskControlTypeCorrespondingRulesManagementPage;
+//		iSearchMerchant=RiskControlTypeCorrespondingRulesManagementPage;
 	}
 
 	@DataProvider(name="RiskControlRuleManagement_RiskControlTypeCorrespondingRulesManagement")

@@ -31,7 +31,7 @@ public class BeingProcessedSuspiciousTradeMaintainPageTest extends SuperTest{
 		iQuery=BeingProcessedSuspiciousTradeMaintainPage;
 //		iClickButton=BeingProcessedSuspiciousTradeMaintainPage;
 //		iClickRadio=BeingProcessedSuspiciousTradeMaintainPage;
-//		iSearchMerchantByNOorName=BeingProcessedSuspiciousTradeMaintainPage;
+//		iSearchMerchant=BeingProcessedSuspiciousTradeMaintainPage;
 	}
 
 	@DataProvider(name="SuspiciousTradeManagement_BeingProcessedSuspiciousTradeMaintain")

@@ -6,12 +6,12 @@ import org.openqa.selenium.WebDriver;
 import com.dy.AutoTest.web.api.IClickButton;
 import com.dy.AutoTest.web.api.IClickRadio;
 import com.dy.AutoTest.web.api.IQuery;
-import com.dy.AutoTest.web.api.ISearchMerchantByNOorName;
+import com.dy.AutoTest.web.api.ISearchMerchant;
 import com.dy.AutoTest.web.api.SuperPage;
 import com.dy.AutoTest.web.actions.DoPlus;
 
 public class TradeClearingManagementOrderQueryPage extends SuperPage
-		implements IQuery,IClickButton,IClickRadio,ISearchMerchantByNOorName{
+		implements IQuery,IClickButton,IClickRadio,ISearchMerchant{
 	
 	public TradeClearingManagementOrderQueryPage(WebDriver driver) {
 		super(driver);

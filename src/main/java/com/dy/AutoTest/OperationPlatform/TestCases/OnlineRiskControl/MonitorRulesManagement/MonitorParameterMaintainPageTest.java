@@ -31,7 +31,7 @@ public class MonitorParameterMaintainPageTest extends SuperTest{
 		iQuery=MonitorParameterMaintainPage;
 //		iClickButton=MonitorParameterMaintainPage;
 //		iClickRadio=MonitorParameterMaintainPage;
-//		iSearchMerchantByNOorName=MonitorParameterMaintainPage;
+//		iSearchMerchant=MonitorParameterMaintainPage;
 	}
 
 	@DataProvider(name="MonitorRulesManagement_MonitorParameterMaintain")

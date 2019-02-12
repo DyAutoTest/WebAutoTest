@@ -28,7 +28,7 @@ public class SettlementBillQueryPageTest extends SuperTest{
 		iQuery=SettlementBillQueryPage;
 //		iClickButton=SettlementBillQueryPage;
 //		iClickRadio=SettlementBillQueryPage;
-		iSearchMerchantByNOorName=SettlementBillQueryPage;
+		iSearchMerchant=SettlementBillQueryPage;
 	}
 
 	@DataProvider(name="SettlementManagement_SettlementBillQuery")
@@ -49,7 +49,7 @@ public class SettlementBillQueryPageTest extends SuperTest{
 		wait.waitFor(500);
 
 		if(!ssbqBean.getMerchantNO().equals("")||!ssbqBean.getMerchantName().equals("")) {
-			doSearchMerchantByNOorName(ssbqBean.getMerchantNO(), ssbqBean.getMerchantName(), ssbqBean.getRadio());
+			doSearchMerchant(ssbqBean.getMerchantNO(), ssbqBean.getMerchantName(), ssbqBean.getRadio());
 			doQuery();
 		}
 		if(!ssbqBean.getT0SettlementMarks().equals("")) {
@@ -83,7 +83,7 @@ public class SettlementBillQueryPageTest extends SuperTest{
 		
 
 		if(!ssbqBean.getMerchantNO().equals("")||!ssbqBean.getMerchantName().equals("")) {
-			doSearchMerchantByNOorName(ssbqBean.getMerchantNO(), ssbqBean.getMerchantName(), ssbqBean.getSearchMer_Radio());
+			doSearchMerchant(ssbqBean.getMerchantNO(), ssbqBean.getMerchantName(), ssbqBean.getSearchMer_Radio());
 		}
 		if(!ssbqBean.getT0SettlementMarks().equals("")) {
 			SettlementBillQueryPage.selectT0SettlementMarks(ssbqBean.getT0SettlementMarks());
@@ -129,7 +129,7 @@ public class SettlementBillQueryPageTest extends SuperTest{
 		
 
 		if(!ssbqBean.getMerchantNO().equals("")||!ssbqBean.getMerchantName().equals("")) {
-			doSearchMerchantByNOorName(ssbqBean.getMerchantNO(), ssbqBean.getMerchantName(), ssbqBean.getSearchMer_Radio());
+			doSearchMerchant(ssbqBean.getMerchantNO(), ssbqBean.getMerchantName(), ssbqBean.getSearchMer_Radio());
 		}
 		if(!ssbqBean.getT0SettlementMarks().equals("")) {
 			SettlementBillQueryPage.selectT0SettlementMarks(ssbqBean.getT0SettlementMarks());

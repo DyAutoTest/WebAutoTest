@@ -29,7 +29,7 @@ public class AccountApproveParamMaintainPageTest extends SuperTest{
 		iQuery=AccountApproveParamMaintainPage;
 //		iClickButton=AccountApproveParamMaintainPage;
 //		iClickRadio=AccountApproveParamMaintainPage;
-//		iSearchMerchantByNOorName=AccountApproveParamMaintainPage;
+//		iSearchMerchant=AccountApproveParamMaintainPage;
 	}
 
 	@DataProvider(name="RiskControlParamManagement_AccountApproveParamMaintain")

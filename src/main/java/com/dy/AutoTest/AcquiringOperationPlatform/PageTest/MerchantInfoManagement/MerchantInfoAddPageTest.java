@@ -2,6 +2,10 @@ package com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManageme
 
 
 import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import org.testng.Reporter;
 import org.testng.annotations.BeforeClass;
@@ -13,10 +17,12 @@ import com.dy.AutoTest.AcquiringOperationPlatform.PageObject.MerchantInfoManagem
 import com.dy.AutoTest.AcquiringOperationPlatform.POJO.MerchantInfoManagement_MerchantInfoAddBean;
 import com.dy.AutoTest.web.business.DataBusiness;
 
+import oracle.net.aso.b;
+
 public class MerchantInfoAddPageTest extends SuperTest{
 	MerchantInfoAddPage MerchantInfoAddPage;
 	String URL;
-
+	List<MerchantInfoManagement_MerchantInfoAddBean> beansList=new ArrayList<MerchantInfoManagement_MerchantInfoAddBean>();
 	@BeforeClass
 	public void init() {
 		/******** instant objectPage *********/
@@ -30,7 +36,7 @@ public class MerchantInfoAddPageTest extends SuperTest{
 //		iQuery=MerchantInfoAddPage;
 //		iClickButton=MerchantInfoAddPage;
 //		iClickRadio=MerchantInfoAddPage;
-//		iSearchMerchantByNOorName=MerchantInfoAddPage;
+//		iSearchMerchant=MerchantInfoAddPage;
 	}
 
 	@DataProvider(name="MerchantInfoManagement_MerchantInfoAdd")
@@ -99,7 +105,6 @@ public class MerchantInfoAddPageTest extends SuperTest{
 		}
 		
 		
-		
 		MerchantInfoAddPage.clickBasicInfo_BusinessLicenseETC();
 		wait.waitFor(1000);
 		
@@ -109,7 +114,7 @@ public class MerchantInfoAddPageTest extends SuperTest{
 		if(!bean.getBasicInfo_BusinessLicenseNO().equals("")) {
 			MerchantInfoAddPage.setBasicInfo_BusinessLicenseNO(bean.getBasicInfo_BusinessLicenseNO());
 		}
-		if(bean.getBasicInfo_BusinessLicensePassDate().equals("1")) {
+		if(!bean.getBasicInfo_BusinessLicensePassDate().equals("")) {
 			MerchantInfoAddPage.setBasicInfo_BusinessLicensePassDate(bean.getBasicInfo_BusinessLicensePassDate());
 			MerchantInfoAddPage.doLoseFocus("BasicInfo_BusinessLicensePassDate", 300, 0);
 		}
@@ -127,6 +132,7 @@ public class MerchantInfoAddPageTest extends SuperTest{
 		}
 		if(!bean.getBasicInfo_OrganizingInstitutionCodeCertificatePassDate().equals("")) {
 			MerchantInfoAddPage.setBasicInfo_OrganizingInstitutionCodeCertificatePassDate(bean.getBasicInfo_OrganizingInstitutionCodeCertificatePassDate());
+			MerchantInfoAddPage.doLoseFocus("BasicInfo_OrganizingInstitutionCodeCertificatePassDate", 300, 0);
 		}
 		if(bean.getBasicInfo_OrganizingInstitutionCodeCertificatePassDate_LongTerm().equals("1")) {
 			MerchantInfoAddPage.clickBasicInfo_OrganizingInstitutionCodeCertificatePassDate_LongTerm();
@@ -136,6 +142,7 @@ public class MerchantInfoAddPageTest extends SuperTest{
 		}
 		if(!bean.getBasicInfo_TaxRegistrationCertificateNOPassDate().equals("")) {
 			MerchantInfoAddPage.setBasicInfo_TaxRegistrationCertificateNOPassDate(bean.getBasicInfo_TaxRegistrationCertificateNOPassDate());
+			MerchantInfoAddPage.doLoseFocus("BasicInfo_TaxRegistrationCertificateNOPassDate", 300, 0);
 		}
 		if(bean.getBasicInfo_TaxRegistrationCertificateNOPassDate_LongTerm().equals("1")) {
 			MerchantInfoAddPage.clickBasicInfo_TaxRegistrationCertificateNOPassDate_LongTerm();
@@ -151,13 +158,12 @@ public class MerchantInfoAddPageTest extends SuperTest{
 		}
 		if(!bean.getBasicInfo_LegalPersonCertificatePassDate().equals("")) {
 			MerchantInfoAddPage.setBasicInfo_LegalPersonCertificatePassDate(bean.getBasicInfo_LegalPersonCertificatePassDate());
+			MerchantInfoAddPage.doLoseFocus("BasicInfo_LegalPersonCertificatePassDate", 300, 0);
 		}
 		if(!bean.getBasicInfo_LegalPersonCertificatePassDate_LongTerm().equals("")) {
 			MerchantInfoAddPage.clickBasicInfo_LegalPersonCertificatePassDate_LongTerm();
 		}
-
-
-		
+ 
 		MerchantInfoAddPage.clickBasicInfo_OtherInfoArea();
 		wait.waitFor(1000);
 		
@@ -212,14 +218,16 @@ public class MerchantInfoAddPageTest extends SuperTest{
 		if(!bean.getSettlementInfo_BranchBankBelongCity().equals("")) {
 			MerchantInfoAddPage.selectSettlementInfo_BranchBankBelongCity(bean.getSettlementInfo_BranchBankBelongCity());
 		}
-		wait.waitFor(500);
-		MerchantInfoAddPage.doLoseFocus("SettlementInfo_BranchBankBelongCity", 300, 0);
-		wait.waitFor(500);
-		MerchantInfoAddPage.doPageDown();
-		
 		if(!bean.getSettlementInfo_BranchBankSelect().equals("")) {
 			MerchantInfoAddPage.selectSettlementInfo_BranchBankSelect(bean.getSettlementInfo_BranchBankSelect());
 		}
+		
+		wait.waitFor(500);
+		MerchantInfoAddPage.doLoseFocus("SettlementInfo_BranchBankSelect", 300, 0);
+		wait.waitFor(500);
+		MerchantInfoAddPage.doPageDown();
+		
+		
 		if(!bean.getSettlementInfo_BankAccount().equals("")) {
 			MerchantInfoAddPage.setSettlementInfo_BankAccount(bean.getSettlementInfo_BankAccount());
 		}
@@ -270,7 +278,7 @@ public class MerchantInfoAddPageTest extends SuperTest{
 		if(!bean.getRateInfo_FeeType1_EffectiveDateBegin().equals("")&&!bean.getRateInfo_FeeType1_EffectiveDateEnd().equals("")) {
 			MerchantInfoAddPage.setRateInfo_FeeType1_EffectiveDateBegin(bean.getRateInfo_FeeType1_EffectiveDateBegin());
 			MerchantInfoAddPage.setRateInfo_FeeType1_EffectiveDateEnd(bean.getRateInfo_FeeType1_EffectiveDateEnd());
-			MerchantInfoAddPage.doLoseFocus("RateInfo_FeeType1_EffectiveDateEnd", 120, 0);
+			MerchantInfoAddPage.doLoseFocus("RateInfo_FeeType1_EffectiveDateBegin", -120, 0);
 		}
 		if(!bean.getRateInfo_CreditCard_RateNameCode().equals("")&&!bean.getRateInfo_CreditCard_SearchRate_RateRadio().equals("")) {
 			MerchantInfoAddPage.clickRateInfo_CreditCard_SearchRate();
@@ -295,7 +303,7 @@ public class MerchantInfoAddPageTest extends SuperTest{
 		if(!bean.getRateInfo_FeeType2_EffectiveDateBegin().equals("")&&!bean.getRateInfo_FeeType2_EffectiveDateEnd().equals("")) {
 			MerchantInfoAddPage.setRateInfo_FeeType2_EffectiveDateBegin(bean.getRateInfo_FeeType2_EffectiveDateBegin());
 			MerchantInfoAddPage.setRateInfo_FeeType2_EffectiveDateEnd(bean.getRateInfo_FeeType2_EffectiveDateEnd());
-			MerchantInfoAddPage.doLoseFocus("RateInfo_FeeType2_EffectiveDateEnd", 120, 0);
+			MerchantInfoAddPage.doLoseFocus("RateInfo_FeeType2_EffectiveDateBegin", -120, 0);
 		}
 		if(!bean.getRateInfo_Unionpay_RateNameCode().equals("")&&!bean.getRateInfo_Unionpay_SearchRate_RateRadio().equals("")) {
 			MerchantInfoAddPage.clickRateInfo_Unionpay_SearchRate();
@@ -307,7 +315,7 @@ public class MerchantInfoAddPageTest extends SuperTest{
 		if(!bean.getRateInfo_FeeType3_EffectiveDateBegin().equals("")&&!bean.getRateInfo_FeeType3_EffectiveDateEnd().equals("")) {
 			MerchantInfoAddPage.setRateInfo_FeeType3_EffectiveDateBegin(bean.getRateInfo_FeeType3_EffectiveDateBegin());
 			MerchantInfoAddPage.setRateInfo_FeeType3_EffectiveDateEnd(bean.getRateInfo_FeeType3_EffectiveDateEnd());
-			MerchantInfoAddPage.doLoseFocus("RateInfo_FeeType3_EffectiveDateEnd", 120, 0);
+			MerchantInfoAddPage.doLoseFocus("RateInfo_FeeType3_EffectiveDateBegin", -120, 0);
 		}
 		if(!bean.getRateInfo_Alipay_RateNameCode().equals("")&&!bean.getRateInfo_Alipay_SearchRate_RateRadio().equals("")) {
 			MerchantInfoAddPage.clickRateInfo_Alipay_SearchRate();
@@ -319,7 +327,7 @@ public class MerchantInfoAddPageTest extends SuperTest{
 		if(!bean.getRateInfo_FeeType4_EffectiveDateBegin().equals("")&&!bean.getRateInfo_FeeType4_EffectiveDateEnd().equals("")) {
 			MerchantInfoAddPage.setRateInfo_FeeType4_EffectiveDateBegin(bean.getRateInfo_FeeType4_EffectiveDateBegin());
 			MerchantInfoAddPage.setRateInfo_FeeType4_EffectiveDateEnd(bean.getRateInfo_FeeType4_EffectiveDateEnd());
-			MerchantInfoAddPage.doLoseFocus("RateInfo_FeeType4_EffectiveDateEnd", 120, 0);
+			MerchantInfoAddPage.doLoseFocus("RateInfo_FeeType4_EffectiveDateBegin", -120, 0);
 		}
 		if(!bean.getRateInfo_Wechat_RateNameCode().equals("")&&!bean.getRateInfo_Wechat_SearchRate_RateRadio().equals("")) {
 			MerchantInfoAddPage.clickRateInfo_Wechat_SearchRate();
@@ -365,6 +373,7 @@ public class MerchantInfoAddPageTest extends SuperTest{
 		}
 		if(!bean.getAggreementInfo_AggreementPassDate().equals("")) {
 			MerchantInfoAddPage.setAggreementInfo_AggreementPassDate(bean.getAggreementInfo_AggreementPassDate());
+			MerchantInfoAddPage.doLoseFocus("AggreementInfo_AggreementPassDate", 300, 0);
 		}
 		
 		
@@ -422,16 +431,158 @@ public class MerchantInfoAddPageTest extends SuperTest{
 		System.out.println(MerchantInfoAddPage.getNotice());
 		Reporter.log(MerchantInfoAddPage.getNotice());
 		
+		
+		MerchantInfoAddPage.clickBasicInfo();
+		wait.waitFor(500);
+		MerchantInfoAddPage.clickBasicInfo_BusinessLicenseETC();
+		wait.waitFor(500);
+
+		if(bean.getBasicInfo_BusinessLicensePassDate_LongTerm().equals("1")) {
+			MerchantInfoAddPage.clickBasicInfo_BusinessLicensePassDate_LongTerm();
+		}else if(!bean.getBasicInfo_BusinessLicensePassDate().equals("")) {
+			MerchantInfoAddPage.setBasicInfo_BusinessLicensePassDate(bean.getBasicInfo_BusinessLicensePassDate());
+			MerchantInfoAddPage.doLoseFocus("BasicInfo_BusinessLicensePassDate", 300, 0);
+		}
+		
+		MerchantInfoAddPage.doLoseFocus("BasicInfo_BusinessLicensePassDate", 300, 0);
+		MerchantInfoAddPage.doPageDown();
+		
+		if(bean.getBasicInfo_OrganizingInstitutionCodeCertificatePassDate_LongTerm().equals("1")) {
+			MerchantInfoAddPage.clickBasicInfo_OrganizingInstitutionCodeCertificatePassDate_LongTerm();
+		}else if(!bean.getBasicInfo_OrganizingInstitutionCodeCertificatePassDate().equals("")) {
+			MerchantInfoAddPage.setBasicInfo_OrganizingInstitutionCodeCertificatePassDate(bean.getBasicInfo_OrganizingInstitutionCodeCertificatePassDate());
+			MerchantInfoAddPage.doLoseFocus("BasicInfo_OrganizingInstitutionCodeCertificatePassDate", 300, 0);
+		}
+		if(bean.getBasicInfo_TaxRegistrationCertificateNOPassDate_LongTerm().equals("1")) {
+			MerchantInfoAddPage.clickBasicInfo_TaxRegistrationCertificateNOPassDate_LongTerm();
+		}else if(!bean.getBasicInfo_TaxRegistrationCertificateNOPassDate().equals("")) {
+			MerchantInfoAddPage.setBasicInfo_TaxRegistrationCertificateNOPassDate(bean.getBasicInfo_TaxRegistrationCertificateNOPassDate());
+			MerchantInfoAddPage.doLoseFocus("BasicInfo_TaxRegistrationCertificateNOPassDate", 300, 0);
+		}
+		if(bean.getBasicInfo_LegalPersonCertificatePassDate_LongTerm().equals("1")) {
+			MerchantInfoAddPage.clickBasicInfo_LegalPersonCertificatePassDate_LongTerm();
+		}else if(!bean.getBasicInfo_LegalPersonCertificatePassDate().equals("")) {
+			MerchantInfoAddPage.setBasicInfo_LegalPersonCertificatePassDate(bean.getBasicInfo_LegalPersonCertificatePassDate());
+			MerchantInfoAddPage.doLoseFocus("BasicInfo_LegalPersonCertificatePassDate", 300, 0);
+		}
+
+		MerchantInfoAddPage.clickBasicInfo_OtherInfoArea();
+		wait.waitFor(1000);
+
+		if(!bean.getBasicInfo_OpenDate().equals("")) {
+			MerchantInfoAddPage.setBasicInfo_OpenDate(bean.getBasicInfo_OpenDate());
+			MerchantInfoAddPage.doLoseFocus("BasicInfo_OpenDate", 300, 0);
+		}
+		MerchantInfoAddPage.doPageUp();
+		wait.waitFor(500);
+		MerchantInfoAddPage.clickSettlementInfo();
+		wait.waitFor(1000);
+		MerchantInfoAddPage.doPageDown();
+
+		if(!bean.getSettlementInfo_NextSettlementDate().equals("")) {
+			MerchantInfoAddPage.setSettlementInfo_NextSettlementDate(bean.getSettlementInfo_NextSettlementDate());
+			MerchantInfoAddPage.doLoseFocus("SettlementInfo_NextSettlementDate", 300, 0);
+		}
+		if(!bean.getSettlementInfo_EffectiveDateBegin().equals("")&&!bean.getSettlementInfo_EffectiveDateEnd().equals("")) {
+			MerchantInfoAddPage.setSettlementInfo_EffectiveDateBegin(bean.getSettlementInfo_EffectiveDateBegin());
+			MerchantInfoAddPage.setSettlementInfo_EffectiveDateEnd(bean.getSettlementInfo_EffectiveDateEnd());
+			MerchantInfoAddPage.doLoseFocus("SettlementInfo_EffectiveDateEnd", 120, 0);
+		}
+
+		MerchantInfoAddPage.doPageUp();
+		wait.waitFor(500);
+		MerchantInfoAddPage.clickRateInfo();
+		wait.waitFor(1000);
+
+		if(!bean.getRateInfo_FeeType1_EffectiveDateBegin().equals("")&&!bean.getRateInfo_FeeType1_EffectiveDateEnd().equals("")) {
+			MerchantInfoAddPage.setRateInfo_FeeType1_EffectiveDateBegin(bean.getRateInfo_FeeType1_EffectiveDateBegin());
+			MerchantInfoAddPage.setRateInfo_FeeType1_EffectiveDateEnd(bean.getRateInfo_FeeType1_EffectiveDateEnd());
+			MerchantInfoAddPage.doLoseFocus("RateInfo_FeeType1_EffectiveDateBegin", -120, 0);
+		}
+		
+		MerchantInfoAddPage.doPageDown();
+		wait.waitFor(500);
+		
+		if(!bean.getRateInfo_FeeType2_EffectiveDateBegin().equals("")&&!bean.getRateInfo_FeeType2_EffectiveDateEnd().equals("")) {
+			MerchantInfoAddPage.setRateInfo_FeeType2_EffectiveDateBegin(bean.getRateInfo_FeeType2_EffectiveDateBegin());
+			MerchantInfoAddPage.setRateInfo_FeeType2_EffectiveDateEnd(bean.getRateInfo_FeeType2_EffectiveDateEnd());
+			MerchantInfoAddPage.doLoseFocus("RateInfo_FeeType2_EffectiveDateBegin", -120, 0);
+		}
+		if(!bean.getRateInfo_FeeType3_EffectiveDateBegin().equals("")&&!bean.getRateInfo_FeeType3_EffectiveDateEnd().equals("")) {
+			MerchantInfoAddPage.setRateInfo_FeeType3_EffectiveDateBegin(bean.getRateInfo_FeeType3_EffectiveDateBegin());
+			MerchantInfoAddPage.setRateInfo_FeeType3_EffectiveDateEnd(bean.getRateInfo_FeeType3_EffectiveDateEnd());
+			MerchantInfoAddPage.doLoseFocus("RateInfo_FeeType3_EffectiveDateBegin", -120, 0);
+		}
+		if(!bean.getRateInfo_FeeType4_EffectiveDateBegin().equals("")&&!bean.getRateInfo_FeeType4_EffectiveDateEnd().equals("")) {
+			MerchantInfoAddPage.setRateInfo_FeeType4_EffectiveDateBegin(bean.getRateInfo_FeeType4_EffectiveDateBegin());
+			MerchantInfoAddPage.setRateInfo_FeeType4_EffectiveDateEnd(bean.getRateInfo_FeeType4_EffectiveDateEnd());
+			MerchantInfoAddPage.doLoseFocus("RateInfo_FeeType4_EffectiveDateBegin", -120, 0);
+		}
+
+		MerchantInfoAddPage.doPageUp();
+		wait.waitFor(500);
+		MerchantInfoAddPage.clickAggreementInfo();
+		wait.waitFor(1000);
+
+		if(!bean.getAggreementInfo_AggreementPassDate().equals("")) {
+			MerchantInfoAddPage.setAggreementInfo_AggreementPassDate(bean.getAggreementInfo_AggreementPassDate());
+			MerchantInfoAddPage.doLoseFocus("AggreementInfo_AggreementPassDate", 300, 0);
+		}
+
+		MerchantInfoAddPage.clickAttachmentUploading();
+		wait.waitFor(2000);
+		MerchantInfoAddPage.setWaitTime(0);
+		MerchantInfoAddPage.clickEnterConfirm();
+//		String NoticeForMerchAddSuccess=MerchantInfoAddPage.getNotice();
+//			System.out.println(NoticeForMerchAddSuccess);
+//			Reporter.log(NoticeForMerchAddSuccess);
+		MerchantInfoAddPage.doLeft();
+		wait.waitFor(500);
+		MerchantInfoAddPage.doEnter();
+		wait.waitFor(1000);
+		beansList.add(bean);
+	} 
+	@Test
+	public void testAddPreAuditPassRecord() {
+		if(beansList.size()>0) {
+			for(MerchantInfoManagement_MerchantInfoAddBean bean:beansList) {
+				Map<String, Object> insertMap=new HashMap<String,Object>();
+				insertMap.put("CaseNO", "testPreAuditPass");
+				insertMap.put("TradeName", "商户新增");
+				insertMap.put("KeyInfo", bean.getBasicInfo_MerchantName());
+				insertMap.put("AuditStatus", "Y1");//注册待初审
+				insertMap.put("Radio", "0");
+				insertMap.put("PreAuditOperation_PreAuditTips", "初审通过");
+				insertMap.put("AuditRadio", bean.getRiskTemplate());
+				insertMap.put("RiskTemplate", bean.getRiskTemplate());
+				DataBusiness.insertTestData("AOP_Data_MerchantInfoManagement_MerchantAudit", insertMap);
+			}
+		}
+	}
+	@Test
+	public void testAddPreAuditFailRecord() {
+		if(beansList.size()>0) {
+			for(MerchantInfoManagement_MerchantInfoAddBean bean:beansList) {
+				Map<String, Object> insertMap=new HashMap<String,Object>();
+				insertMap.put("CaseNO", "testPreAuditFail");
+				insertMap.put("TradeName", "商户新增");
+				insertMap.put("KeyInfo", bean.getBasicInfo_MerchantAbbreviation());
+				insertMap.put("AuditStatus", "Y1");//注册待初审
+				insertMap.put("Radio", "0");
+				insertMap.put("PreAuditOperation_PreAuditTips", "初审不通过");
+				DataBusiness.insertTestData("AOP_Data_MerchantInfoManagement_MerchantAudit", insertMap);
+			}
+		}
 	}
 	
 	void doSearchMerchantFeeRate(String rateNameCode,String radio) {
 		MerchantInfoAddPage.setRateInfo_SearchRate_RateNameCode(rateNameCode);
 		MerchantInfoAddPage.clickRateInfo_SearchRate_Search();
+		wait.waitFor(500);
 		MerchantInfoAddPage.clickRateInfo_SearchRate_RateRadio(radio);
-		wait.waitFor(2000);
+		wait.waitFor(1000);
 		MerchantInfoAddPage.clickRateInfo_SearchRate_Submit();
 	}
-	
 	
 	
 	

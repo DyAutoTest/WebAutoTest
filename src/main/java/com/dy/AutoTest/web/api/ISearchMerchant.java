@@ -1,6 +1,6 @@
 package com.dy.AutoTest.web.api;
 
-public interface ISearchMerchantByNOorName {
+public interface ISearchMerchant {
 	
 	public void setMerchantNO(String value);
 	public void clickSearchMer();

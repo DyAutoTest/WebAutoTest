@@ -31,7 +31,7 @@ public class PaymentWorkFlowQueryPageTest extends SuperTest{
 		iQuery=PaymentWorkFlowQueryPage;
 //		iClickButton=PaymentWorkFlowQueryPage;
 //		iClickRadio=PaymentWorkFlowQueryPage;
-//		iSearchMerchantByNOorName=PaymentWorkFlowQueryPage;
+//		iSearchMerchant=PaymentWorkFlowQueryPage;
 	}
 
 	@DataProvider(name="SettlementManagement_PaymentWorkFlowQuery")

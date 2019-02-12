@@ -29,7 +29,7 @@ public class ComplianceLimitMaintainPageTest extends SuperTest{
 		iQuery=ComplianceLimitMaintainPage;
 //	iClickButton=ComplianceLimitMaintainPage;
 //	iClickRadio=ComplianceLimitMaintainPage;
-//	iSearchMerchantByNOorName=ComplianceLimitMaintainPage;
+//	iSearchMerchant=ComplianceLimitMaintainPage;
 	}
 
 	@DataProvider(name="ComplianceMaintain_ComplianceLimitMaintain")

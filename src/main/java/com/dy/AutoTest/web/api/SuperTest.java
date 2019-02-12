@@ -15,7 +15,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
-import com.dy.AutoTest.OperationPlatform.POJO.RiskControlParamManagement_AccountApproveParamMaintainBean;
 import com.dy.AutoTest.web.actions.SingletonSet;
 import com.dy.AutoTest.web.actions.Wait;
 import com.dy.AutoTest.web.business.DataBusiness;
@@ -36,7 +35,8 @@ public class SuperTest {
 	protected IQuery iQuery;
 	protected IClickRadio iClickRadio;
 	protected IClickButton iClickButton;
-	protected ISearchMerchantByNOorName iSearchMerchantByNOorName;
+	protected ISearchMerchant iSearchMerchant;
+	protected ISearchMerchant_Add iSearchMerchant_Add;
 	
 	/************* test area ****************/
 	@BeforeClass
@@ -83,30 +83,57 @@ public class SuperTest {
 /*************************** interface function *****************************/
 	
 	//搜商户
-	public void doSearchMerchantByNOorName(String merchantNO,String merchantName,String index) {
+	public void doSearchMerchant(String merchantNO,String merchantName,String index) {
 		if(!merchantNO.equals("")) {
-			iSearchMerchantByNOorName.setMerchantNO(merchantNO);
+			iSearchMerchant.setMerchantNO(merchantNO);
 		}else if(!merchantName.equals("")) {
-			iSearchMerchantByNOorName.clickSearchMer();
-			iSearchMerchantByNOorName.setSearchMer_MerName(merchantName);
-			iSearchMerchantByNOorName.clickSearchMer_Search();
+			iSearchMerchant.clickSearchMer();
+			iSearchMerchant.setSearchMer_MerName(merchantName);
+			iSearchMerchant.clickSearchMer_Search();
 			wait.waitFor(800);
 			try {
-				iSearchMerchantByNOorName.isSearchMer_RadioDisplayed(index);
+				iSearchMerchant.isSearchMer_RadioDisplayed(index);
 			} catch (Exception e) {
-				iSearchMerchantByNOorName.clickSearchMer_Close();
+				iSearchMerchant.clickSearchMer_Close();
 				wait.waitFor(1000);
 				System.out.println("搜商户 该商户名数据不存在，Please Check TestData ! MerchantName is "+merchantName);
 				Reporter.log("搜商户 该商户名数据不存在，Please Check TestData ! MerchantName is "+merchantName);
 				assertTrue(false);
 			}
-			iSearchMerchantByNOorName.clickSearchMer_Radio(index);
-			iSearchMerchantByNOorName.clickSearchMer_Submit();
+			iSearchMerchant.clickSearchMer_Radio(index);
+			iSearchMerchant.clickSearchMer_Submit();
 		}else {
 			System.out.println("Both of MerchantNO and MerchantName are null ! Please check TestData !");
 			Reporter.log("Both of MerchantNO and MerchantName are null ! Please check TestData !");
 			assertTrue(false,"Both of MerchantNO and MerchantName are null ! Please check TestData !");
 		}
+	}
+	//搜商户
+	public void doSearchMerchant_Add(String merchantNO,String merchantName,String index) {
+		if(merchantNO.equals("")&&merchantName.equals("")) {
+			System.out.println("Both of MerchantNO and MerchantName are null ! Please check TestData !");
+			Reporter.log("Both of MerchantNO and MerchantName are null ! Please check TestData !");
+			assertTrue(false,"Both of MerchantNO and MerchantName are null ! Please check TestData !");
+		}
+		iSearchMerchant_Add.clickAdd_SearchMer();
+		if(!merchantNO.equals("")) {
+			iSearchMerchant_Add.setAdd_SearchMer_MerNO(merchantNO);
+		}else if(!merchantName.equals("")) {
+			iSearchMerchant_Add.setAdd_SearchMer_MerName(merchantName);
+		}
+		iSearchMerchant_Add.clickAdd_SearchMer_Search();
+		wait.waitFor(800);
+		try {
+			iSearchMerchant_Add.isAdd_SearchMer_RadioDisplayed(index);
+		} catch (Exception e) {
+			iSearchMerchant_Add.clickAdd_SearchMer_Close();
+			wait.waitFor(1000);
+			System.out.println("搜商户 该商户名数据不存在，Please Check TestData ! MerchantName is "+merchantName);
+			Reporter.log("搜商户 该商户名数据不存在，Please Check TestData ! MerchantName is "+merchantName);
+			assertTrue(false);
+		}
+		iSearchMerchant_Add.clickAdd_SearchMer_Radio(index);
+		iSearchMerchant_Add.clickAdd_SearchMer_Submit();
 	}
 	
 	//查询 testQuery()

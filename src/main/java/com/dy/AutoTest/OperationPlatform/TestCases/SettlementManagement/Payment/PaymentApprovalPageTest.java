@@ -31,7 +31,7 @@ public class PaymentApprovalPageTest extends SuperTest{
 		iQuery=PaymentApprovalPage;
 		iClickButton=PaymentApprovalPage;
 //		iClickRadio=PaymentApprovalPage;
-//		iSearchMerchantByNOorName=PaymentApprovalPage;
+//		iSearchMerchant=PaymentApprovalPage;
 	}
 
 	@DataProvider(name="SettlementManagement_PaymentApproval")

@@ -31,7 +31,7 @@ public class RiskMonitorRuleMaintainPageTest extends SuperTest{
 		iQuery=RiskMonitorRuleMaintainPage;
 //	iClickButton=RiskMonitorRuleMaintainPage;
 //	iClickRadio=RiskMonitorRuleMaintainPage;
-//	iSearchMerchantByNOorName=RiskMonitorRuleMaintainPage;
+//	iSearchMerchant=RiskMonitorRuleMaintainPage;
 	}
 
 	@DataProvider(name="RiskControlLvMaintain_RiskMonitorRuleMaintain")

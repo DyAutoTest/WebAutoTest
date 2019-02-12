@@ -28,7 +28,7 @@ public class WarningOrderQueryPageTest extends SuperTest{
 		iQuery=WarningOrderQueryPage;
 //	iClickButton=WarningOrderQueryPage;
 //	iClickRadio=WarningOrderQueryPage;
-//	iSearchMerchantByNOorName=WarningOrderQueryPage;
+//	iSearchMerchant=WarningOrderQueryPage;
 	}
 
 	@DataProvider(name="RefusedTradeQuery_WarningOrderQuery")

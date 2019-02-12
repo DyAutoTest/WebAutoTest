@@ -31,7 +31,7 @@ public class PaymentOperationPageTest extends SuperTest{
 		iQuery=PaymentOperationPage;
 		iClickButton=PaymentOperationPage;
 //		iClickRadio=PaymentOperationPage;
-		iSearchMerchantByNOorName=PaymentOperationPage;
+		iSearchMerchant=PaymentOperationPage;
 	}
 
 	@DataProvider(name="SettlementManagement_PaymentOperation")
@@ -108,7 +108,7 @@ public class PaymentOperationPageTest extends SuperTest{
 			PaymentOperationPage.setOrderDateBegin(spoBean.getOrderDateBegin());
 			PaymentOperationPage.setOrderDateEnd(spoBean.getOrderDateEnd());
 			PaymentOperationPage.doLoseFocus("OrderDateEnd", 120, 0);
-			doSearchMerchantByNOorName(spoBean.getMerchantNO(), spoBean.getMerchantName(), spoBean.getSearchMer_Radio());
+			doSearchMerchant(spoBean.getMerchantNO(), spoBean.getMerchantName(), spoBean.getSearchMer_Radio());
 			doQuery();
 		}
 		
@@ -324,7 +324,7 @@ public class PaymentOperationPageTest extends SuperTest{
 			PaymentOperationPage.setInnerUserNO(spoBean.getInnerUserNO());
 		}
 		if(!spoBean.getMerchantNO().equals("")||!spoBean.getMerchantName().equals("")) {
-			doSearchMerchantByNOorName(spoBean.getMerchantNO(), spoBean.getMerchantName(), spoBean.getSearchMer_Radio());
+			doSearchMerchant(spoBean.getMerchantNO(), spoBean.getMerchantName(), spoBean.getSearchMer_Radio());
 		}
 		if(!spoBean.getPaymentStatus().equals("")) {
 			PaymentOperationPage.selectPaymentStatus(spoBean.getPaymentStatus());

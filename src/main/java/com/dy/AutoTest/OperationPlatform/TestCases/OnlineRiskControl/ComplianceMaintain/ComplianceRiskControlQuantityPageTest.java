@@ -28,7 +28,7 @@ public class ComplianceRiskControlQuantityPageTest extends SuperTest{
 		iQuery=ComplianceRiskControlQuantityPage;
 //	iClickButton=ComplianceRiskControlQuantityPage;
 //	iClickRadio=ComplianceRiskControlQuantityPage;
-//	iSearchMerchantByNOorName=ComplianceRiskControlQuantityPage;
+//	iSearchMerchant=ComplianceRiskControlQuantityPage;
 	}
 
 	@DataProvider(name="ComplianceMaintain_ComplianceRiskControlQuantity")

@@ -5,12 +5,12 @@ import org.openqa.selenium.WebDriver;
 
 import com.dy.AutoTest.web.api.IClickButton;
 import com.dy.AutoTest.web.api.IQuery;
-import com.dy.AutoTest.web.api.ISearchMerchantByNOorName;
+import com.dy.AutoTest.web.api.ISearchMerchant;
 import com.dy.AutoTest.web.api.SuperPage;
 import com.dy.AutoTest.web.actions.DoPlus;
 
 public class PaymentOperationPage extends SuperPage
-			implements IQuery,IClickButton,ISearchMerchantByNOorName{
+			implements IQuery,IClickButton,ISearchMerchant{
 	
 	public PaymentOperationPage(WebDriver driver) {
 		super(driver);

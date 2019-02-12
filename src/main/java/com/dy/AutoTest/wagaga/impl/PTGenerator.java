@@ -57,7 +57,7 @@ public class PTGenerator extends Generator{
 				+ "		iQuery=%s;\r\n"
 				+ "//		iClickButton=%s;\r\n"
 				+ "//		iClickRadio=%s;\r\n"
-				+ "//		iSearchMerchantByNOorName=%s;\r\n"
+				+ "//		iSearchMerchant=%s;\r\n"
 				+ "	}\r\n\r\n";
 		private String dataProviderTemplate="	@DataProvider(name=\"%s\")\r\n"
 				+ "	protected static Object[][] parametersPool(){\r\n"

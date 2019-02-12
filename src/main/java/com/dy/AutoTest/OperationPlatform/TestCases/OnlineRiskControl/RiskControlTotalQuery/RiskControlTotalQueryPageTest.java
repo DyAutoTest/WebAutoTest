@@ -28,7 +28,7 @@ public class RiskControlTotalQueryPageTest extends SuperTest{
 		iQuery=RiskControlTotalQueryPage;
 //		iClickButton=RiskControlTotalQueryPage;
 //		iClickRadio=RiskControlTotalQueryPage;
-//		iSearchMerchantByNOorName=RiskControlTotalQueryPage;
+//		iSearchMerchant=RiskControlTotalQueryPage;
 	}
 
 	@DataProvider(name="RiskControlTotalQuery")

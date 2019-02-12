@@ -31,7 +31,7 @@ public class BlackListMaintainPageTest extends SuperTest{
 		iQuery=BlackListMaintainPage;
 //		iClickButton=BlackListMaintainPage;
 //		iClickRadio=BlackListMaintainPage;
-//		iSearchMerchantByNOorName=BlackListMaintainPage;
+//		iSearchMerchant=BlackListMaintainPage;
 	}
 
 	@DataProvider(name="BlackWhiteListManagement_BlackListMaintain")

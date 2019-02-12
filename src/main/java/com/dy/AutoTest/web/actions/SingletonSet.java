@@ -47,8 +47,9 @@ public class SingletonSet {
 		if(jdbcUtil_oracle!=null) {
 			jdbcUtil_oracle.releaseConn();
 		}
-		if(driver!=null)
-			driver.quit();
+		if(driver!=null) {
+//			driver.quit();
+		}
 	}
 
 //	@AfterSuite(dependsOnMethods="releaseJDBC")

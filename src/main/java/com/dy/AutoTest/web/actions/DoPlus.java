@@ -261,7 +261,17 @@ public class DoPlus{
 		
 		return action;
 	}
-	
+	public void doSendKeysByRobot(int key) {
+		Robot robot;
+		try {
+			robot = new Robot();
+			robot.keyPress(key);
+			robot.keyRelease(key);
+			robot.delay(300);
+		} catch (AWTException e) {
+			e.printStackTrace();
+		}
+	}
 //	public void doSendKeysByRobot(char key) {
 	public void doSendKeysByRobot(String content) {
 		char [] cContent=content.toCharArray();

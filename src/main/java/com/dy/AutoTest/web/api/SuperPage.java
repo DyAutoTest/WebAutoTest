@@ -1,5 +1,7 @@
 package com.dy.AutoTest.web.api;
 
+import java.awt.event.KeyEvent;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -57,6 +59,12 @@ public abstract class SuperPage{
 	public void doBACK_SPACE() {
 		du.doSendKeys(Keys.BACK_SPACE);
 	}
+	public void doEnter() {
+		du.doSendKeysByRobot(KeyEvent.VK_ENTER);
+	}
+	public void doLeft() {
+		du.doSendKeysByRobot(KeyEvent.VK_LEFT);
+	}
 	
 	public boolean isElementDisplayed(String elementName) {
 		return du.what(elementName).isDisplayed();
@@ -104,7 +112,8 @@ public abstract class SuperPage{
 	}
 	
 	public String getNotice() {
-		String xpath="//li[@class='messenger-message-slot'][1]/div[@class='messenger-message message alert info message-info alert-info messenger-will-hide-after messenger-hidden']/div";
+		String xpath="//li[@class='messenger-message-slot'][1]/div/div[1]";
+//		String xpath="//li[@class='messenger-message-slot messenger-shown messenger-first messenger-last'][1]/div/div[1]";
 //		try {
 //			(new WebDriverWait(driver, 10))
 //				.until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)));

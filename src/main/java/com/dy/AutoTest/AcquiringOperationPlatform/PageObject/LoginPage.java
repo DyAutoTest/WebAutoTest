@@ -68,12 +68,13 @@ public class LoginPage extends SuperPage{
 	public String getCurrentAccountantDate() {
 		return du.what("CurrentAccountantDate").getText();
 	}
-	//获取通知
-	public String getNotice() {
-		return du.what("Notice").getText();
-	}
+//	//获取通知
+//	public String getNotice() {
+//		return du.what("Notice").getText();
+//	}
 	//个人管理
 	public void clickPersonal() {
+		du.waitForElementPresent("Personal");
 		du.what("Personal").click();
 	}
 	//退出

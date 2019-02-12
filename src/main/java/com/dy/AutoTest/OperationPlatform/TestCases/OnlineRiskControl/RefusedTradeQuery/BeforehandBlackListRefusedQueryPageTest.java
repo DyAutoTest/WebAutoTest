@@ -28,7 +28,7 @@ public class BeforehandBlackListRefusedQueryPageTest extends SuperTest{
 		iQuery=BeforehandBlackListRefusedQueryPage;
 //	iClickButton=BeforehandBlackListRefusedQueryPage;
 //	iClickRadio=BeforehandBlackListRefusedQueryPage;
-//	iSearchMerchantByNOorName=BeforehandBlackListRefusedQueryPage;
+//	iSearchMerchant=BeforehandBlackListRefusedQueryPage;
 	}
 
 	@DataProvider(name="RefusedTradeQuery_BeforehandBlackListRefusedQuery")

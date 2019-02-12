@@ -32,7 +32,7 @@ public class MerchantBalanceQueryPageTest extends SuperTest{
 	public void testMerchantBalanceQuery(MerchantBalanceQueryBean MerchantBalanceQueryBean) {
 		MerchantBalanceQueryPage.navigateTo(URL);
 		
-		doSearchMerchantByNOorName(MerchantBalanceQueryBean.getMerchantNO(),MerchantBalanceQueryBean.getMerchantName(),MerchantBalanceQueryBean.getSearchMer_Index());
+		doSearchMerchant(MerchantBalanceQueryBean.getMerchantNO(),MerchantBalanceQueryBean.getMerchantName(),MerchantBalanceQueryBean.getSearchMer_Index());
 		
 		MerchantBalanceQueryPage.clickQuery();
 		wait.waitFor(1000);

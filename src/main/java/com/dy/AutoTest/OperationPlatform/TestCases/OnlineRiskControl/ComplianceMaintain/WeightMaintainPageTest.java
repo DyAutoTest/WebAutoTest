@@ -31,7 +31,7 @@ public class WeightMaintainPageTest extends SuperTest{
 		iQuery=WeightMaintainPage;
 //	iClickButton=WeightMaintainPage;
 //	iClickRadio=WeightMaintainPage;
-//	iSearchMerchantByNOorName=WeightMaintainPage;
+//	iSearchMerchant=WeightMaintainPage;
 	}
 
 	@DataProvider(name="ComplianceMaintain_WeightMaintain")

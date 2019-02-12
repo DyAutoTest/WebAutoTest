@@ -40,7 +40,7 @@ public class PaymentApprovalStatusQueryPageTest extends SuperTest{
 		iQuery=PaymentApprovalStatusQueryPage;
 //		iClickButton=PaymentApprovalStatusQueryPage;
 //		iClickRadio=PaymentApprovalStatusQueryPage;
-//		iSearchMerchantByNOorName=PaymentApprovalStatusQueryPage;
+//		iSearchMerchant=PaymentApprovalStatusQueryPage;
 	}
 
 	@DataProvider(name="SettlementManagement_PaymentApprovalStatusQuery")

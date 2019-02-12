@@ -24,17 +24,13 @@
 				name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantInfoAddPageTest">
 				<methods>
 					<include name="testMerchantAdd" />
-					<!-- <include name="testCheck" /> -->
-					<!-- <include name="testDelete" /> -->
-					<!-- <include name="testUpdate" /> -->
-					<!-- <include name="testAdd" /> -->
 				</methods>
 			</class> 
 		</classes>
 	</test>
 
 
-	<test thread-count="5" name="Quit">
+	<!-- <test thread-count="5" name="Quit">
 		<classes>
 			<class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest"> 
 				<methods>
@@ -42,7 +38,7 @@
 				</methods> 
 			</class>
 		</classes>
-	</test>
+	</test> -->
 
 
   <listeners>

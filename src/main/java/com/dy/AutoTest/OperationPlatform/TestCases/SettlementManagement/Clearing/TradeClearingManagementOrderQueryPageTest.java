@@ -29,7 +29,7 @@ public class TradeClearingManagementOrderQueryPageTest extends SuperTest{
 		iQuery=TradeClearingManagementOrderQueryPage;
 		iClickButton=TradeClearingManagementOrderQueryPage;
 		iClickRadio=TradeClearingManagementOrderQueryPage;
-		iSearchMerchantByNOorName=TradeClearingManagementOrderQueryPage;
+		iSearchMerchant=TradeClearingManagementOrderQueryPage;
 	}
 
 	@DataProvider(name="SettlementManagement_TradeClearingManagementOrderQuery")
@@ -50,7 +50,7 @@ public class TradeClearingManagementOrderQueryPageTest extends SuperTest{
 		wait.waitFor(500);
 		
 		if(!stcmoqBean.getMerchantNO().equals("")||!stcmoqBean.getMerchantName().equals("")) {
-			doSearchMerchantByNOorName(stcmoqBean.getMerchantNO(), stcmoqBean.getMerchantName(), stcmoqBean.getRadio());
+			doSearchMerchant(stcmoqBean.getMerchantNO(), stcmoqBean.getMerchantName(), stcmoqBean.getRadio());
 			doQuery();
 		}
 		if(!stcmoqBean.getAccountingDateBegin().equals("")&&!stcmoqBean.getAccountingDateEnd().equals("")) {
@@ -88,7 +88,7 @@ public class TradeClearingManagementOrderQueryPageTest extends SuperTest{
 		wait.waitFor(500);
 		
 		if(!stcmoqBean.getMerchantNO().equals("")||!stcmoqBean.getMerchantName().equals("")) {
-			doSearchMerchantByNOorName(stcmoqBean.getMerchantNO(), stcmoqBean.getMerchantName(), stcmoqBean.getRadio());
+			doSearchMerchant(stcmoqBean.getMerchantNO(), stcmoqBean.getMerchantName(), stcmoqBean.getRadio());
 		}
 		if(!stcmoqBean.getAccountingDateBegin().equals("")&&!stcmoqBean.getAccountingDateEnd().equals("")) {
 			TradeClearingManagementOrderQueryPage.setAccountingDateBegin(stcmoqBean.getAccountingDateBegin());
@@ -133,7 +133,7 @@ public class TradeClearingManagementOrderQueryPageTest extends SuperTest{
 		wait.waitFor(500);
 		
 		if(!stcmoqBean.getMerchantNO().equals("")||!stcmoqBean.getMerchantName().equals("")) {
-			doSearchMerchantByNOorName(stcmoqBean.getMerchantNO(), stcmoqBean.getMerchantName(), stcmoqBean.getRadio());
+			doSearchMerchant(stcmoqBean.getMerchantNO(), stcmoqBean.getMerchantName(), stcmoqBean.getRadio());
 		}
 		if(!stcmoqBean.getAccountingDateBegin().equals("")&&!stcmoqBean.getAccountingDateEnd().equals("")) {
 			TradeClearingManagementOrderQueryPage.setAccountingDateBegin(stcmoqBean.getAccountingDateBegin());

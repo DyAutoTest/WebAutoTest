@@ -36,7 +36,7 @@ public class MerchantAccountManagementPageTest extends SuperTest{
 		wait.waitFor(1000);
 		
 		
-		doSearchMerchantByNOorName(MerchantAccountManagementBean.getMerchantNO(),
+		doSearchMerchant(MerchantAccountManagementBean.getMerchantNO(),
 				MerchantAccountManagementBean.getMerchantName(), MerchantAccountManagementBean.getSearchMer_Radio());
 		MerchantAccountManagementPage.clickQurey();
 		wait.waitFor(1000);
@@ -115,7 +115,7 @@ public class MerchantAccountManagementPageTest extends SuperTest{
 		wait.waitFor(1000);
 		
 		
-		doSearchMerchantByNOorName(MerchantAccountManagementBean.getMerchantNO(),
+		doSearchMerchant(MerchantAccountManagementBean.getMerchantNO(),
 				MerchantAccountManagementBean.getMerchantName(), MerchantAccountManagementBean.getSearchMer_Radio());
 		MerchantAccountManagementPage.clickQurey();
 		wait.waitFor(1000);

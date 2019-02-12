@@ -29,7 +29,7 @@ public class AccountBalanceParamMaintainPageTest extends SuperTest{
 		iQuery=AccountBalanceParamMaintainPage;
 //		iClickButton=AccountBalanceParamMaintainPage;
 //		iClickRadio=AccountBalanceParamMaintainPage;
-//		iSearchMerchantByNOorName=AccountBalanceParamMaintainPage;
+//		iSearchMerchant=AccountBalanceParamMaintainPage;
 	}
 
 	@DataProvider(name="RiskControlParamManagement_AccountBalanceParamMaintain")

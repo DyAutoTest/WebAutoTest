@@ -54,7 +54,7 @@ public class MerchantIncomeExpenditureDetailPageTest extends SuperTest{
 		
 		MerchantIncomeExpenditureDetailPage.clickReset();
 		
-		doSearchMerchantByNOorName(MerchantIncomeExpenditureDetailBean.getMerchantNO(),
+		doSearchMerchant(MerchantIncomeExpenditureDetailBean.getMerchantNO(),
 				MerchantIncomeExpenditureDetailBean.getMerchantName(), MerchantIncomeExpenditureDetailBean.getMerchantRadio());
 		wait.waitFor(500);
 		MerchantIncomeExpenditureDetailPage.setAccountingDateBegin(MerchantIncomeExpenditureDetailBean.getAccountingDateBegin());
@@ -105,7 +105,7 @@ public class MerchantIncomeExpenditureDetailPageTest extends SuperTest{
 		wait.waitFor(1000);
 		MerchantIncomeExpenditureDetailPage.clickReset();
 		
-		doSearchMerchantByNOorName(MerchantIncomeExpenditureDetailBean.getMerchantNO(),
+		doSearchMerchant(MerchantIncomeExpenditureDetailBean.getMerchantNO(),
 				MerchantIncomeExpenditureDetailBean.getMerchantName(), MerchantIncomeExpenditureDetailBean.getSearchMer_Radio());
 		
 		MerchantIncomeExpenditureDetailPage.setAccountingDateBegin(MerchantIncomeExpenditureDetailBean.getAccountingDateBegin());

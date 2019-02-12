@@ -28,7 +28,7 @@ public class TradeClearingManagementQueryPageTest extends SuperTest{
 		iQuery=TradeClearingManagementQueryPage;
 //		iClickButton=TradeClearingManagementQueryPage;
 //		iClickRadio=TradeClearingManagementQueryPage;
-//		iSearchMerchantByNOorName=TradeClearingManagementQueryPage;
+//		iSearchMerchant=TradeClearingManagementQueryPage;
 	}
 
 	@DataProvider(name="SettlementManagement_TradeClearingManagementQuery")

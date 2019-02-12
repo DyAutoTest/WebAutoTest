@@ -28,7 +28,7 @@ public class RefusedOrderQueryPageTest extends SuperTest{
 		iQuery=RefusedOrderQueryPage;
 //	iClickButton=RefusedOrderQueryPage;
 //	iClickRadio=RefusedOrderQueryPage;
-//	iSearchMerchantByNOorName=RefusedOrderQueryPage;
+//	iSearchMerchant=RefusedOrderQueryPage;
 	}
 
 	@DataProvider(name="RefusedTradeQuery_RefusedOrderQuery")

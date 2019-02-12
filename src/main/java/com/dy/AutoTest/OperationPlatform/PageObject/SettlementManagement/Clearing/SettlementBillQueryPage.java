@@ -4,12 +4,12 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 import com.dy.AutoTest.web.api.IQuery;
-import com.dy.AutoTest.web.api.ISearchMerchantByNOorName;
+import com.dy.AutoTest.web.api.ISearchMerchant;
 import com.dy.AutoTest.web.api.SuperPage;
 import com.dy.AutoTest.web.actions.DoPlus;
 
 public class SettlementBillQueryPage extends SuperPage
-		implements IQuery,ISearchMerchantByNOorName{
+		implements IQuery,ISearchMerchant{
 	
 	public SettlementBillQueryPage(WebDriver driver) {
 		super(driver);

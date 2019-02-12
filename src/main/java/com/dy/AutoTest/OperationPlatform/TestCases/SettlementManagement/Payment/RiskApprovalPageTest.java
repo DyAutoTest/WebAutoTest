@@ -31,7 +31,7 @@ public class RiskApprovalPageTest extends SuperTest  {
 		iQuery=RiskApprovalPage;
 		iClickButton=RiskApprovalPage;
 //		iClickRadio=RiskApprovalPage;
-//		iSearchMerchantByNOorName=RiskApprovalPage;
+//		iSearchMerchant=RiskApprovalPage;
 	}
 
 	@DataProvider(name="SettlementManagement_RiskApproval")

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AcquiringOperationPlatform" >
+ 	<parameter name="browserCategory" value="chrome"></parameter>
+	<parameter name="environment" value="aop_uat"></parameter>
+
+	<test thread-count="5" name="MerchantInfoManagement_MerchantInfoAdd">
+		<classes>
+			<class name="com.dy.AutoTest.web.actions.SingletonSet"></class>
+			<class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest">
+				<methods>
+					<include name="testLogin" />
+				</methods>
+			</class>
+			<class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantInfoAddPageTest">
+				<methods>
+					<include name="testMerchantAdd" />
+					<include name="testAddPreAuditPassRecord" />
+					<include name="testAddPreAuditFailRecord" />
+				</methods>
+			</class> 
+		</classes>
+	</test>
+	<test thread-count="5" name="Quit">
+		<classes>
+			<class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest"> 
+				<methods>
+					<include name="testQuit" />
+				</methods> 
+			</class>
+		</classes>
+	</test>
+
+	<test thread-count="5" name="MerchantInfoManagement_MerchantAudit">
+		<classes>
+			<class name="com.dy.AutoTest.web.actions.SingletonSet"></class>
+			<class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest">
+				<methods>
+					<include name="testAuditLogin" />
+				</methods>
+			</class>
+			<class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantAuditPageTest">
+				<methods>
+					<include name="testQuery" />
+					<include name="testPreAuditPass" />
+					<include name="testPreAuditFail" />
+					<!-- <include name="testRecheckAuditPass" /> -->
+					<!-- <include name="testtestRecheckAuditFailAdd" /> -->
+				</methods>
+			</class> 
+		</classes>
+	</test>
+  <listeners>
+           <listener class-name="org.uncommons.reportng.HTMLReporter" />
+           <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+ </listeners>
+
+</suite> <!-- AcquiringOperationPlatform -->

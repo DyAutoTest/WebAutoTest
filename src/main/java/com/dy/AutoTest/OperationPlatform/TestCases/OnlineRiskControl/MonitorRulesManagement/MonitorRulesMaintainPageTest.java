@@ -27,7 +27,7 @@ public class MonitorRulesMaintainPageTest extends SuperTest{
 		iQuery=MonitorRulesMaintainPage;
 //	iClickButton=MonitorRulesMaintainPage;
 //	iClickRadio=MonitorRulesMaintainPage;
-//	iSearchMerchantByNOorName=MonitorRulesMaintainPage;
+//	iSearchMerchant=MonitorRulesMaintainPage;
 	}
 
 	@DataProvider(name="MonitorRulesManagement_MonitorRulesMaintain")

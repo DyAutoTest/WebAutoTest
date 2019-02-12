@@ -28,7 +28,7 @@ public class RiskControlRuleManagementPageTest extends SuperTest{
 		iQuery=RiskControlRuleManagementPage;
 //		iClickButton=RiskControlRuleManagementPage;
 //		iClickRadio=RiskControlRuleManagementPage;
-//		iSearchMerchantByNOorName=RiskControlRuleManagementPage;
+//		iSearchMerchant=RiskControlRuleManagementPage;
 	}
 
 	@DataProvider(name="RiskControlRuleManagement_RiskControlRuleManagement")

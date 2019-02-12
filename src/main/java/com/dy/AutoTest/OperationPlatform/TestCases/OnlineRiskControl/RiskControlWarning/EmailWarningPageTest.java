@@ -28,7 +28,7 @@ public class EmailWarningPageTest extends SuperTest{
 //		iQuery=EmailWarningPage;
 //		iClickButton=EmailWarningPage;
 //		iClickRadio=EmailWarningPage;
-//		iSearchMerchantByNOorName=EmailWarningPage;
+//		iSearchMerchant=EmailWarningPage;
 	}
 
 	@DataProvider(name="RiskControlWarning_EmailWarning")

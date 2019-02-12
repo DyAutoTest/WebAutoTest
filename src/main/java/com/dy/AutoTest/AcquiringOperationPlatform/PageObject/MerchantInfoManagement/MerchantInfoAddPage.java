@@ -161,7 +161,8 @@ public class MerchantInfoAddPage extends SuperPage{
 	}
 	//基本信息_营业执照,组织机构代码,税务,法人录入区_营业执照过期日期_长期
 	public void clickBasicInfo_BusinessLicensePassDate_LongTerm() {
-		du.what("BasicInfo_BusinessLicensePassDate_LongTerm").click();
+		if(!du.what("BasicInfo_BusinessLicensePassDate_LongTerm").isSelected())
+			du.what("BasicInfo_BusinessLicensePassDate_LongTerm").click();
 	}
 	//基本信息_营业执照,组织机构代码,税务,法人录入区_注册资本
 	public void setBasicInfo_RegisteredCapital(String value) {
@@ -198,7 +199,8 @@ public class MerchantInfoAddPage extends SuperPage{
 	}
 	//基本信息_营业执照,组织机构代码,税务,法人录入区_组织机构代码证过期日期_长期
 	public void clickBasicInfo_OrganizingInstitutionCodeCertificatePassDate_LongTerm() {
-		du.what("BasicInfo_OrganizingInstitutionCodeCertificatePassDate_LongTerm").click();
+		if(!du.what("BasicInfo_OrganizingInstitutionCodeCertificatePassDate_LongTerm").isSelected())
+			du.what("BasicInfo_OrganizingInstitutionCodeCertificatePassDate_LongTerm").click();
 	}
 	//基本信息_营业执照,组织机构代码,税务,法人录入区_税务登记证号
 	public void setBasicInfo_TaxRegistrationCertificateNO(String value) {
@@ -219,7 +221,8 @@ public class MerchantInfoAddPage extends SuperPage{
 	}
 	//基本信息_营业执照,组织机构代码,税务,法人录入区_税务登记证过期日期_长期
 	public void clickBasicInfo_TaxRegistrationCertificateNOPassDate_LongTerm() {
-		du.what("BasicInfo_TaxRegistrationCertificateNOPassDate_LongTerm").click();
+		if(!du.what("BasicInfo_TaxRegistrationCertificateNOPassDate_LongTerm").isSelected())
+			du.what("BasicInfo_TaxRegistrationCertificateNOPassDate_LongTerm").click();
 	}
 	//基本信息_营业执照,组织机构代码,税务,法人录入区_法人证件类型
 	public void selectBasicInfo_LegalPersonCertificateType(String value) {
@@ -252,7 +255,8 @@ public class MerchantInfoAddPage extends SuperPage{
 	}
 	//基本信息_营业执照,组织机构代码,税务,法人录入区_法人证件过期日期_长期
 	public void clickBasicInfo_LegalPersonCertificatePassDate_LongTerm() {
-		du.what("BasicInfo_LegalPersonCertificatePassDate_LongTerm").click();
+		if(!du.what("BasicInfo_LegalPersonCertificatePassDate_LongTerm").isSelected())
+			du.what("BasicInfo_LegalPersonCertificatePassDate_LongTerm").click();
 	}
 	//基本信息_其他信息区
 	public void clickBasicInfo_OtherInfoArea() {
@@ -746,6 +750,7 @@ public class MerchantInfoAddPage extends SuperPage{
 	//附件上传_上传
 	public void clickAttachmentUploading_Uploading() {
 		du.what("AttachmentUploading_Uploading").click();
+		du.waitForElementPresent("NoticeForUpload");
 	}
 	//基本信息_基本信息录入区_二级内部商户类型
 	public void selectBasicInfo_InnerMerchantTypeLv2(String value) {
@@ -755,6 +760,16 @@ public class MerchantInfoAddPage extends SuperPage{
 	public void clickEnterConfirm() {
 		du.what("EnterConfirm").click();
 	}
+	public void setWaitTime(int time) {
+		du.waitTime=time;	
+	}
+//	public String getNoticeForMerchAddSuccess() {
+//		if(du.what("Notice").isDisplayed()) {
+////			return du.what("Notice").getText();
+//			return du.what("Notice").getAttribute("textContent");
+//		}
+//		return null;
+//	}
 	//基本信息_基本信息录入区_MCC码
 	public void selectBasicInfo_MCC_Select(String value) {
 		du.whatSelect("BasicInfo_MCC_Select").selectByValue(value);

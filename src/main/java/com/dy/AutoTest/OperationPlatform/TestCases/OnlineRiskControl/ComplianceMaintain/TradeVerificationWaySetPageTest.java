@@ -31,7 +31,7 @@ public class TradeVerificationWaySetPageTest extends SuperTest{
 		iQuery=TradeVerificationWaySetPage;
 //	iClickButton=TradeVerificationWaySetPage;
 //	iClickRadio=TradeVerificationWaySetPage;
-//	iSearchMerchantByNOorName=TradeVerificationWaySetPage;
+//	iSearchMerchant=TradeVerificationWaySetPage;
 	}
 
 	@DataProvider(name="ComplianceMaintain_TradeVerificationWaySet")

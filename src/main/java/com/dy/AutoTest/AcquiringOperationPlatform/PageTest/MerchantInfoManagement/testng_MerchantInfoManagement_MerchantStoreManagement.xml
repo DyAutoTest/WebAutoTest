@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AcquiringOperationPlatform" >
+ 	<parameter name="browserCategory" value="chrome"></parameter>
+	<parameter name="environment" value="aop_uat"></parameter>
+
+	<test thread-count="5" name="Login">
+		<classes>
+			<class
+				name="com.dy.AutoTest.web.actions.SingletonSet"></class>
+			<class
+				name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest">
+				<methods>
+					<include name="testLogin" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test thread-count="5" name="MerchantInfoManagement_MerchantStoreManagement">
+		<classes>
+			<class
+				name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantStoreManagementPageTest">
+				<methods>
+					<!-- <include name="testQuery" /> -->
+					<include name="testAdd" />
+					<include name="testUpdate" />
+					<include name="testDelete" />
+				</methods>
+			</class> 
+		</classes>
+	</test>
+
+
+	<test thread-count="5" name="Quit">
+		<classes>
+			<class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest"> 
+				<methods>
+					<include name="testQuit" />
+				</methods> 
+			</class>
+		</classes>
+	</test>
+
+
+  <listeners>
+           <listener class-name="org.uncommons.reportng.HTMLReporter" />
+           <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+ </listeners>
+
+</suite> <!-- AcquiringOperationPlatform -->

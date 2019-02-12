@@ -20,9 +20,9 @@ import java.util.Map;
  */
 public class JdbcUtil {
 	//database username
-	private  String USERNAME = "system";
+	private  String USERNAME = "uatuser";
 	//database password
-	private  String PASSWORD = "ODZiNjA1YjhiMjli";
+	private  String PASSWORD = "qazxsw01";
 	//database driver 
 	private  String DRIVER = "oracle.jdbc.driver.OracleDriver";
 	//database url
@@ -33,7 +33,7 @@ public class JdbcUtil {
 	private  String projectpath=System.getProperty("user.dir");
 	private  ParseProperties jdbcUtilsConfig=null;
 	
-	public JdbcUtil() {
+	public JdbcUtil() { 
 		 try {
 			Class.forName(DRIVER).newInstance();
 			System.out.println("connect oracle database success!");

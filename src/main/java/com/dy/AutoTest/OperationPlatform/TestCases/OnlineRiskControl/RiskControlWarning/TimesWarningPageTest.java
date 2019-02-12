@@ -28,7 +28,7 @@ public class TimesWarningPageTest extends SuperTest{
 		iQuery=TimesWarningPage;
 //		iClickButton=TimesWarningPage;
 //		iClickRadio=TimesWarningPage;
-//		iSearchMerchantByNOorName=TimesWarningPage;
+//		iSearchMerchant=TimesWarningPage;
 	}
 
 	@DataProvider(name="RiskControlWarning_TimesWarning")

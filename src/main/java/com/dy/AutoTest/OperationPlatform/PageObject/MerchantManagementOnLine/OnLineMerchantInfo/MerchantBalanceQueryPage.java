@@ -3,10 +3,10 @@ package com.dy.AutoTest.OperationPlatform.PageObject.MerchantManagementOnLine.On
 import org.openqa.selenium.WebDriver;
 
 import com.dy.AutoTest.web.actions.DoPlus;
-import com.dy.AutoTest.web.api.ISearchMerchantByNOorName;
+import com.dy.AutoTest.web.api.ISearchMerchant;
 import com.dy.AutoTest.web.api.SuperPage;
 
-public class MerchantBalanceQueryPage extends SuperPage implements ISearchMerchantByNOorName{
+public class MerchantBalanceQueryPage extends SuperPage implements ISearchMerchant{
 	public MerchantBalanceQueryPage(WebDriver driver) {
 		super(driver);
 		du.loadLocator("POP_Loc_MerchantBalanceQuery");

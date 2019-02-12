@@ -28,7 +28,7 @@ public class CustomerPaymentLimitPageTest extends SuperTest{
 		iQuery=CustomerPaymentLimitPage;
 //	iClickButton=CustomerPaymentLimitPage;
 //	iClickRadio=CustomerPaymentLimitPage;
-//	iSearchMerchantByNOorName=CustomerPaymentLimitPage;
+//	iSearchMerchant=CustomerPaymentLimitPage;
 	}
 
 	@DataProvider(name="ComplianceMaintain_CustomerPaymentLimit")

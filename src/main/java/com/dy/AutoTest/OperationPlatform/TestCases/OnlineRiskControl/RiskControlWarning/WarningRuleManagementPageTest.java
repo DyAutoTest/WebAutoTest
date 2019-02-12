@@ -29,7 +29,7 @@ public class WarningRuleManagementPageTest extends SuperTest{
 		iQuery=WarningRuleManagementPage;
 //		iClickButton=WarningRuleManagementPage;
 //		iClickRadio=WarningRuleManagementPage;
-//		iSearchMerchantByNOorName=WarningRuleManagementPage;
+//		iSearchMerchant=WarningRuleManagementPage;
 	}
 
 	@DataProvider(name="RiskControlWarning_WarningRuleManagement")

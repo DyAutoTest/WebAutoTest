@@ -29,7 +29,7 @@ public class RiskTypeAndTradeCodeManagementPageTest extends SuperTest{
 		iQuery=RiskTypeAndTradeCodeManagementPage;
 //		iClickButton=RiskTypeAndTradeCodeManagementPage;
 //		iClickRadio=RiskTypeAndTradeCodeManagementPage;
-//		iSearchMerchantByNOorName=RiskTypeAndTradeCodeManagementPage;
+//		iSearchMerchant=RiskTypeAndTradeCodeManagementPage;
 	}
 
 	@DataProvider(name="RiskControlRuleManagement_RiskTypeAndTradeCodeManagement")

@@ -104,13 +104,14 @@ public class MerchantInfoManagement_MerchantInfoAddBean implements Serializable{
 	private String SignedInvoiceInfo_InvoiceTitle;
 	private String SignedInvoiceInfo_InvoiceMailAddress;
 	private String SignedInvoiceInfo_PostalCode;
-	private String ReconciliationInfo_MailSendBill;
 	private String ReconciliationInfo_EmailAddress;
 	private String AddtionInfo_MerchantManagementName;
 	private String AddtionInfo_MerchantManagementPhoneNO;
 	private String AddtionInfo_MerchantManagementEmail;
 	private String AddtionInfo_MerchantPortType;
 	private String AttachmentUploading_Uploading;
+	private String AuditRadio;
+	private String RiskTemplate;
 	public int getID() {
 		return ID;
 	}
@@ -705,12 +706,6 @@ public class MerchantInfoManagement_MerchantInfoAddBean implements Serializable{
 	public void setSignedInvoiceInfo_PostalCode(String SignedInvoiceInfo_PostalCode) {
 		this.SignedInvoiceInfo_PostalCode = SignedInvoiceInfo_PostalCode;
 	}
-	public String getReconciliationInfo_MailSendBill() {
-		return ReconciliationInfo_MailSendBill;
-	}
-	public void setReconciliationInfo_MailSendBill(String ReconciliationInfo_MailSendBill) {
-		this.ReconciliationInfo_MailSendBill = ReconciliationInfo_MailSendBill;
-	}
 	public String getReconciliationInfo_EmailAddress() {
 		return ReconciliationInfo_EmailAddress;
 	}
@@ -746,6 +741,18 @@ public class MerchantInfoManagement_MerchantInfoAddBean implements Serializable{
 	}
 	public void setAttachmentUploading_Uploading(String AttachmentUploading_Uploading) {
 		this.AttachmentUploading_Uploading = AttachmentUploading_Uploading;
+	}
+	public String getAuditRadio() {
+		return AuditRadio;
+	}
+	public void setAuditRadio(String AuditRadio) {
+		this.AuditRadio = AuditRadio;
+	}
+	public String getRiskTemplate() {
+		return RiskTemplate;
+	}
+	public void setRiskTemplate(String RiskTemplate) {
+		this.RiskTemplate = RiskTemplate;
 	}
 
 }
