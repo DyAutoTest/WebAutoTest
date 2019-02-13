@@ -13,10 +13,10 @@ import java.util.List;
 import java.util.Map;
 
 public class JdbcUtil_1_0_0 {
-	//数据库用户名
-	private static final String USERNAME = "system";
-	//数据库密码
-	private static final String PASSWORD = "ODZiNjA1YjhiMjli";
+	//database username
+	private  String USERNAME = "uatuser";
+	//database password
+	private  String PASSWORD = "qazxsw01";
 	//驱动信息 
 	private static final String DRIVER = "oracle.jdbc.driver.OracleDriver";
 	//数据库地址

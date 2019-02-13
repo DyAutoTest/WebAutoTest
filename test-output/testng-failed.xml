@@ -1,26 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [SuiteOperationPlatform]">
-  <parameter name="environment" value="pop_uat"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [AcquiringOperationPlatform]">
+  <parameter name="environment" value="aop_uat"/>
   <parameter name="browserCategory" value="chrome"/>
   <listeners>
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-  <test thread-count="5" name="MerchantInfoInsert(failed)">
-    <parameter name="OperID" value="T00105"/>
+  <test thread-count="5" name="Login(failed)">
     <classes>
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.cooperatingagent.routeinfo.CooperatingRouteInfoPageTest">
+      <class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest">
         <methods>
-          <include name="testCooperatingRouteInfo" invocation-numbers="0 1"/>
           <include name="beforeClass"/>
           <include name="afterMethod"/>
+          <include name="init"/>
           <include name="AfterTest"/>
           <include name="beforeMethod"/>
           <include name="BeforeTest"/>
-          <include name="init"/>
+          <include name="testLogin" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.cooperatingagent.routeinfo.CooperatingRouteInfoPageTest -->
+      </class> <!-- com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest -->
     </classes>
-  </test> <!-- MerchantInfoInsert(failed) -->
-</suite> <!-- Failed suite [SuiteOperationPlatform] -->
+  </test> <!-- Login(failed) -->
+  <test thread-count="5" name="TerminalRightManagement_TerminalRightManagement(failed)">
+    <classes>
+      <class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TerminalRightManagement.TerminalRightManagementPageTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="init"/>
+          <include name="AfterTest"/>
+          <include name="testDelete" invocation-numbers="0"/>
+          <include name="testUpdate" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+          <include name="testCheck" invocation-numbers="0"/>
+          <include name="BeforeTest"/>
+          <include name="testAdd" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TerminalRightManagement.TerminalRightManagementPageTest -->
+    </classes>
+  </test> <!-- TerminalRightManagement_TerminalRightManagement(failed) -->
+  <test thread-count="5" name="Quit(failed)">
+    <classes>
+      <class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="init"/>
+          <include name="testQuit"/>
+          <include name="AfterTest"/>
+          <include name="beforeMethod"/>
+          <include name="BeforeTest"/>
+        </methods>
+      </class> <!-- com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest -->
+    </classes>
+  </test> <!-- Quit(failed) -->
+</suite> <!-- Failed suite [AcquiringOperationPlatform] -->

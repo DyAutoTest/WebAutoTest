@@ -1,46 +1,412 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="4" total="8" passed="4">
+<testng-results skipped="0" failed="0" ignored="3" total="9" passed="6">
   <reporter-output>
     <line>
-      <![CDATA[        2019-01-14 13:27:34): [Test]-"MerchantInfoInsert" is started]]>
+      <![CDATA[        2019-02-13 10:37:17): [Test]-"Login" is started]]>
     </line>
     <line>
-      <![CDATA[                2019-01-14 13:27:34: [Method]-"LoginPageTest.testLogin" is started]]>
+      <![CDATA[                2019-02-13 10:37:17: [Method]-"LoginPageTest.testLogin" is started]]>
     </line>
     <line>
-      <![CDATA[                2019-01-14 13:27:39: [Method]-"LoginPageTest.testLogin" is passed]]>
+      <![CDATA[                2019-02-13 10:37:30: [Method]-"LoginPageTest.testLogin" is passed]]>
     </line>
     <line>
-      <![CDATA[                2019-01-14 13:27:41: [Method]-"IdentityAuthenticationChannelPageTest.testIdentityAuthenticationChannel" is started]]>
+      <![CDATA[        2019-02-13 10:37:32): [Test]-"Login" is finished]]>
     </line>
     <line>
-      <![CDATA[身份认证修改成功！合作通道代码：PYZXCO]]>
+      <![CDATA[        2019-02-13 10:37:32): [Test]-"TerminalRightManagement_TerminalRightManagement" is started]]>
     </line>
     <line>
-      <![CDATA[                2019-01-14 13:27:56: [Method]-"IdentityAuthenticationChannelPageTest.testIdentityAuthenticationChannel" is passed]]>
+      <![CDATA[                2019-02-13 10:37:32: [Method]-"TerminalRightManagementPageTest.testCheck" is started]]>
     </line>
     <line>
-      <![CDATA[                2019-01-14 13:27:58: [Method]-"IdentityAuthenticationChannelPageTest.testIdentityAuthenticationChannel" is started]]>
+      <![CDATA[                2019-02-13 10:37:40: [Method]-"TerminalRightManagementPageTest.testCheck" is passed]]>
     </line>
     <line>
-      <![CDATA[身份认证关闭成功！合作通道代码：PYZXCO]]>
+      <![CDATA[                2019-02-13 10:37:42: [Method]-"TerminalRightManagementPageTest.testDelete" is started]]>
     </line>
     <line>
-      <![CDATA[身份认证开启成功！合作通道代码：PYZXCO]]>
+      <![CDATA[                2019-02-13 10:37:49: [Method]-"TerminalRightManagementPageTest.testDelete" is passed]]>
     </line>
     <line>
-      <![CDATA[                2019-01-14 13:28:07: [Method]-"IdentityAuthenticationChannelPageTest.testIdentityAuthenticationChannel" is passed]]>
+      <![CDATA[                2019-02-13 10:37:51: [Method]-"TerminalRightManagementPageTest.testUpdate" is started]]>
     </line>
     <line>
-      <![CDATA[        2019-01-14 13:28:13): [Test]-"MerchantInfoInsert" is finished]]>
+      <![CDATA[                2019-02-13 10:37:58: [Method]-"TerminalRightManagementPageTest.testUpdate" is passed]]>
+    </line>
+    <line>
+      <![CDATA[                2019-02-13 10:38:00: [Method]-"TerminalRightManagementPageTest.testAdd" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2019-02-13 10:38:05: [Method]-"TerminalRightManagementPageTest.testAdd" is passed]]>
+    </line>
+    <line>
+      <![CDATA[        2019-02-13 10:38:07): [Test]-"TerminalRightManagement_TerminalRightManagement" is finished]]>
+    </line>
+    <line>
+      <![CDATA[        2019-02-13 10:38:07): [Test]-"Quit" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2019-02-13 10:38:07: [Method]-"LoginPageTest.testQuit" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2019-02-13 10:38:10: [Method]-"LoginPageTest.testQuit" is passed]]>
+    </line>
+    <line>
+      <![CDATA[        2019-02-13 10:38:12): [Test]-"Quit" is finished]]>
     </line>
   </reporter-output>
-  <suite name="SuiteOperationPlatform" duration-ms="39338" started-at="2019-01-14T05:27:34Z" finished-at="2019-01-14T05:28:13Z">
+  <suite name="AcquiringOperationPlatform" duration-ms="55091" started-at="2019-02-13T02:37:17Z" finished-at="2019-02-13T02:38:12Z">
     <groups>
     </groups>
-    <test name="MerchantInfoInsert" duration-ms="39338" started-at="2019-01-14T05:27:34Z" finished-at="2019-01-14T05:28:13Z">
+    <test name="Login" duration-ms="15238" started-at="2019-02-13T02:37:17Z" finished-at="2019-02-13T02:37:32Z">
+      <class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest">
+        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest@60704c]" name="BeforeTest" is-config="true" duration-ms="1" started-at="2019-02-13T02:37:17Z" finished-at="2019-02-13T02:37:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4dba773d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2019-02-13 10:37:17): [Test]-"Login" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest@60704c]" name="beforeClass" is-config="true" duration-ms="1" started-at="2019-02-13T02:37:17Z" finished-at="2019-02-13T02:37:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest@60704c]" name="init" is-config="true" duration-ms="2" started-at="2019-02-13T02:37:17Z" finished-at="2019-02-13T02:37:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testLogin(com.dy.AutoTest.AcquiringOperationPlatform.POJO.LoginBean)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest@60704c]" name="testLogin" duration-ms="13210" started-at="2019-02-13T02:37:17Z" data-provider="LoginByCaseNO" finished-at="2019-02-13T02:37:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.AcquiringOperationPlatform.POJO.LoginBean@4982cc36]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest@60704c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-02-13T02:37:17Z" finished-at="2019-02-13T02:37:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest.testLogin(com.dy.AutoTest.AcquiringOperationPlatform.POJO.LoginBean)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-13 10:37:17: [Method]-"LoginPageTest.testLogin" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest@60704c]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2019-02-13T02:37:30Z" finished-at="2019-02-13T02:37:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=LoginPageTest.testLogin(com.dy.AutoTest.AcquiringOperationPlatform.POJO.LoginBean)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest@60704c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-13 10:37:30: [Method]-"LoginPageTest.testLogin" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest@60704c]" name="AfterTest" is-config="true" duration-ms="1" started-at="2019-02-13T02:37:32Z" finished-at="2019-02-13T02:37:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4dba773d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2019-02-13 10:37:32): [Test]-"Login" is finished]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest -->
+    </test> <!-- Login -->
+    <test name="TerminalRightManagement_TerminalRightManagement" duration-ms="35116" started-at="2019-02-13T02:37:32Z" finished-at="2019-02-13T02:38:07Z">
+      <class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TerminalRightManagement.TerminalRightManagementPageTest">
+        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TerminalRightManagement.TerminalRightManagementPageTest@4278a03f]" name="BeforeTest" is-config="true" duration-ms="0" started-at="2019-02-13T02:37:32Z" finished-at="2019-02-13T02:37:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1d9bd4da]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2019-02-13 10:37:32): [Test]-"TerminalRightManagement_TerminalRightManagement" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TerminalRightManagement.TerminalRightManagementPageTest@4278a03f]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-02-13T02:37:32Z" finished-at="2019-02-13T02:37:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TerminalRightManagement.TerminalRightManagementPageTest@4278a03f]" name="init" is-config="true" duration-ms="3" started-at="2019-02-13T02:37:32Z" finished-at="2019-02-13T02:37:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testCheck(com.dy.AutoTest.AcquiringOperationPlatform.POJO.TerminalRightManagement_TerminalRightManagementBean)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TerminalRightManagement.TerminalRightManagementPageTest@4278a03f]" name="testCheck" duration-ms="8205" started-at="2019-02-13T02:37:32Z" data-provider="TerminalRightManagement_TerminalRightManagementByCaseNO" finished-at="2019-02-13T02:37:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.AcquiringOperationPlatform.POJO.TerminalRightManagement_TerminalRightManagementBean@7fb9f71f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheck -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TerminalRightManagement.TerminalRightManagementPageTest@4278a03f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-02-13T02:37:32Z" finished-at="2019-02-13T02:37:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TerminalRightManagement.TerminalRightManagementPageTest.testCheck(com.dy.AutoTest.AcquiringOperationPlatform.POJO.TerminalRightManagement_TerminalRightManagementBean)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-13 10:37:32: [Method]-"TerminalRightManagementPageTest.testCheck" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TerminalRightManagement.TerminalRightManagementPageTest@4278a03f]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2019-02-13T02:37:40Z" finished-at="2019-02-13T02:37:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCheck status=SUCCESS method=TerminalRightManagementPageTest.testCheck(com.dy.AutoTest.AcquiringOperationPlatform.POJO.TerminalRightManagement_TerminalRightManagementBean)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TerminalRightManagement.TerminalRightManagementPageTest@4278a03f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-13 10:37:40: [Method]-"TerminalRightManagementPageTest.testCheck" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TerminalRightManagement.TerminalRightManagementPageTest@4278a03f]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-02-13T02:37:42Z" finished-at="2019-02-13T02:37:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TerminalRightManagement.TerminalRightManagementPageTest.testDelete(com.dy.AutoTest.AcquiringOperationPlatform.POJO.TerminalRightManagement_TerminalRightManagementBean)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-13 10:37:42: [Method]-"TerminalRightManagementPageTest.testDelete" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testDelete(com.dy.AutoTest.AcquiringOperationPlatform.POJO.TerminalRightManagement_TerminalRightManagementBean)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TerminalRightManagement.TerminalRightManagementPageTest@4278a03f]" name="testDelete" duration-ms="6541" started-at="2019-02-13T02:37:42Z" data-provider="TerminalRightManagement_TerminalRightManagementByCaseNO" finished-at="2019-02-13T02:37:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.AcquiringOperationPlatform.POJO.TerminalRightManagement_TerminalRightManagementBean@faa3fed]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDelete -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TerminalRightManagement.TerminalRightManagementPageTest@4278a03f]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2019-02-13T02:37:49Z" finished-at="2019-02-13T02:37:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testDelete status=SUCCESS method=TerminalRightManagementPageTest.testDelete(com.dy.AutoTest.AcquiringOperationPlatform.POJO.TerminalRightManagement_TerminalRightManagementBean)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TerminalRightManagement.TerminalRightManagementPageTest@4278a03f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-13 10:37:49: [Method]-"TerminalRightManagementPageTest.testDelete" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TerminalRightManagement.TerminalRightManagementPageTest@4278a03f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-02-13T02:37:51Z" finished-at="2019-02-13T02:37:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TerminalRightManagement.TerminalRightManagementPageTest.testUpdate(com.dy.AutoTest.AcquiringOperationPlatform.POJO.TerminalRightManagement_TerminalRightManagementBean)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-13 10:37:51: [Method]-"TerminalRightManagementPageTest.testUpdate" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testUpdate(com.dy.AutoTest.AcquiringOperationPlatform.POJO.TerminalRightManagement_TerminalRightManagementBean)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TerminalRightManagement.TerminalRightManagementPageTest@4278a03f]" name="testUpdate" duration-ms="7185" started-at="2019-02-13T02:37:51Z" data-provider="TerminalRightManagement_TerminalRightManagementByCaseNO" finished-at="2019-02-13T02:37:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.AcquiringOperationPlatform.POJO.TerminalRightManagement_TerminalRightManagementBean@de18f63]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdate -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TerminalRightManagement.TerminalRightManagementPageTest@4278a03f]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2019-02-13T02:37:58Z" finished-at="2019-02-13T02:38:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testUpdate status=SUCCESS method=TerminalRightManagementPageTest.testUpdate(com.dy.AutoTest.AcquiringOperationPlatform.POJO.TerminalRightManagement_TerminalRightManagementBean)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TerminalRightManagement.TerminalRightManagementPageTest@4278a03f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-13 10:37:58: [Method]-"TerminalRightManagementPageTest.testUpdate" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TerminalRightManagement.TerminalRightManagementPageTest@4278a03f]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-02-13T02:38:00Z" finished-at="2019-02-13T02:38:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TerminalRightManagement.TerminalRightManagementPageTest.testAdd(com.dy.AutoTest.AcquiringOperationPlatform.POJO.TerminalRightManagement_TerminalRightManagementBean)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-13 10:38:00: [Method]-"TerminalRightManagementPageTest.testAdd" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testAdd(com.dy.AutoTest.AcquiringOperationPlatform.POJO.TerminalRightManagement_TerminalRightManagementBean)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TerminalRightManagement.TerminalRightManagementPageTest@4278a03f]" name="testAdd" duration-ms="5161" started-at="2019-02-13T02:38:00Z" data-provider="TerminalRightManagement_TerminalRightManagementByCaseNO" finished-at="2019-02-13T02:38:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.AcquiringOperationPlatform.POJO.TerminalRightManagement_TerminalRightManagementBean@173797f0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAdd -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TerminalRightManagement.TerminalRightManagementPageTest@4278a03f]" name="afterMethod" is-config="true" duration-ms="2002" started-at="2019-02-13T02:38:05Z" finished-at="2019-02-13T02:38:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAdd status=SUCCESS method=TerminalRightManagementPageTest.testAdd(com.dy.AutoTest.AcquiringOperationPlatform.POJO.TerminalRightManagement_TerminalRightManagementBean)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TerminalRightManagement.TerminalRightManagementPageTest@4278a03f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-13 10:38:05: [Method]-"TerminalRightManagementPageTest.testAdd" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TerminalRightManagement.TerminalRightManagementPageTest@4278a03f]" name="AfterTest" is-config="true" duration-ms="0" started-at="2019-02-13T02:38:07Z" finished-at="2019-02-13T02:38:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1d9bd4da]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2019-02-13 10:38:07): [Test]-"TerminalRightManagement_TerminalRightManagement" is finished]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TerminalRightManagement.TerminalRightManagementPageTest -->
+    </test> <!-- TerminalRightManagement_TerminalRightManagement -->
+    <test name="Quit" duration-ms="4701" started-at="2019-02-13T02:38:07Z" finished-at="2019-02-13T02:38:12Z">
+      <class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest">
+        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest@6ce139a4]" name="BeforeTest" is-config="true" duration-ms="1" started-at="2019-02-13T02:38:07Z" finished-at="2019-02-13T02:38:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4c58255]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2019-02-13 10:38:07): [Test]-"Quit" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest@6ce139a4]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-02-13T02:38:07Z" finished-at="2019-02-13T02:38:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest@6ce139a4]" name="init" is-config="true" duration-ms="1" started-at="2019-02-13T02:38:07Z" finished-at="2019-02-13T02:38:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest@6ce139a4]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-02-13T02:38:07Z" finished-at="2019-02-13T02:38:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest.testQuit()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-13 10:38:07: [Method]-"LoginPageTest.testQuit" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testQuit()[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest@6ce139a4]" name="testQuit" duration-ms="2695" started-at="2019-02-13T02:38:07Z" finished-at="2019-02-13T02:38:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testQuit -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest@6ce139a4]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2019-02-13T02:38:10Z" finished-at="2019-02-13T02:38:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testQuit status=SUCCESS method=LoginPageTest.testQuit()[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest@6ce139a4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-13 10:38:10: [Method]-"LoginPageTest.testQuit" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest@6ce139a4]" name="AfterTest" is-config="true" duration-ms="0" started-at="2019-02-13T02:38:12Z" finished-at="2019-02-13T02:38:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4c58255]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2019-02-13 10:38:12): [Test]-"Quit" is finished]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest -->
       <class name="com.dy.AutoTest.web.actions.SingletonSet">
-        <test-method status="PASS" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@2a32de6c]" name="init" is-config="true" duration-ms="3050" started-at="2019-01-14T05:27:31Z" finished-at="2019-01-14T05:27:34Z">
+        <test-method status="PASS" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@1d082e88]" name="init" is-config="true" duration-ms="3123" started-at="2019-02-13T02:37:13Z" finished-at="2019-02-13T02:37:17Z">
           <params>
             <param index="0">
               <value>
@@ -49,206 +415,18 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[pop_uat]]>
+                <![CDATA[aop_uat]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="releaseJDBC()[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@2a32de6c]" name="releaseJDBC" is-config="true" duration-ms="2709" started-at="2019-01-14T05:28:13Z" finished-at="2019-01-14T05:28:16Z">
+        <test-method status="PASS" signature="releaseJDBC()[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@1d082e88]" name="releaseJDBC" is-config="true" duration-ms="2717" started-at="2019-02-13T02:38:12Z" finished-at="2019-02-13T02:38:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- releaseJDBC -->
       </class> <!-- com.dy.AutoTest.web.actions.SingletonSet -->
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
-        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc]" name="BeforeTest" is-config="true" duration-ms="2" started-at="2019-01-14T05:27:34Z" finished-at="2019-01-14T05:27:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@7793ad58]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[        2019-01-14 13:27:34): [Test]-"MerchantInfoInsert" is started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- BeforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc]" name="beforeClass" is-config="true" duration-ms="1" started-at="2019-01-14T05:27:34Z" finished-at="2019-01-14T05:27:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc]" name="init" is-config="true" duration-ms="2" started-at="2019-01-14T05:27:34Z" finished-at="2019-01-14T05:27:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-01-14T05:27:34Z" finished-at="2019-01-14T05:27:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest.testLogin(java.lang.String)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2019-01-14 13:27:34: [Method]-"LoginPageTest.testLogin" is started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc]" name="testLogin" duration-ms="4865" started-at="2019-01-14T05:27:34Z" finished-at="2019-01-14T05:27:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[T00105]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc]" name="afterMethod" is-config="true" duration-ms="2000" started-at="2019-01-14T05:27:39Z" finished-at="2019-01-14T05:27:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testLogin status=SUCCESS method=LoginPageTest.testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2019-01-14 13:27:39: [Method]-"LoginPageTest.testLogin" is passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc]" name="AfterTest" is-config="true" duration-ms="0" started-at="2019-01-14T05:28:13Z" finished-at="2019-01-14T05:28:13Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@7793ad58]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[        2019-01-14 13:28:13): [Test]-"MerchantInfoInsert" is finished]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- AfterTest -->
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest -->
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.authentication.IdentityAuthenticationChannelPageTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.authentication.IdentityAuthenticationChannelPageTest@75f32542]" name="beforeClass" is-config="true" duration-ms="1" started-at="2019-01-14T05:27:41Z" finished-at="2019-01-14T05:27:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.authentication.IdentityAuthenticationChannelPageTest@75f32542]" name="init" is-config="true" duration-ms="2" started-at="2019-01-14T05:27:41Z" finished-at="2019-01-14T05:27:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="testIdentityAuthenticationChannel(com.dy.AutoTest.OperationPlatform.POJO.IdentityAuthenticationChannelBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.authentication.IdentityAuthenticationChannelPageTest@75f32542]" name="testIdentityAuthenticationChannel" duration-ms="14706" started-at="2019-01-14T05:27:41Z" description="运营平台-身份认证通道管理" data-provider="identityAuthenticationChannel" finished-at="2019-01-14T05:27:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.IdentityAuthenticationChannelBean@5b6813df]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[身份认证修改成功！合作通道代码：PYZXCO]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testIdentityAuthenticationChannel -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.authentication.IdentityAuthenticationChannelPageTest@75f32542]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-01-14T05:27:41Z" finished-at="2019-01-14T05:27:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.authentication.IdentityAuthenticationChannelPageTest.testIdentityAuthenticationChannel(com.dy.AutoTest.OperationPlatform.POJO.IdentityAuthenticationChannelBean)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2019-01-14 13:27:41: [Method]-"IdentityAuthenticationChannelPageTest.testIdentityAuthenticationChannel" is started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.authentication.IdentityAuthenticationChannelPageTest@75f32542]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2019-01-14T05:27:56Z" finished-at="2019-01-14T05:27:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testIdentityAuthenticationChannel status=SUCCESS method=IdentityAuthenticationChannelPageTest.testIdentityAuthenticationChannel(com.dy.AutoTest.OperationPlatform.POJO.IdentityAuthenticationChannelBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.authentication.IdentityAuthenticationChannelPageTest@75f32542] output=身份认证修改成功！合作通道代码：PYZXCO]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2019-01-14 13:27:56: [Method]-"IdentityAuthenticationChannelPageTest.testIdentityAuthenticationChannel" is passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="testIdentityAuthenticationChannel(com.dy.AutoTest.OperationPlatform.POJO.IdentityAuthenticationChannelBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.authentication.IdentityAuthenticationChannelPageTest@75f32542]" name="testIdentityAuthenticationChannel" duration-ms="9179" started-at="2019-01-14T05:27:58Z" description="运营平台-身份认证通道管理" data-provider="identityAuthenticationChannel" finished-at="2019-01-14T05:28:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.IdentityAuthenticationChannelBean@2016f509]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[身份认证关闭成功！合作通道代码：PYZXCO]]>
-            </line>
-            <line>
-              <![CDATA[身份认证开启成功！合作通道代码：PYZXCO]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testIdentityAuthenticationChannel -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.authentication.IdentityAuthenticationChannelPageTest@75f32542]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-01-14T05:27:58Z" finished-at="2019-01-14T05:27:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.authentication.IdentityAuthenticationChannelPageTest.testIdentityAuthenticationChannel(com.dy.AutoTest.OperationPlatform.POJO.IdentityAuthenticationChannelBean)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2019-01-14 13:27:58: [Method]-"IdentityAuthenticationChannelPageTest.testIdentityAuthenticationChannel" is started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.authentication.IdentityAuthenticationChannelPageTest@75f32542]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2019-01-14T05:28:07Z" finished-at="2019-01-14T05:28:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testIdentityAuthenticationChannel status=SUCCESS method=IdentityAuthenticationChannelPageTest.testIdentityAuthenticationChannel(com.dy.AutoTest.OperationPlatform.POJO.IdentityAuthenticationChannelBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.authentication.IdentityAuthenticationChannelPageTest@75f32542] output=身份认证关闭成功！合作通道代码：PYZXCO]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[                2019-01-14 13:28:07: [Method]-"IdentityAuthenticationChannelPageTest.testIdentityAuthenticationChannel" is passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.authentication.IdentityAuthenticationChannelPageTest -->
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@7f1302d6]" name="init" is-config="true" duration-ms="2" started-at="2019-01-14T05:28:09Z" finished-at="2019-01-14T05:28:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="testQuit()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@7f1302d6]" name="testQuit" duration-ms="3546" started-at="2019-01-14T05:28:09Z" finished-at="2019-01-14T05:28:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testQuit -->
-        <test-method status="PASS" signature="releaseBrowser()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@7f1302d6]" name="releaseBrowser" is-config="true" duration-ms="1000" started-at="2019-01-14T05:28:12Z" finished-at="2019-01-14T05:28:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- releaseBrowser -->
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest -->
-    </test> <!-- MerchantInfoInsert -->
-  </suite> <!-- SuiteOperationPlatform -->
+    </test> <!-- Quit -->
+  </suite> <!-- AcquiringOperationPlatform -->
 </testng-results>
