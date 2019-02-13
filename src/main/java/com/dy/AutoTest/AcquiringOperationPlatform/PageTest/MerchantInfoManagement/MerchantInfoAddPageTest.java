@@ -17,8 +17,6 @@ import com.dy.AutoTest.AcquiringOperationPlatform.PageObject.MerchantInfoManagem
 import com.dy.AutoTest.AcquiringOperationPlatform.POJO.MerchantInfoManagement_MerchantInfoAddBean;
 import com.dy.AutoTest.web.business.DataBusiness;
 
-import oracle.net.aso.b;
-
 public class MerchantInfoAddPageTest extends SuperTest{
 	MerchantInfoAddPage MerchantInfoAddPage;
 	String URL;
