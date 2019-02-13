@@ -7,21 +7,20 @@
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-  <test thread-count="5" name="SettlementManagement_PaymentApproval(failed)">
+  <test thread-count="5" name="MerchantInfoInsert(failed)">
+    <parameter name="OperID" value="T00105"/>
     <classes>
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.SettlementManagement.Payment.PaymentApprovalPageTest">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.cooperatingagent.routeinfo.CooperatingRouteInfoPageTest">
         <methods>
-          <include name="testBatch_Pass" invocation-numbers="0"/>
+          <include name="testCooperatingRouteInfo" invocation-numbers="0 1"/>
           <include name="beforeClass"/>
           <include name="afterMethod"/>
-          <include name="testBatch_Refuse" invocation-numbers="0"/>
           <include name="AfterTest"/>
           <include name="beforeMethod"/>
           <include name="BeforeTest"/>
-          <include name="testCheck_Pass" invocation-numbers="0"/>
           <include name="init"/>
         </methods>
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.SettlementManagement.Payment.PaymentApprovalPageTest -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.cooperatingagent.routeinfo.CooperatingRouteInfoPageTest -->
     </classes>
-  </test> <!-- SettlementManagement_PaymentApproval(failed) -->
+  </test> <!-- MerchantInfoInsert(failed) -->
 </suite> <!-- Failed suite [SuiteOperationPlatform] -->

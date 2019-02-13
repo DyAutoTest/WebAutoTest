@@ -73,6 +73,23 @@
 			<version>2.0.3-SNAPSHOT</version>
 		</dependency> -->
 
+		<dependency>
+			<groupId>safe</groupId>
+			<artifactId>input</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>safe</groupId>
+			<artifactId>jna</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>safe</groupId>
+			<artifactId>platform</artifactId>
+			<version>1.0.0</version>
+		</dependency>
 
 	</dependencies>
 

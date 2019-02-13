@@ -5,92 +5,11 @@ import static org.testng.Assert.assertTrue;
 import java.util.List;
 import java.util.Map;
 
-
-import com.dy.AutoTest.OperationPlatform.POJO.UserIncomeExpenditureDetailBean;
-import com.dy.AutoTest.OperationPlatform.POJO.UserInfoQueryBean;
 import com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2BBean;
 import com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2CBean;
+import com.dy.AutoTest.OperationPlatform.POJO.*;
 import com.dy.AutoTest.AcquiringOperationPlatform.POJO.LoginBean;
-import com.dy.AutoTest.OnlineCashier.POJO.CooperatingAgentInfoBean;
-import com.dy.AutoTest.OnlineCashier.POJO.CooperatingPaymentChannelBean;
-import com.dy.AutoTest.OnlineCashier.POJO.CooperatingRouteInfoBean;
-import com.dy.AutoTest.OnlineCashier.POJO.CooperatingServiceChannelBean;
-import com.dy.AutoTest.OnlineCashier.POJO.FinanceChannelBalanceAccountBatchNumQueryBean;
-import com.dy.AutoTest.OnlineCashier.POJO.FinanceChannelBalanceAccountErrorManageBean;
-import com.dy.AutoTest.OnlineCashier.POJO.FinanceChannelBalanceAccountParameterBean;
-import com.dy.AutoTest.OnlineCashier.POJO.FinanceChannelManageFlowQueryBean;
-import com.dy.AutoTest.OnlineCashier.POJO.FinanceChannelManageInfoBean;
-import com.dy.AutoTest.OnlineCashier.POJO.FinanceChannelManageRateCodeBean;
-import com.dy.AutoTest.OnlineCashier.POJO.FinanceChannelManageRateMaintainBean;
-import com.dy.AutoTest.OnlineCashier.POJO.FinanceChannelManageReturnCodeBean;
-import com.dy.AutoTest.OnlineCashier.POJO.FinanceChannelManageSignManageBean;
-import com.dy.AutoTest.OnlineCashier.POJO.IdCardPhotoVerificationBean;
-import com.dy.AutoTest.OnlineCashier.POJO.IdCardValidDateVerificationBean;
-import com.dy.AutoTest.OnlineCashier.POJO.IdentityAuthenticationChannelBean;
-import com.dy.AutoTest.OnlineCashier.POJO.IdentityAuthenticationDetailsBean;
-import com.dy.AutoTest.OnlineCashier.POJO.IdentityAuthenticationQueryBean;
-import com.dy.AutoTest.OnlineCashier.POJO.IdentityAuthenticationRouteBean;
-import com.dy.AutoTest.OperationPlatform.POJO.BlackWhiteListManagement_BlackListMaintainBean;
-import com.dy.AutoTest.OperationPlatform.POJO.BlackWhiteListManagement_WhiteListMaintainBean;
-import com.dy.AutoTest.OperationPlatform.POJO.ComplianceMaintain_ComplianceLimitMaintainBean;
-import com.dy.AutoTest.OperationPlatform.POJO.ComplianceMaintain_ComplianceRiskControlQuantityBean;
-import com.dy.AutoTest.OperationPlatform.POJO.ComplianceMaintain_CustomerPaymentLimitBean;
-import com.dy.AutoTest.OperationPlatform.POJO.ComplianceMaintain_TradeVerificationWaySetBean;
-import com.dy.AutoTest.OperationPlatform.POJO.ComplianceMaintain_WeightMaintainBean;
-import com.dy.AutoTest.OperationPlatform.POJO.MainChildMerRelationshipBean;
-import com.dy.AutoTest.OperationPlatform.POJO.MerchantAccountManagementBean;
-import com.dy.AutoTest.OperationPlatform.POJO.MerchantAuditBean;
-import com.dy.AutoTest.OperationPlatform.POJO.MerchantBalanceQueryBean;
-import com.dy.AutoTest.OperationPlatform.POJO.MerchantFeeRateBean;
-import com.dy.AutoTest.OperationPlatform.POJO.MerchantIncomeExpenditureDetailBean;
-import com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoBean;
-import com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoSearchBean;
-import com.dy.AutoTest.OperationPlatform.POJO.MerchantSettlementAlterBean;
-import com.dy.AutoTest.OperationPlatform.POJO.MerchantSettlementBean;
-import com.dy.AutoTest.OperationPlatform.POJO.MonitorRulesManagement_MonitorOperationMaintainBean;
-import com.dy.AutoTest.OperationPlatform.POJO.MonitorRulesManagement_MonitorParameterMaintainBean;
-import com.dy.AutoTest.OperationPlatform.POJO.MonitorRulesManagement_MonitorRulesMaintainBean;
-import com.dy.AutoTest.OperationPlatform.POJO.OnlineDepositOrderQueryBean;
-import com.dy.AutoTest.OperationPlatform.POJO.OnlineDepositRefundQueryBean;
-import com.dy.AutoTest.OperationPlatform.POJO.OnlinePurchaseOrderQueryBean;
-import com.dy.AutoTest.OperationPlatform.POJO.OnlineRefundOrderQueryBean;
-import com.dy.AutoTest.OperationPlatform.POJO.OnlineTransferInOrderQueryBean;
-import com.dy.AutoTest.OperationPlatform.POJO.OnlineTransferOutOrderQueryBean;
-import com.dy.AutoTest.OperationPlatform.POJO.OnlineWithdrawOrderQueryBean;
-import com.dy.AutoTest.OperationPlatform.POJO.OperBean;
-import com.dy.AutoTest.OperationPlatform.POJO.OverdueMerInfoQueryBean;
-import com.dy.AutoTest.OperationPlatform.POJO.RefusedTradeQuery_BeforehandBlackListRefusedQueryBean;
-import com.dy.AutoTest.OperationPlatform.POJO.RefusedTradeQuery_RefusedOrderQueryBean;
-import com.dy.AutoTest.OperationPlatform.POJO.RefusedTradeQuery_WarningOrderQueryBean;
-import com.dy.AutoTest.OperationPlatform.POJO.RiskControlLvMaintain_RiskCustomerMaintainBean;
-import com.dy.AutoTest.OperationPlatform.POJO.RiskControlLvMaintain_RiskLvMaintainBean;
-import com.dy.AutoTest.OperationPlatform.POJO.RiskControlLvMaintain_RiskMonitorRuleMaintainBean;
-import com.dy.AutoTest.OperationPlatform.POJO.RiskControlLvMaintain_RiskOperationMaintainBean;
-import com.dy.AutoTest.OperationPlatform.POJO.RiskControlParamManagement_AccountApproveParamMaintainBean;
-import com.dy.AutoTest.OperationPlatform.POJO.RiskControlParamManagement_AccountBalanceParamMaintainBean;
-import com.dy.AutoTest.OperationPlatform.POJO.RiskControlParamManagement_AccountTradeParamMaintainBean;
-import com.dy.AutoTest.OperationPlatform.POJO.RiskControlRuleManagement_RiskControlRuleManagementBean;
-import com.dy.AutoTest.OperationPlatform.POJO.RiskControlRuleManagement_RiskControlTypeCorrespondingRulesManagementBean;
-import com.dy.AutoTest.OperationPlatform.POJO.RiskControlRuleManagement_RiskControlTypeManagementBean;
-import com.dy.AutoTest.OperationPlatform.POJO.RiskControlRuleManagement_RiskTypeAndTradeCodeManagementBean;
-import com.dy.AutoTest.OperationPlatform.POJO.RiskControlTotalQueryBean;
-import com.dy.AutoTest.OperationPlatform.POJO.RiskControlWarning_EmailWarningBean;
-import com.dy.AutoTest.OperationPlatform.POJO.RiskControlWarning_LimitWarningBean;
-import com.dy.AutoTest.OperationPlatform.POJO.RiskControlWarning_TimesWarningBean;
-import com.dy.AutoTest.OperationPlatform.POJO.RiskControlWarning_WarningRuleManagementBean;
-import com.dy.AutoTest.OperationPlatform.POJO.SettlementManagement_PaymentApprovalBean;
-import com.dy.AutoTest.OperationPlatform.POJO.SettlementManagement_PaymentApprovalStatusQueryBean;
-import com.dy.AutoTest.OperationPlatform.POJO.SettlementManagement_PaymentOperationBean;
-import com.dy.AutoTest.OperationPlatform.POJO.SettlementManagement_PaymentWorkFlowQueryBean;
-import com.dy.AutoTest.OperationPlatform.POJO.SettlementManagement_RiskApprovalBean;
-import com.dy.AutoTest.OperationPlatform.POJO.SettlementManagement_SettlementBillQueryBean;
-import com.dy.AutoTest.OperationPlatform.POJO.SettlementManagement_TradeClearingManagementOrderQueryBean;
-import com.dy.AutoTest.OperationPlatform.POJO.SettlementManagement_TradeClearingManagementQueryBean;
-import com.dy.AutoTest.OperationPlatform.POJO.SuspiciousTradeManagement_BeingProcessedSuspiciousTradeMaintainBean;
-import com.dy.AutoTest.OperationPlatform.POJO.SuspiciousTradeManagement_ProcessedSuspiciousTradeQueryBean;
-import com.dy.AutoTest.OperationPlatform.POJO.SuspiciousTradeManagement_SuspiciousTradeAnalyzeBean;
-import com.dy.AutoTest.OperationPlatform.POJO.UserAccountModifySearchBean;
-import com.dy.AutoTest.OperationPlatform.POJO.UserActionBean;
+import com.dy.AutoTest.MerchantPortal.POJO.PmOperBean;
 import com.dy.AutoTest.web.beans.Data_URLBean;
 import com.dy.AutoTest.web.dao.TestingDao;
 import com.dy.AutoTest.web.dao.impl.TestingDaoImpl;
@@ -226,7 +145,7 @@ public class DataBusiness {
 			case "Data_URL":
 				data_URLBean=new Data_URLBean();
 				break;
-
+				
 			default:
 				System.out.println("table is not exist! Please check!");
 				break;
@@ -442,6 +361,9 @@ public class DataBusiness {
 				break;
 			case "AOP_Data_Login":
 				pojo=(T)testingDao.getData(tableName,ID,LoginBean.class);
+				return pojo;
+			case "MP_Data_Oper":
+				pojo=(T)testingDao.getData(tableName,ID,PmOperBean.class);
 				return pojo;
 			default:
 				System.out.println("DataBusiness.getDataBean: "+tableName+" is not exist! Please check!");
@@ -764,17 +686,109 @@ public class DataBusiness {
 			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,FinanceChannelManageRateCodeBean.class));
 			break;
 			
+			
 		case "POP_Data_FinanceChannelBalanceAccountParameter":
-			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,FinanceChannelBalanceAccountParameterBean.class));
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,FinanceChannelBalanceAccountParameterBean.class));
 			break;
 		
 		case "POP_Data_FinanceChannelBalanceAccountBatchNumQuery":
-			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,FinanceChannelBalanceAccountBatchNumQueryBean.class));
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,FinanceChannelBalanceAccountBatchNumQueryBean.class));
 			break;
 		
 		case "POP_Data_FinanceChannelBalanceAccountErrorManage":
-			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,FinanceChannelBalanceAccountErrorManageBean.class));
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,FinanceChannelBalanceAccountErrorManageBean.class));
 			break;	
+		
+		case "POP_Data_AccountManageItemManage":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,AccountManageItemManageBean.class));
+			break;	
+			
+		case "POP_Data_AccountManageItemRelation":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,AccountManageItemRelationBean.class));
+			break;	
+			
+		case "POP_Data_AccountManageInternalAccountManage":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,AccountManageInternalAccountManageBean.class));
+			break;	
+			
+		case "POP_Data_AccountManageInternalAccountHistoryBalance":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,AccountManageInternalAccountHistoryBalanceBean.class));
+			break;	
+		
+		case "POP_Data_AccountManageManualSingleAccount":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,AccountManageManualSingleAccountBean.class));
+			break;	
+			
+		case "POP_Data_AccountManageSceneComprehensive":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,AccountManageSceneComprehensiveBean.class));
+			break;	
+			
+		case "POP_Data_AccountManageManualAccountCheck":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,AccountManageManualAccountCheckBean.class));
+			break;	
+			
+		case "POP_Data_AccountManageYesterdayWholeQuery":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,AccountManageYesterdayWholeQueryBean.class));
+			break;	
+			
+		case "POP_Data_AccountManageWholeHistoryQuery":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,AccountManageWholeHistoryQueryBean.class));
+			break;	
+			
+		case "POP_Data_AccountManageInnerAccountBalanceQuery":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,AccountManageInnerAccountBalanceQueryBean.class));
+			break;	
+			
+		case "POP_Data_AccountManageOnlineInternalAccountPaymentQuery":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,AccountManageOnlineInternalAccountPaymentQueryBean.class));
+			break;	
+			
+		case "POP_Data_AccountManageOfflineInternalAccountPaymentQuery":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,AccountManageOfflineInternalAccountPaymentQueryBean.class));
+			break;	
+			
+		case "POP_Data_AccountManageSummonsQuery":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,AccountManageSummonsQueryBean.class));
+			break;	
+			
+		case "POP_Data_AccountManageInformDetailQuery":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,AccountManageInformDetailQueryBean.class));
+			break;	
+			
+		case "POP_Data_AccountManageFrozenDetailQuery":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,AccountManageFrozenDetailQueryBean.class));
+			break;	
+			
+		case "POP_Data_AccountManageExternalBalanceDetailQuery":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,AccountManageExternalBalanceDetailQueryBean.class));
+			break;	
+			
+		case "POP_Data_AccountManageAccountingEntryMaintain":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,AccountManageAccountingEntryMaintainBean.class));
+			break;	
+			
+		case "POP_Data_AccountManageAccountingEntryCheck":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,AccountManageAccountingEntryCheckBean.class));
+			break;	
+		
+		case "POP_Data_AccountManageAccountOrgnizationManage":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,AccountManageAccountOrgnizationManageBean.class));
+			break;	
+		
+		case "POP_Data_AccountManageBookingKeppFlow":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,AccountManageBookingKeppFlowBean.class));
+			break;	
+			
+		case "POP_Data_AccountManageOfflineFreezeManage":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,AccountManageOfflineFreezeManageBean.class));
+			break;	
+			
+		case "POP_Data_AccountManageOfflineReleaseManage":
+			list=BaseUtil.toObject(testingDao.getDataList(tableName,AccountManageOfflineReleaseManageBean.class));
+			break;	
+			
+			
+			
 		case "AOP_Data_Login":
 			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,LoginBean.class));
 			break;

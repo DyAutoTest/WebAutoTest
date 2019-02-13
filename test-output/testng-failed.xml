@@ -22,21 +22,49 @@
       </class> <!-- com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest -->
     </classes>
   </test> <!-- Login(failed) -->
+<<<<<<< HEAD
   <test thread-count="5" name="TerminalInventoryManage_TerminalInfoListQuery(failed)">
+=======
+  <test thread-count="5" name="TerminalRightManagement_TerminalRightManagement(failed)">
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
     <classes>
+<<<<<<< HEAD
       <class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TMS.TerminalInventoryManage.TerminalInfoListQueryPageTest">
+=======
+      <class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TerminalRightManagement.TerminalRightManagementPageTest">
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
         <methods>
           <include name="beforeClass"/>
           <include name="afterMethod"/>
+<<<<<<< HEAD
           <include name="testUpdate" invocation-numbers="0"/>
           <include name="AfterTest"/>
+=======
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
           <include name="init"/>
+<<<<<<< HEAD
           <include name="beforeMethod"/>
+=======
+          <include name="AfterTest"/>
+          <include name="testDelete" invocation-numbers="0"/>
+          <include name="testUpdate" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+          <include name="testCheck" invocation-numbers="0"/>
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
           <include name="BeforeTest"/>
+          <include name="testAdd" invocation-numbers="0"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TMS.TerminalInventoryManage.TerminalInfoListQueryPageTest -->
+=======
+      </class> <!-- com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TerminalRightManagement.TerminalRightManagementPageTest -->
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
     </classes>
+<<<<<<< HEAD
   </test> <!-- TerminalInventoryManage_TerminalInfoListQuery(failed) -->
+=======
+  </test> <!-- TerminalRightManagement_TerminalRightManagement(failed) -->
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
   <test thread-count="5" name="Quit(failed)">
     <classes>
       <class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest">
