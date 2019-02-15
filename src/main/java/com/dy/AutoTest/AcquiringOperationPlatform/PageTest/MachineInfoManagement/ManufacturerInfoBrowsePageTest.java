@@ -102,7 +102,7 @@ public class ManufacturerInfoBrowsePageTest extends SuperTest{
 		ManufacturerInfoBrowsePage.clickAdd();
 		wait.waitFor(500);
 
-		ManufacturerInfoBrowsePage.setAdd_ManufacturerNO("1" + bean.getManufacturerNO());
+		ManufacturerInfoBrowsePage.setAdd_ManufacturerNO(bean.getManufacturerNO());
 		ManufacturerInfoBrowsePage.setAdd_ManufacturerName(bean.getManufacturerName());
 		ManufacturerInfoBrowsePage.setAdd_ManufacturerAddress(bean.getManufacturerAddress());
 		ManufacturerInfoBrowsePage.setAdd_PostalCode(bean.getPostalCode());

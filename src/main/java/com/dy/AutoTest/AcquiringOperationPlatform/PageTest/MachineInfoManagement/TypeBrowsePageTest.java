@@ -151,7 +151,7 @@ public class TypeBrowsePageTest extends SuperTest{
 		TypeBrowsePage.selectAdd_ProgramUpdateWay(bean.getProgramUpdateWay());
 		
 		TypeBrowsePage.clickAdd_Submit();
-//		TypeBrowsePage.clickAdd_Close();
+		wait.waitFor(3000);
 	}
 
 
