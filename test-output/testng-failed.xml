@@ -1,83 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [AcquiringOperationPlatform]">
-  <parameter name="environment" value="aop_uat"/>
-  <parameter name="browserCategory" value="chrome"/>
-  <listeners>
-    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
-  </listeners>
-  <test thread-count="5" name="Login(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest">
+      <class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantInfoAddPageTest">
         <methods>
           <include name="beforeClass"/>
           <include name="afterMethod"/>
+          <include name="AfterTest"/>
+          <include name="beforeMethod"/>
+          <include name="testHasExist"/>
           <include name="init"/>
-          <include name="AfterTest"/>
-          <include name="beforeMethod"/>
-          <include name="BeforeTest"/>
-          <include name="testLogin" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest -->
-    </classes>
-  </test> <!-- Login(failed) -->
-<<<<<<< HEAD
-  <test thread-count="5" name="TerminalInventoryManage_TerminalInfoListQuery(failed)">
-=======
-  <test thread-count="5" name="TerminalRightManagement_TerminalRightManagement(failed)">
->>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
-    <classes>
-<<<<<<< HEAD
-      <class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TMS.TerminalInventoryManage.TerminalInfoListQueryPageTest">
-=======
-      <class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TerminalRightManagement.TerminalRightManagementPageTest">
->>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
-        <methods>
-          <include name="beforeClass"/>
-          <include name="afterMethod"/>
-<<<<<<< HEAD
-          <include name="testUpdate" invocation-numbers="0"/>
-          <include name="AfterTest"/>
-=======
->>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
-          <include name="init"/>
-<<<<<<< HEAD
-          <include name="beforeMethod"/>
-=======
-          <include name="AfterTest"/>
-          <include name="testDelete" invocation-numbers="0"/>
-          <include name="testUpdate" invocation-numbers="0"/>
-          <include name="beforeMethod"/>
-          <include name="testCheck" invocation-numbers="0"/>
->>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
-          <include name="BeforeTest"/>
-          <include name="testAdd" invocation-numbers="0"/>
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TMS.TerminalInventoryManage.TerminalInfoListQueryPageTest -->
-=======
-      </class> <!-- com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TerminalRightManagement.TerminalRightManagementPageTest -->
->>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
-    </classes>
-<<<<<<< HEAD
-  </test> <!-- TerminalInventoryManage_TerminalInfoListQuery(failed) -->
-=======
-  </test> <!-- TerminalRightManagement_TerminalRightManagement(failed) -->
->>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
-  <test thread-count="5" name="Quit(failed)">
-    <classes>
-      <class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="afterMethod"/>
-          <include name="init"/>
-          <include name="testQuit"/>
-          <include name="AfterTest"/>
-          <include name="beforeMethod"/>
           <include name="BeforeTest"/>
         </methods>
-      </class> <!-- com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest -->
+      </class> <!-- com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantInfoAddPageTest -->
     </classes>
-  </test> <!-- Quit(failed) -->
-</suite> <!-- Failed suite [AcquiringOperationPlatform] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

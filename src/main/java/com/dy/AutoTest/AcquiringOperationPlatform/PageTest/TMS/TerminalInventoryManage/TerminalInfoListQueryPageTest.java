@@ -124,11 +124,10 @@ public class TerminalInfoListQueryPageTest extends SuperTest{
 		doQueryForClickButton(bean);
 		TerminalInfoListQueryPage.clickDelete();
 		wait.waitFor(1000);
-		TerminalInfoListQueryPage.clickDelete_Confirm();
-		System.out.println(TerminalInfoListQueryPage.getNotice());
-		Reporter.log(TerminalInfoListQueryPage.getNotice()); 
-//		TerminalInfoListQueryPage.clickDelete_Close();
-		wait.waitFor(3000);
+//		TerminalInfoListQueryPage.clickDelete_Confirm();
+//		System.out.println(TerminalInfoListQueryPage.getNotice());
+//		Reporter.log(TerminalInfoListQueryPage.getNotice()); 
+		TerminalInfoListQueryPage.clickDelete_Close();
 	}
 	@Test(dataProvider="TerminalInventoryManage_TerminalInfoListQueryByCaseNO")
 	public void testUpdate(TerminalInventoryManage_TerminalInfoListQueryBean bean) {

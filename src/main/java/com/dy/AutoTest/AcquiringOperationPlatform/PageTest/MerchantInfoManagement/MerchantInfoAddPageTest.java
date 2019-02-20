@@ -549,12 +549,13 @@ public class MerchantInfoAddPageTest extends SuperTest{
 				insertMap.put("TradeName", "商户新增");
 				insertMap.put("KeyInfo", bean.getBasicInfo_MerchantName());
 				insertMap.put("AuditStatus", "Y1");//注册待初审
-				insertMap.put("Radio", "0");
 				insertMap.put("PreAuditOperation_PreAuditTips", "初审通过");
-				insertMap.put("AuditRadio", bean.getRiskTemplate());
-				insertMap.put("RiskTemplate", bean.getRiskTemplate());
-				DataBusiness.insertTestData("AOP_Data_MerchantInfoManagement_MerchantAudit", insertMap);
+				insertMap.put("Radio", bean.getAuditRadio());
+				insertMap.put("RecheckAudit_RiskTemplate", bean.getRiskTemplate());
+				if(!hasExist(insertMap))
+					DataBusiness.insertTestData("AOP_Data_MerchantInfoManagement_MerchantAudit", insertMap);
 			}
+			beansList.clear();
 		}
 	}
 	@Test
@@ -564,12 +565,15 @@ public class MerchantInfoAddPageTest extends SuperTest{
 				Map<String, Object> insertMap=new HashMap<String,Object>();
 				insertMap.put("CaseNO", "testPreAuditFail");
 				insertMap.put("TradeName", "商户新增");
-				insertMap.put("KeyInfo", bean.getBasicInfo_MerchantAbbreviation());
+				insertMap.put("KeyInfo", bean.getBasicInfo_MerchantName());
 				insertMap.put("AuditStatus", "Y1");//注册待初审
-				insertMap.put("Radio", "0");
 				insertMap.put("PreAuditOperation_PreAuditTips", "初审不通过");
-				DataBusiness.insertTestData("AOP_Data_MerchantInfoManagement_MerchantAudit", insertMap);
+				insertMap.put("Radio", bean.getAuditRadio());
+				insertMap.put("RecheckAudit_RiskTemplate", bean.getRiskTemplate());
+				if(!hasExist(insertMap))
+					DataBusiness.insertTestData("AOP_Data_MerchantInfoManagement_MerchantAudit", insertMap);
 			}
+			beansList.clear();
 		}
 	}
 	
@@ -581,7 +585,6 @@ public class MerchantInfoAddPageTest extends SuperTest{
 		wait.waitFor(1000);
 		MerchantInfoAddPage.clickRateInfo_SearchRate_Submit();
 	}
-	
 	
 	
 	void RequiredFieldValidation(MerchantInfoManagement_MerchantInfoAddBean bean) {
@@ -767,7 +770,32 @@ public class MerchantInfoAddPageTest extends SuperTest{
 		
 	}
 	
+	//查询测试表中值是否存在，避免重复插入
+	public static boolean hasExist(Map<String, Object> whereMap) {
+		List<String > selectList=new ArrayList<String >();
+		selectList.add("count(1) count");
+		Map<String, Object> result=DataBusiness.querySingle("AOP_Data_MerchantInfoManagement_MerchantAudit", selectList, whereMap);
+		if((Integer)result.get("count")==0) {
+			return false;
+		}else {
+			System.out.println("关键字“"+whereMap.get("KeyInfo")+"”的测试数据已存在");
+			return true;
+		}
+	}
 	
+//	Test
+	public static void main(String[] args) {
+		Map<String, Object> insertMap=new HashMap<String,Object>();
+		insertMap.put("CaseNO", "testPreAuditPass");
+		insertMap.put("TradeName", "商户新增");
+		insertMap.put("KeyInfo", "01181713");
+		insertMap.put("AuditStatus", "Y1");//注册待初审
+		insertMap.put("PreAuditOperation_PreAuditTips", "初审通过");
+		insertMap.put("Radio", "0");
+		insertMap.put("RecheckAudit_RiskTemplate", "运营");
+		
+		System.out.println(hasExist(insertMap));
+	}
 	
 	
 //	public void doQueryForClickButton(MerchantInfoManagement_MerchantInfoAddBean bean) {

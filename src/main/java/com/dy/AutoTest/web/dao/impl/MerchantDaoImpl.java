@@ -30,10 +30,81 @@ public class MerchantDaoImpl implements MerchantDao {
 		}
 		return merchantNO;
 	}
-	
-	
-	
-	
-	
+
+
+	public Map<String, Object> querySingle(String tableName, List<String> selectList, Map<String, Object> whereMap) {
+		String fields="";
+		for(int i=0;i<selectList.size();i++) {
+			fields+=selectList.get(i);
+			if(i<selectList.size()-1) fields+=",";
+		}
+		sql="select "+fields+" from "+tableName;
+		params=new ArrayList<Object>();
+		if(whereMap!=null && !whereMap.isEmpty()) {
+			sql+=" where ";
+			int i=0;
+			for (Map.Entry<String, Object> entry : whereMap.entrySet()) { 
+				sql+=entry.getKey()+"=?";
+				if(i<whereMap.size()-1) 
+					sql+=" and ";
+				params.add(entry.getValue());
+				i++;
+			}
+		}
+		Map<String, Object> result=null;
+		try {
+			result=jdbcUtil.findSimpleResult(sql, params);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return result;
+	}
+
+	public List<Map<String, Object>> queryMore(String tableName, List<String> selectList,
+			Map<String, Object> whereMap) {
+		String fields="";
+		for(int i=0;i<selectList.size();i++) {
+			fields+=selectList.get(i);
+			if(i<selectList.size()-1) fields+=",";
+		}
+		sql="select "+fields+" from "+tableName;
+		params=new ArrayList<Object>();
+		if(whereMap!=null && !whereMap.isEmpty()) {
+			sql+=" where ";
+			int i=0;
+			for (Map.Entry<String, Object> entry : whereMap.entrySet()) { 
+				sql+=entry.getKey()+"=?";
+				if(i<whereMap.size()-1) 
+					sql+=" and ";
+				params.add(entry.getValue());
+				i++;
+			}
+		}
+		List<Map<String, Object>> result=null;
+		try {
+			result=jdbcUtil.findMoreResult(sql, params);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return result;
+	}
+
+
+	@Override
+	public String getOfflineMerchantNOByName(String merchantName) {
+		String merchantNO="";
+		sql="select a.MERC_ID from PAYADM.T_URM_MINF a "
+				+ "where a.MERC_CNM=? order by a.TM_SMP DESC";
+		params=new ArrayList<Object>();
+		params.add(merchantName);
+		try {
+			Map<String, Object> map=jdbcUtil.findSimpleResult(sql, params);
+			merchantNO=(String)map.get("MERC_ID");
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return merchantNO;
+	}
+
 
 }
