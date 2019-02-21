@@ -1,122 +1,183 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" ignored="3" total="4" passed="0">
+<testng-results skipped="0" failed="0" ignored="7" total="9" passed="2">
   <reporter-output>
     <line>
-      <![CDATA[        2019-02-18 17:23:39): [Test]-"Default test" is started]]>
+      <![CDATA[        2019-02-21 17:23:04): [Test]-"MerchantInfoManagement_MerchantAudit" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2019-02-21 17:23:04: [Method]-"LoginPageTest.testAuditLogin" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2019-02-21 17:23:23: [Method]-"LoginPageTest.testAuditLogin" is passed]]>
+    </line>
+    <line>
+      <![CDATA[                2019-02-21 17:23:25: [Method]-"MerchantStoreManagementPageTest.testAdd" is started]]>
+    </line>
+    <line>
+      <![CDATA[添加成功！]]>
+    </line>
+    <line>
+      <![CDATA[                2019-02-21 17:23:36: [Method]-"MerchantStoreManagementPageTest.testAdd" is passed]]>
+    </line>
+    <line>
+      <![CDATA[        2019-02-21 17:23:38): [Test]-"MerchantInfoManagement_MerchantAudit" is finished]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="92" started-at="2019-02-18T09:23:39Z" finished-at="2019-02-18T09:23:39Z">
+  <suite name="AcquiringOperationPlatform" duration-ms="34362" started-at="2019-02-21T09:23:04Z" finished-at="2019-02-21T09:23:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="92" started-at="2019-02-18T09:23:39Z" finished-at="2019-02-18T09:23:39Z">
-      <class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantInfoAddPageTest">
-        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantInfoAddPageTest@57175e74]" name="BeforeTest" is-config="true" duration-ms="21" started-at="2019-02-18T09:23:39Z" finished-at="2019-02-18T09:23:39Z">
+    <test name="MerchantInfoManagement_MerchantAudit" duration-ms="34362" started-at="2019-02-21T09:23:04Z" finished-at="2019-02-21T09:23:38Z">
+      <class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest">
+        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest@4c2bb6e0]" name="BeforeTest" is-config="true" duration-ms="2" started-at="2019-02-21T09:23:04Z" finished-at="2019-02-21T09:23:04Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1a04f701]]>
+                <![CDATA[org.testng.TestRunner@b0fd744]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[        2019-02-18 17:23:39): [Test]-"Default test" is started]]>
+              <![CDATA[        2019-02-21 17:23:04): [Test]-"MerchantInfoManagement_MerchantAudit" is started]]>
             </line>
           </reporter-output>
         </test-method> <!-- BeforeTest -->
-        <test-method status="FAIL" signature="init()[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantInfoAddPageTest@57175e74]" name="init" is-config="true" duration-ms="5" started-at="2019-02-18T09:23:39Z" finished-at="2019-02-18T09:23:39Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.dy.AutoTest.AcquiringOperationPlatform.PageObject.MerchantInfoManagement.MerchantInfoAddPage.<init>(MerchantInfoAddPage.java:12)
-at com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantInfoAddPageTest.init(MerchantInfoAddPageTest.java:27)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantInfoAddPageTest@57175e74]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-02-18T09:23:39Z" finished-at="2019-02-18T09:23:39Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest@4c2bb6e0]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-02-21T09:23:04Z" finished-at="2019-02-21T09:23:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantInfoAddPageTest@57175e74]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-02-18T09:23:39Z" finished-at="2019-02-18T09:23:39Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest@4c2bb6e0]" name="init" is-config="true" duration-ms="5" started-at="2019-02-21T09:23:04Z" finished-at="2019-02-21T09:23:04Z">
           <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest@4c2bb6e0]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-02-21T09:23:04Z" finished-at="2019-02-21T09:23:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest.testAuditLogin(com.dy.AutoTest.AcquiringOperationPlatform.POJO.LoginBean)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-21 17:23:04: [Method]-"LoginPageTest.testAuditLogin" is started]]>
+            </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="testHasExist()[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantInfoAddPageTest@57175e74]" name="testHasExist" duration-ms="1" started-at="2019-02-18T09:23:39Z" finished-at="2019-02-18T09:23:39Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.dy.AutoTest.AcquiringOperationPlatform.PageObject.MerchantInfoManagement.MerchantInfoAddPage.<init>(MerchantInfoAddPage.java:12)
-at com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantInfoAddPageTest.init(MerchantInfoAddPageTest.java:27)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="PASS" signature="testAuditLogin(com.dy.AutoTest.AcquiringOperationPlatform.POJO.LoginBean)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest@4c2bb6e0]" name="testAuditLogin" duration-ms="18798" started-at="2019-02-21T09:23:04Z" data-provider="LoginByCaseNO" finished-at="2019-02-21T09:23:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.AcquiringOperationPlatform.POJO.LoginBean@ecfbe91]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testHasExist -->
-        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantInfoAddPageTest@57175e74]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-02-18T09:23:39Z" finished-at="2019-02-18T09:23:39Z">
+        </test-method> <!-- testAuditLogin -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest@4c2bb6e0]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2019-02-21T09:23:23Z" finished-at="2019-02-21T09:23:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAuditLogin status=SUCCESS method=LoginPageTest.testAuditLogin(com.dy.AutoTest.AcquiringOperationPlatform.POJO.LoginBean)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest@4c2bb6e0] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
+            <line>
+              <![CDATA[                2019-02-21 17:23:23: [Method]-"LoginPageTest.testAuditLogin" is passed]]>
+            </line>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantInfoAddPageTest@57175e74]" name="AfterTest" is-config="true" duration-ms="0" started-at="2019-02-18T09:23:39Z" finished-at="2019-02-18T09:23:39Z">
+        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest@4c2bb6e0]" name="AfterTest" is-config="true" duration-ms="1" started-at="2019-02-21T09:23:38Z" finished-at="2019-02-21T09:23:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@b0fd744]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
+            <line>
+              <![CDATA[        2019-02-21 17:23:38): [Test]-"MerchantInfoManagement_MerchantAudit" is finished]]>
+            </line>
           </reporter-output>
         </test-method> <!-- AfterTest -->
-      </class> <!-- com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantInfoAddPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest -->
+      <class name="com.dy.AutoTest.web.actions.SingletonSet">
+        <test-method status="PASS" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@6c7a164b]" name="init" is-config="true" duration-ms="3927" started-at="2019-02-21T09:23:00Z" finished-at="2019-02-21T09:23:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aop_uat]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="releaseJDBC()[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@6c7a164b]" name="releaseJDBC" is-config="true" duration-ms="2020" started-at="2019-02-21T09:23:38Z" finished-at="2019-02-21T09:23:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- releaseJDBC -->
+      </class> <!-- com.dy.AutoTest.web.actions.SingletonSet -->
+      <class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantStoreManagementPageTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantStoreManagementPageTest@3e62d773]" name="init" is-config="true" duration-ms="4" started-at="2019-02-21T09:23:25Z" finished-at="2019-02-21T09:23:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantStoreManagementPageTest@3e62d773]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-02-21T09:23:25Z" finished-at="2019-02-21T09:23:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantStoreManagementPageTest@3e62d773]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-02-21T09:23:25Z" finished-at="2019-02-21T09:23:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantStoreManagementPageTest.testAdd(com.dy.AutoTest.AcquiringOperationPlatform.POJO.MerchantInfoManagement_MerchantStoreManagementBean)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-21 17:23:25: [Method]-"MerchantStoreManagementPageTest.testAdd" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testAdd(com.dy.AutoTest.AcquiringOperationPlatform.POJO.MerchantInfoManagement_MerchantStoreManagementBean)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantStoreManagementPageTest@3e62d773]" name="testAdd" duration-ms="11516" started-at="2019-02-21T09:23:25Z" data-provider="MerchantInfoManagement_MerchantStoreManagementByCaseNO" finished-at="2019-02-21T09:23:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.AcquiringOperationPlatform.POJO.MerchantInfoManagement_MerchantStoreManagementBean@ef1695a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[添加成功！]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testAdd -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantStoreManagementPageTest@3e62d773]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2019-02-21T09:23:36Z" finished-at="2019-02-21T09:23:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAdd status=SUCCESS method=MerchantStoreManagementPageTest.testAdd(com.dy.AutoTest.AcquiringOperationPlatform.POJO.MerchantInfoManagement_MerchantStoreManagementBean)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantStoreManagementPageTest@3e62d773] output=添加成功！]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-21 17:23:36: [Method]-"MerchantStoreManagementPageTest.testAdd" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantStoreManagementPageTest -->
+    </test> <!-- MerchantInfoManagement_MerchantAudit -->
+  </suite> <!-- AcquiringOperationPlatform -->
 </testng-results>

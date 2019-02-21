@@ -112,8 +112,10 @@ public abstract class SuperPage{
 	}
 	
 	public String getNotice() {
-		String xpath="//li[@class='messenger-message-slot'][1]/div/div[1]";
-//		String xpath="//li[@class='messenger-message-slot messenger-shown messenger-first messenger-last'][1]/div/div[1]";
+		//消息栏消失后捕获
+//		String xpath="//li[@class='messenger-message-slot'][1]/div/div[1]";
+		//消息栏未消失
+		String xpath="//li[@class='messenger-message-slot messenger-shown messenger-first messenger-last'][1]/div/div[1]";
 //		try {
 //			(new WebDriverWait(driver, 10))
 //				.until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)));

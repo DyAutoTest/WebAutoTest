@@ -20,7 +20,9 @@ import com.dy.AutoTest.web.business.DataBusiness;
 public class MerchantInfoAddPageTest extends SuperTest{
 	MerchantInfoAddPage MerchantInfoAddPage;
 	String URL;
-	List<MerchantInfoManagement_MerchantInfoAddBean> beansList=new ArrayList<MerchantInfoManagement_MerchantInfoAddBean>();
+	List<MerchantInfoManagement_MerchantInfoAddBean> preAuditPassBeansList=new ArrayList<MerchantInfoManagement_MerchantInfoAddBean>();
+	List<MerchantInfoManagement_MerchantInfoAddBean> preAuditFailBeansList=new ArrayList<MerchantInfoManagement_MerchantInfoAddBean>();
+
 	@BeforeClass
 	public void init() {
 		/******** instant objectPage *********/
@@ -424,7 +426,7 @@ public class MerchantInfoAddPageTest extends SuperTest{
 			wait.waitFor(1000);
 			MerchantInfoAddPage.clickAttachmentUploading_Uploading();
 		}
-		wait.waitFor(1000);
+		wait.waitFor(3000);
 		MerchantInfoAddPage.clickEnterConfirm();
 		System.out.println(MerchantInfoAddPage.getNotice());
 		Reporter.log(MerchantInfoAddPage.getNotice());
@@ -529,21 +531,21 @@ public class MerchantInfoAddPageTest extends SuperTest{
 
 		MerchantInfoAddPage.clickAttachmentUploading();
 		wait.waitFor(2000);
-		MerchantInfoAddPage.setWaitTime(0);
 		MerchantInfoAddPage.clickEnterConfirm();
 //		String NoticeForMerchAddSuccess=MerchantInfoAddPage.getNotice();
 //			System.out.println(NoticeForMerchAddSuccess);
 //			Reporter.log(NoticeForMerchAddSuccess);
-		MerchantInfoAddPage.doLeft();
-		wait.waitFor(500);
-		MerchantInfoAddPage.doEnter();
+//		MerchantInfoAddPage.doLeft();
+//		wait.waitFor(500);
+//		MerchantInfoAddPage.doEnter();
 		wait.waitFor(1000);
-		beansList.add(bean);
+		preAuditPassBeansList.add(bean);
+		preAuditFailBeansList.add(bean);
 	} 
 	@Test
 	public void testAddPreAuditPassRecord() {
-		if(beansList.size()>0) {
-			for(MerchantInfoManagement_MerchantInfoAddBean bean:beansList) {
+		if(preAuditPassBeansList.size()>0) {
+			for(MerchantInfoManagement_MerchantInfoAddBean bean:preAuditPassBeansList) {
 				Map<String, Object> insertMap=new HashMap<String,Object>();
 				insertMap.put("CaseNO", "testPreAuditPass");
 				insertMap.put("TradeName", "商户新增");
@@ -555,13 +557,13 @@ public class MerchantInfoAddPageTest extends SuperTest{
 				if(!hasExist(insertMap))
 					DataBusiness.insertTestData("AOP_Data_MerchantInfoManagement_MerchantAudit", insertMap);
 			}
-			beansList.clear();
+			preAuditPassBeansList.clear();
 		}
 	}
 	@Test
 	public void testAddPreAuditFailRecord() {
-		if(beansList.size()>0) {
-			for(MerchantInfoManagement_MerchantInfoAddBean bean:beansList) {
+		if(preAuditFailBeansList.size()>0) {
+			for(MerchantInfoManagement_MerchantInfoAddBean bean:preAuditFailBeansList) {
 				Map<String, Object> insertMap=new HashMap<String,Object>();
 				insertMap.put("CaseNO", "testPreAuditFail");
 				insertMap.put("TradeName", "商户新增");
@@ -573,7 +575,7 @@ public class MerchantInfoAddPageTest extends SuperTest{
 				if(!hasExist(insertMap))
 					DataBusiness.insertTestData("AOP_Data_MerchantInfoManagement_MerchantAudit", insertMap);
 			}
-			beansList.clear();
+			preAuditFailBeansList.clear();
 		}
 	}
 	

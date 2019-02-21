@@ -22,7 +22,8 @@ import com.dy.AutoTest.web.business.MerchantBusiness;
 public class MerchantAuditPageTest extends SuperTest{
 	MerchantAuditPage MerchantAuditPage;
 	String URL;
-	List<MerchantInfoManagement_MerchantAuditBean> preAuditPassBeansList=new ArrayList<MerchantInfoManagement_MerchantAuditBean>();
+	List<MerchantInfoManagement_MerchantAuditBean> preAuditPassBeansList1=new ArrayList<MerchantInfoManagement_MerchantAuditBean>();
+	List<MerchantInfoManagement_MerchantAuditBean> preAuditPassBeansList2=new ArrayList<MerchantInfoManagement_MerchantAuditBean>();
 	List<MerchantInfoManagement_MerchantAuditBean> preAuditFailBeansList=new ArrayList<MerchantInfoManagement_MerchantAuditBean>();
 	List<MerchantInfoManagement_MerchantAuditBean> recheckAuditPassBeansList=new ArrayList<MerchantInfoManagement_MerchantAuditBean>();
 	List<MerchantInfoManagement_MerchantAuditBean> recheckAuditFailBeansList=new ArrayList<MerchantInfoManagement_MerchantAuditBean>();
@@ -107,7 +108,9 @@ public class MerchantAuditPageTest extends SuperTest{
 		System.out.println(noticeForSuccess);
 		Reporter.log(noticeForSuccess);
 		if(noticeForSuccess.equals("审核状态更新成功！")) {
-			preAuditPassBeansList.add(bean);
+			preAuditPassBeansList1.add(bean);
+			preAuditPassBeansList2.add(bean);
+			
 		}
 //		MerchantAuditPage.clickPreAuditOperation_Close();
 	}
@@ -130,7 +133,7 @@ public class MerchantAuditPageTest extends SuperTest{
 		String noticeForSuccess=MerchantAuditPage.getNotice();
 		System.out.println(noticeForSuccess);
 		Reporter.log(noticeForSuccess);
-		if(noticeForSuccess.equals("审核状态更新成功！")) {
+		if(noticeForSuccess.equals("商户资料通过复核！")) {
 			//查询业务表的商户号
 			String merchantNO=MerchantBusiness.getOfflineMerchantNOByName(bean.getKeyInfo());
 			if(!merchantNO.equals("")) {
@@ -151,7 +154,7 @@ public class MerchantAuditPageTest extends SuperTest{
 		Reporter.log(noticeForSuccess);
 		if(noticeForSuccess.equals("审核状态更新成功！")) {
 			//更改该条记录
-			
+			recheckAuditFailBeansList.add(bean);
 		}
 //		MerchantAuditPage.clickRecheckOperation_Close();
 	}
@@ -161,8 +164,8 @@ public class MerchantAuditPageTest extends SuperTest{
 
 	@Test
 	public void testInsertRecheckAuditPassRecord() {
-		if(preAuditPassBeansList.size()>0) {
-			for(MerchantInfoManagement_MerchantAuditBean bean:preAuditPassBeansList) {
+		if(preAuditPassBeansList1.size()>0) {
+			for(MerchantInfoManagement_MerchantAuditBean bean:preAuditPassBeansList1) {
 				insertMap.put("CaseNO", "testRecheckAuditPass");
 				if(!bean.getTradeName().equals("")) {
 					insertMap.put("TradeName",bean.getTradeName());
@@ -211,13 +214,13 @@ public class MerchantAuditPageTest extends SuperTest{
 				}
 			}
 			clearSqlCollection();
-			preAuditPassBeansList.clear();
+			preAuditPassBeansList1.clear();
 		}
 	}
 	@Test
 	public void testInsertRecheckAuditFailRecord() {
-		if(preAuditFailBeansList.size()>0) {
-			for(MerchantInfoManagement_MerchantAuditBean bean:preAuditFailBeansList) {
+		if(preAuditPassBeansList2.size()>0) {
+			for(MerchantInfoManagement_MerchantAuditBean bean:preAuditPassBeansList2) {
 				insertMap.put("CaseNO", "testRecheckAuditFail");
 				if(!bean.getTradeName().equals("")) {
 					insertMap.put("TradeName",bean.getTradeName());
@@ -266,28 +269,7 @@ public class MerchantAuditPageTest extends SuperTest{
 				}
 			}
 			clearSqlCollection();
-			preAuditFailBeansList.clear();
-		}
-	}
-	@Test
-	public void testInsertStoreRecord() {
-		if(recheckAuditPassBeansList.size()>0) {
-			for(MerchantInfoManagement_MerchantAuditBean bean:recheckAuditPassBeansList) {
-				//插入前检查
-				Map<String, Object> whereMap=new HashMap<String,Object>();
-				selectList.add("count(1) count");
-				whereMap.put("CaseNO", "testAdd");
-				whereMap.put("SearchMer_MerName", bean.getKeyInfo());
-				Map<String, Object> result1=DataBusiness.querySingle("AOP_Data_MerchantInfoManagement_MerchantStoreManagement", selectList, whereMap);
-				whereMap.remove("SearchMer_MerName");
-				whereMap.put("SearchMer_MerchantNO", bean.getMerchantCode());
-				Map<String, Object> result2=DataBusiness.querySingle("AOP_Data_MerchantInfoManagement_MerchantStoreManagement", selectList, whereMap);
-				if((Integer)result1.get("count")==0&&(Integer)result2.get("count")==0){
-					DataBusiness.insertTestData("AOP_Data_MerchantInfoManagement_MerchantStoreManagement", insertMap);
-				}
-			}
-			clearSqlCollection();
-			recheckAuditPassBeansList.clear();
+			preAuditPassBeansList2.clear();
 		}
 	}
 	@Test
@@ -300,6 +282,32 @@ public class MerchantAuditPageTest extends SuperTest{
 			}
 			clearSqlCollection();
 			preAuditFailBeansList.clear();
+		}
+	}
+	@Test
+	public void testInsertStoreRecord() {
+		if(recheckAuditPassBeansList.size()>0) {
+			for(MerchantInfoManagement_MerchantAuditBean bean:recheckAuditPassBeansList) {
+				//插入前检查
+				selectList.add("count(1) count");
+				whereMap.put("CaseNO", "testAdd");
+				whereMap.put("Add_SearchMer_MerName", bean.getKeyInfo());
+				Map<String, Object> result1=DataBusiness.querySingle("AOP_Data_MerchantInfoManagement_MerchantStoreManagement", selectList, whereMap);
+				whereMap.remove("Add_SearchMer_MerName");
+				whereMap.put("Add_SearchMer_MerNO", bean.getMerchantCode());
+				Map<String, Object> result2=DataBusiness.querySingle("AOP_Data_MerchantInfoManagement_MerchantStoreManagement", selectList, whereMap);
+				if((Integer)result1.get("count")==0&&(Integer)result2.get("count")==0){
+					String temp=bean.getKeyInfo();
+					temp=temp.substring(temp.length()-8,temp.length());
+					whereMap.put("Add_SearchMer_MerName", bean.getKeyInfo());
+					whereMap.put("Add_SearchMer_Radio", "0");
+					whereMap.put("Add_StoreName", "新增门店"+temp);
+					whereMap.put("Add_StoreAddress", "新增地址"+temp);
+					DataBusiness.insertTestData("AOP_Data_MerchantInfoManagement_MerchantStoreManagement", whereMap);
+				}
+			}
+			clearSqlCollection();
+			recheckAuditPassBeansList.clear();
 		}
 	}
 	@Test
