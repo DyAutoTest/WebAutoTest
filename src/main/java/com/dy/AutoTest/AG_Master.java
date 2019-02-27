@@ -4,7 +4,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 import com.dy.AutoTest.wagaga.IGenerate;
-import com.dy.AutoTest.wagaga.impl.DataBusinessGenerator;
 import com.dy.AutoTest.wagaga.impl.POGenerator;
 import com.dy.AutoTest.wagaga.impl.POJOGenerator;
 import com.dy.AutoTest.wagaga.impl.PTGenerator;
@@ -86,8 +85,8 @@ public class AG_Master {
 	public void generateSQL(){
 		ig=new SQLGenerator();
 	}
-	@Test
+/*	@Test
 	public void generateDataBusiness(){
 		ig=new DataBusinessGenerator();
-	}
+	}*/
 }
