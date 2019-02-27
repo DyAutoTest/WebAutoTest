@@ -1,25 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="1" ignored="4" total="6" passed="1">
+=======
+<testng-results skipped="0" failed="0" ignored="2" total="5" passed="3">
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
   <reporter-output>
     <line>
+<<<<<<< HEAD
       <![CDATA[        2019-02-27 10:43:10): [Test]-"Login" is started]]>
+=======
+      <![CDATA[        2019-02-27 14:00:23): [Test]-"Login" is started]]>
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
     </line>
     <line>
+<<<<<<< HEAD
       <![CDATA[                2019-02-27 10:43:10: [Method]-"LoginPageTest.testLogin" is started]]>
+=======
+      <![CDATA[                2019-02-27 14:00:23: [Method]-"LoginPageTest.testLogin" is started]]>
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
     </line>
     <line>
+<<<<<<< HEAD
       <![CDATA[                2019-02-27 10:43:25: [Method]-"LoginPageTest.testLogin" is passed]]>
+=======
+      <![CDATA[                2019-02-27 14:00:28: [Method]-"LoginPageTest.testLogin" is passed]]>
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
     </line>
     <line>
+<<<<<<< HEAD
       <![CDATA[        2019-02-27 10:43:27): [Test]-"Login" is finished]]>
+=======
+      <![CDATA[        2019-02-27 14:00:30): [Test]-"Login" is finished]]>
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
     </line>
     <line>
+<<<<<<< HEAD
       <![CDATA[        2019-02-27 10:43:27): [Test]-"MerchantInfoManagement_MerchantInfoAdd" is started]]>
+=======
+      <![CDATA[        2019-02-27 14:00:30): [Test]-"MerchantProduct" is started]]>
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
     </line>
     <line>
+<<<<<<< HEAD
       <![CDATA[                2019-02-27 10:43:27: [Method]-"MerchantInfoAddPageTest.testMerchantAdd" is started]]>
+=======
+      <![CDATA[                2019-02-27 14:00:30: [Method]-"MerchantProductPageTest.testUpdate" is started]]>
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
     </line>
     <line>
+<<<<<<< HEAD
       <![CDATA[                2019-02-27 10:46:08: [Method]-"MerchantInfoAddPageTest.testMerchantAdd" is failed]]>
     </line>
     <line>
@@ -37,93 +66,258 @@ Session ID: aca8334a72f6798bd307cbc5f48e4873
     </line>
     <line>
       <![CDATA[        2019-02-27 10:46:10): [Test]-"MerchantInfoManagement_MerchantInfoAdd" is finished]]>
+=======
+      <![CDATA[                2019-02-27 14:00:41: [Method]-"MerchantProductPageTest.testUpdate" is passed]]>
+    </line>
+    <line>
+      <![CDATA[        2019-02-27 14:00:43): [Test]-"MerchantProduct" is finished]]>
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
     </line>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="AcquiringOperationPlatform" duration-ms="180572" started-at="2019-02-27T02:43:10Z" finished-at="2019-02-27T02:46:10Z">
+=======
+  <suite name="SuiteOperationPlatform" duration-ms="24291" started-at="2019-02-27T06:00:23Z" finished-at="2019-02-27T06:00:47Z">
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="Login" duration-ms="17577" started-at="2019-02-27T02:43:10Z" finished-at="2019-02-27T02:43:27Z">
       <class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest">
         <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest@6c7a164b]" name="BeforeTest" is-config="true" duration-ms="2" started-at="2019-02-27T02:43:10Z" finished-at="2019-02-27T02:43:10Z">
+=======
+    <test name="Login" duration-ms="6779" started-at="2019-02-27T06:00:23Z" finished-at="2019-02-27T06:00:30Z">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
+        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@1d082e88]" name="BeforeTest" is-config="true" duration-ms="3" started-at="2019-02-27T06:00:23Z" finished-at="2019-02-27T06:00:23Z">
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
                 <![CDATA[org.testng.TestRunner@4140d677]]>
+=======
+                <![CDATA[org.testng.TestRunner@1f12e153]]>
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
+<<<<<<< HEAD
               <![CDATA[        2019-02-27 10:43:10): [Test]-"Login" is started]]>
+=======
+              <![CDATA[        2019-02-27 14:00:23): [Test]-"Login" is started]]>
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
             </line>
           </reporter-output>
         </test-method> <!-- BeforeTest -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest@6c7a164b]" name="init" is-config="true" duration-ms="42" started-at="2019-02-27T02:43:10Z" finished-at="2019-02-27T02:43:10Z">
+=======
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@1d082e88]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-02-27T06:00:23Z" finished-at="2019-02-27T06:00:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@1d082e88]" name="init" is-config="true" duration-ms="4" started-at="2019-02-27T06:00:23Z" finished-at="2019-02-27T06:00:23Z">
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest@6c7a164b]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-02-27T02:43:10Z" finished-at="2019-02-27T02:43:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
         <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest@6c7a164b]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-02-27T02:43:10Z" finished-at="2019-02-27T02:43:10Z">
+=======
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@1d082e88]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-02-27T06:00:23Z" finished-at="2019-02-27T06:00:23Z">
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
                 <![CDATA[public void com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest.testLogin(com.dy.AutoTest.AcquiringOperationPlatform.POJO.LoginBean)]]>
+=======
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest.testLogin(java.lang.String)]]>
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
+<<<<<<< HEAD
               <![CDATA[                2019-02-27 10:43:10: [Method]-"LoginPageTest.testLogin" is started]]>
+=======
+              <![CDATA[                2019-02-27 14:00:23: [Method]-"LoginPageTest.testLogin" is started]]>
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="testLogin(com.dy.AutoTest.AcquiringOperationPlatform.POJO.LoginBean)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest@6c7a164b]" name="testLogin" duration-ms="15489" started-at="2019-02-27T02:43:10Z" data-provider="LoginByCaseNO" finished-at="2019-02-27T02:43:25Z">
+=======
+        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@1d082e88]" name="testLogin" duration-ms="4744" started-at="2019-02-27T06:00:23Z" finished-at="2019-02-27T06:00:28Z">
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
                 <![CDATA[com.dy.AutoTest.AcquiringOperationPlatform.POJO.LoginBean@58cec85b]]>
+=======
+                <![CDATA[T00064]]>
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest@6c7a164b]" name="afterMethod" is-config="true" duration-ms="2002" started-at="2019-02-27T02:43:25Z" finished-at="2019-02-27T02:43:27Z">
+=======
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@1d082e88]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2019-02-27T06:00:28Z" finished-at="2019-02-27T06:00:30Z">
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
                 <![CDATA[[TestResult name=testLogin status=SUCCESS method=LoginPageTest.testLogin(com.dy.AutoTest.AcquiringOperationPlatform.POJO.LoginBean)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest@6c7a164b] output={null}]]]>
+=======
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=LoginPageTest.testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@1d082e88] output={null}]]]>
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
+<<<<<<< HEAD
               <![CDATA[                2019-02-27 10:43:25: [Method]-"LoginPageTest.testLogin" is passed]]>
+=======
+              <![CDATA[                2019-02-27 14:00:28: [Method]-"LoginPageTest.testLogin" is passed]]>
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
             </line>
           </reporter-output>
         </test-method> <!-- afterMethod -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest@6c7a164b]" name="AfterTest" is-config="true" duration-ms="1" started-at="2019-02-27T02:43:27Z" finished-at="2019-02-27T02:43:27Z">
+=======
+        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@1d082e88]" name="AfterTest" is-config="true" duration-ms="1" started-at="2019-02-27T06:00:30Z" finished-at="2019-02-27T06:00:30Z">
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
                 <![CDATA[org.testng.TestRunner@4140d677]]>
+=======
+                <![CDATA[org.testng.TestRunner@1f12e153]]>
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
+<<<<<<< HEAD
               <![CDATA[        2019-02-27 10:43:27): [Test]-"Login" is finished]]>
+=======
+              <![CDATA[        2019-02-27 14:00:30): [Test]-"Login" is finished]]>
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
             </line>
           </reporter-output>
         </test-method> <!-- AfterTest -->
+<<<<<<< HEAD
       </class> <!-- com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest -->
     </test> <!-- Login -->
     <test name="MerchantInfoManagement_MerchantInfoAdd" duration-ms="162921" started-at="2019-02-27T02:43:27Z" finished-at="2019-02-27T02:46:10Z">
+=======
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest -->
+    </test> <!-- Login -->
+    <test name="MerchantProduct" duration-ms="12909" started-at="2019-02-27T06:00:30Z" finished-at="2019-02-27T06:00:43Z">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest">
+        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest@147ed70f]" name="BeforeTest" is-config="true" duration-ms="1" started-at="2019-02-27T06:00:30Z" finished-at="2019-02-27T06:00:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@389562d6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2019-02-27 14:00:30): [Test]-"MerchantProduct" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest@147ed70f]" name="init" is-config="true" duration-ms="3" started-at="2019-02-27T06:00:30Z" finished-at="2019-02-27T06:00:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest@147ed70f]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-02-27T06:00:30Z" finished-at="2019-02-27T06:00:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="testUpdate(com.dy.AutoTest.OperationPlatform.POJO.MerchantProductBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest@147ed70f]" name="testUpdate" duration-ms="10896" started-at="2019-02-27T06:00:30Z" data-provider="MerchantProductByCaseNO" finished-at="2019-02-27T06:00:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.MerchantProductBean@6c345c5f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdate -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest@147ed70f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-02-27T06:00:30Z" finished-at="2019-02-27T06:00:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest.testUpdate(com.dy.AutoTest.OperationPlatform.POJO.MerchantProductBean)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-27 14:00:30: [Method]-"MerchantProductPageTest.testUpdate" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest@147ed70f]" name="afterMethod" is-config="true" duration-ms="2000" started-at="2019-02-27T06:00:41Z" finished-at="2019-02-27T06:00:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testUpdate status=SUCCESS method=MerchantProductPageTest.testUpdate(com.dy.AutoTest.OperationPlatform.POJO.MerchantProductBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest@147ed70f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-27 14:00:41: [Method]-"MerchantProductPageTest.testUpdate" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest@147ed70f]" name="AfterTest" is-config="true" duration-ms="1" started-at="2019-02-27T06:00:43Z" finished-at="2019-02-27T06:00:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@389562d6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2019-02-27 14:00:43): [Test]-"MerchantProduct" is finished]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest -->
+    </test> <!-- MerchantProduct -->
+    <test name="Quit" duration-ms="4569" started-at="2019-02-27T06:00:43Z" finished-at="2019-02-27T06:00:47Z">
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
       <class name="com.dy.AutoTest.web.actions.SingletonSet">
+<<<<<<< HEAD
         <test-method status="PASS" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@222a59e6]" name="init" is-config="true" duration-ms="5507" started-at="2019-02-27T02:43:04Z" finished-at="2019-02-27T02:43:10Z">
+=======
+        <test-method status="PASS" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@7d3a22a9]" name="init" is-config="true" duration-ms="3563" started-at="2019-02-27T06:00:19Z" finished-at="2019-02-27T06:00:23Z">
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
           <params>
             <param index="0">
               <value>
@@ -132,18 +326,23 @@ Session ID: aca8334a72f6798bd307cbc5f48e4873
             </param>
             <param index="1">
               <value>
-                <![CDATA[aop_uat]]>
+                <![CDATA[pop_uat]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="releaseJDBC()[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@222a59e6]" name="releaseJDBC" is-config="true" duration-ms="2044" started-at="2019-02-27T02:46:10Z" finished-at="2019-02-27T02:46:12Z">
+=======
+        <test-method status="PASS" signature="releaseJDBC()[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@7d3a22a9]" name="releaseJDBC" is-config="true" duration-ms="2019" started-at="2019-02-27T06:00:47Z" finished-at="2019-02-27T06:00:49Z">
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- releaseJDBC -->
       </class> <!-- com.dy.AutoTest.web.actions.SingletonSet -->
+<<<<<<< HEAD
       <class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantInfoAddPageTest">
         <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantInfoAddPageTest@77659b30]" name="BeforeTest" is-config="true" duration-ms="1" started-at="2019-02-27T02:43:27Z" finished-at="2019-02-27T02:43:27Z">
           <params>
@@ -160,12 +359,21 @@ Session ID: aca8334a72f6798bd307cbc5f48e4873
           </reporter-output>
         </test-method> <!-- BeforeTest -->
         <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantInfoAddPageTest@77659b30]" name="init" is-config="true" duration-ms="8" started-at="2019-02-27T02:43:27Z" finished-at="2019-02-27T02:43:27Z">
+=======
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@229d10bd]" name="init" is-config="true" duration-ms="2" started-at="2019-02-27T06:00:43Z" finished-at="2019-02-27T06:00:43Z">
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantInfoAddPageTest@77659b30]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-02-27T02:43:27Z" finished-at="2019-02-27T02:43:27Z">
+=======
+        <test-method status="PASS" signature="testQuit()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@229d10bd]" name="testQuit" duration-ms="3562" started-at="2019-02-27T06:00:43Z" finished-at="2019-02-27T06:00:46Z">
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- beforeClass -->
         <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantInfoAddPageTest@77659b30]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-02-27T02:43:27Z" finished-at="2019-02-27T02:43:27Z">
           <params>
@@ -175,11 +383,19 @@ Session ID: aca8334a72f6798bd307cbc5f48e4873
               </value>
             </param>
           </params>
+=======
+        </test-method> <!-- testQuit -->
+        <test-method status="PASS" signature="releaseBrowser()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@229d10bd]" name="releaseBrowser" is-config="true" duration-ms="1002" started-at="2019-02-27T06:00:46Z" finished-at="2019-02-27T06:00:47Z">
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
           <reporter-output>
+<<<<<<< HEAD
             <line>
               <![CDATA[                2019-02-27 10:43:27: [Method]-"MerchantInfoAddPageTest.testMerchantAdd" is started]]>
             </line>
+=======
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- beforeMethod -->
         <test-method status="FAIL" signature="testMerchantAdd(com.dy.AutoTest.AcquiringOperationPlatform.POJO.MerchantInfoManagement_MerchantInfoAddBean)[pri:0, instance:com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantInfoAddPageTest@77659b30]" name="testMerchantAdd" duration-ms="160899" started-at="2019-02-27T02:43:27Z" data-provider="MerchantInfoManagement_MerchantInfoAddByCaseNO" finished-at="2019-02-27T02:46:08Z">
           <params>
@@ -308,4 +524,10 @@ Session ID: aca8334a72f6798bd307cbc5f48e4873
       </class> <!-- com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantInfoAddPageTest -->
     </test> <!-- MerchantInfoManagement_MerchantInfoAdd -->
   </suite> <!-- AcquiringOperationPlatform -->
+=======
+        </test-method> <!-- releaseBrowser -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest -->
+    </test> <!-- Quit -->
+  </suite> <!-- SuiteOperationPlatform -->
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
 </testng-results>

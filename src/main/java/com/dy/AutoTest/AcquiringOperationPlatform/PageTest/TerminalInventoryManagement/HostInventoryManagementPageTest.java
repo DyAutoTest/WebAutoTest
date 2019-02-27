@@ -89,7 +89,7 @@ public class HostInventoryManagementPageTest extends SuperTest{
 		HostInventoryManagementPage.setTerminalEnterStorage_PurchasePrice(bean.getPurchasePrice());
 		wait.waitFor(1000);
 		
-		HostInventoryManagementPage.clickTerminalEnterStorage_Close();
+		HostInventoryManagementPage.clickTerminalEnterStorage_EnterStorageConfirm();
 		wait.waitFor(3000);
 	}
 	@Test(dataProvider="TerminalInventoryManagement_HostInventoryManagementByCaseNO")

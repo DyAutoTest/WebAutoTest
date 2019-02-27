@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testsuite name="MerchantFeeRateAddAudit"
+=======
+<testsuite name="MerchantInfoInsertAudit"
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
            tests="1"
            failures="1"
            errors="0"
            skipped="0"
+<<<<<<< HEAD
            time="6.039">
+=======
+           time="11.799">
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
   <properties />
             <testcase name="testMerchantAuditPass" time="6.039" classname="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest">
                 <failure type="org.openqa.selenium.WebDriverException"
@@ -73,5 +81,10 @@ Session ID: fc42124c726d42b060277d8bc0608e71
           </testcase>
   
   
+<<<<<<< HEAD
   
+=======
+            <testcase name="testMerchantAuditPass" time="11.799" classname="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest" />
+      
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
 </testsuite>

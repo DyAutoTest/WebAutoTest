@@ -20,9 +20,7 @@ import com.dy.AutoTest.web.business.DataBusiness;
 public class MerchantInfoAddPageTest extends SuperTest{
 	MerchantInfoAddPage MerchantInfoAddPage;
 	String URL;
-	List<MerchantInfoManagement_MerchantInfoAddBean> preAuditPassBeansList=new ArrayList<MerchantInfoManagement_MerchantInfoAddBean>();
-	List<MerchantInfoManagement_MerchantInfoAddBean> preAuditFailBeansList=new ArrayList<MerchantInfoManagement_MerchantInfoAddBean>();
-
+	List<MerchantInfoManagement_MerchantInfoAddBean> beansList=new ArrayList<MerchantInfoManagement_MerchantInfoAddBean>();
 	@BeforeClass
 	public void init() {
 		/******** instant objectPage *********/
@@ -428,6 +426,8 @@ public class MerchantInfoAddPageTest extends SuperTest{
 		}
 		wait.waitFor(3000);
 /*		MerchantInfoAddPage.clickEnterConfirm();
+		wait.waitFor(1000);
+		MerchantInfoAddPage.clickEnterConfirm();
 		System.out.println(MerchantInfoAddPage.getNotice());
 		Reporter.log(MerchantInfoAddPage.getNotice());
 		
@@ -537,47 +537,39 @@ public class MerchantInfoAddPageTest extends SuperTest{
 //		String NoticeForMerchAddSuccess=MerchantInfoAddPage.getNotice();
 //			System.out.println(NoticeForMerchAddSuccess);
 //			Reporter.log(NoticeForMerchAddSuccess);
-//		MerchantInfoAddPage.doLeft();
-//		wait.waitFor(500);
-//		MerchantInfoAddPage.doEnter();
 		wait.waitFor(1000);
-		preAuditPassBeansList.add(bean);
-		preAuditFailBeansList.add(bean);
+		beansList.add(bean);
 	} 
 	@Test
 	public void testAddPreAuditPassRecord() {
-		if(preAuditPassBeansList.size()>0) {
-			for(MerchantInfoManagement_MerchantInfoAddBean bean:preAuditPassBeansList) {
+		if(beansList.size()>0) {
+			for(MerchantInfoManagement_MerchantInfoAddBean bean:beansList) {
 				Map<String, Object> insertMap=new HashMap<String,Object>();
 				insertMap.put("CaseNO", "testPreAuditPass");
 				insertMap.put("TradeName", "商户新增");
 				insertMap.put("KeyInfo", bean.getBasicInfo_MerchantName());
 				insertMap.put("AuditStatus", "Y1");//注册待初审
+				insertMap.put("Radio", "0");
 				insertMap.put("PreAuditOperation_PreAuditTips", "初审通过");
-				insertMap.put("Radio", bean.getAuditRadio());
-				insertMap.put("RecheckAudit_RiskTemplate", bean.getRiskTemplate());
-				if(!hasExist(insertMap))
-					DataBusiness.insertTestData("AOP_Data_MerchantInfoManagement_MerchantAudit", insertMap);
+				insertMap.put("AuditRadio", bean.getRiskTemplate());
+				insertMap.put("RiskTemplate", bean.getRiskTemplate());
+				DataBusiness.insertTestData("AOP_Data_MerchantInfoManagement_MerchantAudit", insertMap);
 			}
-			preAuditPassBeansList.clear();
 		}
 	}
 	@Test
 	public void testAddPreAuditFailRecord() {
-		if(preAuditFailBeansList.size()>0) {
-			for(MerchantInfoManagement_MerchantInfoAddBean bean:preAuditFailBeansList) {
+		if(beansList.size()>0) {
+			for(MerchantInfoManagement_MerchantInfoAddBean bean:beansList) {
 				Map<String, Object> insertMap=new HashMap<String,Object>();
 				insertMap.put("CaseNO", "testPreAuditFail");
 				insertMap.put("TradeName", "商户新增");
-				insertMap.put("KeyInfo", bean.getBasicInfo_MerchantName());
+				insertMap.put("KeyInfo", bean.getBasicInfo_MerchantAbbreviation());
 				insertMap.put("AuditStatus", "Y1");//注册待初审
+				insertMap.put("Radio", "0");
 				insertMap.put("PreAuditOperation_PreAuditTips", "初审不通过");
-				insertMap.put("Radio", bean.getAuditRadio());
-				insertMap.put("RecheckAudit_RiskTemplate", bean.getRiskTemplate());
-				if(!hasExist(insertMap))
-					DataBusiness.insertTestData("AOP_Data_MerchantInfoManagement_MerchantAudit", insertMap);
+				DataBusiness.insertTestData("AOP_Data_MerchantInfoManagement_MerchantAudit", insertMap);
 			}
-			preAuditFailBeansList.clear();
 		}
 	}
 	
@@ -589,6 +581,7 @@ public class MerchantInfoAddPageTest extends SuperTest{
 		wait.waitFor(1000);
 		MerchantInfoAddPage.clickRateInfo_SearchRate_Submit();
 	}
+	
 	
 	
 	void RequiredFieldValidation(MerchantInfoManagement_MerchantInfoAddBean bean) {
@@ -774,32 +767,7 @@ public class MerchantInfoAddPageTest extends SuperTest{
 		
 	}
 	
-	//查询测试表中值是否存在，避免重复插入
-	public static boolean hasExist(Map<String, Object> whereMap) {
-		List<String > selectList=new ArrayList<String >();
-		selectList.add("count(1) count");
-		Map<String, Object> result=DataBusiness.querySingle("AOP_Data_MerchantInfoManagement_MerchantAudit", selectList, whereMap);
-		if((Integer)result.get("count")==0) {
-			return false;
-		}else {
-			System.out.println("关键字“"+whereMap.get("KeyInfo")+"”的测试数据已存在");
-			return true;
-		}
-	}
 	
-//	Test
-	public static void main(String[] args) {
-		Map<String, Object> insertMap=new HashMap<String,Object>();
-		insertMap.put("CaseNO", "testPreAuditPass");
-		insertMap.put("TradeName", "商户新增");
-		insertMap.put("KeyInfo", "01181713");
-		insertMap.put("AuditStatus", "Y1");//注册待初审
-		insertMap.put("PreAuditOperation_PreAuditTips", "初审通过");
-		insertMap.put("Radio", "0");
-		insertMap.put("RecheckAudit_RiskTemplate", "运营");
-		
-		System.out.println(hasExist(insertMap));
-	}
 	
 	
 //	public void doQueryForClickButton(MerchantInfoManagement_MerchantInfoAddBean bean) {

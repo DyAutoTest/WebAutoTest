@@ -758,7 +758,6 @@ public class MerchantInfoAddPage extends SuperPage{
 	}
 	//确认录入
 	public void clickEnterConfirm() {
-//		du.what("EnterConfirm").get
 		du.what("EnterConfirm").click();
 	}
 	public void setWaitTime(int time) {

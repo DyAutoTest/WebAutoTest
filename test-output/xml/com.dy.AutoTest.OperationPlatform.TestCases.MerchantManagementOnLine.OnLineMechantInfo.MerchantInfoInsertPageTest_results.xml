@@ -4,7 +4,11 @@
            failures="1"
            errors="0"
            skipped="0"
+<<<<<<< HEAD
            time="8.336">
+=======
+           time="54.823">
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
   <properties />
             <testcase name="testMerchantInfoInsert" time="8.336" classname="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoInsertPageTest">
                 <failure type="org.openqa.selenium.WebDriverException"
@@ -80,5 +84,10 @@ Session ID: fc42124c726d42b060277d8bc0608e71
           </testcase>
   
   
+<<<<<<< HEAD
   
+=======
+            <testcase name="testMerchantInfoInsert" time="54.823" classname="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoInsertPageTest" />
+      
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
 </testsuite>

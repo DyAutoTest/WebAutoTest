@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testsuite name="MerchantInfoInsertAudit"
+=======
+<testsuite name="Quit"
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
            tests="1"
            failures="1"
            errors="0"
            skipped="0"
+<<<<<<< HEAD
            time="8.344">
+=======
+           time="3.562">
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
   <properties />
             <testcase name="testQuit" time="8.344" classname="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
                 <failure type="org.openqa.selenium.WebDriverException"
@@ -79,5 +87,10 @@ Session ID: fc42124c726d42b060277d8bc0608e71
           </testcase>
   
   
+<<<<<<< HEAD
   
+=======
+            <testcase name="testQuit" time="3.562" classname="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest" />
+      
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
 </testsuite>

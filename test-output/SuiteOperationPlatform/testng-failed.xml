@@ -7,11 +7,15 @@
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-  <test thread-count="5" name="MerchantInfoInsert(failed)">
-    <parameter name="OperID" value="T00105"/>
+  <test thread-count="5" name="MerchantProduct(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
+=======
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest">
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
         <methods>
+<<<<<<< HEAD
           <include name="testQuit"/>
           <include name="init"/>
           <include name="releaseBrowser"/>
@@ -19,6 +23,9 @@
       </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest -->
       <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoInsertPageTest">
         <methods>
+=======
+          <include name="testUpdate" invocation-numbers="0"/>
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
           <include name="beforeClass"/>
           <include name="afterMethod"/>
           <include name="AfterTest"/>
@@ -27,8 +34,13 @@
           <include name="init"/>
           <include name="testMerchantInfoInsert" invocation-numbers="0"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoInsertPageTest -->
+=======
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest -->
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
     </classes>
+<<<<<<< HEAD
   </test> <!-- MerchantInfoInsert(failed) -->
   <test thread-count="5" name="MerchantInfoInsertAudit(failed)">
     <parameter name="OperID" value="T00107"/>
@@ -203,4 +215,7 @@
       </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest -->
     </classes>
   </test> <!-- MerchantFeeRateAddAudit(failed) -->
+=======
+  </test> <!-- MerchantProduct(failed) -->
+>>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
 </suite> <!-- Failed suite [SuiteOperationPlatform] -->

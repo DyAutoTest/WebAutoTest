@@ -10,11 +10,14 @@ import com.dy.AutoTest.web.api.SuperTest;
 import com.dy.AutoTest.AcquiringOperationPlatform.PageObject.TerminalRightManagement.TerminalRightManagementPage;
 import com.dy.AutoTest.AcquiringOperationPlatform.POJO.TerminalRightManagement_TerminalRightManagementBean;
 import com.dy.AutoTest.web.business.DataBusiness;
+import com.dy.AutoTest.web.dao.TmsDao;
+import com.dy.AutoTest.web.dao.impl.TmsDaoImpl;
 
 public class TerminalRightManagementPageTest extends SuperTest{
 	TerminalRightManagementPage TerminalRightManagementPage;
 	String URL;
-
+	TmsDao dao = new TmsDaoImpl();
+	
 	@BeforeClass
 	public void init() {
 		/******** instant objectPage *********/
@@ -101,19 +104,28 @@ public class TerminalRightManagementPageTest extends SuperTest{
 	}
 	@Test(dataProvider="TerminalRightManagement_TerminalRightManagementByCaseNO")
 	public void testAdd(TerminalRightManagement_TerminalRightManagementBean bean) {
+		
+		// Get Terminal No and Check existence of Right
+		String terminalSerialNo = bean.getTerminalSerialNO();
+		String terminalNo = dao.getTrmNo(terminalSerialNo);
+		Boolean hasRight = dao.hasRight(terminalNo);
+		
+		if (hasRight) {
+			return;
+		}
+		
 		TerminalRightManagementPage.navigateTo(URL);
 		wait.waitFor(500);
 
 		TerminalRightManagementPage.clickAdd();
 		wait.waitFor(1000);
 
-		TerminalRightManagementPage.setAdd_TerminalNO(bean.getAdd_TerminalNO());
+		TerminalRightManagementPage.setAdd_TerminalNO(terminalNo);
 		TerminalRightManagementPage.setAdd_CharacterID(bean.getAdd_CharacterID());
 		wait.waitFor(500);
 		
-//		TerminalRightManagementPage.clickAdd_Submit();
-		TerminalRightManagementPage.clickAdd_Close();
-		wait.waitFor(500);
+		TerminalRightManagementPage.clickAdd_Save();
+		wait.waitFor(3000);
 	}
 
 

@@ -59,6 +59,10 @@ public class MerchantInfoInsertPageTest extends SuperTest{
 				
 				merchentInfoInsertPage.set115A_mcc(merchantInfoBean.getA_mcc());
 				
+				merchentInfoInsertPage.setInnerMerchantType(merchantInfoBean.getA_InnerMerchantType());
+				
+				merchentInfoInsertPage.setSecondInnerMerchantType(merchantInfoBean.getA_SecondInnerMerchantType());
+				
 				merchentInfoInsertPage.set116A_Province(merchantInfoBean.getA_Province());
 				
 				merchentInfoInsertPage.set117A_City(merchantInfoBean.getA_City());
