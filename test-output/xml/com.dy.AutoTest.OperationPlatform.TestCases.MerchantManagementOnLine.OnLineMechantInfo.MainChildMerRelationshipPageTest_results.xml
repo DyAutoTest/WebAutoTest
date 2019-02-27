@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="MainChildMerRelationship"
-           tests="5"
+           tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="127.906">
+           time="19.049">
   <properties />
   
   
-            <testcase name="testMainChildMerRelationshipAdd" time="26.870" classname="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MainChildMerRelationshipPageTest" />
-                <testcase name="testMainChildMerRelationshipSearch" time="23.301" classname="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MainChildMerRelationshipPageTest" />
-                <testcase name="testMainChildMerRelationshipCheck" time="25.141" classname="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MainChildMerRelationshipPageTest" />
-                <testcase name="testMainChildMerRelationshipUpdate" time="28.673" classname="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MainChildMerRelationshipPageTest" />
-                <testcase name="testMainChildMerRelationshipDelete" time="23.921" classname="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MainChildMerRelationshipPageTest" />
+            <testcase name="testMainChildMerRelationshipUpdate" time="19.049" classname="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MainChildMerRelationshipPageTest" />
       
 </testsuite>

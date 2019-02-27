@@ -7,19 +7,19 @@
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-  <test thread-count="5" name="MerchantInfoManagement_MerchantAudit(failed)">
+  <test thread-count="5" name="MerchantInfoManagement_MerchantInfoAdd(failed)">
     <classes>
-      <class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantStoreManagementPageTest">
+      <class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantInfoAddPageTest">
         <methods>
           <include name="beforeClass"/>
           <include name="afterMethod"/>
+          <include name="testMerchantAdd" invocation-numbers="0"/>
           <include name="AfterTest"/>
           <include name="beforeMethod"/>
           <include name="init"/>
-          <include name="testAdd" invocation-numbers="1"/>
           <include name="BeforeTest"/>
         </methods>
-      </class> <!-- com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantStoreManagementPageTest -->
+      </class> <!-- com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantInfoAddPageTest -->
     </classes>
-  </test> <!-- MerchantInfoManagement_MerchantAudit(failed) -->
+  </test> <!-- MerchantInfoManagement_MerchantInfoAdd(failed) -->
 </suite> <!-- Failed suite [AcquiringOperationPlatform] -->

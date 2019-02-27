@@ -427,7 +427,7 @@ public class MerchantInfoAddPageTest extends SuperTest{
 			MerchantInfoAddPage.clickAttachmentUploading_Uploading();
 		}
 		wait.waitFor(3000);
-		MerchantInfoAddPage.clickEnterConfirm();
+/*		MerchantInfoAddPage.clickEnterConfirm();
 		System.out.println(MerchantInfoAddPage.getNotice());
 		Reporter.log(MerchantInfoAddPage.getNotice());
 		
@@ -530,8 +530,10 @@ public class MerchantInfoAddPageTest extends SuperTest{
 		}
 
 		MerchantInfoAddPage.clickAttachmentUploading();
-		wait.waitFor(2000);
+		wait.waitFor(2000);*/
 		MerchantInfoAddPage.clickEnterConfirm();
+	/*	System.out.println(MerchantInfoAddPage.getNotice());
+		Reporter.log(MerchantInfoAddPage.getNotice());*/
 //		String NoticeForMerchAddSuccess=MerchantInfoAddPage.getNotice();
 //			System.out.println(NoticeForMerchAddSuccess);
 //			Reporter.log(NoticeForMerchAddSuccess);
