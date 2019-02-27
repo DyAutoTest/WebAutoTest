@@ -7,12 +7,11 @@
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-  <test thread-count="5" name="MerchantInfoInsert(failed)">
-    <parameter name="OperID" value="T00105"/>
+  <test thread-count="5" name="MerchantProduct(failed)">
     <classes>
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.cooperatingagent.routeinfo.CooperatingRouteInfoPageTest">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest">
         <methods>
-          <include name="testCooperatingRouteInfo" invocation-numbers="0 1"/>
+          <include name="testUpdate" invocation-numbers="0"/>
           <include name="beforeClass"/>
           <include name="afterMethod"/>
           <include name="AfterTest"/>
@@ -20,7 +19,7 @@
           <include name="BeforeTest"/>
           <include name="init"/>
         </methods>
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.cooperatingagent.routeinfo.CooperatingRouteInfoPageTest -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest -->
     </classes>
-  </test> <!-- MerchantInfoInsert(failed) -->
+  </test> <!-- MerchantProduct(failed) -->
 </suite> <!-- Failed suite [SuiteOperationPlatform] -->

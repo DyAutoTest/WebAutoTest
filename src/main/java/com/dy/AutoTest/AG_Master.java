@@ -25,30 +25,30 @@ public class AG_Master {
 		ig=new SQLGenerator();
 	}
 
-	public static final String caseName="TerminalInventoryManage_TerminalInfoListQuery";
-	public static final String caseNameAlias="TerminalInfoListQuery";
-	public static final String url="aop_"+caseName;
-	public static final String locatorName="AOP_Loc_"+caseName;
-	public static final String dataName="AOP_Data_"+caseName;
+	public static final String caseName="MerchantProduct";
+	public static final String caseNameAlias="MerchantProduct";
+	public static final String url="pop_"+caseName;
+	public static final String locatorName="POP_Loc_"+caseName;
+	public static final String dataName="POP_Data_"+caseName;
 
-	public static final String directoryPO="src/main/java/com/dy/AutoTest/AcquiringOperationPlatform/PageObject/TMS/TerminalInventoryManage/";
-	public static final String packageNamePO="com.dy.AutoTest.AcquiringOperationPlatform.PageObject.TMS.TerminalInventoryManage";
+	public static final String directoryPO="src/main/java/com/dy/AutoTest/OperationPlatform/PageObject/MerchantManagementOnLine/OnLineMerchantInfo/";
+	public static final String packageNamePO="com.dy.AutoTest.OperationPlatform.PageObject.MerchantManagementOnLine.OnLineMerchantInfo";
 	
-	public static final String directoryPOJO="src/main/java/com/dy/AutoTest/AcquiringOperationPlatform/POJO/";
-	public static final String packageNamePOJO="com.dy.AutoTest.AcquiringOperationPlatform.POJO";
+	public static final String directoryPOJO="src/main/java/com/dy/AutoTest/OperationPlatform/POJO/";
+	public static final String packageNamePOJO="com.dy.AutoTest.OperationPlatform.POJO";
 	
-	public static final String directoryPT="src/main/java/com/dy/AutoTest/AcquiringOperationPlatform/PageTest/TMS/TerminalInventoryManage/";
-	public static final String packageNamePT="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TMS.TerminalInventoryManage";
+	public static final String directoryPT="src/main/java/com/dy/AutoTest/OperationPlatform/TestCases/MerchantManagementOnLine/OnLineMechantInfo/";
+	public static final String packageNamePT="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo";
 	
-	public static final String directoryXML="src/main/java/com/dy/AutoTest/AcquiringOperationPlatform/PageTest/TMS/TerminalInventoryManage/";
+	public static final String directoryXML="src/main/java/com/dy/AutoTest/OperationPlatform/TestCases/MerchantManagementOnLine/OnLineMechantInfo/";
 //	public static final String directoryDataBusiness="src/main/java/com/dy/AutoTest/";
-	public static final String directorySQL="C:\\Users\\寒\\Documents\\Navicat\\SQLite\\servers\\AutoTest_0.0.3\\main\\";
+	public static final String directorySQL="D:\\";
 	
 	public static final String classNamePT=caseNameAlias+"PageTest";
 	public static final String classNamePO=caseNameAlias+"Page";
 	public static final String classNamePOJO=caseName+"Bean";
 	public static final String xmlName="testng_"+caseName+".xml";
-	public static final String sqlName="insert AOP_"+caseName+".sql";
+	public static final String sqlName="insert POP_"+caseName+".sql";
 	public static final String dataBusinessName="temp-dataBusiness";
 	
 	//缩进代码用的tab符

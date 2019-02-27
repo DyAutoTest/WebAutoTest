@@ -108,6 +108,7 @@ public class MainChildMerRelationshipPageTest extends SuperTest{
 	@Test(dataProvider="MainChildMerRelationship")
 	public void testMainChildMerRelationshipUpdate(MainChildMerRelationshipBean MainChildMerRelationshipBean) {
 		MainChildMerRelationshipPage.navigateTo(URL);
+		
 		if(MainChildMerRelationshipBean.getMainMerNum().equals("")&&MainChildMerRelationshipBean.getMainMerName().equals("")&&
 				MainChildMerRelationshipBean.getChildMerNum().equals("")&&MainChildMerRelationshipBean.getChildMerName().equals("")) {
 			System.out.println("All of MerchantNO and MerchantName are null ! Please check TestData !");

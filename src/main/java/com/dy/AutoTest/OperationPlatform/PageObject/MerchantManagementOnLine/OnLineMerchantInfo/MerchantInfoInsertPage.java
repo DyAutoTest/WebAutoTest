@@ -50,6 +50,12 @@ public class MerchantInfoInsertPage extends SuperPage{
 					public void set115A_mcc(String A_mcc) {
 						du.whatSelect("A_mcc").selectByValue(A_mcc);
 					}
+					public void setInnerMerchantType(String A_InnerMerchantType) {
+						du.whatSelect("A_InnerMerchantType").selectByValue(A_InnerMerchantType);
+					}
+					public void setSecondInnerMerchantType(String A_SecondInnerMerchantType) {
+						du.whatSelect("A_SecondInnerMerchantType").selectByValue(A_SecondInnerMerchantType);
+					}					
 					public void set116A_Province(String A_Province) {
 						du.whatSelect("A_Province").selectByValue(A_Province);
 					}

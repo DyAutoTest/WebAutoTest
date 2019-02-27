@@ -3,39 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.OffLineRiskControlManagement.RiskControlParameterMaintainPageTest">
-=======
-      <class name="com.dy.AutoTest.MerchantPortal.TestCases.base.LoginPageTest">
->>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest">
         <methods>
-<<<<<<< HEAD
-          <include name="init"/>
-          <include name="testDelete"/>
-          <include name="beforeClass"/>
-          <include name="testQuery"/>
-          <include name="afterMethod"/>
-          <include name="testAdd"/>
-          <include name="AfterTest"/>
           <include name="testUpdate"/>
-          <include name="beforeMethod"/>
-          <include name="BeforeTest"/>
-          <include name="testCheck"/>
-=======
-          <include name="testLogin"/>
           <include name="beforeClass"/>
           <include name="afterMethod"/>
           <include name="AfterTest"/>
-          <include name="init"/>
           <include name="beforeMethod"/>
           <include name="BeforeTest"/>
->>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
+          <include name="init"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.dy.AutoTest.AcquiringOperationPlatform.PageTest.OffLineRiskControlManagement.RiskControlParameterMaintainPageTest -->
-=======
-      </class> <!-- com.dy.AutoTest.MerchantPortal.TestCases.base.LoginPageTest -->
->>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
