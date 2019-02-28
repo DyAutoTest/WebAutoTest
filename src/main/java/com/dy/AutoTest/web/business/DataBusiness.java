@@ -432,6 +432,9 @@ public class DataBusiness {
 		case "POP_Data_MerchantFeeRate":
 			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,MerchantFeeRateBean.class));
 			break;
+		case "POP_Data_MerchantProduct":
+			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,MerchantProductBean.class));
+			break;
 		case "POP_Data_MerchantInfoSearch":
 			list=BaseUtil.toObject(testingDao.getDataListByCase(tableName,caseNO,MerchantInfoSearchBean.class));
 			break;

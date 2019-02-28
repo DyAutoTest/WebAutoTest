@@ -33,13 +33,13 @@ public class MerchantProductPageTest extends SuperTest{
 
 	@DataProvider(name="MerchantProduct")
 	protected static Object[][] parametersPool(){
-		data.loadDataBeanList("POP_Data_MerchantProduct",MerchantProductBean.class);
+		data.loadDataBeanList("POP_Data_MerchantProduct");
 		return data.getDataBeanArray();
 	}
 
 	@DataProvider(name="MerchantProductByCaseNO")
 	protected static Object[][] parametersPool(Method method){
-		data.loadDataBeanList("POP_Data_MerchantProduct",method.getName(),MerchantProductBean.class);
+		data.loadDataBeanList("POP_Data_MerchantProduct");
 		return data.getDataBeanArray();
 	}
 
@@ -81,6 +81,8 @@ public class MerchantProductPageTest extends SuperTest{
 		
 		String productType = bean.getProductType();
 		String[] productTypeArray = productType.split(",");
+		
+		MerchantProductPage.doDown();
 		
 		for (String pt : productTypeArray) {
 			switch (pt) {

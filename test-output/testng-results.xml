@@ -1,73 +1,237 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="5" passed="3">
+<testng-results skipped="0" failed="0" ignored="34" total="55" passed="21">
   <reporter-output>
     <line>
-      <![CDATA[        2019-02-27 14:00:23): [Test]-"Login" is started]]>
+      <![CDATA[        2019-02-27 17:32:01): [Test]-"MerchantInfoInsert" is started]]>
     </line>
     <line>
-      <![CDATA[                2019-02-27 14:00:23: [Method]-"LoginPageTest.testLogin" is started]]>
+      <![CDATA[                2019-02-27 17:32:01: [Method]-"LoginPageTest.testLogin" is started]]>
     </line>
     <line>
-      <![CDATA[                2019-02-27 14:00:28: [Method]-"LoginPageTest.testLogin" is passed]]>
+      <![CDATA[                2019-02-27 17:32:09: [Method]-"LoginPageTest.testLogin" is passed]]>
     </line>
     <line>
-      <![CDATA[        2019-02-27 14:00:30): [Test]-"Login" is finished]]>
+      <![CDATA[                2019-02-27 17:32:11: [Method]-"MerchantInfoInsertPageTest.testMerchantInfoInsert" is started]]>
     </line>
     <line>
-      <![CDATA[        2019-02-27 14:00:30): [Test]-"MerchantProduct" is started]]>
+      <![CDATA[                2019-02-27 17:33:07: [Method]-"MerchantInfoInsertPageTest.testMerchantInfoInsert" is passed]]>
     </line>
     <line>
-      <![CDATA[                2019-02-27 14:00:30: [Method]-"MerchantProductPageTest.testUpdate" is started]]>
+      <![CDATA[        2019-02-27 17:33:13): [Test]-"MerchantInfoInsert" is finished]]>
     </line>
     <line>
-      <![CDATA[                2019-02-27 14:00:41: [Method]-"MerchantProductPageTest.testUpdate" is passed]]>
+      <![CDATA[        2019-02-27 17:33:13): [Test]-"MerchantInfoInsertAudit" is started]]>
     </line>
     <line>
-      <![CDATA[        2019-02-27 14:00:43): [Test]-"MerchantProduct" is finished]]>
+      <![CDATA[                2019-02-27 17:33:13: [Method]-"LoginPageTest.testLogin" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2019-02-27 17:33:17: [Method]-"LoginPageTest.testLogin" is passed]]>
+    </line>
+    <line>
+      <![CDATA[                2019-02-27 17:33:19: [Method]-"MerchantAuditPageTest.testMerchantAuditPass" is started]]>
+    </line>
+    <line>
+      <![CDATA[MerchantNO: 872290059475069 商户基本资料新增审核通过]]>
+    </line>
+    <line>
+      <![CDATA[                2019-02-27 17:33:31: [Method]-"MerchantAuditPageTest.testMerchantAuditPass" is passed]]>
+    </line>
+    <line>
+      <![CDATA[        2019-02-27 17:33:37): [Test]-"MerchantInfoInsertAudit" is finished]]>
+    </line>
+    <line>
+      <![CDATA[        2019-02-27 17:33:37): [Test]-"MerchantSettlementInsert" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2019-02-27 17:33:37: [Method]-"LoginPageTest.testLogin" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2019-02-27 17:33:41: [Method]-"LoginPageTest.testLogin" is passed]]>
+    </line>
+    <line>
+      <![CDATA[                2019-02-27 17:33:43: [Method]-"MerchantSettlementPageTest.testMerchantSettlementInsert" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2019-02-27 17:34:21: [Method]-"MerchantSettlementPageTest.testMerchantSettlementInsert" is passed]]>
+    </line>
+    <line>
+      <![CDATA[        2019-02-27 17:34:27): [Test]-"MerchantSettlementInsert" is finished]]>
+    </line>
+    <line>
+      <![CDATA[        2019-02-27 17:34:27): [Test]-"MerchantSettlementInsertAudit" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2019-02-27 17:34:27: [Method]-"LoginPageTest.testLogin" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2019-02-27 17:34:31: [Method]-"LoginPageTest.testLogin" is passed]]>
+    </line>
+    <line>
+      <![CDATA[                2019-02-27 17:34:33: [Method]-"MerchantAuditPageTest.testMerchantAuditPass" is started]]>
+    </line>
+    <line>
+      <![CDATA[MerchantNO: 872290059475069 商户结算信息新增审核通过]]>
+    </line>
+    <line>
+      <![CDATA[                2019-02-27 17:34:44: [Method]-"MerchantAuditPageTest.testMerchantAuditPass" is passed]]>
+    </line>
+    <line>
+      <![CDATA[        2019-02-27 17:34:51): [Test]-"MerchantSettlementInsertAudit" is finished]]>
+    </line>
+    <line>
+      <![CDATA[        2019-02-27 17:34:51): [Test]-"MerchantFeeRateAdd" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2019-02-27 17:34:51: [Method]-"LoginPageTest.testLogin" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2019-02-27 17:34:54: [Method]-"LoginPageTest.testLogin" is passed]]>
+    </line>
+    <line>
+      <![CDATA[                2019-02-27 17:34:56: [Method]-"MerchantFeeRatePageTest.testMerchantFeeRateAdd" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2019-02-27 17:36:22: [Method]-"MerchantFeeRatePageTest.testMerchantFeeRateAdd" is passed]]>
+    </line>
+    <line>
+      <![CDATA[        2019-02-27 17:36:29): [Test]-"MerchantFeeRateAdd" is finished]]>
+    </line>
+    <line>
+      <![CDATA[        2019-02-27 17:36:29): [Test]-"MerchantFeeRateAddAudit" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2019-02-27 17:36:29: [Method]-"LoginPageTest.testLogin" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2019-02-27 17:36:33: [Method]-"LoginPageTest.testLogin" is passed]]>
+    </line>
+    <line>
+      <![CDATA[                2019-02-27 17:36:35: [Method]-"MerchantAuditPageTest.testMerchantAuditPass" is started]]>
+    </line>
+    <line>
+      <![CDATA[MerchantNO: 872290059475069 商户费率信息新增审核通过]]>
+    </line>
+    <line>
+      <![CDATA[MerchantNO: 872290059475069 商户费率信息新增审核通过]]>
+    </line>
+    <line>
+      <![CDATA[MerchantNO: 872290059475069 商户费率信息新增审核通过]]>
+    </line>
+    <line>
+      <![CDATA[MerchantNO: 872290059475069 商户费率信息新增审核通过]]>
+    </line>
+    <line>
+      <![CDATA[MerchantNO: 872290059475069 商户费率信息新增审核通过]]>
+    </line>
+    <line>
+      <![CDATA[MerchantNO: 872290059475069 商户费率信息新增审核通过]]>
+    </line>
+    <line>
+      <![CDATA[MerchantNO: 872290059475069 商户费率信息新增审核通过]]>
+    </line>
+    <line>
+      <![CDATA[                2019-02-27 17:37:10: [Method]-"MerchantAuditPageTest.testMerchantAuditPass" is passed]]>
+    </line>
+    <line>
+      <![CDATA[        2019-02-27 17:37:16): [Test]-"MerchantFeeRateAddAudit" is finished]]>
+    </line>
+    <line>
+      <![CDATA[        2019-02-27 17:37:16): [Test]-"MerchantProduct" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2019-02-27 17:37:16: [Method]-"LoginPageTest.testLogin" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2019-02-27 17:37:20: [Method]-"LoginPageTest.testLogin" is passed]]>
+    </line>
+    <line>
+      <![CDATA[                2019-02-27 17:37:22: [Method]-"MerchantProductPageTest.testUpdate" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2019-02-27 17:37:33: [Method]-"MerchantProductPageTest.testUpdate" is passed]]>
+    </line>
+    <line>
+      <![CDATA[        2019-02-27 17:37:39): [Test]-"MerchantProduct" is finished]]>
     </line>
   </reporter-output>
-  <suite name="SuiteOperationPlatform" duration-ms="24291" started-at="2019-02-27T06:00:23Z" finished-at="2019-02-27T06:00:47Z">
+  <suite name="SuiteOperationPlatform" duration-ms="338332" started-at="2019-02-27T09:32:01Z" finished-at="2019-02-27T09:37:39Z">
     <groups>
     </groups>
-    <test name="Login" duration-ms="6779" started-at="2019-02-27T06:00:23Z" finished-at="2019-02-27T06:00:30Z">
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
-        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@1d082e88]" name="BeforeTest" is-config="true" duration-ms="3" started-at="2019-02-27T06:00:23Z" finished-at="2019-02-27T06:00:23Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@1f12e153]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[        2019-02-27 14:00:23): [Test]-"Login" is started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- BeforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@1d082e88]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-02-27T06:00:23Z" finished-at="2019-02-27T06:00:23Z">
+    <test name="MerchantInfoInsert" duration-ms="72094" started-at="2019-02-27T09:32:01Z" finished-at="2019-02-27T09:33:13Z">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoInsertPageTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoInsertPageTest@75f32542]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-02-27T09:32:11Z" finished-at="2019-02-27T09:32:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@1d082e88]" name="init" is-config="true" duration-ms="4" started-at="2019-02-27T06:00:23Z" finished-at="2019-02-27T06:00:23Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoInsertPageTest@75f32542]" name="init" is-config="true" duration-ms="4" started-at="2019-02-27T09:32:11Z" finished-at="2019-02-27T09:32:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@1d082e88]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-02-27T06:00:23Z" finished-at="2019-02-27T06:00:23Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoInsertPageTest@75f32542]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-02-27T09:32:11Z" finished-at="2019-02-27T09:32:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest.testLogin(java.lang.String)]]>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoInsertPageTest.testMerchantInfoInsert(com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoBean)]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[                2019-02-27 14:00:23: [Method]-"LoginPageTest.testLogin" is started]]>
+              <![CDATA[                2019-02-27 17:32:11: [Method]-"MerchantInfoInsertPageTest.testMerchantInfoInsert" is started]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@1d082e88]" name="testLogin" duration-ms="4744" started-at="2019-02-27T06:00:23Z" finished-at="2019-02-27T06:00:28Z">
+        <test-method status="PASS" signature="testMerchantInfoInsert(com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoInsertPageTest@75f32542]" name="testMerchantInfoInsert" duration-ms="55551" started-at="2019-02-27T09:32:11Z" data-provider="merchantInfoInsert" finished-at="2019-02-27T09:33:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoBean@6c6357f9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMerchantInfoInsert -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoInsertPageTest@75f32542]" name="afterMethod" is-config="true" duration-ms="2002" started-at="2019-02-27T09:33:07Z" finished-at="2019-02-27T09:33:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testMerchantInfoInsert status=SUCCESS method=MerchantInfoInsertPageTest.testMerchantInfoInsert(com.dy.AutoTest.OperationPlatform.POJO.MerchantInfoBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoInsertPageTest@75f32542] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-27 17:33:07: [Method]-"MerchantInfoInsertPageTest.testMerchantInfoInsert" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoInsertPageTest -->
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
+        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc]" name="BeforeTest" is-config="true" duration-ms="1" started-at="2019-02-27T09:32:01Z" finished-at="2019-02-27T09:32:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@304adda2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2019-02-27 17:32:01): [Test]-"MerchantInfoInsert" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-02-27T09:32:01Z" finished-at="2019-02-27T09:32:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc]" name="init" is-config="true" duration-ms="3" started-at="2019-02-27T09:32:01Z" finished-at="2019-02-27T09:32:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc]" name="testLogin" duration-ms="7940" started-at="2019-02-27T09:32:01Z" finished-at="2019-02-27T09:32:09Z">
           <params>
             <param index="0">
               <value>
@@ -78,118 +242,804 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@1d082e88]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2019-02-27T06:00:28Z" finished-at="2019-02-27T06:00:30Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-02-27T09:32:01Z" finished-at="2019-02-27T09:32:01Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testLogin status=SUCCESS method=LoginPageTest.testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@1d082e88] output={null}]]]>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest.testLogin(java.lang.String)]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[                2019-02-27 14:00:28: [Method]-"LoginPageTest.testLogin" is passed]]>
+              <![CDATA[                2019-02-27 17:32:01: [Method]-"LoginPageTest.testLogin" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2019-02-27T09:32:09Z" finished-at="2019-02-27T09:32:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=LoginPageTest.testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-27 17:32:09: [Method]-"LoginPageTest.testLogin" is passed]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@1d082e88]" name="AfterTest" is-config="true" duration-ms="1" started-at="2019-02-27T06:00:30Z" finished-at="2019-02-27T06:00:30Z">
+        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7692d9cc]" name="AfterTest" is-config="true" duration-ms="0" started-at="2019-02-27T09:33:13Z" finished-at="2019-02-27T09:33:13Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1f12e153]]>
+                <![CDATA[org.testng.TestRunner@304adda2]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[        2019-02-27 14:00:30): [Test]-"Login" is finished]]>
+              <![CDATA[        2019-02-27 17:33:13): [Test]-"MerchantInfoInsert" is finished]]>
             </line>
           </reporter-output>
         </test-method> <!-- AfterTest -->
       </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest -->
-    </test> <!-- Login -->
-    <test name="MerchantProduct" duration-ms="12909" started-at="2019-02-27T06:00:30Z" finished-at="2019-02-27T06:00:43Z">
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest">
-        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest@147ed70f]" name="BeforeTest" is-config="true" duration-ms="1" started-at="2019-02-27T06:00:30Z" finished-at="2019-02-27T06:00:30Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@389562d6]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[        2019-02-27 14:00:30): [Test]-"MerchantProduct" is started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- BeforeTest -->
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest@147ed70f]" name="init" is-config="true" duration-ms="3" started-at="2019-02-27T06:00:30Z" finished-at="2019-02-27T06:00:30Z">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@7f1302d6]" name="init" is-config="true" duration-ms="2" started-at="2019-02-27T09:33:09Z" finished-at="2019-02-27T09:33:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest@147ed70f]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-02-27T06:00:30Z" finished-at="2019-02-27T06:00:30Z">
+        <test-method status="PASS" signature="testQuit()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@7f1302d6]" name="testQuit" duration-ms="3561" started-at="2019-02-27T09:33:09Z" finished-at="2019-02-27T09:33:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testQuit -->
+        <test-method status="PASS" signature="releaseBrowser()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@7f1302d6]" name="releaseBrowser" is-config="true" duration-ms="1000" started-at="2019-02-27T09:33:12Z" finished-at="2019-02-27T09:33:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- releaseBrowser -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest -->
+    </test> <!-- MerchantInfoInsert -->
+    <test name="MerchantInfoInsertAudit" duration-ms="24206" started-at="2019-02-27T09:33:13Z" finished-at="2019-02-27T09:33:37Z">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
+        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@1fe20588]" name="BeforeTest" is-config="true" duration-ms="1" started-at="2019-02-27T09:33:13Z" finished-at="2019-02-27T09:33:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@10728704]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2019-02-27 17:33:13): [Test]-"MerchantInfoInsertAudit" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@1fe20588]" name="init" is-config="true" duration-ms="1" started-at="2019-02-27T09:33:13Z" finished-at="2019-02-27T09:33:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@1fe20588]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-02-27T09:33:13Z" finished-at="2019-02-27T09:33:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="testUpdate(com.dy.AutoTest.OperationPlatform.POJO.MerchantProductBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest@147ed70f]" name="testUpdate" duration-ms="10896" started-at="2019-02-27T06:00:30Z" data-provider="MerchantProductByCaseNO" finished-at="2019-02-27T06:00:41Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@1fe20588]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-02-27T09:33:13Z" finished-at="2019-02-27T09:33:13Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.MerchantProductBean@6c345c5f]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUpdate -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest@147ed70f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-02-27T06:00:30Z" finished-at="2019-02-27T06:00:30Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest.testUpdate(com.dy.AutoTest.OperationPlatform.POJO.MerchantProductBean)]]>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest.testLogin(java.lang.String)]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[                2019-02-27 14:00:30: [Method]-"MerchantProductPageTest.testUpdate" is started]]>
+              <![CDATA[                2019-02-27 17:33:13: [Method]-"LoginPageTest.testLogin" is started]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest@147ed70f]" name="afterMethod" is-config="true" duration-ms="2000" started-at="2019-02-27T06:00:41Z" finished-at="2019-02-27T06:00:43Z">
+        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@1fe20588]" name="testLogin" duration-ms="3615" started-at="2019-02-27T09:33:13Z" finished-at="2019-02-27T09:33:17Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testUpdate status=SUCCESS method=MerchantProductPageTest.testUpdate(com.dy.AutoTest.OperationPlatform.POJO.MerchantProductBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest@147ed70f] output={null}]]]>
+                <![CDATA[T00107]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@1fe20588]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2019-02-27T09:33:17Z" finished-at="2019-02-27T09:33:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=LoginPageTest.testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@1fe20588] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[                2019-02-27 14:00:41: [Method]-"MerchantProductPageTest.testUpdate" is passed]]>
+              <![CDATA[                2019-02-27 17:33:17: [Method]-"LoginPageTest.testLogin" is passed]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest@147ed70f]" name="AfterTest" is-config="true" duration-ms="1" started-at="2019-02-27T06:00:43Z" finished-at="2019-02-27T06:00:43Z">
+        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@1fe20588]" name="AfterTest" is-config="true" duration-ms="0" started-at="2019-02-27T09:33:37Z" finished-at="2019-02-27T09:33:37Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@389562d6]]>
+                <![CDATA[org.testng.TestRunner@10728704]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[        2019-02-27 14:00:43): [Test]-"MerchantProduct" is finished]]>
+              <![CDATA[        2019-02-27 17:33:37): [Test]-"MerchantInfoInsertAudit" is finished]]>
             </line>
           </reporter-output>
         </test-method> <!-- AfterTest -->
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest -->
-    </test> <!-- MerchantProduct -->
-    <test name="Quit" duration-ms="4569" started-at="2019-02-27T06:00:43Z" finished-at="2019-02-27T06:00:47Z">
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest -->
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
+        <test-method status="PASS" signature="testQuit()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@6973bf95]" name="testQuit" duration-ms="3789" started-at="2019-02-27T09:33:33Z" finished-at="2019-02-27T09:33:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testQuit -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@6973bf95]" name="init" is-config="true" duration-ms="0" started-at="2019-02-27T09:33:33Z" finished-at="2019-02-27T09:33:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="releaseBrowser()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@6973bf95]" name="releaseBrowser" is-config="true" duration-ms="1000" started-at="2019-02-27T09:33:36Z" finished-at="2019-02-27T09:33:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- releaseBrowser -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest -->
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest@6ce139a4]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-02-27T09:33:19Z" finished-at="2019-02-27T09:33:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest@6ce139a4]" name="init" is-config="true" duration-ms="2" started-at="2019-02-27T09:33:19Z" finished-at="2019-02-27T09:33:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest@6ce139a4]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-02-27T09:33:19Z" finished-at="2019-02-27T09:33:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest.testMerchantAuditPass(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-27 17:33:19: [Method]-"MerchantAuditPageTest.testMerchantAuditPass" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testMerchantAuditPass(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest@6ce139a4]" name="testMerchantAuditPass" duration-ms="11787" started-at="2019-02-27T09:33:19Z" finished-at="2019-02-27T09:33:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[MerchantNO: 872290059475069 商户基本资料新增审核通过]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testMerchantAuditPass -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest@6ce139a4]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2019-02-27T09:33:31Z" finished-at="2019-02-27T09:33:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testMerchantAuditPass status=SUCCESS method=MerchantAuditPageTest.testMerchantAuditPass(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest@6ce139a4] output=MerchantNO: 872290059475069 商户基本资料新增审核通过]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-27 17:33:31: [Method]-"MerchantAuditPageTest.testMerchantAuditPass" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest -->
+    </test> <!-- MerchantInfoInsertAudit -->
+    <test name="MerchantSettlementInsert" duration-ms="49829" started-at="2019-02-27T09:33:37Z" finished-at="2019-02-27T09:34:27Z">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantSettlementPageTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantSettlementPageTest@25d250c6]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-02-27T09:33:43Z" finished-at="2019-02-27T09:33:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantSettlementPageTest@25d250c6]" name="init" is-config="true" duration-ms="4" started-at="2019-02-27T09:33:43Z" finished-at="2019-02-27T09:33:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantSettlementPageTest@25d250c6]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-02-27T09:33:43Z" finished-at="2019-02-27T09:33:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantSettlementPageTest.testMerchantSettlementInsert(com.dy.AutoTest.OperationPlatform.POJO.MerchantSettlementBean)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-27 17:33:43: [Method]-"MerchantSettlementPageTest.testMerchantSettlementInsert" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testMerchantSettlementInsert(com.dy.AutoTest.OperationPlatform.POJO.MerchantSettlementBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantSettlementPageTest@25d250c6]" name="testMerchantSettlementInsert" duration-ms="37491" started-at="2019-02-27T09:33:43Z" data-provider="SettlementInfoInsert" finished-at="2019-02-27T09:34:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.MerchantSettlementBean@5eff5e4c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMerchantSettlementInsert -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantSettlementPageTest@25d250c6]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2019-02-27T09:34:21Z" finished-at="2019-02-27T09:34:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testMerchantSettlementInsert status=SUCCESS method=MerchantSettlementPageTest.testMerchantSettlementInsert(com.dy.AutoTest.OperationPlatform.POJO.MerchantSettlementBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantSettlementPageTest@25d250c6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-27 17:34:21: [Method]-"MerchantSettlementPageTest.testMerchantSettlementInsert" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantSettlementPageTest -->
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
+        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@45b9a632]" name="BeforeTest" is-config="true" duration-ms="0" started-at="2019-02-27T09:33:37Z" finished-at="2019-02-27T09:33:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7517d44c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2019-02-27 17:33:37): [Test]-"MerchantSettlementInsert" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@45b9a632]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-02-27T09:33:37Z" finished-at="2019-02-27T09:33:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@45b9a632]" name="init" is-config="true" duration-ms="1" started-at="2019-02-27T09:33:37Z" finished-at="2019-02-27T09:33:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@45b9a632]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-02-27T09:33:37Z" finished-at="2019-02-27T09:33:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest.testLogin(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-27 17:33:37: [Method]-"LoginPageTest.testLogin" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@45b9a632]" name="testLogin" duration-ms="3782" started-at="2019-02-27T09:33:37Z" finished-at="2019-02-27T09:33:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[T00064]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@45b9a632]" name="afterMethod" is-config="true" duration-ms="2002" started-at="2019-02-27T09:33:41Z" finished-at="2019-02-27T09:33:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=LoginPageTest.testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@45b9a632] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-27 17:33:41: [Method]-"LoginPageTest.testLogin" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@45b9a632]" name="AfterTest" is-config="true" duration-ms="0" started-at="2019-02-27T09:34:27Z" finished-at="2019-02-27T09:34:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7517d44c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2019-02-27 17:34:27): [Test]-"MerchantSettlementInsert" is finished]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest -->
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@4df50bcc]" name="init" is-config="true" duration-ms="1" started-at="2019-02-27T09:34:23Z" finished-at="2019-02-27T09:34:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testQuit()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@4df50bcc]" name="testQuit" duration-ms="3536" started-at="2019-02-27T09:34:23Z" finished-at="2019-02-27T09:34:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testQuit -->
+        <test-method status="PASS" signature="releaseBrowser()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@4df50bcc]" name="releaseBrowser" is-config="true" duration-ms="1001" started-at="2019-02-27T09:34:26Z" finished-at="2019-02-27T09:34:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- releaseBrowser -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest -->
+    </test> <!-- MerchantSettlementInsert -->
+    <test name="MerchantSettlementInsertAudit" duration-ms="23421" started-at="2019-02-27T09:34:27Z" finished-at="2019-02-27T09:34:51Z">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
+        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@2f112965]" name="BeforeTest" is-config="true" duration-ms="0" started-at="2019-02-27T09:34:27Z" finished-at="2019-02-27T09:34:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@109645c2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2019-02-27 17:34:27): [Test]-"MerchantSettlementInsertAudit" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@2f112965]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-02-27T09:34:27Z" finished-at="2019-02-27T09:34:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@2f112965]" name="init" is-config="true" duration-ms="1" started-at="2019-02-27T09:34:27Z" finished-at="2019-02-27T09:34:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@2f112965]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-02-27T09:34:27Z" finished-at="2019-02-27T09:34:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest.testLogin(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-27 17:34:27: [Method]-"LoginPageTest.testLogin" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@2f112965]" name="testLogin" duration-ms="3615" started-at="2019-02-27T09:34:27Z" finished-at="2019-02-27T09:34:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[T00107]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@2f112965]" name="afterMethod" is-config="true" duration-ms="2000" started-at="2019-02-27T09:34:31Z" finished-at="2019-02-27T09:34:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=LoginPageTest.testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@2f112965] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-27 17:34:31: [Method]-"LoginPageTest.testLogin" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@2f112965]" name="AfterTest" is-config="true" duration-ms="0" started-at="2019-02-27T09:34:51Z" finished-at="2019-02-27T09:34:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@109645c2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2019-02-27 17:34:51): [Test]-"MerchantSettlementInsertAudit" is finished]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest -->
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@4e91d63f]" name="init" is-config="true" duration-ms="1" started-at="2019-02-27T09:34:46Z" finished-at="2019-02-27T09:34:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testQuit()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@4e91d63f]" name="testQuit" duration-ms="3624" started-at="2019-02-27T09:34:46Z" finished-at="2019-02-27T09:34:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testQuit -->
+        <test-method status="PASS" signature="releaseBrowser()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@4e91d63f]" name="releaseBrowser" is-config="true" duration-ms="1001" started-at="2019-02-27T09:34:50Z" finished-at="2019-02-27T09:34:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- releaseBrowser -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest -->
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest@1a04f701]" name="init" is-config="true" duration-ms="1" started-at="2019-02-27T09:34:33Z" finished-at="2019-02-27T09:34:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest@1a04f701]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-02-27T09:34:33Z" finished-at="2019-02-27T09:34:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest@1a04f701]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-02-27T09:34:33Z" finished-at="2019-02-27T09:34:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest.testMerchantAuditPass(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-27 17:34:33: [Method]-"MerchantAuditPageTest.testMerchantAuditPass" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testMerchantAuditPass(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest@1a04f701]" name="testMerchantAuditPass" duration-ms="11169" started-at="2019-02-27T09:34:33Z" finished-at="2019-02-27T09:34:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[MerchantNO: 872290059475069 商户结算信息新增审核通过]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testMerchantAuditPass -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest@1a04f701]" name="afterMethod" is-config="true" duration-ms="2000" started-at="2019-02-27T09:34:44Z" finished-at="2019-02-27T09:34:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testMerchantAuditPass status=SUCCESS method=MerchantAuditPageTest.testMerchantAuditPass(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest@1a04f701] output=MerchantNO: 872290059475069 商户结算信息新增审核通过]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-27 17:34:44: [Method]-"MerchantAuditPageTest.testMerchantAuditPass" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest -->
+    </test> <!-- MerchantSettlementInsertAudit -->
+    <test name="MerchantFeeRateAdd" duration-ms="98143" started-at="2019-02-27T09:34:51Z" finished-at="2019-02-27T09:36:29Z">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantFeeRatePageTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantFeeRatePageTest@6193932a]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-02-27T09:34:56Z" finished-at="2019-02-27T09:34:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantFeeRatePageTest@6193932a]" name="init" is-config="true" duration-ms="2" started-at="2019-02-27T09:34:56Z" finished-at="2019-02-27T09:34:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantFeeRatePageTest@6193932a]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-02-27T09:34:56Z" finished-at="2019-02-27T09:34:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantFeeRatePageTest.testMerchantFeeRateAdd(com.dy.AutoTest.OperationPlatform.POJO.MerchantFeeRateBean)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-27 17:34:56: [Method]-"MerchantFeeRatePageTest.testMerchantFeeRateAdd" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testMerchantFeeRateAdd(com.dy.AutoTest.OperationPlatform.POJO.MerchantFeeRateBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantFeeRatePageTest@6193932a]" name="testMerchantFeeRateAdd" duration-ms="85995" started-at="2019-02-27T09:34:56Z" data-provider="feeRate" finished-at="2019-02-27T09:36:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.MerchantFeeRateBean@7424a39e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMerchantFeeRateAdd -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantFeeRatePageTest@6193932a]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2019-02-27T09:36:22Z" finished-at="2019-02-27T09:36:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testMerchantFeeRateAdd status=SUCCESS method=MerchantFeeRatePageTest.testMerchantFeeRateAdd(com.dy.AutoTest.OperationPlatform.POJO.MerchantFeeRateBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantFeeRatePageTest@6193932a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-27 17:36:22: [Method]-"MerchantFeeRatePageTest.testMerchantFeeRateAdd" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantFeeRatePageTest -->
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
+        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@71b1176b]" name="BeforeTest" is-config="true" duration-ms="1" started-at="2019-02-27T09:34:51Z" finished-at="2019-02-27T09:34:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@76572dbf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2019-02-27 17:34:51): [Test]-"MerchantFeeRateAdd" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@71b1176b]" name="beforeClass" is-config="true" duration-ms="1" started-at="2019-02-27T09:34:51Z" finished-at="2019-02-27T09:34:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@71b1176b]" name="init" is-config="true" duration-ms="0" started-at="2019-02-27T09:34:51Z" finished-at="2019-02-27T09:34:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@71b1176b]" name="testLogin" duration-ms="3551" started-at="2019-02-27T09:34:51Z" finished-at="2019-02-27T09:34:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[T00064]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@71b1176b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-02-27T09:34:51Z" finished-at="2019-02-27T09:34:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest.testLogin(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-27 17:34:51: [Method]-"LoginPageTest.testLogin" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@71b1176b]" name="afterMethod" is-config="true" duration-ms="2002" started-at="2019-02-27T09:34:54Z" finished-at="2019-02-27T09:34:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=LoginPageTest.testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@71b1176b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-27 17:34:54: [Method]-"LoginPageTest.testLogin" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@71b1176b]" name="AfterTest" is-config="true" duration-ms="0" started-at="2019-02-27T09:36:29Z" finished-at="2019-02-27T09:36:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@76572dbf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2019-02-27 17:36:29): [Test]-"MerchantFeeRateAdd" is finished]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest -->
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@647fd8ce]" name="init" is-config="true" duration-ms="1" started-at="2019-02-27T09:36:24Z" finished-at="2019-02-27T09:36:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testQuit()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@647fd8ce]" name="testQuit" duration-ms="3583" started-at="2019-02-27T09:36:24Z" finished-at="2019-02-27T09:36:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testQuit -->
+        <test-method status="PASS" signature="releaseBrowser()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@647fd8ce]" name="releaseBrowser" is-config="true" duration-ms="1000" started-at="2019-02-27T09:36:28Z" finished-at="2019-02-27T09:36:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- releaseBrowser -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest -->
+    </test> <!-- MerchantFeeRateAdd -->
+    <test name="MerchantFeeRateAddAudit" duration-ms="47466" started-at="2019-02-27T09:36:29Z" finished-at="2019-02-27T09:37:16Z">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
+        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7ee955a8]" name="BeforeTest" is-config="true" duration-ms="1" started-at="2019-02-27T09:36:29Z" finished-at="2019-02-27T09:36:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7219ced6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2019-02-27 17:36:29): [Test]-"MerchantFeeRateAddAudit" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7ee955a8]" name="init" is-config="true" duration-ms="1" started-at="2019-02-27T09:36:29Z" finished-at="2019-02-27T09:36:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7ee955a8]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-02-27T09:36:29Z" finished-at="2019-02-27T09:36:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7ee955a8]" name="testLogin" duration-ms="3826" started-at="2019-02-27T09:36:29Z" finished-at="2019-02-27T09:36:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[T00107]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7ee955a8]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-02-27T09:36:29Z" finished-at="2019-02-27T09:36:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest.testLogin(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-27 17:36:29: [Method]-"LoginPageTest.testLogin" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7ee955a8]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2019-02-27T09:36:33Z" finished-at="2019-02-27T09:36:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=LoginPageTest.testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7ee955a8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-27 17:36:33: [Method]-"LoginPageTest.testLogin" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@7ee955a8]" name="AfterTest" is-config="true" duration-ms="0" started-at="2019-02-27T09:37:16Z" finished-at="2019-02-27T09:37:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7219ced6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2019-02-27 17:37:16): [Test]-"MerchantFeeRateAddAudit" is finished]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest -->
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@48fa0f47]" name="init" is-config="true" duration-ms="1" started-at="2019-02-27T09:37:12Z" finished-at="2019-02-27T09:37:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testQuit()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@48fa0f47]" name="testQuit" duration-ms="3578" started-at="2019-02-27T09:37:12Z" finished-at="2019-02-27T09:37:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testQuit -->
+        <test-method status="PASS" signature="releaseBrowser()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@48fa0f47]" name="releaseBrowser" is-config="true" duration-ms="1000" started-at="2019-02-27T09:37:15Z" finished-at="2019-02-27T09:37:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- releaseBrowser -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest -->
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest@1677d1]" name="init" is-config="true" duration-ms="1" started-at="2019-02-27T09:36:35Z" finished-at="2019-02-27T09:36:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest@1677d1]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-02-27T09:36:35Z" finished-at="2019-02-27T09:36:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest@1677d1]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-02-27T09:36:35Z" finished-at="2019-02-27T09:36:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest.testMerchantAuditPass(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-27 17:36:35: [Method]-"MerchantAuditPageTest.testMerchantAuditPass" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testMerchantAuditPass(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest@1677d1]" name="testMerchantAuditPass" duration-ms="35051" started-at="2019-02-27T09:36:35Z" finished-at="2019-02-27T09:37:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[MerchantNO: 872290059475069 商户费率信息新增审核通过]]>
+            </line>
+            <line>
+              <![CDATA[MerchantNO: 872290059475069 商户费率信息新增审核通过]]>
+            </line>
+            <line>
+              <![CDATA[MerchantNO: 872290059475069 商户费率信息新增审核通过]]>
+            </line>
+            <line>
+              <![CDATA[MerchantNO: 872290059475069 商户费率信息新增审核通过]]>
+            </line>
+            <line>
+              <![CDATA[MerchantNO: 872290059475069 商户费率信息新增审核通过]]>
+            </line>
+            <line>
+              <![CDATA[MerchantNO: 872290059475069 商户费率信息新增审核通过]]>
+            </line>
+            <line>
+              <![CDATA[MerchantNO: 872290059475069 商户费率信息新增审核通过]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testMerchantAuditPass -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest@1677d1]" name="afterMethod" is-config="true" duration-ms="2000" started-at="2019-02-27T09:37:10Z" finished-at="2019-02-27T09:37:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testMerchantAuditPass status=SUCCESS method=MerchantAuditPageTest.testMerchantAuditPass(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest@1677d1] output=MerchantNO: 872290059475069 商户费率信息新增审核通过]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-27 17:37:10: [Method]-"MerchantAuditPageTest.testMerchantAuditPass" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest -->
+    </test> <!-- MerchantFeeRateAddAudit -->
+    <test name="MerchantProduct" duration-ms="23105" started-at="2019-02-27T09:37:16Z" finished-at="2019-02-27T09:37:39Z">
       <class name="com.dy.AutoTest.web.actions.SingletonSet">
-        <test-method status="PASS" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@7d3a22a9]" name="init" is-config="true" duration-ms="3563" started-at="2019-02-27T06:00:19Z" finished-at="2019-02-27T06:00:23Z">
+        <test-method status="PASS" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@778d1062]" name="init" is-config="true" duration-ms="3143" started-at="2019-02-27T09:31:58Z" finished-at="2019-02-27T09:32:01Z">
           <params>
             <param index="0">
               <value>
@@ -205,25 +1055,151 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="releaseJDBC()[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@7d3a22a9]" name="releaseJDBC" is-config="true" duration-ms="2019" started-at="2019-02-27T06:00:47Z" finished-at="2019-02-27T06:00:49Z">
+        <test-method status="PASS" signature="releaseJDBC()[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@778d1062]" name="releaseJDBC" is-config="true" duration-ms="2028" started-at="2019-02-27T09:37:39Z" finished-at="2019-02-27T09:37:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- releaseJDBC -->
       </class> <!-- com.dy.AutoTest.web.actions.SingletonSet -->
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@229d10bd]" name="init" is-config="true" duration-ms="2" started-at="2019-02-27T06:00:43Z" finished-at="2019-02-27T06:00:43Z">
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
+        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@670002]" name="BeforeTest" is-config="true" duration-ms="1" started-at="2019-02-27T09:37:16Z" finished-at="2019-02-27T09:37:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@39e7c16d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2019-02-27 17:37:16): [Test]-"MerchantProduct" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@670002]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-02-27T09:37:16Z" finished-at="2019-02-27T09:37:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@670002]" name="init" is-config="true" duration-ms="1" started-at="2019-02-27T09:37:16Z" finished-at="2019-02-27T09:37:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="testQuit()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@229d10bd]" name="testQuit" duration-ms="3562" started-at="2019-02-27T06:00:43Z" finished-at="2019-02-27T06:00:46Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@670002]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-02-27T09:37:16Z" finished-at="2019-02-27T09:37:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest.testLogin(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-27 17:37:16: [Method]-"LoginPageTest.testLogin" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@670002]" name="testLogin" duration-ms="3808" started-at="2019-02-27T09:37:16Z" finished-at="2019-02-27T09:37:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[T00064]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@670002]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2019-02-27T09:37:20Z" finished-at="2019-02-27T09:37:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=LoginPageTest.testLogin(java.lang.String)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@670002] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-27 17:37:20: [Method]-"LoginPageTest.testLogin" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest@670002]" name="AfterTest" is-config="true" duration-ms="0" started-at="2019-02-27T09:37:39Z" finished-at="2019-02-27T09:37:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@39e7c16d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2019-02-27 17:37:39): [Test]-"MerchantProduct" is finished]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest -->
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@49c386c8]" name="init" is-config="true" duration-ms="1" started-at="2019-02-27T09:37:35Z" finished-at="2019-02-27T09:37:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testQuit()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@49c386c8]" name="testQuit" duration-ms="3569" started-at="2019-02-27T09:37:35Z" finished-at="2019-02-27T09:37:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testQuit -->
-        <test-method status="PASS" signature="releaseBrowser()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@229d10bd]" name="releaseBrowser" is-config="true" duration-ms="1002" started-at="2019-02-27T06:00:46Z" finished-at="2019-02-27T06:00:47Z">
+        <test-method status="PASS" signature="releaseBrowser()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest@49c386c8]" name="releaseBrowser" is-config="true" duration-ms="1000" started-at="2019-02-27T09:37:38Z" finished-at="2019-02-27T09:37:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- releaseBrowser -->
       </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest -->
-    </test> <!-- Quit -->
+      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest@1f0f1111]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-02-27T09:37:22Z" finished-at="2019-02-27T09:37:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest@1f0f1111]" name="init" is-config="true" duration-ms="2" started-at="2019-02-27T09:37:22Z" finished-at="2019-02-27T09:37:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testUpdate(com.dy.AutoTest.OperationPlatform.POJO.MerchantProductBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest@1f0f1111]" name="testUpdate" duration-ms="10716" started-at="2019-02-27T09:37:22Z" data-provider="MerchantProductByCaseNO" finished-at="2019-02-27T09:37:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.OperationPlatform.POJO.MerchantProductBean@6aaa9cc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdate -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest@1f0f1111]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-02-27T09:37:22Z" finished-at="2019-02-27T09:37:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest.testUpdate(com.dy.AutoTest.OperationPlatform.POJO.MerchantProductBean)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-27 17:37:22: [Method]-"MerchantProductPageTest.testUpdate" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest@1f0f1111]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2019-02-27T09:37:33Z" finished-at="2019-02-27T09:37:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testUpdate status=SUCCESS method=MerchantProductPageTest.testUpdate(com.dy.AutoTest.OperationPlatform.POJO.MerchantProductBean)[pri:0, instance:com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest@1f0f1111] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2019-02-27 17:37:33: [Method]-"MerchantProductPageTest.testUpdate" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest -->
+    </test> <!-- MerchantProduct -->
   </suite> <!-- SuiteOperationPlatform -->
 </testng-results>

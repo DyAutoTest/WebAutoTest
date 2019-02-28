@@ -8,6 +8,7 @@
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
   <test thread-count="5" name="MerchantProduct(failed)">
+    <parameter name="OperID" value="T00064"/>
     <classes>
       <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest">
         <methods>
