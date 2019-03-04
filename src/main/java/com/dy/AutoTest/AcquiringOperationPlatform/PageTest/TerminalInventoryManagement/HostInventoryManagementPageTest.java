@@ -100,7 +100,6 @@ public class HostInventoryManagementPageTest extends SuperTest{
 		HostInventoryManagementPage.setTerminalSerialNO(bean.getTerminalSerialNO());
 		wait.waitFor(500);
 		doQueryForClickButton(bean);
-		
 		HostInventoryManagementPage.clickOutStorage();
 		wait.waitFor(1000);
 
@@ -271,7 +270,11 @@ public class HostInventoryManagementPageTest extends SuperTest{
 
 		HostInventoryManagementPage.clickQuery();
 		wait.waitFor(500);
+		HostInventoryManagementPage.doPageDown();
 		HostInventoryManagementPage.clickRadio(bean.getRadio());
+		wait.waitFor(500);
+		HostInventoryManagementPage.doLoseFocus("Radio",bean.getRadio(), 100, 0);
+		HostInventoryManagementPage.doPageUp();
 		wait.waitFor(500);
 	}
 }

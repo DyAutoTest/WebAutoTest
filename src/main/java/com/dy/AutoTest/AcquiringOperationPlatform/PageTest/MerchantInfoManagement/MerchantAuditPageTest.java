@@ -3,6 +3,7 @@ package com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManageme
 import static org.testng.Assert.assertTrue;
 
 import java.lang.reflect.Method;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -16,10 +17,21 @@ import com.dy.AutoTest.web.api.SuperTest;
 import com.dy.AutoTest.AcquiringOperationPlatform.PageObject.MerchantInfoManagement.MerchantAuditPage;
 import com.dy.AutoTest.AcquiringOperationPlatform.POJO.MerchantInfoManagement_MerchantAuditBean;
 import com.dy.AutoTest.web.business.DataBusiness;
+import com.dy.AutoTest.web.business.MerchantBusiness;
 
 public class MerchantAuditPageTest extends SuperTest{
 	MerchantAuditPage MerchantAuditPage;
 	String URL;
+	List<MerchantInfoManagement_MerchantAuditBean> preAuditPassBeansList1=new ArrayList<MerchantInfoManagement_MerchantAuditBean>();
+	List<MerchantInfoManagement_MerchantAuditBean> preAuditPassBeansList2=new ArrayList<MerchantInfoManagement_MerchantAuditBean>();
+	List<MerchantInfoManagement_MerchantAuditBean> preAuditFailBeansList=new ArrayList<MerchantInfoManagement_MerchantAuditBean>();
+	List<MerchantInfoManagement_MerchantAuditBean> recheckAuditPassBeansList=new ArrayList<MerchantInfoManagement_MerchantAuditBean>();
+	List<MerchantInfoManagement_MerchantAuditBean> recheckAuditFailBeansList=new ArrayList<MerchantInfoManagement_MerchantAuditBean>();
+	List<String > selectList=new ArrayList<String>();
+	Map<String, Object> insertMap=new HashMap<String,Object>();
+	Map<String, Object> updateMap=new HashMap<String,Object>();
+	Map<String, Object> whereMap=new HashMap<String,Object>();
+	Map<String, Object> result;
 //	private static Map<String,Map<String, String >> auditProperty=new HashMap<String ,Map<String,String>>();
 //	private static Map<String, String > preAudit=new;
 	@BeforeClass
@@ -91,46 +103,234 @@ public class MerchantAuditPageTest extends SuperTest{
 	@Test(dataProvider="MerchantInfoManagement_MerchantAuditByCaseNO")
 	public void testPreAuditPass(MerchantInfoManagement_MerchantAuditBean bean) {
 		doPreAudit(bean);
-//		MerchantAuditPage.clickPreAuditOperation_Pass();
-//		String noticeForSuccess=MerchantAuditPage.getNotice();
-//		System.out.println(noticeForSuccess);
-//		Reporter.log(noticeForSuccess);
-//		if(noticeForSuccess.equals("审核状态更新成功！")) {
-//			doAddAuditRecord(bean,"testRecheckAuditPass","F1","初审通过","复审通过");
-//			doAddAuditRecord(bean,"testRecheckAuditFail","F1","初审通过","复审不通过");
-//		}
-		MerchantAuditPage.clickPreAuditOperation_Close();
+		MerchantAuditPage.clickPreAuditOperation_Pass();
+		String noticeForSuccess=MerchantAuditPage.getNotice();
+		System.out.println(noticeForSuccess);
+		Reporter.log(noticeForSuccess);
+		if(noticeForSuccess.equals("审核状态更新成功！")) {
+			preAuditPassBeansList1.add(bean);
+			preAuditPassBeansList2.add(bean);
+			
+		}
+//		MerchantAuditPage.clickPreAuditOperation_Close();
 	}
 	@Test(dataProvider="MerchantInfoManagement_MerchantAuditByCaseNO")
 	public void testPreAuditFail(MerchantInfoManagement_MerchantAuditBean bean) {
 		doPreAudit(bean);
-//		MerchantAuditPage.clickPreAuditOperation_NoPass();
-//		String noticeForSuccess=MerchantAuditPage.getNotice();
-//		System.out.println(MerchantAuditPage.getNotice());
-//		Reporter.log(MerchantAuditPage.getNotice());
-//		if(noticeForSuccess.equals("审核状态更新成功！")) {
-//			doUpdateAuditRecord(bean,"R1",bean.getPreAuditOperation_PreAuditTips(),bean.getRecheckOperation_RecheckTips());
-//		}
-		MerchantAuditPage.clickPreAuditOperation_Close();
+		MerchantAuditPage.clickPreAuditOperation_NoPass();
+		String noticeForSuccess=MerchantAuditPage.getNotice();
+		System.out.println(MerchantAuditPage.getNotice());
+		Reporter.log(MerchantAuditPage.getNotice());
+		if(noticeForSuccess.equals("审核状态更新成功！")) {
+			preAuditFailBeansList.add(bean);
+		}
+//		MerchantAuditPage.clickPreAuditOperation_Close();
 	}
 	@Test(dataProvider="MerchantInfoManagement_MerchantAuditByCaseNO")
 	public void testRecheckAuditPass(MerchantInfoManagement_MerchantAuditBean bean) {
 		doRecheckAudit(bean);
-//		MerchantAuditPage.clickRecheckOperation_Pass();
-//		System.out.println(MerchantAuditPage.getNotice());
-//		Reporter.log(MerchantAuditPage.getNotice());
-		MerchantAuditPage.clickRecheckOperation_Close();
+		MerchantAuditPage.clickRecheckOperation_Pass();
+		String noticeForSuccess=MerchantAuditPage.getNotice();
+		System.out.println(noticeForSuccess);
+		Reporter.log(noticeForSuccess);
+		if(noticeForSuccess.equals("商户资料通过复核！")) {
+			//查询业务表的商户号
+			String merchantNO=MerchantBusiness.getOfflineMerchantNOByName(bean.getKeyInfo());
+			if(!merchantNO.equals("")) {
+				bean.setMerchantCode(merchantNO);
+				System.out.println("新增商户“"+bean.getKeyInfo()+"”的商户号号为："+merchantNO);
+				Reporter.log("新增商户“"+bean.getKeyInfo()+"”的商户号号为："+merchantNO);
+				recheckAuditPassBeansList.add(bean);
+			}
+		}
+//		MerchantAuditPage.clickRecheckOperation_Close();
 	}
 	@Test(dataProvider="MerchantInfoManagement_MerchantAuditByCaseNO")
 	public void testRecheckAuditFail(MerchantInfoManagement_MerchantAuditBean bean) {
 		doRecheckAudit(bean);
-//		MerchantAuditPage.clickRecheckOperation_NoPass();
-//		System.out.println(MerchantAuditPage.getNotice());
-//		Reporter.log(MerchantAuditPage.getNotice());
-		MerchantAuditPage.clickRecheckOperation_Close();
+		MerchantAuditPage.clickRecheckOperation_NoPass();
+		String noticeForSuccess=MerchantAuditPage.getNotice();
+		System.out.println(MerchantAuditPage.getNotice());
+		Reporter.log(noticeForSuccess);
+		if(noticeForSuccess.equals("审核状态更新成功！")) {
+			//更改该条记录
+			recheckAuditFailBeansList.add(bean);
+		}
+//		MerchantAuditPage.clickRecheckOperation_Close();
 	}
 	
 	
+//	***********************数据库操作**********************************************
+
+	@Test
+	public void testInsertRecheckAuditPassRecord() {
+		if(preAuditPassBeansList1.size()>0) {
+			for(MerchantInfoManagement_MerchantAuditBean bean:preAuditPassBeansList1) {
+				insertMap.put("CaseNO", "testRecheckAuditPass");
+				if(!bean.getTradeName().equals("")) {
+					insertMap.put("TradeName",bean.getTradeName());
+				}
+				if(!bean.getKeyInfo().equals("")) {
+					insertMap.put("KeyInfo",bean.getKeyInfo());
+				}
+				if(!bean.getMerchantCode().equals("")) {
+					insertMap.put("MerchantCode",bean.getMerchantCode());
+				}
+				if(!bean.getTradeCode().equals("")) {
+					insertMap.put("TradeCode",bean.getTradeCode());
+				}
+				if(!bean.getInnerMerchantType().equals("")) {
+					insertMap.put("InnerMerchantType",bean.getInnerMerchantType());
+				}
+				if(!bean.getInnerMerchantSubType().equals("")) {
+					insertMap.put("InnerMerchantSubType",bean.getInnerMerchantSubType());
+				}
+				if(!bean.getTradeOperater().equals("")) {
+					insertMap.put("TradeOperater",bean.getTradeOperater());
+				}
+				insertMap.put("AuditStatus","F1");
+				if(!bean.getRadio().equals("")) {
+					insertMap.put("Radio",bean.getRadio());
+				}else {
+					insertMap.put("Radio","0");
+				}
+				if(!bean.getPreAuditOperation_PreAuditTips().equals("")) {
+					insertMap.put("PreAuditOperation_PreAuditTips", bean.getPreAuditOperation_PreAuditTips());
+					
+				}
+				insertMap.put("RecheckOperation_RecheckTips", "复审通过");
+				if(!bean.getRecheckAudit_RiskTemplate().equals("")) {
+					insertMap.put("RecheckAudit_RiskTemplate",bean.getRecheckAudit_RiskTemplate());
+				}else {
+					insertMap.put("RecheckAudit_RiskTemplate","运营");
+				}
+				selectList.add("count(1) count");
+				result=DataBusiness.querySingle("AOP_Data_MerchantInfoManagement_MerchantAudit", selectList, insertMap);
+				if((Integer)result.get("count")==0) {
+					DataBusiness.insertTestData("AOP_Data_MerchantInfoManagement_MerchantAudit", insertMap);
+				}else {
+					System.out.println("关键字“"+insertMap.get("KeyInfo")+"”的测试数据已存在，ID为："+insertMap.get("ID"));
+					Reporter.log("关键字“"+insertMap.get("KeyInfo")+"”的测试数据已存在，ID为："+insertMap.get("ID"));
+				}
+			}
+			clearSqlCollection();
+			preAuditPassBeansList1.clear();
+		}
+	}
+	@Test
+	public void testInsertRecheckAuditFailRecord() {
+		if(preAuditPassBeansList2.size()>0) {
+			for(MerchantInfoManagement_MerchantAuditBean bean:preAuditPassBeansList2) {
+				insertMap.put("CaseNO", "testRecheckAuditFail");
+				if(!bean.getTradeName().equals("")) {
+					insertMap.put("TradeName",bean.getTradeName());
+				}
+				if(!bean.getKeyInfo().equals("")) {
+					insertMap.put("KeyInfo",bean.getKeyInfo());
+				}
+				if(!bean.getMerchantCode().equals("")) {
+					insertMap.put("MerchantCode",bean.getMerchantCode());
+				}
+				if(!bean.getTradeCode().equals("")) {
+					insertMap.put("TradeCode",bean.getTradeCode());
+				}
+				if(!bean.getInnerMerchantType().equals("")) {
+					insertMap.put("InnerMerchantType",bean.getInnerMerchantType());
+				}
+				if(!bean.getInnerMerchantSubType().equals("")) {
+					insertMap.put("InnerMerchantSubType",bean.getInnerMerchantSubType());
+				}
+				if(!bean.getTradeOperater().equals("")) {
+					insertMap.put("TradeOperater",bean.getTradeOperater());
+				}
+				insertMap.put("AuditStatus","F1");
+				if(!bean.getRadio().equals("")) {
+					insertMap.put("Radio",bean.getRadio());
+				}else {
+					insertMap.put("Radio","0");
+				}
+				if(!bean.getPreAuditOperation_PreAuditTips().equals("")) {
+					insertMap.put("PreAuditOperation_PreAuditTips", bean.getPreAuditOperation_PreAuditTips());
+					
+				}
+				insertMap.put("RecheckOperation_RecheckTips", "复审不通过");
+				if(!bean.getRecheckAudit_RiskTemplate().equals("")) {
+					insertMap.put("RecheckAudit_RiskTemplate",bean.getRecheckAudit_RiskTemplate());
+				}else {
+					insertMap.put("RecheckAudit_RiskTemplate","运营");
+				}
+				selectList.add("count(1) count");
+				result=DataBusiness.querySingle("AOP_Data_MerchantInfoManagement_MerchantAudit", selectList, insertMap);
+				if((Integer)result.get("count")==0) {
+					DataBusiness.insertTestData("AOP_Data_MerchantInfoManagement_MerchantAudit", insertMap);
+				}else {
+					System.out.println("关键字“"+insertMap.get("KeyInfo")+"”的测试数据已存在，ID为："+insertMap.get("ID"));
+					Reporter.log("关键字“"+insertMap.get("KeyInfo")+"”的测试数据已存在，ID为："+insertMap.get("ID"));
+				}
+			}
+			clearSqlCollection();
+			preAuditPassBeansList2.clear();
+		}
+	}
+	@Test
+	public void testUpdatePreAuditFailRecord() {
+		if(preAuditFailBeansList.size()>0) {
+			for(MerchantInfoManagement_MerchantAuditBean bean:preAuditFailBeansList) {
+				updateMap.put("AuditStatus", "R1");
+				whereMap.put("ID", bean.getID());
+				DataBusiness.updateTestData("AOP_Data_MerchantInfoManagement_MerchantAudit", updateMap, whereMap);
+			}
+			clearSqlCollection();
+			preAuditFailBeansList.clear();
+		}
+	}
+	@Test
+	public void testInsertStoreRecord() {
+		if(recheckAuditPassBeansList.size()>0) {
+			for(MerchantInfoManagement_MerchantAuditBean bean:recheckAuditPassBeansList) {
+				//插入前检查
+				selectList.add("count(1) count");
+				whereMap.put("CaseNO", "testAdd");
+				whereMap.put("Add_SearchMer_MerName", bean.getKeyInfo());
+				Map<String, Object> result1=DataBusiness.querySingle("AOP_Data_MerchantInfoManagement_MerchantStoreManagement", selectList, whereMap);
+				whereMap.remove("Add_SearchMer_MerName");
+				whereMap.put("Add_SearchMer_MerNO", bean.getMerchantCode());
+				Map<String, Object> result2=DataBusiness.querySingle("AOP_Data_MerchantInfoManagement_MerchantStoreManagement", selectList, whereMap);
+				if((Integer)result1.get("count")==0&&(Integer)result2.get("count")==0){
+					String temp=bean.getKeyInfo();
+					temp=temp.substring(temp.length()-8,temp.length());
+					whereMap.put("Add_SearchMer_MerName", bean.getKeyInfo());
+					whereMap.put("Add_SearchMer_Radio", "0");
+					whereMap.put("Add_StoreName", "新增门店"+temp);
+					whereMap.put("Add_StoreAddress", "新增地址"+temp);
+					DataBusiness.insertTestData("AOP_Data_MerchantInfoManagement_MerchantStoreManagement", whereMap);
+				}
+			}
+			clearSqlCollection();
+			recheckAuditPassBeansList.clear();
+		}
+	}
+	@Test
+	public void testUpdateRecheckFailAuditRecord() {
+		if(recheckAuditFailBeansList.size()>0) {
+			for(MerchantInfoManagement_MerchantAuditBean bean:recheckAuditFailBeansList) {
+				updateMap.put("AuditStatus", "Z1");
+				whereMap.put("ID", bean.getID());
+				DataBusiness.updateTestData("AOP_Data_MerchantInfoManagement_MerchantAudit", updateMap, whereMap);
+			}
+			clearSqlCollection();
+			recheckAuditFailBeansList.clear();
+		}
+	}
+	
+	public void clearSqlCollection() {
+		selectList.clear();
+		insertMap.clear();
+		updateMap.clear();
+		whereMap.clear();
+	}
+	
+//	*****************************************************************************
 	
 	public void doPreAudit(MerchantInfoManagement_MerchantAuditBean bean) {
 		if(!driver.getCurrentUrl().equals(URL)) {
@@ -152,8 +352,13 @@ public class MerchantAuditPageTest extends SuperTest{
 			MerchantAuditPage.navigateTo(URL);
 		}
 		if(bean.getRecheckOperation_RecheckTips().equals("")) {
-			System.out.println("复审备注字段为必输项，不能为空");
-			Reporter.log("复审备注字段为必输项，不能为空");
+			System.out.println("RecheckOperation_RecheckTips（复审备注）字段为必输项，不能为空");
+			Reporter.log("RecheckOperation_RecheckTips（复审备注）字段为必输项，不能为空");
+			assertTrue(false);
+		}
+		if(bean.getRecheckAudit_RiskTemplate().equals("")) {
+			System.out.println("RecheckAudit_RiskTemplate（实时风控参数模版） 字段为必输项，不能为空");
+			Reporter.log("RecheckAudit_RiskTemplate（实时风控参数模版） 字段为必输项，不能为空");
 			assertTrue(false);
 		}
 		doQueryForClickButton(bean);
@@ -163,57 +368,7 @@ public class MerchantAuditPageTest extends SuperTest{
 		MerchantAuditPage.setRecheckOperation_RecheckTips(bean.getRecheckOperation_RecheckTips());
 		wait.waitFor(2000);
 	}
-	public void doAddAuditRecord(MerchantInfoManagement_MerchantAuditBean bean,String caseNO,String auditStatus,String preTips,
-			String recheckTips) {
-		Map<String, Object> insertMap=new HashMap<String,Object>();
-		insertMap.put("CaseNO", caseNO);
-		if(!bean.getTradeName().equals("")) {
-			insertMap.put("TradeName",bean.getTradeName());
-		}
-		if(!bean.getKeyInfo().equals("")) {
-			insertMap.put("KeyInfo",bean.getKeyInfo());
-		}
-		if(!bean.getMerchantCode().equals("")) {
-			insertMap.put("MerchantCode",bean.getMerchantCode());
-		}
-		if(!bean.getTradeCode().equals("")) {
-			insertMap.put("TradeCode",bean.getTradeCode());
-		}
-		if(!bean.getInnerMerchantType().equals("")) {
-			insertMap.put("InnerMerchantType",bean.getInnerMerchantType());
-		}
-		if(!bean.getInnerMerchantSubType().equals("")) {
-			insertMap.put("InnerMerchantSubType",bean.getInnerMerchantSubType());
-		}
-		if(!bean.getTradeOperater().equals("")) {
-			insertMap.put("TradeOperater",bean.getTradeOperater());
-		}
-		insertMap.put("AuditStatus",auditStatus);
-		if(!bean.getRadio().equals("")) {
-			insertMap.put("Radio",bean.getRadio());
-		}else {
-			insertMap.put("Radio","0");
-		}
-		insertMap.put("PreAuditOperation_PreAuditTips", preTips);
-		insertMap.put("RecheckOperation_RecheckTips", recheckTips);
-		if(!bean.getRecheckAudit_RiskTemplate().equals("")) {
-			insertMap.put("RecheckAudit_RiskTemplate",bean.getRecheckAudit_RiskTemplate());
-		}else {
-			insertMap.put("RecheckAudit_RiskTemplate","运营");
-		}
-		DataBusiness.insertTestData("AOP_Data_MerchantInfoManagement_MerchantAudit", insertMap);
-	}
-	public void doUpdateAuditRecord(MerchantInfoManagement_MerchantAuditBean bean,String auditStatus,String preTips,String recheckTips) {
-		Map<String, Object> updateMap=new HashMap<String,Object>();
-		Map<String, Object> whereMap=new HashMap<String,Object>();
-		updateMap.put("AuditStatus", auditStatus);
-		updateMap.put("PreAuditOperation_PreAuditTips", preTips);
-		updateMap.put("RecheckOperation_RecheckTips", recheckTips);
-		whereMap.put("ID", bean.getID());
-//		DataBusiness.insertTestData("AOP_Data_MerchantInfoManagement_MerchantAudit", insertMap);
-		DataBusiness.updateTestData("AOP_Data_MerchantInfoManagement_MerchantAudit", updateMap, whereMap);
-	}
-	
+
 	
 	public void doQueryForClickButton(MerchantInfoManagement_MerchantAuditBean bean) {
 		if(!bean.getTradeName().equals("")) {

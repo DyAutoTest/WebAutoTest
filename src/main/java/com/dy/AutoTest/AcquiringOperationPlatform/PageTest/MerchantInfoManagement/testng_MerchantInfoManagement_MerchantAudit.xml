@@ -23,11 +23,11 @@
 			<class
 				name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantAuditPageTest">
 				<methods>
-					<!-- <include name="testQuery" /> -->
-					<!-- <include name="testPreAuditPass" />
-					<include name="testPreAuditFail" /> -->
-					<include name="testRecheckAuditPass" />
-					<include name="testRecheckAuditFail" />
+					<include name="testQuery" />
+					<!-- <include name="testPreAuditPass" /> -->
+					<!-- <include name="testPreAuditFail" /> -->
+					<!-- <include name="testRecheckAuditPass" /> -->
+					<!-- <include name="testRecheckAuditFail" /> -->
 				</methods>
 			</class> 
 		</classes>
