@@ -7,41 +7,19 @@
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-<<<<<<< HEAD
-  <test thread-count="5" name="TerminalInventoryManagement_HostInventoryManagement(failed)">
-=======
-  <test thread-count="5" name="MerchantProduct(failed)">
-    <parameter name="OperID" value="T00064"/>
->>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
+  <test thread-count="5" name="MerchantInfoManagement_MerchantAudit(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TerminalInventoryManagement.HostInventoryManagementPageTest">
-=======
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest">
->>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
+      <class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantAuditPageTest">
         <methods>
+          <include name="testRecheckAuditPass" invocation-numbers="0"/>
           <include name="beforeClass"/>
           <include name="afterMethod"/>
-<<<<<<< HEAD
-          <include name="testTerminalRegister" invocation-numbers="0"/>
-=======
->>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
           <include name="AfterTest"/>
-          <include name="testTerminalDeliver" invocation-numbers="0"/>
+          <include name="init"/>
           <include name="beforeMethod"/>
           <include name="BeforeTest"/>
-          <include name="init"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TerminalInventoryManagement.HostInventoryManagementPageTest -->
-=======
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest -->
->>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
+      </class> <!-- com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantAuditPageTest -->
     </classes>
-<<<<<<< HEAD
-  </test> <!-- TerminalInventoryManagement_HostInventoryManagement(failed) -->
+  </test> <!-- MerchantInfoManagement_MerchantAudit(failed) -->
 </suite> <!-- Failed suite [AcquiringOperationPlatform] -->
-=======
-  </test> <!-- MerchantProduct(failed) -->
-</suite> <!-- Failed suite [SuiteOperationPlatform] -->
->>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git

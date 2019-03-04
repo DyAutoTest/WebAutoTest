@@ -4,7 +4,7 @@
  	<parameter name="browserCategory" value="chrome"></parameter>
 	<parameter name="environment" value="aop_uat"></parameter>
 
-<!-- 	<test thread-count="5" name="MerchantInfoManagement_MerchantInfoAdd">
+	<test thread-count="5" name="MerchantInfoManagement_MerchantInfoAdd">
 		<classes>
 			<class name="com.dy.AutoTest.web.actions.SingletonSet"></class>
 			<class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest">
@@ -20,9 +20,9 @@
 				</methods>
 			</class> 
 		</classes>
-	</test> -->
+	</test>
 	
-<!-- 	<test thread-count="5" name="Quit">
+	<test thread-count="5" name="Quit">
 		<classes>
 			<class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.LoginPageTest"> 
 				<methods>
@@ -30,7 +30,7 @@
 				</methods> 
 			</class>
 		</classes>
-	</test> -->
+	</test>
 
 	<test thread-count="5" name="MerchantInfoManagement_MerchantAudit">
 		<classes>
@@ -40,19 +40,25 @@
 					<include name="testAuditLogin" />
 				</methods>
 			</class>
-<!-- 			<class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantAuditPageTest">
+			<class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantAuditPageTest">
 				<methods>
 					<include name="testPreAuditPass" />
-					<include name="testPreAuditFail" />
 					<include name="testInsertRecheckAuditPassRecord" />
-					<include name="testInsertRecheckAuditFailRecord" />
-					<include name="testUpdatePreAuditFailRecord" />
 					<include name="testRecheckAuditPass" />
 					<include name="testInsertStoreRecord" />
+				</methods>
+				<!-- <methods>
+					<include name="testPreAuditPass" />
+					<include name="testInsertRecheckAuditPassRecord" />
 					<include name="testRecheckAuditFail" />
 					<include name="testUpdateRecheckFailAuditRecord" />
-				</methods>
-			</class>  -->
+				</methods> -->
+				<!-- <methods>
+					<include name="testPreAuditFail" />
+					<include name="testUpdatePreAuditFailRecord" />
+				</methods> -->
+			</class> 
+			
 			<class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantStoreManagementPageTest">
 				<methods>
 					<include name="testAdd" />

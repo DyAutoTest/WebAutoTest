@@ -364,8 +364,9 @@ public class MerchantAuditPageTest extends SuperTest{
 		doQueryForClickButton(bean);
 		MerchantAuditPage.clickRecheckOperation();
 		wait.waitFor(1000);
-		MerchantAuditPage.selectRecheckAudit_RiskTemplate(bean.getRecheckAudit_RiskTemplate());
 		MerchantAuditPage.setRecheckOperation_RecheckTips(bean.getRecheckOperation_RecheckTips());
+		wait.waitFor(1000);
+		MerchantAuditPage.selectRecheckAudit_RiskTemplate(bean.getRecheckAudit_RiskTemplate());
 		wait.waitFor(2000);
 	}
 

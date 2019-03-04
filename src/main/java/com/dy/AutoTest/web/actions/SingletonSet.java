@@ -48,7 +48,7 @@ public class SingletonSet {
 			jdbcUtil_oracle.releaseConn();
 		}
 		if(driver!=null) {
-			driver.quit();
+//			driver.quit();
 		}
 	}
 
