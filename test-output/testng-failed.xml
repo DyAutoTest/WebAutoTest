@@ -1,47 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [SuiteOperationPlatform]">
-  <parameter name="environment" value="pop_uat"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [AcquiringOperationPlatform]">
+  <parameter name="environment" value="aop_uat"/>
   <parameter name="browserCategory" value="chrome"/>
   <listeners>
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-<<<<<<< HEAD
-  <test thread-count="5" name="MerchantInfoManagement_MerchantInfoAdd(failed)">
-=======
-  <test thread-count="5" name="MerchantProduct(failed)">
->>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
+  <test thread-count="5" name="TerminalInventoryManagement_HostInventoryManagement(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantInfoAddPageTest">
-=======
-      <class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest">
->>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
+      <class name="com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TerminalInventoryManagement.HostInventoryManagementPageTest">
         <methods>
-          <include name="testUpdate" invocation-numbers="0"/>
           <include name="beforeClass"/>
           <include name="afterMethod"/>
-          <include name="testMerchantAdd" invocation-numbers="0"/>
+          <include name="testTerminalRegister" invocation-numbers="0"/>
           <include name="AfterTest"/>
+          <include name="testTerminalDeliver" invocation-numbers="0"/>
           <include name="beforeMethod"/>
-<<<<<<< HEAD
-          <include name="init"/>
-=======
->>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
           <include name="BeforeTest"/>
           <include name="init"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement.MerchantInfoAddPageTest -->
-=======
-      </class> <!-- com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantProductPageTest -->
->>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
+      </class> <!-- com.dy.AutoTest.AcquiringOperationPlatform.PageTest.TerminalInventoryManagement.HostInventoryManagementPageTest -->
     </classes>
-<<<<<<< HEAD
-  </test> <!-- MerchantInfoManagement_MerchantInfoAdd(failed) -->
+  </test> <!-- TerminalInventoryManagement_HostInventoryManagement(failed) -->
 </suite> <!-- Failed suite [AcquiringOperationPlatform] -->
-=======
-  </test> <!-- MerchantProduct(failed) -->
-</suite> <!-- Failed suite [SuiteOperationPlatform] -->
->>>>>>> branch 'master' of https://github.com/DyAutoTest/WebAutoTest.git
