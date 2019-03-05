@@ -46,12 +46,22 @@ public class MerchantSettlementPageTest extends SuperTest{
 	@DataProvider(name="SettlementInfoInsert")
 	protected static Object[][] parametersPoolForSqlite(){
 		data.loadDataBeanList("POP_Data_MerchantSettlement");
+		if(data.getDataBeanArray().length==0) {
+			System.out.println("测试数据为空，请检查");
+			Reporter.log("测试数据为空，请检查");
+			assertTrue(false);
+		}
 		return data.getDataBeanArray();
 	}
 	
 	@DataProvider(name="SettlementInfoAlter")
 	protected static Object[][] parametersPoolForSqlite2(){
 		data.loadDataBeanList("POP_Data_MerchantSettlementAlter");
+		if(data.getDataBeanArray().length==0) {
+			System.out.println("测试数据为空，请检查");
+			Reporter.log("测试数据为空，请检查");
+			assertTrue(false);
+		}
 		return data.getDataBeanArray();
 	}
 	

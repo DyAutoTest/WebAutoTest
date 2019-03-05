@@ -1,7 +1,10 @@
 package com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo;
 
+import static org.testng.Assert.assertTrue;
+
 import java.lang.reflect.Method;
 
+import org.testng.Reporter;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -34,12 +37,22 @@ public class MerchantProductPageTest extends SuperTest{
 	@DataProvider(name="MerchantProduct")
 	protected static Object[][] parametersPool(){
 		data.loadDataBeanList("POP_Data_MerchantProduct");
+		if(data.getDataBeanArray().length==0) {
+			System.out.println("测试数据为空，请检查");
+			Reporter.log("测试数据为空，请检查");
+			assertTrue(false);
+		}
 		return data.getDataBeanArray();
 	}
 
 	@DataProvider(name="MerchantProductByCaseNO")
 	protected static Object[][] parametersPool(Method method){
 		data.loadDataBeanList("POP_Data_MerchantProduct");
+		if(data.getDataBeanArray().length==0) {
+			System.out.println("测试数据为空，请检查");
+			Reporter.log("测试数据为空，请检查");
+			assertTrue(false);
+		}
 		return data.getDataBeanArray();
 	}
 

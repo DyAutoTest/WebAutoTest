@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<project basedir="." default="build" name="AutoTest">
+	
+	<property environment="env" />
+
+	<property name="debuglevel" value="source,lines,vars" />
+	<property name="target" value="1.8" />
+	<property name="source" value="1.8" />
+
+	<property name="base.dir" value="." />
+	<property name="testng.output.dir" value="${base.dir}/test-output" />
+	<property name="testng.suite.file" value="testng_MerchantInfoInsert.xml" />
+
+	<path id="Maven Dependencies.libraryclasspath">
+        <pathelement location="E:/repository/org/seleniumhq/selenium/selenium-java/3.12.0/selenium-java-3.12.0.jar"/>
+        <pathelement location="E:/repository/org/seleniumhq/selenium/selenium-api/3.12.0/selenium-api-3.12.0.jar"/>
+        <pathelement location="E:/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.12.0/selenium-chrome-driver-3.12.0.jar"/>
+        <pathelement location="E:/repository/org/seleniumhq/selenium/selenium-edge-driver/3.12.0/selenium-edge-driver-3.12.0.jar"/>
+        <pathelement location="E:/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.12.0/selenium-firefox-driver-3.12.0.jar"/>
+        <pathelement location="E:/repository/org/seleniumhq/selenium/selenium-ie-driver/3.12.0/selenium-ie-driver-3.12.0.jar"/>
+        <pathelement location="E:/repository/org/seleniumhq/selenium/selenium-opera-driver/3.12.0/selenium-opera-driver-3.12.0.jar"/>
+        <pathelement location="E:/repository/org/seleniumhq/selenium/selenium-remote-driver/3.12.0/selenium-remote-driver-3.12.0.jar"/>
+        <pathelement location="E:/repository/org/seleniumhq/selenium/selenium-safari-driver/3.12.0/selenium-safari-driver-3.12.0.jar"/>
+        <pathelement location="E:/repository/org/seleniumhq/selenium/selenium-support/3.12.0/selenium-support-3.12.0.jar"/>
+        <pathelement location="E:/repository/net/bytebuddy/byte-buddy/1.8.3/byte-buddy-1.8.3.jar"/>
+        <pathelement location="E:/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar"/>
+        <pathelement location="E:/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar"/>
+        <pathelement location="E:/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar"/>
+        <pathelement location="E:/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar"/>
+        <pathelement location="E:/repository/com/google/guava/guava/23.6-jre/guava-23.6-jre.jar"/>
+        <pathelement location="E:/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar"/>
+        <pathelement location="E:/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar"/>
+        <pathelement location="E:/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar"/>
+        <pathelement location="E:/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar"/>
+        <pathelement location="E:/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar"/>
+        <pathelement location="E:/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar"/>
+        <pathelement location="E:/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar"/>
+        <pathelement location="E:/repository/com/squareup/okhttp3/okhttp/3.9.1/okhttp-3.9.1.jar"/>
+        <pathelement location="E:/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar"/>
+        <pathelement location="E:/repository/com/opencsv/opencsv/4.2/opencsv-4.2.jar"/>
+        <pathelement location="E:/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar"/>
+        <pathelement location="E:/repository/org/apache/commons/commons-text/1.3/commons-text-1.3.jar"/>
+        <pathelement location="E:/repository/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar"/>
+        <pathelement location="E:/repository/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.jar"/>
+        <pathelement location="E:/repository/jdbc/sqlite-jdbc/3.23.1/sqlite-jdbc-3.23.1.jar"/>
+        <pathelement location="E:/repository/ojdbc/ojdbc6/11.2.0.4/ojdbc6-11.2.0.4.jar"/>
+        <pathelement location="E:/repository/org/testng/testng/6.14.3/testng-6.14.3.jar"/>
+        <pathelement location="E:/repository/com/beust/jcommander/1.72/jcommander-1.72.jar"/>
+        <pathelement location="E:/repository/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar"/>
+        <pathelement location="E:/repository/org/uncommons/reportng/1.1.4/reportng-1.1.4.jar"/>
+        <pathelement location="E:/repository/velocity/velocity/1.4/velocity-1.4.jar"/>
+        <pathelement location="E:/repository/velocity/velocity-dep/1.4/velocity-dep-1.4.jar"/>
+        <pathelement location="E:/repository/org/apache/velocity/velocity/1.7/velocity-1.7.jar"/>
+        <pathelement location="E:/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar"/>
+        <pathelement location="E:/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar"/>
+        <pathelement location="E:/repository/com/google/inject/guice/4.2.0/guice-4.2.0.jar"/>
+        <pathelement location="E:/repository/javax/inject/javax.inject/1/javax.inject-1.jar"/>
+        <pathelement location="E:/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar"/>
+        <pathelement location="E:/repository/safe/input/1.0.0/input-1.0.0.jar"/>
+        <pathelement location="E:/repository/safe/jna/1.0.0/jna-1.0.0.jar"/>
+        <pathelement location="E:/repository/safe/platform/1.0.0/platform-1.0.0.jar"/>
+	</path>
+	<path id="AutoTest.classpath">
+		<pathelement location="target/classes" />
+		<pathelement location="target/test-classes" />
+		<path refid="Maven Dependencies.libraryclasspath" />
+	</path>
+	<target name="init">
+		<mkdir dir="target/classes" />
+		<mkdir dir="target/test-classes" />
+		<copy includeemptydirs="false" todir="target/classes">
+			<fileset dir="src/main/java">
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+		<copy includeemptydirs="false" todir="target/test-classes">
+			<fileset dir="src/test/java">
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+	</target>
+	<target name="clean">
+		<delete dir="target/classes" />
+		<delete dir="target/test-classes" />
+	</target>
+	<target depends="clean" name="cleanall" />
+	<target depends="build-project" name="build" />
+
+	<target depends="init" name="build-project">
+		<echo message="${ant.project.name}: ${ant.file}" />
+		<javac debug="true" debuglevel="${debuglevel}" destdir="target/classes" includeantruntime="false" source="${source}" target="${target}">
+			<src path="src/main/java" />
+			<compilerarg line="-encoding UTF-8 "/>
+			<classpath refid="AutoTest.classpath" />
+		</javac>
+		<javac debug="true" debuglevel="${debuglevel}" destdir="target/test-classes" includeantruntime="false" source="${source}" target="${target}">
+			<src path="src/test/java" />
+			<compilerarg line="-encoding UTF-8 "/>
+			<classpath refid="AutoTest.classpath" />
+		</javac>
+	</target>
+	
+	<target depends="build-project" name="jar">
+		<jar destfile="web-test-core-1.0.0.jar" basedir="target/classes" />
+	</target>
+
+</project>

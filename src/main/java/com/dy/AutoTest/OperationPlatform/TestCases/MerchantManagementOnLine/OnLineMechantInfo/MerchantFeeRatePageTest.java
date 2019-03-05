@@ -2,6 +2,7 @@ package com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnL
 
 import static org.testng.Assert.assertTrue;
 
+import org.testng.Reporter;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -24,6 +25,11 @@ public class MerchantFeeRatePageTest extends SuperTest{
 	@DataProvider(name="feeRate") 
 	protected static Object[][] parametersPool(){
 		data.loadDataBeanList("POP_Data_MerchantFeeRate");
+		if(data.getDataBeanArray().length==0) {
+			System.out.println("测试数据为空，请检查");
+			Reporter.log("测试数据为空，请检查");
+			assertTrue(false);
+		}
 		return data.getDataBeanArray();
 	}
 	
