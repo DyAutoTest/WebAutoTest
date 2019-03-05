@@ -38,12 +38,22 @@ public class RiskControlParameterMaintainPageTest extends SuperTest{
 	@DataProvider(name="OffLineRiskControlManagement_RiskControlParameterMaintain")
 	protected static Object[][] parametersPool(){
 		data.loadDataBeanList("AOP_Data_OffLineRiskControlManagement_RiskControlParameterMaintain",OffLineRiskControlManagement_RiskControlParameterMaintainBean.class);
+		if(data.getDataBeanArray().length==0) {
+			System.out.println("测试数据为空，请检查");
+			Reporter.log("测试数据为空，请检查");
+			assertTrue(false);
+		}
 		return data.getDataBeanArray();
 	}
 
 	@DataProvider(name="OffLineRiskControlManagement_RiskControlParameterMaintainByCaseNO")
 	protected static Object[][] parametersPool(Method method){
 		data.loadDataBeanList("AOP_Data_OffLineRiskControlManagement_RiskControlParameterMaintain",method.getName(),OffLineRiskControlManagement_RiskControlParameterMaintainBean.class);
+		if(data.getDataBeanArray().length==0) {
+			System.out.println("测试数据为空，请检查");
+			Reporter.log("测试数据为空，请检查");
+			assertTrue(false);
+		}
 		return data.getDataBeanArray();
 	}
 

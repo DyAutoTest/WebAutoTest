@@ -1,6 +1,8 @@
 package com.dy.AutoTest.AcquiringOperationPlatform.PageTest.MerchantInfoManagement;
 
 
+import static org.testng.Assert.assertTrue;
+
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -42,12 +44,22 @@ public class MerchantInfoAddPageTest extends SuperTest{
 	@DataProvider(name="MerchantInfoManagement_MerchantInfoAdd")
 	protected static Object[][] parametersPool(){
 		data.loadDataBeanList("AOP_Data_MerchantInfoManagement_MerchantInfoAdd",MerchantInfoManagement_MerchantInfoAddBean.class);
+		if(data.getDataBeanArray().length==0) {
+			System.out.println("测试数据为空，请检查");
+			Reporter.log("测试数据为空，请检查");
+			assertTrue(false);
+		}
 		return data.getDataBeanArray();
 	}
 
 	@DataProvider(name="MerchantInfoManagement_MerchantInfoAddByCaseNO")
 	protected static Object[][] parametersPool(Method method){
 		data.loadDataBeanList("AOP_Data_MerchantInfoManagement_MerchantInfoAdd",method.getName(),MerchantInfoManagement_MerchantInfoAddBean.class);
+		if(data.getDataBeanArray().length==0) {
+			System.out.println("测试数据为空，请检查");
+			Reporter.log("测试数据为空，请检查");
+			assertTrue(false);
+		}
 		return data.getDataBeanArray();
 	}
 

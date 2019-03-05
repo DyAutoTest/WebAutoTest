@@ -2,6 +2,10 @@ package com.dy.AutoTest.wagaga.impl;
 
 
 
+import static org.testng.Assert.assertTrue;
+
+import org.testng.Reporter;
+
 import com.dy.AutoTest.AG_Master;
 import com.dy.AutoTest.wagaga.FileUtil;
 
@@ -62,11 +66,21 @@ public class PTGenerator extends Generator{
 		private String dataProviderTemplate="	@DataProvider(name=\"%s\")\r\n"
 				+ "	protected static Object[][] parametersPool(){\r\n"
 				+ "		data.loadDataBeanList(\"%s\",%s.class);\r\n"
+				+ "		if(data.getDataBeanArray().length==0) {\r\n" + 
+				"			System.out.println(\"测试数据为空，请检查\");\r\n" + 
+				"			Reporter.log(\"测试数据为空，请检查\");\r\n" + 
+				"			assertTrue(false);\r\n" + 
+				"		}"
 				+ "		return data.getDataBeanArray();\r\n"
 				+ "	}\r\n\r\n"
 				+ "	@DataProvider(name=\"%sByCaseNO\")\r\n"
 				+ "	protected static Object[][] parametersPool(Method method){\r\n"
 				+ "		data.loadDataBeanList(\"%s\",method.getName(),%s.class);\r\n"
+				+ "		if(data.getDataBeanArray().length==0) {\r\n" + 
+				"			System.out.println(\"测试数据为空，请检查\");\r\n" + 
+				"			Reporter.log(\"测试数据为空，请检查\");\r\n" + 
+				"			assertTrue(false);\r\n" + 
+				"		}"
 				+ "		return data.getDataBeanArray();\r\n"
 				+ "	}\r\n\r\n";
 		private String testQueryTemplate="	@Test(dataProvider=\"%sByCaseNO\")\r\n"

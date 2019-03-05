@@ -38,12 +38,22 @@ public class LoginPageTest extends SuperTest{
 	@DataProvider(name="Login")
 	protected static Object[][] parametersPool(){
 		data.loadDataBeanList("AOP_Data_Login",LoginBean.class);
+		if(data.getDataBeanArray().length==0) {
+			System.out.println("测试数据为空，请检查");
+			Reporter.log("测试数据为空，请检查");
+			assertTrue(false);
+		}
 		return data.getDataBeanArray();
 	}
 
 	@DataProvider(name="LoginByCaseNO")
 	protected static Object[][] parametersPool(Method method){
 		data.loadDataBeanList("AOP_Data_Login",method.getName(),LoginBean.class);
+		if(data.getDataBeanArray().length==0) {
+			System.out.println("测试数据为空，请检查");
+			Reporter.log("测试数据为空，请检查");
+			assertTrue(false);
+		}
 		return data.getDataBeanArray();
 	}
 

@@ -37,12 +37,22 @@ public class MerchantStoreManagementPageTest extends SuperTest{
 	@DataProvider(name="MerchantInfoManagement_MerchantStoreManagement")
 	protected static Object[][] parametersPool(){
 		data.loadDataBeanList("AOP_Data_MerchantInfoManagement_MerchantStoreManagement",MerchantInfoManagement_MerchantStoreManagementBean.class);
+		if(data.getDataBeanArray().length==0) {
+			System.out.println("测试数据为空，请检查");
+			Reporter.log("测试数据为空，请检查");
+			assertTrue(false);
+		}
 		return data.getDataBeanArray();
 	}
 
 	@DataProvider(name="MerchantInfoManagement_MerchantStoreManagementByCaseNO")
 	protected static Object[][] parametersPool(Method method){
 		data.loadDataBeanList("AOP_Data_MerchantInfoManagement_MerchantStoreManagement",method.getName(),MerchantInfoManagement_MerchantStoreManagementBean.class);
+		if(data.getDataBeanArray().length==0) {
+			System.out.println("测试数据为空，请检查");
+			Reporter.log("测试数据为空，请检查");
+			assertTrue(false);
+		}
 		return data.getDataBeanArray();
 	}
 
