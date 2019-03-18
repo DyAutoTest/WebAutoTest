@@ -98,53 +98,14 @@ public class MerchantProductPageTest extends SuperTest{
 		MerchantProductPage.doDown();
 		
 		for (String pt : productTypeArray) {
-			switch (pt) {
-			case "01":
-				MerchantProductPage.clickPayment_Account();
-				break;
-			case "02":
-				MerchantProductPage.clickPayment_QR();
-				break;
-			case "03":
-				MerchantProductPage.clickPayment_Personal_Ebank();
-				break;
-			case "18":
-				MerchantProductPage.clickPayment_Enterprise_Ebank();
-				break;
-			case "05":
-				MerchantProductPage.clickPayment_Credit();
-				break;
-			case "06":
-				MerchantProductPage.clickPayment_Debit();
-				break;
-			case "07":
-				MerchantProductPage.clickPayment_Batch();
-				break;
-			case "08":
-				MerchantProductPage.clickReceipt_Batch();
-				break;
-			case "19":
-				MerchantProductPage.clickPayment_WeChatAPP();
-				break;
-			case "17":
-				MerchantProductPage.clickAgentReceipt();
-				break;
-			case "12":
-				MerchantProductPage.clickAgentPayment();
-				break;
-			case "13":
-				MerchantProductPage.clickAgentReceipt_Batch();
-				break;
-			case "14":
-				MerchantProductPage.clickAgentPayment_Batch();
-				break;
-			default:
-				break;
+			if(pt.substring(0,1).equals("0")) {
+				pt=pt.substring(1, pt.length());
 			}
-			
+			MerchantProductPage.clickProductType(pt);
 			wait.waitFor(500);
 		}
-		
+		MerchantProductPage.doLoseFocus("ProductType","5", -80, 0);
+		MerchantProductPage.doPageDown();
 		wait.waitFor(1000);
 		MerchantProductPage.clickUpdateAuth();
 	}

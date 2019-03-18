@@ -104,5 +104,8 @@ public class MerchantProductPage extends SuperPage implements IQuery{
 		// TODO Auto-generated method stub
 		
 	}
-
+	//支付方式动态获取
+	public void clickProductType(String ProductType) {
+		du.what("ProductType",ProductType).click();
+	}
 }

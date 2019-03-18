@@ -1,2 +1,4 @@
 test-output
 /target/
+/All_Test_Xml/
+!/lib/web-test-core-1.0.0.jar
